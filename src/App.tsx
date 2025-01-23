@@ -1,5 +1,5 @@
 import './App.css'
-import FunctionDeclarationType from './component/FunctionDeclarationType/FunctionDeclarationType'
+import UseOfEnvFile from './component/UseOfEnvFile/UseOfEnvFile'
 function App() {
   return (
     <div>
@@ -39,6 +39,7 @@ function App() {
       {/* <HOCFunctionalDifferentParent /> */}
       {/* <HOCClassParent /> */}
       {/* <FunctionDeclarationType /> */}
+      <UseOfEnvFile />
     </div>
   )
 }

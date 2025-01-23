@@ -1,4 +1,4 @@
-import { RRLoaders } from "./RRLoaders/RRLoaders"
+import { RRGlobalLoading } from "./RRGlobalLoading/RRGlobalLoading"
 
 export const ReactRouterApp = () => {
 
@@ -11,7 +11,8 @@ export const ReactRouterApp = () => {
       {/* <RRPageNotFound /> */}
       {/* <RRPageNotFound /> */}
       {/* <RRUseNavigate /> */}
-      <RRLoaders />
+      {/* <RRLoaders /> */}
+      <RRGlobalLoading />
     </>
   )
 }

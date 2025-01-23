@@ -6,7 +6,7 @@ export default function Movies() {
 
   return (
     <>
-      <div>Movies Page</div>
+      <div>Movies Page list</div>
       <table>
         <thead>
           <tr>

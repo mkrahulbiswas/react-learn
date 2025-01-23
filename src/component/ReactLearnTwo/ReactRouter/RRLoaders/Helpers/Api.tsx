@@ -5,6 +5,5 @@ export const getMoviesListByName = async () => {
     return data
   } catch (error) {
     console.log(error);
-
   }
 }

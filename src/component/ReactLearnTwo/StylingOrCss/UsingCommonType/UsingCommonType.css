@@ -1,0 +1,18 @@
+.styleTypeOne {
+    color: rgb(209, 74, 97);
+    background-color: pink;
+}
+
+.styleTypeTwo {
+    font-weight: bolder;
+}
+
+.active {
+    color: rgb(117, 117, 9);
+    background-color: yellow;
+}
+
+.inactive {
+    color: rgb(63, 92, 5);
+    background-color: yellowgreen;
+}

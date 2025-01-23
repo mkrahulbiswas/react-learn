@@ -1,0 +1,59 @@
+.main_toggle_btn {
+    display: flex;
+    width: 100%;
+    height: 100vh;
+    justify-content: center;
+    user-select: none;
+}
+
+.main_toggle_btn .sub_toggle_btn {
+    align-self: center;
+    background: linear-gradient(79.8deg, rgba(184, 192, 198, 0.71) 3.2%, rgba(64, 78, 83, 0.63) 89.1%);
+    width: 200px;
+    height: 100px;
+    border-top-left-radius: 50px 50%;
+    border-bottom-left-radius: 50px 50%;
+    border-top-right-radius: 50px 50%;
+    border-bottom-right-radius: 50px 50%;
+    display: flex;
+    padding-left: 10px;
+    padding-right: 10px;
+    box-shadow: 7px 7px 10px -3px rgba(185, 185, 185, 0.77), 10px 10px 13px 2px rgb(208, 208, 208);
+    border: 2px solid #8e8e8e;
+    cursor: pointer;
+    transition: 0.30s ease-in-out;
+}
+
+.active_sub_toggle_btn {
+    background: radial-gradient(circle farthest-corner at 10% 20%, rgba(120, 170, 0, 1) 0%, rgba(200, 227, 121, 1) 90%) !important;
+}
+
+.main_toggle_btn .sub_toggle_btn .toggle_btn {
+    background: #d9d9d9;
+    width: 80px;
+    height: 80px;
+    border-radius: 100%;
+    align-self: center;
+    display: flex;
+    justify-content: center;
+    border: 4px solid white;
+    box-shadow: inset 4px 4px 10px gray;
+    transition: 0.30s ease-in-out;
+    transform: translateX(0px);
+}
+
+.active_toggle_btn {
+    transform: translateX(95px) !important;
+    box-shadow: inset -4px -4px 10px rgba(120,170,0,1) !important;
+    background: rgb(215, 243, 150) !important;
+}
+
+.main_toggle_btn .sub_toggle_btn .toggle_btn span {
+    align-self: center;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+.main_toggle_btn .sub_toggle_btn .toggle_btn span svg  {
+    font-size: 30px;
+    color: rgb(219, 63, 193);
+}

@@ -1,0 +1,106 @@
+body {
+  padding: 0;
+}
+
+:root {
+  --radios--: 7px;
+}
+
+.pc_content {
+  padding: 30px;
+
+  .pc_main {
+    .pc_list {
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      gap: 30px;
+      justify-content: center;
+
+      .pc_item {
+        width: 250px;
+        height: 350px;
+        padding: 10px;
+        border-radius: var(--radios--);
+        box-shadow: 0 0 10px lightgray;
+        transition: 0.50s ease-in-out;
+        position: relative;
+        overflow: hidden;
+
+        &:hover {
+          transform: scale(1.05);
+        }
+
+        .pc_name {
+          position: absolute;
+          width: 100%;
+          text-align: center;
+          left: 0;
+          top: 0;
+
+          span {
+            display: block;
+            padding: 5px 10px;
+            background-color: rgb(254, 255, 171);
+            font-size: 15px;
+            font-weight: bold;
+            text-transform: uppercase;
+            word-wrap: 1px;
+            letter-spacing: 1.5px;
+          }
+        }
+
+        .pc_front {
+          .pc_stats {
+            position: absolute;
+            left: 0;
+            bottom: 0;
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            gap: 7px;
+            padding: 10px;
+
+            .pc_statsCommon {
+              text-align: center;
+              padding: 5px 10px;
+              background-color: rgb(238, 238, 238);
+              box-shadow: inset 0 0 10px rgb(182, 182, 182);
+              border-radius: var(--radios--);
+
+              span {
+                display: block;
+
+                &:first-child {
+                  font-size: 14px;
+                  font-weight: bold;
+                  text-transform: capitalize;
+                }
+
+                &:last-child {
+                  font-size: 12px;
+                  text-transform: capitalize;
+                }
+              }
+            }
+          }
+
+          .pc_image {
+            margin-top: 40px;
+            text-align: center;
+
+            img {
+              width: 100%;
+              height: 160px;
+            }
+          }
+
+          .pc_other {}
+        }
+
+        .pc_back {
+          .pc_about {}
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,12 @@
+.styleType1 {
+    color: aqua;
+    background-color: blueviolet;
+}
+
+.active {
+    background-color: green;
+}
+
+.inactive {
+    background-color: red;
+}

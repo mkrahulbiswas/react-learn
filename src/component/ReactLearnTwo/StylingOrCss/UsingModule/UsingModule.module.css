@@ -1,0 +1,29 @@
+.styleTypeOne {
+    color: rgb(209, 74, 97);
+    background-color: pink;
+}
+
+.style-type-two {
+    color: green;
+    background-color: lightgreen;
+}
+
+.style-type-condition-one {
+    color: rgb(250, 137, 137);
+    background-color: red;
+}
+
+.styleTypeConditionTwo {
+    color: rgb(144, 144, 245);
+    background-color: blue;
+}
+
+.style-type-condition-three {
+    color: rgb(194, 19, 194);
+    background-color: violet;
+}
+
+.styleTypeConditionFour {
+    color: rgb(241, 120, 120);
+    background-color: maroon;
+}

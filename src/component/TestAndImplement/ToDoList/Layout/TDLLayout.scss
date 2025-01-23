@@ -1,0 +1,341 @@
+:root {
+    --radios--: 7px;
+}
+
+body {
+    padding: 0;
+}
+
+.toDo_marge {
+    .toDo_main {
+        padding: 10px;
+        background-image: radial-gradient(circle farthest-corner at -0.1% 1.8%, rgba(255, 77, 77, 0.7) 0%, rgba(255, 184, 129, 0.34) 100.2%);
+        height: 100vh;
+
+        .toDo_sub {
+            display: flex;
+            flex-direction: column;
+
+            padding: 0 10px;
+
+            .toDo_top {
+                background-image: radial-gradient(circle 465px at -15.1% -25%, rgba(126, 203, 244, 1) 30%, rgba(67, 166, 238, 1) 49%, rgba(17, 130, 193, 1) 100.2%);
+                border-radius: var(--radios--);
+
+                .toDo_topAction {
+                    display: flex;
+                    flex-direction: row;
+                    justify-content: space-between;
+                    padding: 10px;
+                    position: relative;
+
+                    .toDo_total {
+                        align-self: center;
+                        background-color: #1182c1;
+                        width: auto;
+                        font-size: 20px;
+                        font-weight: bold;
+                        color: white;
+                        padding: 1px 10px 2px 10px;
+                        border-radius: var(--radios--);
+
+                        span {
+                            color: #d9fdac;
+                        }
+                    }
+
+                    .toDo_timer {
+                        position: absolute;
+                        bottom: -50px;
+                        left: 50%;
+                        transform: translate(-50%, 0%);
+                        background: #1182c1;
+                        padding: 10px 30px 15px 30px;
+                        clip-path: polygon(0 0, 100% 0, 93% 100%, 7% 100%);
+                        font-size: 17px;
+                        font-weight: bold;
+                        color: white;
+
+                        span {
+                            box-shadow: inset 0 0 10px #1a4f6d;
+                            padding: 5px 10px;
+                            border-radius: var(--radios--);
+                        }
+                    }
+
+                    .toDo_filter {
+                        display: flex;
+                        flex-direction: row;
+                        padding: 2px;
+                        border-radius: var(--radios--);
+                        background-color: #7ff098;
+                        box-shadow: 0px 0px 5px #47ee51;
+
+                        .toDo_input {
+                            align-self: center;
+                            width: 100%;
+
+                            input {
+                                border: none;
+                                height: 30px;
+                                border-top-left-radius: var(--radios--);
+                                border-bottom-left-radius: var(--radios--);
+                                padding: 0 10px;
+                                font-size: 15px;
+                                color: #146b9c;
+                                font-weight: 600;
+
+                                &:focus-visible {
+                                    outline: none;
+
+                                    &__copy .toDo_filter {
+                                        background-color: rgb(240, 134, 127) !important;
+                                        box-shadow: 0px 0px 5px rgb(240, 134, 127);
+                                    }
+                                }
+
+                                &::placeholder {
+                                    color: #146b9c;
+                                    font-size: 15px;
+                                    opacity: 0.70;
+                                }
+                            }
+                        }
+
+                        .toDo_action {
+                            align-self: center;
+                            display: flex;
+                            flex-direction: row;
+
+                            .toDo_search,
+                            .toDo_reset {
+                                width: 30px;
+                                height: 30px;
+                                text-align: center;
+                                background-color: #146b9c;
+                                color: #d9fdac;
+                                cursor: pointer;
+                                transition: 0.30s ease-in-out;
+
+                                &:hover {
+                                    background-color: #4ca6d9;
+                                }
+                            }
+
+                            .toDo_search {}
+
+                            .toDo_reset {
+                                border-top-right-radius: var(--radios--);
+                                border-bottom-right-radius: var(--radios--);
+                            }
+                        }
+                    }
+
+                    .toDo_addTask {
+                        display: flex;
+
+                        button {
+                            align-self: center;
+
+                            svg {
+                                margin-top: -3px;
+                            }
+                        }
+                    }
+                }
+            }
+
+            .toDo_bottom {
+                .toDo_list {
+                    display: flex;
+                    flex-direction: row;
+                    flex-wrap: wrap;
+                    justify-content: space-around;
+                    gap: 30px;
+                    margin-top: 70px;
+
+                    .toDo_items {
+                        display: flex;
+                        flex-direction: column;
+                        background-image: radial-gradient(circle farthest-corner at 50.7% 54%, rgba(204, 254, 152, 1) 0%, rgba(229, 253, 190, 1) 92.4%);
+                        padding: 10px;
+                        border-radius: var(--radios--);
+                        max-width: 280px;
+                        width: 100%;
+                        position: relative;
+                        overflow: hidden;
+                        box-shadow: 2px 2px 5px #256d1bab, 6px 6px 10px rgba(61, 126, 51, 0.38), 12px 12px 15px rgba(63, 140, 51, 0.15), 20px 20px 20px rgba(255, 255, 255, 0.07);
+
+                        &:hover .toDo_right {
+                            top: 0;
+                        }
+
+                        .toDo_left {
+                            display: flex;
+                            flex-direction: column-reverse;
+
+                            .toDo_data {
+                                display: flex;
+                                flex-direction: column;
+                                flex-grow: 1;
+
+                                .toDo_heading {
+                                    font-weight: bold;
+                                    font-size: 17px;
+                                    text-transform: capitalize;
+                                    margin-bottom: 10px;
+                                    color: rgba(25, 70, 25, 0.89);
+                                    ;
+                                }
+
+                                .toDo_detail {
+                                    font-size: 15px;
+                                    text-align: justify;
+                                }
+                            }
+
+                            .toDo_others {
+                                width: 100%;
+                                height: 40px;
+                                display: flex;
+                                justify-content: space-between;
+                                background-color: transparent;
+                                border-radius: var(--radios--);
+                                align-self: center;
+                                box-shadow: inset 5px 5px 10px rgba(34, 34, 34, 0.49);
+                                margin-bottom: 15px;
+                                padding: 0 15px;
+
+                                .toDo_status {
+                                    align-self: center;
+                                    font-weight: bold;
+                                }
+
+                                .toDo_dateTime {
+                                    align-self: center;
+                                    font-size: 12px;
+                                    text-align: right;
+
+                                    svg {
+                                        margin-top: -3px;
+                                    }
+                                }
+                            }
+                        }
+
+                        .toDo_right {
+                            display: flex;
+                            flex-direction: row;
+                            justify-content: right;
+                            gap: 10px;
+                            position: absolute;
+                            top: -100%;
+                            right: 0;
+                            height: 100%;
+                            width: 100%;
+                            background: linear-gradient(200deg, rgba(0, 0, 0, 0.856) 20%, rgba(73, 73, 73, 0.445));
+                            padding: 10px;
+                            transition: 0.30s ease-in-out;
+
+                            .toDo_done,
+                            .toDo_delete,
+                            .toDo_edit {
+                                display: block;
+                                width: 25px;
+                                height: 25px;
+                                line-height: 16px;
+                                text-align: center;
+                                border-radius: 100%;
+                                cursor: pointer;
+                                border: 2px solid rgb(37, 199, 31);
+                            }
+
+                            .toDo_done svg,
+                            .toDo_delete svg,
+                            .toDo_edit svg {
+                                font-size: 15px;
+                            }
+
+                            .toDo_done {
+                                background-color: rgba(233, 179, 32, 0.500);
+                                color: white;
+                            }
+
+                            .toDo_delete {
+                                background-color: rgb(219, 36, 36, 0.500);
+                                color: white;
+                            }
+
+                            .toDo_edit {
+                                background-color: rgb(43, 183, 238, 0.500);
+                                color: white;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+.form-label {
+    margin-bottom: .2rem;
+}
+
+.modal-content {
+    background-image: linear-gradient(106.1deg, rgba(69, 242, 143, 0.52) 10.2%, rgba(14, 228, 175, 0.61) 83.6%);
+
+    .modal-header {
+        border-bottom: 0;
+        background-color: #0000001f;
+
+        .modal-title {
+            text-transform: capitalize;
+        }
+    }
+
+    .modal-body {
+        .vErr {
+            color: red;
+            font-size: 13px;
+            position: relative;
+            padding-left: 25px;
+            display: block;
+            margin-top: 3px;
+            text-transform: capitalize;
+        }
+
+        .vErr::before {
+            content: '!';
+            position: absolute;
+            top: 4px;
+            left: 0;
+            background-color: rgba(255, 167, 167, 0.247);
+            width: 15px;
+            height: 15px;
+            line-height: 10px;
+            font-size: 11px;
+            color: rgb(255, 0, 0);
+            text-align: center;
+            border-radius: 100%;
+            border: 2px solid rgb(252, 100, 100);
+        }
+
+        .form-label {
+            svg {
+                margin-top: -2px;
+                margin-right: 5px;
+            }
+        }
+    }
+
+    .modal-footer {
+        border-top: 0;
+        background-color: #0000001f;
+
+        svg {
+            margin-top: -3px;
+        }
+    }
+}

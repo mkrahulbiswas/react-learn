@@ -3,6 +3,7 @@ export const contactForm = async ({ request }: any) => {
     const response = await request.formData()
     const data = Object.fromEntries(response)
     console.log(data);
+
     return data
   } catch (error) {
     console.log(error);

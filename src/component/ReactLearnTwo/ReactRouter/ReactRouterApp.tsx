@@ -1,4 +1,4 @@
-import { RRGlobalLoading } from "./RRGlobalLoading/RRGlobalLoading"
+import { RRFormData } from "./RRFormData/RRFormData"
 
 export const ReactRouterApp = () => {
 
@@ -12,7 +12,9 @@ export const ReactRouterApp = () => {
       {/* <RRPageNotFound /> */}
       {/* <RRUseNavigate /> */}
       {/* <RRLoaders /> */}
-      <RRGlobalLoading />
+      {/* <RRGlobalLoading /> */}
+      {/* <RRDynamicRouting /> */}
+      <RRFormData />
     </>
   )
 }

@@ -5,10 +5,10 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import 'bootstrap-icons/font/bootstrap-icons.css';
 import "primereact/resources/themes/lara-light-cyan/theme.css";
 import 'react-toastify/dist/ReactToastify.css';
-import ReactLearnTwoApp from './component/ReactLearnTwo/ReactLearnTwoApp.tsx';
+import TestAndImplement from './component/TestAndImplement/TestAndImplement.tsx';
 createRoot(document.getElementById('root')!).render(
   <StrictMode>
-    {/* <TestAndImplement /> */}
+    <TestAndImplement />
     {/* <App /> */}
     {/* <StateApp /> */}
     {/* <ContextApp /> */}
@@ -16,6 +16,6 @@ createRoot(document.getElementById('root')!).render(
     {/* <PropsApp /> */}
     {/* <RouteApp /> */}
     {/* <ApiApp /> */}
-    <ReactLearnTwoApp />
+    {/* <ReactLearnTwoApp /> */}
   </StrictMode>
 )

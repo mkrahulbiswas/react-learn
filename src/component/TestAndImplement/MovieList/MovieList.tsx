@@ -5,7 +5,7 @@ import Contact from "./Component/Contact"
 import Layout from "./Layout/Layout"
 import ErrorPage from "./Includes/ErrorPage"
 import Movies from "./Component/Movies/Movies"
-import { getMoviesDetails, getMoviesListByName } from "./Helpers/Api"
+import { getMoviesDetails } from "./Helpers/Api"
 import MoviesDetails from "./Component/Movies/MoviesDetails"
 import { contactForm } from "./Helpers/Form"
 
@@ -23,7 +23,6 @@ export const MovieList = () => {
         {
           path: 'movies',
           element: <Movies />,
-          loader: getMoviesListByName
         },
         {
           path: 'movies/:id',

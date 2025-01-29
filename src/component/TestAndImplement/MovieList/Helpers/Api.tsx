@@ -1,6 +1,9 @@
-export const getMoviesListByName = async () => {
+export const getMoviesListByName = async ({ params, request }: any) => {
   try {
-    const response = await fetch("http://www.omdbapi.com/?i=tt3896198&apikey=3cc67609&s=titan&page=1")
+    console.log('params->', params);
+    console.log('request->', request);
+
+    const response = await fetch("http://www.omdbapi.com/?i=tt3896198&apikey=3cc67609&s=titanic&page=1")
     const data = await response.json()
     return data
   } catch (error) {

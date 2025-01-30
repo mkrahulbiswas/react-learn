@@ -1,4 +1,4 @@
-import { createBrowserRouter, RouterProvider } from "react-router"
+import { createBrowserRouter, Outlet, RouterProvider } from "react-router"
 import Home from "./Component/Home"
 import './MovieList.scss'
 import Contact from "./Component/Contact"
@@ -21,14 +21,26 @@ export const MovieList = () => {
           element: <Home />
         },
         {
-          path: 'movies',
-          element: <Movies />,
+          path: '/',
+          element: <Outlet />,
+          // element: <Movies />,
+          children: [
+            {
+              path: 'movies',
+              element: <Movies />,
+            },
+            {
+              path: 'movies/detail/:id',
+              element: <MoviesDetails />,
+              loader: getMoviesDetails
+            },
+          ]
         },
-        {
-          path: 'movies/:id',
-          element: <MoviesDetails />,
-          loader: getMoviesDetails
-        },
+        // {
+        //   path: 'details/:id',
+        //   element: <MoviesDetails />,
+        //   loader: getMoviesDetails
+        // },
         {
           path: 'contact',
           element: <Contact />,

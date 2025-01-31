@@ -1,20 +1,22 @@
-import { createBrowserRouter, Outlet, RouterProvider } from "react-router"
+import { createBrowserRouter, RouterProvider } from "react-router"
 import Home from "./Component/Home"
 import './MovieList.scss'
 import Contact from "./Component/Contact"
-import Layout from "./Layout/Layout"
 import ErrorPage from "./Includes/ErrorPage"
-import Movies from "./Component/Movies/Movies"
 import { getMoviesDetails } from "./Helpers/Api"
 import MoviesDetails from "./Component/Movies/MoviesDetails"
 import { contactForm } from "./Helpers/Form"
 import { LoaderContextProvider } from "./Context/LoaderContext"
+import { Movies } from "./Component/Movies/Movies"
+import { Layout } from "./Layout/Layout"
 
 export const MovieList = () => {
   const router = createBrowserRouter([
     {
       path: '/',
-      element: <LoaderContextProvider><Layout /></LoaderContextProvider>,
+      element: <LoaderContextProvider>
+        <Layout />
+      </LoaderContextProvider>,
       errorElement: <ErrorPage />,
       children: [
         {
@@ -23,7 +25,6 @@ export const MovieList = () => {
         },
         {
           path: '/',
-          element: <Outlet />,
           children: [
             {
               path: 'movies',
@@ -36,11 +37,6 @@ export const MovieList = () => {
             },
           ]
         },
-        // {
-        //   path: 'details/:id',
-        //   element: <MoviesDetails />,
-        //   loader: getMoviesDetails
-        // },
         {
           path: 'contact',
           Component: Contact,

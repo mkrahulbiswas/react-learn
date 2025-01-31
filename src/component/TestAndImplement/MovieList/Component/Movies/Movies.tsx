@@ -3,7 +3,7 @@ import { MoviesCart } from "./MoviesCart"
 import { useContext, useEffect, useState } from "react"
 import { LoaderContext } from "../../Context/LoaderContext"
 
-export default function Movies() {
+export const Movies = () => {
   const [moviesData, setMoviesData] = useState<any>({
     total: 0,
     response: '',
@@ -23,6 +23,7 @@ export default function Movies() {
     try {
       const response = await fetch("http://www.omdbapi.com/?i=tt3896198&apikey=3cc67609&s=" + searchKey + "&page=1")
       const data = await response.json()
+      setLoader(false);
       if (data.Response == 'False') {
         setMoviesData({
           total: 0,

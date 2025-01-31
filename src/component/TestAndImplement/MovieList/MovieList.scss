@@ -194,4 +194,35 @@
             }
         }
     }
+
+    .m_detail {
+        .md_main {
+            .md_image {
+                img {}
+            }
+
+            .md_detail {
+                .md_common {
+                    span {
+                        &:first-child {
+                            font-weight: bold;
+                            position: relative;
+                            padding-right: 8px;
+
+                            &::before {
+                                content: ':';
+                                position: absolute;
+                                right: 0;
+                                top: -1px;
+                            }
+                        }
+
+                        &:last-child {
+                            margin-left: 5px;
+                        }
+                    }
+                }
+            }
+        }
+    }
 }

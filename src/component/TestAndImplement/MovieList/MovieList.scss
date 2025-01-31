@@ -10,6 +10,10 @@
             justify-content: center;
             gap: 10px;
 
+            .active {
+                background-color: rgb(122, 164, 58);
+            }
+
             a {
                 text-decoration: none;
                 color: white;

@@ -8,12 +8,13 @@ import Movies from "./Component/Movies/Movies"
 import { getMoviesDetails } from "./Helpers/Api"
 import MoviesDetails from "./Component/Movies/MoviesDetails"
 import { contactForm } from "./Helpers/Form"
+import { LoaderContextProvider } from "./Context/LoaderContext"
 
 export const MovieList = () => {
   const router = createBrowserRouter([
     {
       path: '/',
-      Component: Layout,
+      element: <LoaderContextProvider><Layout /></LoaderContextProvider>,
       errorElement: <ErrorPage />,
       children: [
         {
@@ -23,7 +24,6 @@ export const MovieList = () => {
         {
           path: '/',
           element: <Outlet />,
-          // element: <Movies />,
           children: [
             {
               path: 'movies',
@@ -43,7 +43,7 @@ export const MovieList = () => {
         // },
         {
           path: 'contact',
-          element: <Contact />,
+          Component: Contact,
           action: contactForm
         }
       ]

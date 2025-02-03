@@ -7,8 +7,8 @@ import { getMoviesDetails } from "./Helpers/Api"
 import MoviesDetails from "./Component/Movies/MoviesDetails"
 import { contactForm } from "./Helpers/Form"
 import { LoaderContextProvider } from "./Context/LoaderContext"
-import { Movies } from "./Component/Movies/Movies"
 import { Layout } from "./Layout/Layout"
+import { Movies } from "./Component/Movies/Movies"
 
 export const MovieList = () => {
   const router = createBrowserRouter([

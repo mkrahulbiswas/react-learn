@@ -2,6 +2,8 @@ import { MdOutlineSearch, MdOutlineSearchOff } from "react-icons/md"
 import { MoviesCart } from "./MoviesCart"
 import { useContext, useEffect, useState } from "react"
 import { LoaderContext } from "../../Context/LoaderContext"
+import { MoviesSearch } from "./MoviesSearch"
+import { MoviesPagination } from "./MoviesPagination"
 
 export const Movies = () => {
   const [moviesData, setMoviesData] = useState<any>({
@@ -10,18 +12,12 @@ export const Movies = () => {
     list: {}
   })
 
-  const [searchKey, setSearchKey] = useState({
-    key: '',
-    error: '',
-    type: true
-  })
-
   const { setLoader }: any = useContext(LoaderContext)
 
-  const getMoviesData = async (searchKey: any) => {
+  const getMoviesData = async (searchKey: any, page: number) => {
     setLoader(true)
     try {
-      const response = await fetch("http://www.omdbapi.com/?i=tt3896198&apikey=3cc67609&s=" + searchKey + "&page=1")
+      const response = await fetch("http://www.omdbapi.com/?i=tt3896198&apikey=3cc67609&s=" + searchKey + "&page=" + page)
       const data = await response.json()
       setLoader(false);
       if (data.Response == 'False') {
@@ -42,49 +38,14 @@ export const Movies = () => {
     }
   }
 
-  const handelSearch = (type: any) => {
-    if (type == 1) {
-      if (searchKey.key !== '') {
-        setSearchKey({ ...searchKey, type: false })
-        getMoviesData(searchKey.key)
-      } else {
-        getMoviesData('titanic')
-      }
-    } else {
-      resetSearch()
-    }
-  }
-
-  const resetSearch = () => {
-    getMoviesData('titanic')
-    setSearchKey({
-      key: '',
-      error: '',
-      type: true
-    })
-  }
-
   useEffect(() => {
-    getMoviesData('titanic')
+    getMoviesData('titanic', 1)
   }, [setLoader])
 
   return (
     <div className="m_section">
       <div className="m_search">
-        <div className="m_form">
-          <input
-            type="text"
-            className="form-control"
-            onKeyUpCapture={() => setSearchKey({ ...searchKey, type: true })}
-            placeholder="Search..."
-            value={searchKey.key}
-            onChange={(e) => setSearchKey({ ...searchKey, key: e.target.value })} />
-          {
-            searchKey.type == true
-              ? <button onClick={() => handelSearch(1)}><MdOutlineSearch /></button>
-              : <button onClick={() => handelSearch(0)}><MdOutlineSearchOff /></button>
-          }
-        </div>
+        <MoviesSearch filter={getMoviesData} />
       </div>
       <div className="m_list">
         {
@@ -92,6 +53,9 @@ export const Movies = () => {
             ? moviesData.list.map((val: any) => <MoviesCart value={val} key={val.imdbID} />)
             : <div>{moviesData.response}</div>
         }
+      </div>
+      <div className="m_pagination">
+        <MoviesPagination total={moviesData.total} filter={getMoviesData} />
       </div>
     </div>
   )

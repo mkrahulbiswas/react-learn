@@ -1,7 +1,6 @@
 import NPFTContact from './NPFTContact'
 import NPFTAbout from './NPFAbout'
 import NPFTHome from './NPFTHome'
-import NPFTNoPageFound from './NPFTNoPageFound'
 import { BrowserRouter, Navigate, Route, Routes } from 'react-router'
 function NPFTApp() {
   return (

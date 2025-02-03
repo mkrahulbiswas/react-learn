@@ -9,7 +9,7 @@ export default function DerivedState() {
 }
 
 const DerivedStateTypeOne = () => {
-  const [arrayStateOne, setArrayStateOne] = useState([
+  const [arrayStateOne] = useState([
     { name: 'Anil Das', age: 30 },
     { name: 'Binod Biswas', age: 27 },
     { name: 'Badal Nath', age: 29 },

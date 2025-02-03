@@ -1,6 +1,7 @@
 import { useState } from "react"
 function CTPParentComponent() {
-  const [userData, setUserData] = useState<any[]>([]);
+  const [userData] = useState<any[]>([]);
+  // const [userData, setUserData] = useState<any[]>([]);
   return (
     <div>
       <h1>Fails For Now</h1>

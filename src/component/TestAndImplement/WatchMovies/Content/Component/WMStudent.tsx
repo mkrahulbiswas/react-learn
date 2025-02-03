@@ -1,4 +1,4 @@
-function WMStudent({ props }: any) {
+function WMStudent() {
   return (
     <div className="std_card">
       <div className="std_image">

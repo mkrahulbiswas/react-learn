@@ -36,7 +36,7 @@ export function ExampleOne() {
 
 export function ExampleTwo() {
   const [counter, setCounter] = useState(0)
-  const [conduct, setConduct] = useState(0)
+  const [conduct] = useState(0)
   function incCounter() {
     setCounter(counter + 1)
   }

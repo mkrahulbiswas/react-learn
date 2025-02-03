@@ -9,9 +9,13 @@ function UsingStyledComponent() {
     borderRadius: '5px',
   })
 
-  const Label = styled.label`
+  interface LabelProps {
+    age: number;
+  }
+
+  const Label = styled.label<LabelProps>`
     display: inline-block;
-    background-color: ${(props: any) => props.age >= 20 ? 'orange' : 'lightgreen'};
+    background-color: ${(props) => props.age >= 20 ? 'orange' : 'lightgreen'};
     border: none;
     padding: 5px 10px;
     border-radius: 5px;

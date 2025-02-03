@@ -1,4 +1,4 @@
-import { useEffect, useRef, useState } from "react"
+import { useRef, useState } from "react"
 import FCPPropsChild from "./FCPPropsChild"
 function FCPPropsParent() {
   const [current, setCurrent] = useState(0)

@@ -1,4 +1,3 @@
-import { MdOutlineSearch, MdOutlineSearchOff } from "react-icons/md"
 import { MoviesCart } from "./MoviesCart"
 import { useContext, useEffect, useState } from "react"
 import { LoaderContext } from "../../Context/LoaderContext"
@@ -17,7 +16,7 @@ export const Movies = () => {
   const getMoviesData = async (searchKey: any, page: number) => {
     setLoader(true)
     try {
-      const response = await fetch("http://www.omdbapi.com/?i=tt3896198&apikey=3cc67609&s=" + searchKey + "&page=" + page)
+      const response = await fetch("https://www.omdbapi.com/?i=tt3896198&apikey=3cc67609&s=" + searchKey + "&page=" + page)
       const data = await response.json()
       setLoader(false);
       if (data.Response == 'False') {

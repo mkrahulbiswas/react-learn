@@ -1,5 +1,3 @@
-import { Column } from "primereact/column"
-import { DataTable } from "primereact/datatable"
 import { useEffect, useState } from "react"
 import { Button, Card, Col, Form, Modal, Row, Table } from "react-bootstrap"
 import Swal from 'sweetalert2'
@@ -43,22 +41,22 @@ function SinglePageCrud(props: any) {
           props.dataPass.toast({ msg: response.msg, title: response.title, type: 'warn' })
 
           if (response.payload.name != undefined) {
-            response.payload.name.forEach((item: any, key: any) => {
+            response.payload.name.forEach((key: any) => {
               vErr.name = response.payload.name[key]
             });
           }
           if (response.payload.email != undefined) {
-            response.payload.email.forEach((item: any, key: any) => {
+            response.payload.email.forEach((key: any) => {
               vErr.email = response.payload.email[key]
             });
           }
           if (response.payload.class != undefined) {
-            response.payload.class.forEach((item: any, key: any) => {
+            response.payload.class.forEach((key: any) => {
               vErr.class = response.payload.class[key]
             });
           }
           if (response.payload.phone != undefined) {
-            response.payload.phone.forEach((item: any, key: any) => {
+            response.payload.phone.forEach((key: any) => {
               vErr.phone = response.payload.phone[key]
             });
           }
@@ -90,22 +88,22 @@ function SinglePageCrud(props: any) {
           props.dataPass.toast({ msg: response.msg, title: response.title, type: 'warn' })
 
           if (response.payload.name != undefined) {
-            response.payload.name.forEach((item: any, key: any) => {
+            response.payload.name.forEach((key: any) => {
               vErr.name = response.payload.name[key]
             });
           }
           if (response.payload.email != undefined) {
-            response.payload.email.forEach((item: any, key: any) => {
+            response.payload.email.forEach((key: any) => {
               vErr.email = response.payload.email[key]
             });
           }
           if (response.payload.class != undefined) {
-            response.payload.class.forEach((item: any, key: any) => {
+            response.payload.class.forEach((key: any) => {
               vErr.class = response.payload.class[key]
             });
           }
           if (response.payload.phone != undefined) {
-            response.payload.phone.forEach((item: any, key: any) => {
+            response.payload.phone.forEach((key: any) => {
               vErr.phone = response.payload.phone[key]
             });
           }

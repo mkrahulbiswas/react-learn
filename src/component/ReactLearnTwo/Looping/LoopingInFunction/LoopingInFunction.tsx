@@ -11,7 +11,7 @@ export default function LoopingInFunction() {
 
   function loopingTypeOne() {
     let data = ''
-    userData.forEach((element: any, key: any) => {
+    userData.forEach((element: any) => {
       data += element.name + ', '
     });
     return data
@@ -19,7 +19,7 @@ export default function LoopingInFunction() {
 
   function loopingTypeTwo() {
     let data = ''
-    for(let i = 0; i < userData.length; i++) {
+    for (let i = 0; i < userData.length; i++) {
       // data += i + ', '
       data += userData[i].class + ', '
     }

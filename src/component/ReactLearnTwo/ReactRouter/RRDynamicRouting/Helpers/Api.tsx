@@ -1,5 +1,3 @@
-import { useParams } from "react-router";
-
 export const getMoviesListByName = async () => {
   try {
     const response = await fetch("http://www.omdbapi.com/?i=tt3896198&apikey=3cc67609&s=titanic&page=1")

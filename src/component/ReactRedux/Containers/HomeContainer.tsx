@@ -4,5 +4,6 @@ import { addToCart } from "../Services/Actions/Actions";
 const mapDispatchToProps = (dispatch: any) => ({
   addToCartHandler: (data: any) => dispatch(addToCart(data))
 })
-const mapStateToProps = (state: any) => ({})
+const mapStateToProps = () => ({})
+// const mapStateToProps = (state: any) => ({})
 export default connect(mapStateToProps, mapDispatchToProps)(Home)

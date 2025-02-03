@@ -8,9 +8,9 @@ class ShouldComponentUpdateChildClass extends React.Component<any, any> {
       counterTwo: 0
     }
   }
-  componentDidUpdate(prevProps: Readonly<any>, prevState: Readonly<any>, snapshot?: any): void {
-      // console.log(2)
-  }
+  // componentDidUpdate(prevProps: Readonly<any>, prevState: Readonly<any>, snapshot?: any): void {
+  // console.log(2)
+  // }
   shouldComponentUpdate(nextProps: Readonly<any>, nextState: Readonly<any>, nextContext: any): boolean {
     // this will execute on when you return true
 

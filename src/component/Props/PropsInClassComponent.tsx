@@ -1,6 +1,10 @@
 import React from "react";
 
-class PropsInClassComponent extends React.Component {
+interface Props {
+  email: string;
+}
+
+class PropsInClassComponent extends React.Component<Props> {
   render() {
     console.log(this.props)
     return (

@@ -1,7 +1,7 @@
 import { useState } from "react"
 
 export default function ControlledElement() {
-  const [name, setName] = useState()
+  const [name] = useState()
   return (
     <>
       <h3><b>By defining state variable value</b></h3>

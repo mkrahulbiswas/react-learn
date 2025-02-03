@@ -1,4 +1,3 @@
-import style from './ArrayDataShowInTable.module.css'
 import Table from 'react-bootstrap/Table';
 
 function ArrayDataShowInTable() {

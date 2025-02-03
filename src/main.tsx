@@ -6,7 +6,6 @@ import 'bootstrap-icons/font/bootstrap-icons.css';
 import "primereact/resources/themes/lara-light-cyan/theme.css";
 import 'react-toastify/dist/ReactToastify.css';
 import TestAndImplement from './component/TestAndImplement/TestAndImplement.tsx';
-import ReactLearnTwoApp from './component/ReactLearnTwo/ReactLearnTwoApp.tsx';
 
 createRoot(document.getElementById('root')!).render(
   <StrictMode>

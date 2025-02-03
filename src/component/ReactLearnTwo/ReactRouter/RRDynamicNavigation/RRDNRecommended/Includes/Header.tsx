@@ -1,4 +1,3 @@
-import { Container, Nav, Navbar } from "react-bootstrap";
 import { NavLink } from "react-router";
 
 export default function Header() {

@@ -1,4 +1,4 @@
-import React, { Component, useState } from "react"
+import React, { Component } from "react"
 
 class HOCClassNestedChild extends Component<any, any> {
   constructor(props: any) {

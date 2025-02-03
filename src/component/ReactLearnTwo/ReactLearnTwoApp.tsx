@@ -1,7 +1,5 @@
 import React from 'react'
 import './ReactLearnTwoApp.css'
-import { ReactRouterApp } from './ReactRouter/ReactRouterApp'
-import UseOfHooksApp from './UseOfHooks/UseOfHooksApp'
 
 function ReactLearnTwoApp() {
   return (
@@ -22,7 +20,7 @@ function ReactLearnTwoApp() {
       {/* <ContextAPIUseContextApp /> */}
       {/* <CreateCustomHooks /> */}
       {/* <UseOfReactMemoApp /> */}
-      <UseOfHooksApp />
+      {/* <UseOfHooksApp /> */}
       {/* <ReactRouterApp /> */}
     </React.Fragment>
   )

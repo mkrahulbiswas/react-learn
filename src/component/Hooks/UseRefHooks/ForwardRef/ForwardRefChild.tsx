@@ -1,6 +1,6 @@
 import { forwardRef } from "react"
 
-function ForwardRefChild(props: any, refPass: any) {
+function ForwardRefChild(refPass: any) {
   return (
     <div>
       <input type="text" ref={refPass} />

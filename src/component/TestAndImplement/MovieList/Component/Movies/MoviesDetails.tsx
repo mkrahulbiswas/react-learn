@@ -3,7 +3,6 @@ import { useLoaderData } from "react-router"
 export default function MoviesDetails() {
   const moviesDetails = useLoaderData()
   console.log(moviesDetails);
-
   return (
     <div className="m_detail">
       <div className="md_main">

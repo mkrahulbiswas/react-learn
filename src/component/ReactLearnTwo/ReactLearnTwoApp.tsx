@@ -1,5 +1,6 @@
 import React from 'react'
 import './ReactLearnTwoApp.css'
+import HandledApiApp from './HandledApi/HandledApiApp'
 
 function ReactLearnTwoApp() {
   return (
@@ -15,7 +16,7 @@ function ReactLearnTwoApp() {
       {/* <EventPropagationApp /> */}
       {/* <ShortCircuitEvaluationApp /> */}
       {/* <ControlledVsUncontrolledApp /> */}
-      {/* <HandledApiApp /> */}
+      <HandledApiApp />
       {/* <PropDrillingApp /> */}
       {/* <ContextAPIUseContextApp /> */}
       {/* <CreateCustomHooks /> */}

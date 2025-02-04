@@ -3,7 +3,7 @@ import UsingAxios from "./UsingAxios/UsingAxios";
 import UsingFetch from "./UsingFetch/UsingFetch";
 import { Table } from "react-bootstrap";
 
-export default function PostApi() {
+export default function DeleteApi() {
   const [getTestData, setGetTestData] = useState({
     status: 0,
     msg: "",
@@ -63,8 +63,8 @@ export default function PostApi() {
         </tbody>
       </Table>
       <br /><br />
-      <UsingAxios getData={getData} />
       <UsingFetch getData={getData} />
+      {/* <UsingAxios getData={getData} /> */}
       {/* <ErrorHandling getData={getData} /> */}
     </>
   )

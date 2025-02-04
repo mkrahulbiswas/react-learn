@@ -1,18 +1,16 @@
-import axios from "axios"
 import { useEffect, useState } from "react"
 import { Table } from "react-bootstrap"
-import { getStudent } from "../../../../../../services/ReactLearnTwoService"
 
-export default function WithAsync() {
+export default function ErrorHandling() {
   return (
     <>
-      <p>Hear is the example of <b>axios</b> <span style={{ color: 'red' }}>with using</span> <b>async await</b> type</p>
+      <p>Hear is the example of <b>error handling</b></p>
       <div className="row bg-light">
         <div className="col-6 p-3">
-          <WithoutUsingService />
+          <FetchWithAsync />
         </div>
         <div className="col-6 p-3">
-          <WithUsingService />
+          <FetchWithoutAsync />
         </div>
       </div>
       <hr />
@@ -20,7 +18,7 @@ export default function WithAsync() {
   )
 }
 
-export function WithoutUsingService() {
+export function FetchWithAsync() {
   const [getTestData, setGetTestData] = useState({
     status: 0,
     msg: "",
@@ -33,7 +31,8 @@ export function WithoutUsingService() {
 
   const getData = async () => {
     try {
-      const res = await axios.get("https://kisalayakgschool.com/api/getTestData", {
+      const res = await fetch("https://kisalayakgschool.com/api/getTestData", {
+        method: 'GET',
         headers: {
           'X-Mashape-Key': 'required',
           'Content-Type': 'application/x-www-form-urlencoded',
@@ -41,7 +40,12 @@ export function WithoutUsingService() {
           'appVersion': '1'
         }
       })
-      setGetTestData(res.data)
+      const data = await res.json()
+      if (data.status == 0) {
+        console.warn(data.msg)
+      } else {
+        setGetTestData(data)
+      }
     } catch (error) {
       console.log(error)
     }
@@ -53,7 +57,7 @@ export function WithoutUsingService() {
 
   return (
     <div>
-      <p>Hear we use <b>axios</b> <span style={{ color: 'red' }}>without using</span> any <b>services</b></p>
+      <p>Hear is <b>error handling</b> by using <b>fetch</b> <span style={{ color: 'red' }}>with using</span> <b>async</b></p>
       <Table striped bordered hover variant="warning">
         <thead>
           <tr>
@@ -76,7 +80,7 @@ export function WithoutUsingService() {
   )
 }
 
-export function WithUsingService() {
+export function FetchWithoutAsync() {
   const [getTestData, setGetTestData] = useState({
     status: 0,
     msg: "",
@@ -87,10 +91,28 @@ export function WithUsingService() {
     }
   })
 
-  const getData = async () => {
+  const getData = () => {
     try {
-      const res = await getStudent()
-      setGetTestData(res.data)
+      fetch("https://kisalayakgschool.com/api/getTestData", {
+        method: 'GET',
+        headers: {
+          'X-Mashape-Key': 'required',
+          'Content-Type': 'application/x-www-form-urlencoded',
+          'Accept': 'application/json',
+          'appVersion': '1'
+        }
+      }).then(res => res.json())
+        .then(data => {
+          if (data.status == 0) {
+            console.warn(data.msg)
+          } else {
+            setGetTestData(data)
+          }
+        })
+        .catch(err => {
+          throw new Error("May the the request url is invalid" + err);
+
+        })
     } catch (error) {
       console.log(error)
     }
@@ -102,7 +124,7 @@ export function WithUsingService() {
 
   return (
     <div>
-      <p>Hear we use <b>axios</b> <span style={{ color: 'red' }}>with using</span> any <b>services</b></p>
+      <p>Hear is <b>error handling</b> by using <b>fetch</b> <span style={{ color: 'red' }}>without using</span> <b>async</b></p>
       <Table striped bordered hover variant="warning">
         <thead>
           <tr>

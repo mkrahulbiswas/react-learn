@@ -5,9 +5,9 @@ import UsingFetch from "./UsingFetch/UsingFetch";
 export default function GetApi() {
   return (
     <>
-      <ErrorHandling />
-      <UsingFetch />
       <UsingAxios />
+      <UsingFetch />
+      <ErrorHandling />
     </>
   )
 }

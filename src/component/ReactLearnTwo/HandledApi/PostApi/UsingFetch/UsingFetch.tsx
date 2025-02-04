@@ -1,10 +1,10 @@
-import { useEffect, useState } from "react"
-import { Table } from "react-bootstrap"
+import { useState } from "react"
+import { Button, Col, Form, Row } from "react-bootstrap"
 
 export default function UsingFetch() {
   return (
     <>
-      <p>Hear is the example of <b>fetch</b> API</p>
+      <p>Hear is the example of <b>post api</b> by using <b>fetch</b></p>
       <div className="row bg-light">
         <div className="col-6 p-3">
           <WithAsync />
@@ -19,117 +19,93 @@ export default function UsingFetch() {
 }
 
 export function WithAsync() {
-  const [getTestData, setGetTestData] = useState({
-    status: 0,
-    msg: "",
-    title: '',
-    payload: {
-      data: [],
-      count: 0
-    }
-  })
-
-  const getData = async () => {
-    try {
-      const res = await fetch("https://kisalayakgschool.com/api/getTestData", {
-        method: 'GET',
-        headers: {
-          'X-Mashape-Key': 'required',
-          'Content-Type': 'application/x-www-form-urlencoded',
-          'Accept': 'application/json',
-          'appVersion': '1'
-        }
-      })
-      const data = await res.json()
-      setGetTestData(data)
-    } catch (error) {
-      console.log(error)
-    }
+  const [fromData, setFromData] = useState({ name: 'Rahul Biswas', email: 'biswas.rahul31@gmail.com', phone: '8436191135', class: '1' })
+  const saveTestData = async (event: any) => {
+    event.preventDefault()
+    const resp = await fetch('https://kisalayakgschool.com/api/saveTestData', {
+      method: 'POST',
+      headers: {
+        'Content-Type': 'application/json',
+        'Accept': 'application/json',
+        'appVersion': '1',
+        'mode': 'test'
+      },
+      body: JSON.stringify(fromData)
+    })
+    const data = await resp.json();
+    console.log('With Async-->', data)
   }
-
-  useEffect(() => {
-    getData()
-  }, [])
-
   return (
     <div>
       <p>Hear we use <b>fetch</b> <span style={{ color: 'red' }}>with using</span> <b>async</b></p>
-      <Table striped bordered hover variant="warning">
-        <thead>
-          <tr>
-            <th>Sl No</th>
-            <th>Name</th>
-          </tr>
-        </thead>
-        <tbody>
-          {
-            getTestData.payload.data.map((item: any, index: any) =>
-              <tr key={item.id}>
-                <td>{index + 1}</td>
-                <td>{item.name}</td>
-              </tr>
-            )
-          }
-        </tbody>
-      </Table>
+      <Form onSubmit={saveTestData}>
+        <Row className="col-12">
+          <Form.Group as={Col} controlId="formGridName" className="col-6 mb-3">
+            <Form.Label className="fw-bold mb-0">Name</Form.Label>
+            <Form.Control type="text" placeholder="Enter name" value={fromData.name} onChange={(e) => setFromData({ ...fromData, name: e.target.value })} />
+          </Form.Group>
+          <Form.Group as={Col} controlId="formGridEmail" className="col-6 mb-3">
+            <Form.Label className="fw-bold mb-0">Email</Form.Label>
+            <Form.Control type="text" placeholder="Enter email" value={fromData.email} onChange={(e) => setFromData({ ...fromData, email: e.target.value })} />
+          </Form.Group>
+          <Form.Group as={Col} controlId="formGridPhone" className="col-6 mb-3">
+            <Form.Label className="fw-bold mb-0">Phone</Form.Label>
+            <Form.Control type="text" placeholder="Enter phone" value={fromData.phone} onChange={(e) => setFromData({ ...fromData, phone: e.target.value })} />
+          </Form.Group>
+          <Form.Group as={Col} controlId="formGridClass" className="col-6 mb-3">
+            <Form.Label className="fw-bold mb-0">Class</Form.Label>
+            <Form.Control type="text" placeholder="Enter class" value={fromData.class} onChange={(e) => setFromData({ ...fromData, class: e.target.value })} />
+          </Form.Group>
+        </Row>
+        <Button variant="primary" type="submit">Save</Button>
+      </Form>
     </div>
   )
 }
 
 export function WithoutAsync() {
-  const [getTestData, setGetTestData] = useState({
-    status: 0,
-    msg: "",
-    title: '',
-    payload: {
-      data: [],
-      count: 0
-    }
-  })
-
-  const getData = () => {
-    try {
-      fetch("https://kisalayakgschool.com/api/getTestData", {
-        method: 'GET',
-        headers: {
-          'X-Mashape-Key': 'required',
-          'Content-Type': 'application/x-www-form-urlencoded',
-          'Accept': 'application/json',
-          'appVersion': '1'
-        }
-      }).then(res => res.json())
-        .then(data => setGetTestData(data))
-        .catch(err => console.log(err))
-    } catch (error) {
-      console.log(error)
-    }
+  const [fromData, setFromData] = useState({ name: 'Rahul Biswas', email: 'biswas.rahul31@gmail.com', phone: '8436191135', class: '1' })
+  const saveTestData = (event: any) => {
+    event.preventDefault()
+    fetch('https://kisalayakgschool.com/api/saveTestData', {
+      method: 'POST',
+      headers: {
+        'Content-Type': 'application/json',
+        'Accept': 'application/json',
+        'appVersion': '1',
+        'mode': 'test'
+      },
+      body: JSON.stringify(fromData)
+    }).then((result) => {
+      result.json().then((response) => {
+        console.log('Without Async-->', response)
+      })
+    }).catch(error => console.log({ error }))
   }
-
-  useEffect(() => {
-    getData()
-  }, [])
-
   return (
     <div>
       <p>Hear we use <b>fetch</b> <span style={{ color: 'red' }}>without using</span> <b>async</b></p>
-      <Table striped bordered hover variant="warning">
-        <thead>
-          <tr>
-            <th>Sl No</th>
-            <th>Name</th>
-          </tr>
-        </thead>
-        <tbody>
-          {
-            getTestData.payload.data.map((item: any, index: any) =>
-              <tr key={item.id}>
-                <td>{index + 1}</td>
-                <td>{item.name}</td>
-              </tr>
-            )
-          }
-        </tbody>
-      </Table>
+      <Form onSubmit={saveTestData}>
+        <Row className="col-12">
+          <Form.Group as={Col} controlId="formGridName" className="col-6 mb-3">
+            <Form.Label className="fw-bold mb-0">Name</Form.Label>
+            <Form.Control type="text" placeholder="Enter name" value={fromData.name} onChange={(e) => setFromData({ ...fromData, name: e.target.value })} />
+          </Form.Group>
+          <Form.Group as={Col} controlId="formGridEmail" className="col-6 mb-3">
+            <Form.Label className="fw-bold mb-0">Email</Form.Label>
+            <Form.Control type="text" placeholder="Enter email" value={fromData.email} onChange={(e) => setFromData({ ...fromData, email: e.target.value })} />
+          </Form.Group>
+          <Form.Group as={Col} controlId="formGridPhone" className="col-6 mb-3">
+            <Form.Label className="fw-bold mb-0">Phone</Form.Label>
+            <Form.Control type="text" placeholder="Enter phone" value={fromData.phone} onChange={(e) => setFromData({ ...fromData, phone: e.target.value })} />
+          </Form.Group>
+          <Form.Group as={Col} controlId="formGridClass" className="col-6 mb-3">
+            <Form.Label className="fw-bold mb-0">Class</Form.Label>
+            <Form.Control type="text" placeholder="Enter class" value={fromData.class} onChange={(e) => setFromData({ ...fromData, class: e.target.value })} />
+          </Form.Group>
+        </Row>
+        <Button variant="primary" type="submit">Save</Button>
+      </Form>
     </div>
   )
 }

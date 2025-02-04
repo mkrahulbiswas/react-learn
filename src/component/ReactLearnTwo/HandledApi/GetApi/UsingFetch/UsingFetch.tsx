@@ -4,7 +4,7 @@ import { Table } from "react-bootstrap"
 export default function UsingFetch() {
   return (
     <>
-      <p>Hear is the example of <b>fetch</b> API</p>
+      <p>Hear is the example of <b>get api</b> by using <b>fetch</b></p>
       <div className="row bg-light">
         <div className="col-6 p-3">
           <WithAsync />

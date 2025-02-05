@@ -1,6 +1,7 @@
 import axios from "axios"
 import { useState } from "react"
 import { Button, Col, Form, Row } from "react-bootstrap"
+import { saveStudent } from "../../../../../services/ReactLearnTwoService"
 
 export default function UsingAxios({ getData }: any) {
   return (
@@ -35,10 +36,10 @@ export default function UsingAxios({ getData }: any) {
 
 export function WithoutAsyncAndService({ getData }: any) {
   const [fromData, setFromData] = useState({ name: 'Rahul Biswas', email: 'biswas.rahul31@gmail.com', phone: '8436191135', class: '1' })
-  const saveTestData = async (event: any) => {
+  const saveTestData = (event: any) => {
     event.preventDefault()
     axios.post("https://kisalayakgschool.com/api/saveTestData",
-      { "body": fromData },
+      fromData,
       {
         headers: {
           'X-Mashape-Key': 'required',
@@ -83,21 +84,13 @@ export function WithoutAsyncAndService({ getData }: any) {
 
 export function WithoutAsyncButWithService({ getData }: any) {
   const [fromData, setFromData] = useState({ name: 'Rahul Biswas', email: 'biswas.rahul31@gmail.com', phone: '8436191135', class: '1' })
-  const saveTestData = async (event: any) => {
+  const saveTestData = (event: any) => {
     event.preventDefault()
-    const resp = await fetch('https://kisalayakgschool.com/api/saveTestData', {
-      method: 'POST',
-      headers: {
-        'Content-Type': 'application/json',
-        'Accept': 'application/json',
-        'appVersion': '1',
-        'mode': 'test'
-      },
-      body: JSON.stringify(fromData)
-    })
-    const data = await resp.json();
-    if (data) getData()
-    console.log('With Async-->', data)
+    saveStudent(fromData).then((resp) => {
+      if (resp.data.status == 1) {
+        getData()
+      }
+    }).catch((err) => console.log(err))
   }
 
   return (
@@ -132,19 +125,20 @@ export function WithAsyncButWithoutService({ getData }: any) {
   const [fromData, setFromData] = useState({ name: 'Rahul Biswas', email: 'biswas.rahul31@gmail.com', phone: '8436191135', class: '1' })
   const saveTestData = async (event: any) => {
     event.preventDefault()
-    const resp = await fetch('https://kisalayakgschool.com/api/saveTestData', {
-      method: 'POST',
-      headers: {
-        'Content-Type': 'application/json',
-        'Accept': 'application/json',
-        'appVersion': '1',
-        'mode': 'test'
-      },
-      body: JSON.stringify(fromData)
-    })
-    const data = await resp.json();
-    if (data) getData()
-    console.log('With Async-->', data)
+    const resp = await axios.post("https://kisalayakgschool.com/api/saveTestData",
+      fromData,
+      {
+        headers: {
+          'X-Mashape-Key': 'required',
+          'Content-Type': 'application/x-www-form-urlencoded',
+          'Accept': 'application/json',
+          'appVersion': '1',
+          'mode': 'test'
+        }
+      })
+    if (resp.data.status == 1) {
+      getData()
+    }
   }
 
   return (
@@ -179,19 +173,10 @@ export function WithAsyncAndService({ getData }: any) {
   const [fromData, setFromData] = useState({ name: 'Rahul Biswas', email: 'biswas.rahul31@gmail.com', phone: '8436191135', class: '1' })
   const saveTestData = async (event: any) => {
     event.preventDefault()
-    const resp = await fetch('https://kisalayakgschool.com/api/saveTestData', {
-      method: 'POST',
-      headers: {
-        'Content-Type': 'application/json',
-        'Accept': 'application/json',
-        'appVersion': '1',
-        'mode': 'test'
-      },
-      body: JSON.stringify(fromData)
-    })
-    const data = await resp.json();
-    if (data) getData()
-    console.log('With Async-->', data)
+    const resp = await saveStudent(fromData)
+    if (resp.data.status == 1) {
+      getData()
+    }
   }
 
   return (

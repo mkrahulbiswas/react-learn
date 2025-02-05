@@ -5,8 +5,8 @@ import PostApi from "./PostApi/PostApi"
 function HandledApiApp() {
   return (
     <>
-      <DeleteApi />
       <PostApi />
+      <DeleteApi />
       <GetApi />
     </>
   )

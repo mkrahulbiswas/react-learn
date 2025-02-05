@@ -8,22 +8,22 @@ export default function UsingAxios({ getData }: any) {
     <>
       <p>Hear is the example of <b>delete api</b> by using <b>axios</b> <span style={{ color: 'red' }}>without using</span> <b>async await</b> type</p>
       <div className="row">
-        <div className="col-6 mb-4">
+        <div className="col-sm-6 col-md-6 col-lg-3 col-xl-3 mb-3">
           <div className="p-3 bg-light">
             <WithoutAsyncAndService getData={getData} />
           </div>
         </div>
-        <div className="col-6 mb-4">
+        <div className="col-sm-6 col-md-6 col-lg-3 col-xl-3 mb-3">
           <div className="p-3 bg-light">
             <WithoutAsyncButWithService getData={getData} />
           </div>
         </div>
-        <div className="col-6 mb-4">
+        <div className="col-sm-6 col-md-6 col-lg-3 col-xl-3 mb-3">
           <div className="p-3 bg-light">
             <WithAsyncButWithoutService getData={getData} />
           </div>
         </div>
-        <div className="col-6 mb-4">
+        <div className="col-sm-6 col-md-6 col-lg-3 col-xl-3 mb-3">
           <div className="p-3 bg-light">
             <WithAsyncAndService getData={getData} />
           </div>

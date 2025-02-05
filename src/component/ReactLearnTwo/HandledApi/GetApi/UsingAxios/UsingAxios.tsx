@@ -7,17 +7,17 @@ export default function UsingAxios() {
   return (
     <>
       <p>Hear is the example of <b>get api</b> by using <b>axios</b> <span style={{ color: 'red' }}>without using</span> <b>async await</b> type</p>
-      <div className="row bg-light">
-        <div className="col-6 p-3">
+      <div className="row">
+        <div className="col-sm-6 col-md-6 col-lg-3 col-xl-3 mb-3">
           <WithoutAsyncAndService />
         </div>
-        <div className="col-6 p-3">
+        <div className="col-sm-6 col-md-6 col-lg-3 col-xl-3 mb-3">
           <WithoutAsyncButWithService />
         </div>
-        <div className="col-6 p-3">
+        <div className="col-sm-6 col-md-6 col-lg-3 col-xl-3 mb-3">
           <WithAsyncButWithoutService />
         </div>
-        <div className="col-6 p-3">
+        <div className="col-sm-6 col-md-6 col-lg-3 col-xl-3 mb-3">
           <WithAsyncAndService />
         </div>
       </div>

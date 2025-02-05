@@ -5,11 +5,11 @@ export default function UsingFetch() {
   return (
     <>
       <p>Hear is the example of <b>get api</b> by using <b>fetch</b></p>
-      <div className="row bg-light">
-        <div className="col-6 p-3">
+      <div className="row">
+        <div className="col-sm-6 col-md-6 col-lg-3 col-xl-3 mb-3">
           <WithAsync />
         </div>
-        <div className="col-6 p-3">
+        <div className="col-sm-6 col-md-6 col-lg-3 col-xl-3 mb-3">
           <WithoutAsync />
         </div>
       </div>

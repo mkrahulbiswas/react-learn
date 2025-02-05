@@ -5,12 +5,16 @@ export default function ErrorHandling() {
   return (
     <>
       <p>Hear is the example of <b>error handling</b></p>
-      <div className="row bg-light">
-        <div className="col-6 p-3">
-          <FetchWithAsync />
+      <div className="row">
+        <div className="col-sm-6 col-md-6 col-lg-3 col-xl-3 mb-3">
+          <div className="bg-light p-3">
+            <FetchWithAsync />
+          </div>
         </div>
-        <div className="col-6 p-3">
-          <FetchWithoutAsync />
+        <div className="col-sm-6 col-md-6 col-lg-3 col-xl-3 mb-3">
+          <div className="bg-light p-3">
+            <FetchWithoutAsync />
+          </div>
         </div>
       </div>
       <hr />

@@ -6,12 +6,12 @@ export default function UsingFetch({ getData }: any) {
     <>
       <p>Hear is the example of <b>patch api</b> by using <b>fetch</b></p>
       <div className="row">
-        <div className="col-6 mb-4">
+        <div className="col-sm-6 col-md-6 col-lg-3 col-xl-3 mb-3 mb-4">
           <div className="bg-light p-3">
             <WithAsync getData={getData} />
           </div>
         </div>
-        <div className="col-6 mb-4">
+        <div className="col-sm-6 col-md-6 col-lg-3 col-xl-3 mb-3 mb-4">
           <div className="bg-light p-3">
             <WithoutAsync getData={getData} />
           </div>

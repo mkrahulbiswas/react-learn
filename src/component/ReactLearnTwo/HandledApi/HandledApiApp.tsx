@@ -6,7 +6,7 @@ function HandledApiApp() {
   return (
     <>
       <DeleteApi />
-      {/* <PostApi /> */}
+      <PostApi />
       <GetApi />
     </>
   )

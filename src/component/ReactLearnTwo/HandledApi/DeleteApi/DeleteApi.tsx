@@ -65,9 +65,9 @@ export default function DeleteApi() {
         </tbody>
       </Table>
       <br /><br />
-      <ErrorHandling getData={getData} />
-      <UsingAxios getData={getData} />
       <UsingFetch getData={getData} />
+      <UsingAxios getData={getData} />
+      <ErrorHandling getData={getData} />
     </>
   )
 }

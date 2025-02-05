@@ -4,7 +4,7 @@ import UsingFetch from "./UsingFetch/UsingFetch";
 import { Table } from "react-bootstrap";
 import ErrorHandling from "./ErrorHandling/ErrorHandling";
 
-export default function PostApi() {
+export default function PutApi() {
   const [getTestData, setGetTestData] = useState({
     status: 0,
     msg: "",

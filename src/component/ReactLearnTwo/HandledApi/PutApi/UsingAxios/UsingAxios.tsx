@@ -6,7 +6,7 @@ import { saveStudent } from "../../../../../services/ReactLearnTwoService"
 export default function UsingAxios({ getData }: any) {
   return (
     <>
-      <p>Hear is the example of <b>post api</b> by using <b>axios</b> <span style={{ color: 'red' }}>without using</span> <b>async await</b> type</p>
+      <p>Hear is the example <b>put api</b> by using <b>axios</b> <span style={{ color: 'red' }}>without using</span> <b>async await</b> type</p>
       <div className="row">
         <div className="col-6 mb-4">
           <div className="p-3 bg-light">

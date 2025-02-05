@@ -6,7 +6,7 @@ import { getStudent } from "../../../../../services/ReactLearnTwoService"
 export default function UsingAxios() {
   return (
     <>
-      <p>Hear is the example of <b>axios</b> <span style={{ color: 'red' }}>without using</span> <b>async await</b> type</p>
+      <p>Hear is the example of <b>get api</b> by using <b>axios</b> <span style={{ color: 'red' }}>without using</span> <b>async await</b> type</p>
       <div className="row bg-light">
         <div className="col-6 p-3">
           <WithoutAsyncAndService />

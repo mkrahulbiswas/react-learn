@@ -2,6 +2,7 @@ import { useEffect, useState } from "react";
 import UsingAxios from "./UsingAxios/UsingAxios";
 import UsingFetch from "./UsingFetch/UsingFetch";
 import { Table } from "react-bootstrap";
+import ErrorHandling from "./ErrorHandling/ErrorHandling";
 
 export default function PostApi() {
   const [getTestData, setGetTestData] = useState({
@@ -66,7 +67,7 @@ export default function PostApi() {
       <br /><br />
       <UsingAxios getData={getData} />
       <UsingFetch getData={getData} />
-      {/* <ErrorHandling getData={getData} /> */}
+      <ErrorHandling getData={getData} />
     </>
   )
 }

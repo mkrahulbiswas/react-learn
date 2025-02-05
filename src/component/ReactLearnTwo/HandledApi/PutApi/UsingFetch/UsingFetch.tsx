@@ -1,16 +1,20 @@
 import { useState } from "react"
 import { Button, Col, Form, Row } from "react-bootstrap"
 
-export default function ErrorHandling({ getData }: any) {
+export default function UsingFetch({ getData }: any) {
   return (
     <>
-      <p>Hear is the example of <b>error handling</b></p>
-      <div className="row bg-light">
-        <div className="col-6 p-3">
-          <FetchWithAsync getData={getData} />
+      <p>Hear is the example of <b>put api</b> by using <b>fetch</b></p>
+      <div className="row">
+        <div className="col-6 mb-4">
+          <div className="bg-light p-3">
+            <WithAsync getData={getData} />
+          </div>
         </div>
-        <div className="col-6 p-3">
-          <FetchWithoutAsync getData={getData} />
+        <div className="col-6 mb-4">
+          <div className="bg-light p-3">
+            <WithoutAsync getData={getData} />
+          </div>
         </div>
       </div>
       <hr />
@@ -18,12 +22,13 @@ export default function ErrorHandling({ getData }: any) {
   )
 }
 
-export function FetchWithAsync({ getData }: any) {
+export function WithAsync({ getData }: any) {
   const [fromData, setFromData] = useState({ name: 'Rahul Biswas', email: 'biswas.rahul31@gmail.com', phone: '8436191135', class: '1' })
-  const saveTestData = async (event: any) => {
+  const [targetId, setTargetId] = useState(0)
+  const updateTestData = async (event: any) => {
     event.preventDefault()
-    const resp = await fetch('https://kisalayakgschool.com/api/saveTestData', {
-      method: 'POST',
+    const resp = await fetch('https://kisalayakgschool.com/api/updateTestData/' + targetId, {
+      method: 'PUT',
       headers: {
         'Content-Type': 'application/json',
         'Accept': 'application/json',
@@ -33,17 +38,13 @@ export function FetchWithAsync({ getData }: any) {
       body: JSON.stringify(fromData)
     })
     const data = await resp.json();
-    if (data.status == 1) {
-      getData()
-    } else {
-      console.warn(data.msg)
-      console.warn(data.payload)
-    }
+    if (data) getData()
+    console.log('With Async-->', data)
   }
   return (
     <div>
       <p>Hear we use <b>fetch</b> <span style={{ color: 'red' }}>with using</span> <b>async</b></p>
-      <Form onSubmit={saveTestData}>
+      <Form onSubmit={updateTestData}>
         <Row className="col-12">
           <Form.Group as={Col} controlId="formGridName" className="col-6 mb-3">
             <Form.Label className="fw-bold mb-0">Name</Form.Label>
@@ -61,19 +62,26 @@ export function FetchWithAsync({ getData }: any) {
             <Form.Label className="fw-bold mb-0">Class</Form.Label>
             <Form.Control type="text" placeholder="Enter class" value={fromData.class} onChange={(e) => setFromData({ ...fromData, class: e.target.value })} />
           </Form.Group>
+          <Form.Group as={Col} controlId="formGridClass" className="col-6 mb-3">
+            <Form.Label className="fw-bold mb-0">Put id to delete</Form.Label>
+            <Form.Control type="text" placeholder="Enter Id" value={targetId} onChange={(e: any) => setTargetId(e.target.value)} />
+          </Form.Group>
+          <Form.Group as={Col} controlId="formGridClass" className="col-6 mb-3">
+            <Button variant="info" className="mt-4" type="submit">Update</Button>
+          </Form.Group>
         </Row>
-        <Button variant="primary" type="submit">Save</Button>
       </Form>
     </div>
   )
 }
 
-export function FetchWithoutAsync({ getData }: any) {
+export function WithoutAsync({ getData }: any) {
   const [fromData, setFromData] = useState({ name: 'Rahul Biswas', email: 'biswas.rahul31@gmail.com', phone: '8436191135', class: '1' })
-  const saveTestData = (event: any) => {
+  const [targetId, setTargetId] = useState(0)
+  const updateTestData = (event: any) => {
     event.preventDefault()
-    fetch('https://kisalayakgschool.com/api/saveTestData', {
-      method: 'POST',
+    fetch('https://kisalayakgschool.com/api/updateTestData/' + targetId, {
+      method: 'PUT',
       headers: {
         'Content-Type': 'application/json',
         'Accept': 'application/json',
@@ -81,23 +89,17 @@ export function FetchWithoutAsync({ getData }: any) {
         'mode': 'test'
       },
       body: JSON.stringify(fromData)
-    }).then((resp) => {
-      resp.json().then((data) => {
-        if (data.status == 1) {
-          getData()
-        } else {
-          console.warn(data.msg)
-          console.warn(data.payload)
-        }
+    }).then((result) => {
+      result.json().then((response) => {
+        console.log('Without Async-->', response)
+        getData()
       })
-    }).catch(err => {
-      throw new Error("May the the request url is invalid" + err);
-    })
+    }).catch(error => console.log({ error }))
   }
   return (
     <div>
       <p>Hear we use <b>fetch</b> <span style={{ color: 'red' }}>without using</span> <b>async</b></p>
-      <Form onSubmit={saveTestData}>
+      <Form onSubmit={updateTestData}>
         <Row className="col-12">
           <Form.Group as={Col} controlId="formGridName" className="col-6 mb-3">
             <Form.Label className="fw-bold mb-0">Name</Form.Label>
@@ -115,8 +117,14 @@ export function FetchWithoutAsync({ getData }: any) {
             <Form.Label className="fw-bold mb-0">Class</Form.Label>
             <Form.Control type="text" placeholder="Enter class" value={fromData.class} onChange={(e) => setFromData({ ...fromData, class: e.target.value })} />
           </Form.Group>
+          <Form.Group as={Col} controlId="formGridClass" className="col-6 mb-3">
+            <Form.Label className="fw-bold mb-0">Put id to delete</Form.Label>
+            <Form.Control type="text" placeholder="Enter Id" value={targetId} onChange={(e: any) => setTargetId(e.target.value)} />
+          </Form.Group>
+          <Form.Group as={Col} controlId="formGridClass" className="col-6 mb-3">
+            <Button variant="info" className="mt-4" type="submit">Update</Button>
+          </Form.Group>
         </Row>
-        <Button variant="primary" type="submit">Save</Button>
       </Form>
     </div>
   )

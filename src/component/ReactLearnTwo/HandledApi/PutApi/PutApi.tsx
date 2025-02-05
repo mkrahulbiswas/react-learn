@@ -4,7 +4,7 @@ import UsingFetch from "./UsingFetch/UsingFetch";
 import { Table } from "react-bootstrap";
 import ErrorHandling from "./ErrorHandling/ErrorHandling";
 
-export default function DeleteApi() {
+export default function PutApi() {
   const [getTestData, setGetTestData] = useState({
     status: 0,
     msg: "",
@@ -65,8 +65,8 @@ export default function DeleteApi() {
         </tbody>
       </Table>
       <br /><br />
-      <UsingFetch getData={getData} />
       <UsingAxios getData={getData} />
+      <UsingFetch getData={getData} />
       <ErrorHandling getData={getData} />
     </>
   )

@@ -1,7 +1,7 @@
 import axios from "axios"
 import { useEffect, useState } from "react"
 import { Table } from "react-bootstrap"
-import { getStudent } from "../../../../../services/ReactLearnTwoService"
+import { getStudent } from "../../../../../../services/ReactLearnTwoService"
 
 export default function UsingAxios() {
   return (

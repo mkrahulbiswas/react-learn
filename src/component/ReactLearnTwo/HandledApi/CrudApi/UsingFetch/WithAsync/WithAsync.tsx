@@ -1,7 +1,7 @@
 export default function WithAsync() {
   return (
     <>
-      gd
+      <p>With Async Fetch</p>
     </>
   )
 }

@@ -1,7 +1,7 @@
 export default function WithoutAsync() {
   return (
     <>
-      gj
+      <p>Without Async Fetch</p>
     </>
   )
 }

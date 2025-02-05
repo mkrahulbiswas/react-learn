@@ -1,7 +1,7 @@
 export default function WithoutAsync() {
   return (
     <>
-      ff
+      <p>Without Async Axios</p>
     </>
   )
 }

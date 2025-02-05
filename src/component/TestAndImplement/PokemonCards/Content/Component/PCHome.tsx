@@ -1,15 +1,15 @@
 import React, { useEffect, useState } from 'react'
 import PCCards from './PCCards'
 function PCHome() {
-  const [cards, setCards] = useState([null])
+  const [cards, setCards] = useState<any>([])
   const getCards = async () => {
     try {
-      const res = await fetch('https://pokeapi.co/api/v2/pokemon?limit=50')
+      const res = await fetch('https://pokeapi.co/api/v2/pokemon?limit=10')
       const data = await res.json()
       const detailData = data.results.map(async (row: any) => {
         const res = await fetch(row.url)
-        const data = await res.json()
-        return data
+        const finalData = await res.json()
+        return finalData
       })
       const detailDataFinal = await Promise.all(detailData)
       console.log(detailDataFinal)
@@ -22,6 +22,7 @@ function PCHome() {
   useEffect(() => {
     getCards()
   }, [])
+
   return (
     <React.Fragment>
       <section className='pc_content'>
@@ -36,7 +37,7 @@ function PCHome() {
                     </>
                   )
                 })
-                : null
+                : <p>No data found</p>
             }
           </div>
         </div>

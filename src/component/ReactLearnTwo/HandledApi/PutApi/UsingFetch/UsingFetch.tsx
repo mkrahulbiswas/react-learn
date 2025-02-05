@@ -63,7 +63,7 @@ export function WithAsync({ getData }: any) {
             <Form.Control type="text" placeholder="Enter class" value={fromData.class} onChange={(e) => setFromData({ ...fromData, class: e.target.value })} />
           </Form.Group>
           <Form.Group as={Col} controlId="formGridClass" className="col-6 mb-3">
-            <Form.Label className="fw-bold mb-0">Put id to delete</Form.Label>
+            <Form.Label className="fw-bold mb-0">Student Id</Form.Label>
             <Form.Control type="text" placeholder="Enter Id" value={targetId} onChange={(e: any) => setTargetId(e.target.value)} />
           </Form.Group>
           <Form.Group as={Col} controlId="formGridClass" className="col-6 mb-3">
@@ -118,7 +118,7 @@ export function WithoutAsync({ getData }: any) {
             <Form.Control type="text" placeholder="Enter class" value={fromData.class} onChange={(e) => setFromData({ ...fromData, class: e.target.value })} />
           </Form.Group>
           <Form.Group as={Col} controlId="formGridClass" className="col-6 mb-3">
-            <Form.Label className="fw-bold mb-0">Put id to delete</Form.Label>
+            <Form.Label className="fw-bold mb-0">Student Id</Form.Label>
             <Form.Control type="text" placeholder="Enter Id" value={targetId} onChange={(e: any) => setTargetId(e.target.value)} />
           </Form.Group>
           <Form.Group as={Col} controlId="formGridClass" className="col-6 mb-3">

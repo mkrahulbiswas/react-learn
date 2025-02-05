@@ -48,6 +48,7 @@ export default function PatchApi() {
             <th>Email</th>
             <th>Phone</th>
             <th>Class</th>
+            <th>Status</th>
           </tr>
         </thead>
         <tbody>
@@ -59,14 +60,15 @@ export default function PatchApi() {
                 <td>{item.email}</td>
                 <td>{item.phone}</td>
                 <td>{item.class}</td>
+                <td>{item.status}</td>
               </tr>
             )
           }
         </tbody>
       </Table>
       <br /><br />
-      <UsingFetch getData={getData} />
       <UsingAxios getData={getData} />
+      <UsingFetch getData={getData} />
       <ErrorHandling getData={getData} />
     </>
   )

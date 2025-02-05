@@ -37,7 +37,8 @@ export function FetchWithAsync() {
           'X-Mashape-Key': 'required',
           'Content-Type': 'application/x-www-form-urlencoded',
           'Accept': 'application/json',
-          'appVersion': '1'
+          'appVersion': '1',
+          'mode': 'test'
         }
       })
       const data = await res.json()
@@ -99,7 +100,8 @@ export function FetchWithoutAsync() {
           'X-Mashape-Key': 'required',
           'Content-Type': 'application/x-www-form-urlencoded',
           'Accept': 'application/json',
-          'appVersion': '1'
+          'appVersion': '1',
+          'mode': 'test'
         }
       }).then(res => res.json())
         .then(data => {

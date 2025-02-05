@@ -9,7 +9,8 @@ function DeleteData() {
       headers: {
         'Content-Type': 'application/json',
         'Accept': 'application/json',
-        'appVersion': '1'
+        'appVersion': '1',
+        'mode': 'test'
       },
     }).then((result) => {
       result.json().then((response) => {

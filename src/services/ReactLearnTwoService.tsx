@@ -1,15 +1,20 @@
 import axios from "axios";
 
 const api = axios.create({
-    baseURL: "https://kisalayakgschool.com/api/getTestData",
+    baseURL: "https://kisalayakgschool.com/api/",
     headers: {
         'X-Mashape-Key': 'required',
         'Content-Type': 'application/x-www-form-urlencoded',
         'Accept': 'application/json',
-        'appVersion': '1'
+        'appVersion': '1',
+        'mode': 'test'
     },
 })
 
 export const getStudent = () => {
-    return api.get("")
+    return api.get("getTestData")
+}
+
+export const deleteStudent = (id: any) => {
+    return api.delete('deleteTestData/' + id)
 }

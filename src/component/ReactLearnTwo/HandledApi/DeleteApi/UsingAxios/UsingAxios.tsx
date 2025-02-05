@@ -1,6 +1,7 @@
 import axios from "axios"
 import { useState } from "react"
 import { Button, Col, Form, Row } from "react-bootstrap"
+import { deleteStudent } from "../../../../../services/ReactLearnTwoService"
 
 export default function UsingAxios({ getData }: any) {
   return (
@@ -34,11 +35,10 @@ export default function UsingAxios({ getData }: any) {
 }
 
 export function WithoutAsyncAndService({ getData }: any) {
-  const [fromData, setFromData] = useState({ name: 'Rahul Biswas', email: 'biswas.rahul31@gmail.com', phone: '8436191135', class: '1' })
-  const saveTestData = async (event: any) => {
+  const [targetId, setTargetId] = useState(0)
+  const saveTestData = (event: any) => {
     event.preventDefault()
-    axios.post("https://kisalayakgschool.com/api/saveTestData",
-      { "body": fromData },
+    axios.delete(`https://kisalayakgschool.com/api/deleteTestData/${targetId}`,
       {
         headers: {
           'X-Mashape-Key': 'required',
@@ -48,7 +48,7 @@ export function WithoutAsyncAndService({ getData }: any) {
           'mode': 'test'
         }
       }).then((res) => {
-        console.log(res);
+        console.log(res)
         getData()
       }).catch((err) => console.log(err))
   }
@@ -59,45 +59,26 @@ export function WithoutAsyncAndService({ getData }: any) {
       <Form onSubmit={saveTestData}>
         <Row className="col-12">
           <Form.Group as={Col} controlId="formGridName" className="col-6 mb-3">
-            <Form.Label className="fw-bold mb-0">Name</Form.Label>
-            <Form.Control type="text" placeholder="Enter name" value={fromData.name} onChange={(e) => setFromData({ ...fromData, name: e.target.value })} />
+            <Form.Label className="fw-bold mb-0">Put id to delete</Form.Label>
+            <Form.Control type="text" placeholder="Enter name" value={targetId} onChange={(e: any) => setTargetId(e.target.value)} />
           </Form.Group>
-          <Form.Group as={Col} controlId="formGridEmail" className="col-6 mb-3">
-            <Form.Label className="fw-bold mb-0">Email</Form.Label>
-            <Form.Control type="text" placeholder="Enter email" value={fromData.email} onChange={(e) => setFromData({ ...fromData, email: e.target.value })} />
-          </Form.Group>
-          <Form.Group as={Col} controlId="formGridPhone" className="col-6 mb-3">
-            <Form.Label className="fw-bold mb-0">Phone</Form.Label>
-            <Form.Control type="text" placeholder="Enter phone" value={fromData.phone} onChange={(e) => setFromData({ ...fromData, phone: e.target.value })} />
-          </Form.Group>
-          <Form.Group as={Col} controlId="formGridClass" className="col-6 mb-3">
-            <Form.Label className="fw-bold mb-0">Class</Form.Label>
-            <Form.Control type="text" placeholder="Enter class" value={fromData.class} onChange={(e) => setFromData({ ...fromData, class: e.target.value })} />
+          <Form.Group as={Col} controlId="formGridName" className="col-6 mb-3 mt-4">
+            <Button variant="danger" type="submit">Delete</Button>
           </Form.Group>
         </Row>
-        <Button variant="primary" type="submit">Save</Button>
       </Form>
     </div>
   )
 }
 
 export function WithoutAsyncButWithService({ getData }: any) {
-  const [fromData, setFromData] = useState({ name: 'Rahul Biswas', email: 'biswas.rahul31@gmail.com', phone: '8436191135', class: '1' })
-  const saveTestData = async (event: any) => {
+  const [targetId, setTargetId] = useState(0)
+  const saveTestData = (event: any) => {
     event.preventDefault()
-    const resp = await fetch('https://kisalayakgschool.com/api/saveTestData', {
-      method: 'POST',
-      headers: {
-        'Content-Type': 'application/json',
-        'Accept': 'application/json',
-        'appVersion': '1',
-        'mode': 'test'
-      },
-      body: JSON.stringify(fromData)
-    })
-    const data = await resp.json();
-    if (data) getData()
-    console.log('With Async-->', data)
+    deleteStudent(targetId).then((res) => {
+      console.log(res)
+      getData()
+    }).catch((err) => console.log(err))
   }
 
   return (
@@ -106,45 +87,35 @@ export function WithoutAsyncButWithService({ getData }: any) {
       <Form onSubmit={saveTestData}>
         <Row className="col-12">
           <Form.Group as={Col} controlId="formGridName" className="col-6 mb-3">
-            <Form.Label className="fw-bold mb-0">Name</Form.Label>
-            <Form.Control type="text" placeholder="Enter name" value={fromData.name} onChange={(e) => setFromData({ ...fromData, name: e.target.value })} />
+            <Form.Label className="fw-bold mb-0">Put id to delete</Form.Label>
+            <Form.Control type="text" placeholder="Enter name" value={targetId} onChange={(e: any) => setTargetId(e.target.value)} />
           </Form.Group>
-          <Form.Group as={Col} controlId="formGridEmail" className="col-6 mb-3">
-            <Form.Label className="fw-bold mb-0">Email</Form.Label>
-            <Form.Control type="text" placeholder="Enter email" value={fromData.email} onChange={(e) => setFromData({ ...fromData, email: e.target.value })} />
-          </Form.Group>
-          <Form.Group as={Col} controlId="formGridPhone" className="col-6 mb-3">
-            <Form.Label className="fw-bold mb-0">Phone</Form.Label>
-            <Form.Control type="text" placeholder="Enter phone" value={fromData.phone} onChange={(e) => setFromData({ ...fromData, phone: e.target.value })} />
-          </Form.Group>
-          <Form.Group as={Col} controlId="formGridClass" className="col-6 mb-3">
-            <Form.Label className="fw-bold mb-0">Class</Form.Label>
-            <Form.Control type="text" placeholder="Enter class" value={fromData.class} onChange={(e) => setFromData({ ...fromData, class: e.target.value })} />
+          <Form.Group as={Col} controlId="formGridName" className="col-6 mb-3 mt-4">
+            <Button variant="danger" type="submit">Delete</Button>
           </Form.Group>
         </Row>
-        <Button variant="primary" type="submit">Save</Button>
       </Form>
     </div>
   )
 }
 
 export function WithAsyncButWithoutService({ getData }: any) {
-  const [fromData, setFromData] = useState({ name: 'Rahul Biswas', email: 'biswas.rahul31@gmail.com', phone: '8436191135', class: '1' })
+  const [targetId, setTargetId] = useState(0)
   const saveTestData = async (event: any) => {
     event.preventDefault()
-    const resp = await fetch('https://kisalayakgschool.com/api/saveTestData', {
-      method: 'POST',
-      headers: {
-        'Content-Type': 'application/json',
-        'Accept': 'application/json',
-        'appVersion': '1',
-        'mode': 'test'
-      },
-      body: JSON.stringify(fromData)
-    })
-    const data = await resp.json();
-    if (data) getData()
-    console.log('With Async-->', data)
+    const resp = await axios.delete(`https://kisalayakgschool.com/api/deleteTestData/${targetId}`,
+      {
+        headers: {
+          'X-Mashape-Key': 'required',
+          'Content-Type': 'application/x-www-form-urlencoded',
+          'Accept': 'application/json',
+          'appVersion': '1',
+          'mode': 'test'
+        }
+      })
+    if (resp.data.status == 1) {
+      getData()
+    }
   }
 
   return (
@@ -153,45 +124,26 @@ export function WithAsyncButWithoutService({ getData }: any) {
       <Form onSubmit={saveTestData}>
         <Row className="col-12">
           <Form.Group as={Col} controlId="formGridName" className="col-6 mb-3">
-            <Form.Label className="fw-bold mb-0">Name</Form.Label>
-            <Form.Control type="text" placeholder="Enter name" value={fromData.name} onChange={(e) => setFromData({ ...fromData, name: e.target.value })} />
+            <Form.Label className="fw-bold mb-0">Put id to delete</Form.Label>
+            <Form.Control type="text" placeholder="Enter name" value={targetId} onChange={(e: any) => setTargetId(e.target.value)} />
           </Form.Group>
-          <Form.Group as={Col} controlId="formGridEmail" className="col-6 mb-3">
-            <Form.Label className="fw-bold mb-0">Email</Form.Label>
-            <Form.Control type="text" placeholder="Enter email" value={fromData.email} onChange={(e) => setFromData({ ...fromData, email: e.target.value })} />
-          </Form.Group>
-          <Form.Group as={Col} controlId="formGridPhone" className="col-6 mb-3">
-            <Form.Label className="fw-bold mb-0">Phone</Form.Label>
-            <Form.Control type="text" placeholder="Enter phone" value={fromData.phone} onChange={(e) => setFromData({ ...fromData, phone: e.target.value })} />
-          </Form.Group>
-          <Form.Group as={Col} controlId="formGridClass" className="col-6 mb-3">
-            <Form.Label className="fw-bold mb-0">Class</Form.Label>
-            <Form.Control type="text" placeholder="Enter class" value={fromData.class} onChange={(e) => setFromData({ ...fromData, class: e.target.value })} />
+          <Form.Group as={Col} controlId="formGridName" className="col-6 mb-3 mt-4">
+            <Button variant="danger" type="submit">Delete</Button>
           </Form.Group>
         </Row>
-        <Button variant="primary" type="submit">Save</Button>
       </Form>
     </div>
   )
 }
 
 export function WithAsyncAndService({ getData }: any) {
-  const [fromData, setFromData] = useState({ name: 'Rahul Biswas', email: 'biswas.rahul31@gmail.com', phone: '8436191135', class: '1' })
+  const [targetId, setTargetId] = useState(0)
   const saveTestData = async (event: any) => {
     event.preventDefault()
-    const resp = await fetch('https://kisalayakgschool.com/api/saveTestData', {
-      method: 'POST',
-      headers: {
-        'Content-Type': 'application/json',
-        'Accept': 'application/json',
-        'appVersion': '1',
-        'mode': 'test'
-      },
-      body: JSON.stringify(fromData)
-    })
-    const data = await resp.json();
-    if (data) getData()
-    console.log('With Async-->', data)
+    const resp = await deleteStudent(targetId)
+    if (resp.data.status == 1) {
+      getData()
+    }
   }
 
   return (
@@ -200,23 +152,13 @@ export function WithAsyncAndService({ getData }: any) {
       <Form onSubmit={saveTestData}>
         <Row className="col-12">
           <Form.Group as={Col} controlId="formGridName" className="col-6 mb-3">
-            <Form.Label className="fw-bold mb-0">Name</Form.Label>
-            <Form.Control type="text" placeholder="Enter name" value={fromData.name} onChange={(e) => setFromData({ ...fromData, name: e.target.value })} />
+            <Form.Label className="fw-bold mb-0">Put id to delete</Form.Label>
+            <Form.Control type="text" placeholder="Enter name" value={targetId} onChange={(e: any) => setTargetId(e.target.value)} />
           </Form.Group>
-          <Form.Group as={Col} controlId="formGridEmail" className="col-6 mb-3">
-            <Form.Label className="fw-bold mb-0">Email</Form.Label>
-            <Form.Control type="text" placeholder="Enter email" value={fromData.email} onChange={(e) => setFromData({ ...fromData, email: e.target.value })} />
-          </Form.Group>
-          <Form.Group as={Col} controlId="formGridPhone" className="col-6 mb-3">
-            <Form.Label className="fw-bold mb-0">Phone</Form.Label>
-            <Form.Control type="text" placeholder="Enter phone" value={fromData.phone} onChange={(e) => setFromData({ ...fromData, phone: e.target.value })} />
-          </Form.Group>
-          <Form.Group as={Col} controlId="formGridClass" className="col-6 mb-3">
-            <Form.Label className="fw-bold mb-0">Class</Form.Label>
-            <Form.Control type="text" placeholder="Enter class" value={fromData.class} onChange={(e) => setFromData({ ...fromData, class: e.target.value })} />
+          <Form.Group as={Col} controlId="formGridName" className="col-6 mb-3 mt-4">
+            <Button variant="danger" type="submit">Delete</Button>
           </Form.Group>
         </Row>
-        <Button variant="primary" type="submit">Save</Button>
       </Form>
     </div>
   )

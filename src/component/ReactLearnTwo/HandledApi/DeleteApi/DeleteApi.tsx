@@ -2,6 +2,7 @@ import { useEffect, useState } from "react";
 import UsingAxios from "./UsingAxios/UsingAxios";
 import UsingFetch from "./UsingFetch/UsingFetch";
 import { Table } from "react-bootstrap";
+import ErrorHandling from "./ErrorHandling/ErrorHandling";
 
 export default function DeleteApi() {
   const [getTestData, setGetTestData] = useState({
@@ -22,7 +23,8 @@ export default function DeleteApi() {
           'X-Mashape-Key': 'required',
           'Content-Type': 'application/x-www-form-urlencoded',
           'Accept': 'application/json',
-          'appVersion': '1'
+          'appVersion': '1',
+          'mode': 'test'
         }
       })
       const data = await res.json()
@@ -63,9 +65,9 @@ export default function DeleteApi() {
         </tbody>
       </Table>
       <br /><br />
+      <ErrorHandling getData={getData} />
+      <UsingAxios getData={getData} />
       <UsingFetch getData={getData} />
-      {/* <UsingAxios getData={getData} /> */}
-      {/* <ErrorHandling getData={getData} /> */}
     </>
   )
 }

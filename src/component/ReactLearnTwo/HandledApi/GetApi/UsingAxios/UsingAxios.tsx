@@ -44,7 +44,8 @@ export function WithoutAsyncAndService() {
           'X-Mashape-Key': 'required',
           'Content-Type': 'application/x-www-form-urlencoded',
           'Accept': 'application/json',
-          'appVersion': '1'
+          'appVersion': '1',
+          'mode': 'test'
         }
       }).then((res) => {
         setGetTestData(res.data)
@@ -151,7 +152,8 @@ export function WithAsyncButWithoutService() {
           'X-Mashape-Key': 'required',
           'Content-Type': 'application/x-www-form-urlencoded',
           'Accept': 'application/json',
-          'appVersion': '1'
+          'appVersion': '1',
+          'mode': 'test'
         }
       })
       setGetTestData(res.data)

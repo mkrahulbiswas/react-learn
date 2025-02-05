@@ -8,7 +8,7 @@ export default function UsingFetch({ getData }: any) {
       <div className="row">
         <div className="col-6 mb-4">
           <div className="bg-light p-3">
-            {/* <WithAsync getData={getData} /> */}
+            <WithAsync getData={getData} />
           </div>
         </div>
         <div className="col-6 mb-4">
@@ -23,10 +23,10 @@ export default function UsingFetch({ getData }: any) {
 }
 
 export function WithAsync({ getData }: any) {
-  const [fromData, setFromData] = useState(0)
+  const [targetId, setTargetId] = useState(0)
   const saveTestData = async (event: any) => {
     event.preventDefault()
-    const resp = await fetch(`https://kisalayakgschool.com/api/deleteTestData/${fromData}`, {
+    const resp = await fetch(`https://kisalayakgschool.com/api/deleteTestData/${targetId}`, {
       method: 'DELETE',
       headers: {
         'Content-Type': 'application/json',
@@ -34,15 +34,12 @@ export function WithAsync({ getData }: any) {
         'appVersion': '1',
         'mode': 'test'
       },
-      body: JSON.stringify(fromData)
+      body: JSON.stringify(targetId)
     })
-    const
-    // .then((result) => {
-    //   result.json().then((response) => {
-    //     console.log('Without Async-->', response)
-    //     getData()
-    //   })
-    // }).catch(error => console.log({ error }))
+    const data = await resp.json()
+    if (data.status == 1) {
+      getData()
+    }
   }
   return (
     <div>
@@ -51,7 +48,7 @@ export function WithAsync({ getData }: any) {
         <Row className="col-12">
           <Form.Group as={Col} controlId="formGridName" className="col-6 mb-3">
             <Form.Label className="fw-bold mb-0">Put id to delete</Form.Label>
-            <Form.Control type="text" placeholder="Enter name" value={fromData} onChange={(e: any) => setFromData(e.target.value)} />
+            <Form.Control type="text" placeholder="Enter name" value={targetId} onChange={(e: any) => setTargetId(e.target.value)} />
           </Form.Group>
           <Form.Group as={Col} controlId="formGridName" className="col-6 mb-3 mt-4">
             <Button variant="danger" type="submit">Delete</Button>
@@ -63,10 +60,10 @@ export function WithAsync({ getData }: any) {
 }
 
 export function WithoutAsync({ getData }: any) {
-  const [fromData, setFromData] = useState(0)
+  const [targetId, setTargetId] = useState(0)
   const saveTestData = (event: any) => {
     event.preventDefault()
-    fetch(`https://kisalayakgschool.com/api/deleteTestData/${fromData}`, {
+    fetch(`https://kisalayakgschool.com/api/deleteTestData/${targetId}`, {
       method: 'DELETE',
       headers: {
         'Content-Type': 'application/json',
@@ -74,7 +71,7 @@ export function WithoutAsync({ getData }: any) {
         'appVersion': '1',
         'mode': 'test'
       },
-      body: JSON.stringify(fromData)
+      body: JSON.stringify(targetId)
     }).then((result) => {
       result.json().then((response) => {
         console.log('Without Async-->', response)
@@ -89,7 +86,7 @@ export function WithoutAsync({ getData }: any) {
         <Row className="col-12">
           <Form.Group as={Col} controlId="formGridName" className="col-6 mb-3">
             <Form.Label className="fw-bold mb-0">Put id to delete</Form.Label>
-            <Form.Control type="text" placeholder="Enter name" value={fromData} onChange={(e: any) => setFromData(e.target.value)} />
+            <Form.Control type="text" placeholder="Enter name" value={targetId} onChange={(e: any) => setTargetId(e.target.value)} />
           </Form.Group>
           <Form.Group as={Col} controlId="formGridName" className="col-6 mb-3 mt-4">
             <Button variant="danger" type="submit">Delete</Button>

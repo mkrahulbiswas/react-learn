@@ -51,7 +51,7 @@ export function WithAsync({ getData }: any) {
             <Form.Control type="text" placeholder="Enter name" value={targetId} onChange={(e: any) => setTargetId(e.target.value)} />
           </Form.Group>
           <Form.Group as={Col} controlId="formGridName" className="col-6 mb-3 mt-4">
-            <Button variant="danger" type="submit">Delete</Button>
+            <Button variant="success" type="submit">Status</Button>
           </Form.Group>
         </Row>
       </Form>
@@ -89,7 +89,7 @@ export function WithoutAsync({ getData }: any) {
             <Form.Control type="text" placeholder="Enter name" value={targetId} onChange={(e: any) => setTargetId(e.target.value)} />
           </Form.Group>
           <Form.Group as={Col} controlId="formGridName" className="col-6 mb-3 mt-4">
-            <Button variant="danger" type="submit">Delete</Button>
+            <Button variant="success" type="submit">Status</Button>
           </Form.Group>
         </Row>
       </Form>

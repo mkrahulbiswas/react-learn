@@ -4,7 +4,7 @@ import UsingFetch from "./UsingFetch/UsingFetch";
 import { Table } from "react-bootstrap";
 import ErrorHandling from "./ErrorHandling/ErrorHandling";
 
-export default function PutApi() {
+export default function PatchApi() {
   const [getTestData, setGetTestData] = useState({
     status: 0,
     msg: "",

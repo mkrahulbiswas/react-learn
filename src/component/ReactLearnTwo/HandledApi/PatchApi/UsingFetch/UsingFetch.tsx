@@ -4,7 +4,7 @@ import { Button, Col, Form, Row } from "react-bootstrap"
 export default function UsingFetch({ getData }: any) {
   return (
     <>
-      <p>Hear is the example of <b>post api</b> by using <b>fetch</b></p>
+      <p>Hear is the example of <b>patch api</b> by using <b>fetch</b></p>
       <div className="row">
         <div className="col-6 mb-4">
           <div className="bg-light p-3">

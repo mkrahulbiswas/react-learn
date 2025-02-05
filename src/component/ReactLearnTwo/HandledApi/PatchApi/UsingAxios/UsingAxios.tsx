@@ -6,7 +6,7 @@ import { deleteStudent } from "../../../../../services/ReactLearnTwoService"
 export default function UsingAxios({ getData }: any) {
   return (
     <>
-      <p>Hear is the example of <b>delete api</b> by using <b>axios</b> <span style={{ color: 'red' }}>without using</span> <b>async await</b> type</p>
+      <p>Hear is the example of <b>patch api</b> by using <b>axios</b> <span style={{ color: 'red' }}>without using</span> <b>async await</b> type</p>
       <div className="row">
         <div className="col-6 mb-4">
           <div className="p-3 bg-light">

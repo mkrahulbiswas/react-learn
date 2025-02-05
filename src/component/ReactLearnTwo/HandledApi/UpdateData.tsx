@@ -9,7 +9,8 @@ function UpdateData() {
       headers: {
         'Content-Type': 'application/json',
         'Accept': 'application/json',
-        'appVersion': '1'
+        'appVersion': '1',
+        'mode': 'test'
       },
       body: JSON.stringify(fromData)
     }).then((result) => {

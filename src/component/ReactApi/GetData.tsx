@@ -17,7 +17,8 @@ function GetData() {
         'X-Mashape-Key': 'required',
         'Content-Type': 'application/x-www-form-urlencoded',
         'Accept': 'application/json',
-        'appVersion': '1'
+        'appVersion': '1',
+        'mode': 'test'
       }
     }).then((result) => {
       result.json().then((response) => {

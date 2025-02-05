@@ -30,7 +30,8 @@ function SinglePageCrud(props: any) {
       headers: {
         'Content-Type': 'application/json',
         'Accept': 'application/json',
-        'appVersion': '1'
+        'appVersion': '1',
+        'mode': 'test'
       },
       body: JSON.stringify(fromData)
     }).then((result) => {
@@ -77,7 +78,8 @@ function SinglePageCrud(props: any) {
       headers: {
         'Content-Type': 'application/json',
         'Accept': 'application/json',
-        'appVersion': '1'
+        'appVersion': '1',
+        'mode': 'test'
       },
       body: JSON.stringify(fromData)
     }).then((result) => {
@@ -133,7 +135,8 @@ function SinglePageCrud(props: any) {
           headers: {
             'Content-Type': 'application/json',
             'Accept': 'application/json',
-            'appVersion': '1'
+            'appVersion': '1',
+            'mode': 'test'
           },
         }).then((result) => {
           result.json().then((response) => {
@@ -169,7 +172,8 @@ function SinglePageCrud(props: any) {
           headers: {
             'Content-Type': 'application/json',
             'Accept': 'application/json',
-            'appVersion': '1'
+            'appVersion': '1',
+            'mode': 'test'
           },
         }).then((result) => {
           result.json().then((response) => {
@@ -196,7 +200,8 @@ function SinglePageCrud(props: any) {
         'X-Mashape-Key': 'required',
         'Content-Type': 'application/x-www-form-urlencoded',
         'Accept': 'application/json',
-        'appVersion': '1'
+        'appVersion': '1',
+        'mode': 'test'
       }
     }).then((result) => {
       result.json().then((response) => {

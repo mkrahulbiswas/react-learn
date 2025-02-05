@@ -10,7 +10,6 @@ function WMLayout() {
         <WMHeader />
         <WMContent />
         <WMFooter />
-        <hr />
       </div>
     </React.Fragment>
   )

@@ -15,6 +15,10 @@ export const getStudent = () => {
     return api.get("getTestData")
 }
 
+export const statusStudent = (id: any) => {
+    return api.patch('statusTestData/' + id, {})
+}
+
 export const deleteStudent = (id: any) => {
     return api.delete('deleteTestData/' + id)
 }

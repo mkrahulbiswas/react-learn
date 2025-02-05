@@ -1,6 +1,5 @@
 import React from 'react'
 import './TestAndImplement.css'
-import { MovieList } from './MovieList/MovieList'
 
 function TestAndImplement() {
   return (
@@ -10,7 +9,7 @@ function TestAndImplement() {
       {/* <TDLLayout /> */}
       {/* <MakingStepCounter /> */}
       {/* <PCLayout /> */}
-      <MovieList />
+      {/* <MovieList /> */}
     </React.Fragment>
   )
 }

@@ -65,8 +65,8 @@ export default function PostApi() {
         </tbody>
       </Table>
       <br /><br />
-      <UsingFetch getData={getData} />
       <UsingAxios getData={getData} />
+      <UsingFetch getData={getData} />
       <ErrorHandling getData={getData} />
     </>
   )

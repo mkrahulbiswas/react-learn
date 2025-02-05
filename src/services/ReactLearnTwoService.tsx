@@ -22,3 +22,7 @@ export const deleteStudent = (id: any) => {
 export const saveStudent = (data: any) => {
     return api.post('saveTestData', data)
 }
+
+export const updateStudent = (data: any, id: any) => {
+    return api.put('updateTestData/' + id, data)
+}

@@ -67,8 +67,8 @@ export default function PatchApi() {
         </tbody>
       </Table>
       <br /><br />
-      <UsingAxios getData={getData} />
       <UsingFetch getData={getData} />
+      <UsingAxios getData={getData} />
       <ErrorHandling getData={getData} />
     </>
   )

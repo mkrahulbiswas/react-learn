@@ -1,3 +1,4 @@
+import './HandledApiApp.scss'
 import CrudApi from "./CrudApi/CrudApi"
 
 function HandledApiApp() {

@@ -40,6 +40,7 @@ export default function WithoutAsync() {
         }
       }).then(resp => resp.json())
         .then((data) => {
+          setActions({ ...actions, loader: false })
           if (data.status == 1) {
             setGetTestData(data)
             resetAction()
@@ -47,7 +48,6 @@ export default function WithoutAsync() {
           }
         })
         .catch(err => console.log(err))
-      setActions({ ...actions, loader: false })
     } catch (error) {
       console.log(error)
     }

@@ -7,18 +7,13 @@ export default function WithoutAsync() {
   const [actions, setActions] = useState({
     loader: false,
     formType: "save",
+    id: 0,
     formValidation: {
       isValid: false,
       name: '',
       email: '',
       phone: '',
       class: ''
-    },
-    apiResp: {
-      hasResp: false,
-      msg: '',
-      title: '',
-      status: 0,
     }
   })
   const [getTestData, setGetTestData] = useState({
@@ -31,11 +26,10 @@ export default function WithoutAsync() {
     }
   })
   const [fromData, setFromData] = useState({ name: '', email: '', phone: '', class: '' })
-  // const [fromData, setFromData] = useState({ name: 'Rahul Biswas', email: 'biswas.rahul31@gmail.com', phone: '8436191135', class: '1' })
 
-  const getData = async () => {
+  const getData = () => {
     try {
-      const res = await fetch("https://kisalayakgschool.com/api/getTestData", {
+      fetch("https://kisalayakgschool.com/api/getTestData", {
         method: 'GET',
         headers: {
           'X-Mashape-Key': 'required',
@@ -44,20 +38,16 @@ export default function WithoutAsync() {
           'appVersion': '1',
           'mode': 'live'
         }
-      })
-      const data = await res.json()
-      setActions({
-        ...actions, apiResp: {
-          hasResp: true,
-          msg: data.msg,
-          title: data.title,
-          status: data.status
-        }
-      })
+      }).then(resp => resp.json())
+        .then((data) => {
+          if (data.status == 1) {
+            setGetTestData(data)
+            resetAction()
+            resetForm()
+          }
+        })
+        .catch(err => console.log(err))
       setActions({ ...actions, loader: false })
-      if (data.status == 1) {
-        setGetTestData(data)
-      }
     } catch (error) {
       console.log(error)
     }
@@ -65,9 +55,17 @@ export default function WithoutAsync() {
 
   const submitForm = (event: any) => {
     event.preventDefault()
-    setActions({ ...actions, loader: false })
-    fetch('https://kisalayakgschool.com/api/saveTestData', {
-      method: 'POST',
+    const apiData: { url: string, method: string } = { url: '', method: '' }
+    if (actions.formType === 'save') {
+      apiData.url = "https://kisalayakgschool.com/api/saveTestData"
+      apiData.method = 'POST'
+    } else {
+      apiData.url = "https://kisalayakgschool.com/api/updateTestData/" + actions.id
+      apiData.method = 'PUT'
+    }
+    setActions({ ...actions, loader: true })
+    fetch(apiData.url, {
+      method: apiData.method,
       headers: {
         'Content-Type': 'application/json',
         'Accept': 'application/json',
@@ -77,7 +75,6 @@ export default function WithoutAsync() {
       body: JSON.stringify(fromData)
     }).then((resp) => {
       resp.json().then((data) => {
-        resetAction()
         setActions({
           ...actions, formValidation: {
             isValid: true,
@@ -85,15 +82,9 @@ export default function WithoutAsync() {
             email: (data.payload.email == undefined) ? '' : data.payload.email[0],
             phone: (data.payload.phone == undefined) ? '' : data.payload.phone[0],
             class: (data.payload.class == undefined) ? '' : data.payload.class[0],
-          }, apiResp: {
-            hasResp: true,
-            msg: data.msg,
-            title: data.title,
-            status: data.status
-          }, loader: false
+          }
         })
         if (data.status == 1) {
-          resetForm()
           getData()
         }
       })
@@ -111,9 +102,10 @@ export default function WithoutAsync() {
         'mode': 'live'
       }
     }).then((result) => {
-      result.json().then((response) => {
-        console.log('Without Async-->', response)
-        getData()
+      result.json().then((data) => {
+        if (data.status == 1) {
+          getData()
+        }
       })
     }).catch(error => console.log({ error }))
   }
@@ -129,11 +121,26 @@ export default function WithoutAsync() {
         'mode': 'live'
       }
     }).then((result) => {
-      result.json().then((response) => {
-        console.log('Without Async-->', response)
-        getData()
+      result.json().then((data) => {
+        if (data.status == 1) {
+          getData()
+        }
       })
     }).catch(error => console.log({ error }))
+  }
+
+  const editTestData = (data: any) => {
+    let action: any = {
+      id: data.id,
+      formType: 'edit',
+    }
+    setActions({ ...actions, ...action })
+    setFromData({
+      name: data.name,
+      email: data.email,
+      phone: data.phone,
+      class: data.class,
+    })
   }
 
   const resetForm = () => {
@@ -149,18 +156,12 @@ export default function WithoutAsync() {
         email: '',
         phone: '',
         class: ''
-      }, apiResp: {
-        hasResp: false,
-        msg: '',
-        title: '',
-        status: 0,
-      }
+      }, id: 0, formType: 'save'
     })
   }
 
   useEffect(() => {
     getData()
-    console.log(actions);
   }, [])
 
   return (
@@ -191,9 +192,6 @@ export default function WithoutAsync() {
               </Form.Group>
               <Form.Group as={Col} controlId="formGridClass" className="col-sm-6 col-md-3 col-lg-3 col-xl-3 mb-3">
                 <Button variant="primary" type="submit"><FaRegSave /><span className="ms-2">{(actions.formType == 'save') ? 'Save' : 'Update'}</span></Button>
-              </Form.Group>
-              <Form.Group as={Col} controlId="formGridClass" className="col-sm-6 col-md-9 col-lg-9 col-xl-9 mb-3">
-                {actions.apiResp.hasResp && <span className={((actions.apiResp.status == 1) ? 'successResp' : ((actions.apiResp.status == 2) ? 'warningResp' : 'errorResp'))}>{actions.apiResp.msg}</span>}
               </Form.Group>
             </Row>
           </Form>
@@ -231,7 +229,7 @@ export default function WithoutAsync() {
                     </td>
                     <td>
                       <div className="action">
-                        <div className="common edit">
+                        <div className="common edit" onClick={() => editTestData(item)}>
                           <MdEditNote />
                         </div>
                         <div className="common delete" onClick={() => deleteTestData(item.id)}>

@@ -1,11 +1,11 @@
-import UsingAxios from "./UsingAxios/UsingAxios"
-import UsingFetch from "./UsingFetch/UsingFetch"
+import { ProperStructure } from "./ProperStructure/ProperStructure"
+import { SinglePage } from "./SinglePage/SinglePage"
 
 function CrudApi() {
   return (
     <>
-      <UsingFetch />
-      <UsingAxios />
+      <SinglePage />
+      <ProperStructure />
     </>
   )
 }

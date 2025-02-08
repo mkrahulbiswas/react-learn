@@ -33,8 +33,7 @@ export function WithAsync({ getData }: any) {
         'Accept': 'application/json',
         'appVersion': '1',
         'mode': 'test'
-      },
-      body: JSON.stringify(targetId)
+      }
     })
     const data = await resp.json()
     if (data.status == 1) {
@@ -70,8 +69,7 @@ export function WithoutAsync({ getData }: any) {
         'Accept': 'application/json',
         'appVersion': '1',
         'mode': 'test'
-      },
-      body: JSON.stringify(targetId)
+      }
     }).then((result) => {
       result.json().then((response) => {
         console.log('Without Async-->', response)

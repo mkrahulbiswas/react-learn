@@ -16,6 +16,7 @@ export default function WithAsync() {
       class: ''
     }
   })
+
   const [getTestData, setGetTestData] = useState({
     status: 0,
     msg: "",
@@ -25,6 +26,7 @@ export default function WithAsync() {
       count: 0
     }
   })
+
   const [fromData, setFromData] = useState({ name: '', email: '', phone: '', class: '' })
 
   const getData = async () => {

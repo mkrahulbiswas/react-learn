@@ -1,17 +1,14 @@
-import { QueryClient, QueryClientProvider, useQuery } from "@tanstack/react-query"
+import { useQuery } from "@tanstack/react-query"
 import { ReactQueryDevtools } from '@tanstack/react-query-devtools'
 import { Table } from "react-bootstrap"
 import { getStudent } from "../../../../../services/ReactLearnTwoService"
 
 export default function DevTools() {
-  const queryClient = new QueryClient()
   return (
     <>
       <p>This is example of basic <b>react query</b></p>
-      <QueryClientProvider client={queryClient}>
-        <StoringData />
-        <ReactQueryDevtools initialIsOpen={false} />
-      </QueryClientProvider>
+      <StoringData />
+      <ReactQueryDevtools initialIsOpen={false} />
     </>
   )
 }

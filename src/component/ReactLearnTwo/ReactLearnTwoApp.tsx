@@ -1,10 +1,11 @@
 import React from 'react'
 import './ReactLearnTwoApp.css'
-import HandledApiApp from './HandledApi/HandledApiApp'
+import { TanStackApp } from './TanStack/TanStackApp'
 
 function ReactLearnTwoApp() {
   return (
     <React.Fragment>
+      <TanStackApp />
       {/* <DynamicValueApp /> */}
       {/* <ConditionalValueApp /> */}
       {/* <ComponentsApp /> */}
@@ -16,7 +17,7 @@ function ReactLearnTwoApp() {
       {/* <EventPropagationApp /> */}
       {/* <ShortCircuitEvaluationApp /> */}
       {/* <ControlledVsUncontrolledApp /> */}
-      <HandledApiApp />
+      {/* <HandledApiApp /> */}
       {/* <PropDrillingApp /> */}
       {/* <ContextAPIUseContextApp /> */}
       {/* <CreateCustomHooks /> */}

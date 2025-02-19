@@ -1,5 +1,6 @@
 import { ReactQueryDevtools } from "@tanstack/react-query-devtools";
 import StoreData from "./StoreData/StoreData";
+import Refetch from "./Refetch/Refetch";
 
 export default function UseQuery() {
   return (
@@ -11,6 +12,7 @@ export default function UseQuery() {
         {/* <StaleTime /> */}
         {/* <Polling /> */}
         {/* <ResponseOptions /> */}
+        <Refetch />
       </div>
       <ReactQueryDevtools initialIsOpen={false} />
     </>

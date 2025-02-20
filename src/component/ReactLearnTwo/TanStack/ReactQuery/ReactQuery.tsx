@@ -1,6 +1,6 @@
 import { QueryClient, QueryClientProvider } from "@tanstack/react-query"
-import UseMutation from "./UseMutation/UseMutation"
 import UseQuery from "./UseQuery/UseQuery"
+import UseQueries from "./UseQueries/UseQueries"
 
 export const ReactQuery = () => {
   const queryClient = new QueryClient()
@@ -18,6 +18,7 @@ export const ReactQuery = () => {
       <p>This <b>React Query</b> Every Feature Explain</p>
       <QueryClientProvider client={queryClient}>
         <UseQuery />
+        <UseQueries />
         {/* <UseMutation /> */}
         {/* <DevTools /> */}
       </QueryClientProvider>

@@ -31,6 +31,6 @@ export const deleteStudentApi = (id: any) => {
     return api.delete('deleteStudent/' + id)
 }
 
-export const detailStudentApi = (data: any, id: any) => {
-    return api.get('detailStudent/' + id, data)
+export const detailStudentApi = (id: any) => {
+    return api.get('detailStudent/' + id)
 }

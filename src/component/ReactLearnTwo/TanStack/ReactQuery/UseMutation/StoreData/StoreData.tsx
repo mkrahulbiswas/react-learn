@@ -1,6 +1,6 @@
 import { useQuery } from "@tanstack/react-query"
 import { Table } from "react-bootstrap"
-import { getStudent } from "../../../../../../services/ReactLearnTwoService"
+import { getStudentApi } from "../../../../../../services/ReactLearnTwoService"
 
 export default function StoreData() {
   return (
@@ -14,7 +14,7 @@ export default function StoreData() {
 export const ExampleOne = () => {
   const getData = async () => {
     try {
-      const res = await getStudent()
+      const res = await getStudentApi()
       return res.data.status == 1 ? res.data : []
     } catch (error) {
       console.log(error)

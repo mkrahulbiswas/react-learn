@@ -24,9 +24,9 @@ export default function UsingFetch({ getData }: any) {
 
 export function WithAsync({ getData }: any) {
   const [targetId, setTargetId] = useState(0)
-  const saveTestData = async (event: any) => {
+  const statusStudent = async (event: any) => {
     event.preventDefault()
-    const resp = await fetch(`https://kisalayakgschool.com/api/statusTestData/${targetId}`, {
+    const resp = await fetch(`https://kisalayakgschool.com/api/statusStudent/${targetId}`, {
       method: 'PATCH',
       headers: {
         'Content-Type': 'application/json',
@@ -43,7 +43,7 @@ export function WithAsync({ getData }: any) {
   return (
     <div>
       <p>Hear we use <b>fetch</b> <span style={{ color: 'red' }}>with using</span> <b>async</b></p>
-      <Form onSubmit={saveTestData}>
+      <Form onSubmit={statusStudent}>
         <Row className="col-12">
           <Form.Group as={Col} controlId="formGridName" className="col-6 mb-3">
             <Form.Label className="fw-bold mb-0">Student Id</Form.Label>
@@ -60,9 +60,9 @@ export function WithAsync({ getData }: any) {
 
 export function WithoutAsync({ getData }: any) {
   const [targetId, setTargetId] = useState(0)
-  const saveTestData = (event: any) => {
+  const statusStudent = (event: any) => {
     event.preventDefault()
-    fetch(`https://kisalayakgschool.com/api/statusTestData/${targetId}`, {
+    fetch(`https://kisalayakgschool.com/api/statusStudent/${targetId}`, {
       method: 'PATCH',
       headers: {
         'Content-Type': 'application/json',
@@ -80,7 +80,7 @@ export function WithoutAsync({ getData }: any) {
   return (
     <div>
       <p>Hear we use <b>fetch</b> <span style={{ color: 'red' }}>without using</span> <b>async</b></p>
-      <Form onSubmit={saveTestData}>
+      <Form onSubmit={statusStudent}>
         <Row className="col-12">
           <Form.Group as={Col} controlId="formGridName" className="col-6 mb-3">
             <Form.Label className="fw-bold mb-0">Student Id</Form.Label>

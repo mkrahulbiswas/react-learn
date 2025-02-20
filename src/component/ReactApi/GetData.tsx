@@ -2,7 +2,7 @@ import { useEffect, useState } from "react"
 import { Table } from "react-bootstrap"
 
 function GetData() {
-  const [getTestData, setGetTestData] = useState({
+  const [getStudent, setGetStudent] = useState({
     status: 0,
     msg: "",
     payload: {
@@ -11,7 +11,7 @@ function GetData() {
     }
   })
   useEffect(() => {
-    fetch('https://kisalayakgschool.com/api/getTestData', {
+    fetch('https://kisalayakgschool.com/api/getStudent', {
       method: 'GET',
       headers: {
         'X-Mashape-Key': 'required',
@@ -22,11 +22,11 @@ function GetData() {
       }
     }).then((result) => {
       result.json().then((response) => {
-        setGetTestData(response)
+        setGetStudent(response)
       })
     })
 
-    // fetch("https://kisalayakgschool.com/api/getTestData")
+    // fetch("https://kisalayakgschool.com/api/getStudent")
     //   .then(result => result.json())
     //   .then((response) => {
     //     console.log(response)
@@ -48,7 +48,7 @@ function GetData() {
         </thead>
         <tbody>
           {
-            getTestData.payload.data.map((item: any, index: any) =>
+            getStudent.payload.data.map((item: any, index: any) =>
               <tr key={index}>
                 <td>{index + 1}</td>
                 <td>{item.name}</td>

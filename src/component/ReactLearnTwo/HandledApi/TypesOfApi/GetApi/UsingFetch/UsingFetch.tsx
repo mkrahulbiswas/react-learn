@@ -19,7 +19,7 @@ export default function UsingFetch() {
 }
 
 export function WithAsync() {
-  const [getTestData, setGetTestData] = useState({
+  const [getStudent, setGetStudent] = useState({
     status: 0,
     msg: "",
     title: '',
@@ -31,7 +31,7 @@ export function WithAsync() {
 
   const getData = async () => {
     try {
-      const res = await fetch("https://kisalayakgschool.com/api/getTestData", {
+      const res = await fetch("https://kisalayakgschool.com/api/getStudent", {
         method: 'GET',
         headers: {
           'X-Mashape-Key': 'required',
@@ -42,7 +42,7 @@ export function WithAsync() {
         }
       })
       const data = await res.json()
-      setGetTestData(data)
+      setGetStudent(data)
     } catch (error) {
       console.log(error)
     }
@@ -64,7 +64,7 @@ export function WithAsync() {
         </thead>
         <tbody>
           {
-            getTestData.payload.data.map((item: any, index: any) =>
+            getStudent.payload.data.map((item: any, index: any) =>
               <tr key={item.id}>
                 <td>{index + 1}</td>
                 <td>{item.name}</td>
@@ -78,7 +78,7 @@ export function WithAsync() {
 }
 
 export function WithoutAsync() {
-  const [getTestData, setGetTestData] = useState({
+  const [getStudent, setGetStudent] = useState({
     status: 0,
     msg: "",
     title: '',
@@ -90,7 +90,7 @@ export function WithoutAsync() {
 
   const getData = () => {
     try {
-      fetch("https://kisalayakgschool.com/api/getTestData", {
+      fetch("https://kisalayakgschool.com/api/getStudent", {
         method: 'GET',
         headers: {
           'X-Mashape-Key': 'required',
@@ -100,7 +100,7 @@ export function WithoutAsync() {
           'mode': 'test'
         }
       }).then(res => res.json())
-        .then(data => setGetTestData(data))
+        .then(data => setGetStudent(data))
         .catch(err => console.log(err))
     } catch (error) {
       console.log(error)
@@ -123,7 +123,7 @@ export function WithoutAsync() {
         </thead>
         <tbody>
           {
-            getTestData.payload.data.map((item: any, index: any) =>
+            getStudent.payload.data.map((item: any, index: any) =>
               <tr key={item.id}>
                 <td>{index + 1}</td>
                 <td>{item.name}</td>

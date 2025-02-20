@@ -2,9 +2,9 @@ import { useState } from "react"
 import { Button, Col, Form, Row } from "react-bootstrap"
 function SaveData() {
   const [fromData, setFromData] = useState({ name: '', email: '', phone: '', class: '' })
-  const saveTestData = (event: any) => {
+  const saveStudent = (event: any) => {
     event.preventDefault()
-    fetch('https://kisalayakgschool.com/api/saveTestData', {
+    fetch('https://kisalayakgschool.com/api/saveStudent', {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json',
@@ -22,7 +22,7 @@ function SaveData() {
   return (
     <div>
       <div className="bg-light p-3 rounded">
-        <Form onSubmit={saveTestData}>
+        <Form onSubmit={saveStudent}>
           <Row className="mb-3">
             <Form.Group as={Col} controlId="formGridName" className="mb-3 col-12 col-sm-12 col-md-4 col-xl-3 col-lg-3">
               <Form.Label className="fw-bold">Name</Form.Label>

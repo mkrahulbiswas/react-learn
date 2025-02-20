@@ -24,9 +24,9 @@ export default function ErrorHandling({ getData }: any) {
 
 export function FetchWithAsync({ getData }: any) {
   const [fromData, setFromData] = useState({ name: 'Rahul Biswas', email: 'biswas.rahul31@gmail.com', phone: '8436191135', class: '1' })
-  const saveTestData = async (event: any) => {
+  const saveStudent = async (event: any) => {
     event.preventDefault()
-    const resp = await fetch('https://kisalayakgschool.com/api/saveTestData', {
+    const resp = await fetch('https://kisalayakgschool.com/api/saveStudent', {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json',
@@ -47,7 +47,7 @@ export function FetchWithAsync({ getData }: any) {
   return (
     <div>
       <p>Hear we use <b>fetch</b> <span style={{ color: 'red' }}>with using</span> <b>async</b></p>
-      <Form onSubmit={saveTestData}>
+      <Form onSubmit={saveStudent}>
         <Row className="col-12">
           <Form.Group as={Col} controlId="formGridName" className="col-6 mb-3">
             <Form.Label className="fw-bold mb-0">Name</Form.Label>
@@ -74,9 +74,9 @@ export function FetchWithAsync({ getData }: any) {
 
 export function FetchWithoutAsync({ getData }: any) {
   const [fromData, setFromData] = useState({ name: 'Rahul Biswas', email: 'biswas.rahul31@gmail.com', phone: '8436191135', class: '1' })
-  const saveTestData = (event: any) => {
+  const saveStudent = (event: any) => {
     event.preventDefault()
-    fetch('https://kisalayakgschool.com/api/saveTestData', {
+    fetch('https://kisalayakgschool.com/api/saveStudent', {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json',
@@ -101,7 +101,7 @@ export function FetchWithoutAsync({ getData }: any) {
   return (
     <div>
       <p>Hear we use <b>fetch</b> <span style={{ color: 'red' }}>without using</span> <b>async</b></p>
-      <Form onSubmit={saveTestData}>
+      <Form onSubmit={saveStudent}>
         <Row className="col-12">
           <Form.Group as={Col} controlId="formGridName" className="col-6 mb-3">
             <Form.Label className="fw-bold mb-0">Name</Form.Label>

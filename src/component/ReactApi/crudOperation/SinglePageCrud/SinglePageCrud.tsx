@@ -22,10 +22,10 @@ function SinglePageCrud(props: any) {
   });
 
 
-  const saveTestData = (event: any) => {
+  const saveStudent = (event: any) => {
     event.preventDefault()
     props.dataPass.loader(true)
-    fetch('https://kisalayakgschool.com/api/saveTestData', {
+    fetch('https://kisalayakgschool.com/api/saveStudent', {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json',
@@ -64,16 +64,16 @@ function SinglePageCrud(props: any) {
           setFromValidErr(vErr)
         } else {
           props.dataPass.toast({ msg: response.msg, title: response.title, type: 'success' })
-          getTestData()
+          getStudent()
         }
       })
     }).catch(error => console.log({ error }))
   }
 
-  const updateTestData = (event: any) => {
+  const updateStudent = (event: any) => {
     event.preventDefault()
     props.dataPass.loader(true)
-    fetch('https://kisalayakgschool.com/api/updateTestData/' + targetId, {
+    fetch('https://kisalayakgschool.com/api/updateStudent/' + targetId, {
       method: 'PUT',
       headers: {
         'Content-Type': 'application/json',
@@ -112,13 +112,13 @@ function SinglePageCrud(props: any) {
           setFromValidErr(vErr)
         } else {
           props.dataPass.toast({ msg: response.msg, title: response.title, type: 'success' })
-          getTestData()
+          getStudent()
         }
       })
     }).catch(error => console.log({ error }))
   }
 
-  const deleteTestData = (data: any) => {
+  const deleteStudent = (data: any) => {
     Swal.fire({
       title: "Do you want to delete the student " + data.name,
       showDenyButton: true,
@@ -130,7 +130,7 @@ function SinglePageCrud(props: any) {
       /* Read more about isConfirmed, isDenied below */
       if (result.isConfirmed) {
         props.dataPass.loader(true)
-        fetch(`https://kisalayakgschool.com/api/deleteTestData/${data.id}`, {
+        fetch(`https://kisalayakgschool.com/api/deleteStudent/${data.id}`, {
           method: 'DELETE',
           headers: {
             'Content-Type': 'application/json',
@@ -145,7 +145,7 @@ function SinglePageCrud(props: any) {
               props.dataPass.toast({ msg: response.msg, title: response.title, type: 'warn' })
             } else {
               props.dataPass.toast({ msg: response.msg, title: response.title, type: 'success' })
-              getTestData()
+              getStudent()
             }
           })
         }).catch(error => console.log({ error }))
@@ -155,7 +155,7 @@ function SinglePageCrud(props: any) {
     });
   }
 
-  const statusTestData = (data: any) => {
+  const statusStudent = (data: any) => {
     Swal.fire({
       title: "Do you want to change the status of student " + data.name,
       icon: 'info',
@@ -167,7 +167,7 @@ function SinglePageCrud(props: any) {
       /* Read more about isConfirmed, isDenied below */
       if (result.isConfirmed) {
         props.dataPass.loader(true)
-        fetch(`https://kisalayakgschool.com/api/statusTestData/${data.id}`, {
+        fetch(`https://kisalayakgschool.com/api/statusStudent/${data.id}`, {
           method: 'PATCH',
           headers: {
             'Content-Type': 'application/json',
@@ -182,7 +182,7 @@ function SinglePageCrud(props: any) {
               props.dataPass.toast({ msg: response.msg, title: response.title, type: 'warn' })
             } else {
               props.dataPass.toast({ msg: response.msg, title: response.title, type: 'success' })
-              getTestData()
+              getStudent()
             }
           })
         }).catch(error => console.log({ error }))
@@ -192,9 +192,9 @@ function SinglePageCrud(props: any) {
     });
   }
 
-  const getTestData = () => {
+  const getStudent = () => {
     closeModal()
-    fetch('https://kisalayakgschool.com/api/getTestData', {
+    fetch('https://kisalayakgschool.com/api/getStudent', {
       method: 'GET',
       headers: {
         'X-Mashape-Key': 'required',
@@ -235,7 +235,7 @@ function SinglePageCrud(props: any) {
 
   useEffect(() => {
     props.dataPass.loader(true)
-    getTestData()
+    getStudent()
   }, [])
 
   return (
@@ -287,10 +287,10 @@ function SinglePageCrud(props: any) {
                               <Button variant="primary" className="btn-sm" title="Edit" onClick={() => openModal({ type: 'edit', data: item })}>
                                 <i className="bi bi-pencil-square"></i>
                               </Button>
-                              <Button variant="danger" className="ms-2 btn-sm" title="Delete" onClick={() => deleteTestData(item)}>
+                              <Button variant="danger" className="ms-2 btn-sm" title="Delete" onClick={() => deleteStudent(item)}>
                                 <i className="bi bi-trash"></i>
                               </Button>
-                              <Button variant="success" className="ms-2 btn-sm" title={item.status == '1' ? 'Block' : 'Un-Block'} onClick={() => statusTestData(item)}>
+                              <Button variant="success" className="ms-2 btn-sm" title={item.status == '1' ? 'Block' : 'Un-Block'} onClick={() => statusStudent(item)}>
                                 {
                                   item.status == '0' ? <i className="bi bi-lock-fill"></i> : <i className="bi bi-unlock-fill"></i>
                                 }
@@ -316,7 +316,7 @@ function SinglePageCrud(props: any) {
         <Modal.Header closeButton className="bg-info">
           <Modal.Title className="fw-bold">Create & Save New Student</Modal.Title>
         </Modal.Header>
-        <Form onSubmit={saveTestData}>
+        <Form onSubmit={saveStudent}>
           <Modal.Body className="bg-light">
             <Row className="mb-3">
               <Form.Group as={Col} controlId="formGridName" className="mb-3 col-12 col-sm-12 col-md-6 col-xl-6 col-lg-6">
@@ -366,7 +366,7 @@ function SinglePageCrud(props: any) {
         <Modal.Header closeButton className="bg-info">
           <Modal.Title className="fw-bold">Edit & Update New Student</Modal.Title>
         </Modal.Header>
-        <Form onSubmit={updateTestData}>
+        <Form onSubmit={updateStudent}>
           <Modal.Body className="bg-light">
             <Row className="mb-3">
               <Form.Group as={Col} controlId="formGridName" className="mb-3 col-12 col-sm-12 col-md-6 col-xl-6 col-lg-6">

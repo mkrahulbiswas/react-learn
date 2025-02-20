@@ -5,7 +5,7 @@ import { Table } from "react-bootstrap";
 import ErrorHandling from "./ErrorHandling/ErrorHandling";
 
 export default function PostApi() {
-  const [getTestData, setGetTestData] = useState({
+  const [getStudent, setGetStudent] = useState({
     status: 0,
     msg: "",
     title: '',
@@ -17,7 +17,7 @@ export default function PostApi() {
 
   const getData = async () => {
     try {
-      const res = await fetch("https://kisalayakgschool.com/api/getTestData", {
+      const res = await fetch("https://kisalayakgschool.com/api/getStudent", {
         method: 'GET',
         headers: {
           'X-Mashape-Key': 'required',
@@ -28,7 +28,7 @@ export default function PostApi() {
         }
       })
       const data = await res.json()
-      setGetTestData(data)
+      setGetStudent(data)
     } catch (error) {
       console.log(error)
     }
@@ -52,7 +52,7 @@ export default function PostApi() {
         </thead>
         <tbody>
           {
-            getTestData.payload.data.map((item: any) =>
+            getStudent.payload.data.map((item: any) =>
               <tr key={item.id}>
                 <td>{item.idOrg}</td>
                 <td>{item.name}</td>

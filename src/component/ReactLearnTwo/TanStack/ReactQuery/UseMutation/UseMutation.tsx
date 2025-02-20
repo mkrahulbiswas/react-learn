@@ -1,19 +1,18 @@
 import { ReactQueryDevtools } from "@tanstack/react-query-devtools";
-import DetailPage from "./DetailPage/DetailPage";
+import StoreData from "./StoreData/StoreData";
+import Refetch from "./Refetch/Refetch";
 
-export default function UseQuery() {
+export default function UseMutation() {
   return (
     <>
-      <p>This is example of basic <b>use query</b></p>
+      <p>This is example of basic <b>use mutation</b></p>
       <div className="row">
-        {/* <StoreData /> */}
+        <StoreData />
         {/* <GarbageCollection /> */}
         {/* <StaleTime /> */}
         {/* <Polling /> */}
         {/* <ResponseOptions /> */}
-        {/* <Refetch /> */}
-        {/* <SelectData /> */}
-        <DetailPage />
+        <Refetch />
       </div>
       <ReactQueryDevtools initialIsOpen={false} />
     </>

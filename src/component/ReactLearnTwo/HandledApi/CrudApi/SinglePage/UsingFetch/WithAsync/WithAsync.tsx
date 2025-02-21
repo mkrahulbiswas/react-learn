@@ -17,7 +17,7 @@ export default function WithAsync() {
     }
   })
 
-  const [getTestData, setGetTestData] = useState({
+  const [getStudent, setGetStudent] = useState({
     status: 0,
     msg: "",
     title: '',
@@ -31,7 +31,7 @@ export default function WithAsync() {
 
   const getData = async () => {
     try {
-      const res = await fetch("https://kisalayakgschool.com/api/getTestData", {
+      const res = await fetch("https://kisalayakgschool.com/api/getStudent?page=1&perPage=10", {
         method: 'GET',
         headers: {
           'X-Mashape-Key': 'required',
@@ -44,7 +44,7 @@ export default function WithAsync() {
       const data = await res.json()
       setActions({ ...actions, loader: false })
       if (data.status == 1) {
-        setGetTestData(data)
+        setGetStudent(data)
         resetAction()
         resetForm()
       }
@@ -57,10 +57,10 @@ export default function WithAsync() {
     event.preventDefault()
     const apiData: { url: string, method: string } = { url: '', method: '' }
     if (actions.formType === 'save') {
-      apiData.url = "https://kisalayakgschool.com/api/saveTestData"
+      apiData.url = "https://kisalayakgschool.com/api/saveStudent"
       apiData.method = 'POST'
     } else {
-      apiData.url = "https://kisalayakgschool.com/api/updateTestData/" + actions.id
+      apiData.url = "https://kisalayakgschool.com/api/updateStudent/" + actions.id
       apiData.method = 'PUT'
     }
     setActions({ ...actions, loader: true })
@@ -91,9 +91,9 @@ export default function WithAsync() {
     }).catch(error => console.log({ error }))
   }
 
-  const deleteTestData = async (id: any) => {
+  const deleteStudent = async (id: any) => {
     setActions({ ...actions, loader: true })
-    const resp = await fetch(`https://kisalayakgschool.com/api/deleteTestData/${id}`, {
+    const resp = await fetch(`https://kisalayakgschool.com/api/deleteStudent/${id}`, {
       method: 'DELETE',
       headers: {
         'Content-Type': 'application/json',
@@ -108,9 +108,9 @@ export default function WithAsync() {
     }
   }
 
-  const statusTestData = async (id: any) => {
+  const statusStudent = async (id: any) => {
     setActions({ ...actions, loader: true })
-    const resp = await fetch(`https://kisalayakgschool.com/api/statusTestData/${id}`, {
+    const resp = await fetch(`https://kisalayakgschool.com/api/statusStudent/${id}`, {
       method: 'PATCH',
       headers: {
         'Content-Type': 'application/json',
@@ -207,7 +207,7 @@ export default function WithAsync() {
             </thead>
             <tbody>
               {
-                getTestData.payload.data.map((item: any) =>
+                getStudent.payload.data.map((item: any) =>
                   <tr key={item.id}>
                     <td>{item.idOrg}</td>
                     <td>{item.name}</td>
@@ -228,10 +228,10 @@ export default function WithAsync() {
                         <div className="common edit" onClick={() => editTestData(item)}>
                           <MdEditNote />
                         </div>
-                        <div className="common delete" onClick={() => deleteTestData(item.id)}>
+                        <div className="common delete" onClick={() => deleteStudent(item.id)}>
                           <MdAutoDelete />
                         </div>
-                        <div className="common status" onClick={() => statusTestData(item.id)}>
+                        <div className="common status" onClick={() => statusStudent(item.id)}>
                           {
                             (item.status === '1') ?
                               <FaLock /> :

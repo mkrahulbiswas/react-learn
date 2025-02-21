@@ -1,7 +1,7 @@
 import axios from "axios"
 import { useEffect, useState } from "react"
 import { Table } from "react-bootstrap"
-import { getStudent } from "../../../../../../services/ReactLearnTwoService"
+import { getStudentApi } from "../../../../../../services/ReactLearnTwoService"
 
 export default function UsingAxios() {
   return (
@@ -27,7 +27,7 @@ export default function UsingAxios() {
 }
 
 export function WithoutAsyncAndService() {
-  const [getTestData, setGetTestData] = useState({
+  const [getStudent, setGetStudent] = useState({
     status: 0,
     msg: "",
     title: '',
@@ -39,7 +39,7 @@ export function WithoutAsyncAndService() {
 
   const getData = () => {
     try {
-      axios.get("https://kisalayakgschool.com/api/getTestData", {
+      axios.get("https://kisalayakgschool.com/api/getStudent?page=1&perPage=10", {
         headers: {
           'X-Mashape-Key': 'required',
           'Content-Type': 'application/x-www-form-urlencoded',
@@ -48,7 +48,7 @@ export function WithoutAsyncAndService() {
           'mode': 'test'
         }
       }).then((res) => {
-        setGetTestData(res.data)
+        setGetStudent(res.data)
       })
     } catch (error) {
       console.log(error)
@@ -71,7 +71,7 @@ export function WithoutAsyncAndService() {
         </thead>
         <tbody>
           {
-            getTestData.payload.data.map((item: any, index: any) =>
+            getStudent.payload.data.map((item: any, index: any) =>
               <tr key={item.id}>
                 <td>{index + 1}</td>
                 <td>{item.name}</td>
@@ -85,7 +85,7 @@ export function WithoutAsyncAndService() {
 }
 
 export function WithoutAsyncButWithService() {
-  const [getTestData, setGetTestData] = useState({
+  const [getStudent, setGetStudent] = useState({
     status: 0,
     msg: "",
     title: '',
@@ -97,8 +97,8 @@ export function WithoutAsyncButWithService() {
 
   const getData = () => {
     try {
-      getStudent().then((res) => {
-        setGetTestData(res.data)
+      getStudentApi(1, 10).then((res) => {
+        setGetStudent(res.data)
       })
     } catch (error) {
       console.log(error)
@@ -121,7 +121,7 @@ export function WithoutAsyncButWithService() {
         </thead>
         <tbody>
           {
-            getTestData.payload.data.map((item: any, index: any) =>
+            getStudent.payload.data.map((item: any, index: any) =>
               <tr key={item.id}>
                 <td>{index + 1}</td>
                 <td>{item.name}</td>
@@ -135,7 +135,7 @@ export function WithoutAsyncButWithService() {
 }
 
 export function WithAsyncButWithoutService() {
-  const [getTestData, setGetTestData] = useState({
+  const [getStudent, setGetStudent] = useState({
     status: 0,
     msg: "",
     title: '',
@@ -147,7 +147,7 @@ export function WithAsyncButWithoutService() {
 
   const getData = async () => {
     try {
-      const res = await axios.get("https://kisalayakgschool.com/api/getTestData", {
+      const res = await axios.get("https://kisalayakgschool.com/api/getStudent?page=1&perPage=10", {
         headers: {
           'X-Mashape-Key': 'required',
           'Content-Type': 'application/x-www-form-urlencoded',
@@ -156,7 +156,7 @@ export function WithAsyncButWithoutService() {
           'mode': 'test'
         }
       })
-      setGetTestData(res.data)
+      setGetStudent(res.data)
     } catch (error) {
       console.log(error)
     }
@@ -178,7 +178,7 @@ export function WithAsyncButWithoutService() {
         </thead>
         <tbody>
           {
-            getTestData.payload.data.map((item: any, index: any) =>
+            getStudent.payload.data.map((item: any, index: any) =>
               <tr key={item.id}>
                 <td>{index + 1}</td>
                 <td>{item.name}</td>
@@ -192,7 +192,7 @@ export function WithAsyncButWithoutService() {
 }
 
 export function WithAsyncAndService() {
-  const [getTestData, setGetTestData] = useState({
+  const [getStudent, setGetStudent] = useState({
     status: 0,
     msg: "",
     title: '',
@@ -204,8 +204,8 @@ export function WithAsyncAndService() {
 
   const getData = async () => {
     try {
-      const res = await getStudent()
-      setGetTestData(res.data)
+      const res = await getStudentApi(1, 10)
+      setGetStudent(res.data)
     } catch (error) {
       console.log(error)
     }
@@ -227,7 +227,7 @@ export function WithAsyncAndService() {
         </thead>
         <tbody>
           {
-            getTestData.payload.data.map((item: any, index: any) =>
+            getStudent.payload.data.map((item: any, index: any) =>
               <tr key={item.id}>
                 <td>{index + 1}</td>
                 <td>{item.name}</td>

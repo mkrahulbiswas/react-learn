@@ -1,7 +1,7 @@
 import axios from "axios"
 import { useState } from "react"
 import { Button, Col, Form, Row } from "react-bootstrap"
-import { updateStudent } from "../../../../../../services/ReactLearnTwoService"
+import { updateStudentApi } from "../../../../../../services/ReactLearnTwoService"
 
 export default function UsingAxios({ getData }: any) {
   return (
@@ -37,9 +37,9 @@ export default function UsingAxios({ getData }: any) {
 export function WithoutAsyncAndService({ getData }: any) {
   const [fromData, setFromData] = useState({ name: 'Rahul Biswas', email: 'biswas.rahul31@gmail.com', phone: '8436191135', class: '1' })
   const [targetId, setTargetId] = useState(0)
-  const updateTestData = (event: any) => {
+  const updateStudent = (event: any) => {
     event.preventDefault()
-    axios.put("https://kisalayakgschool.com/api/updateTestData/" + targetId,
+    axios.put("https://kisalayakgschool.com/api/updateStudent/" + targetId,
       fromData,
       {
         headers: {
@@ -58,7 +58,7 @@ export function WithoutAsyncAndService({ getData }: any) {
   return (
     <div>
       <p>Hear we use <b>axios</b> <span style={{ color: 'red' }}>without using</span> <b>services</b> and <b>async</b></p>
-      <Form onSubmit={updateTestData}>
+      <Form onSubmit={updateStudent}>
         <Row className="col-12">
           <Form.Group as={Col} controlId="formGridName" className="col-6 mb-3">
             <Form.Label className="fw-bold mb-0">Name</Form.Label>
@@ -92,9 +92,9 @@ export function WithoutAsyncAndService({ getData }: any) {
 export function WithoutAsyncButWithService({ getData }: any) {
   const [fromData, setFromData] = useState({ name: 'Rahul Biswas', email: 'biswas.rahul31@gmail.com', phone: '8436191135', class: '1' })
   const [targetId, setTargetId] = useState(0)
-  const updateTestData = (event: any) => {
+  const updateStudent = (event: any) => {
     event.preventDefault()
-    updateStudent(fromData, targetId).then((resp) => {
+    updateStudentApi(fromData, targetId).then((resp) => {
       if (resp.data.status == 1) {
         getData()
       }
@@ -104,7 +104,7 @@ export function WithoutAsyncButWithService({ getData }: any) {
   return (
     <div>
       <p>Hear we use <b>axios</b> <span style={{ color: 'red' }}>with using</span> <b>services</b> but not <b>async</b></p>
-      <Form onSubmit={updateTestData}>
+      <Form onSubmit={updateStudent}>
         <Row className="col-12">
           <Form.Group as={Col} controlId="formGridName" className="col-6 mb-3">
             <Form.Label className="fw-bold mb-0">Name</Form.Label>
@@ -138,9 +138,9 @@ export function WithoutAsyncButWithService({ getData }: any) {
 export function WithAsyncButWithoutService({ getData }: any) {
   const [fromData, setFromData] = useState({ name: 'Rahul Biswas', email: 'biswas.rahul31@gmail.com', phone: '8436191135', class: '1' })
   const [targetId, setTargetId] = useState(0)
-  const updateTestData = async (event: any) => {
+  const updateStudent = async (event: any) => {
     event.preventDefault()
-    const resp = await axios.put("https://kisalayakgschool.com/api/updateTestData/" + targetId,
+    const resp = await axios.put("https://kisalayakgschool.com/api/updateStudent/" + targetId,
       fromData,
       {
         headers: {
@@ -159,7 +159,7 @@ export function WithAsyncButWithoutService({ getData }: any) {
   return (
     <div>
       <p>Hear we use <b>axios</b> <span style={{ color: 'red' }}>without using</span> <b>services</b> but with <b>async</b></p>
-      <Form onSubmit={updateTestData}>
+      <Form onSubmit={updateStudent}>
         <Row className="col-12">
           <Form.Group as={Col} controlId="formGridName" className="col-6 mb-3">
             <Form.Label className="fw-bold mb-0">Name</Form.Label>
@@ -193,9 +193,9 @@ export function WithAsyncButWithoutService({ getData }: any) {
 export function WithAsyncAndService({ getData }: any) {
   const [fromData, setFromData] = useState({ name: 'Rahul Biswas', email: 'biswas.rahul31@gmail.com', phone: '8436191135', class: '1' })
   const [targetId, setTargetId] = useState(0)
-  const updateTestData = async (event: any) => {
+  const updateStudent = async (event: any) => {
     event.preventDefault()
-    const resp = await updateStudent(fromData, targetId)
+    const resp = await updateStudentApi(fromData, targetId)
     if (resp.data.status == 1) {
       getData()
     }
@@ -204,7 +204,7 @@ export function WithAsyncAndService({ getData }: any) {
   return (
     <div>
       <p>Hear we use <b>axios</b> <span style={{ color: 'red' }}>with using</span> <b>services</b> and <b>async</b></p>
-      <Form onSubmit={updateTestData}>
+      <Form onSubmit={updateStudent}>
         <Row className="col-12">
           <Form.Group as={Col} controlId="formGridName" className="col-6 mb-3">
             <Form.Label className="fw-bold mb-0">Name</Form.Label>

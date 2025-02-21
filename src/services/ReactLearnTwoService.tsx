@@ -11,22 +11,26 @@ const api = axios.create({
     },
 })
 
-export const getStudent = () => {
-    return api.get("getTestData")
+export const getStudentApi = (page: number, perPage: number) => {
+    return api.get(`getStudent?page=${page}&perPage=${perPage}`)
 }
 
-export const statusStudent = (id: any) => {
-    return api.patch('statusTestData/' + id, {})
+export const saveStudentApi = (data: any) => {
+    return api.post('saveStudent', data)
 }
 
-export const deleteStudent = (id: any) => {
-    return api.delete('deleteTestData/' + id)
+export const updateStudentApi = (data: any, id: any) => {
+    return api.put('updateStudent/' + id, data)
 }
 
-export const saveStudent = (data: any) => {
-    return api.post('saveTestData', data)
+export const statusStudentApi = (id: any) => {
+    return api.patch('statusStudent/' + id, {})
 }
 
-export const updateStudent = (data: any, id: any) => {
-    return api.put('updateTestData/' + id, data)
+export const deleteStudentApi = (id: any) => {
+    return api.delete('deleteStudent/' + id)
+}
+
+export const detailStudentApi = (id: any) => {
+    return api.get('detailStudent/' + id)
 }

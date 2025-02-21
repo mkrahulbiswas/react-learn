@@ -1,17 +1,10 @@
 import { useQuery } from "@tanstack/react-query"
 import { Table } from "react-bootstrap"
-import { getStudentApi } from "../../../../../../services/ReactLearnTwoService"
+import { Link } from "react-router"
+import { getStudentApi } from "../../../../../../../services/ReactLearnTwoService"
 
-export default function StaleTime() {
-  return (
-    <>
-      <p>This is example of <b>stale time</b></p>
-      <ExampleOne />
-    </>
-  )
-}
+export default function StdList() {
 
-export const ExampleOne = () => {
   const getData = async () => {
     try {
       const res = await getStudentApi()
@@ -25,11 +18,11 @@ export const ExampleOne = () => {
   const resp = useQuery({
     queryKey: ['getStudent'],
     queryFn: getData,
-    staleTime: 5000
   })
 
   if (resp.isPending) return <p>Loading 1...</p>
   if (resp.isError) return <p>Error: {resp.error.message || 'Something Went Wrong'}</p>
+
   return (
     <>
       <Table striped bordered hover variant="warning">
@@ -39,16 +32,22 @@ export const ExampleOne = () => {
             <th>Name</th>
             <th>Phone</th>
             <th>Email</th>
+            <th>Detail</th>
           </tr>
         </thead>
         <tbody>
           {
             resp.data && resp.data.payload.data.map((item: any, index: any) =>
-              <tr key={item.id}>
+              <tr key={item.idOrg}>
                 <td>{index + 1}</td>
                 <td>{item.name}</td>
                 <td>{item.phone}</td>
                 <td>{item.email}</td>
+                <td>
+                  <Link to={`/detail/${item.idOrg}`}>
+                    <button className="btn btn-sm btn-success">Detail</button>
+                  </Link>
+                </td>
               </tr>
             )
           }

@@ -5,7 +5,7 @@ import { getStudentApi } from "../../../../../../services/ReactLearnTwoService"
 export default function StaleTime() {
   return (
     <>
-      <p>This is example of <b>stale time</b> by using <b>use query</b></p>
+      <p>This is example of <b>stale time</b></p>
       <ExampleOne />
     </>
   )

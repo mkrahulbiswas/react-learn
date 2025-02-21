@@ -5,7 +5,7 @@ import { getStudentApi } from "../../../../../../services/ReactLearnTwoService"
 export default function ResponseOptions() {
   return (
     <>
-      <p>This is example to <b>handel response options</b> by using <b>use query</b></p>
+      <p>This is example to <b>handel response options</b></p>
       <ExampleOne />
     </>
   )

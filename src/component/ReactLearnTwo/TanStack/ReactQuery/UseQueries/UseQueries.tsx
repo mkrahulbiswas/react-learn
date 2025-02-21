@@ -4,7 +4,7 @@ import DynamicParallelQueries from "./DynamicParallelQueries/DynamicParallelQuer
 export default function UseQueries() {
   return (
     <>
-      <p>This is example of basic <b>use query</b></p>
+      <p>This is example of basic <b>use queries</b></p>
       <div className="row">
         <DynamicParallelQueries />
         {/* <CombineDynamicParallelQueries /> */}

@@ -5,7 +5,7 @@ import { getStudentApi } from "../../../../../../services/ReactLearnTwoService"
 export default function GarbageCollection() {
   return (
     <>
-      <p>This is example of <b>garbage collection</b> by using <b>use query</b></p>
+      <p>This is example of <b>garbage collection</b></p>
       <ExampleOne />
     </>
   )

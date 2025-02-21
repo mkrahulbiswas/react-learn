@@ -5,7 +5,7 @@ import { getStudentApi } from "../../../../../../services/ReactLearnTwoService"
 export default function Refetch() {
   return (
     <>
-      <p>This is example of <b>refetch</b> by using <b>use query</b></p>
+      <p>This is example of <b>refetch</b></p>
       <ExampleOne />
       <ExampleTwo />
     </>

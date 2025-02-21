@@ -2,7 +2,7 @@ import { useQueries } from "@tanstack/react-query"
 import { Table } from "react-bootstrap"
 import { detailStudentApi } from "../../../../../../services/ReactLearnTwoService"
 
-export default function DynamicParallelQueries() {
+export default function UsingUseQueries() {
   return (
     <>
       <p>This is example of <b>dynamic parallel queries</b></p>

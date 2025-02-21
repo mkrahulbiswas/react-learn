@@ -5,7 +5,7 @@ import { getStudentApi } from "../../../../../../services/ReactLearnTwoService"
 export default function StoreData() {
   return (
     <>
-      <p>This is example of how to <b>store data</b> by using <b>use query</b></p>
+      <p>This is example of how to <b>store data</b></p>
       <ExampleOne />
     </>
   )

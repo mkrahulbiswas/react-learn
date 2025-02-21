@@ -5,7 +5,7 @@ import { getStudentApi } from "../../../../../../services/ReactLearnTwoService"
 export default function SelectData() {
   return (
     <>
-      <p>This is example of <b>select</b> by using <b>use query</b></p>
+      <p>This is example of <b>select</b></p>
       <ExampleOne />
       <ExampleTwo />
     </>

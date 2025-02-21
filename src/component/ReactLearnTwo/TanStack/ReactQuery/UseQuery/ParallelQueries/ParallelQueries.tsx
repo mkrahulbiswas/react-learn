@@ -5,7 +5,7 @@ import { Table } from "react-bootstrap"
 export default function ParallelQueries() {
   return (
     <>
-      <p>This is example of <b>parallel queries</b> by using <b>use query</b></p>
+      <p>This is example of <b>parallel queries</b></p>
       <ExampleOne />
     </>
   )

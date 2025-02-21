@@ -5,7 +5,7 @@ import { getStudentApi } from "../../../../../../services/ReactLearnTwoService"
 export default function Polling() {
   return (
     <>
-      <p>This is example of <b>polling</b> by using <b>use query</b></p>
+      <p>This is example of <b>polling</b></p>
       <ExampleOne />
     </>
   )

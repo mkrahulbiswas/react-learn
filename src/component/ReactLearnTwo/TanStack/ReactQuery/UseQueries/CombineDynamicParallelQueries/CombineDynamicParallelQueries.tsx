@@ -5,7 +5,7 @@ import { Table } from "react-bootstrap"
 export default function CombineDynamicParallelQueries() {
   return (
     <>
-      <p>This is example of <b>combine dynamic parallel queries</b> by using <b>use query</b></p>
+      <p>This is example of <b>combine dynamic parallel queries</b></p>
       <ExampleOne ids={[104, 106, 107, 108]} />
     </>
   )

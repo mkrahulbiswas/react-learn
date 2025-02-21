@@ -1,7 +1,3 @@
-import { useQuery } from "@tanstack/react-query"
-import { detailStudentApi, getStudentApi } from "../../../../../../services/ReactLearnTwoService"
-import { Table } from "react-bootstrap"
-
 export default function UsingUseQuery() {
   return (
     <>
@@ -14,34 +10,34 @@ export default function UsingUseQuery() {
 
 export const ExampleOne = () => {
 
-  const respOne = useQuery({
-    queryKey: ['getStudent'],
-    queryFn: async () => {
-      try {
-        const res = await getStudentApi(1, 10)
-        return res.data.status == 1 ? res.data : []
-      } catch (error) {
-        console.log(error)
-        return []
-      }
-    }
-  })
+  // const respOne = useQuery({
+  //   queryKey: ['getStudent'],
+  //   queryFn: async () => {
+  //     try {
+  //       const res = await getStudentApi(1, 10)
+  //       return res.data.status == 1 ? res.data : []
+  //     } catch (error) {
+  //       console.log(error)
+  //       return []
+  //     }
+  //   }
+  // })
 
-  const respTwo = useQuery({
-    queryKey: ['getStudentDetail', respOne],
-    queryFn: async () => {
-      console.log(respOne);
+  // const respTwo = useQuery({
+  //   queryKey: ['getStudentDetail', respOne],
+  //   queryFn: async () => {
+  //     console.log(respOne);
 
-      try {
-        const res = await detailStudentApi(respOne.data)
-        return res.data.status == 1 ? res.data : []
-      } catch (error) {
-        console.log(error)
-        return []
-      }
-    },
-    enabled: !!respOne
-  })
+  //     try {
+  //       const res = await detailStudentApi(respOne.data)
+  //       return res.data.status == 1 ? res.data : []
+  //     } catch (error) {
+  //       console.log(error)
+  //       return []
+  //     }
+  //   },
+  //   enabled: !!respOne
+  // })
 
   // console.log(respOne.data);
   // console.log(respTwo);

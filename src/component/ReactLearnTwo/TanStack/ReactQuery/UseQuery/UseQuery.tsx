@@ -1,5 +1,5 @@
 import { ReactQueryDevtools } from "@tanstack/react-query-devtools";
-import DetailPage from "./DetailPage/DetailPage";
+import InitialQuery from "./InitialQuery/InitialQuery";
 
 export default function UseQuery() {
   return (
@@ -13,7 +13,8 @@ export default function UseQuery() {
         {/* <ResponseOptions /> */}
         {/* <Refetch /> */}
         {/* <SelectData /> */}
-        <DetailPage />
+        {/* <DetailPage /> */}
+        <InitialQuery />
         {/* <ParallelQueries /> */}
       </div>
       <ReactQueryDevtools initialIsOpen={false} />

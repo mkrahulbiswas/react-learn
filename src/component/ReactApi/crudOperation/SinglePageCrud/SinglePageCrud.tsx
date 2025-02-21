@@ -194,7 +194,7 @@ function SinglePageCrud(props: any) {
 
   const getStudent = () => {
     closeModal()
-    fetch('https://kisalayakgschool.com/api/getStudent', {
+    fetch('https://kisalayakgschool.com/api/getStudent?page=1&perPage=10', {
       method: 'GET',
       headers: {
         'X-Mashape-Key': 'required',

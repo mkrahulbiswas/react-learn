@@ -11,8 +11,8 @@ const api = axios.create({
     },
 })
 
-export const getStudentApi = () => {
-    return api.get("getStudent")
+export const getStudentApi = (page: number, perPage: number) => {
+    return api.get(`getStudent?page=${page}&perPage=${perPage}`)
 }
 
 export const saveStudentApi = (data: any) => {

@@ -15,7 +15,7 @@ export default function SelectData() {
 export const ExampleOne = () => {
   const getData = async () => {
     try {
-      const res = await getStudentApi()
+      const res = await getStudentApi(1, 10)
       return res.data.status == 1 ? res.data : []
     } catch (error) {
       console.log(error)
@@ -62,7 +62,7 @@ export const ExampleOne = () => {
 export const ExampleTwo = () => {
   const getData = async () => {
     try {
-      const res = await getStudentApi()
+      const res = await getStudentApi(1, 10)
       return res.data.status == 1 ? res.data : []
     } catch (error) {
       console.log(error)

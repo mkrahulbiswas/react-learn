@@ -17,7 +17,7 @@ export default function PutApi() {
 
   const getData = async () => {
     try {
-      const res = await fetch("https://kisalayakgschool.com/api/getStudent", {
+      const res = await fetch("https://kisalayakgschool.com/api/getStudent?page=1&perPage=10", {
         method: 'GET',
         headers: {
           'X-Mashape-Key': 'required',

@@ -39,7 +39,7 @@ export function WithoutAsyncAndService() {
 
   const getData = () => {
     try {
-      axios.get("https://kisalayakgschool.com/api/getStudent", {
+      axios.get("https://kisalayakgschool.com/api/getStudent?page=1&perPage=10", {
         headers: {
           'X-Mashape-Key': 'required',
           'Content-Type': 'application/x-www-form-urlencoded',
@@ -97,7 +97,7 @@ export function WithoutAsyncButWithService() {
 
   const getData = () => {
     try {
-      getStudentApi().then((res) => {
+      getStudentApi(1, 10).then((res) => {
         setGetStudent(res.data)
       })
     } catch (error) {
@@ -147,7 +147,7 @@ export function WithAsyncButWithoutService() {
 
   const getData = async () => {
     try {
-      const res = await axios.get("https://kisalayakgschool.com/api/getStudent", {
+      const res = await axios.get("https://kisalayakgschool.com/api/getStudent?page=1&perPage=10", {
         headers: {
           'X-Mashape-Key': 'required',
           'Content-Type': 'application/x-www-form-urlencoded',
@@ -204,7 +204,7 @@ export function WithAsyncAndService() {
 
   const getData = async () => {
     try {
-      const res = await getStudentApi()
+      const res = await getStudentApi(1, 10)
       setGetStudent(res.data)
     } catch (error) {
       console.log(error)

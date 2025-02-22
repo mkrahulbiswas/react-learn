@@ -3,7 +3,7 @@ import { getStudentApi } from "../../../../../../services/ReactLearnTwoService"
 import { Table } from "react-bootstrap"
 import { useState } from "react"
 
-export default function PaginatedQueries() {
+export default function InfiniteQueries() {
   return (
     <>
       <ExampleOne />
@@ -35,7 +35,7 @@ export const ExampleOne = () => {
   return (
     <>
       <div className="row">
-        <p>This is example of <b>paginated queries</b> with next previous</p>
+        <p>This is example of <b>infinite queries</b> with next previous</p>
         <div className="col-md-12">
           <Table striped bordered hover variant="warning">
             <thead>
@@ -97,7 +97,7 @@ export const ExampleTwo = () => {
   return (
     <>
       <div className="row">
-        <p>This is example of <b>paginated queries</b> with next previous, but hear we use <b>placeholder data</b> for kept previous data unless new data load in table</p>
+        <p>This is example of <b>infinite queries</b> with next previous, but hear we use <b>placeholder data</b> for kept previous data unless new data load in table</p>
         <div className="col-md-12">
           <Table striped bordered hover variant="warning">
             <thead>

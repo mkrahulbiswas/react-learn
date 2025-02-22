@@ -1,5 +1,5 @@
 import { ReactQueryDevtools } from "@tanstack/react-query-devtools";
-import InitialQuery from "./InitialQuery/InitialQuery";
+import Polling from "./Polling/Polling";
 
 export default function UseQuery() {
   return (
@@ -9,12 +9,12 @@ export default function UseQuery() {
         {/* <StoreData /> */}
         {/* <GarbageCollection /> */}
         {/* <StaleTime /> */}
-        {/* <Polling /> */}
+        <Polling />
         {/* <ResponseOptions /> */}
         {/* <Refetch /> */}
         {/* <SelectData /> */}
         {/* <DetailPage /> */}
-        <InitialQuery />
+        {/* <InitialQuery /> */}
         {/* <ParallelQueries /> */}
       </div>
       <ReactQueryDevtools initialIsOpen={false} />

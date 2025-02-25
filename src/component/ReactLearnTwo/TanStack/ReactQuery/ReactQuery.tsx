@@ -1,5 +1,5 @@
 import { QueryClient, QueryClientProvider } from "@tanstack/react-query"
-import Pagination from "./Pagination/Pagination"
+import UseMutation from "./UseMutation/UseMutation"
 
 export const ReactQuery = () => {
   const queryClient = new QueryClient()
@@ -17,10 +17,10 @@ export const ReactQuery = () => {
       <p>This <b>React Query</b> Every Feature Explain</p>
       <QueryClientProvider client={queryClient}>
         {/* <UseQuery /> */}
-        <Pagination />
+        {/* <Pagination /> */}
         {/* <UseQueries /> */}
         {/* <DependentQueries /> */}
-        {/* <UseMutation /> */}
+        <UseMutation />
         {/* <DevTools /> */}
       </QueryClientProvider>
     </>

@@ -1,7 +1,7 @@
 import { useInfiniteQuery } from "@tanstack/react-query"
 import { getStudentApi } from "../../../../../../services/ReactLearnTwoService"
 import { Table } from "react-bootstrap"
-import { Fragment, useState } from "react"
+import { Fragment } from "react"
 
 export default function InfiniteQueries() {
   return (
@@ -16,8 +16,6 @@ export const ExampleOne = () => {
   const resp = useInfiniteQuery({
     queryKey: ['getStudentOne'],
     queryFn: async ({ pageParam }) => {
-      console.log('pageParam->', pageParam);
-
       try {
         const res = await getStudentApi(pageParam, 2)
         return res.data.status == 1 ? res.data : []
@@ -28,14 +26,18 @@ export const ExampleOne = () => {
     },
 
     initialPageParam: 1,
-    getNextPageParam: (lastPage, pages) => lastPage.nextCursor,
-    getPreviousPageParam: (firstPage, pages) => firstPage.prevCursor,
-    // maxPages: 3,
+    getNextPageParam: (lastPage, pages) => {
+      if (pages.length < lastPage.payload.last_page) {
+        return pages.length + 1
+      } else {
+        return undefined
+      }
+    },
+    // maxPages: 2, if you set this it will show only two page of latest data
   })
 
   if (resp.isPending) return <p>Loading 1...</p>
   if (resp.isError) return <p>Error: {resp.error.message || 'Something Went Wrong'}</p>
-  console.log(resp);
 
   return (
     <>
@@ -83,33 +85,31 @@ export const ExampleOne = () => {
 }
 
 export const ExampleTwo = () => {
-  const [currentPage, setCurrentPage] = useState(1)
-
   const resp = useInfiniteQuery({
-    queryKey: ['getStudentTwo', currentPage],
-    queryFn: async () => {
+    queryKey: ['getStudentOne'],
+    queryFn: async ({ pageParam }) => {
       try {
-        const res = await getStudentApi(currentPage, 2)
+        const res = await getStudentApi(pageParam, 2)
         return res.data.status == 1 ? res.data : []
       } catch (error) {
         console.log(error)
         return []
       }
     },
-    enabled: !!currentPage,
 
-    initialPageParam: 0,
+    initialPageParam: 1,
     getNextPageParam: (lastPage, pages) => {
-      // console.log('pages->', pages);
-      console.log('lastPage->', lastPage);
-      // console.log('pages.length->', pages.length);
+      console.log(lastPage);
 
-      if (pages.length <= lastPage.payload.last_page) {
+      if (pages.length < lastPage.payload.last_page) {
         return pages.length + 1
       } else {
         return undefined
       }
     },
+    // getNextPageParam: (lastPage, pages) => lastPage.nextCursor,
+    // getPreviousPageParam: (firstPage, pages) => firstPage.prevCursor,
+    // maxPages: 3,
   })
 
   if (resp.isPending) return <p>Loading 1...</p>
@@ -152,11 +152,9 @@ export const ExampleTwo = () => {
           </Table>
         </div>
         <div className="col-md-12">
-          <button disabled={!resp.hasNextPage} onClick={() => resp.fetchPreviousPage()}>Load More..</button>
+          <button onClick={() => resp.fetchNextPage()} disabled={!resp.hasNextPage || resp.isFetchingNextPage}>{resp.isFetchingNextPage ? 'Loading more...' : resp.hasNextPage ? 'Load More' : 'Nothing more to load'}</button>
         </div>
-        {
-          resp.isFetching || resp.isFetchingNextPage ? <div className="loader">loading...</div> : null
-        }
+        <div className="loading">{resp.isFetching && !resp.isFetchingNextPage ? 'Fetching...' : null}</div>
       </div>
     </>
   )

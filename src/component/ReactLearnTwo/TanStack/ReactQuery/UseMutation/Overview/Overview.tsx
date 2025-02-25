@@ -1,17 +1,19 @@
-import { useQuery } from "@tanstack/react-query"
+import { useMutation, useQuery, useQueryClient } from "@tanstack/react-query"
 import { Table } from "react-bootstrap"
-import { getStudentApi } from "../../../../../../services/ReactLearnTwoService"
+import { deleteStudentApi, getStudentApi } from "../../../../../../services/ReactLearnTwoService"
 
-export default function GarbageCollection() {
+export default function Overview() {
   return (
     <>
-      <p>This is example of <b>garbage collection</b></p>
+      <p>This is example <b>use mutation</b>. Use Mutation is used for add, update or delete any data.</p>
       <ExampleOne />
     </>
   )
 }
 
 export const ExampleOne = () => {
+  const queryClient = useQueryClient();
+
   const getData = async () => {
     try {
       const res = await getStudentApi(1, 10)
@@ -22,14 +24,28 @@ export const ExampleOne = () => {
     }
   }
 
+  const deleteData = async (id: any) => {
+    try {
+      const res = await deleteStudentApi(id)
+      return res.data.status == 1 ? res.data : []
+    } catch (error) {
+      console.log(error)
+      return []
+    }
+  }
+
   const resp = useQuery({
-    queryKey: ['getStudent'],
+    queryKey: ['getStudent7'],
     queryFn: getData,
-    gcTime: 1000
   })
 
-  if (resp.isPending) return <p>Loading 1...</p>
-  if (resp.isError) return <p>Error: {resp.error.message || 'Something Went Wrong'}</p>
+  const respTwo = useMutation({
+    mutationFn: (id) => deleteData(id),
+    onSuccess: (data, id) => {
+      queryClient.invalidateQueries({ queryKey: ['getStudent7'] })
+    }
+  })
+
   return (
     <>
       <Table striped bordered hover variant="warning">
@@ -39,6 +55,7 @@ export const ExampleOne = () => {
             <th>Name</th>
             <th>Phone</th>
             <th>Email</th>
+            <th>Action</th>
           </tr>
         </thead>
         <tbody>
@@ -49,6 +66,9 @@ export const ExampleOne = () => {
                 <td>{item.name}</td>
                 <td>{item.phone}</td>
                 <td>{item.email}</td>
+                <td>
+                  <button className="btn btn-sm btn-success" onClick={() => respTwo.mutate(item.idOrg)}>Delete</button>
+                </td>
               </tr>
             )
           }

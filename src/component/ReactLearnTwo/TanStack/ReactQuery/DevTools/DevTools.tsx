@@ -25,7 +25,7 @@ export const StoringData = () => {
   }
 
   const resp = useQuery({
-    queryKey: ['getStudent'],
+    queryKey: ['getStudent2'],
     queryFn: getData,
   })
 

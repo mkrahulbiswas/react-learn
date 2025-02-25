@@ -23,7 +23,7 @@ export const ExampleOne = () => {
   }
 
   const resp = useQuery({
-    queryKey: ['getStudent'],
+    queryKey: ['getStudent20'],
     queryFn: getData,
     staleTime: 5000
   })

@@ -14,7 +14,7 @@ export default function InfiniteQueries() {
 
 export const ExampleOne = () => {
   const resp = useInfiniteQuery({
-    queryKey: ['getStudentOne'],
+    queryKey: ['getStudent5'],
     queryFn: async ({ pageParam }) => {
       try {
         const res = await getStudentApi(pageParam, 2)
@@ -86,7 +86,7 @@ export const ExampleOne = () => {
 
 export const ExampleTwo = () => {
   const resp = useInfiniteQuery({
-    queryKey: ['getStudentOne'],
+    queryKey: ['getStudent6'],
     queryFn: async ({ pageParam }) => {
       try {
         const res = await getStudentApi(pageParam, 2)

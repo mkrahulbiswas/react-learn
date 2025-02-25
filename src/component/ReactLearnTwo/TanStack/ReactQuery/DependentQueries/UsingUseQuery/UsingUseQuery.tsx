@@ -11,7 +11,7 @@ export default function UsingUseQuery() {
 export const ExampleOne = () => {
 
   // const respOne = useQuery({
-  //   queryKey: ['getStudent'],
+  //   queryKey: ['getStudent1'],
   //   queryFn: async () => {
   //     try {
   //       const res = await getStudentApi(1, 10)
@@ -24,7 +24,7 @@ export const ExampleOne = () => {
   // })
 
   // const respTwo = useQuery({
-  //   queryKey: ['getStudentDetail', respOne],
+  //   queryKey: ['getStudentDetail1', respOne],
   //   queryFn: async () => {
   //     console.log(respOne);
 

@@ -8,7 +8,7 @@ export default function StdDetail() {
   const queryClient = useQueryClient();
 
   const resp = useQuery({
-    queryKey: ['detailStudent', params.id],
+    queryKey: ['detailStudent2', params.id],
     queryFn: async () => {
       try {
         const res = await detailStudentApi(params.id)
@@ -19,7 +19,7 @@ export default function StdDetail() {
       }
     },
     initialData: () => {
-      const studentList: any = queryClient.getQueryData(['getStudent'])
+      const studentList: any = queryClient.getQueryData(['getStudent11'])
       console.log(studentList)
       const studentData = studentList?.payload.data.find((data: any) => data.idOrg == parseInt(params.id))
       console.log(studentData)

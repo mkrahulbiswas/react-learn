@@ -23,7 +23,7 @@ export const ExampleOne = () => {
   }
 
   const resp = useQuery({
-    queryKey: ['getStudent'],
+    queryKey: ['getStudent14'],
     queryFn: getData,
     refetchInterval: 100000,
     refetchIntervalInBackground: true // If we are in background

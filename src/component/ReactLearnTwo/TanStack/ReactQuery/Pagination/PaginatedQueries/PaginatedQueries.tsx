@@ -16,7 +16,7 @@ export const ExampleOne = () => {
   const [currentPage, setCurrentPage] = useState(1)
 
   const resp = useQuery({
-    queryKey: ['getStudentOne', currentPage],
+    queryKey: ['getStudent3', currentPage],
     queryFn: async () => {
       try {
         const res = await getStudentApi(currentPage, 2)
@@ -76,7 +76,7 @@ export const ExampleTwo = () => {
   const [currentPage, setCurrentPage] = useState(1)
 
   const resp = useQuery({
-    queryKey: ['getStudentTwo', currentPage],
+    queryKey: ['getStudent4', currentPage],
     queryFn: async () => {
       try {
         const res = await getStudentApi(currentPage, 2)

@@ -24,7 +24,7 @@ export const ExampleOne = () => {
   }
 
   const resp = useQuery({
-    queryKey: ['getStudent'],
+    queryKey: ['getStudent18'],
     queryFn: getData,
     select: (data) => data.payload.data,
   })
@@ -71,7 +71,7 @@ export const ExampleTwo = () => {
   }
 
   const resp = useQuery({
-    queryKey: ['getStudent'],
+    queryKey: ['getStudent19'],
     queryFn: getData,
     select: (data) => {
       const student = data.payload.data.map((val: any) => {

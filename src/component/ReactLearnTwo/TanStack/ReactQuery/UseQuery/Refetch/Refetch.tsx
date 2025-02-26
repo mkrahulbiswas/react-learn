@@ -24,7 +24,7 @@ export const ExampleOne = () => {
   }
 
   const resp = useQuery({
-    queryKey: ['getStudent'],
+    queryKey: ['getStudent15'],
     queryFn: getData,
   })
 
@@ -71,7 +71,7 @@ export const ExampleTwo = () => {
   }
 
   const resp = useQuery({
-    queryKey: ['getStudent'],
+    queryKey: ['getStudent16'],
     queryFn: getData,
     refetchOnMount: true,
     // refetchOnWindowFocus: true,

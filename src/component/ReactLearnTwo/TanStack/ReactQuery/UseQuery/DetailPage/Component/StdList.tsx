@@ -16,7 +16,7 @@ export default function StdList() {
   }
 
   const resp = useQuery({
-    queryKey: ['getStudent'],
+    queryKey: ['getStudent8'],
     queryFn: getData,
   })
 

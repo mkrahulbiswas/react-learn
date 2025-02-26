@@ -7,7 +7,7 @@ export default function StdDetail() {
   const navigate = useNavigate();
 
   const resp = useQuery({
-    queryKey: ['detailStudent'],
+    queryKey: ['detailStudent3'],
     queryFn: async () => {
       try {
         const res = await detailStudentApi(params.id)

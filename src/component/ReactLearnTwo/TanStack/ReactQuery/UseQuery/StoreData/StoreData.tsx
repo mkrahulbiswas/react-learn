@@ -23,7 +23,7 @@ export const ExampleOne = () => {
   }
 
   const resp = useQuery({
-    queryKey: ['getStudent'],
+    queryKey: ['getStudent21'],
     queryFn: getData,
   })
 

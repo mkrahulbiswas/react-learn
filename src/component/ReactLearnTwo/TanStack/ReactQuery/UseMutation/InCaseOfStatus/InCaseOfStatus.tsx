@@ -41,7 +41,7 @@ export const ExampleOne = () => {
 
   const respTwo = useMutation({
     mutationFn: (id) => deleteData(id),
-    onSuccess: (data, id) => {
+    onSuccess: (_data, _id) => {
       queryClient.invalidateQueries({ queryKey: ['getStudent7'] })
     }
   })
@@ -115,7 +115,7 @@ export const ExampleTwo = () => {
 
   const respTwo = useMutation({
     mutationFn: (id) => deleteData(id),
-    onSuccess: (data, id) => {
+    onSuccess: (_data, id) => {
       queryClient.setQueryData(['getStudent22'], (oldData: any) => {
         return {
           ...oldData,

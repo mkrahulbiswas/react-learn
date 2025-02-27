@@ -42,7 +42,7 @@ export const ExampleOne = () => {
 
   const respTwo = useMutation({
     mutationFn: (id) => deleteData(id),
-    onSuccess: (data, id) => {
+    onSuccess: (_data, _id) => {
       queryClient.invalidateQueries({ queryKey: ['getStudent7'] })
     }
   })
@@ -110,7 +110,7 @@ export const ExampleTwo = () => {
 
   const respTwo = useMutation({
     mutationFn: (id) => deleteData(id),
-    onSuccess: (data, id) => {
+    onSuccess: (_data, id) => {
       queryClient.setQueryData(['getStudent22'], (oldData: any) => {
         return {
           ...oldData,
@@ -200,10 +200,10 @@ export const ExampleThree = () => {
       })
       return { prevData }
     },
-    onError: (error, data, context) => {
+    onError: (_error, _data, context) => {
       queryClient.setQueryData(['getStudent22'], context?.prevData)
     },
-    onSettled: (data) => {
+    onSettled: (_data) => {
       queryClient.invalidateQueries({ queryKey: ['getStudent22'] })
     },
   })

@@ -5,6 +5,7 @@ import { deleteStudentApi, getStudentApi } from "../../../../../../services/Reac
 export default function InCaseOfDelete() {
   return (
     <>
+      <ExampleThree />
       <ExampleOne />
       <ExampleTwo />
     </>
@@ -125,6 +126,91 @@ export const ExampleTwo = () => {
   return (
     <>
       <p>Hear we update the list after delete data by changing in cache data</p>
+      <Table striped bordered hover variant="warning">
+        <thead>
+          <tr>
+            <th>Sl No</th>
+            <th>Name</th>
+            <th>Phone</th>
+            <th>Email</th>
+            <th>Action</th>
+          </tr>
+        </thead>
+        <tbody>
+          {
+            resp.data && resp.data.payload.data.map((item: any, index: any) =>
+              <tr key={item.id}>
+                <td>{index + 1}</td>
+                <td>{item.name}</td>
+                <td>{item.phone}</td>
+                <td>{item.email}</td>
+                <td>
+                  <button className="btn btn-sm btn-danger" onClick={() => respTwo.mutate(item.idOrg)}>Delete</button>
+                </td>
+              </tr>
+            )
+          }
+        </tbody>
+      </Table>
+    </>
+  )
+}
+
+export const ExampleThree = () => {
+  const queryClient = useQueryClient();
+
+  const getData = async () => {
+    try {
+      const res = await getStudentApi(1, 10)
+      return res.data.status == 1 ? res.data : []
+    } catch (error) {
+      console.log(error)
+      return []
+    }
+  }
+
+  const deleteData = async (id: any) => {
+    try {
+      const res = await deleteStudentApi(id)
+      return res.data.status == 1 ? res.data : []
+    } catch (error) {
+      console.log(error)
+      return []
+    }
+  }
+
+  const resp = useQuery({
+    queryKey: ['getStudent22'],
+    queryFn: getData,
+  })
+
+  const respTwo = useMutation({
+    mutationFn: (id) => deleteData(id),
+    onMutate: async (id) => {
+      await queryClient.cancelQueries({ queryKey: ['getStudent22'] })
+      const prevData = queryClient.getQueryData(['getStudent22'])
+      queryClient.setQueryData(['getStudent22'], (oldData: any) => {
+        return {
+          ...oldData,
+          payload: {
+            ...oldData.payload,
+            data: oldData.payload.data.filter((element: any) => element.idOrg !== id)
+          }
+        }
+      })
+      return { prevData }
+    },
+    onError: (error, data, context) => {
+      queryClient.setQueryData(['getStudent22'], context?.prevData)
+    },
+    onSettled: (data) => {
+      queryClient.invalidateQueries({ queryKey: ['getStudent22'] })
+    },
+  })
+
+  return (
+    <>
+      <p>Hear we update the list after delete data by using <b>optimistic update</b></p>
       <Table striped bordered hover variant="warning">
         <thead>
           <tr>

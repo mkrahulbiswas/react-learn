@@ -11,9 +11,9 @@ export default function UseMutation() {
         <span><b style={{ color: 'red' }}>Note:</b> use mutation is used for basically in case of <b>create, update, delete</b> any data</span>
       </p>
       <div className="row">
+        <InCaseOfUpdate />
         <InCaseOfStatus />
         <InCaseOfDelete />
-        <InCaseOfUpdate />
       </div>
       <ReactQueryDevtools initialIsOpen={false} />
     </>

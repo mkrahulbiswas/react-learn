@@ -5,9 +5,9 @@ import { deleteStudentApi, getStudentApi } from "../../../../../../services/Reac
 export default function InCaseOfDelete() {
   return (
     <>
-      <ExampleThree />
       <ExampleOne />
       <ExampleTwo />
+      <ExampleThree />
     </>
   )
 }
@@ -36,14 +36,14 @@ export const ExampleOne = () => {
   }
 
   const resp = useQuery({
-    queryKey: ['getStudent7'],
+    queryKey: ['getStudent22'],
     queryFn: getData,
   })
 
   const respTwo = useMutation({
     mutationFn: (id) => deleteData(id),
     onSuccess: (_data, _id) => {
-      queryClient.invalidateQueries({ queryKey: ['getStudent7'] })
+      queryClient.invalidateQueries({ queryKey: ['getStudent22'] })
     }
   })
 
@@ -104,14 +104,14 @@ export const ExampleTwo = () => {
   }
 
   const resp = useQuery({
-    queryKey: ['getStudent22'],
+    queryKey: ['getStudent23'],
     queryFn: getData,
   })
 
   const respTwo = useMutation({
     mutationFn: (id) => deleteData(id),
     onSuccess: (_data, id) => {
-      queryClient.setQueryData(['getStudent22'], (oldData: any) => {
+      queryClient.setQueryData(['getStudent23'], (oldData: any) => {
         return {
           ...oldData,
           payload: {
@@ -180,16 +180,16 @@ export const ExampleThree = () => {
   }
 
   const resp = useQuery({
-    queryKey: ['getStudent22'],
+    queryKey: ['getStudent24'],
     queryFn: getData,
   })
 
   const respTwo = useMutation({
     mutationFn: (id) => deleteData(id),
     onMutate: async (id) => {
-      await queryClient.cancelQueries({ queryKey: ['getStudent22'] })
-      const prevData = queryClient.getQueryData(['getStudent22'])
-      queryClient.setQueryData(['getStudent22'], (oldData: any) => {
+      await queryClient.cancelQueries({ queryKey: ['getStudent24'] })
+      const prevData = queryClient.getQueryData(['getStudent24'])
+      queryClient.setQueryData(['getStudent24'], (oldData: any) => {
         return {
           ...oldData,
           payload: {
@@ -201,10 +201,10 @@ export const ExampleThree = () => {
       return { prevData }
     },
     onError: (_error, _data, context) => {
-      queryClient.setQueryData(['getStudent22'], context?.prevData)
+      queryClient.setQueryData(['getStudent24'], context?.prevData)
     },
     onSettled: (_data) => {
-      queryClient.invalidateQueries({ queryKey: ['getStudent22'] })
+      queryClient.invalidateQueries({ queryKey: ['getStudent24'] })
     },
   })
 

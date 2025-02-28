@@ -25,7 +25,7 @@ export const ExampleOne = () => {
     }
   }
 
-  const deleteData = async (id: any) => {
+  const changeStatus = async (id: any) => {
     try {
       const res = await statusStudentApi(id)
       return res.data.status == 1 ? res.data : []
@@ -41,7 +41,7 @@ export const ExampleOne = () => {
   })
 
   const respTwo = useMutation({
-    mutationFn: (id) => deleteData(id),
+    mutationFn: (id) => changeStatus(id),
     onSuccess: (_data, _id) => {
       queryClient.invalidateQueries({ queryKey: ['getStudent25'] })
     }
@@ -99,7 +99,7 @@ export const ExampleTwo = () => {
     }
   }
 
-  const deleteData = async (id: any) => {
+  const changeStatus = async (id: any) => {
     try {
       const res = await statusStudentApi(id)
       return res.data.status == 1 ? res.data : []
@@ -115,7 +115,7 @@ export const ExampleTwo = () => {
   })
 
   const respTwo = useMutation({
-    mutationFn: (id) => deleteData(id),
+    mutationFn: (id) => changeStatus(id),
     onSuccess: (_data, id) => {
       queryClient.setQueryData(['getStudent26'], (oldData: any) => {
         return {
@@ -181,7 +181,7 @@ export const ExampleThree = () => {
     }
   }
 
-  const deleteData = async (id: any) => {
+  const changeStatus = async (id: any) => {
     try {
       const res = await statusStudentApi(id)
       return res.data.status == 1 ? res.data : []
@@ -197,7 +197,7 @@ export const ExampleThree = () => {
   })
 
   const respTwo = useMutation({
-    mutationFn: (id) => deleteData(id),
+    mutationFn: (id) => changeStatus(id),
     onMutate: async (id) => {
       await queryClient.cancelQueries({ queryKey: ['getStudent27'] })
       const prevData = queryClient.getQueryData(['getStudent27'])
@@ -206,7 +206,12 @@ export const ExampleThree = () => {
           ...oldData,
           payload: {
             ...oldData.payload,
-            data: oldData.payload.data.filter((element: any) => element.idOrg !== id)
+            data: oldData.payload.data.map((element: any) => {
+              return element.idOrg == id ? {
+                ...element,
+                status: parseInt(element.status) == 1 ? '0' : '1',
+              } : element
+            })
           }
         }
       })

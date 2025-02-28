@@ -169,7 +169,7 @@ export const ExampleThree = () => {
     },
   })
 
-  const { ref, inView, entry }: any = useInView({ threshold: 1 })
+  const { ref, inView }: any = useInView({ threshold: 1 })
 
   useEffect(() => {
     if (inView) {

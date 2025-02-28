@@ -1,6 +1,4 @@
 import { ReactQueryDevtools } from "@tanstack/react-query-devtools";
-import InCaseOfStatus from "./InCaseOfStatus/InCaseOfStatus";
-import InCaseOfUpdate from "./InCaseOfUpdate/InCaseOfUpdate";
 import InCaseOfDelete from "./InCaseOfDelete/InCaseOfDelete";
 
 export default function UseMutation() {
@@ -11,8 +9,9 @@ export default function UseMutation() {
         <span><b style={{ color: 'red' }}>Note:</b> use mutation is used for basically in case of <b>create, update, delete</b> any data</span>
       </p>
       <div className="row">
-        <InCaseOfUpdate />
-        <InCaseOfStatus />
+        {/* <InCaseOfSave /> */}
+        {/* <InCaseOfUpdate /> */}
+        {/* <InCaseOfStatus /> */}
         <InCaseOfDelete />
       </div>
       <ReactQueryDevtools initialIsOpen={false} />

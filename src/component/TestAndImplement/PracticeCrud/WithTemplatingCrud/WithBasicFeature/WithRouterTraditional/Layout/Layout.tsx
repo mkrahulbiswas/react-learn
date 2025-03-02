@@ -4,10 +4,12 @@ import Header from "../Includes/Header";
 
 export default function Layout() {
   return (
-    <>
-      <Header />
-      <Outlet />
-      <Footer />
-    </>
+    <main className="mainContainer">
+      <div className="subContainer">
+        <Header />
+        <Outlet />
+        <Footer />
+      </div>
+    </main>
   )
 }

@@ -1,4 +1,5 @@
-import { FaFacebook, FaInstagramSquare, FaLinkedin, FaTwitterSquare, FaWhatsappSquare, FaYoutube } from "react-icons/fa";
+import { FaFacebook, FaInstagramSquare, FaLinkedin, FaTwitterSquare, FaYoutube } from "react-icons/fa";
+import { BsSendPlusFill } from "react-icons/bs";
 import { Link } from "react-router";
 
 export default function Footer() {
@@ -39,31 +40,38 @@ export default function Footer() {
             </div>
           </div>
           <div className="newsAndUpdate">
-            <div className="newsForLatter">
-              <span>Newsletter</span>
-              <form>
-                <input type="email" placeholder="Enter your email" />
-                <button type="submit">Subscribe</button>
-              </form>
+            <div className="heading">
+              <span>Newsletr & Social</span>
             </div>
-            <div className="socialLinks">
-              <ul>
-                <li>
-                  <FaFacebook />
-                </li>
-                <li>
-                  <FaInstagramSquare />
-                </li>
-                <li>
-                  <FaYoutube />
-                </li>
-                <li>
-                  <FaLinkedin />
-                </li>
-                <li>
-                  <FaTwitterSquare />
-                </li>
-              </ul>
+            <div className="socialAndSubscribe">
+              <div className="newsForLatter">
+                <span>Subscribe to get future update</span>
+                <form>
+                  <input type="email" placeholder="Enter your email" />
+                  <button type="submit">
+                    <BsSendPlusFill />
+                  </button>
+                </form>
+              </div>
+              <div className="socialLinks">
+                <ul>
+                  <li>
+                    <FaFacebook />
+                  </li>
+                  <li>
+                    <FaInstagramSquare />
+                  </li>
+                  <li>
+                    <FaYoutube />
+                  </li>
+                  <li>
+                    <FaLinkedin />
+                  </li>
+                  <li>
+                    <FaTwitterSquare />
+                  </li>
+                </ul>
+              </div>
             </div>
           </div>
         </div>

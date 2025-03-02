@@ -297,6 +297,72 @@ body {
           }
         }
       }
+
+      .mainOutlet {
+        .subOutlet {
+          .studentPage {}
+
+          .pageNotFound {
+            padding: 40px 0;
+            background: #fff;
+            font-family: "Arvo", serif;
+
+            img {
+              width: 100%;
+            }
+
+            .four_zero_four_bg {
+              background-image: url('https://cdn.dribbble.com/users/285475/screenshots/2083086/dribbble_1.gif');
+              height: 400px;
+              background-position: center;
+
+              h1 {
+                font-size: 80px;
+              }
+            }
+
+            .contant_box_404 {
+              margin-top: -50px;
+
+              .backTo {
+                display: flex;
+                flex-direction: row;
+                gap: 20px;
+                justify-content: center;
+
+                .goToHome,
+                .goToPrevious {
+                  color: #fff !important;
+                  padding: 5px 10px;
+                  margin: 20px 0;
+                  display: inline-block;
+                  text-decoration: none;
+                  border-radius: 5px;
+                  font-size: 17px;
+                  transition: 0.20s ease-in-out;
+                  cursor: pointer;
+                }
+
+                .goToHome {
+                  background: #b641d3;
+
+                  &:hover {
+                    background: #5e1c6e;
+                  }
+                }
+
+                .goToPrevious {
+                  background: #31acac;
+
+                  &:hover {
+                    background: #176161;
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
     }
   }
 }

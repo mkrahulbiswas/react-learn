@@ -5,6 +5,7 @@ import Contact from "./Component/Contact"
 import Layout from "./Layout/Layout"
 import './WithRouterTraditional.scss'
 import StudentList from "./Component/Student/StudentList"
+import { PageNotFound } from "./Component/404Page/PageNotFound"
 
 export default function WithRouterTraditional() {
   const router = createBrowserRouter(
@@ -14,6 +15,7 @@ export default function WithRouterTraditional() {
         <Route path="student" element={<StudentList />} />
         <Route path="about" element={<About />} />
         <Route path="contact" element={<Contact />} />
+        <Route path="/*" element={<PageNotFound />} />
       </Route>
     )
   )

@@ -1,7 +1,7 @@
 import { useQuery } from "@tanstack/react-query"
 import { Table } from "react-bootstrap"
 import { Link } from "react-router"
-import { getStudentApi } from "../../../../../../../services/ReactLearnTwoService"
+import { getStudentApi } from "../../../../../../../services/api-service"
 
 export default function StdList() {
 

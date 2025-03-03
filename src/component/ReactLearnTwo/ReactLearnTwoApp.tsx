@@ -1,11 +1,10 @@
 import React from 'react'
 import './ReactLearnTwoApp.css'
-import { TanStackApp } from './TanStack/TanStackApp'
 
 function ReactLearnTwoApp() {
   return (
     <React.Fragment>
-      <TanStackApp />
+      {/* <TanStackApp /> */}
       {/* <DynamicValueApp /> */}
       {/* <ConditionalValueApp /> */}
       {/* <ComponentsApp /> */}

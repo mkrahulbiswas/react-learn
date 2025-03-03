@@ -1,5 +1,5 @@
 import { useQuery } from "@tanstack/react-query"
-import { getStudentApi } from "../../../../../../services/ReactLearnTwoService"
+import { getStudentApi } from "../../../../../../services/api-service"
 import { Table } from "react-bootstrap"
 
 export default function ParallelQueries() {

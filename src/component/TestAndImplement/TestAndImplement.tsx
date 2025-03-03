@@ -1,5 +1,6 @@
 import React from 'react'
 import './TestAndImplement.css'
+import { PracticeCrud } from './PracticeCrud/PracticeCrud'
 
 function TestAndImplement() {
   return (
@@ -10,6 +11,7 @@ function TestAndImplement() {
       {/* <MakingStepCounter /> */}
       {/* <PCLayout /> */}
       {/* <MovieList /> */}
+      <PracticeCrud />
     </React.Fragment>
   )
 }

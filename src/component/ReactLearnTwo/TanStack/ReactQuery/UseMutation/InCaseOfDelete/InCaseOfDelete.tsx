@@ -1,6 +1,6 @@
 import { useMutation, useQuery, useQueryClient } from "@tanstack/react-query"
 import { Table } from "react-bootstrap"
-import { deleteStudentApi, getStudentApi } from "../../../../../../services/ReactLearnTwoService"
+import { deleteStudentApi, getStudentApi } from "../../../../../../services/api-service"
 
 export default function InCaseOfDelete() {
   return (

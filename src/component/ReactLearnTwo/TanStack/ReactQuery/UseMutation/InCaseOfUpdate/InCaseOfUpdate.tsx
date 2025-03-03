@@ -1,6 +1,6 @@
 import { useMutation, useQuery, useQueryClient } from "@tanstack/react-query"
 import { Button, Col, Form, Row, Table } from "react-bootstrap"
-import { getStudentApi, updateStudentApi } from "../../../../../../services/ReactLearnTwoService"
+import { getStudentApi, updateStudentApi } from "../../../../../../services/api-service"
 import { useState } from "react"
 
 export default function InCaseOfUpdate() {

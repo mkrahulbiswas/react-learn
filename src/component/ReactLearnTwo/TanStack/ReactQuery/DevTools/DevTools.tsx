@@ -1,7 +1,7 @@
 import { useQuery } from "@tanstack/react-query"
 import { ReactQueryDevtools } from '@tanstack/react-query-devtools'
 import { Table } from "react-bootstrap"
-import { getStudentApi } from "../../../../../services/ReactLearnTwoService"
+import { getStudentApi } from "../../../../../services/api-service"
 
 export default function DevTools() {
   return (

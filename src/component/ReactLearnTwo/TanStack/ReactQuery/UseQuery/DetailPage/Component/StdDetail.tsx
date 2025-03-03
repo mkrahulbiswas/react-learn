@@ -1,6 +1,6 @@
 import { useQuery } from "@tanstack/react-query";
 import { useNavigate, useParams } from "react-router"
-import { detailStudentApi } from "../../../../../../../services/ReactLearnTwoService";
+import { detailStudentApi } from "../../../../../../../services/api-service";
 
 export default function StdDetail() {
   const params: any = useParams()

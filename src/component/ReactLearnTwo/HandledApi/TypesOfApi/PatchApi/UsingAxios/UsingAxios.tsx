@@ -1,7 +1,7 @@
 import axios from "axios"
 import { useState } from "react"
 import { Button, Col, Form, Row } from "react-bootstrap"
-import { statusStudentApi } from "../../../../../../services/ReactLearnTwoService"
+import { statusStudentApi } from "../../../../../../services/api-service"
 
 export default function UsingAxios({ getData }: any) {
   return (

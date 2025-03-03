@@ -1,7 +1,7 @@
 import axios from "axios"
 import { useEffect, useState } from "react"
 import { Table } from "react-bootstrap"
-import { getStudentApi } from "../../../../../../services/ReactLearnTwoService"
+import { getStudentApi } from "../../../../../../services/api-service"
 
 export default function UsingAxios() {
   return (

@@ -41,23 +41,23 @@ export const List = ({ data }: any) => {
             <span>{data.class}</span>
           </div>
         </div>
-      </div>
-      <div className="action">
-        <div className="edit">
-          <button>
-            <MdEdit />
-          </button>
-        </div>
-        <div className="status">
-          <button>
-            <FaLockOpen />
-            {/* <FaLock /> */}
-          </button>
-        </div>
-        <div className="delete">
-          <button>
-            <MdAutoDelete />
-          </button>
+        <div className="action">
+          <div className="edit">
+            <button>
+              <MdEdit />
+            </button>
+          </div>
+          <div className="status">
+            <button>
+              <FaLockOpen />
+              {/* <FaLock /> */}
+            </button>
+          </div>
+          <div className="delete">
+            <button>
+              <MdAutoDelete />
+            </button>
+          </div>
         </div>
       </div>
     </div >

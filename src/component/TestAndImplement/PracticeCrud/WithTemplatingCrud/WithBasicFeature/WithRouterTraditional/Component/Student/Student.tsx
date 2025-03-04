@@ -47,6 +47,7 @@ export const Student = () => {
     }).then((result) => {
       result.json().then((response) => {
         console.log('Without Async-->', response)
+        // toast.success('dataPass.msg', 'option');
         getStudent()
       })
     }).catch(error => console.log({ error }))

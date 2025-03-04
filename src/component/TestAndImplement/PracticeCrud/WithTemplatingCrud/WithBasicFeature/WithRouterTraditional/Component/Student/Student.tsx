@@ -1,9 +1,10 @@
 import { useEffect, useState } from "react";
 import { apiConst } from "../../../../../../../../config/constants";
 import { List } from "./List";
+import { toast } from "react-toastify";
 
 export const Student = () => {
-  const [getStudent, setGetStudent] = useState({
+  const [studentList, setStudentList] = useState({
     status: 0,
     msg: "",
     title: '',
@@ -13,22 +14,48 @@ export const Student = () => {
     }
   })
 
-  const getData = () => {
+  const getStudent = () => {
     try {
       fetch(apiConst.baseURL + apiConst.studentApi.getEP + "?page=1&perPage=10", {
         method: 'GET',
         headers: apiConst.header
       }).then(res => res.json())
-        .then(data => setGetStudent(data))
+        .then(data => setStudentList(data))
         .catch(err => console.log(err))
     } catch (error) {
       console.log(error)
     }
   }
 
+  const deleteStudent = (id: any) => {
+    fetch(`${apiConst.baseURL + apiConst.studentApi.deleteEP}/${id}`, {
+      method: 'DELETE',
+      headers: apiConst.header
+    }).then((result) => {
+      result.json().then((response) => {
+        console.log('Without Async-->', response)
+        // toast.success('dataPass.msg', 'option');
+        getStudent()
+      })
+    }).catch(error => console.log({ error }))
+  }
+
+  const statusStudent = (id: any) => {
+    fetch(`${apiConst.baseURL + apiConst.studentApi.statusEP}/${id}`, {
+      method: 'PATCH',
+      headers: apiConst.header
+    }).then((result) => {
+      result.json().then((response) => {
+        console.log('Without Async-->', response)
+        getStudent()
+      })
+    }).catch(error => console.log({ error }))
+  }
+
   useEffect(() => {
-    getData()
+    getStudent()
   }, [])
+
   return (
     <section className="studentPage">
       <div className="top">
@@ -43,9 +70,9 @@ export const Student = () => {
       <div className="middle">
         <div className="list">
           {
-            getStudent.payload.data.map((item: any) => {
+            studentList.payload.data.map((item: any) => {
               return (
-                <List key={item.id} data={item} />
+                <List key={item.id} data={item} handelMethod={{ deleteStudent, statusStudent }} />
               )
             })
           }

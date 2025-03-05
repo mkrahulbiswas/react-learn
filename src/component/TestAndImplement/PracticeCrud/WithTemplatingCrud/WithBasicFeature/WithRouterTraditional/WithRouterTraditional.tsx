@@ -7,7 +7,7 @@ import './WithRouterTraditional.scss'
 import { PageNotFound } from "./Component/404Page/PageNotFound"
 import { Student } from "./Component/Student/Student"
 import { Bounce, ToastContainer } from "react-toastify"
-import { BallTriangle } from "react-loader-spinner"
+import { LoaderContextProvider } from "./Context/LoaderContext"
 
 export default function WithRouterTraditional() {
   let option: any = {
@@ -24,7 +24,11 @@ export default function WithRouterTraditional() {
   }
   const router = createBrowserRouter(
     createRoutesFromElements(
-      <Route path="/" element={<Layout />}>
+      <Route path="/" element={
+        <LoaderContextProvider>
+          <Layout />
+        </LoaderContextProvider>
+      }>
         <Route path="/" element={<Home />} />
         <Route path="student" element={<Student />} />
         <Route path="about" element={<About />} />
@@ -37,18 +41,6 @@ export default function WithRouterTraditional() {
     <>
       <RouterProvider router={router} />
       <ToastContainer limit={3} />
-      <div className="loader">
-        <BallTriangle
-          height={100}
-          width={100}
-          radius={5}
-          color="#4fa94d"
-          ariaLabel="ball-triangle-loading"
-          wrapperStyle={{}}
-          wrapperClass=""
-          visible={true}
-        />
-      </div>
     </>
   )
 }

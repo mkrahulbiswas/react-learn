@@ -3,9 +3,6 @@ import { MdAutoDelete, MdEdit, MdEmail } from "react-icons/md";
 import { SiGoogleclassroom } from "react-icons/si";
 
 export const List = ({ data, handelMethod }: any) => {
-  console.log(data);
-  console.log(handelMethod);
-
   return (
     <div className={data.status == '1' ? 'item active' : 'item inactive'}>
       <div className="image">
@@ -49,17 +46,17 @@ export const List = ({ data, handelMethod }: any) => {
             </button>
           </div>
           <div className="status">
-            <button>
+            <button onClick={() => handelMethod.statusStudent(data.idOrg)}>
               {
                 data.status == '1' ?
-                  <FaLockOpen onClick={() => handelMethod.statusStudent(data.idOrg)} /> :
-                  <FaLock onClick={() => handelMethod.statusStudent(data.idOrg)} />
+                  <FaLockOpen /> :
+                  <FaLock />
               }
             </button>
           </div>
           <div className="delete">
-            <button>
-              <MdAutoDelete onClick={() => handelMethod.deleteStudent(data.idOrg)} />
+            <button onClick={() => handelMethod.deleteStudent(data.idOrg)}>
+              <MdAutoDelete />
             </button>
           </div>
         </div>

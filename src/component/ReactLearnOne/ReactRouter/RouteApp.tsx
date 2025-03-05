@@ -1,6 +1,4 @@
-import { BrowserRouter } from 'react-router'
 import './RouteApp.css'
-import BRPApp from './BestRoutingPractice/BRPApp'
 import React from 'react'
 function RouteApp() {
   return (
@@ -14,9 +12,9 @@ function RouteApp() {
       {/* <NRApp /> */}
       {/* <ULApp /> */}
       {/* <PRApp /> */}
-      <BrowserRouter basename='/brp'>
+      {/* <BrowserRouter basename='/brp'>
         <BRPApp />
-      </BrowserRouter>
+      </BrowserRouter> */}
     </React.Fragment>
   )
 }

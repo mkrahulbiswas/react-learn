@@ -10,13 +10,7 @@ import TestAndImplement from './component/TestAndImplement/TestAndImplement.tsx'
 createRoot(document.getElementById('root')!).render(
   <StrictMode>
     <TestAndImplement />
-    {/* <App /> */}
-    {/* <StateApp /> */}
-    {/* <ContextApp /> */}
-    {/* <ReactReduxApp /> */}
-    {/* <PropsApp /> */}
-    {/* <RouteApp /> */}
-    {/* <ApiApp /> */}
+    {/* <ReactLearnOneApp /> */}
     {/* <ReactLearnTwoApp /> */}
   </StrictMode>
 )

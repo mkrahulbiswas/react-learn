@@ -31,7 +31,7 @@ function SinglePageCrud(props: any) {
         'Content-Type': 'application/json',
         'Accept': 'application/json',
         'appVersion': '1',
-        'mode': 'test'
+        'mode': 'live'
       },
       body: JSON.stringify(fromData)
     }).then((result) => {
@@ -79,7 +79,7 @@ function SinglePageCrud(props: any) {
         'Content-Type': 'application/json',
         'Accept': 'application/json',
         'appVersion': '1',
-        'mode': 'test'
+        'mode': 'live'
       },
       body: JSON.stringify(fromData)
     }).then((result) => {
@@ -136,7 +136,7 @@ function SinglePageCrud(props: any) {
             'Content-Type': 'application/json',
             'Accept': 'application/json',
             'appVersion': '1',
-            'mode': 'test'
+            'mode': 'live'
           },
         }).then((result) => {
           result.json().then((response) => {
@@ -173,7 +173,7 @@ function SinglePageCrud(props: any) {
             'Content-Type': 'application/json',
             'Accept': 'application/json',
             'appVersion': '1',
-            'mode': 'test'
+            'mode': 'live'
           },
         }).then((result) => {
           result.json().then((response) => {
@@ -201,7 +201,7 @@ function SinglePageCrud(props: any) {
         'Content-Type': 'application/x-www-form-urlencoded',
         'Accept': 'application/json',
         'appVersion': '1',
-        'mode': 'test'
+        'mode': 'live'
       }
     }).then((result) => {
       result.json().then((response) => {

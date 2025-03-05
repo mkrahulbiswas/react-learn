@@ -532,7 +532,20 @@ body {
               }
             }
 
-            .bottom {}
+            .bottom {
+              .pagination {
+                display: flex;
+                flex-direction: row;
+                gap: 10px;
+
+                .pageCount {
+                  display: block;
+                  padding: 5px 10px;
+                  background-color: green;
+                  border-radius: 5px;
+                }
+              }
+            }
           }
 
           .pageNotFound {
@@ -600,7 +613,7 @@ body {
   }
 
   .loader {
-    position: absolute;
+    position: fixed;
     top: 0;
     left: 0;
     width: 100%;
@@ -610,5 +623,9 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
+
+    &:has(body) {
+      overflow: hidden;
+    }
   }
 }

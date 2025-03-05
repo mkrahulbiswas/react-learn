@@ -1,14 +1,9 @@
-import './ApiApp.css'
+import './CrudApi.css'
 import React, { useState } from 'react'
-import SinglePageCrud from './crudOperation/SinglePageCrud/SinglePageCrud'
-import { PrimeReactProvider } from 'primereact/api'
 import { FidgetSpinner } from 'react-loader-spinner'
 import { Bounce, toast, ToastContainer } from 'react-toastify'
-function ApiApp() {
-  const value: any = {
-    appendTo: 'self',
-    unstyled: true
-  }
+import SinglePageCrud from './SinglePageCrud/SinglePageCrud'
+function CrudApi() {
   const [pageLoader, setPageLoader] = useState(false)
   function initLoader(condition: any) {
     setPageLoader(condition)
@@ -53,15 +48,9 @@ function ApiApp() {
             />
           </div> : null
       }
-      <PrimeReactProvider value={value}>
-        {/* <GetData /> */}
-        {/* <UpdateData /> */}
-        {/* <SaveData /> */}
-        {/* <DeleteData /> */}
-        <SinglePageCrud dataPass={{ loader: initLoader, toast: toastMgs }} />
-      </PrimeReactProvider>
+      <SinglePageCrud dataPass={{ loader: initLoader, toast: toastMgs }} />
       <ToastContainer limit={3} />
     </React.Fragment>
   )
 }
-export default ApiApp
+export default CrudApi

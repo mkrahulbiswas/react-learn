@@ -1,11 +1,18 @@
-import './App.css'
-import UseOfEnvFile from './component/UseOfEnvFile/UseOfEnvFile'
-function App() {
+import React from 'react'
+import './ReactLearnOneApp.css'
+import StateApp from './State/StateApp'
+
+function ReactLearnOneApp() {
   return (
-    <div>
+    <React.Fragment>
+      <StateApp />
+      {/* <ContextApp /> */}
+      {/* <ReactReduxApp /> */}
+      {/* <PropsApp /> */}
+      {/* <RouteApp /> */}
+      {/* <ReactApi /> */}
       {/* <SimpleFunctional /> */}
       {/* <WithoutDefaultFunctional /> */}
-      {/* <FunctionInsideAnotherFunction /> */}
       {/* <UsingJSX /> */}
       {/* <WithoutJSX /> */}
       {/* <EmpOne /> */}
@@ -13,7 +20,7 @@ function App() {
       {/* <SimpleTextInput></SimpleTextInput> */}
       {/* <HideShowElementOne /> */}
       {/* <HideShowElementTwo /> */}
-      {/* <Form /> */}
+      {/* <FormTag /> */}
       {/* <IfElseCondition /> */}
       {/* <ContractorLifeCycleClass /> */}
       {/* <RenderLifeCycleClassParent /> */}
@@ -39,10 +46,12 @@ function App() {
       {/* <HOCFunctionalDifferentParent /> */}
       {/* <HOCClassParent /> */}
       {/* <FunctionDeclarationType /> */}
-      <UseOfEnvFile />
-    </div>
+      {/* <UseOfEnvFile /> */}
+      {/* <FunctionInsideAnotherFunction /> */}
+    </React.Fragment>
   )
 }
+export default ReactLearnOneApp
 
 // function FunctionInsideAnotherFunction() {
 //   return (
@@ -51,5 +60,3 @@ function App() {
 //     </div>
 //   )
 // }
-
-export default App

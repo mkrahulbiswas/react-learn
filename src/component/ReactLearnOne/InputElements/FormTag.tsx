@@ -1,6 +1,6 @@
 import { useState } from "react";
 
-function Form() {
+function FormTag() {
   const [name, setName] = useState('')
   const [tc, setTc] = useState(false)
   const [interest, setInterest] = useState('')
@@ -24,4 +24,4 @@ function Form() {
   )
 }
 
-export default Form
+export default FormTag

@@ -6,11 +6,13 @@ import 'bootstrap-icons/font/bootstrap-icons.css';
 import "primereact/resources/themes/lara-light-cyan/theme.css";
 import 'react-toastify/dist/ReactToastify.css';
 import TestAndImplement from './component/TestAndImplement/TestAndImplement.tsx';
+import { VariousPackagesUse } from './component/VariousPackagesUse/VariousPackagesUse.tsx';
 
 createRoot(document.getElementById('root')!).render(
   <StrictMode>
-    <TestAndImplement />
+    <VariousPackagesUse />
     {/* <ReactLearnOneApp /> */}
     {/* <ReactLearnTwoApp /> */}
+    {/* <TestAndImplement /> */}
   </StrictMode>
 )

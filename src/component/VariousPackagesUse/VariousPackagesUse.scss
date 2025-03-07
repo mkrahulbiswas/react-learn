@@ -85,16 +85,52 @@ ul {
 
             .exampleSub {
                 display: flex;
-                flex-direction: row;
+                flex-direction: column;
                 justify-content: space-between;
+                padding: 10px;
+                box-shadow: inset 0 0 10px rgb(116, 97, 48);
+                background-color: rgb(255, 246, 220);
 
-                .common {
-                    background-color: rgb(221, 221, 221);
+                &:first-child {
                     margin-top: 20px;
+                }
+
+                .exampleHeading {
                     padding: 10px;
 
-                    &.fullWidth {
-                        width: 100%;
+                    h2 {
+                        font-size: 18px;
+                        font-weight: bold;
+                        color: rgb(17, 83, 114);
+                    }
+                }
+
+                .exampleContent {
+                    display: flex;
+                    flex-direction: row;
+                    flex-wrap: wrap;
+                    justify-content: space-between;
+                    padding: 10px;
+
+                    .exampleCommon {
+                        background-color: rgb(205 243 224);
+                        padding: 10px;
+
+                        &.fullWidth {
+                            min-width: 100%;
+                        }
+
+                        .exampleCommonPoints {
+                            span {}
+                        }
+
+                        .exampleCommonContent {
+                            margin-top: 20px;
+
+                            &:first-child {
+                                margin-top: 0px;
+                            }
+                        }
                     }
                 }
             }

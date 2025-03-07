@@ -1,4 +1,5 @@
 import { ExampleOne } from "./ExampleOne/ExampleOne"
+import { ExampleTwo } from "./ExampleTwo/ExampleTwo"
 
 export const HowToUse = () => {
   return (
@@ -9,6 +10,12 @@ export const HowToUse = () => {
         </div>
         <div className="exampleContent">
           <ExampleOne />
+        </div>
+        <div className="exampleContent">
+          <ExampleTwo />
+        </div>
+        <div className="exampleContent">
+          {/* <ExampleThree /> */}
         </div>
       </div>
     </>

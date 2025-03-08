@@ -101,7 +101,7 @@ export const ExampleOne = () => {
           />
         </div>
       </div >
-      <div className="exampleCommon fullWidth mt-3">
+      <div className="exampleCommon fullWidth">
         <div className="exampleCommonPoints">
           <span>This an example by using a live <b>API</b> response</span>
         </div>

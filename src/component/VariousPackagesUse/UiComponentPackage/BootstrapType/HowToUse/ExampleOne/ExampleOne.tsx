@@ -1,97 +1,115 @@
-import { AiFillAccountBook } from "react-icons/ai";
-import { Bs0Circle } from "react-icons/bs";
-import { BiAbacus } from "react-icons/bi";
-import { CiAirportSign1 } from "react-icons/ci";
-import { CgAbstract } from "react-icons/cg";
-import { DiAptana } from "react-icons/di";
-import { FiActivity } from "react-icons/fi";
-import { FcAdvertising } from "react-icons/fc";
-import { Fa500Px, FaAlipay } from "react-icons/fa";
-import { Gi3dGlasses } from "react-icons/gi";
-import { GoBookmarkSlashFill } from "react-icons/go";
-import { GrAccessibility } from "react-icons/gr";
-import { HiAdjustments } from "react-icons/hi";
-import { HiAdjustmentsVertical } from "react-icons/hi2";
+import { useState } from "react"
+import { Alert, Button, ButtonGroup, Dropdown, DropdownButton, Tab, Tabs } from "react-bootstrap"
 
 export const ExampleOne = () => {
   return (
     <>
-      <div className="exampleCommon">
-        {/* <div className="exampleCommonPoints">
-          <span>This an example by using a live <b>API</b> response</span>
-        </div> */}
+      <AlertRB />
+      <ButtonGroupRB />
+      <ButtonRB />
+      <TabsRB />
+    </>
+  )
+}
+
+export const AlertRB = () => {
+  return (
+    <>
+      <div className="exampleCommon fullWidth">
+        <div className="exampleCommonPoints">
+          <span><b>Alert box</b> by using <b>react bootstrap</b></span>
+        </div>
         <div className="exampleCommonContent">
-          <HiAdjustmentsVertical />
+          <div className="row">
+            {[
+              'primary',
+              'secondary',
+              'success',
+              'danger',
+              'warning',
+              'info',
+              'light',
+              'dark',
+            ].map((variant, key) => (
+              <div className="col-3" key={key}>
+                <Alert style={{ fontSize: '12px' }} key={variant} variant={variant}>
+                  This is a {variant} alert.
+                </Alert>
+              </div>
+            ))}
+          </div>
         </div>
       </div>
-      <div className="exampleCommon">
+    </>
+  )
+}
+
+export const ButtonGroupRB = () => {
+  return (
+    <>
+      <div className="exampleCommon fullWidth">
+        <div className="exampleCommonPoints">
+          <span><b>Alert box</b> by using <b>react bootstrap</b></span>
+        </div>
         <div className="exampleCommonContent">
-          <HiAdjustments />
+          <ButtonGroup>
+            <Button>1</Button>
+            <Button>2</Button>
+
+            <DropdownButton as={ButtonGroup} title="Dropdown" id="bg-nested-dropdown">
+              <Dropdown.Item eventKey="1">Dropdown link</Dropdown.Item>
+              <Dropdown.Item eventKey="2">Dropdown link</Dropdown.Item>
+            </DropdownButton>
+          </ButtonGroup>
         </div>
       </div>
-      <div className="exampleCommon">
+    </>
+  )
+}
+
+export const ButtonRB = () => {
+  return (
+    <>
+      <div className="exampleCommon fullWidth">
+        <div className="exampleCommonPoints">
+          <span><b>Buttons</b> by using <b>react bootstrap</b></span>
+        </div>
         <div className="exampleCommonContent">
-          <GrAccessibility />
+          <Button variant="primary">Primary</Button>
+          <Button className="ms-1" variant="secondary">Secondary</Button>
+          <Button className="ms-1" variant="success">Success</Button>
+          <Button className="ms-1" variant="warning">Warning</Button>
+          <Button className="ms-1" variant="danger">Danger</Button>
+          <Button className="ms-1" variant="info">Info</Button>
+          <Button className="ms-1" variant="light">Light</Button>
+          <Button className="ms-1" variant="dark">Dark</Button>
+          <Button className="ms-1" variant="link">Link</Button>
         </div>
       </div>
-      <div className="exampleCommon">
-        <div className="exampleCommonContent">
-          <GoBookmarkSlashFill />
+    </>
+  )
+}
+
+export const TabsRB = () => {
+  const [key, setKey] = useState('home');
+  return (
+    <>
+      <div className="exampleCommon fullWidth">
+        <div className="exampleCommonPoints">
+          <span><b>Tabs</b> by using <b>react bootstrap</b></span>
         </div>
-      </div>
-      <div className="exampleCommon">
         <div className="exampleCommonContent">
-          <Gi3dGlasses />
-        </div>
-      </div>
-      <div className="exampleCommon">
-        <div className="exampleCommonContent">
-          <FaAlipay />
-        </div>
-      </div>
-      <div className="exampleCommon">
-        <div className="exampleCommonContent">
-          <Fa500Px />
-        </div>
-      </div>
-      <div className="exampleCommon">
-        <div className="exampleCommonContent">
-          <AiFillAccountBook />
-        </div>
-      </div>
-      <div className="exampleCommon">
-        <div className="exampleCommonContent">
-          <Bs0Circle />
-        </div>
-      </div>
-      <div className="exampleCommon">
-        <div className="exampleCommonContent">
-          <BiAbacus />
-        </div>
-      </div>
-      <div className="exampleCommon">
-        <div className="exampleCommonContent">
-          <CiAirportSign1 />
-        </div>
-      </div>
-      <div className="exampleCommon">
-        <div className="exampleCommonContent">
-          <CgAbstract />
-        </div>
-      </div>
-      <div className="exampleCommon">
-        <div className="exampleCommonContent">
-          <DiAptana />
-        </div>
-      </div>
-      <div className="exampleCommon">
-        <div className="exampleCommonContent">
-          <FiActivity />
-        </div>
-      </div>
-      <div className="exampleCommon">
-        <div className="exampleCommonContent">
-          <FcAdvertising />
+          <Tabs id="controlled-tab-example" activeKey={key} onSelect={(k: any) => setKey(k)} className="mb-3" >
+            <Tab eventKey="home" title="Home">
+              Tab content for Home
+            </Tab>
+            <Tab eventKey="profile" title="Profile">
+              Tab content for Profile
+            </Tab>
+            <Tab eventKey="contact" title="Contact" disabled>
+              Tab content for Contact
+            </Tab>
+          </Tabs>
         </div>
       </div>
     </>

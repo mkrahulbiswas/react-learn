@@ -65,13 +65,13 @@ export const ExampleTwo = () => {
           activeClassName="active"
 
 
-          hrefBuilder={(page, pageCount, selected) =>
+          hrefBuilder={(page, pageCount, _selected) =>
             page >= 1 && page <= pageCount ? `/page/${page}` : '#'
           }
           hrefAllControls
           forcePage={studentList?.payload.current_page - 1}
           onClick={(clickEvent) => {
-            // console.log('onClick', clickEvent);
+            console.log('onClick', clickEvent);
           }}
           renderOnZeroPageCount={null}
         />

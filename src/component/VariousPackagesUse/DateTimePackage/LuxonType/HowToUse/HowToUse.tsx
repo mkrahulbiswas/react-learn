@@ -7,7 +7,6 @@ export const HowToUse = () => {
       <div className="exampleSub">
         <div className="exampleHeading">
           <h2>Example One</h2>
-          <span>This one is <b>alert box</b> using</span>
         </div>
         <div className="exampleContent">
           <ExampleOne />
@@ -16,7 +15,6 @@ export const HowToUse = () => {
       <div className="exampleSub">
         <div className="exampleHeading">
           <h2>Example Two</h2>
-          <span>This one is <b>tost box</b> using</span>
         </div>
         <div className="exampleContent">
           <ExampleTwo />

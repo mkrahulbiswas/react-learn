@@ -1,97 +1,90 @@
-import { AiFillAccountBook } from "react-icons/ai";
-import { Bs0Circle } from "react-icons/bs";
-import { BiAbacus } from "react-icons/bi";
-import { CiAirportSign1 } from "react-icons/ci";
-import { CgAbstract } from "react-icons/cg";
-import { DiAptana } from "react-icons/di";
-import { FiActivity } from "react-icons/fi";
-import { FcAdvertising } from "react-icons/fc";
-import { Fa500Px, FaAlipay } from "react-icons/fa";
-import { Gi3dGlasses } from "react-icons/gi";
-import { GoBookmarkSlashFill } from "react-icons/go";
-import { GrAccessibility } from "react-icons/gr";
-import { HiAdjustments } from "react-icons/hi";
-import { HiAdjustmentsVertical } from "react-icons/hi2";
+import Swal from "sweetalert2";
 
 export const ExampleOne = () => {
   return (
     <>
+      <SimpleAlert />
+      <ConfirmationAlert />
+    </>
+  )
+}
+
+export const SimpleAlert = () => {
+  const showAlert = (type: any) => {
+    if (type === 'success') {
+      Swal.fire({
+        title: 'Example',
+        text: 'Swal injected',
+        icon: 'success',
+      })
+    } else if (type === 'error') {
+      Swal.fire({
+        title: 'Example',
+        text: 'Swal injected',
+        icon: 'error',
+      })
+    } else if (type === 'warning') {
+      Swal.fire({
+        title: 'Example',
+        text: 'Swal injected',
+        icon: 'warning',
+      })
+    } else if (type === 'info') {
+      Swal.fire({
+        title: 'Example',
+        text: 'Swal injected',
+        icon: 'info',
+      })
+    } else {
+      Swal.fire({
+        title: 'Example',
+        text: 'Swal injected',
+        icon: 'question',
+      })
+    }
+  }
+  return (
+    <>
       <div className="exampleCommon">
-        {/* <div className="exampleCommonPoints">
-          <span>This an example by using a live <b>API</b> response</span>
-        </div> */}
+        <div className="exampleCommonPoints">
+          <span>Simple various type alert</span>
+        </div>
         <div className="exampleCommonContent">
-          <HiAdjustmentsVertical />
+          <button className="btn btn-success" onClick={() => showAlert('success')}>Success</button>
+          <button className="btn btn-danger ms-3" onClick={() => showAlert('error')}>Error</button>
+          <button className="btn btn-warning ms-3" onClick={() => showAlert('warning')}>Warning</button>
+          <button className="btn btn-info ms-3" onClick={() => showAlert('info')}>Info</button>
+          <button className="btn btn-light ms-3" onClick={() => showAlert('question')}>Question</button>
         </div>
       </div>
+    </>
+  )
+}
+
+export const ConfirmationAlert = () => {
+  const showAlert = () => {
+    Swal.fire({
+      title: "Do you want to save the changes?",
+      showDenyButton: true,
+      showCancelButton: true,
+      confirmButtonText: "Save",
+      denyButtonText: `Don't save`
+    }).then((result) => {
+      if (result.isConfirmed) {
+        Swal.fire("Saved!", "", "success");
+      } else if (result.isDenied) {
+        Swal.fire("Changes are not saved", "", "info");
+      }
+    });
+  }
+  return (
+    <>
       <div className="exampleCommon">
-        <div className="exampleCommonContent">
-          <HiAdjustments />
+        <div className="exampleCommonPoints">
+          <span>Confirmation various type alert</span>
         </div>
-      </div>
-      <div className="exampleCommon">
         <div className="exampleCommonContent">
-          <GrAccessibility />
-        </div>
-      </div>
-      <div className="exampleCommon">
-        <div className="exampleCommonContent">
-          <GoBookmarkSlashFill />
-        </div>
-      </div>
-      <div className="exampleCommon">
-        <div className="exampleCommonContent">
-          <Gi3dGlasses />
-        </div>
-      </div>
-      <div className="exampleCommon">
-        <div className="exampleCommonContent">
-          <FaAlipay />
-        </div>
-      </div>
-      <div className="exampleCommon">
-        <div className="exampleCommonContent">
-          <Fa500Px />
-        </div>
-      </div>
-      <div className="exampleCommon">
-        <div className="exampleCommonContent">
-          <AiFillAccountBook />
-        </div>
-      </div>
-      <div className="exampleCommon">
-        <div className="exampleCommonContent">
-          <Bs0Circle />
-        </div>
-      </div>
-      <div className="exampleCommon">
-        <div className="exampleCommonContent">
-          <BiAbacus />
-        </div>
-      </div>
-      <div className="exampleCommon">
-        <div className="exampleCommonContent">
-          <CiAirportSign1 />
-        </div>
-      </div>
-      <div className="exampleCommon">
-        <div className="exampleCommonContent">
-          <CgAbstract />
-        </div>
-      </div>
-      <div className="exampleCommon">
-        <div className="exampleCommonContent">
-          <DiAptana />
-        </div>
-      </div>
-      <div className="exampleCommon">
-        <div className="exampleCommonContent">
-          <FiActivity />
-        </div>
-      </div>
-      <div className="exampleCommon">
-        <div className="exampleCommonContent">
-          <FcAdvertising />
+          <button className="btn btn-success" onClick={() => showAlert()}>Open</button>
         </div>
       </div>
     </>

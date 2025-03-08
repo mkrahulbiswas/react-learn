@@ -29,7 +29,7 @@ export const ExampleOne = () => {
             nextClassName="page-item"
             nextLinkClassName="page-link"
             activeClassName="active"
-            hrefBuilder={(page, pageCount, selected) =>
+            hrefBuilder={(page, pageCount, _selected) =>
               page >= 1 && page <= pageCount ? `/page/${page}` : '#'
             }
             hrefAllControls
@@ -59,7 +59,7 @@ export const ExampleOne = () => {
             nextClassName="page-item"
             nextLinkClassName="page-link"
             activeClassName="active"
-            hrefBuilder={(page, pageCount, selected) =>
+            hrefBuilder={(page, pageCount, _selected) =>
               page >= 1 && page <= pageCount ? `/page/${page}` : '#'
             }
             hrefAllControls
@@ -89,7 +89,7 @@ export const ExampleOne = () => {
             nextClassName="page-item"
             nextLinkClassName="page-link"
             activeClassName="active"
-            hrefBuilder={(page, pageCount, selected) =>
+            hrefBuilder={(page, pageCount, _selected) =>
               page >= 1 && page <= pageCount ? `/page/${page}` : '#'
             }
             hrefAllControls
@@ -124,7 +124,7 @@ export const ExampleOne = () => {
             nextClassName="page-item"
             nextLinkClassName="page-link"
             activeClassName="active"
-            hrefBuilder={(page, pageCount, selected) =>
+            hrefBuilder={(page, pageCount, _selected) =>
               page >= 1 && page <= pageCount ? `/page/${page}` : '#'
             }
             hrefAllControls

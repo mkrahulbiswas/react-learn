@@ -1,10 +1,10 @@
 export const WhatIsThis = () => {
   return (
     < >
-      <span className="singleLineText">This is <b>react icon</b> package to manage the <b>icons</b></span>
-      <span className="singleLineText">To use this package you need to <b>install</b> the library by using command <b>npm install react-icons --save</b></span>
-      <span className="singleLineText">For more info you can visit the site <b>https://react-icons.github.io/react-icons/</b></span>
-      <span className="singleLineText">Some example of <b>react icon</b> is:</span>
+      <span className="singleLineText">This is <b>tostify</b> package to manage the <b>tost message</b></span>
+      <span className="singleLineText">To use this package you need to <b>install</b> the library by using command <b>npm install --save react-toastify</b></span>
+      <span className="singleLineText">For more info you can visit the site <b>https://fkhadra.github.io/react-toastify/introduction</b> or <b>https://github.com/fkhadra/react-toastify</b></span>
+      <span className="singleLineText">Some example of <b>tostify</b> is:</span>
     </>
   )
 }

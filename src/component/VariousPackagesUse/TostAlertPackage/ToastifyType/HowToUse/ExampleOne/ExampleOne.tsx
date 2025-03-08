@@ -1,99 +1,43 @@
-import { AiFillAccountBook } from "react-icons/ai";
-import { Bs0Circle } from "react-icons/bs";
-import { BiAbacus } from "react-icons/bi";
-import { CiAirportSign1 } from "react-icons/ci";
-import { CgAbstract } from "react-icons/cg";
-import { DiAptana } from "react-icons/di";
-import { FiActivity } from "react-icons/fi";
-import { FcAdvertising } from "react-icons/fc";
-import { Fa500Px, FaAlipay } from "react-icons/fa";
-import { Gi3dGlasses } from "react-icons/gi";
-import { GoBookmarkSlashFill } from "react-icons/go";
-import { GrAccessibility } from "react-icons/gr";
-import { HiAdjustments } from "react-icons/hi";
-import { HiAdjustmentsVertical } from "react-icons/hi2";
+import { Bounce, toast, ToastContainer } from "react-toastify"
 
 export const ExampleOne = () => {
+  const option: any = {
+    position: "top-right",
+    autoClose: 5000,
+    hideProgressBar: false,
+    closeOnClick: true,
+    pauseOnHover: true,
+    draggable: true,
+    progress: undefined,
+    icon: true,
+    theme: "colored",
+    transition: Bounce,
+  }
+  const showAlert = (type: any) => {
+    if (type === 'success') {
+      toast.success('This is success tost', option);
+    } else if (type === 'error') {
+      toast.error('This is error tost', option);
+    } else if (type === 'warning') {
+      toast.warning('This is warning tost', option);
+    } else {
+      toast.info('This is info tost', option);
+    }
+  }
   return (
     <>
       <div className="exampleCommon">
-        {/* <div className="exampleCommonPoints">
-          <span>This an example by using a live <b>API</b> response</span>
-        </div> */}
+        <div className="exampleCommonPoints">
+          <span>Simple various types of tost alert</span>
+        </div>
         <div className="exampleCommonContent">
-          <HiAdjustmentsVertical />
+          <button className="btn btn-success" onClick={() => showAlert('success')}>Success</button>
+          <button className="btn btn-danger ms-3" onClick={() => showAlert('error')}>Error</button>
+          <button className="btn btn-warning ms-3" onClick={() => showAlert('warning')}>Warning</button>
+          <button className="btn btn-info ms-3" onClick={() => showAlert('info')}>Info</button>
         </div>
       </div>
-      <div className="exampleCommon">
-        <div className="exampleCommonContent">
-          <HiAdjustments />
-        </div>
-      </div>
-      <div className="exampleCommon">
-        <div className="exampleCommonContent">
-          <GrAccessibility />
-        </div>
-      </div>
-      <div className="exampleCommon">
-        <div className="exampleCommonContent">
-          <GoBookmarkSlashFill />
-        </div>
-      </div>
-      <div className="exampleCommon">
-        <div className="exampleCommonContent">
-          <Gi3dGlasses />
-        </div>
-      </div>
-      <div className="exampleCommon">
-        <div className="exampleCommonContent">
-          <FaAlipay />
-        </div>
-      </div>
-      <div className="exampleCommon">
-        <div className="exampleCommonContent">
-          <Fa500Px />
-        </div>
-      </div>
-      <div className="exampleCommon">
-        <div className="exampleCommonContent">
-          <AiFillAccountBook />
-        </div>
-      </div>
-      <div className="exampleCommon">
-        <div className="exampleCommonContent">
-          <Bs0Circle />
-        </div>
-      </div>
-      <div className="exampleCommon">
-        <div className="exampleCommonContent">
-          <BiAbacus />
-        </div>
-      </div>
-      <div className="exampleCommon">
-        <div className="exampleCommonContent">
-          <CiAirportSign1 />
-        </div>
-      </div>
-      <div className="exampleCommon">
-        <div className="exampleCommonContent">
-          <CgAbstract />
-        </div>
-      </div>
-      <div className="exampleCommon">
-        <div className="exampleCommonContent">
-          <DiAptana />
-        </div>
-      </div>
-      <div className="exampleCommon">
-        <div className="exampleCommonContent">
-          <FiActivity />
-        </div>
-      </div>
-      <div className="exampleCommon">
-        <div className="exampleCommonContent">
-          <FcAdvertising />
-        </div>
-      </div>
+      <ToastContainer limit={4} />
     </>
   )
 }

@@ -5,7 +5,7 @@ export const ReactLoaderSpinnerType = () => {
   return (
     <div className="packages">
       <div className="heading">
-        <span>React Paginate</span>
+        <span>React Loader</span>
       </div>
       <div className="overView">
         <WhatIsThis />

@@ -1,5 +1,4 @@
 import { PrimeReactProvider } from 'primereact/api';
-import { BreadCrumb } from 'primereact/breadcrumb';
 
 export const ExampleTwo = () => {
   const objectPass = {

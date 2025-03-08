@@ -4,15 +4,33 @@ import About from "./Component/About"
 import Contact from "./Component/Contact"
 import Layout from "./Layout/Layout"
 import './WithRouterTraditional.scss'
-import StudentList from "./Component/Student/StudentList"
 import { PageNotFound } from "./Component/404Page/PageNotFound"
+import { Student } from "./Component/Student/Student"
+import { Bounce, ToastContainer } from "react-toastify"
+import { LoaderContextProvider } from "./Context/LoaderContext"
 
 export default function WithRouterTraditional() {
+  let option: any = {
+    position: "top-right",
+    autoClose: 5000,
+    hideProgressBar: false,
+    closeOnClick: true,
+    pauseOnHover: true,
+    draggable: true,
+    progress: undefined,
+    icon: true,
+    theme: "dark",
+    transition: Bounce,
+  }
   const router = createBrowserRouter(
     createRoutesFromElements(
-      <Route path="/" element={<Layout />}>
+      <Route path="/" element={
+        <LoaderContextProvider>
+          <Layout />
+        </LoaderContextProvider>
+      }>
         <Route path="/" element={<Home />} />
-        <Route path="student" element={<StudentList />} />
+        <Route path="student" element={<Student />} />
         <Route path="about" element={<About />} />
         <Route path="contact" element={<Contact />} />
         <Route path="/*" element={<PageNotFound />} />
@@ -20,6 +38,9 @@ export default function WithRouterTraditional() {
     )
   )
   return (
-    <RouterProvider router={router} />
+    <>
+      <RouterProvider router={router} />
+      <ToastContainer limit={3} />
+    </>
   )
 }

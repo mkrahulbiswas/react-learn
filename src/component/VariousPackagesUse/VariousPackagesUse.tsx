@@ -6,10 +6,12 @@ import { PaginationPackage } from './PaginationPackage/PaginationPackage'
 import { TostAlertPackage } from './TostAlertPackage/TostAlertPackage'
 import { PageScrollPackage } from './PageScrollPackage/PageScrollPackage'
 import { UiComponentPackage } from './UiComponentPackage/UiComponentPackage'
+import { StylePackage } from './StylePackage/StylePackage'
 
 export const VariousPackagesUse = () => {
   return (
     <div className="variousPackagesUse">
+      <StylePackage />
       <UiComponentPackage />
       <PageScrollPackage />
       <TostAlertPackage />

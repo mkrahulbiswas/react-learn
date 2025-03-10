@@ -1,15 +1,40 @@
 export const ExampleOne = () => {
   return (
     <>
-      <ButtonsBS />
-      <AlertBS />
-      <AccordianBS />
-      <FormElementBS />
+      <ButtonBT />
+      <CardBT />
+      <ProgressBarBT />
+      <AlertBT />
+      <AccordianBT />
+      <FormBT />
     </>
   )
 }
 
-export const ButtonsBS = () => {
+export const ButtonBT = () => {
+  return (
+    <>
+      <div className="exampleCommon fullWidth">
+        <div className="exampleCommonPoints">
+          <span>Various types of button</span>
+        </div>
+        <div className="exampleCommonContent">
+          <button type="button" className="btn btn-primary">Primary</button>
+          <button type="button" className="ms-1 btn btn-secondary">Secondary</button>
+          <button type="button" className="ms-1 btn btn-success">Success</button>
+          <button type="button" className="ms-1 btn btn-danger">Danger</button>
+          <button type="button" className="ms-1 btn btn-warning">Warning</button>
+          <button type="button" className="ms-1 btn btn-info">Info</button>
+          <button type="button" className="ms-1 btn btn-light">Light</button>
+          <button type="button" className="ms-1 btn btn-dark">Dark</button>
+          <button type="button" className="ms-1 btn btn-link">Link</button>
+        </div>
+      </div >
+    </>
+  )
+}
+
+export const AlertBT = () => {
   return (
     <>
       <div className="exampleCommon">
@@ -17,65 +42,66 @@ export const ButtonsBS = () => {
           <span>Various types of button</span>
         </div>
         <div className="exampleCommonContent">
-          <button type="button" className="btn btn-primary">Primary</button>
+          <div className="row" style={{ fontSize: '12px' }}>
+            <div className="col-3">
+              <div className="pt-1 pb-1 alert alert-primary" role="alert">A simple primary alert</div>
+            </div>
+            <div className="col-3">
+              <div className="pt-1 pb-1 alert alert-secondary" role="alert">A simple secondary alert</div>
+            </div>
+            <div className="col-3">
+              <div className="pt-1 pb-1 alert alert-success" role="alert">A simple success alert</div>
+            </div>
+            <div className="col-3">
+              <div className="pt-1 pb-1 alert alert-danger" role="alert">A simple danger alert</div>
+            </div>
+            <div className="col-3">
+              <div className="pt-1 pb-1 alert alert-warning" role="alert">A simple warning alert</div>
+            </div>
+            <div className="col-3">
+              <div className="pt-1 pb-1 alert alert-info" role="alert">A simple info alert</div>
+            </div>
+            <div className="col-3">
+              <div className="pt-1 pb-1 alert alert-light" role="alert">A simple light alert</div>
+            </div>
+            <div className="col-3">
+              <div className="pt-1 pb-1 alert alert-dark" role="alert">A simple dark alert</div>
+            </div>
+          </div>
         </div>
-        <div className="exampleCommonContent">
-          <button type="button" className="btn btn-secondary">Secondary</button>
-        </div>
-        <div className="exampleCommonContent">
-          <button type="button" className="btn btn-success">Success</button>
-        </div>
-        <div className="exampleCommonContent">
-          <button type="button" className="btn btn-danger">Danger</button>
-        </div>
-        <div className="exampleCommonContent">
-          <button type="button" className="btn btn-warning">Warning</button>
-        </div>
-        <div className="exampleCommonContent">
-          <button type="button" className="btn btn-info">Info</button>
-        </div>
-        <div className="exampleCommonContent">
-          <button type="button" className="btn btn-light">Light</button>
-        </div>
-        <div className="exampleCommonContent">
-          <button type="button" className="btn btn-dark">Dark</button>
-        </div>
-        <div className="exampleCommonContent">
-          <button type="button" className="btn btn-link">Link</button>
-        </div>
-      </div>
+      </div >
     </>
   )
 }
 
-export const AlertBS = () => {
+export const CardBT = () => {
   return (
     <>
       <div className="exampleCommon">
         <div className="exampleCommonPoints">
-          <span>Various types of alert</span>
+          <span>Various types of button</span>
         </div>
         <div className="exampleCommonContent">
-          <div className="pt-2 pb-2 alert alert-primary" role="alert">A simple primary alert—check it out!</div>
-          <div className="pt-2 pb-2 alert alert-secondary" role="alert">A simple secondary alert—check it out!</div>
-          <div className="pt-2 pb-2 alert alert-success" role="alert">A simple success alert—check it out!</div>
-          <div className="pt-2 pb-2 alert alert-danger" role="alert">A simple danger alert—check it out!</div>
-          <div className="pt-2 pb-2 alert alert-warning" role="alert">A simple warning alert—check it out!</div>
-          <div className="pt-2 pb-2 alert alert-info" role="alert">A simple info alert—check it out!</div>
-          <div className="pt-2 pb-2 alert alert-light" role="alert">A simple light alert—check it out!</div>
-          <div className="pt-2 pb-2 alert alert-dark" role="alert">A simple dark alert—check it out!</div>
+          <div className="card" style={{ width: '18rem' }}>
+            <img src="..." className="card-img-top" alt="..." />
+            <div className="card-body">
+              <h5 className="card-title">Card title</h5>
+              <p className="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+              <a href="#" className="btn btn-primary">Go somewhere</a>
+            </div>
+          </div>
         </div>
-      </div>
+      </div >
     </>
   )
 }
 
-export const AccordianBS = () => {
+export const AccordianBT = () => {
   return (
     <>
       <div className="exampleCommon">
         <div className="exampleCommonPoints">
-          <span>Various types of alert</span>
+          <span>Various types of button</span>
         </div>
         <div className="exampleCommonContent">
           <div className="accordion" id="accordionExample">
@@ -111,17 +137,49 @@ export const AccordianBS = () => {
             </div>
           </div>
         </div>
-      </div>
+      </div >
     </>
   )
 }
 
-export const FormElementBS = () => {
+export const ProgressBarBT = () => {
   return (
     <>
       <div className="exampleCommon">
         <div className="exampleCommonPoints">
-          <span>Various types of alert</span>
+          <span>Various types of button</span>
+        </div>
+        <div className="exampleCommonContent">
+          <div className="progress" role="progressbar" aria-label="Success example" aria-valuenow={25} aria-valuemin={0} aria-valuemax={100}>
+            <div className="progress-bar bg-success" style={{ width: '25%' }}>25%</div>
+          </div>
+        </div>
+        <div className="exampleCommonContent">
+          <div className="progress" role="progressbar" aria-label="Info example" aria-valuenow={50} aria-valuemin={0} aria-valuemax={100}>
+            <div className="progress-bar bg-info" style={{ width: '50%' }}></div>
+          </div>
+        </div>
+        <div className="exampleCommonContent">
+          <div className="progress" role="progressbar" aria-label="Danger example" aria-valuenow={100} aria-valuemin={0} aria-valuemax={100}>
+            <div className="progress-bar bg-danger" style={{ width: '100%' }}>100%</div>
+          </div>
+        </div>
+        <div className="exampleCommonContent">
+          <div className="progress" role="progressbar" aria-label="Warning striped example" aria-valuenow={75} aria-valuemin={0} aria-valuemax={100}>
+            <div className="progress-bar progress-bar-striped bg-warning" style={{ width: '75%' }}></div>
+          </div>
+        </div>
+      </div >
+    </>
+  )
+}
+
+export const FormBT = () => {
+  return (
+    <>
+      <div className="exampleCommon">
+        <div className="exampleCommonPoints">
+          <span>Various types of button</span>
         </div>
         <div className="exampleCommonContent">
           <form className="row g-3">
@@ -167,7 +225,7 @@ export const FormElementBS = () => {
             </div>
           </form>
         </div>
-      </div>
+      </div >
     </>
   )
 }

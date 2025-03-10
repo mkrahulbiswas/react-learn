@@ -6,7 +6,7 @@ export const HowToUse = () => {
     <>
       <div className="exampleSub">
         <div className="exampleHeading">
-          <h2>Example One</h2>
+          <h2>Basic Use</h2>
         </div>
         <div className="exampleContent">
           <ExampleOne />
@@ -14,7 +14,7 @@ export const HowToUse = () => {
       </div>
       <div className="exampleSub">
         <div className="exampleHeading">
-          <h2>Example Of Primereact Icon</h2>
+          <h2>Advance Use</h2>
         </div>
         <div className="exampleContent">
           <ExampleTwo />

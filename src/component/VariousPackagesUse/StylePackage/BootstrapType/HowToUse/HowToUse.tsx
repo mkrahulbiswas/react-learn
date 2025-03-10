@@ -1,5 +1,4 @@
 import { ExampleOne } from "./ExampleOne/ExampleOne"
-import { ExampleTwo } from "./ExampleTwo/ExampleTwo"
 
 export const HowToUse = () => {
   return (
@@ -7,17 +6,13 @@ export const HowToUse = () => {
       <div className="exampleSub">
         <div className="exampleHeading">
           <h2>Example One</h2>
+          <span>
+            <label style={{ color: "red" }}>NOTE:&nbsp;&nbsp;</label>
+            this is just for using the <b>bootstrap class</b>, there no <b>element</b> will work directly. For using <b>bootstrap element</b> you need to use <b>react-bootstrap</b>.
+          </span>
         </div>
         <div className="exampleContent">
           <ExampleOne />
-        </div>
-      </div>
-      <div className="exampleSub">
-        <div className="exampleHeading">
-          <h2>Example Of Primereact Icon</h2>
-        </div>
-        <div className="exampleContent">
-          <ExampleTwo />
         </div>
       </div>
     </>

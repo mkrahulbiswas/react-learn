@@ -4,8 +4,8 @@ import { PrimereactType } from "./PrimereactType/PrimereactType"
 export const UiComponentPackage = () => {
   return (
     <>
-      <BootstrapType />
       <PrimereactType />
+      <BootstrapType />
     </>
   )
 }

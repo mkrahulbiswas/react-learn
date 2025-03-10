@@ -5,11 +5,7 @@ export const HowToUse = () => {
     <>
       <div className="exampleSub">
         <div className="exampleHeading">
-          <h2>Example One</h2>
-          <span>
-            <label style={{ color: 'red' }}>NOTE:&nbsp;&nbsp;</label>
-            No <b>bootstrap element</b> will work, only <b>bootstrap class</b> you can take to use. For element you need to check <b>react-bootstrap</b>
-          </span>
+          <h2>Basic Use</h2>
         </div>
         <div className="exampleContent">
           <ExampleOne />

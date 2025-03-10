@@ -14,7 +14,7 @@ export const ExampleOne = () => {
 export const ButtonBT = () => {
   return (
     <>
-      <div className="exampleCommon">
+      <div className="exampleCommon fullWidth">
         <div className="exampleCommonPoints">
           <span>Various types of button</span>
         </div>
@@ -42,14 +42,32 @@ export const AlertBT = () => {
           <span>Various types of button</span>
         </div>
         <div className="exampleCommonContent">
-          <div className="alert alert-primary" role="alert">A simple primary alert—check it out!</div>
-          <div className="alert alert-secondary" role="alert">A simple secondary alert—check it out!</div>
-          <div className="alert alert-success" role="alert">A simple success alert—check it out!</div>
-          <div className="alert alert-danger" role="alert">A simple danger alert—check it out!</div>
-          <div className="alert alert-warning" role="alert">A simple warning alert—check it out!</div>
-          <div className="alert alert-info" role="alert">A simple info alert—check it out!</div>
-          <div className="alert alert-light" role="alert">A simple light alert—check it out!</div>
-          <div className="alert alert-dark" role="alert">A simple dark alert—check it out!</div>
+          <div className="row" style={{ fontSize: '12px' }}>
+            <div className="col-3">
+              <div className="pt-1 pb-1 alert alert-primary" role="alert">A simple primary alert</div>
+            </div>
+            <div className="col-3">
+              <div className="pt-1 pb-1 alert alert-secondary" role="alert">A simple secondary alert</div>
+            </div>
+            <div className="col-3">
+              <div className="pt-1 pb-1 alert alert-success" role="alert">A simple success alert</div>
+            </div>
+            <div className="col-3">
+              <div className="pt-1 pb-1 alert alert-danger" role="alert">A simple danger alert</div>
+            </div>
+            <div className="col-3">
+              <div className="pt-1 pb-1 alert alert-warning" role="alert">A simple warning alert</div>
+            </div>
+            <div className="col-3">
+              <div className="pt-1 pb-1 alert alert-info" role="alert">A simple info alert</div>
+            </div>
+            <div className="col-3">
+              <div className="pt-1 pb-1 alert alert-light" role="alert">A simple light alert</div>
+            </div>
+            <div className="col-3">
+              <div className="pt-1 pb-1 alert alert-dark" role="alert">A simple dark alert</div>
+            </div>
+          </div>
         </div>
       </div >
     </>
@@ -135,12 +153,18 @@ export const ProgressBarBT = () => {
           <div className="progress" role="progressbar" aria-label="Success example" aria-valuenow={25} aria-valuemin={0} aria-valuemax={100}>
             <div className="progress-bar bg-success" style={{ width: '25%' }}>25%</div>
           </div>
+        </div>
+        <div className="exampleCommonContent">
           <div className="progress" role="progressbar" aria-label="Info example" aria-valuenow={50} aria-valuemin={0} aria-valuemax={100}>
             <div className="progress-bar bg-info" style={{ width: '50%' }}></div>
           </div>
+        </div>
+        <div className="exampleCommonContent">
           <div className="progress" role="progressbar" aria-label="Danger example" aria-valuenow={100} aria-valuemin={0} aria-valuemax={100}>
             <div className="progress-bar bg-danger" style={{ width: '100%' }}>100%</div>
           </div>
+        </div>
+        <div className="exampleCommonContent">
           <div className="progress" role="progressbar" aria-label="Warning striped example" aria-valuenow={75} aria-valuemin={0} aria-valuemax={100}>
             <div className="progress-bar progress-bar-striped bg-warning" style={{ width: '75%' }}></div>
           </div>

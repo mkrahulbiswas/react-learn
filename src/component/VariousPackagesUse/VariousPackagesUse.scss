@@ -73,6 +73,24 @@ ul {
                     background-color: rgb(33, 100, 201);
                     transform: translateY(-50%);
                 }
+
+                p {
+                    font-size: 13px;
+                    padding-left: 12px;
+                    position: relative;
+
+                    &::after {
+                        content: '';
+                        position: absolute;
+                        top: 9px;
+                        left: 0;
+                        width: 6px;
+                        height: 6px;
+                        border-radius: 100%;
+                        background-color: rgb(201, 33, 201);
+                        transform: translateY(-50%);
+                    }
+                }
             }
         }
 

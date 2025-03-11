@@ -5,7 +5,7 @@ export const HowToUse = () => {
     <>
       <div className="exampleSub">
         <div className="exampleHeading">
-          <h2>Basic Use</h2>
+          <h2>Example One</h2>
         </div>
         <div className="exampleContent">
           <ExampleOne />

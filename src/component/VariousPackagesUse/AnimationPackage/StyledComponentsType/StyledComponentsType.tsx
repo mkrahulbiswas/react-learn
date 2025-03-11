@@ -1,12 +1,11 @@
 import { HowToUse } from "./HowToUse/HowToUse"
 import { WhatIsThis } from "./WhatIsThis/WhatIsThis"
-import 'bootstrap/dist/js/bootstrap.bundle.js';
 
-export const BootstrapType = () => {
+export const StyledComponentsType = () => {
   return (
     <div className="packages">
       <div className="heading">
-        <span>Boorstrap</span>
+        <span>Styled Components</span>
       </div>
       <div className="overView">
         <WhatIsThis />

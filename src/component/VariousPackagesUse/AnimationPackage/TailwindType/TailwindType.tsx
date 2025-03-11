@@ -1,12 +1,12 @@
+import './TailwindType.css'
 import { HowToUse } from "./HowToUse/HowToUse"
 import { WhatIsThis } from "./WhatIsThis/WhatIsThis"
-import 'bootstrap/dist/js/bootstrap.bundle.js';
 
-export const BootstrapType = () => {
+export const TailwindType = () => {
   return (
     <div className="packages">
       <div className="heading">
-        <span>Boorstrap</span>
+        <span>Tailwind</span>
       </div>
       <div className="overView">
         <WhatIsThis />

@@ -1,12 +1,11 @@
-import './TailwindType.css'
 import { HowToUse } from "./HowToUse/HowToUse"
 import { WhatIsThis } from "./WhatIsThis/WhatIsThis"
 
-export const TailwindType = () => {
+export const ReactSpring = () => {
   return (
     <div className="packages">
       <div className="heading">
-        <span>Tailwind</span>
+        <span>React Spring</span>
       </div>
       <div className="overView">
         <WhatIsThis />

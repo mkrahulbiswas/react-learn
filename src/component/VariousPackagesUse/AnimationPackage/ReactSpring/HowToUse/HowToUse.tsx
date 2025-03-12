@@ -1,4 +1,5 @@
 import { ExampleOne } from "./ExampleOne/ExampleOne"
+import { ExampleThree } from "./ExampleThree/ExampleThree"
 import { ExampleTwo } from "./ExampleTwo/ExampleTwo"
 
 export const HowToUse = () => {
@@ -6,7 +7,7 @@ export const HowToUse = () => {
     <>
       <div className="exampleSub">
         <div className="exampleHeading">
-          <h2>Basic Use</h2>
+          <h2>How to style</h2>
         </div>
         <div className="exampleContent">
           <ExampleOne />
@@ -14,10 +15,18 @@ export const HowToUse = () => {
       </div>
       <div className="exampleSub">
         <div className="exampleHeading">
-          <h2>Advance Use</h2>
+          <h2>Example of <b>useSpring</b></h2>
         </div>
         <div className="exampleContent">
           <ExampleTwo />
+        </div>
+      </div>
+      <div className="exampleSub">
+        <div className="exampleHeading">
+          <h2>Example of <b>useSprings</b></h2>
+        </div>
+        <div className="exampleContent">
+          <ExampleThree />
         </div>
       </div>
     </>

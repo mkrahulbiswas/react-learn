@@ -1,15 +1,15 @@
 import { AnimateType } from "./AnimateType/AnimateType"
-import { BootstrapType } from "./BootstrapType/BootstrapType"
-import { StyledComponentsType } from "./StyledComponentsType/StyledComponentsType"
-import { TailwindType } from "./TailwindType/TailwindType"
+import { AnimeJs } from "./AnimeJs/AnimeJs"
+import { FramerMotion } from "./FramerMotion/FramerMotion"
+import { ReactSpring } from "./ReactSpring/ReactSpring"
 
 export const AnimationPackage = () => {
   return (
     <>
+      <AnimeJs />
+      <FramerMotion />
+      <ReactSpring />
       <AnimateType />
-      <TailwindType />
-      <BootstrapType />
-      <StyledComponentsType />
     </>
   )
 }

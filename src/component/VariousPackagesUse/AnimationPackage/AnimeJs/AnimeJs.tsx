@@ -1,11 +1,11 @@
 import { HowToUse } from "./HowToUse/HowToUse"
 import { WhatIsThis } from "./WhatIsThis/WhatIsThis"
 
-export const StyledComponentsType = () => {
+export const AnimeJs = () => {
   return (
     <div className="packages">
       <div className="heading">
-        <span>Styled Components</span>
+        <span>Anime Js</span>
       </div>
       <div className="overView">
         <WhatIsThis />

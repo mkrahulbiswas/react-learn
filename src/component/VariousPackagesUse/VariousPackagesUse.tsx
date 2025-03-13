@@ -5,7 +5,8 @@ export const VariousPackagesUse = () => {
   return (
     <div className="variousPackagesUse">
       {/* <SomeUsefulPackage /> */}
-      <AnimationPackage />
+      <ChartPackage />
+      {/* <AnimationPackage /> */}
       {/* <StylePackage /> */}
       {/* <UiComponentPackage /> */}
       {/* <PageScrollPackage /> */}

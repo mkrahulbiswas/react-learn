@@ -7,9 +7,9 @@ export const AnimationPackage = () => {
   return (
     <>
       <AnimeJs />
-      <FramerMotion />
-      <ReactSpring />
-      <AnimateType />
+      {/* <FramerMotion /> */}
+      {/* <ReactSpring /> */}
+      {/* <AnimateType /> */}
     </>
   )
 }

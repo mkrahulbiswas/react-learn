@@ -70,7 +70,7 @@ ul {
                     width: 8px;
                     height: 8px;
                     border-radius: 100%;
-                    background-color: rgb(33, 100, 201);
+                    background-color: rgb(108, 159, 236);
                     transform: translateY(-50%);
                 }
 
@@ -78,18 +78,34 @@ ul {
                     font-size: 13px;
                     padding-left: 12px;
                     position: relative;
-                    margin-bottom: 0;
+                    margin-bottom: 5px;
 
                     &::after {
                         content: '';
                         position: absolute;
-                        top: 9px;
+                        top: 11px;
                         left: 0;
-                        width: 6px;
-                        height: 6px;
-                        border-radius: 100%;
-                        background-color: rgb(201, 33, 201);
+                        width: 5px;
+                        height: 5px;
+                        background-color: rgb(252, 139, 252);
                         transform: translateY(-50%);
+                    }
+
+                    &:not(:last-child) {
+                        margin-bottom: 0px !important;
+                    }
+
+                    .visitDoc {
+                        text-decoration: none;
+                    }
+
+                    .npmCommand {
+                        cursor: pointer;
+                        background-color: rgb(177, 241, 225);
+                        padding: 0 5px 3px 5px;
+                        border-radius: 5px;
+                        font-weight: bold;
+                        margin-top: 5px;
                     }
                 }
             }

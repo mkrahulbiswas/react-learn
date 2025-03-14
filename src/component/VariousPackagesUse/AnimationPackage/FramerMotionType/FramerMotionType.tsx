@@ -1,11 +1,11 @@
 import { HowToUse } from "./HowToUse/HowToUse"
 import { WhatIsThis } from "./WhatIsThis/WhatIsThis"
 
-export const ReactChartJs = () => {
+export const FramerMotionType = () => {
   return (
     <div className="packages">
       <div className="heading">
-        <span>React Chart Js</span>
+        <span>Framer Motion</span>
       </div>
       <div className="overView">
         <WhatIsThis />

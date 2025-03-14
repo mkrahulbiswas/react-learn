@@ -1,11 +1,11 @@
 import { HowToUse } from "./HowToUse/HowToUse"
 import { WhatIsThis } from "./WhatIsThis/WhatIsThis"
 
-export const ApexCharts = () => {
+export const RechartsType = () => {
   return (
     <div className="packages">
       <div className="heading">
-        <span>Apex Charts</span>
+        <span>Recharts</span>
       </div>
       <div className="overView">
         <WhatIsThis />

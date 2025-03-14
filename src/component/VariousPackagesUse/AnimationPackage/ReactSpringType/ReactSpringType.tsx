@@ -1,7 +1,7 @@
 import { HowToUse } from "./HowToUse/HowToUse"
 import { WhatIsThis } from "./WhatIsThis/WhatIsThis"
 
-export const ReactSpring = () => {
+export const ReactSpringType = () => {
   return (
     <div className="packages">
       <div className="heading">

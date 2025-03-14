@@ -1,11 +1,11 @@
 import { HowToUse } from "./HowToUse/HowToUse"
 import { WhatIsThis } from "./WhatIsThis/WhatIsThis"
 
-export const AnimeJs = () => {
+export const NivoChartType = () => {
   return (
     <div className="packages">
       <div className="heading">
-        <span>Anime Js</span>
+        <span>Nivo Chart</span>
       </div>
       <div className="overView">
         <WhatIsThis />

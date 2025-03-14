@@ -1,15 +1,15 @@
 import { AnimateType } from "./AnimateType/AnimateType"
-import { AnimeJs } from "./AnimeJs/AnimeJs"
-import { FramerMotion } from "./FramerMotion/FramerMotion"
-import { ReactSpring } from "./ReactSpring/ReactSpring"
+import { AnimeJsType } from "./AnimeJsType/AnimeJsType"
+import { FramerMotionType } from "./FramerMotionType/FramerMotionType"
+import { ReactSpringType } from "./ReactSpringType/ReactSpringType"
 
 export const AnimationPackage = () => {
   return (
     <>
-      <AnimeJs />
-      {/* <FramerMotion /> */}
-      {/* <ReactSpring /> */}
-      {/* <AnimateType /> */}
+      <AnimeJsType />
+      <FramerMotionType />
+      <ReactSpringType />
+      <AnimateType />
     </>
   )
 }

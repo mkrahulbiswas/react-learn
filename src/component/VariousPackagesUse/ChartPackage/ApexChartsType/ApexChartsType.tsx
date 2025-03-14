@@ -1,11 +1,11 @@
 import { HowToUse } from "./HowToUse/HowToUse"
 import { WhatIsThis } from "./WhatIsThis/WhatIsThis"
 
-export const FramerMotion = () => {
+export const ApexChartsType = () => {
   return (
     <div className="packages">
       <div className="heading">
-        <span>Framer Motion</span>
+        <span>Apex Charts</span>
       </div>
       <div className="overView">
         <WhatIsThis />

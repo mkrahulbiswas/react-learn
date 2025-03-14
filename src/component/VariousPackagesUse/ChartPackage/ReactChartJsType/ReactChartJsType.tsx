@@ -1,11 +1,11 @@
 import { HowToUse } from "./HowToUse/HowToUse"
 import { WhatIsThis } from "./WhatIsThis/WhatIsThis"
 
-export const ReactIconType = () => {
+export const ReactChartJsType = () => {
   return (
     <div className="packages">
       <div className="heading">
-        <span>React Icon</span>
+        <span>React Chart Js</span>
       </div>
       <div className="overView">
         <WhatIsThis />

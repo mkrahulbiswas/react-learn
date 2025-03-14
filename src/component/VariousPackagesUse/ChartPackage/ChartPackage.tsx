@@ -1,11 +1,15 @@
-import { ApexCharts } from "./ApexCharts/ApexCharts"
-import { ReactChartJs } from "./ReactChartJs/ReactChartJs"
+import { ApexChartsType } from "./ApexChartsType/ApexChartsType"
+import { NivoChartType } from "./NivoChartType/NivoChartType"
+import { ReactChartJsType } from "./ReactChartJsType/ReactChartJsType"
+import { RechartsType } from "./RechartsType/RechartsType"
 
 export const ChartPackage = () => {
   return (
     <>
-      <ApexCharts />
-      <ReactChartJs />
+      <NivoChartType />
+      {/* <RechartsType /> */}
+      {/* <ApexChartsType /> */}
+      {/* <ReactChartJsType /> */}
     </>
   )
 }

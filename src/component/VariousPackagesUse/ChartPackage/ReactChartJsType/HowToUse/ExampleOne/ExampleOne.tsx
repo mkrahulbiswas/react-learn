@@ -133,7 +133,7 @@ export const PieChart = () => {
     <>
       <div className="exampleCommon">
         <div className="exampleCommonPoints">
-          <span>Line chart</span>
+          <span>Pie chart</span>
         </div>
         <div className="exampleCommonContent">
           <Pie data={data} />
@@ -174,7 +174,7 @@ export const DoughnutChart = () => {
     <>
       <div className="exampleCommon">
         <div className="exampleCommonPoints">
-          <span>Line chart</span>
+          <span>Doughnut chart</span>
         </div>
         <div className="exampleCommonContent">
           <Doughnut data={data} />

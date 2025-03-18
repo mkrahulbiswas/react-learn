@@ -10,10 +10,10 @@ import { HighchartsChartsType } from "./HighchartsChartsType/HighchartsChartsTyp
 export const ChartPackage = () => {
   return (
     <>
+      <ReactVisType />
+      <NivoType />
       <HighchartsChartsType />
       <GoogleChartsType />
-      {/* <ReactVisType /> */}
-      <NivoType />
       <VictoryType />
       <RechartsType />
       <ApexChartsType />

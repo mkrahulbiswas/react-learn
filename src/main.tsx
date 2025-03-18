@@ -5,8 +5,8 @@ import './index.css'
 import 'bootstrap/dist/css/bootstrap.min.css';
 import 'react-toastify/dist/ReactToastify.css';
 
-import TestAndImplement from './component/TestAndImplement/TestAndImplement.tsx';
 import { VariousPackagesUse } from './component/VariousPackagesUse/VariousPackagesUse.tsx';
+import { TestAndImplement } from './component/TestAndImplement/TestAndImplement.tsx';
 
 createRoot(document.getElementById('root')!).render(
   <StrictMode>

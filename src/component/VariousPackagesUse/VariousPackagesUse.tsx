@@ -1,14 +1,16 @@
+import { AnimationPackage } from './AnimationPackage/AnimationPackage'
 import { ChartPackage } from './ChartPackage/ChartPackage'
+import { UiComponentPackage } from './UiComponentPackage/UiComponentPackage'
 import './VariousPackagesUse.scss'
 
 export const VariousPackagesUse = () => {
   return (
     <div className="variousPackagesUse">
       {/* <SomeUsefulPackage /> */}
-      <ChartPackage />
+      {/* <ChartPackage /> */}
       {/* <AnimationPackage /> */}
       {/* <StylePackage /> */}
-      {/* <UiComponentPackage /> */}
+      <UiComponentPackage />
       {/* <PageScrollPackage /> */}
       {/* <TostAlertPackage /> */}
       {/* <DateTimePackage /> */}

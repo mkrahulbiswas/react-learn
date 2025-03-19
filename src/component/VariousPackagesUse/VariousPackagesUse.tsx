@@ -1,5 +1,3 @@
-import { AnimationPackage } from './AnimationPackage/AnimationPackage'
-import { ChartPackage } from './ChartPackage/ChartPackage'
 import { UiComponentPackage } from './UiComponentPackage/UiComponentPackage'
 import './VariousPackagesUse.scss'
 

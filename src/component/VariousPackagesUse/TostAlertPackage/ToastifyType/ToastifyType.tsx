@@ -1,5 +1,6 @@
 import { HowToUse } from "./HowToUse/HowToUse"
 import { WhatIsThis } from "./WhatIsThis/WhatIsThis"
+import 'react-toastify/dist/ReactToastify.css';
 
 export const ToastifyType = () => {
   return (

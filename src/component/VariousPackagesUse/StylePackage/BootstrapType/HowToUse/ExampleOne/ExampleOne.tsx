@@ -206,8 +206,8 @@ export const FormBT = () => {
             <div className="col-md-4">
               <label htmlFor="inputState" className="form-label">State</label>
               <select id="inputState" className="form-select">
-                <option selected>Choose...</option>
-                <option>...</option>
+                <option value="">Choose...</option>
+                <option value="1">...</option>
               </select>
             </div>
             <div className="col-md-2">

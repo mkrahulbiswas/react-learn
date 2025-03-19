@@ -1,5 +1,7 @@
 import { HowToUse } from "./HowToUse/HowToUse"
 import { WhatIsThis } from "./WhatIsThis/WhatIsThis"
+import "primereact/resources/themes/lara-light-cyan/theme.css";
+import 'primeicons/primeicons.css';
 
 export const PrimereactType = () => {
   return (

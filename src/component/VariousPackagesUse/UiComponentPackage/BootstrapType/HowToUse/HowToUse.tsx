@@ -8,7 +8,7 @@ export const HowToUse = () => {
           <h2>Example One</h2>
           <span>
             <label style={{ color: 'red' }}>NOTE:&nbsp;&nbsp;</label>
-            No <b>bootstrap element</b> will work, only <b>bootstrap class</b> you can take to use. For element you need to check <b>react-bootstrap</b>
+            for react it is recormended to use <b>react-bootstrap</b> instate of plane bootstrap
           </span>
         </div>
         <div className="exampleContent">

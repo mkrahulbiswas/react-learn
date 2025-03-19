@@ -1,3 +1,4 @@
+import './TailwindType.css'
 import { HowToUse } from "./HowToUse/HowToUse"
 import { WhatIsThis } from "./WhatIsThis/WhatIsThis"
 

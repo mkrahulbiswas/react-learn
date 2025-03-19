@@ -1,8 +1,9 @@
 import React from 'react'
 import './TestAndImplement.css'
+import { ClashOfClan } from './ClashOfClan/ClashOfClan'
 import { PracticeCrud } from './PracticeCrud/PracticeCrud'
 
-function TestAndImplement() {
+export const TestAndImplement = () => {
   return (
     <React.Fragment>
       {/* <WMLayout /> */}
@@ -11,8 +12,8 @@ function TestAndImplement() {
       {/* <MakingStepCounter /> */}
       {/* <PCLayout /> */}
       {/* <MovieList /> */}
-      <PracticeCrud />
+      {/* <PracticeCrud /> */}
+      <ClashOfClan />
     </React.Fragment>
   )
 }
-export default TestAndImplement

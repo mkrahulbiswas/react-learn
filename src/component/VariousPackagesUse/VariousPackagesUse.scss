@@ -162,8 +162,26 @@ ul {
                             min-width: 100%;
                         }
 
+                        &.triennialWidth {
+                            max-width: 31.95%;
+                        }
+
                         .exampleCommonPoints {
-                            span {}
+                            span {
+                                font-weight: bold;
+                                color: rgb(46, 107, 31);
+                            }
+
+                            p {
+                                font-size: 12px;
+                                line-height: 14px;
+                                color: rgb(102, 86, 31);
+
+                                label {
+                                    color: red;
+                                    text-transform: capitalize;
+                                }
+                            }
                         }
 
                         .exampleCommonContent {
@@ -172,6 +190,19 @@ ul {
                             &.exampleCommonContentFloat {
                                 float: left;
                                 margin-top: 0;
+                                margin-left: 20px;
+
+                                &:first-child {
+                                    margin-left: 0px;
+                                }
+                            }
+
+                            &.exampleCommonContentFullWidth {
+                                min-width: 100%;
+                            }
+
+                            &.exampleCommonContentTriennialWidth {
+                                max-width: 31.95%;
                             }
 
                             &:first-child {
@@ -182,5 +213,9 @@ ul {
                 }
             }
         }
+    }
+
+    .widthFixed200 {
+        width: 200px;
     }
 }

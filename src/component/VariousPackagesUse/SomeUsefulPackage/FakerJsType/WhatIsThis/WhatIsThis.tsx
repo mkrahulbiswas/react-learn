@@ -1,6 +1,6 @@
 export const WhatIsThis = () => {
   return (
-    < >
+    <>
       <span className="singleLineText">This is <b>faker js</b> package to manage the <b>fake data</b></span>
       <span className="singleLineText">To use this package you need to <b>install</b> the library by using command:
         <p><span className="npmCommand">npm install @faker-js/faker --save-dev</span></p>

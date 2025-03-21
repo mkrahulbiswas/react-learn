@@ -106,7 +106,7 @@ export const AdvanceImplement = () => {
           <span style={{ backgroundColor: `#${dataOne}` }}>{dataOne}</span>
         </div>
       </div>
-      <div className="exampleCommon triennialWidth">
+      <div className="exampleCommon">
         <div className="exampleCommonPoints">
           <span>Multiple color</span>
         </div>

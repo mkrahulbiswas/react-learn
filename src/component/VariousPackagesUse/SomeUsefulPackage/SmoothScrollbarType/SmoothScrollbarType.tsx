@@ -1,5 +1,5 @@
-import { HowToUse } from "./HowToUse/HowToUse"
-import { WhatIsThis } from "./WhatIsThis/WhatIsThis"
+import { HowToUse } from "./HowToUse/HowToUse";
+import { WhatIsThis } from "./WhatIsThis/WhatIsThis";
 
 export const SmoothScrollbarType = () => {
   return (
@@ -14,5 +14,5 @@ export const SmoothScrollbarType = () => {
         <HowToUse />
       </div>
     </div>
-  )
-}
+  );
+};

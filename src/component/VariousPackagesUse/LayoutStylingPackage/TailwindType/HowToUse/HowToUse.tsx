@@ -1,4 +1,4 @@
-import { ExampleOne } from "./ExampleOne/ExampleOne";
+import { ExampleOne } from "./ExampleOne/ExampleOne"
 
 export const HowToUse = () => {
   return (
@@ -12,5 +12,5 @@ export const HowToUse = () => {
         </div>
       </div>
     </>
-  );
-};
+  )
+}

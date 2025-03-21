@@ -1,6 +1,6 @@
-import { FakerJsType } from "./FakerJsType/FakerJsType"
-import { LogSymbolsType } from "./LogSymbolsType/LogSymbolsType"
-import { SmoothScrollbarType } from "./SmoothScrollbarType/SmoothScrollbarType"
+import { FakerJsType } from "./FakerJsType/FakerJsType";
+import { LogSymbolsType } from "./LogSymbolsType/LogSymbolsType";
+import { SmoothScrollbarType } from "./SmoothScrollbarType/SmoothScrollbarType";
 
 export const SomeUsefulPackage = () => {
   return (
@@ -9,5 +9,5 @@ export const SomeUsefulPackage = () => {
       <FakerJsType />
       <LogSymbolsType />
     </>
-  )
-}
+  );
+};

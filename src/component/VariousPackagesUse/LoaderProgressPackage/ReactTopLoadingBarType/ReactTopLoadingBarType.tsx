@@ -1,6 +1,6 @@
-import { LoadingBarContainer } from "react-top-loading-bar"
-import { HowToUse } from "./HowToUse/HowToUse"
-import { WhatIsThis } from "./WhatIsThis/WhatIsThis"
+import { LoadingBarContainer } from "react-top-loading-bar";
+import { HowToUse } from "./HowToUse/HowToUse";
+import { WhatIsThis } from "./WhatIsThis/WhatIsThis";
 
 export const ReactTopLoadingBarType = () => {
   return (
@@ -17,5 +17,5 @@ export const ReactTopLoadingBarType = () => {
         </LoadingBarContainer>
       </div>
     </div>
-  )
-}
+  );
+};

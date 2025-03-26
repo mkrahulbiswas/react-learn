@@ -11,12 +11,12 @@ export const ChartPackage = () => {
   return (
     <>
       {/* <ReactVisType /> */}
+      <ApexChartsType />
       <NivoType />
       <HighchartsChartsType />
       <GoogleChartsType />
       <VictoryType />
       <RechartsType />
-      {/* <ApexChartsType /> */}
       <ReactChartJsType />
     </>
   );

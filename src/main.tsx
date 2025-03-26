@@ -7,10 +7,12 @@ import "react-toastify/dist/ReactToastify.css";
 
 import { VariousPackagesUse } from "./component/VariousPackagesUse/VariousPackagesUse.tsx";
 import { TestAndImplement } from "./component/TestAndImplement/TestAndImplement.tsx";
+import { VariousPackagesUseWorking } from "./component/VariousPackagesUseWorking/VariousPackagesUseWorking.tsx";
 
 createRoot(document.getElementById("root")!).render(
   <StrictMode>
-    <VariousPackagesUse />
+    <VariousPackagesUseWorking />
+    {/* <VariousPackagesUse /> */}
     {/* <ReactLearnOneApp /> */}
     {/* <ReactLearnTwoApp /> */}
     {/* <TestAndImplement /> */}

@@ -15,18 +15,18 @@ import "./VariousPackagesUse.scss";
 export const VariousPackagesUse = () => {
   return (
     <div className="variousPackagesUse">
-      {/* <SomeUsefulPackage /> */}
+      <UiComponentPackage />
+      <ChartPackage />
+      <InputFormPackage />
+      <SomeUsefulPackage />
       <LayoutStylingPackage />
-      {/* <InputFormPackage /> */}
-      {/* <ChartPackage /> */}
-      {/* <AnimationPackage /> */}
-      {/* <UiComponentPackage /> */}
-      {/* <PageScrollPackage /> */}
-      {/* <TostAlertPackage /> */}
-      {/* <DateTimePackage /> */}
-      {/* <PaginationPackage /> */}
-      {/* <LoaderProgressPackage /> */}
-      {/* <IconPackage /> */}
+      <AnimationPackage />
+      <PageScrollPackage />
+      <TostAlertPackage />
+      <DateTimePackage />
+      <PaginationPackage />
+      <LoaderProgressPackage />
+      <IconPackage />
     </div>
   );
 };

@@ -167,6 +167,8 @@ ul {
                         }
 
                         .exampleCommonPoints {
+                            margin-bottom: 20px;
+
                             span {
                                 font-weight: bold;
                                 color: rgb(46, 107, 31);
@@ -185,12 +187,11 @@ ul {
                         }
 
                         .exampleCommonContent {
-                            margin-top: 20px;
                             position: relative;
+                            margin-top: 15px;
 
                             &.exampleCommonContentFloat {
                                 float: left;
-                                margin-top: 0;
                                 margin-left: 20px;
 
                                 &:first-child {

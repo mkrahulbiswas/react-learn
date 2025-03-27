@@ -16,17 +16,17 @@ export const VariousPackagesUse = () => {
   return (
     <div className="variousPackagesUse">
       <UiComponentPackage />
-      <ChartPackage />
-      <InputFormPackage />
-      <SomeUsefulPackage />
-      <LayoutStylingPackage />
-      <AnimationPackage />
-      <PageScrollPackage />
-      <TostAlertPackage />
-      <DateTimePackage />
-      <PaginationPackage />
-      <LoaderProgressPackage />
-      <IconPackage />
+      {/* <ChartPackage /> */}
+      {/* <InputFormPackage /> */}
+      {/* <SomeUsefulPackage /> */}
+      {/* <LayoutStylingPackage /> */}
+      {/* <AnimationPackage /> */}
+      {/* <PageScrollPackage /> */}
+      {/* <TostAlertPackage /> */}
+      {/* <DateTimePackage /> */}
+      {/* <PaginationPackage /> */}
+      {/* <LoaderProgressPackage /> */}
+      {/* <IconPackage /> */}
     </div>
   );
 };

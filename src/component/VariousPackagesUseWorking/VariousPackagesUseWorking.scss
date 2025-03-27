@@ -81,304 +81,401 @@ ul {
                 .vpuOutletMain {
                     .vpuOutletSub {
 
-                        .vpuPackages {
-                            .vpuPackages {
-                                .vpuMenuMain {
-                                    .vpuMenuSub {
-                                        padding: 30px 25px;
-                                        background-image: linear-gradient(109.6deg, rgba(223, 234, 247, 1) 11.2%, rgba(244, 248, 252, 1) 91.1%);
+                        .vpuPackagesMain {
+                            .vpuPackagesSub {
+                                background-image: linear-gradient(109.6deg, rgba(223, 234, 247, 1) 11.2%, rgba(244, 248, 252, 1) 91.1%);
 
-                                        .vpuHeading {
-                                            margin-bottom: 20px;
+                                .vpuSideMenu {
+                                    .vpuMenuMain {
+                                        min-width: 240px;
+                                        max-width: 240px;
 
-                                            span {}
-                                        }
-
-                                        .vpuList {
-                                            display: flex;
-                                            flex-direction: row;
-                                            flex-wrap: wrap;
-                                            justify-content: space-between;
-                                            gap: 25px;
-
-                                            .vpuItem {
-                                                padding: 10px;
-                                                background-image: radial-gradient(circle 780.6px at 10% 20%, rgba(133, 255, 189, 1) 0%, rgba(255, 251, 125, 1) 90.7%);
-                                                box-shadow: 0 3px 10px #e18ee4d2;
-                                                border-radius: 5px;
-                                                width: 250px;
-                                                transition: 0.30s ease-in-out;
-
-                                                &:hover {
-                                                    box-shadow: 0 7px 18px #560d58d2;
-                                                }
-
-                                                .vpuHeading {
-                                                    span {
-                                                        font-size: 18px;
-                                                        font-weight: bold;
-
-                                                        a {
-                                                            text-decoration: none;
-                                                            color: #8b258fd2;
-                                                            outline: none;
-                                                            letter-spacing: 1px;
-                                                            word-spacing: 2px;
-                                                        }
-                                                    }
-                                                }
-
-                                                .vpuLinks {
-                                                    display: flex;
-                                                    flex-direction: column;
-                                                    gap: 3px;
-
-                                                    a {
-                                                        display: block;
-                                                        outline: none;
-                                                        padding: 3px 5px 3px 20px;
-                                                        transition: 0.30s ease-in-out;
-                                                        border-radius: 5px;
-                                                        position: relative;
-                                                        color: black;
-
-                                                        &:hover {
-                                                            background-color: rgba(0, 0, 0, 0.212);
-                                                        }
-
-                                                        &::before {
-                                                            content: '';
-                                                            position: absolute;
-                                                            top: 10px;
-                                                            left: 5px;
-                                                            width: 7px;
-                                                            height: 7px;
-                                                            border-radius: 100%;
-                                                            background-color: #e133e7d2;
-                                                        }
-                                                    }
-                                                }
-                                            }
-                                        }
-                                    }
-                                }
-                            }
-                        }
-
-                        display: flex;
-                        flex-direction: row;
-                        flex-wrap: wrap;
-                        justify-content: space-between;
-                        gap: 20px;
-
-                        @media screen and (max-width: 768px) {
-                            flex-direction: column;
-                        }
-
-                        @media screen and (max-width: 1720px) {
-                            justify-content: space-around;
-                        }
-
-                        .packages {
-                            width: 100%;
-                            padding: 10px;
-                            background-color: rgb(235, 235, 235);
-                            border: 1px solid rgb(184, 184, 184);
-
-                            // @media screen and (max-width: 1720px) {
-                            //     flex-direction: column;
-                            //     min-width: 1100px;
-                            //     max-width: 1100px;
-                            // }
-
-                            // @media screen and (max-width: 1200px) {
-                            //     flex-direction: column;
-                            //     min-width: 900px;
-                            //     max-width: 900px;
-                            // }
-
-                            // @media screen and (max-width: 900px) {
-                            //     flex-direction: column;
-                            //     min-width: 100%;
-                            //     max-width: 100%;
-                            // }
-
-                            .heading {
-                                margin-bottom: 10px;
-
-                                span {
-                                    display: block;
-                                    font-size: 20px;
-                                    font-weight: bold;
-                                }
-                            }
-
-                            .overView {
-                                display: flex;
-                                flex-direction: column;
-
-                                .singleLineText {
-                                    display: block;
-                                    padding-left: 15px;
-                                    position: relative;
-
-                                    &::after {
-                                        content: '';
-                                        position: absolute;
-                                        top: 13px;
-                                        left: 0;
-                                        width: 8px;
-                                        height: 8px;
-                                        border-radius: 100%;
-                                        background-color: rgb(108, 159, 236);
-                                        transform: translateY(-50%);
-                                    }
-
-                                    p {
-                                        font-size: 13px;
-                                        padding-left: 12px;
-                                        position: relative;
-                                        margin: 3px;
-
-                                        &::after {
-                                            content: '';
-                                            position: absolute;
-                                            top: 11px;
-                                            left: 0;
-                                            width: 5px;
-                                            height: 5px;
-                                            background-color: rgb(252, 139, 252);
-                                            transform: translateY(-50%);
-                                        }
-
-                                        // &:not(:last-child) {
-                                        //     margin-bottom: 0px !important;
-                                        // }
-
-                                        .visitDoc {
-                                            text-decoration: none;
-                                        }
-
-                                        .npmCommand {
-                                            cursor: pointer;
-                                            background-color: rgb(177, 241, 225);
-                                            padding: 0 5px 3px 5px;
-                                            border-radius: 5px;
-                                            font-weight: bold;
-                                            margin-top: 5px;
-                                        }
-                                    }
-                                }
-                            }
-
-                            .exampleMain {
-                                display: flex;
-                                flex-direction: column;
-                                justify-content: space-between;
-                                gap: 20px;
-
-                                .exampleSub {
-                                    display: flex;
-                                    flex-direction: column;
-                                    justify-content: space-between;
-                                    padding: 10px;
-                                    box-shadow: inset 0 0 10px rgb(116, 97, 48);
-                                    background-color: rgb(255, 246, 220);
-
-                                    &:first-child {
-                                        margin-top: 20px;
-                                    }
-
-                                    .exampleHeading {
-                                        padding: 10px;
-
-                                        h2 {
-                                            margin: 0;
-                                            padding: 0;
-                                            font-size: 18px;
-                                            font-weight: bold;
-                                            color: rgb(17, 83, 114);
-                                        }
-
-                                        span {
-                                            font-size: 14px;
-                                            color: rgb(17, 83, 114);
-                                        }
-                                    }
-
-                                    .exampleContent {
-                                        display: flex;
-                                        flex-direction: row;
-                                        flex-wrap: wrap;
-                                        justify-content: space-between;
-                                        padding: 10px;
-                                        gap: 17px;
-
-                                        .exampleCommon {
-                                            background-color: rgb(205 243 224);
+                                        .vpuMenuSub {
                                             padding: 10px;
 
-                                            &.fullWidth {
-                                                min-width: 100%;
+                                            .vpuHeading {
+                                                span {}
                                             }
 
-                                            &.triennialWidth {
-                                                max-width: 31.95%;
-                                            }
+                                            .vpuList {
+                                                display: flex;
+                                                flex-direction: column;
+                                                gap: 10px;
 
-                                            .exampleCommonPoints {
-                                                margin-bottom: 20px;
+                                                .vpuItem {
+                                                    background-image: radial-gradient(circle 780.6px at 10% 20%, rgba(133, 255, 189, 1) 0%, rgba(255, 251, 125, 1) 90.7%);
+                                                    border-radius: 5px;
+                                                    box-shadow: 0 2px 4px #e18ee4d2;
+                                                    transition: 0.30s ease-in-out;
+                                                    overflow: hidden;
 
-                                                span {
-                                                    font-weight: bold;
-                                                    color: rgb(46, 107, 31);
-                                                }
-
-                                                p {
-                                                    font-size: 12px;
-                                                    line-height: 14px;
-                                                    color: rgb(102, 86, 31);
-
-                                                    label {
-                                                        color: red;
-                                                        text-transform: capitalize;
+                                                    &:hover {
+                                                        box-shadow: 0 3px 8px #560d58d2;
                                                     }
-                                                }
-                                            }
 
-                                            .exampleCommonContent {
-                                                position: relative;
-                                                margin-top: 15px;
+                                                    .vpuHeading {
+                                                        span {
+                                                            font-weight: bold;
+                                                            display: flex;
+                                                            flex-direction: row;
+                                                            justify-content: space-between;
 
-                                                &.exampleCommonContentFloat {
-                                                    float: left;
-                                                    margin-left: 20px;
+                                                            a {
+                                                                font-size: 14px;
+                                                                padding: 5px 10px;
+                                                                display: block;
+                                                                text-decoration: none;
+                                                                color: #8b258fd2;
+                                                                outline: none;
+                                                                width: 100%;
+                                                            }
 
-                                                    &:first-child {
-                                                        margin-left: 0px;
+                                                            label {
+                                                                display: block;
+                                                                padding: 5px 6px;
+                                                                background-color: #69c993;
+                                                                cursor: pointer;
+
+                                                                svg {
+                                                                    font-size: 16px;
+                                                                    margin-top: 1px;
+                                                                }
+                                                            }
+                                                        }
                                                     }
-                                                }
 
-                                                &.exampleCommonContentFullWidth {
-                                                    min-width: 100%;
-                                                }
+                                                    .vpuLinks {
+                                                        height: 0px;
+                                                        display: flex;
+                                                        flex-direction: column;
+                                                        gap: 3px;
+                                                        top: 50px;
+                                                        transition: 0.30s ease-in-out;
 
-                                                &.exampleCommonContentTriennialWidth {
-                                                    max-width: 31.95%;
-                                                }
+                                                        &.autoHeight {
+                                                            height: auto;
+                                                        }
 
-                                                &:first-child {
-                                                    margin-top: 0px;
+                                                        a {
+                                                            display: block;
+                                                            outline: none;
+                                                            padding: 3px 5px 3px 20px;
+                                                            transition: 0.30s ease-in-out;
+                                                            border-radius: 5px;
+                                                            position: relative;
+                                                            color: black;
+
+                                                            &:hover {
+                                                                background-color: rgba(0, 0, 0, 0.212);
+                                                            }
+
+                                                            &::before {
+                                                                content: '';
+                                                                position: absolute;
+                                                                top: 10px;
+                                                                left: 5px;
+                                                                width: 7px;
+                                                                height: 7px;
+                                                                border-radius: 100%;
+                                                                background-color: #e133e7d2;
+                                                            }
+                                                        }
+                                                    }
                                                 }
                                             }
                                         }
                                     }
                                 }
-                            }
-                        }
 
-                        .widthFixed200 {
-                            width: 200px;
+                                .vpuMainMenu {
+                                    .vpuMenuMain {
+                                        .vpuMenuSub {
+                                            padding: 30px 25px;
+                                            background-image: linear-gradient(109.6deg, rgba(223, 234, 247, 1) 11.2%, rgba(244, 248, 252, 1) 91.1%);
+
+                                            .vpuHeading {
+                                                margin-bottom: 20px;
+
+                                                span {}
+                                            }
+
+                                            .vpuList {
+                                                display: flex;
+                                                flex-direction: row;
+                                                flex-wrap: wrap;
+                                                justify-content: space-between;
+                                                gap: 25px;
+
+                                                .vpuItem {
+                                                    padding: 10px;
+                                                    background-image: radial-gradient(circle 780.6px at 10% 20%, rgba(133, 255, 189, 1) 0%, rgba(255, 251, 125, 1) 90.7%);
+                                                    box-shadow: 0 3px 10px #e18ee4d2;
+                                                    border-radius: 5px;
+                                                    width: 250px;
+                                                    transition: 0.30s ease-in-out;
+
+                                                    &:hover {
+                                                        box-shadow: 0 7px 18px #560d58d2;
+                                                    }
+
+                                                    .vpuHeading {
+                                                        span {
+                                                            font-size: 18px;
+                                                            font-weight: bold;
+
+                                                            a {
+                                                                text-decoration: none;
+                                                                color: #8b258fd2;
+                                                                outline: none;
+                                                                letter-spacing: 1px;
+                                                                word-spacing: 2px;
+                                                            }
+                                                        }
+                                                    }
+
+                                                    .vpuLinks {
+                                                        display: flex;
+                                                        flex-direction: column;
+                                                        gap: 3px;
+
+                                                        a {
+                                                            display: block;
+                                                            outline: none;
+                                                            padding: 3px 5px 3px 20px;
+                                                            transition: 0.30s ease-in-out;
+                                                            border-radius: 5px;
+                                                            position: relative;
+                                                            color: black;
+
+                                                            &:hover {
+                                                                background-color: rgba(0, 0, 0, 0.212);
+                                                            }
+
+                                                            &::before {
+                                                                content: '';
+                                                                position: absolute;
+                                                                top: 10px;
+                                                                left: 5px;
+                                                                width: 7px;
+                                                                height: 7px;
+                                                                border-radius: 100%;
+                                                                background-color: #e133e7d2;
+                                                            }
+                                                        }
+                                                    }
+                                                }
+                                            }
+                                        }
+                                    }
+                                }
+
+                                display: flex;
+                                flex-direction: row;
+                                justify-content: space-between;
+                                gap: 0px;
+
+                                .packages {
+                                    width: 100%;
+                                    padding: 10px;
+                                    background-color: rgb(235, 235, 235);
+                                    border: 1px solid rgb(184, 184, 184);
+
+                                    // @media screen and (max-width: 1720px) {
+                                    //     flex-direction: column;
+                                    //     min-width: 1100px;
+                                    //     max-width: 1100px;
+                                    // }
+
+                                    // @media screen and (max-width: 1200px) {
+                                    //     flex-direction: column;
+                                    //     min-width: 900px;
+                                    //     max-width: 900px;
+                                    // }
+
+                                    // @media screen and (max-width: 900px) {
+                                    //     flex-direction: column;
+                                    //     min-width: 100%;
+                                    //     max-width: 100%;
+                                    // }
+
+                                    .heading {
+                                        margin-bottom: 10px;
+
+                                        span {
+                                            display: block;
+                                            font-size: 20px;
+                                            font-weight: bold;
+                                        }
+                                    }
+
+                                    .overView {
+                                        display: flex;
+                                        flex-direction: column;
+
+                                        .singleLineText {
+                                            display: block;
+                                            padding-left: 15px;
+                                            position: relative;
+
+                                            &::after {
+                                                content: '';
+                                                position: absolute;
+                                                top: 13px;
+                                                left: 0;
+                                                width: 8px;
+                                                height: 8px;
+                                                border-radius: 100%;
+                                                background-color: rgb(108, 159, 236);
+                                                transform: translateY(-50%);
+                                            }
+
+                                            p {
+                                                font-size: 13px;
+                                                padding-left: 12px;
+                                                position: relative;
+                                                margin: 3px;
+
+                                                &::after {
+                                                    content: '';
+                                                    position: absolute;
+                                                    top: 11px;
+                                                    left: 0;
+                                                    width: 5px;
+                                                    height: 5px;
+                                                    background-color: rgb(252, 139, 252);
+                                                    transform: translateY(-50%);
+                                                }
+
+                                                // &:not(:last-child) {
+                                                //     margin-bottom: 0px !important;
+                                                // }
+
+                                                .visitDoc {
+                                                    text-decoration: none;
+                                                }
+
+                                                .npmCommand {
+                                                    cursor: pointer;
+                                                    background-color: rgb(177, 241, 225);
+                                                    padding: 0 5px 3px 5px;
+                                                    border-radius: 5px;
+                                                    font-weight: bold;
+                                                    margin-top: 5px;
+                                                }
+                                            }
+                                        }
+                                    }
+
+                                    .exampleMain {
+                                        display: flex;
+                                        flex-direction: column;
+                                        justify-content: space-between;
+                                        gap: 20px;
+
+                                        .exampleSub {
+                                            display: flex;
+                                            flex-direction: column;
+                                            justify-content: space-between;
+                                            padding: 10px;
+                                            box-shadow: inset 0 0 10px rgb(116, 97, 48);
+                                            background-color: rgb(255, 246, 220);
+
+                                            &:first-child {
+                                                margin-top: 20px;
+                                            }
+
+                                            .exampleHeading {
+                                                padding: 10px;
+
+                                                h2 {
+                                                    margin: 0;
+                                                    padding: 0;
+                                                    font-size: 18px;
+                                                    font-weight: bold;
+                                                    color: rgb(17, 83, 114);
+                                                }
+
+                                                span {
+                                                    font-size: 14px;
+                                                    color: rgb(17, 83, 114);
+                                                }
+                                            }
+
+                                            .exampleContent {
+                                                display: flex;
+                                                flex-direction: row;
+                                                flex-wrap: wrap;
+                                                justify-content: space-between;
+                                                padding: 10px;
+                                                gap: 17px;
+
+                                                .exampleCommon {
+                                                    background-color: rgb(205 243 224);
+                                                    padding: 10px;
+
+                                                    &.fullWidth {
+                                                        min-width: 100%;
+                                                    }
+
+                                                    &.triennialWidth {
+                                                        max-width: 31.95%;
+                                                    }
+
+                                                    .exampleCommonPoints {
+                                                        margin-bottom: 20px;
+
+                                                        span {
+                                                            font-weight: bold;
+                                                            color: rgb(46, 107, 31);
+                                                        }
+
+                                                        p {
+                                                            font-size: 12px;
+                                                            line-height: 14px;
+                                                            color: rgb(102, 86, 31);
+
+                                                            label {
+                                                                color: red;
+                                                                text-transform: capitalize;
+                                                            }
+                                                        }
+                                                    }
+
+                                                    .exampleCommonContent {
+                                                        position: relative;
+                                                        margin-top: 15px;
+
+                                                        &.exampleCommonContentFloat {
+                                                            float: left;
+                                                            margin-left: 20px;
+
+                                                            &:first-child {
+                                                                margin-left: 0px;
+                                                            }
+                                                        }
+
+                                                        &.exampleCommonContentFullWidth {
+                                                            min-width: 100%;
+                                                        }
+
+                                                        &.exampleCommonContentTriennialWidth {
+                                                            max-width: 31.95%;
+                                                        }
+
+                                                        &:first-child {
+                                                            margin-top: 0px;
+                                                        }
+                                                    }
+                                                }
+                                            }
+                                        }
+                                    }
+                                }
+
+                                .widthFixed200 {
+                                    width: 200px;
+                                }
+                            }
                         }
                     }
                 }

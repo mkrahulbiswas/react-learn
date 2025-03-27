@@ -1,22 +1,22 @@
-import { Outlet } from "react-router"
+import { Outlet, useLocation } from "react-router"
 import { Shared } from "../Shared/Shared"
-import { PackagesContext } from "../../Context/PackagesContext"
-import { RouteContext } from "../../Context/RouteContext"
-import { CommonContext } from "../../Context/CommonContext"
-import { useContext } from "react"
+import { RouteContext } from "../../Context/RouteContext";
+import { useContext } from "react";
 
-export const Packages = ({ routePaths }: any) => {
-  const { textThree }: any = useContext(PackagesContext)
-  const { textTwo }: any = useContext(RouteContext)
-  const { textOne }: any = useContext(CommonContext)
-  console.log('Packages->', textThree + ' - ' + textTwo + ' - ' + textOne);
-
+export const Packages = () => {
+  const { routePaths }: any = useContext(RouteContext)
+  const location = useLocation();
+  const lastSegment = location.pathname.split("/").pop();
   return (
-    <div className="vpuPackages">
-      <div className="vpuPackages">
-        {/* <Shared propsPass={routePaths.packages} /> */}
+    <div className="vpuPackagesMain">
+      <div className="vpuPackagesSub">
+        {
+          lastSegment == routePaths.packages.route ?
+            <Shared props={{ for: 'packagesMainNav' }} /> :
+            <Shared props={{ for: 'packagesSideNav' }} />
+        }
         <Outlet />
       </div>
-    </div>
+    </div >
   )
 }

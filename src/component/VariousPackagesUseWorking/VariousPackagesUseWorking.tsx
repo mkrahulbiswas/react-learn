@@ -1,76 +1,16 @@
+import "./VariousPackagesUseWorking.scss";
 import { createBrowserRouter, RouterProvider } from "react-router";
 import { Layout } from "./Layout/Layout";
 import { ErrorPage } from "./Component/ErrorPage/ErrorPage";
-import { Packages } from "./Component/Packages/Packages";
 import { Home } from "./Component/Home/Home";
-import { UiComponentPackage } from "./Component/Packages/UiComponentPackage/UiComponentPackage";
-import { BlueprintJsType } from "./Component/Packages/UiComponentPackage/BlueprintJsType/BlueprintJsType";
-import { SpectrumWebComponentsType } from "./Component/Packages/UiComponentPackage/SpectrumWebComponentsType/SpectrumWebComponentsType";
-import { ChakraUiType } from "./Component/Packages/UiComponentPackage/ChakraUiType/ChakraUiType";
-import { FluentUiType } from "./Component/Packages/UiComponentPackage/FluentUiType/FluentUiType";
-import { SemanticUiReactType } from "./Component/Packages/UiComponentPackage/SemanticUiReactType/SemanticUiReactType";
-import { AntDesignType } from "./Component/Packages/UiComponentPackage/AntDesignType/AntDesignType";
-import { MaterialUiType } from "./Component/Packages/UiComponentPackage/MaterialUiType/MaterialUiType";
-import { PrimereactType } from "./Component/Packages/UiComponentPackage/PrimereactType/PrimereactType";
-import { ChartPackage } from "./Component/Packages/ChartPackage/ChartPackage";
-import { ApexChartsType } from "./Component/Packages/ChartPackage/ApexChartsType/ApexChartsType";
-import { NivoType } from "./Component/Packages/ChartPackage/NivoType/NivoType";
-import { GoogleChartsType } from "./Component/Packages/ChartPackage/GoogleChartsType/GoogleChartsType";
-import { VictoryType } from "./Component/Packages/ChartPackage/VictoryType/VictoryType";
-import { RechartsType } from "./Component/Packages/ChartPackage/RechartsType/RechartsType";
-import { ReactChartJsType } from "./Component/Packages/ChartPackage/ReactChartJsType/ReactChartJsType";
-import { InputFormPackage } from "./Component/Packages/InputFormPackage/InputFormPackage";
-import { ReactSelectType } from "./Component/Packages/InputFormPackage/ReactSelectType/ReactSelectType";
-import { SomeUsefulPackage } from "./Component/Packages/SomeUsefulPackage/SomeUsefulPackage";
-import { FakerJsType } from "./Component/Packages/SomeUsefulPackage/FakerJsType/FakerJsType";
-import { LogSymbolsType } from "./Component/Packages/SomeUsefulPackage/LogSymbolsType/LogSymbolsType";
-import { LayoutStylingPackage } from "./Component/Packages/LayoutStylingPackage/LayoutStylingPackage";
-import { ReactGridLayoutType } from "./Component/Packages/LayoutStylingPackage/ReactGridLayoutType/ReactGridLayoutType";
-import { ChromaJsType } from "./Component/Packages/LayoutStylingPackage/ChromaJsType/ChromaJsType";
-import { TailwindType } from "./Component/Packages/LayoutStylingPackage/TailwindType/TailwindType";
-import { StyledComponentsType } from "./Component/Packages/LayoutStylingPackage/StyledComponentsType/StyledComponentsType";
-import { AnimationPackage } from "./Component/Packages/AnimationPackage/AnimationPackage";
-import { AnimeJsType } from "./Component/Packages/AnimationPackage/AnimeJsType/AnimeJsType";
-import { FramerMotionType } from "./Component/Packages/AnimationPackage/FramerMotionType/FramerMotionType";
-import { ReactSpringType } from "./Component/Packages/AnimationPackage/ReactSpringType/ReactSpringType";
-import { AnimateType } from "./Component/Packages/AnimationPackage/AnimateType/AnimateType";
-import { PageScrollPackage } from "./Component/Packages/PageScrollPackage/PageScrollPackage";
-import { ReactScrollType } from "./Component/Packages/PageScrollPackage/ReactScrollType/ReactScrollType";
-import { SmoothScrollbarType } from "./Component/Packages/PageScrollPackage/SmoothScrollbarType/SmoothScrollbarType";
-import { IntersectionObserverType } from "./Component/Packages/PageScrollPackage/IntersectionObserverType/IntersectionObserverType";
-import { TostAlertPackage } from "./Component/Packages/TostAlertPackage/TostAlertPackage";
-import { ToastifyType } from "./Component/Packages/TostAlertPackage/ToastifyType/ToastifyType";
-import { SweetAlertType } from "./Component/Packages/TostAlertPackage/SweetAlertType/SweetAlertType";
-import { DateTimePackage } from "./Component/Packages/DateTimePackage/DateTimePackage";
-import { LuxonType } from "./Component/Packages/DateTimePackage/LuxonType/LuxonType";
-import { MomentType } from "./Component/Packages/DateTimePackage/MomentType/MomentType";
-import { PaginationPackage } from "./Component/Packages/PaginationPackage/PaginationPackage";
-import { ReactPaginateType } from "./Component/Packages/PaginationPackage/ReactPaginateType/ReactPaginateType";
-import { LoaderProgressPackage } from "./Component/Packages/LoaderProgressPackage/LoaderProgressPackage";
-import { ReactTopLoadingBarType } from "./Component/Packages/LoaderProgressPackage/ReactTopLoadingBarType/ReactTopLoadingBarType";
-import { ReactCircularProgressbarType } from "./Component/Packages/LoaderProgressPackage/ReactCircularProgressbarType/ReactCircularProgressbarType";
-import { RcProgressType } from "./Component/Packages/LoaderProgressPackage/RcProgressType/RcProgressType";
-import { RespinnerType } from "./Component/Packages/LoaderProgressPackage/RespinnerType/RespinnerType";
-import { SpinnersReactType } from "./Component/Packages/LoaderProgressPackage/SpinnersReactType/SpinnersReactType";
-import { ReactSpinnersType } from "./Component/Packages/LoaderProgressPackage/ReactSpinnersType/ReactSpinnersType";
-import { ReactLoaderSpinnerType } from "./Component/Packages/LoaderProgressPackage/ReactLoaderSpinnerType/ReactLoaderSpinnerType";
-import { IconPackage } from "./Component/Packages/IconPackage/IconPackage";
-import { ReactIconType } from "./Component/Packages/IconPackage/ReactIconType/ReactIconType";
-import { HighchartsType } from "./Component/Packages/ChartPackage/HighchartsType/HighchartsType";
-import { BootstrapType as StyleBootstrapType } from "./Component/Packages/LayoutStylingPackage/BootstrapType/BootstrapType";
-import { BootstrapType as UiBootstrap } from "./Component/Packages/UiComponentPackage/BootstrapType/BootstrapType";
-import "./VariousPackagesUseWorking.scss";
 import { PackagesContextProvider } from "./Context/PackagesContext";
 import { CommonContextProvider } from "./Context/CommonContext";
 import { RouteContextProvider } from "./Context/RouteContext";
+import { getRouteData } from "./Database/RouteDatabase";
+import { useHelper } from "./hooks/useHelper";
 
 export const VariousPackagesUseWorking = () => {
-  const routePaths = {
-    packages: 'packages',
-    // packages: {
-
-    // }
-  }
+  const routePaths = getRouteData({})
   const router = createBrowserRouter([
     {
       path: '/',
@@ -82,256 +22,584 @@ export const VariousPackagesUseWorking = () => {
           element: <Home />,
         },
         {
-          path: routePaths.packages,
+          path: useHelper({
+            type: 'routeConcatenate', data: [
+              routePaths.packages.route
+            ]
+          }),
           element: <PackagesContextProvider>
-            <Packages propsPass={{ routePaths: routePaths }} />
+            {routePaths.packages.component}
           </PackagesContextProvider>,
           children: [
             {
-              path: '/' + routePaths.packages + '/ui-component-package',
-              element: <UiComponentPackage />,
+              path: useHelper({
+                type: 'routeConcatenate', data: [
+                  routePaths.packages.route,
+                  routePaths.packages.nested.uiComponentPackage.route,
+                ]
+              }),
+              element: <>{routePaths.packages.nested.uiComponentPackage.component}</>,
               children: [
                 {
-                  path: '/' + routePaths.packages + '/ui-component-package/blueprint-js-type',
-                  element: <BlueprintJsType />
+                  path: useHelper({
+                    type: 'routeConcatenate', data: [
+                      routePaths.packages.route,
+                      routePaths.packages.nested.uiComponentPackage.route,
+                      routePaths.packages.nested.uiComponentPackage.nested.blueprintJsType.route
+                    ]
+                  }),
+                  element: <>{routePaths.packages.nested.uiComponentPackage.nested.blueprintJsType.component}</>,
                 },
                 {
-                  path: '/' + routePaths.packages + '/ui-component-package/spectrum-web-components-type',
-                  element: <SpectrumWebComponentsType />
+                  path: useHelper({
+                    type: 'routeConcatenate', data: [
+                      routePaths.packages.route,
+                      routePaths.packages.nested.uiComponentPackage.route,
+                      routePaths.packages.nested.uiComponentPackage.nested.spectrumWebComponentsType.route
+                    ]
+                  }),
+                  element: <>{routePaths.packages.nested.uiComponentPackage.nested.spectrumWebComponentsType.component}</>,
                 },
                 {
-                  path: '/' + routePaths.packages + '/ui-component-package/chakra-ui-type',
-                  element: <ChakraUiType />
+                  path: useHelper({
+                    type: 'routeConcatenate', data: [
+                      routePaths.packages.route,
+                      routePaths.packages.nested.uiComponentPackage.route,
+                      routePaths.packages.nested.uiComponentPackage.nested.chakraUiType.route
+                    ]
+                  }),
+                  element: <>{routePaths.packages.nested.uiComponentPackage.nested.chakraUiType.component}</>,
                 },
                 {
-                  path: '/' + routePaths.packages + '/ui-component-package/fluent-ui-type',
-                  element: <FluentUiType />
+                  path: useHelper({
+                    type: 'routeConcatenate', data: [
+                      routePaths.packages.route,
+                      routePaths.packages.nested.uiComponentPackage.route,
+                      routePaths.packages.nested.uiComponentPackage.nested.fluentUiType.route
+                    ]
+                  }),
+                  element: <>{routePaths.packages.nested.uiComponentPackage.nested.fluentUiType.component}</>,
                 },
                 {
-                  path: '/' + routePaths.packages + '/ui-component-package/semantic-ui-react-type',
-                  element: <SemanticUiReactType />
+                  path: useHelper({
+                    type: 'routeConcatenate', data: [
+                      routePaths.packages.route,
+                      routePaths.packages.nested.uiComponentPackage.route,
+                      routePaths.packages.nested.uiComponentPackage.nested.semanticUiReactType.route
+                    ]
+                  }),
+                  element: <>{routePaths.packages.nested.uiComponentPackage.nested.semanticUiReactType.component}</>,
                 },
                 {
-                  path: '/' + routePaths.packages + '/ui-component-package/ant-design-type',
-                  element: <AntDesignType />
+                  path: useHelper({
+                    type: 'routeConcatenate', data: [
+                      routePaths.packages.route,
+                      routePaths.packages.nested.uiComponentPackage.route,
+                      routePaths.packages.nested.uiComponentPackage.nested.antDesignType.route
+                    ]
+                  }),
+                  element: <>{routePaths.packages.nested.uiComponentPackage.nested.antDesignType.component}</>,
                 },
                 {
-                  path: '/' + routePaths.packages + '/ui-component-package/material-ui-type',
-                  element: <MaterialUiType />
+                  path: useHelper({
+                    type: 'routeConcatenate', data: [
+                      routePaths.packages.route,
+                      routePaths.packages.nested.uiComponentPackage.route,
+                      routePaths.packages.nested.uiComponentPackage.nested.materialUiType.route
+                    ]
+                  }),
+                  element: <>{routePaths.packages.nested.uiComponentPackage.nested.materialUiType.component}</>,
                 },
                 {
-                  path: '/' + routePaths.packages + '/ui-component-package/primereact-type',
-                  element: <PrimereactType />
+                  path: useHelper({
+                    type: 'routeConcatenate', data: [
+                      routePaths.packages.route,
+                      routePaths.packages.nested.uiComponentPackage.route,
+                      routePaths.packages.nested.uiComponentPackage.nested.primereactType.route
+                    ]
+                  }),
+                  element: <>{routePaths.packages.nested.uiComponentPackage.nested.primereactType.component}</>,
                 },
                 {
-                  path: '/' + routePaths.packages + '/ui-component-package/bootstrap-type',
-                  element: <UiBootstrap />
+                  path: useHelper({
+                    type: 'routeConcatenate', data: [
+                      routePaths.packages.route,
+                      routePaths.packages.nested.uiComponentPackage.route,
+                      routePaths.packages.nested.uiComponentPackage.nested.uiBootstrap.route
+                    ]
+                  }),
+                  element: <>{routePaths.packages.nested.uiComponentPackage.nested.uiBootstrap.component}</>,
                 },
               ]
             },
             {
-              path: '/' + routePaths.packages + '/chart-package',
-              element: <ChartPackage />,
+              path: useHelper({
+                type: 'routeConcatenate', data: [
+                  routePaths.packages.route,
+                  routePaths.packages.nested.chartPackage.route,
+                ]
+              }),
+              element: <>{routePaths.packages.nested.chartPackage.component}</>,
               children: [
                 {
-                  path: '/' + routePaths.packages + '/chart-package/apex-charts-type',
-                  element: <ApexChartsType />
+                  path: useHelper({
+                    type: 'routeConcatenate', data: [
+                      routePaths.packages.route,
+                      routePaths.packages.nested.chartPackage.route,
+                      routePaths.packages.nested.chartPackage.nested.apexChartsType.route
+                    ]
+                  }),
+                  element: <>{routePaths.packages.nested.chartPackage.nested.apexChartsType.component}</>,
                 },
                 {
-                  path: '/' + routePaths.packages + '/chart-package/nivo-type',
-                  element: <NivoType />
+                  path: useHelper({
+                    type: 'routeConcatenate', data: [
+                      routePaths.packages.route,
+                      routePaths.packages.nested.chartPackage.route,
+                      routePaths.packages.nested.chartPackage.nested.nivoType.route
+                    ]
+                  }),
+                  element: <>{routePaths.packages.nested.chartPackage.nested.nivoType.component}</>,
                 },
                 {
-                  path: '/' + routePaths.packages + '/chart-package/highcharts-type',
-                  element: <HighchartsType />
+                  path: useHelper({
+                    type: 'routeConcatenate', data: [
+                      routePaths.packages.route,
+                      routePaths.packages.nested.chartPackage.route,
+                      routePaths.packages.nested.chartPackage.nested.highchartsType.route
+                    ]
+                  }),
+                  element: <>{routePaths.packages.nested.chartPackage.nested.highchartsType.component}</>,
                 },
                 {
-                  path: '/' + routePaths.packages + '/chart-package/google-charts-type',
-                  element: <GoogleChartsType />
+                  path: useHelper({
+                    type: 'routeConcatenate', data: [
+                      routePaths.packages.route,
+                      routePaths.packages.nested.chartPackage.route,
+                      routePaths.packages.nested.chartPackage.nested.googleChartsType.route
+                    ]
+                  }),
+                  element: <>{routePaths.packages.nested.chartPackage.nested.googleChartsType.component}</>,
                 },
                 {
-                  path: '/' + routePaths.packages + '/chart-package/victory-type',
-                  element: <VictoryType />
+                  path: useHelper({
+                    type: 'routeConcatenate', data: [
+                      routePaths.packages.route,
+                      routePaths.packages.nested.chartPackage.route,
+                      routePaths.packages.nested.chartPackage.nested.victoryType.route
+                    ]
+                  }),
+                  element: <>{routePaths.packages.nested.chartPackage.nested.victoryType.component}</>,
                 },
                 {
-                  path: '/' + routePaths.packages + '/chart-package/recharts-type',
-                  element: <RechartsType />
+                  path: useHelper({
+                    type: 'routeConcatenate', data: [
+                      routePaths.packages.route,
+                      routePaths.packages.nested.chartPackage.route,
+                      routePaths.packages.nested.chartPackage.nested.rechartsType.route
+                    ]
+                  }),
+                  element: <>{routePaths.packages.nested.chartPackage.nested.rechartsType.component}</>,
                 },
                 {
-                  path: '/' + routePaths.packages + '/chart-package/react-chart-js-type',
-                  element: <ReactChartJsType />
+                  path: useHelper({
+                    type: 'routeConcatenate', data: [
+                      routePaths.packages.route,
+                      routePaths.packages.nested.chartPackage.route,
+                      routePaths.packages.nested.chartPackage.nested.reactChartJsType.route
+                    ]
+                  }),
+                  element: <>{routePaths.packages.nested.chartPackage.nested.reactChartJsType.component}</>,
                 },
               ]
             },
             {
-              path: '/' + routePaths.packages + '/input-form-package',
-              element: <InputFormPackage />,
+              path: useHelper({
+                type: 'routeConcatenate', data: [
+                  routePaths.packages.route,
+                  routePaths.packages.nested.inputFormPackage.route,
+                ]
+              }),
+              element: <>{routePaths.packages.nested.inputFormPackage.component}</>,
               children: [
                 {
-                  path: '/' + routePaths.packages + '/input-form-package/react-select-type',
-                  element: <ReactSelectType />
+                  path: useHelper({
+                    type: 'routeConcatenate', data: [
+                      routePaths.packages.route,
+                      routePaths.packages.nested.inputFormPackage.route,
+                      routePaths.packages.nested.inputFormPackage.nested.reactSelectType.route
+                    ]
+                  }),
+                  element: <>{routePaths.packages.nested.inputFormPackage.nested.reactSelectType.component}</>,
                 },
               ]
             },
             {
-              path: '/' + routePaths.packages + '/some-useful-package',
-              element: <SomeUsefulPackage />,
+              path: useHelper({
+                type: 'routeConcatenate', data: [
+                  routePaths.packages.route,
+                  routePaths.packages.nested.someUsefulPackage.route
+                ]
+              }),
+              element: <>{routePaths.packages.nested.someUsefulPackage.component}</>,
               children: [
                 {
-                  path: '/' + routePaths.packages + '/some-useful-package/faker-js-type',
-                  element: <FakerJsType />
+                  path: useHelper({
+                    type: 'routeConcatenate', data: [
+                      routePaths.packages.route,
+                      routePaths.packages.nested.someUsefulPackage.route,
+                      routePaths.packages.nested.someUsefulPackage.nested.fakerJsType.route
+                    ]
+                  }),
+                  element: <>{routePaths.packages.nested.someUsefulPackage.nested.fakerJsType.component}</>,
                 },
                 {
-                  path: '/' + routePaths.packages + '/some-useful-package/log-symbols-type',
-                  element: <LogSymbolsType />
+                  path: useHelper({
+                    type: 'routeConcatenate', data: [
+                      routePaths.packages.route,
+                      routePaths.packages.nested.someUsefulPackage.route,
+                      routePaths.packages.nested.someUsefulPackage.nested.logSymbolsType.route
+                    ]
+                  }),
+                  element: <>{routePaths.packages.nested.someUsefulPackage.nested.logSymbolsType.component}</>,
                 },
               ]
             },
             {
-              path: '/' + routePaths.packages + '/layout-styling-package',
-              element: <LayoutStylingPackage />,
+              path: useHelper({
+                type: 'routeConcatenate', data: [
+                  routePaths.packages.route,
+                  routePaths.packages.nested.layoutStylingPackage.route,
+                ]
+              }),
+              element: <>{routePaths.packages.nested.layoutStylingPackage.component}</>,
               children: [
                 {
-                  path: '/' + routePaths.packages + '/layout-styling-package/react-grid-layout-type',
-                  element: <ReactGridLayoutType />
+                  path: useHelper({
+                    type: 'routeConcatenate', data: [
+                      routePaths.packages.route,
+                      routePaths.packages.nested.layoutStylingPackage.route,
+                      routePaths.packages.nested.layoutStylingPackage.nested.reactGridLayoutType.route
+                    ]
+                  }),
+                  element: <>{routePaths.packages.nested.layoutStylingPackage.nested.reactGridLayoutType.component}</>,
                 },
                 {
-                  path: '/' + routePaths.packages + '/layout-styling-package/chromaJs-type',
-                  element: <ChromaJsType />
+                  path: useHelper({
+                    type: 'routeConcatenate', data: [
+                      routePaths.packages.route,
+                      routePaths.packages.nested.layoutStylingPackage.route,
+                      routePaths.packages.nested.layoutStylingPackage.nested.chromaJsType.route
+                    ]
+                  }),
+                  element: <>{routePaths.packages.nested.layoutStylingPackage.nested.chromaJsType.component}</>,
                 },
                 {
-                  path: '/' + routePaths.packages + '/layout-styling-package/tailwind-type',
-                  element: <TailwindType />
+                  path: useHelper({
+                    type: 'routeConcatenate', data: [
+                      routePaths.packages.route,
+                      routePaths.packages.nested.layoutStylingPackage.route,
+                      routePaths.packages.nested.layoutStylingPackage.nested.tailwindType.route
+                    ]
+                  }),
+                  element: <>{routePaths.packages.nested.layoutStylingPackage.nested.tailwindType.component}</>,
                 },
                 {
-                  path: '/' + routePaths.packages + '/layout-styling-package/bootstrap-type',
-                  element: <StyleBootstrapType />
+                  path: useHelper({
+                    type: 'routeConcatenate', data: [
+                      routePaths.packages.route,
+                      routePaths.packages.nested.layoutStylingPackage.route,
+                      routePaths.packages.nested.layoutStylingPackage.nested.styleBootstrapType.route
+                    ]
+                  }),
+                  element: <>{routePaths.packages.nested.layoutStylingPackage.nested.styleBootstrapType.component}</>,
                 },
                 {
-                  path: '/' + routePaths.packages + '/layout-styling-package/styled-components-type',
-                  element: <StyledComponentsType />
+                  path: useHelper({
+                    type: 'routeConcatenate', data: [
+                      routePaths.packages.route,
+                      routePaths.packages.nested.layoutStylingPackage.route,
+                      routePaths.packages.nested.layoutStylingPackage.nested.styledComponentsType.route
+                    ]
+                  }),
+                  element: <>{routePaths.packages.nested.layoutStylingPackage.nested.styledComponentsType.component}</>,
                 },
               ]
             },
             {
-              path: '/' + routePaths.packages + '/animation-package',
-              element: <AnimationPackage />,
+              path: useHelper({
+                type: 'routeConcatenate', data: [
+                  routePaths.packages.route,
+                  routePaths.packages.nested.animationPackage.route,
+                ]
+              }),
+              element: <>{routePaths.packages.nested.animationPackage.component}</>,
               children: [
                 {
-                  path: '/' + routePaths.packages + '/animation-package/anime-js-type',
-                  element: <AnimeJsType />
+                  path: useHelper({
+                    type: 'routeConcatenate', data: [
+                      routePaths.packages.route,
+                      routePaths.packages.nested.animationPackage.route,
+                      routePaths.packages.nested.animationPackage.nested.animeJsType.route
+                    ]
+                  }),
+                  element: <>{routePaths.packages.nested.animationPackage.nested.animeJsType.component}</>,
                 },
                 {
-                  path: '/' + routePaths.packages + '/animation-package/framer-motion-type',
-                  element: <FramerMotionType />
+                  path: useHelper({
+                    type: 'routeConcatenate', data: [
+                      routePaths.packages.route,
+                      routePaths.packages.nested.animationPackage.route,
+                      routePaths.packages.nested.animationPackage.nested.framerMotionType.route
+                    ]
+                  }),
+                  element: <>{routePaths.packages.nested.animationPackage.nested.framerMotionType.component}</>,
                 },
                 {
-                  path: '/' + routePaths.packages + '/animation-package/react-spring-type',
-                  element: <ReactSpringType />
+                  path: useHelper({
+                    type: 'routeConcatenate', data: [
+                      routePaths.packages.route,
+                      routePaths.packages.nested.animationPackage.route,
+                      routePaths.packages.nested.animationPackage.nested.reactSpringType.route
+                    ]
+                  }),
+                  element: <>{routePaths.packages.nested.animationPackage.nested.reactSpringType.component}</>,
                 },
                 {
-                  path: '/' + routePaths.packages + '/animation-package/animate-type',
-                  element: <AnimateType />
+                  path: useHelper({
+                    type: 'routeConcatenate', data: [
+                      routePaths.packages.route,
+                      routePaths.packages.nested.animationPackage.route,
+                      routePaths.packages.nested.animationPackage.nested.animateType.route
+                    ]
+                  }),
+                  element: <>{routePaths.packages.nested.animationPackage.nested.animateType.component}</>,
                 },
               ]
             },
             {
-              path: '/' + routePaths.packages + '/page-scroll-package',
-              element: <PageScrollPackage />,
+              path: useHelper({
+                type: 'routeConcatenate', data: [
+                  routePaths.packages.route,
+                  routePaths.packages.nested.pageScrollPackage.route,
+                ]
+              }),
+              element: <>{routePaths.packages.nested.pageScrollPackage.component}</>,
               children: [
                 {
-                  path: '/' + routePaths.packages + '/page-scroll-package/react-scroll-type',
-                  element: <ReactScrollType />
+                  path: useHelper({
+                    type: 'routeConcatenate', data: [
+                      routePaths.packages.route,
+                      routePaths.packages.nested.pageScrollPackage.route,
+                      routePaths.packages.nested.pageScrollPackage.nested.reactScrollType.route
+                    ]
+                  }),
+                  element: <>{routePaths.packages.nested.pageScrollPackage.nested.reactScrollType.component}</>,
                 },
                 {
-                  path: '/' + routePaths.packages + '/page-scroll-package/smooth-scrollbar-type',
-                  element: <SmoothScrollbarType />
+                  path: useHelper({
+                    type: 'routeConcatenate', data: [
+                      routePaths.packages.route,
+                      routePaths.packages.nested.pageScrollPackage.route,
+                      routePaths.packages.nested.pageScrollPackage.nested.smoothScrollbarType.route
+                    ]
+                  }),
+                  element: <>{routePaths.packages.nested.pageScrollPackage.nested.smoothScrollbarType.component}</>,
                 },
                 {
-                  path: '/' + routePaths.packages + '/page-scroll-package/intersection-observer-type',
-                  element: <IntersectionObserverType />
+                  path: useHelper({
+                    type: 'routeConcatenate', data: [
+                      routePaths.packages.route,
+                      routePaths.packages.nested.pageScrollPackage.route,
+                      routePaths.packages.nested.pageScrollPackage.nested.intersectionObserverType.route
+                    ]
+                  }),
+                  element: <>{routePaths.packages.nested.pageScrollPackage.nested.intersectionObserverType.component}</>,
                 },
               ]
             },
             {
-              path: '/' + routePaths.packages + '/tost-alert-package',
-              element: <TostAlertPackage />,
+              path: useHelper({
+                type: 'routeConcatenate', data: [
+                  routePaths.packages.route,
+                  routePaths.packages.nested.tostAlertPackage.route,
+                ]
+              }),
+              element: <>{routePaths.packages.nested.tostAlertPackage.component}</>,
               children: [
                 {
-                  path: '/' + routePaths.packages + '/tost-alert-package/toastify-type',
-                  element: <ToastifyType />
+                  path: useHelper({
+                    type: 'routeConcatenate', data: [
+                      routePaths.packages.route,
+                      routePaths.packages.nested.tostAlertPackage.route,
+                      routePaths.packages.nested.tostAlertPackage.nested.toastifyType.route
+                    ]
+                  }),
+                  element: <>{routePaths.packages.nested.tostAlertPackage.nested.toastifyType.component}</>,
                 },
                 {
-                  path: '/' + routePaths.packages + '/tost-alert-package/sweet-alert-type',
-                  element: <SweetAlertType />
+                  path: useHelper({
+                    type: 'routeConcatenate', data: [
+                      routePaths.packages.route,
+                      routePaths.packages.nested.tostAlertPackage.route,
+                      routePaths.packages.nested.tostAlertPackage.nested.sweetAlertType.route
+                    ]
+                  }),
+                  element: <>{routePaths.packages.nested.tostAlertPackage.nested.sweetAlertType.component}</>,
                 },
               ]
             },
             {
-              path: '/' + routePaths.packages + '/date-time-package',
-              element: <DateTimePackage />,
+              path: useHelper({
+                type: 'routeConcatenate', data: [
+                  routePaths.packages.route,
+                  routePaths.packages.nested.dateTimePackage.route,
+                ]
+              }),
+              element: <>{routePaths.packages.nested.dateTimePackage.component}</>,
               children: [
                 {
-                  path: '/' + routePaths.packages + '/date-time-package/luxon-type',
-                  element: <LuxonType />
+                  path: useHelper({
+                    type: 'routeConcatenate', data: [
+                      routePaths.packages.route,
+                      routePaths.packages.nested.dateTimePackage.route,
+                      routePaths.packages.nested.dateTimePackage.nested.luxonType.route
+                    ]
+                  }),
+                  element: <>{routePaths.packages.nested.dateTimePackage.nested.luxonType.component}</>,
                 },
                 {
-                  path: '/' + routePaths.packages + '/date-time-package/moment-type',
-                  element: <MomentType />
+                  path: useHelper({
+                    type: 'routeConcatenate', data: [
+                      routePaths.packages.route,
+                      routePaths.packages.nested.dateTimePackage.route,
+                      routePaths.packages.nested.dateTimePackage.nested.momentType.route
+                    ]
+                  }),
+                  element: <>{routePaths.packages.nested.dateTimePackage.nested.momentType.component}</>,
                 },
               ]
             },
             {
-              path: '/' + routePaths.packages + '/pagination-package',
-              element: <PaginationPackage />,
+              path: useHelper({
+                type: 'routeConcatenate', data: [
+                  routePaths.packages.route,
+                  routePaths.packages.nested.paginationPackage.route,
+                ]
+              }),
+              element: <>{routePaths.packages.nested.paginationPackage.component}</>,
               children: [
                 {
-                  path: '/' + routePaths.packages + '/pagination-package/react-paginate-type',
-                  element: <ReactPaginateType />
+                  path: useHelper({
+                    type: 'routeConcatenate', data: [
+                      routePaths.packages.route,
+                      routePaths.packages.nested.paginationPackage.route,
+                      routePaths.packages.nested.paginationPackage.nested.reactPaginateType.route
+                    ]
+                  }),
+                  element: <>{routePaths.packages.nested.paginationPackage.nested.reactPaginateType.component}</>,
                 },
               ]
             },
             {
-              path: '/' + routePaths.packages + '/loader-progress-package',
-              element: <LoaderProgressPackage />,
+              path: useHelper({
+                type: 'routeConcatenate', data: [
+                  routePaths.packages.route,
+                  routePaths.packages.nested.loaderProgressPackage.route
+                ]
+              }),
+              element: <>{routePaths.packages.nested.loaderProgressPackage.component}</>,
               children: [
                 {
-                  path: '/' + routePaths.packages + '/loader-progress-package/react-top-loading-bar-type',
-                  element: <ReactTopLoadingBarType />
+                  path: useHelper({
+                    type: 'routeConcatenate', data: [
+                      routePaths.packages.route,
+                      routePaths.packages.nested.loaderProgressPackage.route,
+                      routePaths.packages.nested.loaderProgressPackage.nested.reactTopLoadingBarType.route
+                    ]
+                  }),
+                  element: <>{routePaths.packages.nested.loaderProgressPackage.nested.reactTopLoadingBarType.component}</>,
                 },
                 {
-                  path: '/' + routePaths.packages + '/loader-progress-package/react-circular-progressbar-type',
-                  element: <ReactCircularProgressbarType />
+                  path: useHelper({
+                    type: 'routeConcatenate', data: [
+                      routePaths.packages.route,
+                      routePaths.packages.nested.loaderProgressPackage.route,
+                      routePaths.packages.nested.loaderProgressPackage.nested.reactCircularProgressbarType.route
+                    ]
+                  }),
+                  element: <>{routePaths.packages.nested.loaderProgressPackage.nested.reactCircularProgressbarType.component}</>,
                 },
                 {
-                  path: '/' + routePaths.packages + '/loader-progress-package/rc-progress-type',
-                  element: <RcProgressType />
+                  path: useHelper({
+                    type: 'routeConcatenate', data: [
+                      routePaths.packages.route,
+                      routePaths.packages.nested.loaderProgressPackage.route,
+                      routePaths.packages.nested.loaderProgressPackage.nested.rcProgressType.route
+                    ]
+                  }),
+                  element: <>{routePaths.packages.nested.loaderProgressPackage.nested.rcProgressType.component}</>,
                 },
                 {
-                  path: '/' + routePaths.packages + '/loader-progress-package/respinner-type',
-                  element: <RespinnerType />
+                  path: useHelper({
+                    type: 'routeConcatenate', data: [
+                      routePaths.packages.route,
+                      routePaths.packages.nested.loaderProgressPackage.route,
+                      routePaths.packages.nested.loaderProgressPackage.nested.respinnerType.route
+                    ]
+                  }),
+                  element: <>{routePaths.packages.nested.loaderProgressPackage.nested.respinnerType.component}</>,
                 },
                 {
-                  path: '/' + routePaths.packages + '/loader-progress-package/spinners-react-type',
-                  element: <SpinnersReactType />
+                  path: useHelper({
+                    type: 'routeConcatenate', data: [
+                      routePaths.packages.route,
+                      routePaths.packages.nested.loaderProgressPackage.route,
+                      routePaths.packages.nested.loaderProgressPackage.nested.spinnersReactType.route
+                    ]
+                  }),
+                  element: <>{routePaths.packages.nested.loaderProgressPackage.nested.spinnersReactType.component}</>,
                 },
                 {
-                  path: '/' + routePaths.packages + '/loader-progress-package/react-spinners-type',
-                  element: <ReactSpinnersType />
+                  path: useHelper({
+                    type: 'routeConcatenate', data: [
+                      routePaths.packages.route,
+                      routePaths.packages.nested.loaderProgressPackage.route,
+                      routePaths.packages.nested.loaderProgressPackage.nested.reactSpinnersType.route
+                    ]
+                  }),
+                  element: <>{routePaths.packages.nested.loaderProgressPackage.nested.reactSpinnersType.component}</>,
                 },
                 {
-                  path: '/' + routePaths.packages + '/loader-progress-package/react-loader-spinner-type',
-                  element: <ReactLoaderSpinnerType />
+                  path: useHelper({
+                    type: 'routeConcatenate', data: [
+                      routePaths.packages.route,
+                      routePaths.packages.nested.loaderProgressPackage.route,
+                      routePaths.packages.nested.loaderProgressPackage.nested.reactLoaderSpinnerType.route
+                    ]
+                  }),
+                  element: <>{routePaths.packages.nested.loaderProgressPackage.nested.reactLoaderSpinnerType.component}</>,
                 },
               ]
             },
             {
-              path: '/' + routePaths.packages + '/icon-package',
-              element: <IconPackage />,
+              path: useHelper({
+                type: 'routeConcatenate', data: [
+                  routePaths.packages.route,
+                  routePaths.packages.nested.iconPackage.route,
+                ]
+              }),
+              element: <>{routePaths.packages.nested.iconPackage.component}</>,
               children: [
                 {
-                  path: '/' + routePaths.packages + '/icon-package/react-icon-type',
-                  element: <ReactIconType />
+                  path: useHelper({
+                    type: 'routeConcatenate', data: [
+                      routePaths.packages.route,
+                      routePaths.packages.nested.iconPackage.route,
+                      routePaths.packages.nested.iconPackage.nested.reactIconType.route
+                    ]
+                  }),
+                  element: <>{routePaths.packages.nested.iconPackage.nested.reactIconType.component}</>,
                 },
               ]
             },

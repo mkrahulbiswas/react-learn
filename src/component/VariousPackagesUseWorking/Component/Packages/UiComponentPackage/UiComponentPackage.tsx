@@ -1,4 +1,5 @@
 import { Outlet } from "react-router"
+import { Shared } from "../../Shared/Shared"
 
 export const UiComponentPackage = () => {
   return (

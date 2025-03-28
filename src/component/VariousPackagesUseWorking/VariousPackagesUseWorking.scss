@@ -84,6 +84,11 @@ ul {
                         .vpuPackagesMain {
                             .vpuPackagesSub {
                                 background-image: linear-gradient(109.6deg, rgba(223, 234, 247, 1) 11.2%, rgba(244, 248, 252, 1) 91.1%);
+                                display: flex;
+                                flex-direction: row;
+                                justify-content: space-between;
+                                gap: 10px;
+                                padding: 15px;
 
                                 .vpuSideMenu {
                                     .vpuMenuMain {
@@ -91,29 +96,37 @@ ul {
                                         max-width: 240px;
 
                                         .vpuMenuSub {
-                                            padding: 10px;
+                                            .vpuTitle {
+                                                margin-bottom: 15px;
+                                                text-align: center;
 
-                                            .vpuHeading {
-                                                span {}
+                                                span {
+                                                    font-size: 17px;
+                                                    text-transform: uppercase;
+                                                    font-weight: bold;
+                                                }
                                             }
 
                                             .vpuList {
                                                 display: flex;
                                                 flex-direction: column;
-                                                gap: 10px;
+                                                gap: 6px;
 
                                                 .vpuItem {
                                                     background-image: radial-gradient(circle 780.6px at 10% 20%, rgba(133, 255, 189, 1) 0%, rgba(255, 251, 125, 1) 90.7%);
                                                     border-radius: 5px;
-                                                    box-shadow: 0 2px 4px #e18ee4d2;
+                                                    box-shadow: 0 1px 2px #e18ee4d2;
                                                     transition: 0.30s ease-in-out;
                                                     overflow: hidden;
 
                                                     &:hover {
-                                                        box-shadow: 0 3px 8px #560d58d2;
+                                                        box-shadow: 0 2px 5px #621a64,
+                                                            0 8px 10px #f9dbfa;
                                                     }
 
                                                     .vpuHeading {
+                                                        position: relative;
+
                                                         span {
                                                             font-weight: bold;
                                                             display: flex;
@@ -133,8 +146,17 @@ ul {
                                                             label {
                                                                 display: block;
                                                                 padding: 5px 6px;
-                                                                background-color: #69c993;
                                                                 cursor: pointer;
+
+                                                                &::after {
+                                                                    content: "";
+                                                                    position: absolute;
+                                                                    top: 0;
+                                                                    left: 0;
+                                                                    width: 100%;
+                                                                    height: 100%;
+                                                                    background-color: #00000018;
+                                                                }
 
                                                                 svg {
                                                                     font-size: 16px;
@@ -151,6 +173,7 @@ ul {
                                                         gap: 3px;
                                                         top: 50px;
                                                         transition: 0.30s ease-in-out;
+                                                        margin: 15px 10px;
 
                                                         &.autoHeight {
                                                             height: auto;
@@ -167,6 +190,14 @@ ul {
 
                                                             &:hover {
                                                                 background-color: rgba(0, 0, 0, 0.212);
+                                                            }
+
+                                                            &.active {
+                                                                background-color: rgba(0, 0, 0, 0.082);
+
+                                                                &:hover {
+                                                                    background-color: rgba(0, 0, 0, 0.212);
+                                                                }
                                                             }
 
                                                             &::before {
@@ -190,13 +221,18 @@ ul {
                                 .vpuMainMenu {
                                     .vpuMenuMain {
                                         .vpuMenuSub {
-                                            padding: 30px 25px;
                                             background-image: linear-gradient(109.6deg, rgba(223, 234, 247, 1) 11.2%, rgba(244, 248, 252, 1) 91.1%);
 
-                                            .vpuHeading {
-                                                margin-bottom: 20px;
+                                            .vpuTitle {
+                                                margin: 20px 0 30px 0;
+                                                text-align: center;
 
-                                                span {}
+                                                span {
+                                                    font-size: 30px;
+                                                    text-transform: uppercase;
+                                                    font-weight: bold;
+                                                    letter-spacing: 3px;
+                                                }
                                             }
 
                                             .vpuList {
@@ -268,11 +304,6 @@ ul {
                                         }
                                     }
                                 }
-
-                                display: flex;
-                                flex-direction: row;
-                                justify-content: space-between;
-                                gap: 0px;
 
                                 .packages {
                                     width: 100%;

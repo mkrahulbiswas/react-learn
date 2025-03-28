@@ -1,5 +1,5 @@
 import { Outlet } from "react-router"
-import { Shared } from "../../Shared/Shared"
+import { Shared } from "../../Shared/PackagesNavLink"
 
 export const UiComponentPackage = () => {
   return (

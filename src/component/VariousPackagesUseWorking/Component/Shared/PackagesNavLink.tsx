@@ -1,17 +1,46 @@
-import { Link } from "react-router"
+import { Link, useLocation } from "react-router"
 import { RouteContext } from "../../Context/RouteContext"
-import { useContext, useState } from "react"
+import { useContext, useEffect, useState } from "react"
 import { IoMdAdd, IoMdClose } from "react-icons/io"
-import { getRouteData } from "../../Database/RouteDatabase"
-import { useHelper } from "../../hooks/useHelper"
+import { getRouteData } from "../../Helpers/RouteHelper"
+import { useHelper } from "../../Hooks/useHelper"
 
-export const Shared = ({ props }: any) => {
-  const [expandedItem, setExpandedItem] = useState<string | null>(null);
+export const PackagesNavLink = ({ props }: any) => {
+  const [toggleSideMenu, setToggleSideMenu] = useState({
+    checkBy: '',
+    lastSegment: '',
+    isExpanded: false
+  });
+  const location = useLocation();
   const { routePaths }: any = useContext(RouteContext)
   const routeData = getRouteData({})
-  const handelToggleMenu = (itemId: string) => {
-    setExpandedItem(expandedItem === itemId ? null : itemId);
+  const handelToggleSideMenu = (data: string) => {
+    if (toggleSideMenu.checkBy == data) {
+      setToggleSideMenu({ ...toggleSideMenu, checkBy: '', isExpanded: !toggleSideMenu.isExpanded })
+    } else {
+      setToggleSideMenu({ ...toggleSideMenu, checkBy: data, isExpanded: !toggleSideMenu.isExpanded })
+    }
   }
+  useEffect(() => {
+    if (location) {
+      const lastSegment = location.pathname.split("/")
+      if (lastSegment.length == 3) {
+        setToggleSideMenu({
+          ...toggleSideMenu,
+          checkBy: lastSegment[lastSegment.length - 1],
+          lastSegment: lastSegment[lastSegment.length - 1],
+          isExpanded: true
+        })
+      } else {
+        setToggleSideMenu({
+          ...toggleSideMenu,
+          checkBy: lastSegment[lastSegment.length - 2],
+          lastSegment: lastSegment[lastSegment.length - 1],
+          isExpanded: true
+        })
+      }
+    }
+  }, [location])
   return (
     <>
       {
@@ -19,13 +48,13 @@ export const Shared = ({ props }: any) => {
           <div className="vpuSideMenu">
             <div className="vpuMenuMain">
               <div className="vpuMenuSub">
-                <div className="vpuHeading">
+                <div className="vpuTitle">
                   <span>Packages</span>
                 </div>
                 <div className="vpuList">
                   {
                     Object.values(routeData.packages.nested).map((valOne: any, keyOne: any) => {
-                      const isExpanded = expandedItem === valOne.route;
+                      const isExpanded = toggleSideMenu.checkBy === valOne.route;
                       return (
                         <div className="vpuItem" key={keyOne}>
                           <div className="vpuHeading">
@@ -35,8 +64,8 @@ export const Shared = ({ props }: any) => {
                                   routePaths.packages.route,
                                   valOne.route,
                                 ]
-                              })}>{valOne.name}</Link>
-                              <label onClick={() => handelToggleMenu(valOne.route)}>
+                              })}>{valOne.info.name}</Link>
+                              <label onClick={() => handelToggleSideMenu(valOne.route)}>
                                 {isExpanded ? <IoMdClose /> : <IoMdAdd />}
                               </label>
                             </span>
@@ -46,13 +75,16 @@ export const Shared = ({ props }: any) => {
                               <div className={isExpanded ? "vpuLinks autoHeight" : "vpuLinks"}>
                                 {
                                   Object.values(valOne.nested).map((valTwo: any, keyTwo: any) =>
-                                    <Link key={keyTwo} to={useHelper({
-                                      type: 'routeConcatenate', data: [
-                                        routePaths.packages.route,
-                                        valOne.route,
-                                        valTwo.route,
-                                      ]
-                                    })}>{valTwo.name}</Link>
+                                    <Link
+                                      className={toggleSideMenu.lastSegment == valTwo.route ? 'active' : ''}
+                                      key={keyTwo}
+                                      to={useHelper({
+                                        type: 'routeConcatenate', data: [
+                                          routePaths.packages.route,
+                                          valOne.route,
+                                          valTwo.route,
+                                        ]
+                                      })}>{valTwo.info.name}</Link>
                                   )
                                 }
                               </div>
@@ -69,7 +101,7 @@ export const Shared = ({ props }: any) => {
           < div className="vpuMainMenu">
             <div className="vpuMenuMain">
               <div className="vpuMenuSub">
-                <div className="vpuHeading">
+                <div className="vpuTitle">
                   <span>Packages</span>
                 </div>
                 <div className="vpuList">
@@ -84,22 +116,24 @@ export const Shared = ({ props }: any) => {
                                   routePaths.packages.route,
                                   valOne.route,
                                 ]
-                              })}>{valOne.name}</Link>
+                              })}>{valOne.info.name}</Link>
                             </span>
+                            <p>{valOne.info.about}</p>
                           </div>
-                          <div className="vpuLinks">
-                            {
-                              Object.values(valOne.nested).map((valTwo: any, keyTwo: any) =>
-                                <Link key={keyTwo} to={useHelper({
+                          {
+                            Object.values(valOne.nested).map((valTwo: any, keyTwo: any) =>
+                              <div className="vpuLinks" key={keyTwo}>
+                                <Link to={useHelper({
                                   type: 'routeConcatenate', data: [
                                     routePaths.packages.route,
                                     valOne.route,
                                     valTwo.route,
                                   ]
-                                })}>{valTwo.name}</Link>
-                              )
-                            }
-                          </div>
+                                })}>{valTwo.info.name}</Link>
+                                <p>{valTwo.info.about}</p>
+                              </div>
+                            )
+                          }
                         </div>
                       )
                     })

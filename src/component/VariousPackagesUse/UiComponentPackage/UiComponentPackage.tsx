@@ -6,18 +6,20 @@ import { FluentUiType } from "./FluentUiType/FluentUiType"
 import { MaterialUiType } from "./MaterialUiType/MaterialUiType"
 import { PrimereactType } from "./PrimereactType/PrimereactType"
 import { SemanticUiReactType } from "./SemanticUiReactType/SemanticUiReactType"
+import { SpectrumWebComponentsType } from "./SpectrumWebComponentsType/SpectrumWebComponentsType"
 
 export const UiComponentPackage = () => {
   return (
     <>
+      <BlueprintJsType />
+      {/* <SpectrumWebComponentsType />
       <ChakraUiType />
-      {/* <BlueprintJsType /> */}
-      {/* <FluentUiType /> */}
-      {/* <SemanticUiReactType /> */}
-      {/* <AntDesignType /> */}
-      {/* <MaterialUiType /> */}
-      {/* <PrimereactType /> */}
-      {/* <BootstrapType /> */}
+      <FluentUiType />
+      <SemanticUiReactType />
+      <AntDesignType />
+      <MaterialUiType />
+      <PrimereactType />
+      <BootstrapType /> */}
     </>
   )
 }

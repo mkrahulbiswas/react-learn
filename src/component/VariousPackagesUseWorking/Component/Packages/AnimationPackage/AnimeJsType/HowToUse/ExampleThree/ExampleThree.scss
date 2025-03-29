@@ -1,0 +1,34 @@
+.demo-content {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  width: 100px;
+  height: 100%;
+
+  .grid {
+    display: flex;
+    flex-wrap: wrap;
+
+    .small {
+      width: 18px;
+      height: 18px;
+    }
+
+    .square {
+      pointer-events: none;
+      position: relative;
+      margin: 1px;
+      background-color: currentColor;
+      font-size: 14px;
+    }
+  }
+
+  .shadow {
+    position: absolute;
+    opacity: .2;
+    top: 0;
+    left: 0;
+  }
+}

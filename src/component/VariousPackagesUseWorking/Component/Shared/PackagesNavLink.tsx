@@ -1,4 +1,4 @@
-import { Link, useLocation } from "react-router"
+import { Link, Navigate, useLocation, useNavigate } from "react-router"
 import { RouteContext } from "../../Context/RouteContext"
 import { useContext, useEffect, useState } from "react"
 import { IoMdAdd, IoMdClose } from "react-icons/io"
@@ -12,6 +12,7 @@ export const PackagesNavLink = ({ props }: any) => {
     isExpanded: false
   });
   const location = useLocation();
+  const navigate = useNavigate()
   const { routePaths }: any = useContext(RouteContext)
   const routeData = getRouteData({})
   const handelToggleSideMenu = (data: string) => {
@@ -20,6 +21,15 @@ export const PackagesNavLink = ({ props }: any) => {
     } else {
       setToggleSideMenu({ ...toggleSideMenu, checkBy: data, isExpanded: !toggleSideMenu.isExpanded })
     }
+  }
+  const visitLink = (data: any) => {
+    navigate(useHelper({
+      type: 'routeConcatenate', data: [
+        routePaths.packages.route,
+        data.valOne.route,
+        data.valTwo.route,
+      ]
+    }))
   }
   useEffect(() => {
     if (location) {
@@ -48,9 +58,9 @@ export const PackagesNavLink = ({ props }: any) => {
           <div className="vpuSideMenu">
             <div className="vpuMenuMain">
               <div className="vpuMenuSub">
-                <div className="vpuTitle">
+                {/* <div className="vpuTitle">
                   <span>Packages</span>
-                </div>
+                </div> */}
                 <div className="vpuList">
                   {
                     Object.values(routeData.packages.nested).map((valOne: any, keyOne: any) => {
@@ -118,22 +128,25 @@ export const PackagesNavLink = ({ props }: any) => {
                                 ]
                               })}>{valOne.info.name}</Link>
                             </span>
-                            <p>{valOne.info.about}</p>
+                            <div className="vpuAbout">
+                              <p>{valOne.info.about}</p>
+                            </div>
                           </div>
-                          {
-                            Object.values(valOne.nested).map((valTwo: any, keyTwo: any) =>
-                              <div className="vpuLinks" key={keyTwo}>
-                                <Link to={useHelper({
-                                  type: 'routeConcatenate', data: [
-                                    routePaths.packages.route,
-                                    valOne.route,
-                                    valTwo.route,
-                                  ]
-                                })}>{valTwo.info.name}</Link>
-                                <p>{valTwo.info.about}</p>
-                              </div>
-                            )
-                          }
+                          <div className="vpuLinksMain">
+                            {
+                              Object.values(valOne.nested).map((valTwo: any, keyTwo: any) =>
+                                <div className="vpuLinks" key={keyTwo} onClick={() => visitLink({ valOne, valTwo, })}>
+                                  <div className="vpuLinksLeft">
+                                    <span>{keyTwo + 1}</span>
+                                  </div>
+                                  <div className="vpuLinksRight">
+                                    <span>{valTwo.info.name}</span>
+                                    <span>{valTwo.info.about}</span>
+                                  </div>
+                                </div>
+                              )
+                            }
+                          </div>
                         </div>
                       )
                     })

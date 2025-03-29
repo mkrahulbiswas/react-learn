@@ -23,7 +23,7 @@ export const Packages = () => {
     } else {
       setQuickLinkToggleCss({
         ...quickLinkToggleCss,
-        top: '-105%',
+        top: '-110%',
       })
       document.body.style.overflow = "scroll";
     }

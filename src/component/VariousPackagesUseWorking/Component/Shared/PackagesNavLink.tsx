@@ -42,11 +42,14 @@ export const PackagesNavLink = ({ props }: any) => {
     }
   }
   const visitLink = (data: any) => {
+    if (data.for === 'floating') {
+      props.closeFloating('close')
+    }
     navigate(useHelper({
       type: 'routeConcatenate', data: [
         routePaths.packages.route,
-        data.valOne.route,
-        data.valTwo.route,
+        data.valOne?.route != undefined ? data.valOne.route : '',
+        data.valTwo?.route != undefined ? data.valTwo.route : '',
       ]
     }))
   }
@@ -93,12 +96,7 @@ export const PackagesNavLink = ({ props }: any) => {
                     <div className="vpuItem" key={keyOne}>
                       <div className="vpuHeading">
                         <span>
-                          <Link to={useHelper({
-                            type: 'routeConcatenate', data: [
-                              routePaths.packages.route,
-                              valOne.route,
-                            ]
-                          })}>{valOne.info.name}</Link>
+                          <a href="javascript:void(0)" onClick={() => visitLink({ valOne, for: 'side' })}>{valOne.info.name}</a>
                           <label onClick={() => handelToggleMenu({ for: 'side', route: valOne.route })}>
                             {isExpanded ? <IoMdClose /> : <IoMdAdd />}
                           </label>
@@ -109,16 +107,9 @@ export const PackagesNavLink = ({ props }: any) => {
                           <div className={isExpanded ? "vpuLinks autoHeight" : "vpuLinks"}>
                             {
                               Object.values(valOne.nested).map((valTwo: any, keyTwo: any) =>
-                                <Link
+                                <a href="javascript:void(0)" key={keyTwo}
                                   className={toggleMenu.lastSegment == valTwo.route ? 'active' : ''}
-                                  key={keyTwo}
-                                  to={useHelper({
-                                    type: 'routeConcatenate', data: [
-                                      routePaths.packages.route,
-                                      valOne.route,
-                                      valTwo.route,
-                                    ]
-                                  })}>{valTwo.info.name}</Link>
+                                  onClick={() => visitLink({ valOne, valTwo, for: 'side' })}>{valTwo.info.name}</a>
                               )
                             }
                           </div>
@@ -145,12 +136,7 @@ export const PackagesNavLink = ({ props }: any) => {
                     <div className="vpuItem" key={keyOne} style={isExpanded ? toggleMenu.customStyle : undefined}>
                       <div className="vpuHeading">
                         <span>
-                          <Link to={useHelper({
-                            type: 'routeConcatenate', data: [
-                              routePaths.packages.route,
-                              valOne.route,
-                            ]
-                          })}>{valOne.info.name}</Link>
+                          <a href="javascript:void(0)" onClick={() => visitLink({ valOne, for: 'floating' })}>{valOne.info.name}</a>
                           <label onClick={() => handelToggleMenu({ for: 'floating', route: valOne.route })}>
                             {isExpanded ? <IoMdClose /> : <IoMdAdd />}
                           </label>
@@ -161,16 +147,9 @@ export const PackagesNavLink = ({ props }: any) => {
                           <div className='vpuLinks'>
                             {
                               Object.values(valOne.nested).map((valTwo: any, keyTwo: any) =>
-                                <Link
+                                <a href="javascript:void(0)" key={keyTwo}
                                   className={toggleMenu.lastSegment == valTwo.route ? 'active' : ''}
-                                  key={keyTwo}
-                                  to={useHelper({
-                                    type: 'routeConcatenate', data: [
-                                      routePaths.packages.route,
-                                      valOne.route,
-                                      valTwo.route,
-                                    ]
-                                  })}>{valTwo.info.name}</Link>
+                                  onClick={() => visitLink({ valOne, valTwo, for: 'floating' })}>{valTwo.info.name}</a>
                               )
                             }
                           </div>
@@ -196,12 +175,7 @@ export const PackagesNavLink = ({ props }: any) => {
                     <div className="vpuItem" key={keyOne}>
                       <div className="vpuHeading">
                         <span>
-                          <Link to={useHelper({
-                            type: 'routeConcatenate', data: [
-                              routePaths.packages.route,
-                              valOne.route,
-                            ]
-                          })}>{valOne.info.name}</Link>
+                          <a href="javascript:void(0)" onClick={() => visitLink({ valOne, for: 'main' })}>{valOne.info.name}</a>
                         </span>
                         <div className="vpuAbout">
                           <p>{valOne.info.about}</p>
@@ -210,7 +184,7 @@ export const PackagesNavLink = ({ props }: any) => {
                       <div className="vpuLinksMain">
                         {
                           Object.values(valOne.nested).map((valTwo: any, keyTwo: any) =>
-                            <div className="vpuLinks" key={keyTwo} onClick={() => visitLink({ valOne, valTwo, })}>
+                            <div className="vpuLinks" key={keyTwo} onClick={() => visitLink({ valOne, valTwo, for: 'main' })}>
                               <div className="vpuLinksLeft">
                                 <span>{keyTwo + 1}</span>
                               </div>

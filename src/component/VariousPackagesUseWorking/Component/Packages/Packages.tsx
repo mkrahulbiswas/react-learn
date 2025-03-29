@@ -19,11 +19,13 @@ export const Packages = () => {
         ...quickLinkToggleCss,
         top: '0',
       })
+      document.body.style.overflow = "hidden";
     } else {
       setQuickLinkToggleCss({
         ...quickLinkToggleCss,
-        top: '-100%',
+        top: '-105%',
       })
+      document.body.style.overflow = "scroll";
     }
   }
   return (
@@ -51,7 +53,7 @@ export const Packages = () => {
                 </span>
               </div>
               <div className="vpuFloatingMiddle">
-                <PackagesNavLink props={{ for: 'floating' }} />
+                <PackagesNavLink props={{ for: 'floating', closeFloating: handelQuickLink }} />
               </div>
             </div>
           </div>

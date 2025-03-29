@@ -6,20 +6,39 @@ import { getRouteData } from "../../Helpers/RouteHelper"
 import { useHelper } from "../../Hooks/useHelper"
 
 export const PackagesNavLink = ({ props }: any) => {
-  const [toggleSideMenu, setToggleSideMenu] = useState({
+  const [toggleMenu, setToggleMenu] = useState({
     checkBy: '',
     lastSegment: '',
-    isExpanded: false
+    isExpanded: false,
+    customStyle: {}
   });
   const location = useLocation();
   const navigate = useNavigate()
   const { routePaths }: any = useContext(RouteContext)
   const routeData = getRouteData({})
-  const handelToggleSideMenu = (data: string) => {
-    if (toggleSideMenu.checkBy == data) {
-      setToggleSideMenu({ ...toggleSideMenu, checkBy: '', isExpanded: !toggleSideMenu.isExpanded })
+  const handelToggleMenu = (data: any) => {
+    if (toggleMenu.checkBy == data.route) {
+      setToggleMenu({
+        ...toggleMenu,
+        checkBy: '',
+        isExpanded: !toggleMenu.isExpanded,
+        customStyle: {
+          borderBottomLeftRadius: '0px',
+          borderBottomRightRadius: '0px',
+          backgroundImage: 'radial-gradient(circle 780.6px at 10% 20%, rgba(133, 255, 189, 1) 0%, rgba(255, 251, 125, 1) 90.7%)',
+        }
+      })
     } else {
-      setToggleSideMenu({ ...toggleSideMenu, checkBy: data, isExpanded: !toggleSideMenu.isExpanded })
+      setToggleMenu({
+        ...toggleMenu,
+        checkBy: data.route,
+        isExpanded: !toggleMenu.isExpanded,
+        customStyle: {
+          borderBottomLeftRadius: '0px',
+          borderBottomRightRadius: '0px',
+          backgroundImage: 'radial-gradient(circle 780.6px at 10% 20%, rgba(133, 255, 189, 1) 0%, rgba(255, 251, 125, 1) 90.7%)',
+        }
+      })
     }
   }
   const visitLink = (data: any) => {
@@ -35,18 +54,28 @@ export const PackagesNavLink = ({ props }: any) => {
     if (location) {
       const lastSegment = location.pathname.split("/")
       if (lastSegment.length == 3) {
-        setToggleSideMenu({
-          ...toggleSideMenu,
+        setToggleMenu({
+          ...toggleMenu,
           checkBy: lastSegment[lastSegment.length - 1],
           lastSegment: lastSegment[lastSegment.length - 1],
-          isExpanded: true
+          isExpanded: true,
+          customStyle: {
+            borderBottomLeftRadius: '0px',
+            borderBottomRightRadius: '0px',
+            backgroundImage: 'radial-gradient(circle 780.6px at 10% 20%, rgba(133, 255, 189, 1) 0%, rgba(255, 251, 125, 1) 90.7%)',
+          }
         })
       } else {
-        setToggleSideMenu({
-          ...toggleSideMenu,
+        setToggleMenu({
+          ...toggleMenu,
           checkBy: lastSegment[lastSegment.length - 2],
           lastSegment: lastSegment[lastSegment.length - 1],
-          isExpanded: true
+          isExpanded: true,
+          customStyle: {
+            borderBottomLeftRadius: '0px',
+            borderBottomRightRadius: '0px',
+            backgroundImage: 'radial-gradient(circle 780.6px at 10% 20%, rgba(133, 255, 189, 1) 0%, rgba(255, 251, 125, 1) 90.7%)',
+          }
         })
       }
     }
@@ -54,107 +83,151 @@ export const PackagesNavLink = ({ props }: any) => {
   return (
     <>
       {
-        props.for == 'packagesSideNav' ?
+        props.for == 'side' ?
           <div className="vpuSideMenu">
-            <div className="vpuMenuMain">
-              <div className="vpuMenuSub">
-                {/* <div className="vpuTitle">
-                  <span>Packages</span>
-                </div> */}
-                <div className="vpuList">
-                  {
-                    Object.values(routeData.packages.nested).map((valOne: any, keyOne: any) => {
-                      const isExpanded = toggleSideMenu.checkBy === valOne.route;
-                      return (
-                        <div className="vpuItem" key={keyOne}>
-                          <div className="vpuHeading">
-                            <span>
-                              <Link to={useHelper({
-                                type: 'routeConcatenate', data: [
-                                  routePaths.packages.route,
-                                  valOne.route,
-                                ]
-                              })}>{valOne.info.name}</Link>
-                              <label onClick={() => handelToggleSideMenu(valOne.route)}>
-                                {isExpanded ? <IoMdClose /> : <IoMdAdd />}
-                              </label>
-                            </span>
-                          </div>
-                          {
-                            isExpanded && (
-                              <div className={isExpanded ? "vpuLinks autoHeight" : "vpuLinks"}>
-                                {
-                                  Object.values(valOne.nested).map((valTwo: any, keyTwo: any) =>
-                                    <Link
-                                      className={toggleSideMenu.lastSegment == valTwo.route ? 'active' : ''}
-                                      key={keyTwo}
-                                      to={useHelper({
-                                        type: 'routeConcatenate', data: [
-                                          routePaths.packages.route,
-                                          valOne.route,
-                                          valTwo.route,
-                                        ]
-                                      })}>{valTwo.info.name}</Link>
-                                  )
-                                }
-                              </div>
-                            )
-                          }
-                        </div>
-                      )
-                    })
-                  }
-                </div>
-              </div>
-            </div>
-          </div> :
-          < div className="vpuMainMenu">
-            <div className="vpuMenuMain">
-              <div className="vpuMenuSub">
-                <div className="vpuTitle">
-                  <span>Packages</span>
-                </div>
-                <div className="vpuList">
-                  {
-                    Object.values(routeData.packages.nested).map((valOne: any, keyOne: any) => {
-                      return (
-                        <div className="vpuItem" key={keyOne}>
-                          <div className="vpuHeading">
-                            <span>
-                              <Link to={useHelper({
-                                type: 'routeConcatenate', data: [
-                                  routePaths.packages.route,
-                                  valOne.route,
-                                ]
-                              })}>{valOne.info.name}</Link>
-                            </span>
-                            <div className="vpuAbout">
-                              <p>{valOne.info.about}</p>
-                            </div>
-                          </div>
-                          <div className="vpuLinksMain">
+            <div className="vpuList">
+              {
+                Object.values(routeData.packages.nested).map((valOne: any, keyOne: any) => {
+                  const isExpanded = toggleMenu.checkBy === valOne.route;
+                  return (
+                    <div className="vpuItem" key={keyOne}>
+                      <div className="vpuHeading">
+                        <span>
+                          <Link to={useHelper({
+                            type: 'routeConcatenate', data: [
+                              routePaths.packages.route,
+                              valOne.route,
+                            ]
+                          })}>{valOne.info.name}</Link>
+                          <label onClick={() => handelToggleMenu({ for: 'side', route: valOne.route })}>
+                            {isExpanded ? <IoMdClose /> : <IoMdAdd />}
+                          </label>
+                        </span>
+                      </div>
+                      {
+                        isExpanded && (
+                          <div className={isExpanded ? "vpuLinks autoHeight" : "vpuLinks"}>
                             {
                               Object.values(valOne.nested).map((valTwo: any, keyTwo: any) =>
-                                <div className="vpuLinks" key={keyTwo} onClick={() => visitLink({ valOne, valTwo, })}>
-                                  <div className="vpuLinksLeft">
-                                    <span>{keyTwo + 1}</span>
-                                  </div>
-                                  <div className="vpuLinksRight">
-                                    <span>{valTwo.info.name}</span>
-                                    <span>{valTwo.info.about}</span>
-                                  </div>
-                                </div>
+                                <Link
+                                  className={toggleMenu.lastSegment == valTwo.route ? 'active' : ''}
+                                  key={keyTwo}
+                                  to={useHelper({
+                                    type: 'routeConcatenate', data: [
+                                      routePaths.packages.route,
+                                      valOne.route,
+                                      valTwo.route,
+                                    ]
+                                  })}>{valTwo.info.name}</Link>
                               )
                             }
                           </div>
-                        </div>
-                      )
-                    })
-                  }
-                </div>
-              </div>
+                        )
+                      }
+                    </div>
+                  )
+                })
+              }
             </div>
-          </div>
+          </div> : null
+      }
+      {
+        props.for == 'floating' ?
+          <div className="vpuFloatingMenu">
+            <div className="vpuTitle">
+              <span>Packages</span>
+            </div>
+            <div className="vpuList">
+              {
+                Object.values(routeData.packages.nested).map((valOne: any, keyOne: any) => {
+                  const isExpanded = toggleMenu.checkBy === valOne.route;
+                  return (
+                    <div className="vpuItem" key={keyOne} style={isExpanded ? toggleMenu.customStyle : undefined}>
+                      <div className="vpuHeading">
+                        <span>
+                          <Link to={useHelper({
+                            type: 'routeConcatenate', data: [
+                              routePaths.packages.route,
+                              valOne.route,
+                            ]
+                          })}>{valOne.info.name}</Link>
+                          <label onClick={() => handelToggleMenu({ for: 'floating', route: valOne.route })}>
+                            {isExpanded ? <IoMdClose /> : <IoMdAdd />}
+                          </label>
+                        </span>
+                      </div>
+                      {
+                        isExpanded && (
+                          <div className='vpuLinks'>
+                            {
+                              Object.values(valOne.nested).map((valTwo: any, keyTwo: any) =>
+                                <Link
+                                  className={toggleMenu.lastSegment == valTwo.route ? 'active' : ''}
+                                  key={keyTwo}
+                                  to={useHelper({
+                                    type: 'routeConcatenate', data: [
+                                      routePaths.packages.route,
+                                      valOne.route,
+                                      valTwo.route,
+                                    ]
+                                  })}>{valTwo.info.name}</Link>
+                              )
+                            }
+                          </div>
+                        )
+                      }
+                    </div>
+                  )
+                })
+              }
+            </div>
+          </div> : null
+      }
+      {
+        props.for == 'main' ?
+          < div className="vpuMainMenu">
+            <div className="vpuTitle">
+              <span>Packages</span>
+            </div>
+            <div className="vpuList">
+              {
+                Object.values(routeData.packages.nested).map((valOne: any, keyOne: any) => {
+                  return (
+                    <div className="vpuItem" key={keyOne}>
+                      <div className="vpuHeading">
+                        <span>
+                          <Link to={useHelper({
+                            type: 'routeConcatenate', data: [
+                              routePaths.packages.route,
+                              valOne.route,
+                            ]
+                          })}>{valOne.info.name}</Link>
+                        </span>
+                        <div className="vpuAbout">
+                          <p>{valOne.info.about}</p>
+                        </div>
+                      </div>
+                      <div className="vpuLinksMain">
+                        {
+                          Object.values(valOne.nested).map((valTwo: any, keyTwo: any) =>
+                            <div className="vpuLinks" key={keyTwo} onClick={() => visitLink({ valOne, valTwo, })}>
+                              <div className="vpuLinksLeft">
+                                <span>{keyTwo + 1}</span>
+                              </div>
+                              <div className="vpuLinksRight">
+                                <span>{valTwo.info.name}</span>
+                                <span>{valTwo.info.about}</span>
+                              </div>
+                            </div>
+                          )
+                        }
+                      </div>
+                    </div>
+                  )
+                })
+              }
+            </div>
+          </div> : null
       }
     </>
   )

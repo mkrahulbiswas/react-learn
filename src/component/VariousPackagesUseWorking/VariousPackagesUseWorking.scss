@@ -111,128 +111,124 @@ ul {
                                     padding: 15px;
 
                                     .vpuSideMenu {
-                                        .vpuMenuMain {
-                                            min-width: 240px;
-                                            max-width: 240px;
+                                        min-width: 240px;
+                                        max-width: 240px;
 
-                                            .vpuMenuSub {
-                                                .vpuTitle {
-                                                    margin-bottom: 15px;
-                                                    text-align: center;
+                                        .vpuTitle {
+                                            margin-bottom: 15px;
+                                            text-align: center;
+
+                                            span {
+                                                font-size: 17px;
+                                                text-transform: uppercase;
+                                                font-weight: bold;
+                                            }
+                                        }
+
+                                        .vpuList {
+                                            display: flex;
+                                            flex-direction: column;
+                                            gap: 6px;
+
+                                            .vpuItem {
+                                                background-image: radial-gradient(circle farthest-corner at 10% 20%, rgba(97, 186, 255, 1) 0%, rgba(166, 239, 253, 1) 90.1%);
+                                                border-radius: 5px;
+                                                box-shadow: 0 1px 2px #e18ee4d2;
+                                                transition: 0.30s ease-in-out;
+                                                overflow: hidden;
+
+                                                &:hover {
+                                                    box-shadow: 0 2px 5px #621a64,
+                                                        0 8px 10px #f9dbfa;
+                                                }
+
+                                                .vpuHeading {
+                                                    position: relative;
+
+                                                    &::after {
+                                                        content: "";
+                                                        position: absolute;
+                                                        top: 0;
+                                                        left: 0;
+                                                        width: 100%;
+                                                        height: 100%;
+                                                        background-color: #00000018;
+                                                    }
 
                                                     span {
-                                                        font-size: 17px;
-                                                        text-transform: uppercase;
                                                         font-weight: bold;
+                                                        display: flex;
+                                                        flex-direction: row;
+                                                        justify-content: space-between;
+                                                        position: relative;
+                                                        z-index: 2;
+
+                                                        a {
+                                                            font-size: 14px;
+                                                            padding: 5px 10px;
+                                                            display: block;
+                                                            text-decoration: none;
+                                                            color: rgb(9 51 62);
+                                                            outline: none;
+                                                            width: 100%;
+                                                        }
+
+                                                        label {
+                                                            display: block;
+                                                            padding: 5px 6px;
+                                                            cursor: pointer;
+
+                                                            svg {
+                                                                font-size: 16px;
+                                                                margin-top: 1px;
+                                                            }
+                                                        }
                                                     }
                                                 }
 
-                                                .vpuList {
+                                                .vpuLinks {
+                                                    height: 0px;
                                                     display: flex;
                                                     flex-direction: column;
-                                                    gap: 6px;
+                                                    gap: 3px;
+                                                    top: 50px;
+                                                    transition: 0.30s ease-in-out;
+                                                    margin: 15px 10px;
 
-                                                    .vpuItem {
-                                                        background-image: radial-gradient(circle 780.6px at 10% 20%, rgba(133, 255, 189, 1) 0%, rgba(255, 251, 125, 1) 90.7%);
-                                                        border-radius: 5px;
-                                                        box-shadow: 0 1px 2px #e18ee4d2;
+                                                    &.autoHeight {
+                                                        height: auto;
+                                                    }
+
+                                                    a {
+                                                        display: block;
+                                                        outline: none;
+                                                        padding: 3px 5px 3px 20px;
                                                         transition: 0.30s ease-in-out;
-                                                        overflow: hidden;
+                                                        border-radius: 5px;
+                                                        position: relative;
+                                                        color: black;
 
                                                         &:hover {
-                                                            box-shadow: 0 2px 5px #621a64,
-                                                                0 8px 10px #f9dbfa;
+                                                            background-color: rgba(0, 0, 0, 0.212);
                                                         }
 
-                                                        .vpuHeading {
-                                                            position: relative;
+                                                        &.active {
+                                                            background-color: rgba(0, 0, 0, 0.082);
 
-                                                            &::after {
-                                                                content: "";
-                                                                position: absolute;
-                                                                top: 0;
-                                                                left: 0;
-                                                                width: 100%;
-                                                                height: 100%;
-                                                                background-color: #00000018;
-                                                            }
-
-                                                            span {
-                                                                font-weight: bold;
-                                                                display: flex;
-                                                                flex-direction: row;
-                                                                justify-content: space-between;
-                                                                position: relative;
-                                                                z-index: 2;
-
-                                                                a {
-                                                                    font-size: 14px;
-                                                                    padding: 5px 10px;
-                                                                    display: block;
-                                                                    text-decoration: none;
-                                                                    color: #8b258fd2;
-                                                                    outline: none;
-                                                                    width: 100%;
-                                                                }
-
-                                                                label {
-                                                                    display: block;
-                                                                    padding: 5px 6px;
-                                                                    cursor: pointer;
-
-                                                                    svg {
-                                                                        font-size: 16px;
-                                                                        margin-top: 1px;
-                                                                    }
-                                                                }
+                                                            &:hover {
+                                                                background-color: rgba(0, 0, 0, 0.212);
                                                             }
                                                         }
 
-                                                        .vpuLinks {
-                                                            height: 0px;
-                                                            display: flex;
-                                                            flex-direction: column;
-                                                            gap: 3px;
-                                                            top: 50px;
-                                                            transition: 0.30s ease-in-out;
-                                                            margin: 15px 10px;
-
-                                                            &.autoHeight {
-                                                                height: auto;
-                                                            }
-
-                                                            a {
-                                                                display: block;
-                                                                outline: none;
-                                                                padding: 3px 5px 3px 20px;
-                                                                transition: 0.30s ease-in-out;
-                                                                border-radius: 5px;
-                                                                position: relative;
-                                                                color: black;
-
-                                                                &:hover {
-                                                                    background-color: rgba(0, 0, 0, 0.212);
-                                                                }
-
-                                                                &.active {
-                                                                    background-color: rgba(0, 0, 0, 0.082);
-
-                                                                    &:hover {
-                                                                        background-color: rgba(0, 0, 0, 0.212);
-                                                                    }
-                                                                }
-
-                                                                &::before {
-                                                                    content: '';
-                                                                    position: absolute;
-                                                                    top: 10px;
-                                                                    left: 5px;
-                                                                    width: 7px;
-                                                                    height: 7px;
-                                                                    border-radius: 100%;
-                                                                    background-color: #e133e7d2;
-                                                                }
-                                                            }
+                                                        &::before {
+                                                            content: '';
+                                                            position: absolute;
+                                                            top: 10px;
+                                                            left: 5px;
+                                                            width: 7px;
+                                                            height: 7px;
+                                                            border-radius: 100%;
+                                                            background-color: #e133e7d2;
                                                         }
                                                     }
                                                 }
@@ -241,155 +237,151 @@ ul {
                                     }
 
                                     .vpuMainMenu {
-                                        .vpuMenuMain {
-                                            .vpuMenuSub {
-                                                background-image: linear-gradient(109.6deg, rgba(223, 234, 247, 1) 11.2%, rgba(244, 248, 252, 1) 91.1%);
+                                        background-image: linear-gradient(109.6deg, rgba(223, 234, 247, 1) 11.2%, rgba(244, 248, 252, 1) 91.1%);
 
-                                                .vpuTitle {
-                                                    margin: 20px 0 30px 0;
-                                                    text-align: center;
+                                        .vpuTitle {
+                                            margin: 20px 0 30px 0;
+                                            text-align: center;
+
+                                            span {
+                                                font-size: 30px;
+                                                text-transform: uppercase;
+                                                font-weight: bold;
+                                                letter-spacing: 3px;
+                                            }
+                                        }
+
+                                        .vpuList {
+                                            display: flex;
+                                            flex-direction: row;
+                                            flex-wrap: wrap;
+                                            justify-content: space-between;
+                                            gap: 25px;
+
+                                            @media screen and (max-width: 1510px) {
+                                                justify-content: space-around;
+                                            }
+
+                                            .vpuItem {
+                                                background-image: linear-gradient(174.2deg, rgba(255, 244, 228, 1) 7.1%, rgba(240, 246, 238, 1) 67.4%);
+                                                box-shadow: 0 3px 10px #e18ee4d2;
+                                                border-radius: 5px;
+                                                transition: 0.30s ease-in-out;
+                                                overflow: hidden;
+                                                display: flex;
+                                                flex-direction: column;
+                                                padding: 5px;
+                                                max-width: 700px;
+
+                                                @media screen and (max-width: 1510px) {
+                                                    max-width: 600px;
+                                                }
+
+                                                @media screen and (max-width: 1278px) {
+                                                    max-width: 450px;
+                                                }
+
+                                                @media screen and (max-width: 980px) {
+                                                    max-width: 800px;
+                                                }
+
+                                                @media screen and (max-width: 770px) {
+                                                    max-width: 100%;
+                                                }
+
+                                                &:hover {
+                                                    box-shadow: 0 7px 18px #560d58d2;
+                                                }
+
+                                                .vpuHeading {
+                                                    background-color: rgba(0, 0, 0, 0.123);
+                                                    padding: 10px;
+                                                    margin-bottom: 5px;
+                                                    border-radius: 5px;
 
                                                     span {
-                                                        font-size: 30px;
-                                                        text-transform: uppercase;
+                                                        font-size: 20px;
                                                         font-weight: bold;
-                                                        letter-spacing: 3px;
+
+                                                        a {
+                                                            text-decoration: none;
+                                                            color: #8b258fd2;
+                                                            outline: none;
+                                                            letter-spacing: 1px;
+                                                            word-spacing: 2px;
+                                                        }
+                                                    }
+
+
+                                                    .vpuAbout {
+                                                        margin-top: 5px;
+
+                                                        p {}
                                                     }
                                                 }
 
-                                                .vpuList {
+                                                .vpuLinksMain {
+                                                    box-shadow: inset 0 0 10px grey;
+                                                    padding: 20px;
                                                     display: flex;
-                                                    flex-direction: row;
-                                                    flex-wrap: wrap;
-                                                    justify-content: space-between;
-                                                    gap: 25px;
+                                                    flex-direction: column;
+                                                    gap: 15px;
+                                                    height: 100%;
+                                                    background-image: linear-gradient(117deg, rgba(123, 216, 96, 1) 39.2%, rgba(255, 255, 255, 1) 156.2%);
+                                                    border-radius: 5px;
 
-                                                    @media screen and (max-width: 1510px) {
-                                                        justify-content: space-around;
-                                                    }
-
-                                                    .vpuItem {
-                                                        background-image: linear-gradient(174.2deg, rgba(255, 244, 228, 1) 7.1%, rgba(240, 246, 238, 1) 67.4%);
-                                                        box-shadow: 0 3px 10px #e18ee4d2;
-                                                        border-radius: 5px;
-                                                        transition: 0.30s ease-in-out;
-                                                        overflow: hidden;
+                                                    .vpuLinks {
                                                         display: flex;
-                                                        flex-direction: column;
-                                                        padding: 5px;
-                                                        max-width: 720px;
-
-                                                        @media screen and (max-width: 1510px) {
-                                                            max-width: 600px;
-                                                        }
-
-                                                        @media screen and (max-width: 1270px) {
-                                                            max-width: 450px;
-                                                        }
-
-                                                        @media screen and (max-width: 970px) {
-                                                            max-width: 800px;
-                                                        }
-
-                                                        @media screen and (max-width: 770px) {
-                                                            max-width: 100%;
-                                                        }
+                                                        flex-direction: row;
+                                                        gap: 20px;
+                                                        padding: 10px;
+                                                        border-radius: 5px;
+                                                        cursor: pointer;
+                                                        background-image: linear-gradient(109.6deg, rgba(223, 234, 247, 1) 11.2%, rgba(244, 248, 252, 1) 91.1%);
+                                                        transition: 0.30s ease-in-out;
 
                                                         &:hover {
-                                                            box-shadow: 0 7px 18px #560d58d2;
+                                                            transform: scale(1.01);
+                                                            box-shadow: 0 5px 10px rgba(30, 97, 36);
                                                         }
 
-                                                        .vpuHeading {
-                                                            background-color: rgba(0, 0, 0, 0.123);
-                                                            padding: 10px;
-                                                            margin-bottom: 5px;
-                                                            border-radius: 5px;
+                                                        .vpuLinksLeft {
+                                                            display: flex;
 
                                                             span {
+                                                                align-self: center;
                                                                 font-size: 20px;
                                                                 font-weight: bold;
-
-                                                                a {
-                                                                    text-decoration: none;
-                                                                    color: #8b258fd2;
-                                                                    outline: none;
-                                                                    letter-spacing: 1px;
-                                                                    word-spacing: 2px;
-                                                                }
-                                                            }
-
-
-                                                            .vpuAbout {
-                                                                margin-top: 5px;
-
-                                                                p {}
+                                                                display: block;
+                                                                width: 28px;
+                                                                height: 28px;
+                                                                border-radius: 21%;
+                                                                background-color: #9fdb4f;
+                                                                line-height: 25px;
+                                                                border: 2px solid #6f973a;
+                                                                text-align: center;
                                                             }
                                                         }
 
-                                                        .vpuLinksMain {
-                                                            box-shadow: inset 0 0 10px grey;
-                                                            padding: 20px;
+                                                        .vpuLinksRight {
                                                             display: flex;
                                                             flex-direction: column;
-                                                            gap: 15px;
-                                                            height: 100%;
-                                                            background-image: linear-gradient(117deg, rgba(123, 216, 96, 1) 39.2%, rgba(255, 255, 255, 1) 156.2%);
-                                                            border-radius: 5px;
+                                                            gap: 3px;
 
-                                                            .vpuLinks {
-                                                                display: flex;
-                                                                flex-direction: row;
-                                                                gap: 20px;
-                                                                padding: 10px;
-                                                                border-radius: 5px;
-                                                                cursor: pointer;
-                                                                background-image: linear-gradient(109.6deg, rgba(223, 234, 247, 1) 11.2%, rgba(244, 248, 252, 1) 91.1%);
-                                                                transition: 0.30s ease-in-out;
+                                                            span {
+                                                                color: black;
+                                                                display: block;
 
-                                                                &:hover {
-                                                                    transform: scale(1.01);
-                                                                    box-shadow: 0 5px 10px rgba(30, 97, 36);
+                                                                &:first-child {
+                                                                    font-size: 16px;
+                                                                    font-weight: bold;
+                                                                    color: #5a0b6b;
                                                                 }
 
-                                                                .vpuLinksLeft {
-                                                                    display: flex;
-
-                                                                    span {
-                                                                        align-self: center;
-                                                                        font-size: 20px;
-                                                                        font-weight: bold;
-                                                                        display: block;
-                                                                        width: 28px;
-                                                                        height: 28px;
-                                                                        border-radius: 21%;
-                                                                        background-color: #9fdb4f;
-                                                                        line-height: 25px;
-                                                                        border: 2px solid #6f973a;
-                                                                        text-align: center;
-                                                                    }
-                                                                }
-
-                                                                .vpuLinksRight {
-                                                                    display: flex;
-                                                                    flex-direction: column;
-                                                                    gap: 3px;
-
-                                                                    span {
-                                                                        color: black;
-                                                                        display: block;
-
-                                                                        &:first-child {
-                                                                            font-size: 16px;
-                                                                            font-weight: bold;
-                                                                            color: #5a0b6b;
-                                                                        }
-
-                                                                        &:last-child {
-                                                                            margin-top: 5px;
-                                                                            font-size: 13px;
-                                                                            color: gray;
-                                                                        }
-                                                                    }
+                                                                &:last-child {
+                                                                    margin-top: 5px;
+                                                                    font-size: 13px;
+                                                                    color: gray;
                                                                 }
                                                             }
                                                         }
@@ -399,37 +391,240 @@ ul {
                                         }
                                     }
 
-                                    .vpuPackagesQuickLink {
-                                        .vpuPackagesQuickLinkButtons {
+                                    .vpuPackagesFloating {
+                                        .vpuFloatingTab {
                                             position: fixed;
                                             bottom: 30px;
-                                            right: 15px;
+                                            right: -73px;
                                             display: flex;
                                             flex-direction: column;
                                             gap: 15px;
+                                            padding: 15px;
                                             text-align: center;
                                             z-index: 10;
-                                            background-color: yellow;
+                                            transition: 0.30s ease-in-out;
+                                            border-top-left-radius: 5px;
+                                            background-image: linear-gradient(94.3deg, rgba(26, 33, 64, 1) 10.9%, rgba(81, 84, 115, 1) 87.1%);
+
+                                            &:hover {
+                                                right: 0px;
+                                            }
 
                                             label {
                                                 position: absolute;
                                                 bottom: 0;
-                                                left: 0;
+                                                left: -30px;
+                                                width: 30px;
+                                                padding: 5px;
+                                                background-color: rgba(26, 33, 64, 1);
+                                                cursor: pointer;
+                                                color: white;
+                                                border-top-left-radius: 5px;
+                                                border-bottom-left-radius: 5px;
+
+                                                svg {
+                                                    font-size: 20px;
+                                                    font-weight: bold;
+                                                }
                                             }
 
-                                            .vpuPackagesLinkAction {
+                                            .vpuFloatingAction {
                                                 display: block;
                                                 align-self: center;
-                                                width: 40px;
-                                                height: 40px;
+                                                padding: 6px;
                                                 line-height: 40px;
-                                                border-radius: 100%;
-                                                background-color: red;
+                                                border-radius: 30%;
+                                                cursor: pointer;
+                                                transition: 0.30s ease-in-out;
+                                                background-image: radial-gradient(circle farthest-corner at 79.7% 79.6%, rgba(165, 91, 251, 1) 0%, rgba(189, 93, 254, 1) 90%);
+
+                                                &:hover {
+                                                    transform: scale(1.2);
+                                                }
+
+                                                svg {
+                                                    color: #fff;
+                                                    font-size: 30px;
+                                                }
                                             }
                                         }
 
-                                        .vpuPackagesQuickLinkContent {
-                                            .vpuPackagesLinkContent {}
+                                        .vpuFloatingContent {
+                                            .vpuFloatingLink {
+                                                position: fixed;
+                                                left: 0;
+                                                width: 100%;
+                                                height: 100vh;
+                                                background-color: rgba(0, 0, 0, 0.712);
+                                                z-index: 9;
+                                                padding: 10px;
+                                                transition: 0.30s ease-in-out;
+
+                                                &::before {
+                                                    content: '';
+                                                    position: absolute;
+                                                    top: 0;
+                                                    left: 0;
+                                                    width: 100%;
+                                                    height: 100%;
+                                                    z-index: -1;
+                                                    backdrop-filter: blur(5px);
+                                                }
+
+                                                .vpuFloatingLinkTop {
+                                                    display: flex;
+                                                    justify-content: center;
+                                                    position: absolute;
+                                                    width: 70px;
+                                                    height: 70px;
+                                                    border-radius: 100%;
+                                                    top: -26px;
+                                                    right: -26px;
+                                                    background-color: rgba(155, 37, 37, 0.623);
+                                                    border-left: 2px solid red;
+                                                    border-bottom: 2px solid red;
+
+                                                    span {
+                                                        cursor: pointer;
+                                                        margin-top: 32px;
+                                                        margin-right: 22px;
+
+                                                        svg {
+                                                            font-size: 25px;
+                                                            color: white;
+                                                        }
+                                                    }
+                                                }
+
+                                                .vpuFloatingMiddle {
+                                                    .vpuFloatingMenu {
+                                                        .vpuTitle {
+                                                            margin-bottom: 60px;
+                                                            text-align: center;
+
+                                                            span {
+                                                                font-size: 25px;
+                                                                text-transform: uppercase;
+                                                                font-weight: bold;
+                                                                color: white;
+                                                            }
+                                                        }
+
+                                                        .vpuList {
+                                                            display: flex;
+                                                            flex-direction: row;
+                                                            flex-wrap: wrap;
+                                                            gap: 20px;
+
+                                                            .vpuItem {
+                                                                background-image: radial-gradient(circle 341px at 10% 20%, rgb(204, 204, 204) 0%, rgb(212, 252, 253) 90%);
+                                                                border-radius: 5px;
+                                                                transition: 0.30s ease-in-out;
+                                                                position: relative;
+                                                                width: 230px;
+                                                                margin: auto;
+
+                                                                &:hover {
+                                                                    background-image: radial-gradient(circle 780.6px at 10% 20%, rgba(133, 255, 189, 1) 0%, rgba(255, 251, 125, 1) 90.7%);
+                                                                }
+
+                                                                .vpuHeading {
+                                                                    position: relative;
+
+                                                                    &::after {
+                                                                        content: "";
+                                                                        position: absolute;
+                                                                        top: 0;
+                                                                        left: 0;
+                                                                        width: 100%;
+                                                                        height: 100%;
+                                                                        background-color: #00000018;
+                                                                    }
+
+                                                                    span {
+                                                                        font-weight: bold;
+                                                                        display: flex;
+                                                                        flex-direction: row;
+                                                                        justify-content: space-between;
+                                                                        position: relative;
+                                                                        z-index: 2;
+
+                                                                        a {
+                                                                            font-size: 14px;
+                                                                            padding: 5px 10px;
+                                                                            display: block;
+                                                                            text-decoration: none;
+                                                                            color: black;
+                                                                            outline: none;
+                                                                            width: 100%;
+                                                                        }
+
+                                                                        label {
+                                                                            display: block;
+                                                                            padding: 5px 6px;
+                                                                            cursor: pointer;
+
+                                                                            svg {
+                                                                                font-size: 16px;
+                                                                                margin-top: 1px;
+                                                                            }
+                                                                        }
+                                                                    }
+                                                                }
+
+                                                                .vpuLinks {
+                                                                    display: flex;
+                                                                    flex-direction: column;
+                                                                    gap: 3px;
+                                                                    transition: 0.3s ease-in-out;
+                                                                    position: absolute;
+                                                                    z-index: 3;
+                                                                    background-image: radial-gradient(circle 780.6px at 10% 20%, rgba(133, 255, 189, 1) 0%, rgba(255, 251, 125, 1) 90.7%);
+                                                                    padding: 10px;
+                                                                    width: 230px;
+                                                                    top: 30px;
+                                                                    left: 0%;
+                                                                    border-bottom-left-radius: 5px;
+                                                                    border-bottom-right-radius: 5px;
+
+                                                                    a {
+                                                                        display: block;
+                                                                        outline: none;
+                                                                        padding: 3px 5px 3px 20px;
+                                                                        transition: 0.30s ease-in-out;
+                                                                        border-radius: 5px;
+                                                                        position: relative;
+                                                                        color: black;
+
+                                                                        &:hover {
+                                                                            background-color: rgba(0, 0, 0, 0.212);
+                                                                        }
+
+                                                                        &.active {
+                                                                            background-color: rgba(0, 0, 0, 0.082);
+
+                                                                            &:hover {
+                                                                                background-color: rgba(0, 0, 0, 0.212);
+                                                                            }
+                                                                        }
+
+                                                                        &::before {
+                                                                            content: '';
+                                                                            position: absolute;
+                                                                            top: 10px;
+                                                                            left: 5px;
+                                                                            width: 7px;
+                                                                            height: 7px;
+                                                                            border-radius: 100%;
+                                                                            background-color: #e133e7d2;
+                                                                        }
+                                                                    }
+                                                                }
+                                                            }
+                                                        }
+                                                    }
+                                                }
+                                            }
                                         }
                                     }
 

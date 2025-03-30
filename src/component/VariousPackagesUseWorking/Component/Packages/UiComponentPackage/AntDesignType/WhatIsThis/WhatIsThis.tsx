@@ -1,6 +1,6 @@
 export const WhatIsThis = () => {
   return (
-    < >
+    <div className="vpu_pi_overview">
       <span className="singleLineText">This is <b>ant design</b> package to manage the <b>components & other feature</b></span>
       <span className="singleLineText">To use this package you need to <b>install</b> the library by using command:
         <p><span className="npmCommand">npm install antd antd-style @ant-design/icons --save</span></p>
@@ -11,6 +11,6 @@ export const WhatIsThis = () => {
         <p><a className="visitDoc" href="https://ant.design/" target="_blank">https://ant.design/</a></p>
       </span>
       <span className="singleLineText">Some example of <b>ant design</b> is:</span>
-    </>
+    </div>
   )
 }

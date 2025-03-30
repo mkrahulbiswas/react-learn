@@ -1,6 +1,6 @@
 export const WhatIsThis = () => {
   return (
-    < >
+    <div className="vpu_pi_overview">
       <span className="singleLineText">This is <b>material ui</b> package to manage the <b>components & other feature</b></span>
       <span className="singleLineText">To use this package you need to <b>install</b> the library by using command:
         <p><span className="npmCommand">npm install @mui/material @emotion/react @emotion/styled</span></p>
@@ -24,6 +24,6 @@ export const WhatIsThis = () => {
         <p><a className="visitDoc" href="https://mui.com/material-ui/getting-started/installation/" target="_blank">https://mui.com/material-ui/getting-started/installation/</a></p>
       </span>
       <span className="singleLineText">Some example of <b>material ui</b> is:</span>
-    </>
+    </div>
   )
 }

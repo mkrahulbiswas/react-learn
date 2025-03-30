@@ -1,6 +1,6 @@
 export const WhatIsThis = () => {
   return (
-    < >
+    <div className="vpu_pi_overview">
       <span className="singleLineText">This is <b>moment js</b> package to manage the <b>date & time</b></span>
       <span className="singleLineText">To use this package you need to <b>install</b> the library by using command:
         <p><span className="npmCommand">npm install --save moment react-moment</span></p>
@@ -16,6 +16,6 @@ export const WhatIsThis = () => {
       <span className="singleLineText">For more info you can visit the site:
         <p><a className="visitDoc" href="https://momentjs.com/timezone/" target="_blank">https://momentjs.com/timezone/</a></p>
       </span>
-    </>
+    </div>
   )
 }

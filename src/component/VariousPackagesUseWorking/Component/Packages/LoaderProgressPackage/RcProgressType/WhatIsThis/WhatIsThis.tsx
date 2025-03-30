@@ -1,6 +1,6 @@
 export const WhatIsThis = () => {
   return (
-    < >
+    <div className="vpu_pi_overview">
       <span className="singleLineText">This is <b>rc progress</b> package to manage the <b>progress bar</b></span>
       <span className="singleLineText">To use this package you need to <b>install</b> the library by using command:
         <p><span className="npmCommand">npm i rc-progress</span></p>
@@ -11,6 +11,6 @@ export const WhatIsThis = () => {
         <p><a className="visitDoc" href="https://progress-react-component.vercel.app/" target="_blank">https://progress-react-component.vercel.app/</a></p>
       </span>
       <span className="singleLineText">Some example of <b>rc progress</b> is:</span>
-    </>
+    </div>
   )
 }

@@ -1,6 +1,6 @@
 export const WhatIsThis = () => {
   return (
-    < >
+    <div className="vpu_pi_overview">
       <span className="singleLineText">There a new updated version of moment js is <b>luxon</b>. To use it need to install:
         <p><span className="npmCommand">npm install luxon</span></p>
         <p><span className="npmCommand">npm install --save-dev @types/luxon</span></p>
@@ -10,6 +10,6 @@ export const WhatIsThis = () => {
         <p><a className="visitDoc" href="https://github.com/moment/luxon" target="_blank">https://github.com/moment/luxon</a></p>
       </span>
       <span className="singleLineText">Some example of <b>moment js</b> and <b>luxon</b> is:</span>
-    </>
+    </div>
   )
 }

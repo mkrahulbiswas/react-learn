@@ -1,6 +1,6 @@
 export const WhatIsThis = () => {
   return (
-    < >
+    <div className="vpu_pi_overview">
       <span className="singleLineText">This is <b>react select</b> package to manage the <b>log</b></span>
       <span className="singleLineText">To use this package you need to <b>install</b> the library by using command:
         <p><span className="npmCommand">npm i --save react-select</span></p>
@@ -10,6 +10,6 @@ export const WhatIsThis = () => {
         <p><a className="visitDoc" href="https://github.com/JedWatson/react-select" target="_blank">https://github.com/JedWatson/react-select</a></p>
       </span>
       <span className="singleLineText">Some example of <b>react select</b> is:</span>
-    </>
+    </div>
   )
 }

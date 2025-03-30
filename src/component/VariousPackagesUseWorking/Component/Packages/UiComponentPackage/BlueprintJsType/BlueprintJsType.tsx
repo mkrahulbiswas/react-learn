@@ -8,15 +8,21 @@ import "@blueprintjs/datetime2/lib/css/blueprint-datetime2.css";
 
 export const BlueprintJsType = () => {
   return (
-    <div className="packages">
-      <div className="heading">
-        <span>Blueprint Js</span>
-      </div>
-      <div className="overView">
-        <WhatIsThis />
-      </div>
-      <div className="exampleMain">
-        <HowToUse />
+    <div className="vpu_PackagesInfo">
+      <div className="vpu_pi_main">
+        <div className="vpu_pi_sub">
+          <div className="vpu_pi_top">
+            <div className="vpu_pi_heading">
+              <span>Blueprint Js</span>
+            </div>
+          </div>
+          <div className="vpu_pi_middle">
+            <WhatIsThis />
+          </div>
+          <div className="vpu_pi_bottom">
+            <HowToUse />
+          </div>
+        </div>
       </div>
     </div>
   )

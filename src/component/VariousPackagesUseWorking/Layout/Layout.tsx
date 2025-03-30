@@ -6,8 +6,8 @@ export const Layout = () => {
   return (
     <div className="vpuMain">
       <div className="vpuSub">
-        <section className="vpiAdvertiseContent vpiAdvertiseContentOne"></section>
-        <section className="vpiMainContent">
+        <section className="vpuAdvertiseContent vpuAdvertiseContentOne"></section>
+        <section className="vpuOriginContent">
           <header className="vpuHeaderMain">
             <div className="vpuHeaderSub">
               <Header />
@@ -24,7 +24,7 @@ export const Layout = () => {
             </div>
           </footer>
         </section>
-        <section className="vpiAdvertiseContent vpiAdvertiseContentTwo"></section>
+        <section className="vpuAdvertiseContent vpuAdvertiseContentTwo"></section>
       </div>
     </div>
   )

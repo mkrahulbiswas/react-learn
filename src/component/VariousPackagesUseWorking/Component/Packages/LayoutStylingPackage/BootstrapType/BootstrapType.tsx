@@ -4,15 +4,21 @@ import 'bootstrap/dist/js/bootstrap.bundle.js';
 
 export const BootstrapType = () => {
   return (
-    <div className="packages">
-      <div className="heading">
-        <span>Boorstrap</span>
-      </div>
-      <div className="overView">
-        <WhatIsThis />
-      </div>
-      <div className="exampleMain">
-        <HowToUse />
+    <div className="vpu_PackagesInfo">
+      <div className="vpu_pi_main">
+        <div className="vpu_pi_sub">
+          <div className="vpu_pi_top">
+            <div className="vpu_pi_heading">
+              <span>Boorstrap</span>
+            </div>
+          </div>
+          <div className="vpu_pi_middle">
+            <WhatIsThis />
+          </div>
+          <div className="vpu_pi_bottom">
+            <HowToUse />
+          </div>
+        </div>
       </div>
     </div>
   )

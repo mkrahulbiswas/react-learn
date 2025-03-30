@@ -1,6 +1,6 @@
 export const WhatIsThis = () => {
   return (
-    < >
+    <div className="vpu_pi_overview">
       <span className="singleLineText">This is <b>spectrum</b> package to manage the <b>components & other feature</b></span>
       <span className="singleLineText">To use this package you need to <b>install</b> the library by using command:
         <p><span className="npmCommand">npm install @adobe/react-spectrum --save</span></p>
@@ -14,6 +14,6 @@ export const WhatIsThis = () => {
         <p><a className="visitDoc" href="https://github.com/adobe/react-spectrum/tree/main" target="_blank">https://github.com/adobe/react-spectrum/tree/main</a></p>
       </span>
       <span className="singleLineText">Some example of <b>spectrum</b> is:</span>
-    </>
+    </div>
   )
 }

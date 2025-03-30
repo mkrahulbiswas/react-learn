@@ -1,6 +1,6 @@
 export const WhatIsThis = () => {
   return (
-    < >
+    <div className="vpu_pi_overview">
       <span className="singleLineText">This is <b>smooth scrollbar</b> package to manage the <b>log</b></span>
       <span className="singleLineText">To use this package you need to <b>install</b> the library by using command:
         <p><span className="npmCommand">npm install --save-dev smooth-scrollbar @types/smooth-scrollbar</span></p>
@@ -10,6 +10,6 @@ export const WhatIsThis = () => {
         <p><a className="visitDoc" href="https://idiotwu.github.io/smooth-scrollbar/" target="_blank">https://idiotwu.github.io/smooth-scrollbar/</a></p>
       </span>
       <span className="singleLineText">Some example of <b>smooth scrollbar</b> is:</span>
-    </>
+    </div>
   )
 }

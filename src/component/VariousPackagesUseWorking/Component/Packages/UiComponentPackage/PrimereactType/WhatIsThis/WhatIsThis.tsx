@@ -1,6 +1,6 @@
 export const WhatIsThis = () => {
   return (
-    < >
+    <div className="vpu_pi_overview">
       <span className="singleLineText">This is <b>prime react</b> package to manage the <b>components & other feature</b></span>
       <span className="singleLineText">To use this package you need to <b>install</b> the library by using command:
         <p><span className="npmCommand">npm install primereact</span></p>
@@ -19,6 +19,6 @@ export const WhatIsThis = () => {
         <p><a className="visitDoc" href="https://primereact.org/icons/" target="_blank">https://primereact.org/icons/</a></p>
       </span>
       <span className="singleLineText">Some example of <b>prime react</b> is:</span>
-    </>
+    </div>
   )
 }

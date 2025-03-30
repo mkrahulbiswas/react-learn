@@ -96,7 +96,7 @@ export const PackagesNavLink = ({ props }: any) => {
                     <div className="vpuItem" key={keyOne}>
                       <div className="vpuHeading">
                         <span>
-                          <a href="javascript:void(0)" onClick={() => visitLink({ valOne, for: 'side' })}>{valOne.info.name}</a>
+                          <a onClick={() => visitLink({ valOne, for: 'side' })}>{valOne.info.name}</a>
                           <label onClick={() => handelToggleMenu({ for: 'side', route: valOne.route })}>
                             {isExpanded ? <IoMdClose /> : <IoMdAdd />}
                           </label>
@@ -107,7 +107,7 @@ export const PackagesNavLink = ({ props }: any) => {
                           <div className={isExpanded ? "vpuLinks autoHeight" : "vpuLinks"}>
                             {
                               Object.values(valOne.nested).map((valTwo: any, keyTwo: any) =>
-                                <a href="javascript:void(0)" key={keyTwo}
+                                <a key={keyTwo}
                                   className={toggleMenu.lastSegment == valTwo.route ? 'active' : ''}
                                   onClick={() => visitLink({ valOne, valTwo, for: 'side' })}>{valTwo.info.name}</a>
                               )
@@ -136,7 +136,7 @@ export const PackagesNavLink = ({ props }: any) => {
                     <div className="vpuItem" key={keyOne} style={isExpanded ? toggleMenu.customStyle : undefined}>
                       <div className="vpuHeading">
                         <span>
-                          <a href="javascript:void(0)" onClick={() => visitLink({ valOne, for: 'floating' })}>{valOne.info.name}</a>
+                          <a onClick={() => visitLink({ valOne, for: 'floating' })}>{valOne.info.name}</a>
                           <label onClick={() => handelToggleMenu({ for: 'floating', route: valOne.route })}>
                             {isExpanded ? <IoMdClose /> : <IoMdAdd />}
                           </label>
@@ -147,7 +147,7 @@ export const PackagesNavLink = ({ props }: any) => {
                           <div className='vpuLinks'>
                             {
                               Object.values(valOne.nested).map((valTwo: any, keyTwo: any) =>
-                                <a href="javascript:void(0)" key={keyTwo}
+                                <a key={keyTwo}
                                   className={toggleMenu.lastSegment == valTwo.route ? 'active' : ''}
                                   onClick={() => visitLink({ valOne, valTwo, for: 'floating' })}>{valTwo.info.name}</a>
                               )
@@ -175,7 +175,7 @@ export const PackagesNavLink = ({ props }: any) => {
                     <div className="vpuItem" key={keyOne}>
                       <div className="vpuHeading">
                         <span>
-                          <a href="javascript:void(0)" onClick={() => visitLink({ valOne, for: 'main' })}>{valOne.info.name}</a>
+                          <a onClick={() => visitLink({ valOne, for: 'main' })}>{valOne.info.name}</a>
                         </span>
                         <div className="vpuAbout">
                           <p>{valOne.info.about}</p>

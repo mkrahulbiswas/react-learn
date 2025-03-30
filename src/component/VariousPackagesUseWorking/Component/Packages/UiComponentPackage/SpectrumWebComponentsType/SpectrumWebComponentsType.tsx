@@ -4,18 +4,24 @@ import { defaultTheme, Provider } from '@adobe/react-spectrum';
 
 export const SpectrumWebComponentsType = () => {
   return (
-    <div className="packages">
-      <div className="heading">
-        <span>Spectrum Web Components</span>
-      </div>
-      <div className="overView">
-        <WhatIsThis />
-      </div>
-      <Provider theme={defaultTheme}>
-        <div className="exampleMain">
-          <HowToUse />
+    <div className="vpu_PackagesInfo">
+      <div className="vpu_pi_main">
+        <div className="vpu_pi_sub">
+          <div className="vpu_pi_top">
+            <div className="vpu_pi_heading">
+              <span>Spectrum Web Components</span>
+            </div>
+          </div>
+          <div className="vpu_pi_middle">
+            <WhatIsThis />
+          </div>
+          <div className="vpu_pi_bottom">
+            <Provider theme={defaultTheme}>
+              <HowToUse />
+            </Provider>
+          </div>
         </div>
-      </Provider>
+      </div>
     </div>
   )
 }

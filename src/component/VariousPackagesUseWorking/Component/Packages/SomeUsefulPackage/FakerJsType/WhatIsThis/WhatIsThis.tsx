@@ -1,6 +1,6 @@
 export const WhatIsThis = () => {
   return (
-    <>
+    <div className="vpu_pi_overview">
       <span className="singleLineText">This is <b>faker js</b> package to manage the <b>fake data</b></span>
       <span className="singleLineText">To use this package you need to <b>install</b> the library by using command:
         <p><span className="npmCommand">npm install @faker-js/faker --save-dev</span></p>
@@ -10,6 +10,6 @@ export const WhatIsThis = () => {
         <p><a className="visitDoc" href="https://fakerjs.dev/" target="_blank">https://fakerjs.dev/</a></p>
       </span>
       <span className="singleLineText">Some example of <b>faker js</b> is:</span>
-    </>
+    </div>
   )
 }

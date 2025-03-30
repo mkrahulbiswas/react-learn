@@ -4,7 +4,7 @@ import { ExampleTwo } from "./ExampleTwo/ExampleTwo"
 
 export const HowToUse = () => {
   return (
-    <>
+    <div className="vpu_pi_example">
       <div className="exampleSub">
         <div className="exampleHeading">
           <h2>Component Based</h2>
@@ -29,6 +29,6 @@ export const HowToUse = () => {
           <ExampleThree />
         </div>
       </div>
-    </>
+    </div>
   )
 }

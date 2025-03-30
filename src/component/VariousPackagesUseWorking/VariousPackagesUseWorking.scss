@@ -10,23 +10,23 @@ ul {
                 display: flex;
                 flex-direction: row;
 
-                .vpiAdvertiseContent {
+                .vpuAdvertiseContent {
                     flex-grow: 1;
 
-                    &.vpiAdvertiseContentOne {
+                    &.vpuAdvertiseContentOne {
                         background-color: red;
                     }
                 }
 
-                .vpiAdvertiseContent {
+                .vpuAdvertiseContent {
                     flex-grow: 1;
 
-                    &.vpiAdvertiseContentTwo {
+                    &.vpuAdvertiseContentTwo {
                         background-color: green;
                     }
                 }
 
-                .vpiMainContent {
+                .vpuOriginContent {
                     max-width: 1500px;
                     margin: auto;
 
@@ -628,178 +628,188 @@ ul {
                                         }
                                     }
 
-                                    .packages {
-                                        width: 100%;
-                                        padding: 10px;
-                                        background-color: rgb(235, 235, 235);
-                                        border: 1px solid rgb(184, 184, 184);
-
-                                        .heading {
-                                            margin-bottom: 10px;
-
-                                            span {
-                                                display: block;
-                                                font-size: 20px;
-                                                font-weight: bold;
-                                            }
-                                        }
-
-                                        .overView {
-                                            display: flex;
-                                            flex-direction: column;
-
-                                            .singleLineText {
-                                                display: block;
-                                                padding-left: 15px;
-                                                position: relative;
-
-                                                &::after {
-                                                    content: '';
-                                                    position: absolute;
-                                                    top: 13px;
-                                                    left: 0;
-                                                    width: 8px;
-                                                    height: 8px;
-                                                    border-radius: 100%;
-                                                    background-color: rgb(108, 159, 236);
-                                                    transform: translateY(-50%);
-                                                }
-
-                                                p {
-                                                    font-size: 13px;
-                                                    padding-left: 12px;
-                                                    position: relative;
-                                                    margin: 3px;
-
-                                                    &::after {
-                                                        content: '';
-                                                        position: absolute;
-                                                        top: 11px;
-                                                        left: 0;
-                                                        width: 5px;
-                                                        height: 5px;
-                                                        background-color: rgb(252, 139, 252);
-                                                        transform: translateY(-50%);
-                                                    }
-
-                                                    // &:not(:last-child) {
-                                                    //     margin-bottom: 0px !important;
-                                                    // }
-
-                                                    .visitDoc {
-                                                        text-decoration: none;
-                                                    }
-
-                                                    .npmCommand {
-                                                        cursor: pointer;
-                                                        background-color: rgb(177, 241, 225);
-                                                        padding: 0 5px 3px 5px;
-                                                        border-radius: 5px;
-                                                        font-weight: bold;
-                                                        margin-top: 5px;
-                                                    }
-                                                }
-                                            }
-                                        }
-
-                                        .exampleMain {
-                                            display: flex;
-                                            flex-direction: column;
-                                            justify-content: space-between;
-                                            gap: 20px;
-
-                                            .exampleSub {
-                                                display: flex;
-                                                flex-direction: column;
-                                                justify-content: space-between;
+                                    .vpu_PackagesInfo {
+                                        .vpu_pi_main {
+                                            .vpu_pi_sub {
+                                                width: 100%;
                                                 padding: 10px;
-                                                box-shadow: inset 0 0 10px rgb(116, 97, 48);
-                                                background-color: rgb(255, 246, 220);
+                                                background-color: rgb(235, 235, 235);
+                                                border: 1px solid rgb(184, 184, 184);
 
-                                                &:first-child {
-                                                    margin-top: 20px;
-                                                }
+                                                .vpu_pi_top {
+                                                    .vpu_pi_heading {
+                                                        margin-bottom: 10px;
 
-                                                .exampleHeading {
-                                                    padding: 10px;
-
-                                                    h2 {
-                                                        margin: 0;
-                                                        padding: 0;
-                                                        font-size: 18px;
-                                                        font-weight: bold;
-                                                        color: rgb(17, 83, 114);
-                                                    }
-
-                                                    span {
-                                                        font-size: 14px;
-                                                        color: rgb(17, 83, 114);
+                                                        span {
+                                                            display: block;
+                                                            font-size: 20px;
+                                                            font-weight: bold;
+                                                        }
                                                     }
                                                 }
 
-                                                .exampleContent {
-                                                    display: flex;
-                                                    flex-direction: row;
-                                                    flex-wrap: wrap;
-                                                    justify-content: space-between;
-                                                    padding: 10px;
-                                                    gap: 17px;
+                                                .vpu_pi_middle {
+                                                    .vpu_pi_overview {
+                                                        display: flex;
+                                                        flex-direction: column;
 
-                                                    .exampleCommon {
-                                                        background-color: rgb(205 243 224);
-                                                        padding: 10px;
+                                                        .singleLineText {
+                                                            display: block;
+                                                            padding-left: 15px;
+                                                            position: relative;
 
-                                                        &.fullWidth {
-                                                            min-width: 100%;
-                                                        }
-
-                                                        &.triennialWidth {
-                                                            max-width: 31.95%;
-                                                        }
-
-                                                        .exampleCommonPoints {
-                                                            margin-bottom: 20px;
-
-                                                            span {
-                                                                font-weight: bold;
-                                                                color: rgb(46, 107, 31);
+                                                            &::after {
+                                                                content: '';
+                                                                position: absolute;
+                                                                top: 13px;
+                                                                left: 0;
+                                                                width: 8px;
+                                                                height: 8px;
+                                                                border-radius: 100%;
+                                                                background-color: rgb(108, 159, 236);
+                                                                transform: translateY(-50%);
                                                             }
 
                                                             p {
-                                                                font-size: 12px;
-                                                                line-height: 14px;
-                                                                color: rgb(102, 86, 31);
+                                                                font-size: 13px;
+                                                                padding-left: 12px;
+                                                                position: relative;
+                                                                margin: 3px;
 
-                                                                label {
-                                                                    color: red;
-                                                                    text-transform: capitalize;
+                                                                &::after {
+                                                                    content: '';
+                                                                    position: absolute;
+                                                                    top: 11px;
+                                                                    left: 0;
+                                                                    width: 5px;
+                                                                    height: 5px;
+                                                                    background-color: rgb(252, 139, 252);
+                                                                    transform: translateY(-50%);
+                                                                }
+
+                                                                // &:not(:last-child) {
+                                                                //     margin-bottom: 0px !important;
+                                                                // }
+
+                                                                .visitDoc {
+                                                                    text-decoration: none;
+                                                                }
+
+                                                                .npmCommand {
+                                                                    cursor: pointer;
+                                                                    background-color: rgb(177, 241, 225);
+                                                                    padding: 0 5px 3px 5px;
+                                                                    border-radius: 5px;
+                                                                    font-weight: bold;
+                                                                    margin-top: 5px;
                                                                 }
                                                             }
                                                         }
+                                                    }
+                                                }
 
-                                                        .exampleCommonContent {
-                                                            position: relative;
-                                                            margin-top: 15px;
+                                                .vpu_pi_bottom {
+                                                    .vpu_pi_example {
+                                                        display: flex;
+                                                        flex-direction: column;
+                                                        justify-content: space-between;
+                                                        gap: 20px;
 
-                                                            &.exampleCommonContentFloat {
-                                                                float: left;
-                                                                margin-left: 20px;
+                                                        .exampleSub {
+                                                            display: flex;
+                                                            flex-direction: column;
+                                                            justify-content: space-between;
+                                                            padding: 10px;
+                                                            box-shadow: inset 0 0 10px rgb(116, 97, 48);
+                                                            background-color: rgb(255, 246, 220);
 
-                                                                &:first-child {
-                                                                    margin-left: 0px;
+                                                            &:first-child {
+                                                                margin-top: 20px;
+                                                            }
+
+                                                            .exampleHeading {
+                                                                padding: 10px;
+
+                                                                h2 {
+                                                                    margin: 0;
+                                                                    padding: 0;
+                                                                    font-size: 18px;
+                                                                    font-weight: bold;
+                                                                    color: rgb(17, 83, 114);
+                                                                }
+
+                                                                span {
+                                                                    font-size: 14px;
+                                                                    color: rgb(17, 83, 114);
                                                                 }
                                                             }
 
-                                                            &.exampleCommonContentFullWidth {
-                                                                min-width: 100%;
-                                                            }
+                                                            .exampleContent {
+                                                                display: flex;
+                                                                flex-direction: row;
+                                                                flex-wrap: wrap;
+                                                                justify-content: space-between;
+                                                                padding: 10px;
+                                                                gap: 17px;
 
-                                                            &.exampleCommonContentTriennialWidth {
-                                                                max-width: 31.95%;
-                                                            }
+                                                                .exampleCommon {
+                                                                    background-color: rgb(205 243 224);
+                                                                    padding: 10px;
 
-                                                            &:first-child {
-                                                                margin-top: 0px;
+                                                                    &.fullWidth {
+                                                                        min-width: 100%;
+                                                                    }
+
+                                                                    &.triennialWidth {
+                                                                        max-width: 31.95%;
+                                                                    }
+
+                                                                    .exampleCommonPoints {
+                                                                        margin-bottom: 20px;
+
+                                                                        span {
+                                                                            font-weight: bold;
+                                                                            color: rgb(46, 107, 31);
+                                                                        }
+
+                                                                        p {
+                                                                            font-size: 12px;
+                                                                            line-height: 14px;
+                                                                            color: rgb(102, 86, 31);
+
+                                                                            label {
+                                                                                color: red;
+                                                                                text-transform: capitalize;
+                                                                            }
+                                                                        }
+                                                                    }
+
+                                                                    .exampleCommonContent {
+                                                                        position: relative;
+                                                                        margin-top: 15px;
+
+                                                                        &.exampleCommonContentFloat {
+                                                                            float: left;
+                                                                            margin-left: 20px;
+
+                                                                            &:first-child {
+                                                                                margin-left: 0px;
+                                                                            }
+                                                                        }
+
+                                                                        &.exampleCommonContentFullWidth {
+                                                                            min-width: 100%;
+                                                                        }
+
+                                                                        &.exampleCommonContentTriennialWidth {
+                                                                            max-width: 31.95%;
+                                                                        }
+
+                                                                        &:first-child {
+                                                                            margin-top: 0px;
+                                                                        }
+                                                                    }
+                                                                }
                                                             }
                                                         }
                                                     }

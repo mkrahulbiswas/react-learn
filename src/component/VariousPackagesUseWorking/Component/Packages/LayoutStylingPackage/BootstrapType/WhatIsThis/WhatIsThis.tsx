@@ -1,6 +1,6 @@
 export const WhatIsThis = () => {
   return (
-    < >
+    <div className="vpu_pi_overview">
       <span className="singleLineText">This is <b>bootstrap class</b> package to manage the <b>class</b></span>
       <span className="singleLineText">To use this package you need to <b>install</b> the library by using command:
         <p><span className="npmCommand">npm install bootstrap</span></p>
@@ -10,6 +10,6 @@ export const WhatIsThis = () => {
         <p><a className="visitDoc" href="https://getbootstrap.com/" target="_blank">https://getbootstrap.com/</a></p>
       </span>
       <span className="singleLineText">Some example of <b>bootstrap class</b> is:</span>
-    </>
+    </div>
   )
 }

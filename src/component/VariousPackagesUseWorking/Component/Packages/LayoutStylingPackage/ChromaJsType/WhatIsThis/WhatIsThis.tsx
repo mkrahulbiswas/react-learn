@@ -1,6 +1,6 @@
 export const WhatIsThis = () => {
   return (
-    < >
+    <div className="vpu_pi_overview">
       <span className="singleLineText">This is <b>chroma js</b> package to manage the <b>color and color code</b></span>
       <span className="singleLineText">To use this package you need to <b>install</b> the library by using command:
         <p><span className="npmCommand">npm install --save-dev chroma-js @types/chroma-js</span></p>
@@ -11,6 +11,6 @@ export const WhatIsThis = () => {
         <p><a className="visitDoc" href="https://www.npmjs.com/package/chroma-js" target="_blank">https://www.npmjs.com/package/chroma-js</a></p>
       </span>
       <span className="singleLineText">Some example of <b>chroma js</b> is:</span>
-    </>
+    </div>
   )
 }

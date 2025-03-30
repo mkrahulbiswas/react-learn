@@ -1,6 +1,6 @@
 export const WhatIsThis = () => {
   return (
-    < >
+    <div className="vpu_pi_overview">
       <span className="singleLineText">This is <b>react vis</b> package to manage the <b>chart</b></span>
       <span className="singleLineText">To use this package you need to <b>install</b> the library by using command:
         <p><span className="npmCommand">npm i --save react-vis --force</span></p>
@@ -10,6 +10,6 @@ export const WhatIsThis = () => {
         <p><a className="visitDoc" href="https://github.com/uber/react-vis" target="_blank">https://github.com/uber/react-vis</a></p>
       </span>
       <span className="singleLineText">Some example of <b>react vis</b> is:</span>
-    </>
+    </div>
   )
 }

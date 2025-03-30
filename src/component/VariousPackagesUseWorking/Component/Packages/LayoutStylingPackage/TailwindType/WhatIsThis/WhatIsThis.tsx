@@ -1,6 +1,6 @@
 export const WhatIsThis = () => {
   return (
-    < >
+    <div className="vpu_pi_overview">
       <span className="singleLineText">This is <b>tailwind css</b> package to manage the <b>class</b></span>
       <span className="singleLineText">To use this package you need to <b>install</b> the library by using command:
         <p><span className="npmCommand">npm install tailwindcss @tailwindcss/vite</span></p>
@@ -14,6 +14,6 @@ export const WhatIsThis = () => {
         <p><a className="visitDoc" href="https://tailwindcss.com/docs/installation/using-vite" target="_blank">https://tailwindcss.com/docs/installation/using-vite</a></p>
       </span>
       <span className="singleLineText">Some example of <b>tailwind css</b> is:</span>
-    </>
+    </div>
   )
 }

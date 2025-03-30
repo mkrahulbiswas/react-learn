@@ -87,14 +87,14 @@ export const PackagesNavLink = ({ props }: any) => {
     <>
       {
         props.for == 'side' ?
-          <div className="vpuSideMenu">
-            <div className="vpuList">
+          <div className="vpu_ocop_sideMenu">
+            <div className="vpu_ocopsm_list">
               {
                 Object.values(routeData.packages.nested).map((valOne: any, keyOne: any) => {
                   const isExpanded = toggleMenu.checkBy === valOne.route;
                   return (
-                    <div className="vpuItem" key={keyOne}>
-                      <div className="vpuHeading">
+                    <div className="vpu_ocopsm_item" key={keyOne}>
+                      <div className="vpu_ocopsm_heading">
                         <span>
                           <a onClick={() => visitLink({ valOne, for: 'side' })}>{valOne.info.name}</a>
                           <label onClick={() => handelToggleMenu({ for: 'side', route: valOne.route })}>
@@ -104,7 +104,7 @@ export const PackagesNavLink = ({ props }: any) => {
                       </div>
                       {
                         isExpanded && (
-                          <div className={isExpanded ? "vpuLinks autoHeight" : "vpuLinks"}>
+                          <div className={isExpanded ? "vpu_ocopsm_links vpu_ocosm_autoHeight" : "vpu_ocosm_links"}>
                             {
                               Object.values(valOne.nested).map((valTwo: any, keyTwo: any) =>
                                 <a key={keyTwo}
@@ -124,17 +124,17 @@ export const PackagesNavLink = ({ props }: any) => {
       }
       {
         props.for == 'floating' ?
-          <div className="vpuFloatingMenu">
-            <div className="vpuTitle">
+          <div className="vpu_ocop_floatingMenu">
+            <div className="vpu_ocopfm_title">
               <span>Packages</span>
             </div>
-            <div className="vpuList">
+            <div className="vpu_ocopfm_list">
               {
                 Object.values(routeData.packages.nested).map((valOne: any, keyOne: any) => {
                   const isExpanded = toggleMenu.checkBy === valOne.route;
                   return (
-                    <div className="vpuItem" key={keyOne} style={isExpanded ? toggleMenu.customStyle : undefined}>
-                      <div className="vpuHeading">
+                    <div className="vpu_ocopfm_item" key={keyOne} style={isExpanded ? toggleMenu.customStyle : undefined}>
+                      <div className="vpu_ocopfm_heading">
                         <span>
                           <a onClick={() => visitLink({ valOne, for: 'floating' })}>{valOne.info.name}</a>
                           <label onClick={() => handelToggleMenu({ for: 'floating', route: valOne.route })}>
@@ -144,7 +144,7 @@ export const PackagesNavLink = ({ props }: any) => {
                       </div>
                       {
                         isExpanded && (
-                          <div className='vpuLinks'>
+                          <div className='vpu_ocopfm_links'>
                             {
                               Object.values(valOne.nested).map((valTwo: any, keyTwo: any) =>
                                 <a key={keyTwo}
@@ -164,31 +164,31 @@ export const PackagesNavLink = ({ props }: any) => {
       }
       {
         props.for == 'main' ?
-          < div className="vpuMainMenu">
-            <div className="vpuTitle">
+          < div className="vpu_ocop_mainMenu">
+            <div className="vpu_ocopmm_title">
               <span>Packages</span>
             </div>
-            <div className="vpuList">
+            <div className="vpu_ocopmm_list">
               {
                 Object.values(routeData.packages.nested).map((valOne: any, keyOne: any) => {
                   return (
-                    <div className="vpuItem" key={keyOne}>
-                      <div className="vpuHeading">
+                    <div className="vpu_ocopmm_item" key={keyOne}>
+                      <div className="vpu_ocopmm_heading">
                         <span>
                           <a onClick={() => visitLink({ valOne, for: 'main' })}>{valOne.info.name}</a>
                         </span>
-                        <div className="vpuAbout">
+                        <div className="vpu_ocopmm_about">
                           <p>{valOne.info.about}</p>
                         </div>
                       </div>
-                      <div className="vpuLinksMain">
+                      <div className="vpu_ocopmm_linksMain">
                         {
                           Object.values(valOne.nested).map((valTwo: any, keyTwo: any) =>
-                            <div className="vpuLinks" key={keyTwo} onClick={() => visitLink({ valOne, valTwo, for: 'main' })}>
-                              <div className="vpuLinksLeft">
+                            <div className="vpu_ocopmm_links" key={keyTwo} onClick={() => visitLink({ valOne, valTwo, for: 'main' })}>
+                              <div className="vpu_ocopmml_left">
                                 <span>{keyTwo + 1}</span>
                               </div>
-                              <div className="vpuLinksRight">
+                              <div className="vpu_ocopmml_right">
                                 <span>{valTwo.info.name}</span>
                                 <span>{valTwo.info.about}</span>
                               </div>

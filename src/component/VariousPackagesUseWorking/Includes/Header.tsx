@@ -2,12 +2,12 @@ import { Link } from "react-router";
 
 export default function Header() {
   return (
-    <div className="vpuNavMain">
-      <div className="vpuNavSub">
-        <div className="logo">
+    <div className="vpu_och_navMain">
+      <div className="vpu_och_navSub">
+        <div className="vpu_och_logo">
           <img src={window.location.origin + '/src/assets/logo.png'} alt="" />
         </div>
-        <div className="navLink">
+        <div className="vpu_och_navLink">
           <nav>
             <ul>
               <li>
@@ -65,7 +65,7 @@ export default function Header() {
             </ul>
           </nav>
         </div>
-        <div className="userInfo">
+        <div className="vpu_och_userInfo">
           {/* <span>Login</span> */}
         </div>
       </div>

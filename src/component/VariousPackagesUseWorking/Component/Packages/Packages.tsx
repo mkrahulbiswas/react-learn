@@ -29,30 +29,31 @@ export const Packages = () => {
     }
   }
   return (
-    <div className="vpuPackagesMain">
-      <div className="vpuPackagesSub">
+    <div className="vpu_oco_PackagesMain">
+      <div className="vpu_oco_PackagesSub">
         {
           lastSegment == routePaths.packages.route ?
             <PackagesNavLink props={{ for: 'main' }} /> :
             <PackagesNavLink props={{ for: 'side' }} />
         }
-        <div className="vpuPackagesFloating">
-          <div className="vpuFloatingTab">
+        <div className="vpu_oco_packagesFloating">
+          <div className="vpu_ocopf_tab">
             <label>
               <MdMenuOpen />
             </label>
-            <span className="vpuFloatingAction" onClick={() => handelQuickLink({ type: 'open' })}>
+            <span className="vpu_ocopf_action" onClick={() => handelQuickLink({ type: 'open' })}>
               <TbPackages />
             </span>
           </div>
-          <div className="vpuFloatingContent">
-            <div className="vpuFloatingLink" style={quickLinkToggleCss}>
-              <div className="vpuFloatingLinkTop">
+          <div className="vpu_ocopf_content">
+            <div className="vpu_ocopf_link" style={quickLinkToggleCss}>
+              <div className="vpu_ocopfl_top">
                 <span onClick={() => handelQuickLink({ type: 'close' })}>
-                  <IoCloseSharp />
+                  {/* <IoCloseSharp /> */}
+                  close
                 </span>
               </div>
-              <div className="vpuFloatingMiddle">
+              <div className="vpu_ocopfl_middle">
                 <PackagesNavLink props={{ for: 'floating', closeFloating: handelQuickLink }} />
               </div>
             </div>

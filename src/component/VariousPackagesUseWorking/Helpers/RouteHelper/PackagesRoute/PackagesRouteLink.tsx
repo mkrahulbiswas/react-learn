@@ -1,5 +1,5 @@
-import { Packages } from "../../../Component/Packages/Packages"
 import { PackagesContextProvider } from "../../../Context/PackagesContext";
+import { Packages } from "../../../Component/Packages/Packages"
 import { UiComponentPackage } from "../../../Component/Packages/UiComponentPackage/UiComponentPackage";
 import { BlueprintJsType } from "../../../Component/Packages/UiComponentPackage/BlueprintJsType/BlueprintJsType";
 import { SpectrumWebComponentsType } from "../../../Component/Packages/UiComponentPackage/SpectrumWebComponentsType/SpectrumWebComponentsType";
@@ -321,7 +321,7 @@ export const getPackagesRouteLink = (dataPass: any) => {
                 loader: () => getPackagesRouteLoader({
                     type: packagesRouteData.packages.nested.inputFormPackage.route,
                 }),
-                element: <LoaderProgressPackage />,
+                element: <InputFormPackage />,
                 children: [
                     {
                         path: useHelperHook({
@@ -334,7 +334,7 @@ export const getPackagesRouteLink = (dataPass: any) => {
                         loader: () => getPackagesRouteLoader({
                             type: packagesRouteData.packages.nested.inputFormPackage.nested.reactSelectType.route
                         }),
-                        element: <ReactTopLoadingBarType />
+                        element: <ReactSelectType />
                     }
                 ]
             },
@@ -348,7 +348,7 @@ export const getPackagesRouteLink = (dataPass: any) => {
                 loader: () => getPackagesRouteLoader({
                     type: packagesRouteData.packages.nested.someUsefulPackage.route
                 }),
-                element: <ReactCircularProgressbarType />,
+                element: <SomeUsefulPackage />,
                 children: [
                     {
                         path: useHelperHook({
@@ -361,7 +361,7 @@ export const getPackagesRouteLink = (dataPass: any) => {
                         loader: () => getPackagesRouteLoader({
                             type: packagesRouteData.packages.nested.someUsefulPackage.nested.fakerJsType.route
                         }),
-                        element: <RcProgressType />
+                        element: <FakerJsType />
                     },
                     {
                         path: useHelperHook({
@@ -374,7 +374,7 @@ export const getPackagesRouteLink = (dataPass: any) => {
                         loader: () => getPackagesRouteLoader({
                             type: packagesRouteData.packages.nested.someUsefulPackage.nested.logSymbolsType.route
                         }),
-                        element: <RespinnerType />
+                        element: <LogSymbolsType />
                     }
                 ]
             },
@@ -388,7 +388,7 @@ export const getPackagesRouteLink = (dataPass: any) => {
                 loader: () => getPackagesRouteLoader({
                     type: packagesRouteData.packages.nested.layoutStylingPackage.route
                 }),
-                element: <SpinnersReactType />,
+                element: <LayoutStylingPackage />,
                 children: [
                     {
                         path: useHelperHook({
@@ -401,7 +401,7 @@ export const getPackagesRouteLink = (dataPass: any) => {
                         loader: () => getPackagesRouteLoader({
                             type: packagesRouteData.packages.nested.layoutStylingPackage.nested.reactGridLayoutType.route
                         }),
-                        element: <ReactSpinnersType />
+                        element: <ReactGridLayoutType />
                     },
                     {
                         path: useHelperHook({
@@ -414,7 +414,7 @@ export const getPackagesRouteLink = (dataPass: any) => {
                         loader: () => getPackagesRouteLoader({
                             type: packagesRouteData.packages.nested.layoutStylingPackage.nested.chromaJsType.route
                         }),
-                        element: <ReactLoaderSpinnerType />
+                        element: <ChromaJsType />
                     },
                     {
                         path: useHelperHook({
@@ -427,7 +427,7 @@ export const getPackagesRouteLink = (dataPass: any) => {
                         loader: () => getPackagesRouteLoader({
                             type: packagesRouteData.packages.nested.layoutStylingPackage.nested.tailwindType.route
                         }),
-                        element: <LayoutStylingPackage />
+                        element: <TailwindType />
                     },
                     {
                         path: useHelperHook({
@@ -440,7 +440,7 @@ export const getPackagesRouteLink = (dataPass: any) => {
                         loader: () => getPackagesRouteLoader({
                             type: packagesRouteData.packages.nested.layoutStylingPackage.nested.styleBootstrapType.route
                         }),
-                        element: <ReactGridLayoutType />
+                        element: <StyleBootstrapType />
                     },
                     {
                         path: useHelperHook({
@@ -453,7 +453,7 @@ export const getPackagesRouteLink = (dataPass: any) => {
                         loader: () => getPackagesRouteLoader({
                             type: packagesRouteData.packages.nested.layoutStylingPackage.nested.styledComponentsType.route
                         }),
-                        element: <ChromaJsType />
+                        element: <StyledComponentsType />
                     }
                 ]
             },
@@ -467,7 +467,7 @@ export const getPackagesRouteLink = (dataPass: any) => {
                 loader: () => getPackagesRouteLoader({
                     type: packagesRouteData.packages.nested.animationPackage.route,
                 }),
-                element: <TailwindType />,
+                element: <AnimationPackage />,
                 children: [
                     {
                         path: useHelperHook({
@@ -480,7 +480,7 @@ export const getPackagesRouteLink = (dataPass: any) => {
                         loader: () => getPackagesRouteLoader({
                             type: packagesRouteData.packages.nested.animationPackage.nested.animeJsType.route
                         }),
-                        element: <StyleBootstrapType />
+                        element: <AnimeJsType />
                     },
                     {
                         path: useHelperHook({
@@ -493,7 +493,7 @@ export const getPackagesRouteLink = (dataPass: any) => {
                         loader: () => getPackagesRouteLoader({
                             type: packagesRouteData.packages.nested.animationPackage.nested.framerMotionType.route
                         }),
-                        element: <StyledComponentsType />
+                        element: <FramerMotionType />
                     },
                     {
                         path: useHelperHook({
@@ -506,7 +506,7 @@ export const getPackagesRouteLink = (dataPass: any) => {
                         loader: () => getPackagesRouteLoader({
                             type: packagesRouteData.packages.nested.animationPackage.nested.reactSpringType.route
                         }),
-                        element: <AnimationPackage />,
+                        element: <ReactSpringType />,
                     },
                     {
                         path: useHelperHook({
@@ -519,7 +519,7 @@ export const getPackagesRouteLink = (dataPass: any) => {
                         loader: () => getPackagesRouteLoader({
                             type: packagesRouteData.packages.nested.animationPackage.nested.animateType.route
                         }),
-                        element: <AnimeJsType />
+                        element: <AnimateType />
                     }
                 ]
             },
@@ -533,7 +533,7 @@ export const getPackagesRouteLink = (dataPass: any) => {
                 loader: () => getPackagesRouteLoader({
                     type: packagesRouteData.packages.nested.pageScrollPackage.route,
                 }),
-                element: <FramerMotionType />,
+                element: <PageScrollPackage />,
                 children: [
                     {
                         path: useHelperHook({
@@ -546,7 +546,7 @@ export const getPackagesRouteLink = (dataPass: any) => {
                         loader: () => getPackagesRouteLoader({
                             type: packagesRouteData.packages.nested.pageScrollPackage.nested.reactScrollType.route
                         }),
-                        element: <ReactSpringType />
+                        element: <ReactScrollType />
                     },
                     {
                         path: useHelperHook({
@@ -559,7 +559,7 @@ export const getPackagesRouteLink = (dataPass: any) => {
                         loader: () => getPackagesRouteLoader({
                             type: packagesRouteData.packages.nested.pageScrollPackage.nested.smoothScrollbarType.route
                         }),
-                        element: <AnimateType />
+                        element: <SmoothScrollbarType />
                     },
                     {
                         path: useHelperHook({
@@ -572,7 +572,7 @@ export const getPackagesRouteLink = (dataPass: any) => {
                         loader: () => getPackagesRouteLoader({
                             type: packagesRouteData.packages.nested.pageScrollPackage.nested.intersectionObserverType.route
                         }),
-                        element: <PageScrollPackage />,
+                        element: <IntersectionObserverType />,
                     }
                 ]
             },
@@ -586,7 +586,7 @@ export const getPackagesRouteLink = (dataPass: any) => {
                 loader: () => getPackagesRouteLoader({
                     type: packagesRouteData.packages.nested.tostAlertPackage.route,
                 }),
-                element: <ReactScrollType />,
+                element: <TostAlertPackage />,
                 children: [
                     {
                         path: useHelperHook({
@@ -599,7 +599,7 @@ export const getPackagesRouteLink = (dataPass: any) => {
                         loader: () => getPackagesRouteLoader({
                             type: packagesRouteData.packages.nested.tostAlertPackage.nested.toastifyType.route
                         }),
-                        element: <SmoothScrollbarType />
+                        element: <ToastifyType />
                     },
                     {
                         path: useHelperHook({
@@ -612,7 +612,7 @@ export const getPackagesRouteLink = (dataPass: any) => {
                         loader: () => getPackagesRouteLoader({
                             type: packagesRouteData.packages.nested.tostAlertPackage.nested.sweetAlertType.route
                         }),
-                        element: <IntersectionObserverType />
+                        element: <SweetAlertType />
                     }
                 ]
             },
@@ -626,7 +626,7 @@ export const getPackagesRouteLink = (dataPass: any) => {
                 loader: () => getPackagesRouteLoader({
                     type: packagesRouteData.packages.nested.dateTimePackage.route,
                 }),
-                element: <SomeUsefulPackage />,
+                element: <DateTimePackage />,
                 children: [
                     {
                         path: useHelperHook({
@@ -639,7 +639,7 @@ export const getPackagesRouteLink = (dataPass: any) => {
                         loader: () => getPackagesRouteLoader({
                             type: packagesRouteData.packages.nested.dateTimePackage.nested.luxonType.route
                         }),
-                        element: <FakerJsType />
+                        element: <LuxonType />
                     },
                     {
                         path: useHelperHook({
@@ -652,7 +652,7 @@ export const getPackagesRouteLink = (dataPass: any) => {
                         loader: () => getPackagesRouteLoader({
                             type: packagesRouteData.packages.nested.dateTimePackage.nested.momentType.route
                         }),
-                        element: <LogSymbolsType />
+                        element: <MomentType />
                     }
                 ]
             },
@@ -666,7 +666,7 @@ export const getPackagesRouteLink = (dataPass: any) => {
                 loader: () => getPackagesRouteLoader({
                     type: packagesRouteData.packages.nested.paginationPackage.route,
                 }),
-                element: <TostAlertPackage />,
+                element: <PaginationPackage />,
                 children: [
                     {
                         path: useHelperHook({
@@ -679,7 +679,7 @@ export const getPackagesRouteLink = (dataPass: any) => {
                         loader: () => getPackagesRouteLoader({
                             type: packagesRouteData.packages.nested.paginationPackage.nested.reactPaginateType.route
                         }),
-                        element: <ToastifyType />
+                        element: <ReactPaginateType />
                     }
                 ]
             },
@@ -693,7 +693,7 @@ export const getPackagesRouteLink = (dataPass: any) => {
                 loader: () => getPackagesRouteLoader({
                     type: packagesRouteData.packages.nested.loaderProgressPackage.route
                 }),
-                element: <SweetAlertType />,
+                element: <LoaderProgressPackage />,
                 children: [
                     {
                         path: useHelperHook({
@@ -706,7 +706,7 @@ export const getPackagesRouteLink = (dataPass: any) => {
                         loader: () => getPackagesRouteLoader({
                             type: packagesRouteData.packages.nested.loaderProgressPackage.nested.reactTopLoadingBarType.route
                         }),
-                        element: <DateTimePackage />,
+                        element: <ReactTopLoadingBarType />,
                     },
                     {
                         path: useHelperHook({
@@ -719,7 +719,7 @@ export const getPackagesRouteLink = (dataPass: any) => {
                         loader: () => getPackagesRouteLoader({
                             type: packagesRouteData.packages.nested.loaderProgressPackage.nested.reactCircularProgressbarType.route
                         }),
-                        element: < LuxonType />
+                        element: <ReactCircularProgressbarType />
                     },
                     {
                         path: useHelperHook({
@@ -732,7 +732,7 @@ export const getPackagesRouteLink = (dataPass: any) => {
                         loader: () => getPackagesRouteLoader({
                             type: packagesRouteData.packages.nested.loaderProgressPackage.nested.rcProgressType.route
                         }),
-                        element: < MomentType />
+                        element: <RcProgressType />
                     },
                     {
                         path: useHelperHook({
@@ -745,7 +745,7 @@ export const getPackagesRouteLink = (dataPass: any) => {
                         loader: () => getPackagesRouteLoader({
                             type: packagesRouteData.packages.nested.loaderProgressPackage.nested.respinnerType.route
                         }),
-                        element: <PaginationPackage />,
+                        element: <RespinnerType />,
                     },
                     {
                         path: useHelperHook({
@@ -758,7 +758,7 @@ export const getPackagesRouteLink = (dataPass: any) => {
                         loader: () => getPackagesRouteLoader({
                             type: packagesRouteData.packages.nested.loaderProgressPackage.nested.spinnersReactType.route
                         }),
-                        element: <ReactPaginateType />
+                        element: <SpinnersReactType />
                     },
                     {
                         path: useHelperHook({
@@ -771,7 +771,7 @@ export const getPackagesRouteLink = (dataPass: any) => {
                         loader: () => getPackagesRouteLoader({
                             type: packagesRouteData.packages.nested.loaderProgressPackage.nested.reactSpinnersType.route
                         }),
-                        element: <IconPackage />,
+                        element: <ReactSpinnersType />,
                     },
                     {
                         path: useHelperHook({
@@ -784,7 +784,7 @@ export const getPackagesRouteLink = (dataPass: any) => {
                         loader: () => getPackagesRouteLoader({
                             type: packagesRouteData.packages.nested.loaderProgressPackage.nested.reactLoaderSpinnerType.route
                         }),
-                        element: <ReactIconType />
+                        element: <ReactLoaderSpinnerType />
                     }
                 ]
             },
@@ -798,7 +798,7 @@ export const getPackagesRouteLink = (dataPass: any) => {
                 loader: () => getPackagesRouteLoader({
                     type: packagesRouteData.packages.nested.iconPackage.route,
                 }),
-                element: <InputFormPackage />,
+                element: <IconPackage />,
                 children: [
                     {
                         path: useHelperHook({
@@ -811,7 +811,7 @@ export const getPackagesRouteLink = (dataPass: any) => {
                         loader: () => getPackagesRouteLoader({
                             type: packagesRouteData.packages.nested.iconPackage.nested.reactIconType.route
                         }),
-                        element: <ReactSelectType />
+                        element: <ReactIconType />
                     }
                 ]
             }

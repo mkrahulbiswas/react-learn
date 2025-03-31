@@ -9,9 +9,11 @@ export const UiComponentPackage = () => {
       {
         lastSegment == loaderData.route ?
           <div className="vpu_ocopl_top">
-            <div className="vpu_ocoplt_main">
+            <div className="vpu_ocoplt_heading">
+              <span>{loaderData.info.name}</span>
             </div>
-            <div className="vpu_ocoplt_sub">
+            <div className="vpu_ocoplt_content">
+              <span>{loaderData.info.about}</span>
             </div>
           </div> : null
       }

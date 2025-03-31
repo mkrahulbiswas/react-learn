@@ -8,7 +8,7 @@ export const useHelperHook = (params: any) => {
       for (let i = 0; i < params.data.length; i++) {
         url += params.data[i] + '/'
       }
-      finalData = url.slice(0, -1)
+      finalData = url.replace(/\/+$/, "")
     }
   }
   return finalData;

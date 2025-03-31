@@ -29,14 +29,14 @@ export const Packages = () => {
     }
   }
   return (
-    <div className="vpu_oco_PackagesMain">
-      <div className="vpu_oco_PackagesSub">
+    <div className="vpu_oco_packagesMain">
+      <div className="vpu_oco_packagesSub">
         {
           lastSegment == routePaths.packages.route ?
             <PackagesNavLink props={{ for: 'main' }} /> :
             <PackagesNavLink props={{ for: 'side' }} />
         }
-        <div className="vpu_oco_packagesFloating">
+        <div className="vpu_ocop_floating">
           <div className="vpu_ocopf_tab">
             <label>
               <MdMenuOpen />

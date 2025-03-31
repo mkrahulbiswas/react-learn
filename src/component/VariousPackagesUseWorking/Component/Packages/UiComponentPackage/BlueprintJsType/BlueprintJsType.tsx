@@ -8,21 +8,21 @@ import "@blueprintjs/datetime2/lib/css/blueprint-datetime2.css";
 import { useLoaderData } from "react-router";
 
 export const BlueprintJsType = () => {
-  let loaderData = useLoaderData();
+  const loaderData = useLoaderData();
   return (
-    <div className="vpu_PackagesInfo">
-      <div className="vpu_pi_main">
-        <div className="vpu_pi_sub">
-          <div className="vpu_pi_top">
-            <div className="vpu_pi_heading">
+    <div className="vpu_ocoplm_info">
+      <div className="vpu_ocoplmi_main">
+        <div className="vpu_ocoplmi_sub">
+          <div className="vpu_ocoplmi_top">
+            <div className="vpu_ocoplmi_heading">
               <span>{loaderData.info.name}</span>
-              <p>{loaderData.info.name}</p>
+              <p>{loaderData.info.about}</p>
             </div>
           </div>
-          <div className="vpu_pi_middle">
+          <div className="vpu_ocoplmi_middle">
             <WhatIsThis />
           </div>
-          <div className="vpu_pi_bottom">
+          <div className="vpu_ocoplmi_bottom">
             <HowToUse />
           </div>
         </div>

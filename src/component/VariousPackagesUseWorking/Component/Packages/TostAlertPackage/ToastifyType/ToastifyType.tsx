@@ -1,15 +1,18 @@
 import { HowToUse } from "./HowToUse/HowToUse"
 import { WhatIsThis } from "./WhatIsThis/WhatIsThis"
 import 'react-toastify/dist/ReactToastify.css';
+import { useLoaderData } from "react-router";
 
 export const ToastifyType = () => {
+  let loaderData = useLoaderData();
   return (
     <div className="vpu_PackagesInfo">
       <div className="vpu_pi_main">
         <div className="vpu_pi_sub">
           <div className="vpu_pi_top">
             <div className="vpu_pi_heading">
-              <span>Toastify</span>
+              <span>{loaderData.info.name}</span>
+              <p>{loaderData.info.about}</p>
             </div>
           </div>
           <div className="vpu_pi_middle">

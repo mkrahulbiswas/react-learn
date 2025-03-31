@@ -1,4 +1,4 @@
-export const useHelper = (params: any) => {
+export const useHelperHook = (params: any) => {
   let finalData: any = []
   if (params.type === 'routeConcatenate') {
     if (params.data.length == 1) {

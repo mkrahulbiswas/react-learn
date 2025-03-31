@@ -1,9 +1,9 @@
-import { Link, Navigate, useLocation, useNavigate } from "react-router"
+import { useLocation, useNavigate } from "react-router"
 import { RouteContext } from "../../Context/RouteContext"
 import { useContext, useEffect, useState } from "react"
 import { IoMdAdd, IoMdClose } from "react-icons/io"
-import { getRouteData } from "../../Helpers/RouteHelper"
-import { useHelper } from "../../Hooks/useHelper"
+import { useHelperHook } from "../../Hooks/useHelperHook"
+import { getPackagesRouteData } from "../../Helpers/RouteHelper/PackagesRoute/PackagesRouteData"
 
 export const PackagesNavLink = ({ props }: any) => {
   const [toggleMenu, setToggleMenu] = useState({
@@ -15,7 +15,7 @@ export const PackagesNavLink = ({ props }: any) => {
   const location = useLocation();
   const navigate = useNavigate()
   const { routePaths }: any = useContext(RouteContext)
-  const routeData = getRouteData({})
+  const routeData = getPackagesRouteData({})
   const handelToggleMenu = (data: any) => {
     if (toggleMenu.checkBy == data.route) {
       setToggleMenu({
@@ -45,7 +45,7 @@ export const PackagesNavLink = ({ props }: any) => {
     if (data.for === 'floating') {
       props.closeFloating('close')
     }
-    navigate(useHelper({
+    navigate(useHelperHook({
       type: 'routeConcatenate', data: [
         routePaths.packages.route,
         data.valOne?.route != undefined ? data.valOne.route : '',

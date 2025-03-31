@@ -2,11 +2,28 @@ import "./VariousPackagesUseWorking.scss";
 import { createBrowserRouter, RouterProvider } from "react-router";
 import { CommonContextProvider } from "./Context/CommonContext";
 import { RouteContextProvider } from "./Context/RouteContext";
-import { getRouteLink } from "./Helpers/RouteHelper";
+import { Layout } from "./Layout/Layout";
+import { ErrorPage } from "./Component/ErrorPage/ErrorPage";
+import { Home } from "./Component/Home/Home";
+import { getPackagesRouteLink } from "./Helpers/RouteHelper/PackagesRoute/PackagesRouteLink";
 
 export const VariousPackagesUseWorking = () => {
+  const packagesRouteLink: any = getPackagesRouteLink({})
   const router = createBrowserRouter([
-    getRouteLink({})
+    {
+      path: '/',
+      element: <Layout />,
+      errorElement: <ErrorPage />,
+      children: [
+        {
+          path: '/',
+          element: <Home />,
+        },
+        {
+          ...packagesRouteLink
+        }
+      ]
+    }
   ])
   return (
     <div className="vps">

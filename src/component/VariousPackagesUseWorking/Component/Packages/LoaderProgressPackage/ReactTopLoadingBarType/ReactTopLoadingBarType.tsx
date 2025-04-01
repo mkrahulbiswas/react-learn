@@ -16,7 +16,7 @@ export const ReactTopLoadingBarType = () => {
             </div>
           </div>
           <div className="vpu_ocoplmi_middle">
-            <WhatIsThis />
+            <WhatIsThis propsPass={{ loaderData }} />
           </div>
           <div className="vpu_ocoplmi_bottom">
             <LoadingBarContainer>

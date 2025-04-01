@@ -1,4 +1,4 @@
-export const WhatIsThis = () => {
+export const WhatIsThis = ({ propsPass }: any) => {
   return (
     <div className="vpu_pi_overview">
       <span className="singleLineText">This is <b>fluent ui</b> package to manage the <b>components & other feature</b></span>

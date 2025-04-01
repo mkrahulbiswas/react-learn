@@ -1,4 +1,4 @@
-export const WhatIsThis = () => {
+export const WhatIsThis = ({ propsPass }: any) => {
   return (
     <div className="vpu_pi_overview">
       <span className="singleLineText">There a new updated version of moment js is <b>luxon</b>. To use it need to install:

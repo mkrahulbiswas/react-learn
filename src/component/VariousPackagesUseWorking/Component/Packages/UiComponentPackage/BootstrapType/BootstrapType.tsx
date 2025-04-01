@@ -17,7 +17,7 @@ export const BootstrapType = () => {
             </div>
           </div>
           <div className="vpu_ocoplmi_middle">
-            <WhatIsThis />
+            <WhatIsThis propsPass={{ loaderData }} />
           </div>
           <div className="vpu_ocoplmi_bottom">
             <HowToUse />

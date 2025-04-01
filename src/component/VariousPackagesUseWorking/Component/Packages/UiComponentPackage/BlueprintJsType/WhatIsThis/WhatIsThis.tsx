@@ -1,8 +1,36 @@
-export const WhatIsThis = () => {
+export const WhatIsThis = ({ propsPass }: any) => {
+  const { loaderData } = propsPass
   return (
-    <div className="vpu_pi_overview">
-      <div className="vpu_pio_overview">
-
+    <div className="vpu_ocoplmim_overview">
+      <div className="vpu_ocoplmimo_main">
+        <div className="vpu_ocoplmimo_sub">
+          <div className="vpu_ocoplmimo_tab">
+            <div className="vpu_ocoplmimot_content">
+              <div className="vpu_ocoplmimot_heading">
+                <span>various packages of <b>{loaderData.info.name}</b></span>
+              </div>
+              <div className="vpu_ocoplmimot_list">
+                <ul>
+                  <li>
+                    <span>Core</span>
+                  </li>
+                  <li>
+                    <span>Icons</span>
+                  </li>
+                  <li>
+                    <span>Datetime2</span>
+                  </li>
+                  <li>
+                    <span>Select</span>
+                  </li>
+                  <li>
+                    <span>Table</span>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
       <span className="singleLineText">This is <b>blueprint js</b> package to manage the <b>components & other feature</b></span>
       <span className="singleLineText">To use this package you need to <b>install</b> the library by using command:

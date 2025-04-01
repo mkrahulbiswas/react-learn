@@ -1,4 +1,4 @@
-export const WhatIsThis = () => {
+export const WhatIsThis = ({ propsPass }: any) => {
   return (
     <div className="vpu_pi_overview">
       <span className="singleLineText">This is <b>styled component</b> package to manage the <b>css</b></span>

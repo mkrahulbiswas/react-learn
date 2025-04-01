@@ -6,9 +6,14 @@ import "@blueprintjs/table/lib/css/table.css";
 import "@blueprintjs/select/lib/css/blueprint-select.css";
 import "@blueprintjs/datetime2/lib/css/blueprint-datetime2.css";
 import { useLoaderData } from "react-router";
+import { useState } from "react";
 
 export const BlueprintJsType = () => {
   const loaderData = useLoaderData();
+  const [targetedTab, setTargetedTab] = useState('core');
+  const handelTargetedTab = (to: any) => {
+    setTargetedTab(to)
+  }
   return (
     <div className="vpu_ocoplm_info">
       <div className="vpu_ocoplmi_main">
@@ -20,10 +25,42 @@ export const BlueprintJsType = () => {
             </div>
           </div>
           <div className="vpu_ocoplmi_middle">
-            <WhatIsThis propsPass={{ loaderData }} />
+            <div className="vpu_ocoplmim_overview">
+              <div className="vpu_ocoplmimo_main">
+                <div className="vpu_ocoplmimo_sub">
+                  <div className="vpu_ocoplmimo_tab">
+                    <div className="vpu_ocoplmimot_menu">
+                      <div className="vpu_ocoplmimot_heading">
+                        <span>various packages of <b>{loaderData.info.name}</b></span>
+                      </div>
+                      <div className="vpu_ocoplmimot_list">
+                        <ul>
+                          {
+                            Object.values(loaderData.packagesUsed).map((val: any, key: any) => {
+                              return (
+                                <li key={key}>
+                                  <span onClick={() => handelTargetedTab(val.type)} className={targetedTab === val.type ? 'vpu_ocoplmimot_hover' : ''}>{val.name}</span>
+                                </li>
+                              )
+                            })
+                          }
+                        </ul>
+                      </div>
+                    </div>
+                    <div className="vpu_ocoplmimot_content">
+                      <div className="vpu_ocoplmimotc_about">
+                        <WhatIsThis propsPass={{ loaderData, targetedTab }} />
+                      </div>
+                      <div className="vpu_ocoplmimotc_example">
+                        <HowToUse propsPass={{ loaderData, targetedTab }} />
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
           <div className="vpu_ocoplmi_bottom">
-            <HowToUse />
           </div>
         </div>
       </div>

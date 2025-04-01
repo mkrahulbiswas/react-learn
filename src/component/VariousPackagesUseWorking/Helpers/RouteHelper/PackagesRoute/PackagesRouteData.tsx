@@ -80,10 +80,38 @@ export const getPackagesRouteData = (dataPass: any) => {
                                 name: 'Blueprint Js',
                                 about: "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Magni inventore repudiandae veniam, neque nemo minus quam beatae quis illo non quisquam pariatur harum corporis veritatis perferendis autem quas! Libero, voluptatibus."
                             },
+                            packagesUsed: {
+                                core: {
+                                    type: 'core',
+                                    name: 'Core',
+                                },
+                                icons: {
+                                    type: 'icons',
+                                    name: 'Icons',
+                                },
+                                datetime2: {
+                                    type: 'datetime2',
+                                    name: 'Datetime2',
+                                },
+                                select: {
+                                    type: 'select',
+                                    name: 'Select',
+                                },
+                                table: {
+                                    type: 'table',
+                                    name: 'Table',
+                                },
+                            },
                             component: <BlueprintJsType />
                         },
                         spectrumWebComponentsType: {
                             route: 'spectrum-web-components-type',
+                            packagesUsed: {
+                                core: {
+                                    type: 'core',
+                                    name: 'Core',
+                                },
+                            },
                             info: {
                                 name: 'Spectrum Web Components',
                                 about: "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Magni inventore repudiandae veniam, neque nemo minus quam beatae quis illo non quisquam pariatur harum corporis veritatis perferendis autem quas! Libero, voluptatibus."
@@ -92,6 +120,12 @@ export const getPackagesRouteData = (dataPass: any) => {
                         },
                         chakraUiType: {
                             route: 'chakra-ui-type',
+                            packagesUsed: {
+                                core: {
+                                    type: 'core',
+                                    name: 'Core',
+                                },
+                            },
                             info: {
                                 name: 'Chakra Ui',
                                 about: "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Magni inventore repudiandae veniam, neque nemo minus quam beatae quis illo non quisquam pariatur harum corporis veritatis perferendis autem quas! Libero, voluptatibus."
@@ -100,6 +134,12 @@ export const getPackagesRouteData = (dataPass: any) => {
                         },
                         fluentUiType: {
                             route: 'fluent-ui-type',
+                            packagesUsed: {
+                                core: {
+                                    type: 'core',
+                                    name: 'Core',
+                                },
+                            },
                             info: {
                                 name: 'Fluent Ui',
                                 about: "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Magni inventore repudiandae veniam, neque nemo minus quam beatae quis illo non quisquam pariatur harum corporis veritatis perferendis autem quas! Libero, voluptatibus."
@@ -108,6 +148,12 @@ export const getPackagesRouteData = (dataPass: any) => {
                         },
                         semanticUiReactType: {
                             route: 'semantic-ui-react-type',
+                            packagesUsed: {
+                                core: {
+                                    type: 'core',
+                                    name: 'Core',
+                                },
+                            },
                             info: {
                                 name: 'Semantic Ui React',
                                 about: "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Magni inventore repudiandae veniam, neque nemo minus quam beatae quis illo non quisquam pariatur harum corporis veritatis perferendis autem quas! Libero, voluptatibus."
@@ -116,6 +162,12 @@ export const getPackagesRouteData = (dataPass: any) => {
                         },
                         antDesignType: {
                             route: 'ant-design-type',
+                            packagesUsed: {
+                                core: {
+                                    type: 'core',
+                                    name: 'Core',
+                                },
+                            },
                             info: {
                                 name: 'Ant Design',
                                 about: "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Magni inventore repudiandae veniam, neque nemo minus quam beatae quis illo non quisquam pariatur harum corporis veritatis perferendis autem quas! Libero, voluptatibus."
@@ -124,6 +176,12 @@ export const getPackagesRouteData = (dataPass: any) => {
                         },
                         materialUiType: {
                             route: 'material-ui-type',
+                            packagesUsed: {
+                                core: {
+                                    type: 'core',
+                                    name: 'Core',
+                                },
+                            },
                             info: {
                                 name: 'Material Ui',
                                 about: "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Magni inventore repudiandae veniam, neque nemo minus quam beatae quis illo non quisquam pariatur harum corporis veritatis perferendis autem quas! Libero, voluptatibus."
@@ -132,6 +190,12 @@ export const getPackagesRouteData = (dataPass: any) => {
                         },
                         primereactType: {
                             route: 'primereact-type',
+                            packagesUsed: {
+                                core: {
+                                    type: 'core',
+                                    name: 'Core',
+                                },
+                            },
                             info: {
                                 name: 'Primereact',
                                 about: "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Magni inventore repudiandae veniam, neque nemo minus quam beatae quis illo non quisquam pariatur harum corporis veritatis perferendis autem quas! Libero, voluptatibus."
@@ -140,6 +204,12 @@ export const getPackagesRouteData = (dataPass: any) => {
                         },
                         uiBootstrap: {
                             route: 'ui-bootstrap',
+                            packagesUsed: {
+                                core: {
+                                    type: 'core',
+                                    name: 'Core',
+                                },
+                            },
                             info: {
                                 name: 'Ui Bootstra',
                                 about: "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Magni inventore repudiandae veniam, neque nemo minus quam beatae quis illo non quisquam pariatur harum corporis veritatis perferendis autem quas! Libero, voluptatibus."
@@ -158,6 +228,12 @@ export const getPackagesRouteData = (dataPass: any) => {
                     nested: {
                         apexChartsType: {
                             route: 'apex-charts-type',
+                            packagesUsed: {
+                                core: {
+                                    type: 'core',
+                                    name: 'Core',
+                                },
+                            },
                             info: {
                                 name: 'Apex Charts',
                                 about: "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Magni inventore repudiandae veniam, neque nemo minus quam beatae quis illo non quisquam pariatur harum corporis veritatis perferendis autem quas! Libero, voluptatibus."
@@ -166,6 +242,12 @@ export const getPackagesRouteData = (dataPass: any) => {
                         },
                         nivoType: {
                             route: 'nivo-type',
+                            packagesUsed: {
+                                core: {
+                                    type: 'core',
+                                    name: 'Core',
+                                },
+                            },
                             info: {
                                 name: 'Nivo',
                                 about: "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Magni inventore repudiandae veniam, neque nemo minus quam beatae quis illo non quisquam pariatur harum corporis veritatis perferendis autem quas! Libero, voluptatibus."
@@ -174,6 +256,12 @@ export const getPackagesRouteData = (dataPass: any) => {
                         },
                         highchartsType: {
                             route: 'highcharts-type',
+                            packagesUsed: {
+                                core: {
+                                    type: 'core',
+                                    name: 'Core',
+                                },
+                            },
                             info: {
                                 name: 'Highcharts',
                                 about: "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Magni inventore repudiandae veniam, neque nemo minus quam beatae quis illo non quisquam pariatur harum corporis veritatis perferendis autem quas! Libero, voluptatibus."
@@ -182,6 +270,12 @@ export const getPackagesRouteData = (dataPass: any) => {
                         },
                         googleChartsType: {
                             route: 'google-charts-type',
+                            packagesUsed: {
+                                core: {
+                                    type: 'core',
+                                    name: 'Core',
+                                },
+                            },
                             info: {
                                 name: 'Google Charts',
                                 about: "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Magni inventore repudiandae veniam, neque nemo minus quam beatae quis illo non quisquam pariatur harum corporis veritatis perferendis autem quas! Libero, voluptatibus."
@@ -190,6 +284,12 @@ export const getPackagesRouteData = (dataPass: any) => {
                         },
                         victoryType: {
                             route: 'victory-type',
+                            packagesUsed: {
+                                core: {
+                                    type: 'core',
+                                    name: 'Core',
+                                },
+                            },
                             info: {
                                 name: 'Victory',
                                 about: "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Magni inventore repudiandae veniam, neque nemo minus quam beatae quis illo non quisquam pariatur harum corporis veritatis perferendis autem quas! Libero, voluptatibus."
@@ -198,6 +298,12 @@ export const getPackagesRouteData = (dataPass: any) => {
                         },
                         rechartsType: {
                             route: 'recharts-type',
+                            packagesUsed: {
+                                core: {
+                                    type: 'core',
+                                    name: 'Core',
+                                },
+                            },
                             info: {
                                 name: 'Recharts',
                                 about: "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Magni inventore repudiandae veniam, neque nemo minus quam beatae quis illo non quisquam pariatur harum corporis veritatis perferendis autem quas! Libero, voluptatibus."
@@ -206,6 +312,12 @@ export const getPackagesRouteData = (dataPass: any) => {
                         },
                         reactChartJsType: {
                             route: 'react-chart-js-type',
+                            packagesUsed: {
+                                core: {
+                                    type: 'core',
+                                    name: 'Core',
+                                },
+                            },
                             info: {
                                 name: 'React Chart Js',
                                 about: "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Magni inventore repudiandae veniam, neque nemo minus quam beatae quis illo non quisquam pariatur harum corporis veritatis perferendis autem quas! Libero, voluptatibus."
@@ -224,6 +336,12 @@ export const getPackagesRouteData = (dataPass: any) => {
                     nested: {
                         reactTopLoadingBarType: {
                             route: 'react-top-loading-bar-type',
+                            packagesUsed: {
+                                core: {
+                                    type: 'core',
+                                    name: 'Core',
+                                },
+                            },
                             info: {
                                 name: 'React Top Loading Bar',
                                 about: "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Magni inventore repudiandae veniam, neque nemo minus quam beatae quis illo non quisquam pariatur harum corporis veritatis perferendis autem quas! Libero, voluptatibus."
@@ -232,6 +350,12 @@ export const getPackagesRouteData = (dataPass: any) => {
                         },
                         reactCircularProgressbarType: {
                             route: 'react-circular-progressbar-type',
+                            packagesUsed: {
+                                core: {
+                                    type: 'core',
+                                    name: 'Core',
+                                },
+                            },
                             info: {
                                 name: 'React Circular Progressbar',
                                 about: "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Magni inventore repudiandae veniam, neque nemo minus quam beatae quis illo non quisquam pariatur harum corporis veritatis perferendis autem quas! Libero, voluptatibus."
@@ -240,6 +364,12 @@ export const getPackagesRouteData = (dataPass: any) => {
                         },
                         rcProgressType: {
                             route: 'rc-progress-type',
+                            packagesUsed: {
+                                core: {
+                                    type: 'core',
+                                    name: 'Core',
+                                },
+                            },
                             info: {
                                 name: 'RC Progress',
                                 about: "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Magni inventore repudiandae veniam, neque nemo minus quam beatae quis illo non quisquam pariatur harum corporis veritatis perferendis autem quas! Libero, voluptatibus."
@@ -248,6 +378,12 @@ export const getPackagesRouteData = (dataPass: any) => {
                         },
                         respinnerType: {
                             route: 'respinner-type',
+                            packagesUsed: {
+                                core: {
+                                    type: 'core',
+                                    name: 'Core',
+                                },
+                            },
                             info: {
                                 name: 'Respinner',
                                 about: "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Magni inventore repudiandae veniam, neque nemo minus quam beatae quis illo non quisquam pariatur harum corporis veritatis perferendis autem quas! Libero, voluptatibus."
@@ -256,6 +392,12 @@ export const getPackagesRouteData = (dataPass: any) => {
                         },
                         spinnersReactType: {
                             route: 'spinners-react-type',
+                            packagesUsed: {
+                                core: {
+                                    type: 'core',
+                                    name: 'Core',
+                                },
+                            },
                             info: {
                                 name: 'Spinners React',
                                 about: "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Magni inventore repudiandae veniam, neque nemo minus quam beatae quis illo non quisquam pariatur harum corporis veritatis perferendis autem quas! Libero, voluptatibus."
@@ -264,6 +406,12 @@ export const getPackagesRouteData = (dataPass: any) => {
                         },
                         reactSpinnersType: {
                             route: 'react-spinners-type',
+                            packagesUsed: {
+                                core: {
+                                    type: 'core',
+                                    name: 'Core',
+                                },
+                            },
                             info: {
                                 name: 'React Spinners',
                                 about: "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Magni inventore repudiandae veniam, neque nemo minus quam beatae quis illo non quisquam pariatur harum corporis veritatis perferendis autem quas! Libero, voluptatibus."
@@ -272,6 +420,12 @@ export const getPackagesRouteData = (dataPass: any) => {
                         },
                         reactLoaderSpinnerType: {
                             route: 'react-loader-spinner-type',
+                            packagesUsed: {
+                                core: {
+                                    type: 'core',
+                                    name: 'Core',
+                                },
+                            },
                             info: {
                                 name: 'React Loader Spinner',
                                 about: "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Magni inventore repudiandae veniam, neque nemo minus quam beatae quis illo non quisquam pariatur harum corporis veritatis perferendis autem quas! Libero, voluptatibus."
@@ -290,6 +444,12 @@ export const getPackagesRouteData = (dataPass: any) => {
                     nested: {
                         reactGridLayoutType: {
                             route: 'react-grid-layout-type',
+                            packagesUsed: {
+                                core: {
+                                    type: 'core',
+                                    name: 'Core',
+                                },
+                            },
                             info: {
                                 name: 'React Grid Layout',
                                 about: "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Magni inventore repudiandae veniam, neque nemo minus quam beatae quis illo non quisquam pariatur harum corporis veritatis perferendis autem quas! Libero, voluptatibus."
@@ -298,6 +458,12 @@ export const getPackagesRouteData = (dataPass: any) => {
                         },
                         chromaJsType: {
                             route: 'chromaJs-type',
+                            packagesUsed: {
+                                core: {
+                                    type: 'core',
+                                    name: 'Core',
+                                },
+                            },
                             info: {
                                 name: 'Chroma Js',
                                 about: "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Magni inventore repudiandae veniam, neque nemo minus quam beatae quis illo non quisquam pariatur harum corporis veritatis perferendis autem quas! Libero, voluptatibus."
@@ -306,6 +472,12 @@ export const getPackagesRouteData = (dataPass: any) => {
                         },
                         tailwindType: {
                             route: 'tailwind-type',
+                            packagesUsed: {
+                                core: {
+                                    type: 'core',
+                                    name: 'Core',
+                                },
+                            },
                             info: {
                                 name: 'Tailwind',
                                 about: "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Magni inventore repudiandae veniam, neque nemo minus quam beatae quis illo non quisquam pariatur harum corporis veritatis perferendis autem quas! Libero, voluptatibus."
@@ -314,6 +486,12 @@ export const getPackagesRouteData = (dataPass: any) => {
                         },
                         styleBootstrapType: {
                             route: 'style-bootstrap-type',
+                            packagesUsed: {
+                                core: {
+                                    type: 'core',
+                                    name: 'Core',
+                                },
+                            },
                             info: {
                                 name: 'Style Bootstrap',
                                 about: "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Magni inventore repudiandae veniam, neque nemo minus quam beatae quis illo non quisquam pariatur harum corporis veritatis perferendis autem quas! Libero, voluptatibus."
@@ -322,6 +500,12 @@ export const getPackagesRouteData = (dataPass: any) => {
                         },
                         styledComponentsType: {
                             route: 'styled-components-type',
+                            packagesUsed: {
+                                core: {
+                                    type: 'core',
+                                    name: 'Core',
+                                },
+                            },
                             info: {
                                 name: 'Styled Components',
                                 about: "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Magni inventore repudiandae veniam, neque nemo minus quam beatae quis illo non quisquam pariatur harum corporis veritatis perferendis autem quas! Libero, voluptatibus."
@@ -340,6 +524,12 @@ export const getPackagesRouteData = (dataPass: any) => {
                     nested: {
                         animeJsType: {
                             route: 'anime-js-type',
+                            packagesUsed: {
+                                core: {
+                                    type: 'core',
+                                    name: 'Core',
+                                },
+                            },
                             info: {
                                 name: 'Anime Js',
                                 about: "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Magni inventore repudiandae veniam, neque nemo minus quam beatae quis illo non quisquam pariatur harum corporis veritatis perferendis autem quas! Libero, voluptatibus."
@@ -348,6 +538,12 @@ export const getPackagesRouteData = (dataPass: any) => {
                         },
                         framerMotionType: {
                             route: 'framer-motion-type',
+                            packagesUsed: {
+                                core: {
+                                    type: 'core',
+                                    name: 'Core',
+                                },
+                            },
                             info: {
                                 name: 'Framer Motion',
                                 about: "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Magni inventore repudiandae veniam, neque nemo minus quam beatae quis illo non quisquam pariatur harum corporis veritatis perferendis autem quas! Libero, voluptatibus."
@@ -356,6 +552,12 @@ export const getPackagesRouteData = (dataPass: any) => {
                         },
                         reactSpringType: {
                             route: 'react-spring-type',
+                            packagesUsed: {
+                                core: {
+                                    type: 'core',
+                                    name: 'Core',
+                                },
+                            },
                             info: {
                                 name: 'React Spring',
                                 about: "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Magni inventore repudiandae veniam, neque nemo minus quam beatae quis illo non quisquam pariatur harum corporis veritatis perferendis autem quas! Libero, voluptatibus."
@@ -364,6 +566,12 @@ export const getPackagesRouteData = (dataPass: any) => {
                         },
                         animateType: {
                             route: 'animate-type',
+                            packagesUsed: {
+                                core: {
+                                    type: 'core',
+                                    name: 'Core',
+                                },
+                            },
                             info: {
                                 name: 'Animate',
                                 about: "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Magni inventore repudiandae veniam, neque nemo minus quam beatae quis illo non quisquam pariatur harum corporis veritatis perferendis autem quas! Libero, voluptatibus."
@@ -382,6 +590,12 @@ export const getPackagesRouteData = (dataPass: any) => {
                     nested: {
                         reactScrollType: {
                             route: 'react-scroll-type',
+                            packagesUsed: {
+                                core: {
+                                    type: 'core',
+                                    name: 'Core',
+                                },
+                            },
                             info: {
                                 name: 'React Scroll',
                                 about: "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Magni inventore repudiandae veniam, neque nemo minus quam beatae quis illo non quisquam pariatur harum corporis veritatis perferendis autem quas! Libero, voluptatibus."
@@ -390,6 +604,12 @@ export const getPackagesRouteData = (dataPass: any) => {
                         },
                         smoothScrollbarType: {
                             route: 'smooth-scrollbar-type',
+                            packagesUsed: {
+                                core: {
+                                    type: 'core',
+                                    name: 'Core',
+                                },
+                            },
                             info: {
                                 name: 'Smooth Scrollbar',
                                 about: "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Magni inventore repudiandae veniam, neque nemo minus quam beatae quis illo non quisquam pariatur harum corporis veritatis perferendis autem quas! Libero, voluptatibus."
@@ -398,6 +618,12 @@ export const getPackagesRouteData = (dataPass: any) => {
                         },
                         intersectionObserverType: {
                             route: 'intersection-observer-type',
+                            packagesUsed: {
+                                core: {
+                                    type: 'core',
+                                    name: 'Core',
+                                },
+                            },
                             info: {
                                 name: 'Intersection Observer',
                                 about: "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Magni inventore repudiandae veniam, neque nemo minus quam beatae quis illo non quisquam pariatur harum corporis veritatis perferendis autem quas! Libero, voluptatibus."
@@ -416,6 +642,12 @@ export const getPackagesRouteData = (dataPass: any) => {
                     nested: {
                         fakerJsType: {
                             route: 'faker-js-type',
+                            packagesUsed: {
+                                core: {
+                                    type: 'core',
+                                    name: 'Core',
+                                },
+                            },
                             info: {
                                 name: 'Faker Js',
                                 about: "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Magni inventore repudiandae veniam, neque nemo minus quam beatae quis illo non quisquam pariatur harum corporis veritatis perferendis autem quas! Libero, voluptatibus."
@@ -424,6 +656,12 @@ export const getPackagesRouteData = (dataPass: any) => {
                         },
                         logSymbolsType: {
                             route: 'log-symbols-type',
+                            packagesUsed: {
+                                core: {
+                                    type: 'core',
+                                    name: 'Core',
+                                },
+                            },
                             info: {
                                 name: 'Log Symbols',
                                 about: "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Magni inventore repudiandae veniam, neque nemo minus quam beatae quis illo non quisquam pariatur harum corporis veritatis perferendis autem quas! Libero, voluptatibus."
@@ -442,6 +680,12 @@ export const getPackagesRouteData = (dataPass: any) => {
                     nested: {
                         toastifyType: {
                             route: 'toastify-type',
+                            packagesUsed: {
+                                core: {
+                                    type: 'core',
+                                    name: 'Core',
+                                },
+                            },
                             info: {
                                 name: 'Toastify',
                                 about: "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Magni inventore repudiandae veniam, neque nemo minus quam beatae quis illo non quisquam pariatur harum corporis veritatis perferendis autem quas! Libero, voluptatibus."
@@ -450,6 +694,12 @@ export const getPackagesRouteData = (dataPass: any) => {
                         },
                         sweetAlertType: {
                             route: 'sweet-alert-type',
+                            packagesUsed: {
+                                core: {
+                                    type: 'core',
+                                    name: 'Core',
+                                },
+                            },
                             info: {
                                 name: 'Sweet Alert',
                                 about: "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Magni inventore repudiandae veniam, neque nemo minus quam beatae quis illo non quisquam pariatur harum corporis veritatis perferendis autem quas! Libero, voluptatibus."
@@ -468,6 +718,12 @@ export const getPackagesRouteData = (dataPass: any) => {
                     nested: {
                         luxonType: {
                             route: 'luxon-type',
+                            packagesUsed: {
+                                core: {
+                                    type: 'core',
+                                    name: 'Core',
+                                },
+                            },
                             info: {
                                 name: ' Luxon',
                                 about: "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Magni inventore repudiandae veniam, neque nemo minus quam beatae quis illo non quisquam pariatur harum corporis veritatis perferendis autem quas! Libero, voluptatibus."
@@ -476,6 +732,12 @@ export const getPackagesRouteData = (dataPass: any) => {
                         },
                         momentType: {
                             route: 'moment-type',
+                            packagesUsed: {
+                                core: {
+                                    type: 'core',
+                                    name: 'Core',
+                                },
+                            },
                             info: {
                                 name: ' Moment',
                                 about: "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Magni inventore repudiandae veniam, neque nemo minus quam beatae quis illo non quisquam pariatur harum corporis veritatis perferendis autem quas! Libero, voluptatibus."
@@ -494,6 +756,12 @@ export const getPackagesRouteData = (dataPass: any) => {
                     nested: {
                         reactPaginateType: {
                             route: 'react-paginate-type',
+                            packagesUsed: {
+                                core: {
+                                    type: 'core',
+                                    name: 'Core',
+                                },
+                            },
                             info: {
                                 name: 'React Paginate',
                                 about: "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Magni inventore repudiandae veniam, neque nemo minus quam beatae quis illo non quisquam pariatur harum corporis veritatis perferendis autem quas! Libero, voluptatibus."
@@ -512,6 +780,12 @@ export const getPackagesRouteData = (dataPass: any) => {
                     nested: {
                         reactIconType: {
                             route: 'react-icon-type',
+                            packagesUsed: {
+                                core: {
+                                    type: 'core',
+                                    name: 'Core',
+                                },
+                            },
                             info: {
                                 name: 'React Icon',
                                 about: "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Magni inventore repudiandae veniam, neque nemo minus quam beatae quis illo non quisquam pariatur harum corporis veritatis perferendis autem quas! Libero, voluptatibus."
@@ -530,6 +804,12 @@ export const getPackagesRouteData = (dataPass: any) => {
                     nested: {
                         reactSelectType: {
                             route: 'react-select-type',
+                            packagesUsed: {
+                                core: {
+                                    type: 'core',
+                                    name: 'Core',
+                                },
+                            },
                             info: {
                                 name: 'React Select',
                                 about: "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Magni inventore repudiandae veniam, neque nemo minus quam beatae quis illo non quisquam pariatur harum corporis veritatis perferendis autem quas! Libero, voluptatibus."

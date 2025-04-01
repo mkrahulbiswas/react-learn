@@ -683,7 +683,7 @@ ul {
                                                                         .vpu_ocoplmimo_tab {
                                                                             margin: 15px 0;
 
-                                                                            .vpu_ocoplmimot_content {
+                                                                            .vpu_ocoplmimot_menu {
                                                                                 background-color: #DCD9D4;
                                                                                 background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0.50) 0%, rgba(0, 0, 0, 0.50) 100%), radial-gradient(at 50% 0%, rgba(255, 255, 255, 0.10) 0%, rgba(0, 0, 0, 0.50) 50%);
                                                                                 background-blend-mode: soft-light, screen;
@@ -730,6 +730,10 @@ ul {
                                                                                                 cursor: pointer;
 
                                                                                                 &:hover {
+                                                                                                    background-position: right center;
+                                                                                                }
+
+                                                                                                &.vpu_ocoplmimot_hover {
                                                                                                     background-position: right center;
                                                                                                 }
                                                                                             }

@@ -1,9 +1,9 @@
-import { Link, Navigate, useLocation, useNavigate } from "react-router"
+import { useLocation, useNavigate } from "react-router"
 import { RouteContext } from "../../Context/RouteContext"
 import { useContext, useEffect, useState } from "react"
 import { IoMdAdd, IoMdClose } from "react-icons/io"
-import { getRouteData } from "../../Helpers/RouteHelper"
-import { useHelper } from "../../Hooks/useHelper"
+import { useHelperHook } from "../../Hooks/useHelperHook"
+import { getPackagesRouteData } from "../../Helpers/RouteHelper/PackagesRoute/PackagesRouteData"
 
 export const PackagesNavLink = ({ props }: any) => {
   const [toggleMenu, setToggleMenu] = useState({
@@ -15,7 +15,7 @@ export const PackagesNavLink = ({ props }: any) => {
   const location = useLocation();
   const navigate = useNavigate()
   const { routePaths }: any = useContext(RouteContext)
-  const routeData = getRouteData({})
+  const routeData = getPackagesRouteData({})
   const handelToggleMenu = (data: any) => {
     if (toggleMenu.checkBy == data.route) {
       setToggleMenu({
@@ -45,7 +45,7 @@ export const PackagesNavLink = ({ props }: any) => {
     if (data.for === 'floating') {
       props.closeFloating('close')
     }
-    navigate(useHelper({
+    navigate(useHelperHook({
       type: 'routeConcatenate', data: [
         routePaths.packages.route,
         data.valOne?.route != undefined ? data.valOne.route : '',
@@ -87,16 +87,16 @@ export const PackagesNavLink = ({ props }: any) => {
     <>
       {
         props.for == 'side' ?
-          <div className="vpuSideMenu">
-            <div className="vpuList">
+          <div className="vpu_ocop_sideMenu">
+            <div className="vpu_ocopsm_list">
               {
                 Object.values(routeData.packages.nested).map((valOne: any, keyOne: any) => {
                   const isExpanded = toggleMenu.checkBy === valOne.route;
                   return (
-                    <div className="vpuItem" key={keyOne}>
-                      <div className="vpuHeading">
+                    <div className="vpu_ocopsm_item" key={keyOne}>
+                      <div className="vpu_ocopsm_heading">
                         <span>
-                          <a href="javascript:void(0)" onClick={() => visitLink({ valOne, for: 'side' })}>{valOne.info.name}</a>
+                          <a onClick={() => visitLink({ valOne, for: 'side' })}>{valOne.info.name}</a>
                           <label onClick={() => handelToggleMenu({ for: 'side', route: valOne.route })}>
                             {isExpanded ? <IoMdClose /> : <IoMdAdd />}
                           </label>
@@ -104,10 +104,10 @@ export const PackagesNavLink = ({ props }: any) => {
                       </div>
                       {
                         isExpanded && (
-                          <div className={isExpanded ? "vpuLinks autoHeight" : "vpuLinks"}>
+                          <div className={isExpanded ? "vpu_ocopsm_links vpu_ocosm_autoHeight" : "vpu_ocosm_links"}>
                             {
                               Object.values(valOne.nested).map((valTwo: any, keyTwo: any) =>
-                                <a href="javascript:void(0)" key={keyTwo}
+                                <a key={keyTwo}
                                   className={toggleMenu.lastSegment == valTwo.route ? 'active' : ''}
                                   onClick={() => visitLink({ valOne, valTwo, for: 'side' })}>{valTwo.info.name}</a>
                               )
@@ -124,19 +124,19 @@ export const PackagesNavLink = ({ props }: any) => {
       }
       {
         props.for == 'floating' ?
-          <div className="vpuFloatingMenu">
-            <div className="vpuTitle">
+          <div className="vpu_ocop_floatingMenu">
+            <div className="vpu_ocopfm_title">
               <span>Packages</span>
             </div>
-            <div className="vpuList">
+            <div className="vpu_ocopfm_list">
               {
                 Object.values(routeData.packages.nested).map((valOne: any, keyOne: any) => {
                   const isExpanded = toggleMenu.checkBy === valOne.route;
                   return (
-                    <div className="vpuItem" key={keyOne} style={isExpanded ? toggleMenu.customStyle : undefined}>
-                      <div className="vpuHeading">
+                    <div className="vpu_ocopfm_item" key={keyOne} style={isExpanded ? toggleMenu.customStyle : undefined}>
+                      <div className="vpu_ocopfm_heading">
                         <span>
-                          <a href="javascript:void(0)" onClick={() => visitLink({ valOne, for: 'floating' })}>{valOne.info.name}</a>
+                          <a onClick={() => visitLink({ valOne, for: 'floating' })}>{valOne.info.name}</a>
                           <label onClick={() => handelToggleMenu({ for: 'floating', route: valOne.route })}>
                             {isExpanded ? <IoMdClose /> : <IoMdAdd />}
                           </label>
@@ -144,10 +144,10 @@ export const PackagesNavLink = ({ props }: any) => {
                       </div>
                       {
                         isExpanded && (
-                          <div className='vpuLinks'>
+                          <div className='vpu_ocopfm_links'>
                             {
                               Object.values(valOne.nested).map((valTwo: any, keyTwo: any) =>
-                                <a href="javascript:void(0)" key={keyTwo}
+                                <a key={keyTwo}
                                   className={toggleMenu.lastSegment == valTwo.route ? 'active' : ''}
                                   onClick={() => visitLink({ valOne, valTwo, for: 'floating' })}>{valTwo.info.name}</a>
                               )
@@ -164,31 +164,31 @@ export const PackagesNavLink = ({ props }: any) => {
       }
       {
         props.for == 'main' ?
-          < div className="vpuMainMenu">
-            <div className="vpuTitle">
+          < div className="vpu_ocop_mainMenu">
+            <div className="vpu_ocopmm_title">
               <span>Packages</span>
             </div>
-            <div className="vpuList">
+            <div className="vpu_ocopmm_list">
               {
                 Object.values(routeData.packages.nested).map((valOne: any, keyOne: any) => {
                   return (
-                    <div className="vpuItem" key={keyOne}>
-                      <div className="vpuHeading">
+                    <div className="vpu_ocopmm_item" key={keyOne}>
+                      <div className="vpu_ocopmm_heading">
                         <span>
-                          <a href="javascript:void(0)" onClick={() => visitLink({ valOne, for: 'main' })}>{valOne.info.name}</a>
+                          <a onClick={() => visitLink({ valOne, for: 'main' })}>{valOne.info.name}</a>
                         </span>
-                        <div className="vpuAbout">
+                        <div className="vpu_ocopmm_about">
                           <p>{valOne.info.about}</p>
                         </div>
                       </div>
-                      <div className="vpuLinksMain">
+                      <div className="vpu_ocopmm_linksMain">
                         {
                           Object.values(valOne.nested).map((valTwo: any, keyTwo: any) =>
-                            <div className="vpuLinks" key={keyTwo} onClick={() => visitLink({ valOne, valTwo, for: 'main' })}>
-                              <div className="vpuLinksLeft">
+                            <div className="vpu_ocopmm_links" key={keyTwo} onClick={() => visitLink({ valOne, valTwo, for: 'main' })}>
+                              <div className="vpu_ocopmml_left">
                                 <span>{keyTwo + 1}</span>
                               </div>
-                              <div className="vpuLinksRight">
+                              <div className="vpu_ocopmml_right">
                                 <span>{valTwo.info.name}</span>
                                 <span>{valTwo.info.about}</span>
                               </div>

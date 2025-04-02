@@ -1,4 +1,4 @@
-export const useHelper = (params: any) => {
+export const useHelperHook = (params: any) => {
   let finalData: any = []
   if (params.type === 'routeConcatenate') {
     if (params.data.length == 1) {
@@ -8,7 +8,7 @@ export const useHelper = (params: any) => {
       for (let i = 0; i < params.data.length; i++) {
         url += params.data[i] + '/'
       }
-      finalData = url.slice(0, -1)
+      finalData = url.replace(/\/+$/, "")
     }
   }
   return finalData;

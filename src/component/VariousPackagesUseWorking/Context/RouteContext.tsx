@@ -1,9 +1,9 @@
 import { createContext, useState } from "react";
-import { getRouteData } from "../Helpers/RouteHelper";
+import { getPackagesRouteData } from "../Helpers/RouteHelper/PackagesRoute/PackagesRouteData";
 export const RouteContext = createContext({})
 export const RouteContextProvider = (props: any) => {
     const [routePaths, setRoutePaths] = useState(() => {
-        let routeData: any = getRouteData({})
+        let routeData: any = getPackagesRouteData({})
         if (routeData != null) {
             return routeData
         } else {

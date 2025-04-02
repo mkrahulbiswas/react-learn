@@ -5,45 +5,45 @@ ul {
 
 #root {
     .vps {
-        .vpuMain {
-            .vpuSub {
+        .vpu_main {
+            .vpu_sub {
                 display: flex;
                 flex-direction: row;
 
-                .vpiAdvertiseContent {
+                .vpu_addContent {
                     flex-grow: 1;
 
-                    &.vpiAdvertiseContentOne {
+                    &.vpu_ac_one {
                         background-color: red;
                     }
                 }
 
-                .vpiAdvertiseContent {
+                .vpu_addContent {
                     flex-grow: 1;
 
-                    &.vpiAdvertiseContentTwo {
+                    &.vpu_ac_two {
                         background-color: green;
                     }
                 }
 
-                .vpiMainContent {
+                .vpu_originContent {
                     max-width: 1500px;
                     margin: auto;
 
-                    .vpuHeaderMain {
-                        .vpuHeaderSub {
-                            .vpuNavMain {
+                    .vpu_oc_headerMain {
+                        .vpu_oc_headerSub {
+                            .vpu_och_navMain {
                                 background-image: linear-gradient(109.6deg, rgba(228, 107, 232, 1) 11.2%, rgba(87, 27, 226, 1) 96.7%);
                                 padding-bottom: 5px;
 
-                                .vpuNavSub {
+                                .vpu_och_navSub {
                                     display: flex;
                                     flex-direction: row;
                                     justify-content: space-between;
                                     background-image: linear-gradient(85.2deg, rgb(88, 11, 105) 7.5%, rgb(154, 30, 168) 88.7%);
                                     padding: 0 10px;
 
-                                    .logo {
+                                    .vpu_och_logo {
                                         align-self: center;
                                         padding: 10px 0;
 
@@ -52,7 +52,7 @@ ul {
                                         }
                                     }
 
-                                    .navLink {
+                                    .vpu_och_navLink {
                                         align-self: center;
 
                                         nav {
@@ -83,7 +83,7 @@ ul {
                                         }
                                     }
 
-                                    .userInfo {
+                                    .vpu_och_userInfo {
                                         align-self: center;
 
                                         span {
@@ -98,11 +98,11 @@ ul {
                         }
                     }
 
-                    .vpuOutletMain {
-                        .vpuOutletSub {
+                    .vpu_oc_outletMain {
+                        .vpu_oc_outletSub {
 
-                            .vpuPackagesMain {
-                                .vpuPackagesSub {
+                            .vpu_oco_packagesMain {
+                                .vpu_oco_packagesSub {
                                     background-image: linear-gradient(109.6deg, rgba(223, 234, 247, 1) 11.2%, rgba(244, 248, 252, 1) 91.1%);
                                     display: flex;
                                     flex-direction: row;
@@ -110,27 +110,24 @@ ul {
                                     gap: 10px;
                                     padding: 15px;
 
-                                    .vpuSideMenu {
+                                    @media screen and (max-width: 970px) {
+                                        gap: 0px;
+                                    }
+
+                                    .vpu_ocop_sideMenu {
                                         min-width: 240px;
                                         max-width: 240px;
 
-                                        .vpuTitle {
-                                            margin-bottom: 15px;
-                                            text-align: center;
-
-                                            span {
-                                                font-size: 17px;
-                                                text-transform: uppercase;
-                                                font-weight: bold;
-                                            }
+                                        @media screen and (max-width: 970px) {
+                                            display: none;
                                         }
 
-                                        .vpuList {
+                                        .vpu_ocopsm_list {
                                             display: flex;
                                             flex-direction: column;
                                             gap: 6px;
 
-                                            .vpuItem {
+                                            .vpu_ocopsm_item {
                                                 background-image: radial-gradient(circle farthest-corner at 10% 20%, rgba(97, 186, 255, 1) 0%, rgba(166, 239, 253, 1) 90.1%);
                                                 border-radius: 5px;
                                                 box-shadow: 0 1px 2px #e18ee4d2;
@@ -142,7 +139,7 @@ ul {
                                                         0 8px 10px #f9dbfa;
                                                 }
 
-                                                .vpuHeading {
+                                                .vpu_ocopsm_heading {
                                                     position: relative;
 
                                                     &::after {
@@ -186,7 +183,7 @@ ul {
                                                     }
                                                 }
 
-                                                .vpuLinks {
+                                                .vpu_ocopsm_links {
                                                     height: 0px;
                                                     display: flex;
                                                     flex-direction: column;
@@ -195,7 +192,7 @@ ul {
                                                     transition: 0.30s ease-in-out;
                                                     margin: 15px 10px;
 
-                                                    &.autoHeight {
+                                                    &.vpu_ocosm_autoHeight {
                                                         height: auto;
                                                     }
 
@@ -236,10 +233,10 @@ ul {
                                         }
                                     }
 
-                                    .vpuMainMenu {
+                                    .vpu_ocop_mainMenu {
                                         background-image: linear-gradient(109.6deg, rgba(223, 234, 247, 1) 11.2%, rgba(244, 248, 252, 1) 91.1%);
 
-                                        .vpuTitle {
+                                        .vpu_ocopmm_title {
                                             margin: 20px 0 30px 0;
                                             text-align: center;
 
@@ -251,7 +248,7 @@ ul {
                                             }
                                         }
 
-                                        .vpuList {
+                                        .vpu_ocopmm_list {
                                             display: flex;
                                             flex-direction: row;
                                             flex-wrap: wrap;
@@ -262,7 +259,7 @@ ul {
                                                 justify-content: space-around;
                                             }
 
-                                            .vpuItem {
+                                            .vpu_ocopmm_item {
                                                 background-image: linear-gradient(174.2deg, rgba(255, 244, 228, 1) 7.1%, rgba(240, 246, 238, 1) 67.4%);
                                                 box-shadow: 0 3px 10px #e18ee4d2;
                                                 border-radius: 5px;
@@ -293,7 +290,7 @@ ul {
                                                     box-shadow: 0 7px 18px #560d58d2;
                                                 }
 
-                                                .vpuHeading {
+                                                .vpu_ocopmm_heading {
                                                     background-color: rgba(0, 0, 0, 0.123);
                                                     padding: 10px;
                                                     margin-bottom: 5px;
@@ -313,14 +310,14 @@ ul {
                                                     }
 
 
-                                                    .vpuAbout {
+                                                    .vpu_ocopmm_about {
                                                         margin-top: 5px;
 
                                                         p {}
                                                     }
                                                 }
 
-                                                .vpuLinksMain {
+                                                .vpu_ocopmm_linksMain {
                                                     box-shadow: inset 0 0 10px grey;
                                                     padding: 20px;
                                                     display: flex;
@@ -330,7 +327,7 @@ ul {
                                                     background-image: linear-gradient(117deg, rgba(123, 216, 96, 1) 39.2%, rgba(255, 255, 255, 1) 156.2%);
                                                     border-radius: 5px;
 
-                                                    .vpuLinks {
+                                                    .vpu_ocopmm_links {
                                                         display: flex;
                                                         flex-direction: row;
                                                         gap: 20px;
@@ -345,7 +342,7 @@ ul {
                                                             box-shadow: 0 5px 10px rgba(30, 97, 36);
                                                         }
 
-                                                        .vpuLinksLeft {
+                                                        .vpu_ocopmml_left {
                                                             display: flex;
 
                                                             span {
@@ -363,7 +360,7 @@ ul {
                                                             }
                                                         }
 
-                                                        .vpuLinksRight {
+                                                        .vpu_ocopmml_right {
                                                             display: flex;
                                                             flex-direction: column;
                                                             gap: 3px;
@@ -391,8 +388,8 @@ ul {
                                         }
                                     }
 
-                                    .vpuPackagesFloating {
-                                        .vpuFloatingTab {
+                                    .vpu_ocop_floating {
+                                        .vpu_ocopf_tab {
                                             position: fixed;
                                             bottom: 30px;
                                             right: -73px;
@@ -428,7 +425,7 @@ ul {
                                                 }
                                             }
 
-                                            .vpuFloatingAction {
+                                            .vpu_ocopf_action {
                                                 display: block;
                                                 align-self: center;
                                                 padding: 6px;
@@ -449,8 +446,8 @@ ul {
                                             }
                                         }
 
-                                        .vpuFloatingContent {
-                                            .vpuFloatingLink {
+                                        .vpu_ocopf_content {
+                                            .vpu_ocopf_link {
                                                 position: fixed;
                                                 left: 0;
                                                 width: 100%;
@@ -471,23 +468,35 @@ ul {
                                                     backdrop-filter: blur(5px);
                                                 }
 
-                                                .vpuFloatingLinkTop {
+                                                .vpu_ocopfl_top {
                                                     display: flex;
                                                     justify-content: center;
                                                     position: absolute;
-                                                    width: 70px;
-                                                    height: 70px;
-                                                    border-radius: 100%;
-                                                    top: -26px;
-                                                    right: -26px;
+                                                    width: 130px;
+                                                    height: 130px;
+                                                    top: -85px;
+                                                    right: -85px;
+                                                    transform: rotate(-135deg);
                                                     background-color: rgba(155, 37, 37, 0.623);
-                                                    border-left: 2px solid red;
-                                                    border-bottom: 2px solid red;
+                                                    border: 2px solid red;
+                                                    transition: 0.30s ease-in-out;
+
+                                                    &:hover {
+                                                        top: -70px;
+                                                        right: -70px;
+
+                                                        span {
+                                                            opacity: 1;
+                                                            margin-top: 15px;
+                                                        }
+                                                    }
 
                                                     span {
                                                         cursor: pointer;
-                                                        margin-top: 32px;
-                                                        margin-right: 22px;
+                                                        font-weight: bold;
+                                                        color: white;
+                                                        opacity: 0.30;
+                                                        transition: 0.30s ease-in-out;
 
                                                         svg {
                                                             font-size: 25px;
@@ -496,9 +505,9 @@ ul {
                                                     }
                                                 }
 
-                                                .vpuFloatingMiddle {
-                                                    .vpuFloatingMenu {
-                                                        .vpuTitle {
+                                                .vpu_ocopfl_middle {
+                                                    .vpu_ocop_floatingMenu {
+                                                        .vpu_ocofm_title {
                                                             margin-bottom: 60px;
                                                             text-align: center;
 
@@ -510,13 +519,13 @@ ul {
                                                             }
                                                         }
 
-                                                        .vpuList {
+                                                        .vpu_ocopfm_list {
                                                             display: flex;
                                                             flex-direction: row;
                                                             flex-wrap: wrap;
                                                             gap: 20px;
 
-                                                            .vpuItem {
+                                                            .vpu_ocopfm_item {
                                                                 background-image: radial-gradient(circle 341px at 10% 20%, rgb(204, 204, 204) 0%, rgb(212, 252, 253) 90%);
                                                                 border-radius: 5px;
                                                                 transition: 0.30s ease-in-out;
@@ -528,7 +537,7 @@ ul {
                                                                     background-image: radial-gradient(circle 780.6px at 10% 20%, rgba(133, 255, 189, 1) 0%, rgba(255, 251, 125, 1) 90.7%);
                                                                 }
 
-                                                                .vpuHeading {
+                                                                .vpu_ocopfm_heading {
                                                                     position: relative;
 
                                                                     &::after {
@@ -572,7 +581,7 @@ ul {
                                                                     }
                                                                 }
 
-                                                                .vpuLinks {
+                                                                .vpu_ocopfm_links {
                                                                     display: flex;
                                                                     flex-direction: column;
                                                                     gap: 3px;
@@ -628,184 +637,282 @@ ul {
                                         }
                                     }
 
-                                    .packages {
-                                        width: 100%;
-                                        padding: 10px;
-                                        background-color: rgb(235, 235, 235);
-                                        border: 1px solid rgb(184, 184, 184);
+                                    .vpu_ocop_list {
+                                        .vpu_ocopl_top {}
 
-                                        .heading {
-                                            margin-bottom: 10px;
-
-                                            span {
-                                                display: block;
-                                                font-size: 20px;
-                                                font-weight: bold;
-                                            }
-                                        }
-
-                                        .overView {
-                                            display: flex;
-                                            flex-direction: column;
-
-                                            .singleLineText {
-                                                display: block;
-                                                padding-left: 15px;
-                                                position: relative;
-
-                                                &::after {
-                                                    content: '';
-                                                    position: absolute;
-                                                    top: 13px;
-                                                    left: 0;
-                                                    width: 8px;
-                                                    height: 8px;
-                                                    border-radius: 100%;
-                                                    background-color: rgb(108, 159, 236);
-                                                    transform: translateY(-50%);
-                                                }
-
-                                                p {
-                                                    font-size: 13px;
-                                                    padding-left: 12px;
-                                                    position: relative;
-                                                    margin: 3px;
-
-                                                    &::after {
-                                                        content: '';
-                                                        position: absolute;
-                                                        top: 11px;
-                                                        left: 0;
-                                                        width: 5px;
-                                                        height: 5px;
-                                                        background-color: rgb(252, 139, 252);
-                                                        transform: translateY(-50%);
-                                                    }
-
-                                                    // &:not(:last-child) {
-                                                    //     margin-bottom: 0px !important;
-                                                    // }
-
-                                                    .visitDoc {
-                                                        text-decoration: none;
-                                                    }
-
-                                                    .npmCommand {
-                                                        cursor: pointer;
-                                                        background-color: rgb(177, 241, 225);
-                                                        padding: 0 5px 3px 5px;
-                                                        border-radius: 5px;
-                                                        font-weight: bold;
-                                                        margin-top: 5px;
-                                                    }
-                                                }
-                                            }
-                                        }
-
-                                        .exampleMain {
-                                            display: flex;
-                                            flex-direction: column;
-                                            justify-content: space-between;
-                                            gap: 20px;
-
-                                            .exampleSub {
-                                                display: flex;
-                                                flex-direction: column;
-                                                justify-content: space-between;
-                                                padding: 10px;
-                                                box-shadow: inset 0 0 10px rgb(116, 97, 48);
-                                                background-color: rgb(255, 246, 220);
-
-                                                &:first-child {
-                                                    margin-top: 20px;
-                                                }
-
-                                                .exampleHeading {
-                                                    padding: 10px;
-
-                                                    h2 {
-                                                        margin: 0;
-                                                        padding: 0;
-                                                        font-size: 18px;
-                                                        font-weight: bold;
-                                                        color: rgb(17, 83, 114);
-                                                    }
-
-                                                    span {
-                                                        font-size: 14px;
-                                                        color: rgb(17, 83, 114);
-                                                    }
-                                                }
-
-                                                .exampleContent {
-                                                    display: flex;
-                                                    flex-direction: row;
-                                                    flex-wrap: wrap;
-                                                    justify-content: space-between;
-                                                    padding: 10px;
-                                                    gap: 17px;
-
-                                                    .exampleCommon {
-                                                        background-color: rgb(205 243 224);
+                                        .vpu_ocopl_middle {
+                                            .vpu_ocoplm_info {
+                                                .vpu_ocoplmi_main {
+                                                    .vpu_ocoplmi_sub {
+                                                        width: 100%;
                                                         padding: 10px;
+                                                        border-radius: 5px;
+                                                        background-image: radial-gradient(circle farthest-corner at 10% 20%, rgba(162, 102, 246, 1) 0%, rgba(203, 159, 249, 1) 90%);
 
-                                                        &.fullWidth {
-                                                            min-width: 100%;
-                                                        }
+                                                        .vpu_ocoplmi_top {
+                                                            padding: 10px;
+                                                            background-image: linear-gradient(120deg, #fdfbfbc0 0%, #ebedeec2 100%);
+                                                            box-shadow: 0px 15px 25px 2px rgba(0, 0, 0, 0.50);
+                                                            border-radius: 5px;
 
-                                                        &.triennialWidth {
-                                                            max-width: 31.95%;
-                                                        }
+                                                            .vpu_ocoplmi_heading {
+                                                                span {
+                                                                    font-size: 20px;
+                                                                    font-weight: bold;
+                                                                    color: #4a1a97;
+                                                                }
 
-                                                        .exampleCommonPoints {
-                                                            margin-bottom: 20px;
-
-                                                            span {
-                                                                font-weight: bold;
-                                                                color: rgb(46, 107, 31);
-                                                            }
-
-                                                            p {
-                                                                font-size: 12px;
-                                                                line-height: 14px;
-                                                                color: rgb(102, 86, 31);
-
-                                                                label {
-                                                                    color: red;
-                                                                    text-transform: capitalize;
+                                                                p {
+                                                                    color: #000000;
+                                                                    margin-top: 10px;
+                                                                    font-size: 13px;
                                                                 }
                                                             }
                                                         }
 
-                                                        .exampleCommonContent {
-                                                            position: relative;
-                                                            margin-top: 15px;
+                                                        .vpu_ocoplmi_middle {
+                                                            padding: 10px;
+                                                            background-image: linear-gradient(to top, #cfd9df 0%, #e2ebf0 100%);
+                                                            box-shadow: inset 0 0 10px rgb(0, 0, 0);
+                                                            border-radius: 5px;
+                                                            margin-top: 20px;
 
-                                                            &.exampleCommonContentFloat {
-                                                                float: left;
-                                                                margin-left: 20px;
+                                                            .vpu_ocoplmim_overview {
+                                                                .vpu_ocoplmimo_main {
+                                                                    .vpu_ocoplmimo_sub {
+                                                                        .vpu_ocoplmimo_tab {
+                                                                            margin: 15px 0;
 
-                                                                &:first-child {
-                                                                    margin-left: 0px;
+                                                                            .vpu_ocoplmimot_menu {
+                                                                                background-color: #DCD9D4;
+                                                                                background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0.50) 0%, rgba(0, 0, 0, 0.50) 100%), radial-gradient(at 50% 0%, rgba(255, 255, 255, 0.10) 0%, rgba(0, 0, 0, 0.50) 50%);
+                                                                                background-blend-mode: soft-light, screen;
+                                                                                width: auto;
+                                                                                padding: 10px;
+                                                                                width: 50%;
+                                                                                margin: auto;
+                                                                                border-radius: 5px;
+
+                                                                                .vpu_ocoplmimot_heading {
+                                                                                    text-align: center;
+
+                                                                                    span {
+                                                                                        font-size: 16px;
+                                                                                        text-transform: capitalize;
+
+                                                                                        b {}
+                                                                                    }
+                                                                                }
+
+                                                                                .vpu_ocoplmimot_list {
+                                                                                    ul {
+                                                                                        display: flex;
+                                                                                        flex-direction: row;
+                                                                                        justify-content: center;
+                                                                                        gap: 10px;
+                                                                                        height: 30px;
+                                                                                        margin-top: 10px;
+
+                                                                                        li {
+                                                                                            list-style: none;
+                                                                                            align-self: center;
+
+                                                                                            span {
+                                                                                                background-image: linear-gradient(to right, #9e0e0e 0%, rgb(203 203 203) 51%, #126806 100%);
+                                                                                                text-align: center;
+                                                                                                text-transform: capitalize;
+                                                                                                transition: 0.5s;
+                                                                                                background-size: 200% auto;
+                                                                                                color: white;
+                                                                                                display: block;
+                                                                                                padding: 5px 8px;
+                                                                                                border-radius: 5px;
+                                                                                                cursor: pointer;
+
+                                                                                                &:hover {
+                                                                                                    background-position: right center;
+                                                                                                }
+
+                                                                                                &.vpu_ocoplmimot_hover {
+                                                                                                    background-position: right center;
+                                                                                                }
+                                                                                            }
+                                                                                        }
+                                                                                    }
+                                                                                }
+                                                                            }
+                                                                        }
+
+
+                                                                        .singleLineText {
+                                                                            display: block;
+                                                                            padding-left: 15px;
+                                                                            position: relative;
+
+                                                                            &::after {
+                                                                                content: '';
+                                                                                position: absolute;
+                                                                                top: 13px;
+                                                                                left: 0;
+                                                                                width: 8px;
+                                                                                height: 8px;
+                                                                                border-radius: 100%;
+                                                                                background-color: rgb(108, 159, 236);
+                                                                                transform: translateY(-50%);
+                                                                            }
+
+                                                                            p {
+                                                                                font-size: 13px;
+                                                                                padding-left: 12px;
+                                                                                position: relative;
+                                                                                margin: 3px;
+
+                                                                                &::after {
+                                                                                    content: '';
+                                                                                    position: absolute;
+                                                                                    top: 11px;
+                                                                                    left: 0;
+                                                                                    width: 5px;
+                                                                                    height: 5px;
+                                                                                    background-color: rgb(252, 139, 252);
+                                                                                    transform: translateY(-50%);
+                                                                                }
+
+                                                                                // &:not(:last-child) {
+                                                                                //     margin-bottom: 0px !important;
+                                                                                // }
+
+                                                                                .visitDoc {
+                                                                                    text-decoration: none;
+                                                                                }
+
+                                                                                .npmCommand {
+                                                                                    cursor: pointer;
+                                                                                    background-color: rgb(177, 241, 225);
+                                                                                    padding: 0 5px 3px 5px;
+                                                                                    border-radius: 5px;
+                                                                                    font-weight: bold;
+                                                                                    margin-top: 5px;
+                                                                                }
+                                                                            }
+                                                                        }
+                                                                    }
                                                                 }
                                                             }
+                                                        }
 
-                                                            &.exampleCommonContentFullWidth {
-                                                                min-width: 100%;
-                                                            }
+                                                        .vpu_ocoplmi_bottom {
+                                                            .vpu_pi_example {
+                                                                display: flex;
+                                                                flex-direction: column;
+                                                                justify-content: space-between;
+                                                                gap: 20px;
 
-                                                            &.exampleCommonContentTriennialWidth {
-                                                                max-width: 31.95%;
-                                                            }
+                                                                .exampleSub {
+                                                                    display: flex;
+                                                                    flex-direction: column;
+                                                                    justify-content: space-between;
+                                                                    padding: 10px;
+                                                                    box-shadow: inset 0 0 10px rgb(116, 97, 48);
+                                                                    background-color: rgb(255, 246, 220);
 
-                                                            &:first-child {
-                                                                margin-top: 0px;
+                                                                    &:first-child {
+                                                                        margin-top: 20px;
+                                                                    }
+
+                                                                    .exampleHeading {
+                                                                        padding: 10px;
+
+                                                                        h2 {
+                                                                            margin: 0;
+                                                                            padding: 0;
+                                                                            font-size: 18px;
+                                                                            font-weight: bold;
+                                                                            color: rgb(17, 83, 114);
+                                                                        }
+
+                                                                        span {
+                                                                            font-size: 14px;
+                                                                            color: rgb(17, 83, 114);
+                                                                        }
+                                                                    }
+
+                                                                    .exampleContent {
+                                                                        display: flex;
+                                                                        flex-direction: row;
+                                                                        flex-wrap: wrap;
+                                                                        justify-content: space-between;
+                                                                        padding: 10px;
+                                                                        gap: 17px;
+
+                                                                        .exampleCommon {
+                                                                            background-color: rgb(205 243 224);
+                                                                            padding: 10px;
+
+                                                                            &.fullWidth {
+                                                                                min-width: 100%;
+                                                                            }
+
+                                                                            &.triennialWidth {
+                                                                                max-width: 31.95%;
+                                                                            }
+
+                                                                            .exampleCommonPoints {
+                                                                                margin-bottom: 20px;
+
+                                                                                span {
+                                                                                    font-weight: bold;
+                                                                                    color: rgb(46, 107, 31);
+                                                                                }
+
+                                                                                p {
+                                                                                    font-size: 12px;
+                                                                                    line-height: 14px;
+                                                                                    color: rgb(102, 86, 31);
+
+                                                                                    label {
+                                                                                        color: red;
+                                                                                        text-transform: capitalize;
+                                                                                    }
+                                                                                }
+                                                                            }
+
+                                                                            .exampleCommonContent {
+                                                                                position: relative;
+                                                                                margin-top: 15px;
+
+                                                                                &.exampleCommonContentFloat {
+                                                                                    float: left;
+                                                                                    margin-left: 20px;
+
+                                                                                    &:first-child {
+                                                                                        margin-left: 0px;
+                                                                                    }
+                                                                                }
+
+                                                                                &.exampleCommonContentFullWidth {
+                                                                                    min-width: 100%;
+                                                                                }
+
+                                                                                &.exampleCommonContentTriennialWidth {
+                                                                                    max-width: 31.95%;
+                                                                                }
+
+                                                                                &:first-child {
+                                                                                    margin-top: 0px;
+                                                                                }
+                                                                            }
+                                                                        }
+                                                                    }
+                                                                }
                                                             }
                                                         }
                                                     }
                                                 }
                                             }
                                         }
+
+                                        .vpu_ocopl_bottom {}
                                     }
 
                                     .widthFixed200 {
@@ -816,29 +923,29 @@ ul {
                         }
                     }
 
-                    .vpuFooterMain {
-                        .vpuFooterSub {
-                            .vpuMainFooter {
+                    .vpu_oc_footerMain {
+                        .vpu_oc_footerSub {
+                            .vpu_ocf_footMain {
                                 background-image: linear-gradient(75deg, rgb(155, 254, 23) 45.5%, rgb(36, 243, 8) 97.9%);
                                 padding-top: 10px;
 
-                                .vpuSubFooter {
+                                .vpu_ocf_footSub {
                                     background-image: linear-gradient(179.8deg, rgba(64, 64, 64, 1) 2.4%, rgba(77, 77, 77, 1) 18.8%, rgba(108, 108, 108, 1) 34.6%, rgba(118, 118, 118, 1) 50.2%, rgba(108, 108, 108, 1) 63.8%, rgba(77, 77, 77, 1) 79.9%, rgba(64, 64, 64, 1) 96.4%);
                                     display: flex;
                                     flex-direction: column;
 
-                                    .footerTop {
+                                    .vpu_ocf_footerTop {
                                         display: flex;
                                         flex-direction: row;
                                         justify-content: space-between;
                                         flex-wrap: wrap;
                                         padding: 15px;
 
-                                        .logoAndAbout {
+                                        .vpu_ocf_logoAndAbout {
                                             width: 250px;
                                             padding: 10px;
 
-                                            .logo {
+                                            .vpu_ocf_logo {
                                                 margin-bottom: 25px;
                                                 text-align: center;
 
@@ -848,7 +955,7 @@ ul {
                                                 }
                                             }
 
-                                            .about {
+                                            .vpu_ocf_about {
                                                 color: white;
 
                                                 span {
@@ -859,13 +966,13 @@ ul {
                                             }
                                         }
 
-                                        .quickLink {
+                                        .vpu_ocf_quickLink {
                                             display: flex;
                                             flex-direction: column;
                                             justify-content: space-between;
                                             padding: 10px;
 
-                                            .heading {
+                                            .vpu_ocf_heading {
                                                 color: rgb(155 254 23);
 
                                                 span {
@@ -875,7 +982,7 @@ ul {
                                                 }
                                             }
 
-                                            .links {
+                                            .vpu_ocf_links {
                                                 position: relative;
 
                                                 ul {
@@ -919,13 +1026,13 @@ ul {
                                             }
                                         }
 
-                                        .newsAndUpdate {
+                                        .vpu_ocf_newsAndUpdate {
                                             display: flex;
                                             flex-direction: column;
                                             justify-content: space-between;
                                             padding: 10px;
 
-                                            .heading {
+                                            .vpu_ocf_heading {
                                                 color: rgb(155 254 23);
 
                                                 span {
@@ -935,8 +1042,8 @@ ul {
                                                 }
                                             }
 
-                                            .socialAndSubscribe {
-                                                .newsForLatter {
+                                            .vpu_ocf_socialAndSubscribe {
+                                                .vpu_ocf_newsForLatter {
                                                     span {
                                                         color: white;
                                                         display: block;
@@ -978,7 +1085,7 @@ ul {
                                                     }
                                                 }
 
-                                                .socialLinks {
+                                                .vpu_ocf_socialLinks {
                                                     margin-top: 50px;
 
                                                     ul {
@@ -1018,20 +1125,20 @@ ul {
                                         }
                                     }
 
-                                    .footerBottom {
+                                    .vpu_ocf_footerBottom {
                                         display: flex;
                                         flex-direction: row;
                                         justify-content: center;
                                         background-color: rgba(0, 0, 0, 0.377);
                                         padding: 10px;
 
-                                        .copyright {
+                                        .vpu_ocf_copyright {
                                             color: white;
 
                                             span {}
                                         }
 
-                                        .developer {
+                                        .vpu_ocf_developer {
                                             color: white;
                                             margin-left: 5px;
 

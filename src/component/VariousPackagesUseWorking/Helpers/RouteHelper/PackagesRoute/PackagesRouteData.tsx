@@ -111,6 +111,10 @@ export const getPackagesRouteData = (dataPass: any) => {
                                     type: 'core',
                                     name: 'Core',
                                 },
+                                icons: {
+                                    type: 'icons',
+                                    name: 'Icons',
+                                },
                             },
                             info: {
                                 name: 'Spectrum Web Components',
@@ -181,6 +185,14 @@ export const getPackagesRouteData = (dataPass: any) => {
                                     type: 'core',
                                     name: 'Core',
                                 },
+                                icons: {
+                                    type: 'icons',
+                                    name: 'Icons',
+                                },
+                                fonts: {
+                                    type: 'fonts',
+                                    name: 'Fonts',
+                                },
                             },
                             info: {
                                 name: 'Material Ui',
@@ -194,6 +206,10 @@ export const getPackagesRouteData = (dataPass: any) => {
                                 core: {
                                     type: 'core',
                                     name: 'Core',
+                                },
+                                icons: {
+                                    type: 'icons',
+                                    name: 'Icons',
                                 },
                             },
                             info: {

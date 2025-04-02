@@ -583,7 +583,7 @@ export const getPackagesRouteData = (dataPass: any) => {
                 pageScrollPackage: {
                     route: 'page-scroll-package',
                     info: {
-                        name: 'Pag eScroll Package',
+                        name: 'Page Scroll Package',
                         about: "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Magni inventore repudiandae veniam, neque nemo minus quam beatae quis illo non quisquam pariatur harum corporis veritatis perferendis autem quas! Libero, voluptatibus."
                     },
                     component: <PageScrollPackage />,
@@ -736,6 +736,10 @@ export const getPackagesRouteData = (dataPass: any) => {
                                 core: {
                                     type: 'core',
                                     name: 'Core',
+                                },
+                                timezone: {
+                                    type: 'timezone',
+                                    name: 'Time Zone',
                                 },
                             },
                             info: {

@@ -17,7 +17,6 @@ export const WhatIsThis = ({ propsPass }: any) => {
             </span>
           </> : null
       }
-
       {
         targetedTab === loaderData.packagesUsed.icons.type ?
           <>
@@ -30,7 +29,6 @@ export const WhatIsThis = ({ propsPass }: any) => {
             </span>
           </> : null
       }
-
       {
         targetedTab === loaderData.packagesUsed.datetime2.type ?
           <>
@@ -43,7 +41,6 @@ export const WhatIsThis = ({ propsPass }: any) => {
             </span>
           </> : null
       }
-
       {
         targetedTab === loaderData.packagesUsed.select.type ?
           <>
@@ -56,7 +53,6 @@ export const WhatIsThis = ({ propsPass }: any) => {
             </span>
           </> : null
       }
-
       {
         targetedTab === loaderData.packagesUsed.table.type ?
           <>

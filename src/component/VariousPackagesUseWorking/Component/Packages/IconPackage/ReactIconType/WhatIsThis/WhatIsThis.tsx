@@ -4,7 +4,7 @@ export const WhatIsThis = ({ propsPass }: any) => {
     <div className="vpu_ocoplmimotca_list">
       {
         targetedTab === loaderData.packagesUsed.core.type ?
-          <>
+          <div className='vpu_ocoplmimotca_item'>
             <span className="singleLineText">This is <b>react icon</b> package to manage the <b>icons</b></span>
             <span className="singleLineText">To use this package you need to <b>install</b> the library by using command:
               <p><span className="npmCommand">npm install react-icons --save</span></p>
@@ -13,7 +13,7 @@ export const WhatIsThis = ({ propsPass }: any) => {
               <p><a className="visitDoc" href="https://react-icons.github.io/react-icons/" target="_blank">https://react-icons.github.io/react-icons/</a></p>
             </span>
             <span className="singleLineText">Some example of <b>react icon</b> is:</span>
-          </> : null
+          </div> : null
       }
     </div>
   )

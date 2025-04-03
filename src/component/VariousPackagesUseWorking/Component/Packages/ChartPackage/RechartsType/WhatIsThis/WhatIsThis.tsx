@@ -4,7 +4,7 @@ export const WhatIsThis = ({ propsPass }: any) => {
     <div className="vpu_ocoplmimotca_list">
       {
         targetedTab === loaderData.packagesUsed.core.type ?
-          <>
+          <div className='vpu_ocoplmimotca_item'>
             <span className="singleLineText">This is <b>recharts</b> package to manage the <b>chart</b></span>
             <span className="singleLineText">To use this package you need to <b>install</b> the library by using command:
               <p><span className="npmCommand">npm install recharts</span></p>
@@ -14,7 +14,7 @@ export const WhatIsThis = ({ propsPass }: any) => {
               <p><a className="visitDoc" href="https://github.com/recharts/recharts" target="_blank">https://github.com/recharts/recharts</a></p>
             </span>
             <span className="singleLineText">Some example of <b>recharts</b> is:</span>
-          </> : null
+          </div> : null
       }
     </div>
   )

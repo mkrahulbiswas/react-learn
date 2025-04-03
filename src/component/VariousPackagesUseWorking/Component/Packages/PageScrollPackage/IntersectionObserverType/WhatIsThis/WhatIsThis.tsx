@@ -4,7 +4,7 @@ export const WhatIsThis = ({ propsPass }: any) => {
     <div className="vpu_ocoplmimotca_list">
       {
         targetedTab === loaderData.packagesUsed.core.type ?
-          <>
+          <div className='vpu_ocoplmimotca_item'>
             <span className="singleLineText">This is <b>intersection observer</b> package to manage the <b>page scroll event</b></span>
             <span className="singleLineText">To use this package you need to <b>install</b> the library by using command:
               <p><span className="npmCommand">npm install react-intersection-observer --save</span></p>
@@ -14,7 +14,7 @@ export const WhatIsThis = ({ propsPass }: any) => {
               <p><a className="visitDoc" href="https://www.npmjs.com/package/react-intersection-observer" target="_blank">https://www.npmjs.com/package/react-intersection-observer</a></p>
             </span>
             <span className="singleLineText">Some example of <b>intersection observer</b> is:</span>
-          </> : null
+          </div> : null
       }
     </div>
   )

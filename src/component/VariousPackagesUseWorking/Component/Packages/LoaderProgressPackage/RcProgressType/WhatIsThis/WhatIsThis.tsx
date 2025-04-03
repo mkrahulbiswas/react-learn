@@ -4,7 +4,7 @@ export const WhatIsThis = ({ propsPass }: any) => {
     <div className="vpu_ocoplmimotca_list">
       {
         targetedTab === loaderData.packagesUsed.core.type ?
-          <>
+          <div className='vpu_ocoplmimotca_item'>
             <span className="singleLineText">This is <b>rc progress</b> package to manage the <b>progress bar</b></span>
             <span className="singleLineText">To use this package you need to <b>install</b> the library by using command:
               <p><span className="npmCommand">npm i rc-progress</span></p>
@@ -15,7 +15,7 @@ export const WhatIsThis = ({ propsPass }: any) => {
               <p><a className="visitDoc" href="https://progress-react-component.vercel.app/" target="_blank">https://progress-react-component.vercel.app/</a></p>
             </span>
             <span className="singleLineText">Some example of <b>rc progress</b> is:</span>
-          </> : null
+          </div> : null
       }
     </div>
   )

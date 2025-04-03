@@ -4,7 +4,7 @@ export const WhatIsThis = ({ propsPass }: any) => {
     <div className="vpu_ocoplmimotca_list">
       {
         targetedTab === loaderData.packagesUsed.core.type ?
-          <>
+          <div className='vpu_ocoplmimotca_item'>
             <span className="singleLineText">This is <b>fluent ui</b> package to manage the <b>components & other feature</b></span>
             <span className="singleLineText">To use this package you need to <b>install</b> the library by using command:
               <p><span className="npmCommand">npm add @fluentui/react-components @fluentui/react-datepicker-compat</span></p>
@@ -16,7 +16,7 @@ export const WhatIsThis = ({ propsPass }: any) => {
               <p><a className="visitDoc" href="https://www.npmjs.com/package/office-ui-fabric-react" target="_blank">https://www.npmjs.com/package/office-ui-fabric-react</a></p>
             </span>
             <span className="singleLineText">Some example of <b>fluent ui</b> is:</span>
-          </> : null
+          </div> : null
       }
     </div>
   )

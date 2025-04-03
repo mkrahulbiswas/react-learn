@@ -4,7 +4,7 @@ export const WhatIsThis = ({ propsPass }: any) => {
     <div className="vpu_ocoplmimotca_list">
       {
         targetedTab === loaderData.packagesUsed.core.type ?
-          <>
+          <div className='vpu_ocoplmimotca_item'>
             <span className="singleLineText">This is <b>tostify</b> package to manage the <b>tost message</b></span>
             <span className="singleLineText">To use this package you need to <b>install</b> the library by using command:
               <p><span className="npmCommand">npm install --save react-toastify</span></p>
@@ -15,7 +15,7 @@ export const WhatIsThis = ({ propsPass }: any) => {
               <p><a className="visitDoc" href="https://github.com/fkhadra/react-toastify" target="_blank">https://github.com/fkhadra/react-toastify</a></p>
             </span>
             <span className="singleLineText">Some example of <b>tostify</b> is:</span>
-          </> : null
+          </div> : null
       }
     </div>
   )

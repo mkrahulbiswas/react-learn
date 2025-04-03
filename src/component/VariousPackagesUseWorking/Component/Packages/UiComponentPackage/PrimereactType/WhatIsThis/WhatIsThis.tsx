@@ -4,7 +4,7 @@ export const WhatIsThis = ({ propsPass }: any) => {
     <div className="vpu_ocoplmimotca_list">
       {
         targetedTab === loaderData.packagesUsed.core.type ?
-          <>
+          <div className='vpu_ocoplmimotca_item'>
             <span className="singleLineText">This is <b>prime react</b> package to manage the <b>components & other feature</b></span>
             <span className="singleLineText">To use this package you need to <b>install</b> the library by using command:
               <p><span className="npmCommand">npm install primereact</span></p>
@@ -14,11 +14,11 @@ export const WhatIsThis = ({ propsPass }: any) => {
               <p><a className="visitDoc" href="https://github.com/primefaces/primereact" target="_blank">https://github.com/primefaces/primereact</a></p>
               <p><a className="visitDoc" href="https://primereact.org/" target="_blank">https://primereact.org/</a></p>
             </span>
-          </> : null
+          </div> : null
       }
       {
         targetedTab === loaderData.packagesUsed.icons.type ?
-          <>
+          <div className='vpu_ocoplmimotca_item'>
             <span className="singleLineText">To use primereact <b>icon</b> you need to <b>install</b> the library by using command:
               <p><span className="npmCommand">npm install primeicons</span></p>
             </span>
@@ -27,7 +27,7 @@ export const WhatIsThis = ({ propsPass }: any) => {
               <p><a className="visitDoc" href="https://primereact.org/icons/" target="_blank">https://primereact.org/icons/</a></p>
             </span>
             <span className="singleLineText">Some example of <b>prime react</b> is:</span>
-          </> : null
+          </div> : null
       }
     </div>
   )

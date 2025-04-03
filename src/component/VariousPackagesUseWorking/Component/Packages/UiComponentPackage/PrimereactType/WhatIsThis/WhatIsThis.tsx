@@ -1,7 +1,7 @@
 export const WhatIsThis = ({ propsPass }: any) => {
   const { loaderData, targetedTab } = propsPass
   return (
-    <>
+    <div className="vpu_ocoplmimotca_list">
       {
         targetedTab === loaderData.packagesUsed.core.type ?
           <>
@@ -29,6 +29,6 @@ export const WhatIsThis = ({ propsPass }: any) => {
             <span className="singleLineText">Some example of <b>prime react</b> is:</span>
           </> : null
       }
-    </>
+    </div>
   )
 }

@@ -1,10 +1,10 @@
 export const WhatIsThis = ({ propsPass }: any) => {
   const { loaderData, targetedTab } = propsPass
   return (
-    <>
+    <div className="vpu_ocoplmimotca_list">
       {
         targetedTab === loaderData.packagesUsed.core.type ?
-          <>
+          <div className='vpu_ocoplmimotca_item'>
             <span className="singleLineText">This is <b>blueprint js</b> package to manage the <b>components & other feature</b></span>
             <span className="singleLineText">To use this package you need to <b>install</b> the library by using command:
               <p><span className="npmCommand">npm i --save @blueprintjs/core</span></p>
@@ -15,11 +15,11 @@ export const WhatIsThis = ({ propsPass }: any) => {
               <p><a className="visitDoc" href="https://blueprintjs.com/" target="_blank">https://blueprintjs.com/</a></p>
               <p><a className="visitDoc" href="https://www.npmjs.com/package/@blueprintjs/core" target="_blank">https://www.npmjs.com/package/@blueprintjs/core</a></p>
             </span>
-          </> : null
+          </div> : null
       }
       {
         targetedTab === loaderData.packagesUsed.icons.type ?
-          <>
+          <div className='vpu_ocoplmimotca_item'>
             <span className="singleLineText">To use the icon package you need to <b>install</b> the library by using command:
               <p><span className="npmCommand">npm i --save @blueprintjs/icons</span></p>
             </span>
@@ -27,11 +27,11 @@ export const WhatIsThis = ({ propsPass }: any) => {
             <span className="singleLineText">For more info you can visit the site:
               <p><a className="visitDoc" href="https://blueprintjs.com/docs/#icons" target="_blank">https://blueprintjs.com/docs/#icons</a></p>
             </span>
-          </> : null
+          </div> : null
       }
       {
         targetedTab === loaderData.packagesUsed.datetime2.type ?
-          <>
+          <div className='vpu_ocoplmimotca_item'>
             <span className="singleLineText">To use this package you need to <b>install</b> the library by using command:
               <p>For Date Time 2: <span className="npmCommand">npm i --save @blueprintjs/datetime2</span></p>
             </span>
@@ -39,11 +39,11 @@ export const WhatIsThis = ({ propsPass }: any) => {
             <span className="singleLineText">For more info you can visit the site:
               <p><a className="visitDoc" href="https://blueprintjs.com/docs/#datetime2" target="_blank">https://blueprintjs.com/docs/#datetime2</a></p>
             </span>
-          </> : null
+          </div> : null
       }
       {
         targetedTab === loaderData.packagesUsed.select.type ?
-          <>
+          <div className='vpu_ocoplmimotca_item'>
             <span className="singleLineText">To use this package you need to <b>install</b> the library by using command:
               <p>For Select: <span className="npmCommand">npm i --save @blueprintjs/select</span></p>
             </span>
@@ -51,11 +51,11 @@ export const WhatIsThis = ({ propsPass }: any) => {
             <span className="singleLineText">For more info you can visit the site:
               <p><a className="visitDoc" href="https://blueprintjs.com/docs/#select" target="_blank">https://blueprintjs.com/docs/#select</a></p>
             </span>
-          </> : null
+          </div> : null
       }
       {
         targetedTab === loaderData.packagesUsed.table.type ?
-          <>
+          <div className='vpu_ocoplmimotca_item'>
             <span className="singleLineText">To use this package you need to <b>install</b> the library by using command:
               <p>For Table: <span className="npmCommand">npm i --save @blueprintjs/table</span></p>
             </span>
@@ -64,8 +64,8 @@ export const WhatIsThis = ({ propsPass }: any) => {
               <p><a className="visitDoc" href="https://blueprintjs.com/docs/#table" target="_blank">https://blueprintjs.com/docs/#table</a></p>
             </span>
             <span className="singleLineText">Some example of <b>blueprint js</b> is:</span>
-          </> : null
+          </div> : null
       }
-    </>
+    </div>
   )
 }

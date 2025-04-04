@@ -5,15 +5,29 @@ export const WhatIsThis = ({ propsPass }: any) => {
       {
         targetedTab === loaderData.packagesUsed.core.type ?
           <div className='vpu_ocoplmimotca_item'>
-            <span className="singleLineText">This is <b>framer motion</b> package to manage the <b>animation</b></span>
-            <span className="singleLineText">To use this package you need to <b>install</b> the library by using command:
-              <p><span className="npmCommand">npm install motion</span></p>
-            </span>
-            <span className="singleLineText">For more info you can visit the site:
-              <p><a className="visitDoc" href="https://www.npmjs.com/package/motion" target="_blank">https://www.npmjs.com/package/motion</a></p>
-              <p><a className="visitDoc" href="https://motion.dev/docs/" target="_blank">https://motion.dev/docs/</a></p>
-            </span>
-            <span className="singleLineText">Some example of <b>framer motion</b> is:</span>
+            <ul>
+              <li className="vpu_ocoplmimotcai_heading">
+                <span>This is <b>framer motion</b> package to manage the <b>animation</b></span>
+              </li>
+              <li className="vpu_ocoplmimotcai_npm">
+                <p>
+                  <span>To use this package you need to <b>install</b> the library by using command:</span>
+                  <div>
+                    <a>npm install motion</a>
+                  </div>
+                </p>
+              </li>
+              <li className="vpu_ocoplmimotcai_site">
+                <span className="singleLineText">For more info you can visit the site:</span>
+                <div>
+                  <a className="visitDoc" href="https://www.npmjs.com/package/motion" target="_blank">https://www.npmjs.com/package/motion</a>
+                  <a className="visitDoc" href="https://motion.dev/docs/" target="_blank">https://motion.dev/docs/</a>
+                </div>
+              </li>
+              <li>
+                <span>Some examples are given bellow:</span>
+              </li>
+            </ul>
           </div> : null
       }
     </div>

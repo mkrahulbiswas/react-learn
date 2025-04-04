@@ -769,133 +769,87 @@ ul {
                                                                                         gap: 10px;
 
                                                                                         .vpu_ocoplmimotca_item {
-                                                                                            background-image: linear-gradient(60deg, #29323c 0%, #485563 100%);
+                                                                                            background-image: linear-gradient(60deg, #abecd6 0%, #fbed96 100%);
                                                                                             border: 1px solid rgb(22, 110, 110);
                                                                                             padding: 10px;
                                                                                             margin: 10px;
                                                                                             border-radius: 5px;
 
                                                                                             b {
-                                                                                                color: #77f5c0;
+                                                                                                color: #1b5699;
                                                                                             }
 
-                                                                                            .vpu_ocoplmimotcai_common {}
+                                                                                            ul {
+                                                                                                display: flex;
+                                                                                                flex-direction: column;
+                                                                                                justify-content: space-between;
+                                                                                                gap: 10px;
 
-                                                                                            .vpu_ocoplmimotcai_heading {
-                                                                                                font-size: 13px;
-                                                                                                color: #bcefff;
-                                                                                                margin-bottom: 10px;
+                                                                                                li {}
 
-                                                                                                span {
-                                                                                                    font-size: 16px;
-                                                                                                }
-                                                                                            }
-
-                                                                                            .vpu_ocoplmimotcai_npm {
-                                                                                                span {
+                                                                                                .vpu_ocoplmimotcai_heading {
                                                                                                     font-size: 13px;
-                                                                                                    color: #e7f4ff;
+                                                                                                    color: #000000;
+
+                                                                                                    span {
+                                                                                                        font-size: 16px;
+                                                                                                    }
                                                                                                 }
 
-                                                                                                ul {
-                                                                                                    display: flex;
-                                                                                                    flex-direction: column;
-
-                                                                                                    li {
+                                                                                                .vpu_ocoplmimotcai_npm {
+                                                                                                    p {
+                                                                                                        margin: 0;
                                                                                                         font-size: 13px;
-                                                                                                        color: #e7f4ff;
+                                                                                                        color: #000000;
 
-                                                                                                        &:first-child {
+                                                                                                        span {
                                                                                                             label {}
-
-                                                                                                            span {
-                                                                                                                display: flex;
-                                                                                                                flex-direction: row;
-                                                                                                                flex-wrap: wrap;
-                                                                                                                gap: 8px;
-                                                                                                                margin-top: 5px;
-
-                                                                                                                p {
-                                                                                                                    margin: 0;
-                                                                                                                    padding: 2px 8px;
-                                                                                                                    background-image: linear-gradient(to top, #bdc2e8 0%, #bdc2e8 1%, #e6dee9 100%);
-                                                                                                                    border-radius: 5px;
-                                                                                                                    transition: 0.30s ease-in-out;
-                                                                                                                    color: black;
-
-                                                                                                                    &:hover {
-                                                                                                                        cursor: pointer;
-                                                                                                                        background-color: #CDDCDC;
-                                                                                                                        background-image: radial-gradient(at 50% 100%, rgba(255, 255, 255, 0.50) 0%, rgba(0, 0, 0, 0.50) 100%), linear-gradient(to bottom, rgba(255, 255, 255, 0.25) 0%, rgba(0, 0, 0, 0.25) 100%);
-                                                                                                                        background-blend-mode: screen, overlay;
-                                                                                                                    }
-                                                                                                                }
-                                                                                                            }
                                                                                                         }
 
-                                                                                                        &:last-child {
-                                                                                                            margin-top: 10px;
+                                                                                                        div {
+                                                                                                            display: flex;
+                                                                                                            flex-direction: row;
+                                                                                                            flex-wrap: wrap;
+                                                                                                            gap: 8px;
 
-                                                                                                            label {
-                                                                                                                color: red;
-                                                                                                                font-weight: bold;
-                                                                                                            }
+                                                                                                            a {
+                                                                                                                padding: 0px 8px;
+                                                                                                                background-image: linear-gradient(to top, #bdc2e8 0%, #bdc2e8 1%, #e6dee9 100%);
+                                                                                                                border-radius: 5px;
+                                                                                                                transition: 0.30s ease-in-out;
+                                                                                                                color: black;
 
-                                                                                                            span {
-                                                                                                                margin-top: 5px;
-                                                                                                                display: flex;
-                                                                                                                flex-direction: row;
-                                                                                                                flex-wrap: wrap;
-                                                                                                                gap: 8px;
-
-                                                                                                                p {
-                                                                                                                    margin: 0;
-                                                                                                                    padding: 2px 8px;
-                                                                                                                    border-radius: 5px;
-                                                                                                                    transition: 0.30s ease-in-out;
-                                                                                                                    background-image: linear-gradient(to top, #bdc2e8 0%, #bdc2e8 1%, #e6dee9 100%);
-                                                                                                                    color: black;
-                                                                                                                    display: block;
-
-                                                                                                                    &:hover {
-                                                                                                                        cursor: pointer;
-                                                                                                                        background-color: #CDDCDC;
-                                                                                                                        background-image: radial-gradient(at 50% 100%, rgba(255, 255, 255, 0.50) 0%, rgba(0, 0, 0, 0.50) 100%), linear-gradient(to bottom, rgba(255, 255, 255, 0.25) 0%, rgba(0, 0, 0, 0.25) 100%);
-                                                                                                                        background-blend-mode: screen, overlay;
-                                                                                                                    }
+                                                                                                                &:hover {
+                                                                                                                    cursor: pointer;
+                                                                                                                    background-color: #CDDCDC;
+                                                                                                                    background-image: radial-gradient(at 50% 100%, rgba(255, 255, 255, 0.50) 0%, rgba(0, 0, 0, 0.50) 100%), linear-gradient(to bottom, rgba(255, 255, 255, 0.25) 0%, rgba(0, 0, 0, 0.25) 100%);
+                                                                                                                    background-blend-mode: screen, overlay;
                                                                                                                 }
                                                                                                             }
                                                                                                         }
                                                                                                     }
                                                                                                 }
-                                                                                            }
 
-                                                                                            .vpu_ocoplmimotcai_site {
-                                                                                                margin-top: 10px;
+                                                                                                .vpu_ocoplmimotcai_site {
+                                                                                                    span {
+                                                                                                        font-size: 13px;
+                                                                                                        color: #000000;
+                                                                                                        margin-bottom: 5px;
+                                                                                                        display: block;
+                                                                                                    }
 
-                                                                                                span {
-                                                                                                    font-size: 13px;
-                                                                                                    color: #e7f4ff;
-                                                                                                    margin-bottom: 5px;
-                                                                                                    display: block;
-                                                                                                }
+                                                                                                    div {
+                                                                                                        display: flex;
+                                                                                                        flex-direction: row;
+                                                                                                        flex-wrap: wrap;
+                                                                                                        gap: 10px;
 
-                                                                                                ul {
-                                                                                                    display: flex;
-                                                                                                    flex-direction: row;
-                                                                                                    flex-wrap: wrap;
-                                                                                                    gap: 8px;
-
-                                                                                                    li {
                                                                                                         .visitDoc {
-                                                                                                            font-size: 13px;
-                                                                                                            color: #e7f4ff;
-                                                                                                            padding: 3px 6px;
-                                                                                                            background-color: #CDDCDC;
-                                                                                                            background-image: radial-gradient(at 50% 100%, rgba(255, 255, 255, 0.50) 0%, rgba(0, 0, 0, 0.50) 100%), linear-gradient(to bottom, rgba(255, 255, 255, 0.25) 0%, rgba(0, 0, 0, 0.25) 100%);
-                                                                                                            background-blend-mode: screen, overlay;
                                                                                                             border-radius: 5px;
-                                                                                                            color: #000000;
+                                                                                                            font-size: 13px;
+                                                                                                            color: #080672;
+                                                                                                            border-radius: 5px;
+                                                                                                            outline: none;
                                                                                                         }
                                                                                                     }
                                                                                                 }

@@ -12,7 +12,7 @@ export const WhatIsThis = ({ propsPass }: any) => {
               <li className="vpu_ocoplmimotcai_npm">
                 <p>
                   <span>To use the core package you need to <b>install</b> the library by using command:</span>
-                  <div>
+                  <div className="vpu_npm_list">
                     <a>npm i --save @blueprintjs/core</a>
                   </div>
                 </p>
@@ -20,7 +20,7 @@ export const WhatIsThis = ({ propsPass }: any) => {
                   <span>
                     <label>Note:</label> after install package you need to <b>import</b> css path to <b>main.ts / app.ts / in the targeted file</b>. The css path is
                   </span>
-                  <div>
+                  <div className="vpu_import_list">
                     <a>import '@blueprintjs/core/lib/css/blueprint.css';</a>
                   </div>
                 </p>
@@ -49,7 +49,7 @@ export const WhatIsThis = ({ propsPass }: any) => {
               <li className="vpu_ocoplmimotcai_npm">
                 <p>
                   <span>To use the icon package you need to <b>install</b> the library by using command:</span>
-                  <div>
+                  <div className="vpu_npm_list">
                     <a>npm i --save @blueprintjs/icons</a>
                   </div>
                 </p>
@@ -84,7 +84,7 @@ export const WhatIsThis = ({ propsPass }: any) => {
               <li className="vpu_ocoplmimotcai_npm">
                 <p>
                   <span>To use this package you need to <b>install</b> the library by using command:</span>
-                  <div>
+                  <div className="vpu_npm_list">
                     <a>npm i --save @blueprintjs/datetime2</a>
                   </div>
                 </p>
@@ -119,7 +119,7 @@ export const WhatIsThis = ({ propsPass }: any) => {
               <li className="vpu_ocoplmimotcai_npm">
                 <p>
                   <span>To use this package you need to <b>install</b> the library by using command:</span>
-                  <div>
+                  <div className="vpu_npm_list">
                     <a>npm i --save @blueprintjs/select</a>
                   </div>
                 </p>
@@ -154,7 +154,7 @@ export const WhatIsThis = ({ propsPass }: any) => {
               <li className="vpu_ocoplmimotcai_npm">
                 <p>
                   <span>To use this package you need to <b>install</b> the library by using command</span>
-                  <div>
+                  <div className="vpu_npm_list">
                     <a>npm i --save @blueprintjs/table</a>
                   </div>
                 </p>

@@ -12,8 +12,8 @@ export const WhatIsThis = ({ propsPass }: any) => {
               <li className="vpu_ocoplmimotcai_npm">
                 <p>
                   <span>To use this package you need to <b>install</b> the library by using command:</span>
-                  <div>
-                    <a>$ npm i sweetalert2</a>
+                  <div className="vpu_npm_list">
+                    <a>npm i sweetalert2</a>
                   </div>
                 </p>
               </li>

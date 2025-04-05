@@ -12,7 +12,7 @@ export const WhatIsThis = ({ propsPass }: any) => {
               <li className="vpu_ocoplmimotcai_npm">
                 <p>
                   <span>To use this package you need to <b>install</b> the library by using command:</span>
-                  <div>
+                  <div className="vpu_npm_list">
                     <a>npm i react-grid-layout</a>
                   </div>
                 </p>
@@ -20,8 +20,8 @@ export const WhatIsThis = ({ propsPass }: any) => {
                   <span>
                     <label>Note:</label> after install package you need to <b>import</b> css path to <b>main.ts / app.ts / in the targeted file</b>. The css path is
                   </span>
-                  <div>
-                    <a>import 'react-resizable/css/styles.css';</a>
+                  <div className="vpu_import_list">
+                    <a>npm 'react-resizable/css/styles.css';</a>
                     <a>import 'react-grid-layout/css/styles.css';</a>
                   </div>
                 </p>

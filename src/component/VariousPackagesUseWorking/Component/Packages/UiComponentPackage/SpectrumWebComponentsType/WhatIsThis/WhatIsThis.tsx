@@ -16,14 +16,6 @@ export const WhatIsThis = ({ propsPass }: any) => {
                     <a>npm install @adobe/react-spectrum --save</a>
                   </div>
                 </p>
-                <p>
-                  <span>
-                    <label>Note:</label> after install package you need to <b>import</b> css path to <b>main.ts / app.ts / in the targeted file</b>. The css path is
-                  </span>
-                  <div>
-                    <a>import '@blueprintjs/core/lib/css/blueprint.css';</a>
-                  </div>
-                </p>
               </li>
               <li className="vpu_ocoplmimotcai_site">
                 <span className="singleLineText">For more info you can visit the site:</span>

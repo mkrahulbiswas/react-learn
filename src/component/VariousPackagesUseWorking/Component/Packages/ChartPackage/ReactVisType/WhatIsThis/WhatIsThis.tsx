@@ -5,15 +5,34 @@ export const WhatIsThis = ({ propsPass }: any) => {
       {
         targetedTab === loaderData.packagesUsed.core.type ?
           <div className='vpu_ocoplmimotca_item'>
+            <ul>
+              <li className="vpu_ocoplmimotcai_heading">
+                <span>This is <b>react vis</b> package to manage the <b>chart</b></span>
+              </li>
+              <li className="vpu_ocoplmimotcai_npm">
+                <p>
+                  <span>To use this package you need to <b>install</b> the library by using command:</span>
+                  <div>
+                    <a>npm i --save react-vis --force</a>
+                  </div>
+                </p>
+              </li>
+              <li className="vpu_ocoplmimotcai_site">
+                <span className="singleLineText">For more info you can visit the site:</span>
+                <div>
+                  <a className="visitDoc" href="https://uber.github.io/react-vis/" target="_blank">https://uber.github.io/react-vis/</a>
+                  <a className="visitDoc" href="https://github.com/uber/react-vis" target="_blank">https://github.com/uber/react-vis</a>
+                </div>
+              </li>
+              <li>
+                <span>Some examples are given bellow:</span>
+              </li>
+            </ul>
+
             <span className="singleLineText">This is <b>react vis</b> package to manage the <b>chart</b></span>
             <span className="singleLineText">To use this package you need to <b>install</b> the library by using command:
-              <p><span className="npmCommand">npm i --save react-vis --force</span></p>
+              <p><span className="npmCommand"></span></p>
             </span>
-            <span className="singleLineText">For more info you can visit the site:
-              <p><a className="visitDoc" href="https://uber.github.io/react-vis/" target="_blank">https://uber.github.io/react-vis/</a></p>
-              <p><a className="visitDoc" href="https://github.com/uber/react-vis" target="_blank">https://github.com/uber/react-vis</a></p>
-            </span>
-            <span className="singleLineText">Some example of <b>react vis</b> is:</span>
           </div> : null
       }
     </div>

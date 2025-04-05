@@ -5,15 +5,29 @@ export const WhatIsThis = ({ propsPass }: any) => {
       {
         targetedTab === loaderData.packagesUsed.core.type ?
           <div className='vpu_ocoplmimotca_item'>
-            <span className="singleLineText">This is <b>victory charts</b> package to manage the <b>chart</b></span>
-            <span className="singleLineText">To use this package you need to <b>install</b> the library by using command:
-              <p><span className="npmCommand">npm install --save victory</span></p>
-            </span>
-            <span className="singleLineText">For more info you can visit the site:
-              <p><a className="visitDoc" href="https://commerce.nearform.com/open-source/victory/" target="_blank">https://commerce.nearform.com/open-source/victory/</a></p>
-              <p><a className="visitDoc" href="https://github.com/FormidableLabs/victory" target="_blank">https://github.com/FormidableLabs/victory</a></p>
-            </span>
-            <span className="singleLineText">Some example of <b>victory charts</b> is:</span>
+            <ul>
+              <li className="vpu_ocoplmimotcai_heading">
+                <span>This is <b>victory charts</b> package to manage the <b>chart</b></span>
+              </li>
+              <li className="vpu_ocoplmimotcai_npm">
+                <p>
+                  <span>To use this package you need to <b>install</b> the library by using command:</span>
+                  <div>
+                    <a>npm install --save victory</a>
+                  </div>
+                </p>
+              </li>
+              <li className="vpu_ocoplmimotcai_site">
+                <span className="singleLineText">For more info you can visit the site:</span>
+                <div>
+                  <a className="visitDoc" href="https://commerce.nearform.com/open-source/victory/" target="_blank">https://commerce.nearform.com/open-source/victory/</a>
+                  <a className="visitDoc" href="https://github.com/FormidableLabs/victory" target="_blank">https://github.com/FormidableLabs/victory</a>
+                </div>
+              </li>
+              <li>
+                <span>Some examples are given bellow:</span>
+              </li>
+            </ul>
           </div> : null
       }
     </div>

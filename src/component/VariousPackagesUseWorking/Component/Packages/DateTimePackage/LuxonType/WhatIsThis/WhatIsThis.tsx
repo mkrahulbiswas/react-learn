@@ -11,7 +11,7 @@ export const WhatIsThis = ({ propsPass }: any) => {
               </li>
               <li className="vpu_ocoplmimotcai_npm">
                 <div className="vpu_ocoplmimotcain_main">
-                  <div className="vpu_npm_list">
+                  <div className="vpu_ocoplmimotcain_common vpu_npm_list">
                     <p>
                       <span>There a new updated version of moment js is <b>luxon</b>. To use it need to install:</span>
                       <div>

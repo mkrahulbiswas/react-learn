@@ -11,7 +11,7 @@ export const WhatIsThis = ({ propsPass }: any) => {
               </li>
               <li className="vpu_ocoplmimotcai_npm">
                 <div className="vpu_ocoplmimotcain_main">
-                  <div className="vpu_npm_list">
+                  <div className="vpu_ocoplmimotcain_common vpu_npm_list">
                     <p>
                       <span>To use this package you need to <b>install</b> the library by using command:</span>
                       <div>
@@ -43,7 +43,7 @@ export const WhatIsThis = ({ propsPass }: any) => {
               </li>
               <li className="vpu_ocoplmimotcai_npm">
                 <div className="vpu_ocoplmimotcain_main">
-                  <div className="vpu_npm_list">
+                  <div className="vpu_ocoplmimotcain_common vpu_npm_list">
                     <p>
                       <span>To use the icon package you need to <b>install</b> the library by using command:</span>
                       <div>
@@ -74,7 +74,7 @@ export const WhatIsThis = ({ propsPass }: any) => {
               </li>
               <li className="vpu_ocoplmimotcai_npm">
                 <div className="vpu_ocoplmimotcain_main">
-                  <div className="vpu_npm_list">
+                  <div className="vpu_ocoplmimotcain_common vpu_npm_list">
                     <p>
                       <span>To use the font package you need to <b>install</b> the library by using command:</span>
                       <div>

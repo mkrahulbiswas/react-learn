@@ -11,7 +11,7 @@ export const WhatIsThis = ({ propsPass }: any) => {
               </li>
               <li className="vpu_ocoplmimotcai_npm">
                 <div className="vpu_ocoplmimotcain_main">
-                  <div className="vpu_npm_list">
+                  <div className="vpu_ocoplmimotcain_common vpu_npm_list">
                     <p>
                       <span>To use this package you need to <b>install</b> the library by using command:</span>
                       <div>
@@ -19,7 +19,7 @@ export const WhatIsThis = ({ propsPass }: any) => {
                       </div>
                     </p>
                   </div>
-                  <div className="vpu_import_list">
+                  <div className="vpu_ocoplmimotcain_common vpu_import_list">
                     <p>
                       <span>
                         <label>Note:</label> after install package you need wrap the <b>targeted component</b> into <b>ChakraProvider</b> wrapper.

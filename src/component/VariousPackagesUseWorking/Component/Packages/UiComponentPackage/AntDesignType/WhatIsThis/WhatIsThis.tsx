@@ -10,12 +10,14 @@ export const WhatIsThis = ({ propsPass }: any) => {
                 <span>This is <b>ant design</b> package to manage the <b>components & other feature</b></span>
               </li>
               <li className="vpu_ocoplmimotcai_npm">
-                <p>
-                  <span>To use this package you need to <b>install</b> the library by using command:</span>
-                  <div className="vpu_npm_list">
-                    <a>npm install antd antd-style @ant-design/icons --save</a>
-                  </div>
-                </p>
+                <div className="vpu_ocoplmimotcain_main">
+                  <p className="vpu_npm_list">
+                    <span>To use this package you need to <b>install</b> the library by using command:</span>
+                    <div>
+                      <a>npm install antd antd-style @ant-design/icons --save</a>
+                    </div>
+                  </p>
+                </div>
               </li>
               <li className="vpu_ocoplmimotcai_site">
                 <span className="singleLineText">For more info you can visit the site:</span>
@@ -31,6 +33,6 @@ export const WhatIsThis = ({ propsPass }: any) => {
             </ul>
           </div> : null
       }
-    </div>
+    </div >
   )
 }

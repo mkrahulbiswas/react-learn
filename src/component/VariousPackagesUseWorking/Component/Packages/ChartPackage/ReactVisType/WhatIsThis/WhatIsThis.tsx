@@ -10,12 +10,14 @@ export const WhatIsThis = ({ propsPass }: any) => {
                 <span>This is <b>react vis</b> package to manage the <b>chart</b></span>
               </li>
               <li className="vpu_ocoplmimotcai_npm">
-                <p>
-                  <span>To use this package you need to <b>install</b> the library by using command:</span>
-                  <div className="vpu_npm_list">
-                    <a>npm i --save react-vis --force</a>
-                  </div>
-                </p>
+                <div className="vpu_ocoplmimotcain_main">
+                  <p className="vpu_npm_list">
+                    <span>To use this package you need to <b>install</b> the library by using command:</span>
+                    <div>
+                      <a>npm i --save react-vis --force</a>
+                    </div>
+                  </p>
+                </div>
               </li>
               <li className="vpu_ocoplmimotcai_site">
                 <span className="singleLineText">For more info you can visit the site:</span>
@@ -35,6 +37,6 @@ export const WhatIsThis = ({ propsPass }: any) => {
             </span>
           </div> : null
       }
-    </div>
+    </div >
   )
 }

@@ -10,17 +10,19 @@ export const WhatIsThis = ({ propsPass }: any) => {
                 <span>This is <b>fluent ui</b> package to manage the <b>components & other feature</b></span>
               </li>
               <li className="vpu_ocoplmimotcai_npm">
-                <p>
-                  <span>To use this package you need to <b>install</b> the library by using command:</span>
-                  <div className="vpu_npm_list">
-                    <a>npm add @fluentui/react-components @fluentui/react-datepicker-compat</a>
-                  </div>
-                </p>
-                <p>
-                  <span>
-                    <label>Note:</label> after install package you need wrap the <b>targeted component</b> into <b>FluentProvider</b> wrapper.
-                  </span>
-                </p>
+                <div className="vpu_ocoplmimotcain_main">
+                  <p className="vpu_npm_list">
+                    <span>To use this package you need to <b>install</b> the library by using command:</span>
+                    <div>
+                      <a>npm add @fluentui/react-components @fluentui/react-datepicker-compat</a>
+                    </div>
+                  </p>
+                  <p className="vpu_import_list">
+                    <span>
+                      <label>Note:</label> after install package you need wrap the <b>targeted component</b> into <b>FluentProvider</b> wrapper.
+                    </span>
+                  </p>
+                </div>
               </li>
               <li className="vpu_ocoplmimotcai_site">
                 <span className="singleLineText">For more info you can visit the site:</span>
@@ -36,6 +38,6 @@ export const WhatIsThis = ({ propsPass }: any) => {
             </ul>
           </div> : null
       }
-    </div>
+    </div >
   )
 }

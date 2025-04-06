@@ -10,20 +10,22 @@ export const WhatIsThis = ({ propsPass }: any) => {
                 <span>This is <b>prime react</b> package to manage the <b>components & other feature</b></span>
               </li>
               <li className="vpu_ocoplmimotcai_npm">
-                <p>
-                  <span>To use this package you need to <b>install</b> the library by using command:</span>
-                  <div className="vpu_npm_list">
-                    <a>npm install primereact</a>
-                  </div>
-                </p>
-                <p>
-                  <span>
-                    <label>Note:</label> after install package you need to <b>import</b> css path to <b>main.ts / app.ts / in the targeted file</b>. There is lots other <b>css theme</b> present, you can see by visit on <b>https://primereact.org/theming/#themes</b>. The css path is
-                  </span>
-                  <div className="vpu_import_list">
-                    <a>npm "primereact/resources/themes/lara-light-cyan/theme.css";</a>
-                  </div>
-                </p>
+                <div className="vpu_ocoplmimotcain_main">
+                  <p className="vpu_npm_list">
+                    <span>To use this package you need to <b>install</b> the library by using command:</span>
+                    <div>
+                      <a>npm install primereact</a>
+                    </div>
+                  </p>
+                  <p className="vpu_import_list">
+                    <span>
+                      <label>Note:</label> after install package you need to <b>import</b> css path to <b>main.ts / app.ts / in the targeted file</b>. There is lots other <b>css theme</b> present, you can see by visit on <b>https://primereact.org/theming/#themes</b>. The css path is
+                    </span>
+                    <div className="vpu_import_item">
+                      <a>npm "primereact/resources/themes/lara-light-cyan/theme.css";</a>
+                    </div>
+                  </p>
+                </div>
               </li>
               <li className="vpu_ocoplmimotcai_site">
                 <span className="singleLineText">For more info you can visit the site:</span>
@@ -46,20 +48,22 @@ export const WhatIsThis = ({ propsPass }: any) => {
                 <span>This is <b>prime react</b> additional package called <b>icons</b> package it is used for manage the <b>icons</b></span>
               </li>
               <li className="vpu_ocoplmimotcai_npm">
-                <p>
-                  <span>To use primereact <b>icon</b> you need to <b>install</b> the library by using command:</span>
-                  <div className="vpu_npm_list">
-                    <a>npm install primeicons</a>
-                  </div>
-                </p>
-                <p>
-                  <span>
-                    <label>Note:</label> after install package you need to <b>import</b> css path to <b>main.ts / app.ts / in the targeted file</b>. The css path is
-                  </span>
-                  <div className="vpu_import_list">
-                    <a>npm 'primeicons/primeicons.css';</a>
-                  </div>
-                </p>
+                <div className="vpu_ocoplmimotcain_main">
+                  <p className="vpu_npm_list">
+                    <span>To use primereact <b>icon</b> you need to <b>install</b> the library by using command:</span>
+                    <div>
+                      <a>npm install primeicons</a>
+                    </div>
+                  </p>
+                  <p className="vpu_import_list">
+                    <span>
+                      <label>Note:</label> after install package you need to <b>import</b> css path to <b>main.ts / app.ts / in the targeted file</b>. The css path is
+                    </span>
+                    <div className="vpu_import_item">
+                      <a>npm 'primeicons/primeicons.css';</a>
+                    </div>
+                  </p>
+                </div>
               </li>
               <li className="vpu_ocoplmimotcai_site">
                 <span className="singleLineText">For more info you can visit the site:</span>
@@ -71,8 +75,8 @@ export const WhatIsThis = ({ propsPass }: any) => {
                 <span>Some examples are given bellow:</span>
               </li>
             </ul>
-          </div> : null
+          </div > : null
       }
-    </div>
+    </div >
   )
 }

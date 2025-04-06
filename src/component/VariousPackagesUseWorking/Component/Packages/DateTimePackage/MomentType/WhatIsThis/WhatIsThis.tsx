@@ -10,12 +10,14 @@ export const WhatIsThis = ({ propsPass }: any) => {
                 <span>This is <b>moment js</b> package to manage the <b>date & time</b></span>
               </li>
               <li className="vpu_ocoplmimotcai_npm">
-                <p>
-                  <span>To use this package you need to <b>install</b> the library by using command:</span>
-                  <div className="vpu_npm_list">
-                    <a>npm install --save moment react-moment</a>
-                  </div>
-                </p>
+                <div className="vpu_ocoplmimotcain_main">
+                  <p className="vpu_npm_list">
+                    <span>To use this package you need to <b>install</b> the library by using command:</span>
+                    <div>
+                      <a>npm install --save moment react-moment</a>
+                    </div>
+                  </p>
+                </div>
               </li>
               <li className="vpu_ocoplmimotcai_site">
                 <span className="singleLineText">For more info you can visit the site:</span>
@@ -38,12 +40,14 @@ export const WhatIsThis = ({ propsPass }: any) => {
                 <span>This is <b>moment js</b> additional package called <b>timezone</b> package it is used for manage the <b>timezone</b></span>
               </li>
               <li className="vpu_ocoplmimotcai_npm">
-                <p>
-                  <span>To use <b>timezone</b> related functions need to install:</span>
-                  <div className="vpu_npm_list">
-                    <a>npm install --save moment-timezone</a>
-                  </div>
-                </p>
+                <div className="vpu_ocoplmimotcain_main">
+                  <p className="vpu_npm_list">
+                    <span>To use <b>timezone</b> related functions need to install:</span>
+                    <div>
+                      <a>npm install --save moment-timezone</a>
+                    </div>
+                  </p>
+                </div>
               </li>
               <li className="vpu_ocoplmimotcai_site">
                 <span className="singleLineText">For more info you can visit the site:</span>
@@ -57,8 +61,8 @@ export const WhatIsThis = ({ propsPass }: any) => {
                 <span>Some examples are given bellow:</span>
               </li>
             </ul>
-          </div> : null
+          </div > : null
       }
-    </div>
+    </div >
   )
 }

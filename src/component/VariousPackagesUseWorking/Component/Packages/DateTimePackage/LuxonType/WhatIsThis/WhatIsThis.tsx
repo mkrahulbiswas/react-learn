@@ -10,13 +10,15 @@ export const WhatIsThis = ({ propsPass }: any) => {
                 <span>This is <b>luxon</b> package to manage the <b>date and time</b></span>
               </li>
               <li className="vpu_ocoplmimotcai_npm">
-                <p>
-                  <span>There a new updated version of moment js is <b>luxon</b>. To use it need to install:</span>
-                  <div className="vpu_npm_list">
-                    <a>npm install luxon</a>
-                    <a>npm install --save-dev @types/luxon</a>
-                  </div>
-                </p>
+                <div className="vpu_ocoplmimotcain_main">
+                  <p className="vpu_npm_list">
+                    <span>There a new updated version of moment js is <b>luxon</b>. To use it need to install:</span>
+                    <div>
+                      <a>npm install luxon</a>
+                      <a>npm install --save-dev @types/luxon</a>
+                    </div>
+                  </p>
+                </div>
               </li>
               <li className="vpu_ocoplmimotcai_site">
                 <span className="singleLineText">For more info you can visit the site:</span>
@@ -31,6 +33,6 @@ export const WhatIsThis = ({ propsPass }: any) => {
             </ul>
           </div> : null
       }
-    </div>
+    </div >
   )
 }

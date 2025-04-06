@@ -10,12 +10,14 @@ export const WhatIsThis = ({ propsPass }: any) => {
                 <span>This is <b>material ui</b> package to manage the <b>components & other feature</b></span>
               </li>
               <li className="vpu_ocoplmimotcai_npm">
-                <p>
-                  <span>To use this package you need to <b>install</b> the library by using command:</span>
-                  <div className="vpu_npm_list">
-                    <a>npm install @mui/material @emotion/react @emotion/styled</a>
-                  </div>
-                </p>
+                <div className="vpu_ocoplmimotcain_main">
+                  <p className="vpu_npm_list">
+                    <span>To use this package you need to <b>install</b> the library by using command:</span>
+                    <div>
+                      <a>npm install @mui/material @emotion/react @emotion/styled</a>
+                    </div>
+                  </p>
+                </div>
               </li>
               <li className="vpu_ocoplmimotcai_site">
                 <span className="singleLineText">For more info you can visit the site:</span>
@@ -38,12 +40,14 @@ export const WhatIsThis = ({ propsPass }: any) => {
                 <span>This is <b>material ui</b> additional package called <b>icons</b> package it is used for manage the <b>icons</b></span>
               </li>
               <li className="vpu_ocoplmimotcai_npm">
-                <p>
-                  <span>To use the icon package you need to <b>install</b> the library by using command:</span>
-                  <div className="vpu_npm_list">
-                    <a>npm install @mui/icons-material</a>
-                  </div>
-                </p>
+                <div className="vpu_ocoplmimotcain_main">
+                  <p className="vpu_npm_list">
+                    <span>To use the icon package you need to <b>install</b> the library by using command:</span>
+                    <div>
+                      <a>npm install @mui/icons-material</a>
+                    </div>
+                  </p>
+                </div>
               </li>
               <li className="vpu_ocoplmimotcai_site">
                 <span className="singleLineText">For more info you can visit the site:</span>
@@ -55,7 +59,7 @@ export const WhatIsThis = ({ propsPass }: any) => {
                 <span>Some examples are given bellow:</span>
               </li>
             </ul>
-          </div> : null
+          </div > : null
       }
       {
         targetedTab === loaderData.packagesUsed.fonts.type ?
@@ -65,12 +69,14 @@ export const WhatIsThis = ({ propsPass }: any) => {
                 <span>This is <b>material ui</b> additional package called <b>font</b> package it is used for manage the <b>font</b></span>
               </li>
               <li className="vpu_ocoplmimotcai_npm">
-                <p>
-                  <span>To use the font package you need to <b>install</b> the library by using command:</span>
-                  <div className="vpu_npm_list">
-                    <a>npm install @fontsource/roboto</a>
-                  </div>
-                </p>
+                <div className="vpu_ocoplmimotcain_main">
+                  <p className="vpu_npm_list">
+                    <span>To use the font package you need to <b>install</b> the library by using command:</span>
+                    <div>
+                      <a>npm install @fontsource/roboto</a>
+                    </div>
+                  </p>
+                </div>
               </li>
               <li className="vpu_ocoplmimotcai_site">
                 <span className="singleLineText">For more info you can visit the site:</span>
@@ -82,8 +88,8 @@ export const WhatIsThis = ({ propsPass }: any) => {
                 <span>Some examples are given bellow:</span>
               </li>
             </ul>
-          </div> : null
+          </div > : null
       }
-    </div>
+    </div >
   )
 }

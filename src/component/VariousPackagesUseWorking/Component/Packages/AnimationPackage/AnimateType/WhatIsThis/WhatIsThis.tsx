@@ -10,20 +10,26 @@ export const WhatIsThis = ({ propsPass }: any) => {
                 <span>This is <b>animate</b> package to manage the <b>animation</b></span>
               </li>
               <li className="vpu_ocoplmimotcai_npm">
-                <p>
-                  <span>To use this package you need to <b>install</b> the library by using command:</span>
+                <div className="vpu_ocoplmimotcain_main">
                   <div className="vpu_npm_list">
-                    <a>npm install animate.css --save</a>
+                    <p>
+                      <span>To use this package you need to <b>install</b> the library by using command:</span>
+                      <div className="vpu_npm_package">
+                        <a>npm install animate.css --save</a>
+                      </div>
+                    </p>
                   </div>
-                </p>
-                <p>
-                  <span>
-                    <label>Note:</label> after install package you need to <b>import</b> css path to <b>main.ts / app.ts / in the targeted file</b>. The css path is
-                  </span>
-                  <div className="vpu_import_list">
-                    <a>npm 'animate.css';</a>
+                  <div className="vpu_import_item">
+                    <p>
+                      <span>
+                        <label>Note:</label> after install package you need to <b>import</b> css path to <b>main.ts / app.ts / in the targeted file</b>. The css path is
+                      </span>
+                      <div className="vpu_import_item">
+                        <a>npm 'animate.css';</a>
+                      </div>
+                    </p>
                   </div>
-                </p>
+                </div>
               </li>
               <li className="vpu_ocoplmimotcai_site">
                 <span className="singleLineText">For more info you can visit the site:</span>
@@ -38,6 +44,6 @@ export const WhatIsThis = ({ propsPass }: any) => {
             </ul>
           </div> : null
       }
-    </div>
+    </div >
   )
 }

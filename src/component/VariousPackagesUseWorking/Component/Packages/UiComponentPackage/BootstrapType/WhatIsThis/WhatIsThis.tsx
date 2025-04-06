@@ -11,20 +11,24 @@ export const WhatIsThis = ({ propsPass }: any) => {
               </li>
               <li className="vpu_ocoplmimotcai_npm">
                 <div className="vpu_ocoplmimotcain_main">
-                  <p className="vpu_npm_list">
-                    <span>To use this package you need to <b>install</b> the library by using command:</span>
-                    <div>
-                      <a>npm install bootstrap</a>
-                    </div>
-                  </p>
-                  <p className="vpu_import_list">
-                    <span>
-                      <label>Note:</label> after install package you need to <b>import</b> css & js path to <b>main.ts / app.ts / in the targeted file</b>. The css path is <b>import 'bootstrap/dist/css/bootstrap.min.css';</b> and js path
-                    </span>
-                    <div className="vpu_import_item">
-                      <a>npm 'bootstrap/dist/js/bootstrap.bundle.js';</a>
-                    </div>
-                  </p>
+                  <div className="vpu_npm_list">
+                    <p>
+                      <span>To use this package you need to <b>install</b> the library by using command:</span>
+                      <div>
+                        <a>npm install bootstrap</a>
+                      </div>
+                    </p>
+                  </div>
+                  <div className="vpu_import_list">
+                    <p>
+                      <span>
+                        <label>Note:</label> after install package you need to <b>import</b> css & js path to <b>main.ts / app.ts / in the targeted file</b>. The css path is <b>import 'bootstrap/dist/css/bootstrap.min.css';</b> and js path
+                      </span>
+                      <div className="vpu_import_item">
+                        <a>npm 'bootstrap/dist/js/bootstrap.bundle.js';</a>
+                      </div>
+                    </p>
+                  </div>
                 </div>
               </li>
               <li className="vpu_ocoplmimotcai_site">

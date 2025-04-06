@@ -11,29 +11,33 @@ export const WhatIsThis = ({ propsPass }: any) => {
               </li>
               <li className="vpu_ocoplmimotcai_npm">
                 <div className="vpu_ocoplmimotcain_main">
-                  <p className="vpu_npm_list">
-                    <span>To use this package you need to <b>install</b> the library by using command:</span>
-                    <div>
-                      <a>npm install tailwindcss @tailwindcss/vite</a>
-                    </div>
-                  </p>
-                  <p className="vpu_import_list">
-                    <span>
-                      <label>Note:</label> After install the package you need to do some steps to start <b>tailwind</b>
-                      <p>First you need to put <b>@import "tailwindcss";</b> this inside root css file at the top <b>index.css / app.css / in the targeted</b> css file</p>
-                    </span>
-                    <div>
-                      <a>@import "tailwindcss";</a>
-                    </div>
-                  </p>
-                  <p className="vpu_import_list">
-                    <span>
-                      <p>Second you need to put <b>tailwindcss()</b> this inside <b>vite.config.ts</b> file which is present in <b>root</b> of the project. Also, import the path in the <b>same</b> file at the top: <b>import tailwindcss from '@tailwindcss/vite'</b>.</p>
-                    </span>
-                    <div>
-                      <a>npm tailwindcss from '@tailwindcss/vite';</a>
-                    </div>
-                  </p>
+                  <div className="vpu_npm_list">
+                    <p>
+                      <span>To use this package you need to <b>install</b> the library by using command:</span>
+                      <div>
+                        <a>npm install tailwindcss @tailwindcss/vite</a>
+                      </div>
+                    </p>
+                  </div>
+                  <div className="vpu_import_list">
+                    <p>
+                      <span>
+                        <label>Note:</label> After install the package you need to do some steps to start <b>tailwind</b>
+                        <p>First you need to put <b>@import "tailwindcss";</b> this inside root css file at the top <b>index.css / app.css / in the targeted</b> css file</p>
+                      </span>
+                      <div className="vpu_import_item">
+                        <a>@import "tailwindcss";</a>
+                      </div>
+                    </p>
+                    <p>
+                      <span>
+                        <p>Second you need to put <b>tailwindcss()</b> this inside <b>vite.config.ts</b> file which is present in <b>root</b> of the project. Also, import the path in the <b>same</b> file at the top: <b>import tailwindcss from '@tailwindcss/vite'</b>.</p>
+                      </span>
+                      <div className="vpu_import_item">
+                        <a>npm tailwindcss from '@tailwindcss/vite';</a>
+                      </div>
+                    </p>
+                  </div>
                 </div>
               </li>
               <li className="vpu_ocoplmimotcai_site">

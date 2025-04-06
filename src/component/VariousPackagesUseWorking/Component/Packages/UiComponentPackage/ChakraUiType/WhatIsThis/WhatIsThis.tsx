@@ -11,17 +11,21 @@ export const WhatIsThis = ({ propsPass }: any) => {
               </li>
               <li className="vpu_ocoplmimotcai_npm">
                 <div className="vpu_ocoplmimotcain_main">
-                  <p className="vpu_npm_list">
-                    <span>To use this package you need to <b>install</b> the library by using command:</span>
-                    <div>
-                      <a>npm i @chakra-ui/react @emotion/react</a>
-                    </div>
-                  </p>
-                  <p className="vpu_import_list">
-                    <span>
-                      <label>Note:</label> after install package you need wrap the <b>targeted component</b> into <b>ChakraProvider</b> wrapper.
-                    </span>
-                  </p>
+                  <div className="vpu_npm_list">
+                    <p>
+                      <span>To use this package you need to <b>install</b> the library by using command:</span>
+                      <div>
+                        <a>npm i @chakra-ui/react @emotion/react</a>
+                      </div>
+                    </p>
+                  </div>
+                  <div className="vpu_import_list">
+                    <p>
+                      <span>
+                        <label>Note:</label> after install package you need wrap the <b>targeted component</b> into <b>ChakraProvider</b> wrapper.
+                      </span>
+                    </p>
+                  </div>
                 </div>
               </li>
               <li className="vpu_ocoplmimotcai_site">

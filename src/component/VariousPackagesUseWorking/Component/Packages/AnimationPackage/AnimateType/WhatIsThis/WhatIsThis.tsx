@@ -19,7 +19,7 @@ export const WhatIsThis = ({ propsPass }: any) => {
                       </div>
                     </p>
                   </div>
-                  <div className="vpu_import_item">
+                  <div className="vpu_import_list">
                     <p>
                       <span>
                         <label>Note:</label> after install package you need to <b>import</b> css path to <b>main.ts / app.ts / in the targeted file</b>. The css path is

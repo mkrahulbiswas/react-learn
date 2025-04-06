@@ -11,12 +11,12 @@ export const WhatIsThis = ({ propsPass }: any) => {
               </li>
               <li className="vpu_ocoplmimotcai_npm">
                 <div className="vpu_ocoplmimotcain_main">
-                  <p className="vpu_npm_list">
+                  <div className="vpu_npm_list"><p>
                     <span>To use this package you need to <b>install</b> the library by using command:</span>
                     <div>
                       <a>npm install --save moment react-moment</a>
                     </div>
-                  </p>
+                  </p></div>
                 </div>
               </li>
               <li className="vpu_ocoplmimotcai_site">
@@ -41,12 +41,14 @@ export const WhatIsThis = ({ propsPass }: any) => {
               </li>
               <li className="vpu_ocoplmimotcai_npm">
                 <div className="vpu_ocoplmimotcain_main">
-                  <p className="vpu_npm_list">
-                    <span>To use <b>timezone</b> related functions need to install:</span>
-                    <div>
-                      <a>npm install --save moment-timezone</a>
-                    </div>
-                  </p>
+                  <div className="vpu_npm_list">
+                    <p>
+                      <span>To use <b>timezone</b> related functions need to install:</span>
+                      <div>
+                        <a>npm install --save moment-timezone</a>
+                      </div>
+                    </p>
+                  </div>
                 </div>
               </li>
               <li className="vpu_ocoplmimotcai_site">

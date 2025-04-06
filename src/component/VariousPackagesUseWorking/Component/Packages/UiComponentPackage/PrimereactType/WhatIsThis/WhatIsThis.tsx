@@ -1,34 +1,90 @@
 export const WhatIsThis = ({ propsPass }: any) => {
   const { loaderData, targetedTab } = propsPass
   return (
-    <>
+    <div className="vpu_ocoplmimotca_list">
       {
         targetedTab === loaderData.packagesUsed.core.type ?
-          <>
-            <span className="singleLineText">This is <b>prime react</b> package to manage the <b>components & other feature</b></span>
-            <span className="singleLineText">To use this package you need to <b>install</b> the library by using command:
-              <p><span className="npmCommand">npm install primereact</span></p>
-            </span>
-            <span className="singleLineText"><label style={{ color: 'red' }}>Note:</label> after install package you need to <b>import</b> css path to <b>main.ts / app.ts / in the targeted file</b>. The css path is <p>import "primereact/resources/themes/lara-light-cyan/theme.css";</p>. There is lots other <b>css theme</b> present, you can see by visit on <b>https://primereact.org/theming/#themes</b>.</span>
-            <span className="singleLineText">For more info you can visit the site:
-              <p><a className="visitDoc" href="https://github.com/primefaces/primereact" target="_blank">https://github.com/primefaces/primereact</a></p>
-              <p><a className="visitDoc" href="https://primereact.org/" target="_blank">https://primereact.org/</a></p>
-            </span>
-          </> : null
+          <div className='vpu_ocoplmimotca_item'>
+            <ul>
+              <li className="vpu_ocoplmimotcai_heading">
+                <span>This is <b>prime react</b> package to manage the <b>components & other feature</b></span>
+              </li>
+              <li className="vpu_ocoplmimotcai_npm">
+                <div className="vpu_ocoplmimotcain_main">
+                  <div className="vpu_npm_list">
+                    <p>
+                      <span>To use this package you need to <b>install</b> the library by using command:</span>
+                      <div>
+                        <a>npm install primereact</a>
+                      </div>
+                    </p>
+                  </div>
+                  <div className="vpu_import_list">
+                    <p>
+                      <span>
+                        <label>Note:</label> after install package you need to <b>import</b> css path to <b>main.ts / app.ts / in the targeted file</b>. There is lots other <b>css theme</b> present, you can see by visit on <b>https://primereact.org/theming/#themes</b>. The css path is
+                      </span>
+                      <div className="vpu_import_item">
+                        <a>npm "primereact/resources/themes/lara-light-cyan/theme.css";</a>
+                      </div>
+                    </p>
+                  </div>
+                </div>
+              </li>
+              <li className="vpu_ocoplmimotcai_site">
+                <span className="singleLineText">For more info you can visit the site:</span>
+                <div>
+                  <a className="visitDoc" href="https://github.com/primefaces/primereact" target="_blank">https://github.com/primefaces/primereact</a>
+                  <a className="visitDoc" href="https://primereact.org/" target="_blank">https://primereact.org/</a>
+                </div>
+              </li>
+              <li>
+                <span>Some examples are given bellow:</span>
+              </li>
+            </ul>
+          </div> : null
       }
       {
         targetedTab === loaderData.packagesUsed.icons.type ?
-          <>
-            <span className="singleLineText">To use primereact <b>icon</b> you need to <b>install</b> the library by using command:
-              <p><span className="npmCommand">npm install primeicons</span></p>
-            </span>
-            <span className="singleLineText"><label style={{ color: 'red' }}>Note:</label> after install package you need to <b>import</b> css path to <b>main.ts / app.ts / in the targeted file</b>. The css path is <b>import 'primeicons/primeicons.css';</b>.</span>
-            <span className="singleLineText">For more info you can visit the site:
-              <p><a className="visitDoc" href="https://primereact.org/icons/" target="_blank">https://primereact.org/icons/</a></p>
-            </span>
-            <span className="singleLineText">Some example of <b>prime react</b> is:</span>
-          </> : null
+          <div className='vpu_ocoplmimotca_item'>
+            <ul>
+              <li className="vpu_ocoplmimotcai_heading">
+                <span>This is <b>prime react</b> additional package called <b>icons</b> package it is used for manage the <b>icons</b></span>
+              </li>
+              <li className="vpu_ocoplmimotcai_npm">
+                <div className="vpu_ocoplmimotcain_main">
+                  <div className="vpu_npm_list">
+                    <p>
+                      <span>To use primereact <b>icon</b> you need to <b>install</b> the library by using command:</span>
+                      <div>
+                        <a>npm install primeicons</a>
+                      </div>
+                    </p>
+                  </div>
+                  <div className="vpu_import_list">
+                    <p>
+                      <span>
+                        <label>Note:</label> after install package you need to <b>import</b> css path to <b>main.ts / app.ts / in the targeted file</b>. The css path is
+                      </span>
+                      <div className="vpu_import_item">
+                        <a>npm 'primeicons/primeicons.css';</a>
+                      </div>
+                    </p>
+                  </div>
+                </div>
+              </li>
+              <li className="vpu_ocoplmimotcai_site">
+                <span className="singleLineText">For more info you can visit the site:</span>
+                <div>
+                  <a className="visitDoc" href="https://primereact.org/icons/" target="_blank">https://primereact.org/icons/</a>
+                </div>
+              </li>
+              <li>
+                <span>Some examples are given bellow:</span>
+              </li>
+            </ul>
+          </div > : null
       }
-    </>
+    </div >
   )
 }

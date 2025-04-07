@@ -1,6 +1,6 @@
 export const ExampleOne = () => {
   return (
-    <>
+    <div className='vpu_ocoplmimotceic_list'>
       <div className="exampleCommon">
         <div className="exampleCommonContent">
           <div className="animate__animated animate__bounce">animate__bounce</div>
@@ -71,6 +71,6 @@ export const ExampleOne = () => {
           <div className="animate__animated animate__slideInDown">animate__slideInDown</div>
         </div>
       </div >
-    </>
+    </div>
   )
 }

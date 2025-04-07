@@ -2,10 +2,10 @@ import Swal from "sweetalert2";
 
 export const ExampleOne = () => {
   return (
-    <>
+    <div className='vpu_ocoplmimotceic_list'>
       <SimpleAlert />
       <ConfirmationAlert />
-    </>
+    </div>
   )
 }
 

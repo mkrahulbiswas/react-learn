@@ -15,11 +15,11 @@ import { getChartData } from '../../../../../../../../database/chart-database';
 
 export const ExampleTwo = () => {
   return (
-    <>
+    <div className='vpu_ocoplmimotceic_list'>
       {/* <DependencyWheelChartaa /> */}
       <DependencyWheelCharta />
       {/* <DependencyWheelChart /> */}
-    </>
+    </div>
   )
 }
 

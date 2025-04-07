@@ -5,7 +5,7 @@ export const ExampleOne = () => {
     console.log(event)
   }
   return (
-    <>
+    <div className='vpu_ocoplmimotceic_list'>
       <div className="exampleCommon fullWidth">
         <div className="exampleCommonPoints">
           <span>Making <b>different position</b> of pagination</span>
@@ -136,6 +136,6 @@ export const ExampleOne = () => {
           />
         </div>
       </div >
-    </>
+    </div>
   )
 }

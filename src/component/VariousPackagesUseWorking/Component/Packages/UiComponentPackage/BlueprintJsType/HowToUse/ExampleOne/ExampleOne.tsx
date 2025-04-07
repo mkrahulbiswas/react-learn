@@ -2,13 +2,13 @@ import { Breadcrumb, Breadcrumbs, Button, Callout, Icon, Tab, Tabs, TabsExpander
 
 export const ExampleOne = () => {
   return (
-    <>
+    <div className='vpu_ocoplmimotceic_list'>
       <BreadcrumbBJ />
       <ButtonBJ />
       <CalloutBJ />
       <ProgressBarBJ />
       <TabsBJ />
-    </>
+    </div>
   )
 }
 

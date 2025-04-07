@@ -3,12 +3,12 @@ import LoadingBar, { LoadingBarRef, useLoadingBar } from "react-top-loading-bar"
 
 export const ExampleOne = () => {
   return (
-    <>
+    <div className='vpu_ocoplmimotceic_list'>
       <UsingHooks />
       <WithRef />
       <WithState />
       <WithProperties />
-    </>
+    </div>
   )
 }
 

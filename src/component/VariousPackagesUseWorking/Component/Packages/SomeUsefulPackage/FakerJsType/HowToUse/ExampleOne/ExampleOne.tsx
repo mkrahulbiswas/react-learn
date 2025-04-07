@@ -2,7 +2,7 @@ import { faker } from "@faker-js/faker"
 
 export const ExampleOne = () => {
   return (
-    <>
+    <div className='vpu_ocoplmimotceic_list'>
       <div className="exampleCommon">
         <div className="exampleCommonContent">
           <b>User Id:</b> {faker.string.uuid()}
@@ -36,6 +36,6 @@ export const ExampleOne = () => {
           <b>Avatar:</b> {faker.image.avatar()}
         </div>
       </div>
-    </>
+    </div>
   )
 }

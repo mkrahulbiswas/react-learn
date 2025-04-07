@@ -2,7 +2,7 @@ import { BeatLoader, CircleLoader, ClockLoader, GridLoader, PacmanLoader, RingLo
 
 export const ExampleOne = () => {
   return (
-    <>
+    <div className='vpu_ocoplmimotceic_list'>
       <div className="exampleCommon">
         {/* <div className="exampleCommonPoints">
           <span>This an example by using a live <b>API</b> response</span>
@@ -41,6 +41,6 @@ export const ExampleOne = () => {
           <ScaleLoader />
         </div>
       </div>
-    </>
+    </div>
   )
 }

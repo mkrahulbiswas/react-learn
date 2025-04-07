@@ -2,12 +2,12 @@ import { buildStyles, CircularProgressbar } from 'react-circular-progressbar';
 
 export const ExampleOne = () => {
   return (
-    <>
+    <div className='vpu_ocoplmimotceic_list'>
       <TestingOne />
       <TestingTwo />
       <TestingThree />
       <TestingFour />
-    </>
+    </div>
   )
 }
 

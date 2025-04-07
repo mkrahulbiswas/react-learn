@@ -2,11 +2,11 @@ import { motion } from "motion/react"
 
 export const ExampleTwo = () => {
   return (
-    <>
+    <div className='vpu_ocoplmimotceic_list'>
       <TypeOne />
       <TypeTwo />
       <TypeThree />
-    </>
+    </div>
   )
 }
 

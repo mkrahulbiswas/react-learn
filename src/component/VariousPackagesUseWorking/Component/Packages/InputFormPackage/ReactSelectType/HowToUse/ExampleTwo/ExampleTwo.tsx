@@ -4,11 +4,11 @@ import chroma from 'chroma-js';
 
 export const ExampleTwo = () => {
   return (
-    <>
+    <div className='vpu_ocoplmimotceic_list'>
       <MultiSelect />
       <MultiSelectAnimated />
       <MultiSelectCustomStyle />
-    </>
+    </div>
   )
 }
 

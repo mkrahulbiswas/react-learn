@@ -2,9 +2,9 @@ import moment from "moment";
 
 export const ExampleTwo = () => {
   return (
-    <>
+    <div className='vpu_ocoplmimotceic_list'>
       <DateFormatType />
-    </>
+    </div>
   )
 }
 

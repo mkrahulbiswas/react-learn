@@ -3,14 +3,14 @@ import { HiAtSymbol, HiStar } from "react-icons/hi"
 
 export const ExampleOne = () => {
   return (
-    <>
+    <div className='vpu_ocoplmimotceic_list'>
       <ButtonsCU />
       <BadgeCU />
       <DialogueCU />
       <QrCodeCU />
       <SegmentCU />
       <SkeletonCU />
-    </>
+    </div>
   )
 }
 

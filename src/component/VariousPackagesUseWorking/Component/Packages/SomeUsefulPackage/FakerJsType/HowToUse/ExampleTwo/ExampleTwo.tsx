@@ -49,7 +49,7 @@ export const SimpleAlert = () => {
     }
   }
   return (
-    <>
+    <div className='vpu_ocoplmimotceic_list'>
       <div className="exampleCommon">
         <div className="exampleCommonPoints">
           <span>Simple various type alert</span>
@@ -62,6 +62,6 @@ export const SimpleAlert = () => {
           <button className="btn btn-light ms-3" onClick={() => showAlert('question')}>Question</button>
         </div>
       </div>
-    </>
+    </div>
   )
 }

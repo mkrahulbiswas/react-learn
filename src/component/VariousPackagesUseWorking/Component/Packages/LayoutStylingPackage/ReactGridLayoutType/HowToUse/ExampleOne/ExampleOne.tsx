@@ -4,7 +4,7 @@ import GridLayout, { DragOverEvent, Layout, Responsive } from "react-grid-layout
 
 export const ExampleOne = () => {
   return (
-    <>
+    <div className='vpu_ocoplmimotceic_list'>
       <LayoutIsAnArray />
       <LayoutIsAnInDiv />
       <ResponsiveUsage />
@@ -13,7 +13,7 @@ export const ExampleOne = () => {
       <GridTransformProps />
       <GridDragResizeProps />
       <OtherProps />
-    </>
+    </div>
   )
 }
 

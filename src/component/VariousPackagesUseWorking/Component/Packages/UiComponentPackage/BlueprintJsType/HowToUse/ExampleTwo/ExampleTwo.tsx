@@ -3,7 +3,7 @@ import { Anchor, Download, ZoomIn } from "@blueprintjs/icons"
 
 export const ExampleTwo = () => {
   return (
-    <>
+    <div className='vpu_ocoplmimotceic_list'>
       <div className="exampleCommon">
         <div className="exampleCommonContent">
           <Download size={16} />
@@ -59,6 +59,6 @@ export const ExampleTwo = () => {
           <ZoomIn size={20} />
         </div>
       </div>
-    </>
+    </div>
   )
 }

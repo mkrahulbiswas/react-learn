@@ -5,12 +5,12 @@ import { faker } from '@faker-js/faker';
 export const ExampleOne = () => {
   ChartJS.register(ArcElement, CategoryScale, LinearScale, BarElement, PointElement, LineElement, Title, Tooltip, Legend)
   return (
-    <>
+    <div className='vpu_ocoplmimotceic_list'>
       <BarChart />
       <LineChart />
       <PieChart />
       <DoughnutChart />
-    </>
+    </div>
   )
 }
 

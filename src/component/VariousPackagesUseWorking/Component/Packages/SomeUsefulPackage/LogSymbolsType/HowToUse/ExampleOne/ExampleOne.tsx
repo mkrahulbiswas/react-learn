@@ -13,7 +13,7 @@ export const ExampleOne = () => {
     }
   }
   return (
-    <>
+    <div className='vpu_ocoplmimotceic_list'>
       <div className="exampleCommon">
         <div className="exampleCommonPoints">
           <span>Simple various type alert</span>
@@ -25,6 +25,6 @@ export const ExampleOne = () => {
           <button className="btn btn-info ms-3" onClick={() => showLog('info')}>Info</button>
         </div>
       </div>
-    </>
+    </div>
   )
 }

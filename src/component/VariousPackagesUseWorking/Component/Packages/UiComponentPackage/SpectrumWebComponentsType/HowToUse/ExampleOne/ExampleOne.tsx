@@ -3,10 +3,10 @@ import Bell from '@spectrum-icons/workflow/Bell';
 
 export const ExampleOne = () => {
   return (
-    <>
+    <div className='vpu_ocoplmimotceic_list'>
       <ButtonsAS />
       <ProgressBarAS />
-    </>
+    </div>
   )
 }
 

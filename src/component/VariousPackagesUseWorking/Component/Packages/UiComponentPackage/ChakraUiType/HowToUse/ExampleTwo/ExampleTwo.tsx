@@ -2,9 +2,9 @@ import { Box } from "@chakra-ui/react"
 
 export const ExampleTwo = () => {
   return (
-    <>
+    <div className='vpu_ocoplmimotceic_list'>
       <AnimatingCU />
-    </>
+    </div>
   )
 }
 

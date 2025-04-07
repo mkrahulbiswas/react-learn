@@ -12,14 +12,16 @@ export const ExampleOne = () => {
     unstyled: false
   }
   return (
-    <PrimeReactProvider value={objectPass}>
-      <ButtonsPR />
-      <BreadCrumbPR />
-      <MultiSelectPR />
-      <RatingPR />
-      <DateTimePeckerPR />
-      <AccordionPR />
-    </PrimeReactProvider>
+    <div className='vpu_ocoplmimotceic_list'>
+      <PrimeReactProvider value={objectPass}>
+        <ButtonsPR />
+        <BreadCrumbPR />
+        <MultiSelectPR />
+        <RatingPR />
+        <DateTimePeckerPR />
+        <AccordionPR />
+      </PrimeReactProvider>
+    </div>
   )
 }
 

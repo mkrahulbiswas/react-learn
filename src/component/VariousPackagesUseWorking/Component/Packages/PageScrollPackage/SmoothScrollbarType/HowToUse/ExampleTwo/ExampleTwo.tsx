@@ -6,11 +6,11 @@ import { getCommonData } from "../../../../../../../../database/common-database"
 export const ExampleTwo = () => {
   const data = getCommonData({ type: "usefulPackage", for: "smoothScroll" });
   return (
-    <>
+    <div className='vpu_ocoplmimotceic_list'>
       <OverScroll content={data} />
       <DestroyScroll content={data} />
       {/* <BasicImplement content={data} /> */}
-    </>
+    </div>
   );
 };
 

@@ -2,12 +2,12 @@ import { Chart } from "react-google-charts";
 
 export const ExampleOne = () => {
   return (
-    <>
+    <div className='vpu_ocoplmimotceic_list'>
       <PieChart />
       <GanttChart />
       <GeoChart />
       <SankeyChart />
-    </>
+    </div>
   )
 }
 

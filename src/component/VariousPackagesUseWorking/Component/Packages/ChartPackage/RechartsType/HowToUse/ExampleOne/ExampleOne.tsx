@@ -16,12 +16,12 @@ import {
 
 export const ExampleOne = () => {
   return (
-    <>
+    <div className='vpu_ocoplmimotceic_list'>
       <LineChartExample />
       <AreaChartExample />
       <BarChartExample />
       <PieChartExample />
-    </>
+    </div>
   )
 }
 

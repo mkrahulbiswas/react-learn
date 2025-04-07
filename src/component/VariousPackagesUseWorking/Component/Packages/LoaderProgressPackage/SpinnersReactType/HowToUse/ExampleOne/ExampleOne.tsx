@@ -2,7 +2,7 @@ import { SpinnerCircular, SpinnerCircularSplit, SpinnerRound, SpinnerRoundOutlin
 
 export const ExampleOne = () => {
   return (
-    <>
+    <div className='vpu_ocoplmimotceic_list'>
       <div className="exampleCommon">
         {/* <div className="exampleCommonPoints">
           <span>This an example by using a live <b>API</b> response</span>
@@ -51,6 +51,6 @@ export const ExampleOne = () => {
           <SpinnerCircular size={50} thickness={100} speed={100} color="pink" secondaryColor="rgba(0, 0, 0, 0.44)" />
         </div>
       </div>
-    </>
+    </div>
   )
 }

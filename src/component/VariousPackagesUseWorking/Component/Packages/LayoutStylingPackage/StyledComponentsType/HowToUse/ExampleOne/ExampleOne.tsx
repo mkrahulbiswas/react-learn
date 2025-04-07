@@ -2,7 +2,7 @@ import styled, { keyframes } from "styled-components";
 
 export const ExampleOne = () => {
   return (
-    <>
+    <div className='vpu_ocoplmimotceic_list'>
       <WrapperInsideTitle />
       <ButtonAsStyledProps />
       <ReverseElement />
@@ -11,7 +11,7 @@ export const ExampleOne = () => {
       <AdditionalProps />
       <OverridingAttrs />
       <Animations />
-    </>
+    </div>
   )
 }
 

@@ -2,11 +2,11 @@ import { Line, Circle } from 'rc-progress';
 
 export const ExampleOne = () => {
   return (
-    <>
+    <div className='vpu_ocoplmimotceic_list'>
       <FastProgress />
       <GapProgress />
       <GradientProgress />
-    </>
+    </div>
   )
 }
 

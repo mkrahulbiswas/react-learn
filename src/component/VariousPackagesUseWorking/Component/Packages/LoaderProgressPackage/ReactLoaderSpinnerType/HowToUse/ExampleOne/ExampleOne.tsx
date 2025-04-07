@@ -2,7 +2,7 @@ import { ColorRing, DNA, Rings, RotatingSquare, ThreeDots, Vortex } from "react-
 
 export const ExampleOne = () => {
   return (
-    <>
+    <div className='vpu_ocoplmimotceic_list'>
       <div className="exampleCommon">
         {/* <div className="exampleCommonPoints">
           <span>This an example by using a live <b>API</b> response</span>
@@ -84,6 +84,6 @@ export const ExampleOne = () => {
           />
         </div>
       </div>
-    </>
+    </div>
   )
 }

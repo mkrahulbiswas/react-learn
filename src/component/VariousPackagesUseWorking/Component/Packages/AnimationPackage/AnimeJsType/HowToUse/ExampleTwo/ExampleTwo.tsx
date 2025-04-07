@@ -2,9 +2,9 @@ import anime from "animejs";
 
 export const ExampleTwo = () => {
   return (
-    <>
+    <div className='vpu_ocoplmimotceic_list'>
       <TypeOne />
-    </>
+    </div>
   )
 }
 

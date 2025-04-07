@@ -2,12 +2,12 @@ import { VictoryArea, VictoryChart, VictoryLine, VictoryPie, VictoryPolarAxis, V
 
 export const ExampleOne = () => {
   return (
-    <>
+    <div className='vpu_ocoplmimotceic_list'>
       <LineChart />
       <AreaChart />
       <VoronoiChart />
       <PieChart />
-    </>
+    </div>
   )
 }
 

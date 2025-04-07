@@ -2,10 +2,10 @@ import { InView, useInView } from "react-intersection-observer";
 
 export const ExampleOne = () => {
   return (
-    <>
+    <div className='vpu_ocoplmimotceic_list'>
       <BasicImplement />
       <TrackVisibility />
-    </>
+    </div>
   )
 }
 

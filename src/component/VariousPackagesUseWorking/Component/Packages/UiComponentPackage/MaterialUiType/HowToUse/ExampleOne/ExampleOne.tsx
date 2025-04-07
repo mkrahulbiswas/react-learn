@@ -11,10 +11,10 @@ import Grid from '@mui/material/Grid2';
 
 export const ExampleOne = () => {
   return (
-    <>
+    <div className='vpu_ocoplmimotceic_list'>
       <ButtonsMU />
       <LayoutMU />
-    </>
+    </div>
   )
 }
 

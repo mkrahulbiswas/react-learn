@@ -2,10 +2,10 @@ import { animated, useSprings } from '@react-spring/web'
 
 export const ExampleThree = () => {
   return (
-    <>
+    <div className='vpu_ocoplmimotceic_list'>
       {/* <AnimateTypeOne /> */}
       <AnimateTypeThree />
-    </>
+    </div>
   )
 }
 

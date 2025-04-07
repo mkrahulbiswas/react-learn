@@ -2,10 +2,10 @@ import { RadialChart, Sunburst } from "react-vis";
 
 export const ExampleOne = () => {
   return (
-    <>
+    <div className='vpu_ocoplmimotceic_list'>
       <RadialChartExample />
       <SunburstChartExample />
-    </>
+    </div>
   );
 }
 

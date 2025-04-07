@@ -2,12 +2,12 @@ import ReactApexChart from 'react-apexcharts'
 
 export const ExampleOne = () => {
   return (
-    <>
+    <div className='vpu_ocoplmimotceic_list'>
       <BarChart />
       <AreaChart />
       <DonutChart />
       <BubbleChart />
-    </>
+    </div>
   )
 }
 

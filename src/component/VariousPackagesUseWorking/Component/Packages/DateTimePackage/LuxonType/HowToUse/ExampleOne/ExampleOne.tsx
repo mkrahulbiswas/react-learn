@@ -2,10 +2,10 @@ import { DateTime } from "luxon"
 
 export const ExampleOne = () => {
   return (
-    <>
+    <div className='vpu_ocoplmimotceic_list'>
       <DateFormatType />
       <TimeFormatType />
-    </>
+    </div>
   )
 }
 

@@ -1,13 +1,13 @@
 export const ExampleOne = () => {
   return (
-    <>
+    <div className='vpu_ocoplmimotceic_list'>
       <ButtonBT />
       <CardBT />
       <ProgressBarBT />
       <AlertBT />
       <AccordianBT />
       <FormBT />
-    </>
+    </div>
   )
 }
 

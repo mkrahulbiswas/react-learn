@@ -16,7 +16,7 @@ export const ExampleOne = () => {
 export const ButtonsMU = () => {
   const { xxl } = useResponsive();
   return (
-    <>
+    <div className='vpu_ocoplmimotceic_list'>
       <div className="exampleCommon">
         <div className="exampleCommonPoints">
           <span>Various Types Of Buttons</span>
@@ -185,7 +185,7 @@ export const ButtonsMU = () => {
           </Flex>
         </div>
       </div>
-    </>
+    </div>
   )
 }
 

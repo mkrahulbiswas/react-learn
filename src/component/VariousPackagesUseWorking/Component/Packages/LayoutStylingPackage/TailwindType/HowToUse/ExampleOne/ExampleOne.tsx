@@ -1,6 +1,6 @@
 export const ExampleOne = () => {
   return (
-    <>
+    <div className='vpu_ocoplmimotceic_list'>
       <div className="exampleCommon">
         {/* <div className="exampleCommonPoints">
           <span>Making <b>different position</b> of pagination</span>
@@ -52,6 +52,6 @@ export const ExampleOne = () => {
           <button className="p-2 ml-2 bg-pink-500 ...">Button C</button>
         </div>
       </div >
-    </>
+    </div>
   )
 }

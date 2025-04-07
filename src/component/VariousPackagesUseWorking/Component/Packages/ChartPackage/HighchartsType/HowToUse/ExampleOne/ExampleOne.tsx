@@ -9,14 +9,14 @@ import { getChartData } from '../../../../../../../../database/chart-database'
 
 export const ExampleOne = () => {
   return (
-    <>
+    <div className='vpu_ocoplmimotceic_list'>
       <PictorialChart />
       <BubblesChart />
       <AreaChart />
       <LineChart />
       <RadialBarChart />
       <PieChart />
-    </>
+    </div>
   )
 }
 

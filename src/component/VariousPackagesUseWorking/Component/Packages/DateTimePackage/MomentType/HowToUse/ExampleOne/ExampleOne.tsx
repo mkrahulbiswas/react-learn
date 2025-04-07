@@ -2,10 +2,10 @@ import moment from 'moment';
 
 export const ExampleOne = () => {
   return (
-    <>
+    <div className='vpu_ocoplmimotceic_list'>
       <DateFormatType />
       <TimeFormatType />
-    </>
+    </div>
   )
 }
 

@@ -5,7 +5,7 @@ import { getCommonData } from "../../../../../../../../database/common-database"
 export const ExampleOne = () => {
   const data = getCommonData({ type: "usefulPackage", for: "smoothScroll" });
   return (
-    <>
+    <div className='vpu_ocoplmimotceic_list'>
       <BasicImplement content={data} />
       <WithDampingOption content={data} />
       <WithThumbMinSizeOption content={data} />
@@ -14,7 +14,7 @@ export const ExampleOne = () => {
       <WithContinuousScrollingOption content={data} />
       <WithDelegateToOption content={data} />
       <WithPluginsOption content={data} />
-    </>
+    </div>
   );
 };
 

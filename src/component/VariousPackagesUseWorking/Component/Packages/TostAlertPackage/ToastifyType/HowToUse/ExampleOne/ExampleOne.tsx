@@ -25,7 +25,7 @@ export const ExampleOne = () => {
     }
   }
   return (
-    <>
+    <div className='vpu_ocoplmimotceic_list'>
       <div className="exampleCommon">
         <div className="exampleCommonPoints">
           <span>Simple various types of tost alert</span>
@@ -38,6 +38,6 @@ export const ExampleOne = () => {
         </div>
       </div>
       <ToastContainer limit={4} />
-    </>
+    </div>
   )
 }

@@ -11,7 +11,7 @@ export const ExampleThree = () => {
   const formatDate = useCallback((date: Date) => date.toLocaleString(), []);
   const parseDate = useCallback((str: string) => new Date(str), []);
   return (
-    <>
+    <div className='vpu_ocoplmimotceic_list'>
       <div className="exampleCommon">
         <div className="exampleCommonContent">
           <DateInput3
@@ -23,6 +23,6 @@ export const ExampleThree = () => {
           />
         </div>
       </div>
-    </>
+    </div>
   )
 }

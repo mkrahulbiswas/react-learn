@@ -14,9 +14,9 @@ import Building from "@spectrum-icons/workflow/Building"
 
 export const ExampleTwo = () => {
   return (
-    <>
+    <div className='vpu_ocoplmimotceic_list'>
       <IconCU />
-    </>
+    </div>
   )
 }
 

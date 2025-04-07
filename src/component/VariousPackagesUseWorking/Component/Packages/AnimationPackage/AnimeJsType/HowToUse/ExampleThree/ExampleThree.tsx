@@ -3,10 +3,10 @@ import anime from "animejs";
 
 export const ExampleThree = () => {
   return (
-    <>
+    <div className='vpu_ocoplmimotceic_list'>
       <TypeOne />
       <TypeTwo />
-    </>
+    </div>
   )
 }
 

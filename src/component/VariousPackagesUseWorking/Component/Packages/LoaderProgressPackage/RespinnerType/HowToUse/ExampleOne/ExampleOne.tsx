@@ -2,7 +2,7 @@ import { CopperLoading, DashLoading, ClockLoading, WaveLoading, SpinLoading, Rot
 
 export const ExampleOne = () => {
   return (
-    <>
+    <div className='vpu_ocoplmimotceic_list'>
       <div className="exampleCommon">
         {/* <div className="exampleCommonPoints">
           <span>This an example by using a live <b>API</b> response</span>
@@ -51,6 +51,6 @@ export const ExampleOne = () => {
           {/* <BeatLoading fill="#4197ff" count={4} /> */}
         </div>
       </div>
-    </>
+    </div>
   )
 }

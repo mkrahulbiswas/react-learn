@@ -3,7 +3,7 @@ import { useCallback, useState } from "react";
 
 export const ExampleThree = () => {
   const [dateValue, setDateValue] = useState<string>("");
-  const handleChange = useCallback((newDate: string | null, isUserChange: boolean) => {
+  const handleChange = useCallback((newDate: string | null, _isUserChange: boolean) => {
     if (newDate !== null) {
       setDateValue(newDate);
     }

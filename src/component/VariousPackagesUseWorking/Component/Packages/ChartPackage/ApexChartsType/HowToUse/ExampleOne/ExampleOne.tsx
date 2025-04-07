@@ -30,7 +30,7 @@ export const BarChart = () => {
   }
 
   return (
-    <>
+    <div className='vpu_ocoplmimotceic_item'>
       <div className="exampleCommon">
         <div className="exampleCommonPoints">
           <span>Bar Chart</span>
@@ -44,7 +44,7 @@ export const BarChart = () => {
           />
         </div>
       </div>
-    </>
+    </div>
   )
 }
 
@@ -84,7 +84,7 @@ export const AreaChart = () => {
   }
 
   return (
-    <>
+    <div className='vpu_ocoplmimotceic_item'>
       <div className="exampleCommon">
         <div className="exampleCommonPoints">
           <span>Area Chart</span>
@@ -98,7 +98,7 @@ export const AreaChart = () => {
           />
         </div>
       </div>
-    </>
+    </div>
   )
 }
 
@@ -145,7 +145,7 @@ export const DonutChart = () => {
   }
 
   return (
-    <>
+    <div className='vpu_ocoplmimotceic_item'>
       <div className="exampleCommon">
         <div className="exampleCommonPoints">
           <span>Donut Chart</span>
@@ -159,7 +159,7 @@ export const DonutChart = () => {
           />
         </div>
       </div>
-    </>
+    </div>
   )
 }
 
@@ -234,7 +234,7 @@ export const BubbleChart = () => {
     },
   }
   return (
-    <>
+    <div className='vpu_ocoplmimotceic_item'>
       <div className="exampleCommon">
         <div className="exampleCommonPoints">
           <span>Bubble Chart</span>
@@ -248,6 +248,6 @@ export const BubbleChart = () => {
           />
         </div>
       </div>
-    </>
+    </div>
   )
 }

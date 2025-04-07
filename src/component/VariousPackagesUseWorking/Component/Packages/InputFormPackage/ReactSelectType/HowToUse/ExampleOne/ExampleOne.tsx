@@ -18,7 +18,7 @@ export const BasicImplement = () => {
     { value: 'vanilla', label: 'Vanilla' }
   ]
   return (
-    <>
+    <div className='vpu_ocoplmimotceic_item'>
       <div className="exampleCommon triennialWidth">
         <div className="exampleCommonPoints">
           <span>Basic implementation</span>
@@ -27,7 +27,7 @@ export const BasicImplement = () => {
           <Select options={options} />
         </div>
       </div>
-    </>
+    </div>
   )
 }
 
@@ -38,7 +38,7 @@ export const SingleSelect = () => {
     { value: 'vanilla', label: 'Vanilla' }
   ]
   return (
-    <>
+    <div className='vpu_ocoplmimotceic_item'>
       <div className="exampleCommon triennialWidth">
         <div className="exampleCommonPoints">
           <span>Single Select</span>
@@ -58,7 +58,7 @@ export const SingleSelect = () => {
           />
         </div>
       </div>
-    </>
+    </div>
   )
 }
 
@@ -137,7 +137,7 @@ export const SingleSelectCustomStyle = () => {
     singleValue: (styles, { data }) => ({ ...styles, ...dot(data.color) }),
   }
   return (
-    <>
+    <div className='vpu_ocoplmimotceic_item'>
       <div className="exampleCommon triennialWidth">
         <div className="exampleCommonPoints">
           <span>Single Select Custom Style</span>
@@ -150,6 +150,6 @@ export const SingleSelectCustomStyle = () => {
           />
         </div>
       </div>
-    </>
+    </div>
   )
 }

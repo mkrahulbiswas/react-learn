@@ -28,7 +28,7 @@ export const WrapperInsideTitle = () => {
   `;
 
   return (
-    <>
+    <div className='vpu_ocoplmimotceic_item'>
       <div className="exampleCommon">
         {/* <div className="exampleCommonPoints">
           <span>Making <b>different position</b> of pagination</span>
@@ -40,8 +40,8 @@ export const WrapperInsideTitle = () => {
             </Title>
           </Wrapper>
         </div>
-      </div >
-    </>
+      </div>
+    </div>
   )
 }
 
@@ -62,7 +62,7 @@ export const ButtonAsStyledProps = () => {
   `;
 
   return (
-    <>
+    <div className='vpu_ocoplmimotceic_item'>
       <div className="exampleCommon">
         <div className="exampleCommonContent exampleCommonContentFloat">
           <Button>Normal Button</Button>
@@ -70,8 +70,8 @@ export const ButtonAsStyledProps = () => {
         <div className="exampleCommonContent exampleCommonContentFloat">
           <TomatoButton>Tomato Button</TomatoButton>
         </div>
-      </div >
-    </>
+      </div>
+    </div>
   )
 }
 
@@ -90,7 +90,7 @@ export const ReverseElement = () => {
   const ReversedButton = (props: any) => <Button {...props} children={props.children.split('').reverse()} />
 
   return (
-    <>
+    <div className='vpu_ocoplmimotceic_item'>
       <div className="exampleCommon">
         <div className="exampleCommonContent exampleCommonContentFloat">
           <Button>Normal Button</Button>
@@ -98,8 +98,8 @@ export const ReverseElement = () => {
         <div className="exampleCommonContent exampleCommonContentFloat">
           <Button as={ReversedButton}>Custom Button with Normal Button styles</Button>
         </div>
-      </div >
-    </>
+      </div>
+    </div>
   )
 }
 
@@ -114,7 +114,7 @@ export const PassedProps = () => {
   `;
 
   return (
-    <>
+    <div className='vpu_ocoplmimotceic_item'>
       <div className="exampleCommon">
         <div className="exampleCommonContent exampleCommonContentFloat">
           <Input defaultValue="@probablyup" type="text" />
@@ -122,8 +122,8 @@ export const PassedProps = () => {
         <div className="exampleCommonContent exampleCommonContentFloat">
           <Input defaultValue="@geelen" type="text" $inputColor="rebeccapurple" />
         </div>
-      </div >
-    </>
+      </div>
+    </div>
   )
 }
 
@@ -153,7 +153,7 @@ export const PseudoelEment = () => {
   `;
 
   return (
-    <>
+    <div className='vpu_ocoplmimotceic_item'>
       <div className="exampleCommon">
         <div className="exampleCommonContent">
           <Thing>Hello world!</Thing>
@@ -164,9 +164,9 @@ export const PseudoelEment = () => {
           <div className="something-else">
             <Thing>Splendid.</Thing>
           </div>
-        </div >
-      </div >
-    </>
+        </div>
+      </div>
+    </div>
   )
 }
 
@@ -189,16 +189,16 @@ export const AdditionalProps = () => {
   `;
 
   return (
-    <>
+    <div className='vpu_ocoplmimotceic_item'>
       <div className="exampleCommon">
         <div className="exampleCommonContent exampleCommonContentFloat">
           <Input placeholder="A small text input" />
-        </div >
+        </div>
         <div className="exampleCommonContent exampleCommonContentFloat">
           <Input placeholder="A bigger text input" $size="2em" />
-        </div >
-      </div >
-    </>
+        </div>
+      </div>
+    </div>
   )
 }
 
@@ -221,17 +221,17 @@ export const OverridingAttrs = () => {
   `;
 
   return (
-    <>
+    <div className='vpu_ocoplmimotceic_item'>
       <div className="exampleCommon">
         <div className="exampleCommonContent exampleCommonContentFloat">
           <Input placeholder="A bigger text input" $size="2em" />
-        </div >
+        </div>
         <div className="exampleCommonContent exampleCommonContentFloat">
           {/* Notice we can still use the size attr from Input */}
           <PasswordInput placeholder="A bigger password input" $size="2em" />
-        </div >
-      </div >
-    </>
+        </div>
+      </div>
+    </div>
   )
 }
 
@@ -256,12 +256,12 @@ export const Animations = () => {
 
 
   return (
-    <>
+    <div className='vpu_ocoplmimotceic_item'>
       <div className="exampleCommon">
         <div className="exampleCommonContent exampleCommonContentFloat">
           <Rotate>&lt; 💅🏾 &gt;</Rotate>
-        </div >
-      </div >
-    </>
+        </div>
+      </div>
+    </div>
   )
 }

@@ -84,7 +84,7 @@ export const WhatIsThis = ({ propsPass }: any) => {
                 <span>Some examples are given bellow:</span>
               </li>
             </ul>
-          </div > : null
+          </div> : null
       }
       {
         targetedTab === loaderData.packagesUsed.datetime2.type ?
@@ -125,7 +125,7 @@ export const WhatIsThis = ({ propsPass }: any) => {
                 <span>Some examples are given bellow:</span>
               </li>
             </ul>
-          </div > : null
+          </div> : null
       }
       {
         targetedTab === loaderData.packagesUsed.select.type ?
@@ -166,7 +166,7 @@ export const WhatIsThis = ({ propsPass }: any) => {
                 <span>Some examples are given bellow:</span>
               </li>
             </ul>
-          </div > : null
+          </div> : null
       }
       {
         targetedTab === loaderData.packagesUsed.table.type ?
@@ -207,8 +207,8 @@ export const WhatIsThis = ({ propsPass }: any) => {
                 <span>Some examples are given bellow:</span>
               </li>
             </ul>
-          </div > : null
+          </div> : null
       }
-    </div >
+    </div>
   )
 }

@@ -12,7 +12,7 @@ export const ExampleTwo = () => {
           <span>{date.setZone("America/New_York").toString()}</span>,&nbsp;&nbsp;
           <span>{date.setZone("Asia/Kolkata").toString()}</span>
         </div>
-      </div >
+      </div>
     </div>
   )
 }

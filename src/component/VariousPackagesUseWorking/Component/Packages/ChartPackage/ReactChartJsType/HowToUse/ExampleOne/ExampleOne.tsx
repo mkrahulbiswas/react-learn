@@ -1,4 +1,4 @@
-import { Chart as ChartJS, CategoryScale, LinearScale, BarElement, Title, Tooltip, Legend, PointElement, LineElement, ArcElement, PieController } from 'chart.js';
+import { Chart as ChartJS, CategoryScale, LinearScale, BarElement, Title, Tooltip, Legend, PointElement, LineElement, ArcElement } from 'chart.js';
 import { Bar, Doughnut, Line, Pie } from 'react-chartjs-2';
 import { faker } from '@faker-js/faker';
 
@@ -44,7 +44,7 @@ export const BarChart = () => {
     ],
   }
   return (
-    <>
+    <div className='vpu_ocoplmimotceic_item'>
       <div className="exampleCommon">
         <div className="exampleCommonPoints">
           <span>Bar chart</span>
@@ -53,7 +53,7 @@ export const BarChart = () => {
           <Bar options={options} data={data} />
         </div>
       </div>
-    </>
+    </div>
   )
 }
 
@@ -89,7 +89,7 @@ export const LineChart = () => {
     ],
   }
   return (
-    <>
+    <div className='vpu_ocoplmimotceic_item'>
       <div className="exampleCommon">
         <div className="exampleCommonPoints">
           <span>Line chart</span>
@@ -98,7 +98,7 @@ export const LineChart = () => {
           <Line options={options} data={data} />
         </div>
       </div>
-    </>
+    </div>
   )
 }
 
@@ -130,7 +130,7 @@ export const PieChart = () => {
     ],
   }
   return (
-    <>
+    <div className='vpu_ocoplmimotceic_item'>
       <div className="exampleCommon">
         <div className="exampleCommonPoints">
           <span>Pie chart</span>
@@ -139,7 +139,7 @@ export const PieChart = () => {
           <Pie data={data} />
         </div>
       </div>
-    </>
+    </div>
   )
 }
 
@@ -171,7 +171,7 @@ export const DoughnutChart = () => {
     ],
   }
   return (
-    <>
+    <div className='vpu_ocoplmimotceic_item'>
       <div className="exampleCommon">
         <div className="exampleCommonPoints">
           <span>Doughnut chart</span>
@@ -180,6 +180,6 @@ export const DoughnutChart = () => {
           <Doughnut data={data} />
         </div>
       </div>
-    </>
+    </div>
   )
 }

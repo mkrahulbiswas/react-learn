@@ -1,5 +1,5 @@
 import { useEffect } from "react";
-import Scrollbar, { ScrollbarPlugin } from "smooth-scrollbar";
+import Scrollbar from "smooth-scrollbar";
 import OverscrollPlugin from "smooth-scrollbar/plugins/overscroll";
 import { getCommonData } from "../../../../../../../../database/common-database";
 
@@ -36,7 +36,7 @@ export const OverScroll = ({ content }: any) => {
     }
   }, []);
   return (
-    <>
+    <div className='vpu_ocoplmimotceic_item'>
       <div className="exampleCommon triennialWidth">
         <div className="exampleCommonPoints">
           <span>Over Scroll</span>
@@ -47,7 +47,7 @@ export const OverScroll = ({ content }: any) => {
           </div>
         </div>
       </div>
-    </>
+    </div>
   );
 };
 
@@ -75,7 +75,7 @@ export const DestroyScroll = ({ content }: any) => {
     };
   }, []);
   return (
-    <>
+    <div className='vpu_ocoplmimotceic_item'>
       <div className="exampleCommon triennialWidth">
         <div className="exampleCommonPoints">
           <span>Destroy Scrolll</span>
@@ -90,7 +90,7 @@ export const DestroyScroll = ({ content }: any) => {
           </div>
         </div>
       </div>
-    </>
+    </div>
   );
 };
 
@@ -136,7 +136,7 @@ export const BasicImplement = ({ content }: any) => {
     }
   }, []);
   return (
-    <>
+    <div className='vpu_ocoplmimotceic_item'>
       <div className="exampleCommon triennialWidth">
         <div className="exampleCommonPoints">
           <span>Basic implementation</span>
@@ -147,6 +147,6 @@ export const BasicImplement = ({ content }: any) => {
           </div>
         </div>
       </div>
-    </>
+    </div>
   );
 };

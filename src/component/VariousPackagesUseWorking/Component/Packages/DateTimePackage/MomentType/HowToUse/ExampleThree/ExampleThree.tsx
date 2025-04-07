@@ -8,7 +8,7 @@ export const ExampleThree = () => {
 
 export const DateFormatType = () => {
   return (
-    <>
+    <div className='vpu_ocoplmimotceic_item'>
       <div className="exampleCommon fullWidth">
         <div className="exampleCommonPoints">
           <span>React moment</span>
@@ -20,6 +20,6 @@ export const DateFormatType = () => {
           In complete
         </div>
       </div>
-    </>
+    </div>
   )
 }

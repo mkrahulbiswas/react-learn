@@ -15,7 +15,7 @@ export const ExampleOne = () => {
 
 export const WithSimpleImplement = () => {
   return (
-    <>
+    <div className='vpu_ocoplmimotceic_item'>
       <div className="exampleCommon triennialWidth">
         <div className="exampleCommonPoints">
           <span>With Simple Implement</span>
@@ -39,13 +39,13 @@ export const WithSimpleImplement = () => {
           </div>
         </div>
       </div>
-    </>
+    </div>
   );
 }
 
 export const WithInsideElement = () => {
   return (
-    <>
+    <div className='vpu_ocoplmimotceic_item'>
       <div className="exampleCommon triennialWidth">
         <div className="exampleCommonPoints">
           <span>With Inside Element</span>
@@ -73,7 +73,7 @@ export const WithInsideElement = () => {
           </Element>
         </div>
       </div>
-    </>
+    </div>
   );
 }
 
@@ -85,7 +85,7 @@ export const PropsInLink = () => {
     console.log('handleSetInactive');
   }
   return (
-    <>
+    <div className='vpu_ocoplmimotceic_item'>
       <div className="exampleCommon triennialWidth">
         <div className="exampleCommonPoints">
           <span>Props In Link delay</span>
@@ -154,7 +154,7 @@ export const PropsInLink = () => {
           </Element>
         </div>
       </div>
-    </>
+    </div>
   );
 }
 
@@ -187,7 +187,7 @@ export const ScrollToTopBottom = () => {
     };
   }, []);
   return (
-    <>
+    <div className='vpu_ocoplmimotceic_item'>
       <div className="exampleCommon triennialWidth">
         <div className="exampleCommonPoints">
           <span>Scroll To Top & Bottom</span>
@@ -209,7 +209,7 @@ export const ScrollToTopBottom = () => {
           <a onClick={scrollToBottom}>To the bottom!</a>
         </div>
       </div>
-    </>
+    </div>
   );
 }
 
@@ -258,7 +258,7 @@ export const WithOtherOptions = () => {
     console.log(to);
   };
   return (
-    <>
+    <div className='vpu_ocoplmimotceic_item'>
       <div className="exampleCommon triennialWidth">
         <div className="exampleCommonPoints">
           <span>With Inside Element</span>
@@ -319,6 +319,6 @@ export const WithOtherOptions = () => {
           <a onClick={scrollMore}>Scroll 100px more from the current position!</a>
         </div>
       </div>
-    </>
+    </div>
   );
 }

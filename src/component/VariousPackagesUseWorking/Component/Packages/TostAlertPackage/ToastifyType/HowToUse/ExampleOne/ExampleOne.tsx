@@ -26,18 +26,20 @@ export const ExampleOne = () => {
   }
   return (
     <div className='vpu_ocoplmimotceic_list'>
-      <div className="exampleCommon">
-        <div className="exampleCommonPoints">
-          <span>Simple various types of tost alert</span>
+      <div className='vpu_ocoplmimotceic_item'>
+        <div className="exampleCommon">
+          <div className="exampleCommonPoints">
+            <span>Simple various types of tost alert</span>
+          </div>
+          <div className="exampleCommonContent">
+            <button className="btn btn-success" onClick={() => showAlert('success')}>Success</button>
+            <button className="btn btn-danger ms-3" onClick={() => showAlert('error')}>Error</button>
+            <button className="btn btn-warning ms-3" onClick={() => showAlert('warning')}>Warning</button>
+            <button className="btn btn-info ms-3" onClick={() => showAlert('info')}>Info</button>
+          </div>
         </div>
-        <div className="exampleCommonContent">
-          <button className="btn btn-success" onClick={() => showAlert('success')}>Success</button>
-          <button className="btn btn-danger ms-3" onClick={() => showAlert('error')}>Error</button>
-          <button className="btn btn-warning ms-3" onClick={() => showAlert('warning')}>Warning</button>
-          <button className="btn btn-info ms-3" onClick={() => showAlert('info')}>Info</button>
-        </div>
+        <ToastContainer limit={4} />
       </div>
-      <ToastContainer limit={4} />
     </div>
   )
 }

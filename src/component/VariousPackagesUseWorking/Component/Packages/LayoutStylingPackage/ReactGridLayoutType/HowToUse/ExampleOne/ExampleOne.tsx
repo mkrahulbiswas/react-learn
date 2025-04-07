@@ -1,4 +1,3 @@
-import { useRef } from "react";
 import { WidthProvider } from "react-grid-layout";
 import GridLayout, { DragOverEvent, Layout, Responsive } from "react-grid-layout";
 
@@ -24,7 +23,7 @@ export const LayoutIsAnArray = () => {
     { i: "c", x: 4, y: 0, w: 1, h: 2 }
   ];
   return (
-    <>
+    <div className='vpu_ocoplmimotceic_item'>
       <div className="exampleCommon fullWidth">
         <div className="exampleCommonPoints">
           <span>Mention layout as in a object and than pass it</span>
@@ -43,13 +42,13 @@ export const LayoutIsAnArray = () => {
           </GridLayout>
         </div>
       </div>
-    </>
+    </div>
   )
 }
 
 export const LayoutIsAnInDiv = () => {
   return (
-    <>
+    <div className='vpu_ocoplmimotceic_item'>
       <div className="exampleCommon fullWidth">
         <div className="exampleCommonPoints">
           <span>Mention layout inside the each div individually</span>
@@ -67,7 +66,7 @@ export const LayoutIsAnInDiv = () => {
           </GridLayout>
         </div>
       </div>
-    </>
+    </div>
   )
 }
 
@@ -102,7 +101,7 @@ export const ResponsiveUsage = () => {
     ],
   }
   return (
-    <>
+    <div className='vpu_ocoplmimotceic_item'>
       <div className="exampleCommon fullWidth">
         <div className="exampleCommonPoints">
           <span>Responsive Usage</span>
@@ -122,25 +121,25 @@ export const ResponsiveUsage = () => {
           </ResponsiveGridLayout>
         </div>
       </div>
-    </>
+    </div>
   )
 }
 
 export const GridProps = () => {
-  const ref = useRef()
-  const layout = [
-    { i: "a", x: 0, y: 0, w: 1, h: 2, static: true },
-    { i: "b", x: 1, y: 0, w: 2, h: 2, minW: 2, maxW: 4 },
-    { i: "c", x: 4, y: 0, w: 1, h: 2 }
-  ];
+  // const ref = useRef()
+  // const layout = [
+  //   { i: "a", x: 0, y: 0, w: 1, h: 2, static: true },
+  //   { i: "b", x: 1, y: 0, w: 2, h: 2, minW: 2, maxW: 4 },
+  //   { i: "c", x: 4, y: 0, w: 1, h: 2 }
+  // ];
   return (
-    <>
+    <div className='vpu_ocoplmimotceic_item'>
       <div className="exampleCommon fullWidth">
         <div className="exampleCommonPoints">
           <span>Mention layout as in a object and than pass it</span>
         </div>
         <div className="exampleCommonContent">
-          <GridLayout
+          {/* <GridLayout
 
             className="layout"
 
@@ -291,10 +290,10 @@ export const GridProps = () => {
             <div key="a" style={{ border: '2px solid green' }}>a</div>
             <div key="b" style={{ border: '2px solid green' }}>b</div>
             <div key="c" style={{ border: '2px solid green' }}>c</div>
-          </GridLayout>
+          </GridLayout> */}
         </div>
-      </div >
-    </>
+      </div>
+    </div>
   )
 }
 
@@ -305,7 +304,7 @@ export const GridCallbackProps = () => {
     { i: "c", x: 2, y: 0, w: 1, h: 2 }
   ];
   return (
-    <>
+    <div className='vpu_ocoplmimotceic_item'>
       <div className="exampleCommon fullWidth">
         <div className="exampleCommonPoints">
           <span>Grid Callback Props</span>
@@ -393,7 +392,7 @@ export const GridCallbackProps = () => {
               console.log('e->', e);
               console.log('onDrop------------------------------------------------------------------------------------( END )---->');
             }}
-            onDropDragOver={(e: DragOverEvent) => {
+            onDropDragOver={(_e: DragOverEvent) => {
               return { w: 10, h: 10 };
             }}
           >
@@ -402,8 +401,8 @@ export const GridCallbackProps = () => {
             <div key="c" style={{ border: '2px solid green' }}>c</div>
           </GridLayout>
         </div>
-      </div >
-    </>
+      </div>
+    </div>
   )
 }
 
@@ -414,7 +413,7 @@ export const GridTransformProps = () => {
     { i: "c", x: 2, y: 0, w: 1, h: 2 }
   ]
   return (
-    <>
+    <div className='vpu_ocoplmimotceic_item'>
       <div className="exampleCommon fullWidth">
         <div className="exampleCommonPoints">
           <span>Grid Transform Props</span>
@@ -434,8 +433,8 @@ export const GridTransformProps = () => {
             <div key="c" style={{ border: '2px solid green' }}>c</div>
           </GridLayout>
         </div>
-      </div >
-    </>
+      </div>
+    </div>
   )
 }
 
@@ -446,7 +445,7 @@ export const GridDragResizeProps = () => {
     { i: "c", x: 2, y: 0, w: 1, h: 2 }
   ]
   return (
-    <>
+    <div className='vpu_ocoplmimotceic_item'>
       <div className="exampleCommon fullWidth">
         <div className="exampleCommonPoints">
           <span>Grid Drag Resize Props</span>
@@ -469,8 +468,8 @@ export const GridDragResizeProps = () => {
             <div key="c" style={{ border: '2px solid green' }}>c</div>
           </GridLayout>
         </div>
-      </div >
-    </>
+      </div>
+    </div>
   )
 }
 
@@ -481,7 +480,7 @@ export const OtherProps = () => {
     { i: "c", x: 2, y: 0, w: 1, h: 2 }
   ];
   return (
-    <>
+    <div className='vpu_ocoplmimotceic_item'>
       <div className="exampleCommon fullWidth">
         <div className="exampleCommonPoints">
           <span>Other Props</span>
@@ -516,7 +515,7 @@ export const OtherProps = () => {
             <div key="c" style={{ border: '2px solid green' }}>c</div>
           </GridLayout>
         </div>
-      </div >
-    </>
+      </div>
+    </div>
   )
 }

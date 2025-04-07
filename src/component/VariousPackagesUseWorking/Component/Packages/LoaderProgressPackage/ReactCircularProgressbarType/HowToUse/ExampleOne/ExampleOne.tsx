@@ -13,7 +13,7 @@ export const ExampleOne = () => {
 
 export const TestingOne = () => {
   return (
-    <>
+    <div className='vpu_ocoplmimotceic_item'>
       <div className="exampleCommon fullWidth">
         {/* <div className="exampleCommonPoints">
           <span>BasicImplementations</span>
@@ -28,13 +28,13 @@ export const TestingOne = () => {
           <CircularProgressbar value={66} />
         </div>
       </div>
-    </>
+    </div>
   )
 }
 
 export const TestingTwo = () => {
   return (
-    <>
+    <div className='vpu_ocoplmimotceic_item'>
       <div className="exampleCommon fullWidth">
         <div className="exampleCommonContent exampleCommonContentFloat">
           <CircularProgressbar value={16} strokeWidth={2} />
@@ -55,13 +55,13 @@ export const TestingTwo = () => {
           <CircularProgressbar value={66} circleRatio={1} />
         </div>
       </div>
-    </>
+    </div>
   )
 }
 
 export const TestingThree = () => {
   return (
-    <>
+    <div className='vpu_ocoplmimotceic_item'>
       <div className="exampleCommon">
         <div className="exampleCommonPoints">
           <span>This is example of Build styling</span>
@@ -92,13 +92,13 @@ export const TestingThree = () => {
           })} />
         </div>
       </div>
-    </>
+    </div>
   )
 }
 
 export const TestingFour = () => {
   return (
-    <>
+    <div className='vpu_ocoplmimotceic_item'>
       <div className="exampleCommon">
         <div className="exampleCommonPoints">
           <span>This is example of normal styling</span>
@@ -144,6 +144,6 @@ export const TestingFour = () => {
           }} />
         </div>
       </div>
-    </>
+    </div>
   )
 }

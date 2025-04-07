@@ -21,7 +21,7 @@ export const TypeOne = () => {
     delay: anime.stagger(200, { grid: [5, 5], from: 'center' })
   });
   return (
-    <>
+    <div className='vpu_ocoplmimotceic_item'>
       <div className="exampleCommon">
         <div className="exampleCommonContent">
           <div className="demo-content typeOne">
@@ -45,8 +45,8 @@ export const TypeOne = () => {
             </div>
           </div>
         </div>
-      </div >
-    </>
+      </div>
+    </div>
   )
 }
 
@@ -61,7 +61,7 @@ export const TypeTwo = () => {
     easing: 'easeInOutQuad'
   });
   return (
-    <>
+    <div className='vpu_ocoplmimotceic_item'>
       <div className="exampleCommon">
         <div className="exampleCommonContent">
           <div className="demo-content typeTwo">
@@ -85,7 +85,7 @@ export const TypeTwo = () => {
             </div>
           </div>
         </div>
-      </div >
-    </>
+      </div>
+    </div>
   )
 }

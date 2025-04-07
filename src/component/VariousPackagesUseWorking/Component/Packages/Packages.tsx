@@ -62,6 +62,6 @@ export const Packages = () => {
         </div>
         <Outlet />
       </div>
-    </div >
+    </div>
   )
 }

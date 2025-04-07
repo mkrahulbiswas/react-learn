@@ -1,12 +1,12 @@
 import Highcharts from 'highcharts';
 import Highmaps from 'highcharts/highmaps';
-import HighchartsMore from 'highcharts/highcharts-more';
+// import HighchartsMore from 'highcharts/highcharts-more';
 
-import Sankey from 'highcharts/modules/sankey'
-import DependencyWheel from 'highcharts/modules/dependency-wheel'
-import Exporting from 'highcharts/modules/exporting'
-import ExportData from 'highcharts/modules/export-data'
-import Accessibility from 'highcharts/modules/accessibility'
+// import Sankey from 'highcharts/modules/sankey'
+// import DependencyWheel from 'highcharts/modules/dependency-wheel'
+// import Exporting from 'highcharts/modules/exporting'
+// import ExportData from 'highcharts/modules/export-data'
+// import Accessibility from 'highcharts/modules/accessibility'
 
 import HighchartsReact from 'highcharts-react-official'
 import { useEffect, useState } from 'react';
@@ -1131,7 +1131,7 @@ export const DependencyWheelChartaa = () => {
     }]
   }
 
-  Highcharts.getJSON('https://code.highcharts.com/mapdata/custom/world.topo.json', (topology: any) => {
+  Highcharts.getJSON('https://code.highcharts.com/mapdata/custom/world.topo.json', (_topology: any) => {
     // const renderSea = () => {
     //   let verb = 'animate';
     //   if (!chart.sea) {
@@ -1181,7 +1181,7 @@ export const DependencyWheelChartaa = () => {
   }, [])
 
   return (
-    <>
+    <div className='vpu_ocoplmimotceic_item'>
       <div className="exampleCommon fullWidth">
         <div className="exampleCommonPoints">
           <span>Pictoriala Chart</span>
@@ -1193,8 +1193,8 @@ export const DependencyWheelChartaa = () => {
             constructorType={'mapChart'}
           />
         </div>
-      </div >
-    </>
+      </div>
+    </div>
   )
 }
 export const DependencyWheelCharta = () => {
@@ -1388,7 +1388,7 @@ export const DependencyWheelCharta = () => {
   }, [])
 
   return (
-    <>
+    <div className='vpu_ocoplmimotceic_item'>
       <div className="exampleCommon fullWidth">
         <div className="exampleCommonPoints">
           <span>Pictoriala Chart</span>
@@ -1400,46 +1400,46 @@ export const DependencyWheelCharta = () => {
             constructorType={'mapChart'}
           />
         </div>
-      </div >
-    </>
+      </div>
+    </div>
   )
 }
 
-export const DependencyWheelChart = (props: HighchartsReact.Props) => {
+export const DependencyWheelChart = (_props: HighchartsReact.Props) => {
   const chartData = getChartData({ type: 'highcharts', for: 'dependencyWheelChart' })
-  const options: Highcharts.Options = {
-    title: {
-      text: 'Highcharts Dependency Wheel'
-    },
+  // const options: Highcharts.Options = {
+  //   title: {
+  //     text: 'Highcharts Dependency Wheel'
+  //   },
 
-    accessibility: {
-      point: {
-        valueDescriptionFormat: '{index}. From {point.from} to ' +
-          '{point.to}: {point.weight}.'
-      }
-    },
+  //   accessibility: {
+  //     point: {
+  //       valueDescriptionFormat: '{index}. From {point.from} to ' +
+  //         '{point.to}: {point.weight}.'
+  //     }
+  //   },
 
-    series: [{
-      keys: ['from', 'to', 'weight'],
-      data: chartData,
-      type: 'dependencywheel',
-      name: 'Dependency wheel series',
-      dataLabels: {
-        color: '#333',
-        style: {
-          textOutline: 'none'
-        },
-        textPath: {
-          enabled: true
-        },
-        distance: 10
-      },
-      size: '95%'
-    }]
-  }
+  //   series: [{
+  //     keys: ['from', 'to', 'weight'],
+  //     data: chartData,
+  //     type: 'dependencywheel',
+  //     name: 'Dependency wheel series',
+  //     dataLabels: {
+  //       color: '#333',
+  //       style: {
+  //         textOutline: 'none'
+  //       },
+  //       textPath: {
+  //         enabled: true
+  //       },
+  //       distance: 10
+  //     },
+  //     size: '95%'
+  //   }]
+  // }
 
   return (
-    <>
+    <div className='vpu_ocoplmimotceic_item'>
       <div className="exampleCommon fullWidth">
         <div className="exampleCommonPoints">
           <span>Dependency Wheel Chart</span>
@@ -1453,7 +1453,7 @@ export const DependencyWheelChart = (props: HighchartsReact.Props) => {
           <HighchartsReact highcharts={ExportData} options={options} />
           <HighchartsReact highcharts={Accessibility} options={options} /> */}
         </div>
-      </div >
-    </>
+      </div>
+    </div>
   )
 }

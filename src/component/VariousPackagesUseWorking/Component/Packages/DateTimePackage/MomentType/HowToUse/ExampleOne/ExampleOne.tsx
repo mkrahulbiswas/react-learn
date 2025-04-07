@@ -12,7 +12,7 @@ export const ExampleOne = () => {
 export const DateFormatType = () => {
   const currentDate = moment(new Date())
   return (
-    <>
+    <div className='vpu_ocoplmimotceic_item'>
       <div className="exampleCommon">
         <div className="exampleCommonPoints">
           <span>Date with formatted</span>
@@ -26,14 +26,14 @@ export const DateFormatType = () => {
           </span>
         </div>
       </div>
-    </>
+    </div>
   )
 }
 
 export const TimeFormatType = () => {
   const currentTime = moment(new Date())
   return (
-    <>
+    <div className='vpu_ocoplmimotceic_item'>
       <div className="exampleCommon">
         <div className="exampleCommonPoints">
           <span>Time with formatted</span>
@@ -47,6 +47,6 @@ export const TimeFormatType = () => {
           </span>
         </div>
       </div>
-    </>
+    </div>
   )
 }

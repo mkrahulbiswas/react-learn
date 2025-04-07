@@ -13,7 +13,7 @@ export const ExampleOne = () => {
 
 export const ButtonBT = () => {
   return (
-    <>
+    <div className='vpu_ocoplmimotceic_item'>
       <div className="exampleCommon fullWidth">
         <div className="exampleCommonPoints">
           <span>Various types of button</span>
@@ -29,14 +29,14 @@ export const ButtonBT = () => {
           <button type="button" className="ms-1 btn btn-dark">Dark</button>
           <button type="button" className="ms-1 btn btn-link">Link</button>
         </div>
-      </div >
-    </>
+      </div>
+    </div>
   )
 }
 
 export const AlertBT = () => {
   return (
-    <>
+    <div className='vpu_ocoplmimotceic_item'>
       <div className="exampleCommon">
         <div className="exampleCommonPoints">
           <span>Various types of button</span>
@@ -69,14 +69,14 @@ export const AlertBT = () => {
             </div>
           </div>
         </div>
-      </div >
-    </>
+      </div>
+    </div>
   )
 }
 
 export const CardBT = () => {
   return (
-    <>
+    <div className='vpu_ocoplmimotceic_item'>
       <div className="exampleCommon">
         <div className="exampleCommonPoints">
           <span>Various types of button</span>
@@ -91,14 +91,14 @@ export const CardBT = () => {
             </div>
           </div>
         </div>
-      </div >
-    </>
+      </div>
+    </div>
   )
 }
 
 export const AccordianBT = () => {
   return (
-    <>
+    <div className='vpu_ocoplmimotceic_item'>
       <div className="exampleCommon">
         <div className="exampleCommonPoints">
           <span>Various types of button</span>
@@ -137,14 +137,14 @@ export const AccordianBT = () => {
             </div>
           </div>
         </div>
-      </div >
-    </>
+      </div>
+    </div>
   )
 }
 
 export const ProgressBarBT = () => {
   return (
-    <>
+    <div className='vpu_ocoplmimotceic_item'>
       <div className="exampleCommon">
         <div className="exampleCommonPoints">
           <span>Various types of button</span>
@@ -169,14 +169,14 @@ export const ProgressBarBT = () => {
             <div className="progress-bar progress-bar-striped bg-warning" style={{ width: '75%' }}></div>
           </div>
         </div>
-      </div >
-    </>
+      </div>
+    </div>
   )
 }
 
 export const FormBT = () => {
   return (
-    <>
+    <div className='vpu_ocoplmimotceic_item'>
       <div className="exampleCommon">
         <div className="exampleCommonPoints">
           <span>Various types of button</span>
@@ -225,7 +225,7 @@ export const FormBT = () => {
             </div>
           </form>
         </div>
-      </div >
-    </>
+      </div>
+    </div>
   )
 }

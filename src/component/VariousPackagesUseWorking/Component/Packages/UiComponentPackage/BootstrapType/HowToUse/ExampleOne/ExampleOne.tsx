@@ -11,7 +11,7 @@ export const ExampleOne = () => {
 
 export const ButtonsBS = () => {
   return (
-    <>
+    <div className='vpu_ocoplmimotceic_item'>
       <div className="exampleCommon">
         <div className="exampleCommonPoints">
           <span>Various types of button</span>
@@ -44,13 +44,13 @@ export const ButtonsBS = () => {
           <button type="button" className="btn btn-link">Link</button>
         </div>
       </div>
-    </>
+    </div>
   )
 }
 
 export const AlertBS = () => {
   return (
-    <>
+    <div className='vpu_ocoplmimotceic_item'>
       <div className="exampleCommon">
         <div className="exampleCommonPoints">
           <span>Various types of alert</span>
@@ -66,13 +66,13 @@ export const AlertBS = () => {
           <div className="pt-2 pb-2 alert alert-dark" role="alert">A simple dark alert—check it out!</div>
         </div>
       </div>
-    </>
+    </div>
   )
 }
 
 export const AccordianBS = () => {
   return (
-    <>
+    <div className='vpu_ocoplmimotceic_item'>
       <div className="exampleCommon">
         <div className="exampleCommonPoints">
           <span>Various types of alert</span>
@@ -112,13 +112,13 @@ export const AccordianBS = () => {
           </div>
         </div>
       </div>
-    </>
+    </div>
   )
 }
 
 export const FormElementBS = () => {
   return (
-    <>
+    <div className='vpu_ocoplmimotceic_item'>
       <div className="exampleCommon">
         <div className="exampleCommonPoints">
           <span>Various types of alert</span>
@@ -168,6 +168,6 @@ export const FormElementBS = () => {
           </form>
         </div>
       </div>
-    </>
+    </div>
   )
 }

@@ -12,7 +12,7 @@ export const ExampleOne = () => {
 
 export const FastProgress = () => {
   return (
-    <>
+    <div className='vpu_ocoplmimotceic_item'>
       <div className="exampleCommon triennialWidth">
         <div className="exampleCommonPoints">
           <span>Fast Progress</span>
@@ -32,13 +32,13 @@ export const FastProgress = () => {
           />
         </div>
       </div>
-    </>
+    </div>
   )
 }
 
 export const GapProgress = () => {
   return (
-    <>
+    <div className='vpu_ocoplmimotceic_item'>
       <div className="exampleCommon triennialWidth">
         <div className="exampleCommonContent widthFixed200">
           <Line
@@ -161,13 +161,13 @@ export const GapProgress = () => {
           />
         </div>
       </div>
-    </>
+    </div>
   )
 }
 
 export const GradientProgress = () => {
   return (
-    <>
+    <div className='vpu_ocoplmimotceic_item'>
       <div className="exampleCommon triennialWidth">
         <div className="exampleCommonContent widthFixed200">
           <Circle
@@ -197,6 +197,6 @@ export const GradientProgress = () => {
           />
         </div>
       </div>
-    </>
+    </div>
   )
 }

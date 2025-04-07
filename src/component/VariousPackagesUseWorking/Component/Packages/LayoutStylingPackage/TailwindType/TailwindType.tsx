@@ -63,6 +63,6 @@ export const TailwindType = () => {
           </div>
         </div>
       </div>
-    </div >
+    </div>
   )
 }

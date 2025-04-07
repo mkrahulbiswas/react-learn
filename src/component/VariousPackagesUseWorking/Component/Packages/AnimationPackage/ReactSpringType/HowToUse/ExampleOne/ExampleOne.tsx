@@ -11,7 +11,7 @@ export const ExampleOne = () => {
 
 export const StylingTypeOne = () => {
   return (
-    <>
+    <div className='vpu_ocoplmimotceic_item'>
       <div className="exampleCommon">
         {/* <div className="exampleCommonPoints">
           <span>Animated elements</span>
@@ -26,8 +26,8 @@ export const StylingTypeOne = () => {
             }}
           />
         </div>
-      </div >
-    </>
+      </div>
+    </div>
   )
 }
 
@@ -39,12 +39,12 @@ export const StylingTypeTwo = () => {
     borderRadius: 8,
   }
   return (
-    <>
+    <div className='vpu_ocoplmimotceic_item'>
       <div className="exampleCommon">
         <div className="exampleCommonContent">
           <animated.div style={style} />
         </div>
-      </div >
-    </>
+      </div>
+    </div>
   )
 }

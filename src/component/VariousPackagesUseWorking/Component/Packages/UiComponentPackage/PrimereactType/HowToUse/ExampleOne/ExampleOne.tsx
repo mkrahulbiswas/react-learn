@@ -29,7 +29,7 @@ export const BreadCrumbPR = () => {
   const items = [{ label: 'Electronics' }, { label: 'Computer' }, { label: 'Accessories' }, { label: 'Keyboard' }, { label: 'Wireless' }];
   const home = { icon: 'pi pi-home', url: 'https://primereact.org' }
   return (
-    <>
+    <div className='vpu_ocoplmimotceic_item'>
       <div className="exampleCommon">
         <div className="exampleCommonPoints">
           <span>Bread Crumb</span>
@@ -38,14 +38,14 @@ export const BreadCrumbPR = () => {
           <BreadCrumb model={items} home={home} />
         </div>
       </div>
-    </>
+    </div>
   )
 }
 
 export const RatingPR = () => {
   const [value, setValue] = useState<number | undefined>(undefined);
   return (
-    <>
+    <div className='vpu_ocoplmimotceic_item'>
       <div className="exampleCommon">
         <div className="exampleCommonPoints">
           <span>Multiselect</span>
@@ -54,7 +54,7 @@ export const RatingPR = () => {
           <Rating value={value} onChange={(e: any) => setValue(e.value)} stars={10} />
         </div>
       </div>
-    </>
+    </div>
   )
 }
 
@@ -68,7 +68,7 @@ export const MultiSelectPR = () => {
     { name: 'Paris', code: 'PRS' }
   ]
   return (
-    <>
+    <div className='vpu_ocoplmimotceic_item'>
       <div className="exampleCommon">
         <div className="exampleCommonPoints">
           <span>Multiselect</span>
@@ -78,13 +78,13 @@ export const MultiSelectPR = () => {
             filter placeholder="Select Cities" maxSelectedLabels={3} className="w-full md:w-20rem" />
         </div>
       </div>
-    </>
+    </div>
   )
 }
 
 export const AccordionPR = () => {
   return (
-    <>
+    <div className='vpu_ocoplmimotceic_item'>
       <div className="exampleCommon fullWidth">
         <div className="exampleCommonPoints">
           <span>Accordion</span>
@@ -118,7 +118,7 @@ export const AccordionPR = () => {
           </Accordion>
         </div>
       </div>
-    </>
+    </div>
   )
 }
 
@@ -126,7 +126,7 @@ export const DateTimePeckerPR = () => {
   const [date, setDate] = useState()
   const [time, setTime] = useState()
   return (
-    <>
+    <div className='vpu_ocoplmimotceic_item'>
       <div className="exampleCommon">
         <div className="exampleCommonPoints">
           <span>DateTime pecker</span>
@@ -136,13 +136,13 @@ export const DateTimePeckerPR = () => {
           <Calendar value={time} onChange={(e: any) => setTime(e.value)} placeholder='Select time' timeOnly />
         </div>
       </div>
-    </>
+    </div>
   )
 }
 
 export const ButtonsPR = () => {
   return (
-    <>
+    <div className='vpu_ocoplmimotceic_item'>
       <div className="exampleCommon fullWidth">
         <div className="exampleCommonPoints">
           <span>Various types button</span>
@@ -157,6 +157,6 @@ export const ButtonsPR = () => {
           <Button label="Danger" severity="danger" />
         </div>
       </div>
-    </>
+    </div>
   )
 }

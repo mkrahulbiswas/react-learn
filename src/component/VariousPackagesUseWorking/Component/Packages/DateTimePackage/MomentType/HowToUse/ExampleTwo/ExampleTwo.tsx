@@ -1,4 +1,4 @@
-import moment from "moment";
+// import moment from "moment";
 
 export const ExampleTwo = () => {
   return (
@@ -9,10 +9,10 @@ export const ExampleTwo = () => {
 }
 
 export const DateFormatType = () => {
-  const jun = moment("2024-06-01T12:00:00Z");
-  const dec = moment("2024-12-01T12:00:00Z");
+  // const jun = moment("2024-06-01T12:00:00Z");
+  // const dec = moment("2024-12-01T12:00:00Z");
   return (
-    <>
+    <div className='vpu_ocoplmimotceic_item'>
       <div className="exampleCommon fullWidth">
         <div className="exampleCommonPoints">
           <span>Moment timezone use</span>
@@ -21,6 +21,6 @@ export const DateFormatType = () => {
           In complete
         </div>
       </div>
-    </>
+    </div>
   )
 }

@@ -35,6 +35,6 @@ export const WhatIsThis = ({ propsPass }: any) => {
             </ul>
           </div> : null
       }
-    </div >
+    </div>
   )
 }

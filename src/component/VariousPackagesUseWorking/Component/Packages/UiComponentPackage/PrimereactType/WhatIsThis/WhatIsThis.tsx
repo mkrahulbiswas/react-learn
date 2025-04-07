@@ -83,8 +83,8 @@ export const WhatIsThis = ({ propsPass }: any) => {
                 <span>Some examples are given bellow:</span>
               </li>
             </ul>
-          </div > : null
+          </div> : null
       }
-    </div >
+    </div>
   )
 }

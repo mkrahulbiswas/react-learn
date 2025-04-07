@@ -23,7 +23,7 @@ export const ButtonsMU = () => {
   const label = { inputProps: { 'aria-label': 'Switch demo' } };
   const [value, setValue] = useState<number>(30);
   return (
-    <>
+    <div className='vpu_ocoplmimotceic_item'>
       <div className="exampleCommon">
         <div className="exampleCommonPoints">
           <span>Input Elements</span>
@@ -66,13 +66,13 @@ export const ButtonsMU = () => {
           <Slider disabled defaultValue={30} aria-label="Disabled slider" />
         </div>
       </div>
-    </>
+    </div>
   )
 }
 
 export const LayoutMU = () => {
   return (
-    <>
+    <div className='vpu_ocoplmimotceic_item'>
       <div className="exampleCommon">
         <div className="exampleCommonPoints">
           <span>Layout Elements</span>
@@ -104,6 +104,6 @@ export const LayoutMU = () => {
           </Stack>
         </div>
       </div>
-    </>
+    </div>
   )
 }

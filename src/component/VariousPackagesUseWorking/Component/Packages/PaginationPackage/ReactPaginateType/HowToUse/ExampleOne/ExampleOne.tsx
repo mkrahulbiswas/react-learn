@@ -100,7 +100,7 @@ export const ExampleOne = () => {
             renderOnZeroPageCount={null}
           />
         </div>
-      </div >
+      </div>
       <div className="exampleCommon fullWidth">
         <div className="exampleCommonPoints">
           <span>This an example by using a live <b>API</b> response</span>
@@ -135,7 +135,7 @@ export const ExampleOne = () => {
             renderOnZeroPageCount={null}
           />
         </div>
-      </div >
+      </div>
     </div>
   )
 }

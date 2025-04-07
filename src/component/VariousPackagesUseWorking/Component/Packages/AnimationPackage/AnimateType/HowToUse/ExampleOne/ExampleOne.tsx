@@ -1,9 +1,11 @@
 export const ExampleOne = () => {
   return (
     <div className='vpu_ocoplmimotceic_list'>
-      <div className="exampleCommon">
-        <div className="exampleCommonContent">
-          <div className="animate__animated animate__bounce">animate__bounce</div>
+      <div className='vpu_ocoplmimotceic_item'>
+        <div className="exampleCommon">
+          <div className="exampleCommonContent">
+            <div className="animate__animated animate__bounce">animate__bounce</div>
+          </div>
         </div>
       </div>
       <div className="exampleCommon">

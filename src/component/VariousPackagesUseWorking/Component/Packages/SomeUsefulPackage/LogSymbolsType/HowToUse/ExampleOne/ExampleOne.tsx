@@ -14,7 +14,7 @@ export const ExampleOne = () => {
   }
   return (
     <div className='vpu_ocoplmimotceic_list'>
-      <div className='vpu_ocoplmimotceic_list'>
+      <div className='vpu_ocoplmimotceic_item'>
         <div className="exampleCommon">
           <div className="exampleCommonPoints">
             <span>Simple various type alert</span>

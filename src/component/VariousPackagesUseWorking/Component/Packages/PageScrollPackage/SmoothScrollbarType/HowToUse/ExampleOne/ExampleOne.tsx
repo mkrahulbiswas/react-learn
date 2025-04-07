@@ -5,7 +5,7 @@ import { getCommonData } from "../../../../../../../../database/common-database"
 export const ExampleOne = () => {
   const data = getCommonData({ type: "usefulPackage", for: "smoothScroll" });
   return (
-    <>
+    <div className='vpu_ocoplmimotceic_list'>
       <BasicImplement content={data} />
       <WithDampingOption content={data} />
       <WithThumbMinSizeOption content={data} />
@@ -14,7 +14,7 @@ export const ExampleOne = () => {
       <WithContinuousScrollingOption content={data} />
       <WithDelegateToOption content={data} />
       <WithPluginsOption content={data} />
-    </>
+    </div>
   );
 };
 
@@ -27,7 +27,7 @@ export const BasicImplement = ({ content }: any) => {
     }
   }, []);
   return (
-    <>
+    <div className='vpu_ocoplmimotceic_item'>
       <div className="exampleCommon triennialWidth">
         <div className="exampleCommonPoints">
           <span>Basic implementation</span>
@@ -38,7 +38,7 @@ export const BasicImplement = ({ content }: any) => {
           </div>
         </div>
       </div>
-    </>
+    </div>
   );
 };
 
@@ -53,7 +53,7 @@ export const WithDampingOption = ({ content }: any) => {
     }
   }, []);
   return (
-    <>
+    <div className='vpu_ocoplmimotceic_item'>
       <div className="exampleCommon triennialWidth">
         <div className="exampleCommonPoints">
           <span>With option damping</span>
@@ -64,7 +64,7 @@ export const WithDampingOption = ({ content }: any) => {
           </div>
         </div>
       </div>
-    </>
+    </div>
   );
 };
 
@@ -79,7 +79,7 @@ export const WithThumbMinSizeOption = ({ content }: any) => {
     }
   }, []);
   return (
-    <>
+    <div className='vpu_ocoplmimotceic_item'>
       <div className="exampleCommon triennialWidth">
         <div className="exampleCommonPoints">
           <span>With option thumb min size</span>
@@ -90,7 +90,7 @@ export const WithThumbMinSizeOption = ({ content }: any) => {
           </div>
         </div>
       </div>
-    </>
+    </div>
   );
 };
 
@@ -105,7 +105,7 @@ export const WithRenderByPixelsOption = ({ content }: any) => {
     }
   }, []);
   return (
-    <>
+    <div className='vpu_ocoplmimotceic_item'>
       <div className="exampleCommon triennialWidth">
         <div className="exampleCommonPoints">
           <span>With option render by pixels</span>
@@ -116,7 +116,7 @@ export const WithRenderByPixelsOption = ({ content }: any) => {
           </div>
         </div>
       </div>
-    </>
+    </div>
   );
 };
 
@@ -131,7 +131,7 @@ export const WithAlwaysShowTracksOption = ({ content }: any) => {
     }
   }, []);
   return (
-    <>
+    <div className='vpu_ocoplmimotceic_item'>
       <div className="exampleCommon triennialWidth">
         <div className="exampleCommonPoints">
           <span>With option always show tracks</span>
@@ -142,7 +142,7 @@ export const WithAlwaysShowTracksOption = ({ content }: any) => {
           </div>
         </div>
       </div>
-    </>
+    </div>
   );
 };
 
@@ -157,7 +157,7 @@ export const WithContinuousScrollingOption = ({ content }: any) => {
     }
   }, []);
   return (
-    <>
+    <div className='vpu_ocoplmimotceic_item'>
       <div className="exampleCommon triennialWidth">
         <div className="exampleCommonPoints">
           <span>With option continuous scrolling</span>
@@ -168,7 +168,7 @@ export const WithContinuousScrollingOption = ({ content }: any) => {
           </div>
         </div>
       </div>
-    </>
+    </div>
   );
 };
 
@@ -183,7 +183,7 @@ export const WithDelegateToOption = ({ content }: any) => {
     }
   }, []);
   return (
-    <>
+    <div className='vpu_ocoplmimotceic_item'>
       <div className="exampleCommon triennialWidth">
         <div className="exampleCommonPoints">
           <span>With option render by pixels</span>
@@ -194,7 +194,7 @@ export const WithDelegateToOption = ({ content }: any) => {
           </div>
         </div>
       </div>
-    </>
+    </div>
   );
 };
 
@@ -209,7 +209,7 @@ export const WithPluginsOption = ({ content }: any) => {
     }
   }, []);
   return (
-    <>
+    <div className='vpu_ocoplmimotceic_item'>
       <div className="exampleCommon triennialWidth">
         <div className="exampleCommonPoints">
           <span>With option render by pixels</span>
@@ -220,6 +220,6 @@ export const WithPluginsOption = ({ content }: any) => {
           </div>
         </div>
       </div>
-    </>
+    </div>
   );
 };

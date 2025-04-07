@@ -2,18 +2,18 @@ import { VictoryArea, VictoryChart, VictoryLine, VictoryPie, VictoryPolarAxis, V
 
 export const ExampleOne = () => {
   return (
-    <>
+    <div className='vpu_ocoplmimotceic_list'>
       <LineChart />
       <AreaChart />
       <VoronoiChart />
       <PieChart />
-    </>
+    </div>
   )
 }
 
 export const LineChart = () => {
   return (
-    <>
+    <div className='vpu_ocoplmimotceic_item'>
       <div className="exampleCommon">
         <div className="exampleCommonPoints">
           <span>Line Chart One</span>
@@ -67,13 +67,13 @@ export const LineChart = () => {
           </div>
         </div>
       </div>
-    </>
+    </div>
   )
 }
 
 export const AreaChart = () => {
   return (
-    <>
+    <div className='vpu_ocoplmimotceic_item'>
       <div className="exampleCommon">
         <div className="exampleCommonPoints">
           <span>Area Chart</span>
@@ -125,13 +125,13 @@ export const AreaChart = () => {
           </div>
         </div>
       </div>
-    </>
+    </div>
   )
 }
 
 export const VoronoiChart = () => {
   return (
-    <>
+    <div className='vpu_ocoplmimotceic_item'>
       <div className="exampleCommon">
         <div className="exampleCommonPoints">
           <span>Voronoi Chart</span>
@@ -151,13 +151,13 @@ export const VoronoiChart = () => {
           </div>
         </div>
       </div>
-    </>
+    </div>
   )
 }
 
 export const PieChart = () => {
   return (
-    <>
+    <div className='vpu_ocoplmimotceic_item'>
       <div className="exampleCommon">
         <div className="exampleCommonPoints">
           <span>Pie Chart</span>
@@ -176,7 +176,7 @@ export const PieChart = () => {
             />
           </div>
         </div>
-      </div >
-    </>
+      </div>
+    </div>
   )
 }

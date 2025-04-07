@@ -1,6 +1,6 @@
 export const ExampleOne = () => {
   return (
-    <>
+    <div className='vpu_ocoplmimotceic_list'>
       <div className="exampleCommon">
         {/* <div className="exampleCommonPoints">
           <span>Making <b>different position</b> of pagination</span>
@@ -10,7 +10,7 @@ export const ExampleOne = () => {
             Hello world!
           </h1>
         </div>
-      </div >
+      </div>
 
       <div className="exampleCommon">
         <div className="exampleCommonPoints">
@@ -28,7 +28,7 @@ export const ExampleOne = () => {
             </div>
           </div>
         </div>
-      </div >
+      </div>
 
       <div className="exampleCommon">
         <div className="exampleCommonPoints">
@@ -40,7 +40,7 @@ export const ExampleOne = () => {
           <p className="text-blue-600/50 dark:text-sky-400/50">The quick brown fox...</p>
           <p className="text-blue-600/25 dark:text-sky-400/25">The quick brown fox...</p>
         </div>
-      </div >
+      </div>
 
       <div className="exampleCommon">
         <div className="exampleCommonPoints">
@@ -51,7 +51,7 @@ export const ExampleOne = () => {
           <button className="p-2 ml-2 bg-cyan-500 ...">Button B</button>
           <button className="p-2 ml-2 bg-pink-500 ...">Button C</button>
         </div>
-      </div >
-    </>
+      </div>
+    </div>
   )
 }

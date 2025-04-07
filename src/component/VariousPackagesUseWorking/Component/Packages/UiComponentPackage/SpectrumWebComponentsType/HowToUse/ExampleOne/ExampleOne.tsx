@@ -3,16 +3,16 @@ import Bell from '@spectrum-icons/workflow/Bell';
 
 export const ExampleOne = () => {
   return (
-    <>
+    <div className='vpu_ocoplmimotceic_list'>
       <ButtonsAS />
       <ProgressBarAS />
-    </>
+    </div>
   )
 }
 
 export const ButtonsAS = () => {
   return (
-    <>
+    <div className='vpu_ocoplmimotceic_item'>
       <div className="exampleCommon">
         <div className="exampleCommonPoints">
           <span>Buttons</span>
@@ -65,14 +65,14 @@ export const ButtonsAS = () => {
             </Button>
           </Flex>
         </div>
-      </div >
-    </>
+      </div>
+    </div>
   )
 }
 
 export const ProgressBarAS = () => {
   return (
-    <>
+    <div className='vpu_ocoplmimotceic_item'>
       <div className="exampleCommon">
         <div className="exampleCommonPoints">
           <span>ProgressBar</span>
@@ -103,7 +103,7 @@ export const ProgressBarAS = () => {
             />
           </Flex>
         </div>
-      </div >
-    </>
+      </div>
+    </div>
   )
 }

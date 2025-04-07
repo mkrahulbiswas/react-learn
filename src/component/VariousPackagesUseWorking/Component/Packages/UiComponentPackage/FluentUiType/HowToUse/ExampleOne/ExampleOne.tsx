@@ -24,11 +24,11 @@ const useStyles = makeStyles({
 
 export const ExampleOne = () => {
   return (
-    <>
+    <div className='vpu_ocoplmimotceic_list'>
       <ButtonsFU />
       <DateTimePeckerFU />
       <MessageBarFU />
-    </>
+    </div>
   )
 }
 
@@ -38,7 +38,7 @@ export const ButtonsFU = () => {
 
   const styles = useStyles();
   return (
-    <>
+    <div className='vpu_ocoplmimotceic_item'>
       <div className="exampleCommon">
         <div className="exampleCommonPoints">
           <span>Buttons</span>
@@ -141,14 +141,14 @@ export const ButtonsFU = () => {
           </Menu>
         </div>
       </div>
-    </>
+    </div>
   )
 }
 
 export const DateTimePeckerFU = (props: Partial<DatePickerProps>) => {
   const styles = useStyles();
   return (
-    <>
+    <div className='vpu_ocoplmimotceic_item'>
       <div className="exampleCommon">
         <div className="exampleCommonPoints">
           <span>Message Bar</span>
@@ -168,7 +168,7 @@ export const DateTimePeckerFU = (props: Partial<DatePickerProps>) => {
           </Field>
         </div>
       </div>
-    </>
+    </div>
   )
 }
 
@@ -176,7 +176,7 @@ export const MessageBarFU = () => {
   const intents: MessageBarIntent[] = ["info", "warning", "error", "success"];
   const styles = useStyles();
   return (
-    <>
+    <div className='vpu_ocoplmimotceic_item'>
       <div className="exampleCommon">
         <div className="exampleCommonPoints">
           <span>Message Bar</span>
@@ -214,6 +214,6 @@ export const MessageBarFU = () => {
           ))}
         </div>
       </div>
-    </>
+    </div>
   )
 }

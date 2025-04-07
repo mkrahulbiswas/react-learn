@@ -16,12 +16,12 @@ import {
 
 export const ExampleOne = () => {
   return (
-    <>
+    <div className='vpu_ocoplmimotceic_list'>
       <LineChartExample />
       <AreaChartExample />
       <BarChartExample />
       <PieChartExample />
-    </>
+    </div>
   )
 }
 
@@ -71,7 +71,7 @@ export const LineChartExample = () => {
     },
   ]
   return (
-    <>
+    <div className='vpu_ocoplmimotceic_item'>
       <div className="exampleCommon">
         <div className="exampleCommonPoints">
           <span>Line Chart</span>
@@ -100,7 +100,7 @@ export const LineChartExample = () => {
           {/* </ResponsiveContainer> */}
         </div>
       </div>
-    </>
+    </div>
   )
 }
 
@@ -150,7 +150,7 @@ export const AreaChartExample = () => {
     },
   ]
   return (
-    <>
+    <div className='vpu_ocoplmimotceic_item'>
       <div className="exampleCommon">
         <div className="exampleCommonPoints">
           <span>Area Chart</span>
@@ -186,7 +186,7 @@ export const AreaChartExample = () => {
           </AreaChart>
         </div>
       </div>
-    </>
+    </div>
   )
 }
 
@@ -236,7 +236,7 @@ export const BarChartExample = () => {
     },
   ]
   return (
-    <>
+    <div className='vpu_ocoplmimotceic_item'>
       <div className="exampleCommon">
         <div className="exampleCommonPoints">
           <span>Bar Chart</span>
@@ -263,7 +263,7 @@ export const BarChartExample = () => {
           </BarChart>
         </div>
       </div>
-    </>
+    </div>
   )
 }
 
@@ -277,7 +277,7 @@ export const PieChartExample = () => {
     { name: 'Group F', value: 189 },
   ]
   return (
-    <>
+    <div className='vpu_ocoplmimotceic_item'>
       <div className="exampleCommon">
         <div className="exampleCommonPoints">
           <span>Pie Chart</span>
@@ -298,6 +298,6 @@ export const PieChartExample = () => {
           </PieChart>
         </div>
       </div>
-    </>
+    </div>
   )
 }

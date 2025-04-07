@@ -2,19 +2,19 @@ import { Breadcrumb, Breadcrumbs, Button, Callout, Icon, Tab, Tabs, TabsExpander
 
 export const ExampleOne = () => {
   return (
-    <>
+    <div className='vpu_ocoplmimotceic_list'>
       <BreadcrumbBJ />
       <ButtonBJ />
       <CalloutBJ />
       <ProgressBarBJ />
       <TabsBJ />
-    </>
+    </div>
   )
 }
 
 export const BreadcrumbBJ = () => {
   return (
-    <>
+    <div className='vpu_ocoplmimotceic_item'>
       <div className="exampleCommon">
         <div className="exampleCommonPoints">
           <span>Buttons</span>
@@ -35,13 +35,13 @@ export const BreadcrumbBJ = () => {
           />
         </div>
       </div>
-    </>
+    </div>
   )
 }
 
 export const ButtonBJ = () => {
   return (
-    <>
+    <div className='vpu_ocoplmimotceic_item'>
       <div className="exampleCommon">
         <div className="exampleCommonPoints">
           <span>Buttons</span>
@@ -67,13 +67,13 @@ export const ButtonBJ = () => {
           </Button>
         </div>
       </div>
-    </>
+    </div>
   )
 }
 
 export const CalloutBJ = () => {
   return (
-    <>
+    <div className='vpu_ocoplmimotceic_item'>
       <div className="exampleCommon">
         <div className="exampleCommonPoints">
           <span>Buttons</span>
@@ -91,13 +91,13 @@ export const CalloutBJ = () => {
           <Callout intent="danger">This is a danger Callout</Callout>
         </div>
       </div>
-    </>
+    </div>
   )
 }
 
 export const ProgressBarBJ = () => {
   return (
-    <>
+    <div className='vpu_ocoplmimotceic_item'>
       <div className="exampleCommon fullWidth">
         <div className="exampleCommonPoints">
           <span>Buttons</span>
@@ -123,13 +123,13 @@ export const ProgressBarBJ = () => {
           </div>
         </div>
       </div>
-    </>
+    </div>
   )
 }
 
 export const TabsBJ = () => {
   return (
-    <>
+    <div className='vpu_ocoplmimotceic_item'>
       <div className="exampleCommon fullWidth">
         <div className="exampleCommonPoints">
           <span>Buttons</span>
@@ -145,6 +145,6 @@ export const TabsBJ = () => {
           </Tabs>;
         </div>
       </div>
-    </>
+    </div>
   )
 }

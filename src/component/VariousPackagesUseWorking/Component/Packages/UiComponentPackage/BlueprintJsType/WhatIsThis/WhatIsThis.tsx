@@ -14,7 +14,7 @@ export const WhatIsThis = ({ propsPass }: any) => {
                   <div className="vpu_npm_list">
                     <p>
                       <span>To use the core package you need to <b>install</b> the library by using command:</span>
-                      <div>
+                      <div className="vpu_npm_package">
                         <a>npm i --save @blueprintjs/core</a>
                       </div>
                     </p>
@@ -57,7 +57,7 @@ export const WhatIsThis = ({ propsPass }: any) => {
                   <div className="vpu_npm_list">
                     <p>
                       <span>To use the icon package you need to <b>install</b> the library by using command:</span>
-                      <div>
+                      <div className="vpu_npm_package">
                         <a>npm i --save @blueprintjs/icons</a>
                       </div>
                     </p>
@@ -84,7 +84,7 @@ export const WhatIsThis = ({ propsPass }: any) => {
                 <span>Some examples are given bellow:</span>
               </li>
             </ul>
-          </div > : null
+          </div> : null
       }
       {
         targetedTab === loaderData.packagesUsed.datetime2.type ?
@@ -98,7 +98,7 @@ export const WhatIsThis = ({ propsPass }: any) => {
                   <div className="vpu_npm_list">
                     <p>
                       <span>To use this package you need to <b>install</b> the library by using command:</span>
-                      <div>
+                      <div className="vpu_npm_package">
                         <a>npm i --save @blueprintjs/datetime2</a>
                       </div>
                     </p>
@@ -125,7 +125,7 @@ export const WhatIsThis = ({ propsPass }: any) => {
                 <span>Some examples are given bellow:</span>
               </li>
             </ul>
-          </div > : null
+          </div> : null
       }
       {
         targetedTab === loaderData.packagesUsed.select.type ?
@@ -139,7 +139,7 @@ export const WhatIsThis = ({ propsPass }: any) => {
                   <div className="vpu_npm_list">
                     <p>
                       <span>To use this package you need to <b>install</b> the library by using command:</span>
-                      <div>
+                      <div className="vpu_npm_package">
                         <a>npm i --save @blueprintjs/select</a>
                       </div>
                     </p>
@@ -166,7 +166,7 @@ export const WhatIsThis = ({ propsPass }: any) => {
                 <span>Some examples are given bellow:</span>
               </li>
             </ul>
-          </div > : null
+          </div> : null
       }
       {
         targetedTab === loaderData.packagesUsed.table.type ?
@@ -180,7 +180,7 @@ export const WhatIsThis = ({ propsPass }: any) => {
                   <div className="vpu_npm_list">
                     <p>
                       <span>To use this package you need to <b>install</b> the library by using command</span>
-                      <div>
+                      <div className="vpu_npm_package">
                         <a>npm i --save @blueprintjs/table</a>
                       </div>
                     </p>
@@ -207,8 +207,8 @@ export const WhatIsThis = ({ propsPass }: any) => {
                 <span>Some examples are given bellow:</span>
               </li>
             </ul>
-          </div > : null
+          </div> : null
       }
-    </div >
+    </div>
   )
 }

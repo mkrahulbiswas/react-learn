@@ -4,11 +4,11 @@ import chroma from 'chroma-js';
 
 export const ExampleTwo = () => {
   return (
-    <>
+    <div className='vpu_ocoplmimotceic_list'>
       <MultiSelect />
       <MultiSelectAnimated />
       <MultiSelectCustomStyle />
-    </>
+    </div>
   )
 }
 
@@ -20,7 +20,7 @@ export const MultiSelect = () => {
     { value: 'rahul', label: 'Rahul' },
   ]
   return (
-    <>
+    <div className='vpu_ocoplmimotceic_item'>
       <div className="exampleCommon triennialWidth">
         <div className="exampleCommonPoints">
           <span>Multi Select</span>
@@ -36,7 +36,7 @@ export const MultiSelect = () => {
           />
         </div>
       </div>
-    </>
+    </div>
   )
 }
 
@@ -49,7 +49,7 @@ export const MultiSelectAnimated = () => {
   ]
   const animatedComponents = makeAnimated();
   return (
-    <>
+    <div className='vpu_ocoplmimotceic_item'>
       <div className="exampleCommon triennialWidth">
         <div className="exampleCommonPoints">
           <span>Multi Select Animated</span>
@@ -66,7 +66,7 @@ export const MultiSelectAnimated = () => {
           />
         </div>
       </div>
-    </>
+    </div>
   )
 }
 
@@ -92,14 +92,14 @@ export const MultiSelectCustomStyle = () => {
     { value: 'silver', label: 'Silver', color: '#666666' },
   ];
 
-  const options = [
-    { value: 'chocolate', label: 'Chocolate' },
-    { value: 'strawberry', label: 'Strawberry' },
-    { value: 'vanilla', label: 'Vanilla' },
-    { value: 'rahul', label: 'Rahul' },
-  ]
+  // const options = [
+  //   { value: 'chocolate', label: 'Chocolate' },
+  //   { value: 'strawberry', label: 'Strawberry' },
+  //   { value: 'vanilla', label: 'Vanilla' },
+  //   { value: 'rahul', label: 'Rahul' },
+  // ]
 
-  const animatedComponents = makeAnimated();
+  // const animatedComponents = makeAnimated();
 
   const colourStyles: StylesConfig<ColourOption, true> = {
     control: (styles) => ({ ...styles, backgroundColor: 'white' }),
@@ -154,7 +154,7 @@ export const MultiSelectCustomStyle = () => {
     }),
   };
   return (
-    <>
+    <div className='vpu_ocoplmimotceic_item'>
       <div className="exampleCommon triennialWidth">
         <div className="exampleCommonPoints">
           <span>Multi Select Custom Style</span>
@@ -169,6 +169,6 @@ export const MultiSelectCustomStyle = () => {
           />
         </div>
       </div>
-    </>
+    </div>
   )
 }

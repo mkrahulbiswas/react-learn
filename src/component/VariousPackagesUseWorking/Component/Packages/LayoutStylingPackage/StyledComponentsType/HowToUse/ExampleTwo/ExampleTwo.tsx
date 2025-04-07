@@ -3,13 +3,13 @@ import styled, { ThemeContext, ThemeProvider, useTheme } from "styled-components
 
 export const ExampleTwo = () => {
   return (
-    <>
+    <div className='vpu_ocoplmimotceic_list'>
       <NormalTheming />
       <FunctionThemes />
       <UseThemeContext />
       {/* <UsingUseTheme /> */}
       {/* <RefsUse /> */}
-    </>
+    </div>
   )
 }
 
@@ -38,7 +38,7 @@ export const NormalTheming = () => {
   };
 
   return (
-    <>
+    <div className='vpu_ocoplmimotceic_item'>
       <div className="exampleCommon">
         {/* <div className="exampleCommonPoints">
           <span>Making <b>different position</b> of pagination</span>
@@ -51,8 +51,8 @@ export const NormalTheming = () => {
             <Button>Themed</Button>
           </ThemeProvider>
         </div>
-      </div >
-    </>
+      </div>
+    </div>
   )
 }
 
@@ -82,7 +82,7 @@ export const FunctionThemes = () => {
 
 
   return (
-    <>
+    <div className='vpu_ocoplmimotceic_item'>
       <div className="exampleCommon">
         {/* <div className="exampleCommonPoints">
           <span>Making <b>different position</b> of pagination</span>
@@ -97,8 +97,8 @@ export const FunctionThemes = () => {
             </ThemeProvider>
           </div>
         </ThemeProvider>
-      </div >
-    </>
+      </div>
+    </div>
   )
 }
 

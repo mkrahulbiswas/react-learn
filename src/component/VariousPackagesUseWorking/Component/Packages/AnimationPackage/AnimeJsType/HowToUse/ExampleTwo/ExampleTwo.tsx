@@ -2,9 +2,9 @@ import anime from "animejs";
 
 export const ExampleTwo = () => {
   return (
-    <>
+    <div className='vpu_ocoplmimotceic_list'>
       <TypeOne />
-    </>
+    </div>
   )
 }
 
@@ -19,7 +19,7 @@ export const TypeOne = () => {
     easing: 'easeInOutExpo'
   });
   return (
-    <>
+    <div className='vpu_ocoplmimotceic_item'>
       <div className="exampleCommon">
         <div className="exampleCommonContent svg-attributes-demo">
           <svg width="128" height="128" viewBox="0 0 128 128">
@@ -30,7 +30,7 @@ export const TypeOne = () => {
             <polygon points="64 69.56621510280881 8.574 99.93758658336868 62.589812750651525 67.12327232364862 64 3.9375865833686783 65.41018724934848 67.12327232364862 119.426 99.93758658336868 " style={{ filter: "url(#displacementFilter)", transform: "scale(1)" }} fill="currentColor"></polygon>
           </svg>
         </div>
-      </div >
-    </>
+      </div>
+    </div>
   )
 }

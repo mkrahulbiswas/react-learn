@@ -2,10 +2,10 @@ import anime from "animejs";
 
 export const ExampleOne = () => {
   return (
-    <>
+    <div className='vpu_ocoplmimotceic_list'>
       <TypeOne />
       <TypeTwo />
-    </>
+    </div>
   )
 }
 
@@ -15,13 +15,13 @@ export const TypeOne = () => {
     translateX: 250
   });
   return (
-    <>
+    <div className='vpu_ocoplmimotceic_item'>
       <div className="exampleCommon">
         <div className="exampleCommonContent">
           <div className="typeOne">Anime Js</div>
         </div>
-      </div >
-    </>
+      </div>
+    </div>
   )
 }
 
@@ -33,12 +33,12 @@ export const TypeTwo = () => {
     round: 10
   });
   return (
-    <>
+    <div className='vpu_ocoplmimotceic_item'>
       <div className="exampleCommon">
         <div className="exampleCommonContent">
           <div className="TypeThree">Anime Js</div>
         </div>
-      </div >
-    </>
+      </div>
+    </div>
   )
 }

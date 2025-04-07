@@ -3,12 +3,12 @@ import LoadingBar, { LoadingBarRef, useLoadingBar } from "react-top-loading-bar"
 
 export const ExampleOne = () => {
   return (
-    <>
+    <div className='vpu_ocoplmimotceic_list'>
       <UsingHooks />
       <WithRef />
       <WithState />
       <WithProperties />
-    </>
+    </div>
   )
 }
 
@@ -18,7 +18,7 @@ export const UsingHooks = () => {
     height: 2,
   });
   return (
-    <>
+    <div className='vpu_ocoplmimotceic_item'>
       <div className="exampleCommon">
         <div className="exampleCommonPoints">
           <span>Using Hooks</span>
@@ -28,14 +28,14 @@ export const UsingHooks = () => {
           <button onClick={() => complete()}>Complete</button>
         </div>
       </div>
-    </>
+    </div>
   )
 }
 
 export const WithRef = () => {
   const ref = useRef<LoadingBarRef>(null);
   return (
-    <>
+    <div className='vpu_ocoplmimotceic_item'>
       <div className="exampleCommon">
         <div className="exampleCommonPoints">
           <span>With Ref</span>
@@ -47,14 +47,14 @@ export const WithRef = () => {
           <button onClick={() => ref.current?.complete()}>Complete</button>
         </div>
       </div>
-    </>
+    </div>
   )
 }
 
 export const WithState = () => {
   const [progress, setProgress] = useState(0)
   return (
-    <>
+    <div className='vpu_ocoplmimotceic_item'>
       <div className="exampleCommon">
         <div className="exampleCommonPoints">
           <span>With State</span>
@@ -66,14 +66,14 @@ export const WithState = () => {
           <button onClick={() => setProgress(100)}>Complete</button>
         </div>
       </div>
-    </>
+    </div>
   )
 }
 
 export const WithProperties = () => {
   const [progress, setProgress] = useState(0)
   return (
-    <>
+    <div className='vpu_ocoplmimotceic_item'>
       <div className="exampleCommon">
         <div className="exampleCommonPoints">
           <span>With Properties</span>
@@ -97,6 +97,6 @@ export const WithProperties = () => {
           <button onClick={() => setProgress(progress - 10)}>Subtract 10%</button>
         </div>
       </div>
-    </>
+    </div>
   )
 }

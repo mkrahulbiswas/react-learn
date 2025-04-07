@@ -16,7 +16,7 @@ export const ExampleOne = () => {
 export const ButtonsMU = () => {
   const { xxl } = useResponsive();
   return (
-    <>
+    <div className='vpu_ocoplmimotceic_list'>
       <div className="exampleCommon">
         <div className="exampleCommonPoints">
           <span>Various Types Of Buttons</span>
@@ -185,13 +185,13 @@ export const ButtonsMU = () => {
           </Flex>
         </div>
       </div>
-    </>
+    </div>
   )
 }
 
 export const BreadcrumbMU = () => {
   return (
-    <>
+    <div className='vpu_ocoplmimotceic_item'>
       <div className="exampleCommon">
         <div className="exampleCommonPoints">
           <span>Breadcrumb</span>
@@ -215,13 +215,13 @@ export const BreadcrumbMU = () => {
           />
         </div>
       </div>
-    </>
+    </div>
   )
 }
 
 export const PaginationMU = () => {
   return (
-    <>
+    <div className='vpu_ocoplmimotceic_item'>
       <div className="exampleCommon">
         <div className="exampleCommonPoints">
           <span>Pagination</span>
@@ -230,13 +230,13 @@ export const PaginationMU = () => {
           <Pagination defaultCurrent={6} total={500} />
         </div>
       </div>
-    </>
+    </div>
   )
 }
 
 export const ColourPeakerMU = () => {
   return (
-    <>
+    <div className='vpu_ocoplmimotceic_item'>
       <div className="exampleCommon">
         <div className="exampleCommonPoints">
           <span>Pagination</span>
@@ -252,6 +252,6 @@ export const ColourPeakerMU = () => {
           </Space>
         </div>
       </div>
-    </>
+    </div>
   )
 }

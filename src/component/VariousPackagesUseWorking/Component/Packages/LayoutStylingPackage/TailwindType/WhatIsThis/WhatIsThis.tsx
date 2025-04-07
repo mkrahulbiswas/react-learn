@@ -14,7 +14,7 @@ export const WhatIsThis = ({ propsPass }: any) => {
                   <div className="vpu_npm_list">
                     <p>
                       <span>To use this package you need to <b>install</b> the library by using command:</span>
-                      <div>
+                      <div className="vpu_npm_package">
                         <a>npm install tailwindcss @tailwindcss/vite</a>
                       </div>
                     </p>
@@ -51,8 +51,8 @@ export const WhatIsThis = ({ propsPass }: any) => {
                 <span>Some examples are given bellow:</span>
               </li>
             </ul>
-          </div > : null
+          </div> : null
       }
-    </div >
+    </div>
   )
 }

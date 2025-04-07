@@ -2,10 +2,10 @@ import { InView, useInView } from "react-intersection-observer";
 
 export const ExampleOne = () => {
   return (
-    <>
+    <div className='vpu_ocoplmimotceic_list'>
       <BasicImplement />
       <TrackVisibility />
-    </>
+    </div>
   )
 }
 
@@ -18,7 +18,7 @@ export const TrackVisibility = () => {
   })
 
   return (
-    <>
+    <div className='vpu_ocoplmimotceic_item'>
       <div className="exampleCommon">
         <div className="exampleCommonPoints">
           <span>This an example of <b>track visibility</b></span>
@@ -27,7 +27,7 @@ export const TrackVisibility = () => {
           <span ref={ref}>Loader</span>
         </div>
       </div>
-    </>
+    </div>
   )
 }
 
@@ -40,7 +40,7 @@ export const BasicImplement = () => {
   console.log(entry);
 
   return (
-    <>
+    <div className='vpu_ocoplmimotceic_item'>
       <div className="exampleCommon">
         <div className="exampleCommonPoints">
           <span>Using function</span>
@@ -63,6 +63,6 @@ export const BasicImplement = () => {
           </InView>
         </div>
       </div>
-    </>
+    </div>
   )
 }

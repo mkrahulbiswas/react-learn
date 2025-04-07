@@ -3,21 +3,21 @@ import { HiAtSymbol, HiStar } from "react-icons/hi"
 
 export const ExampleOne = () => {
   return (
-    <>
+    <div className='vpu_ocoplmimotceic_list'>
       <ButtonsCU />
       <BadgeCU />
       <DialogueCU />
       <QrCodeCU />
       <SegmentCU />
       <SkeletonCU />
-    </>
+    </div>
   )
 }
 
 export const ButtonsCU = () => {
   const colorPalettes: any = ['red', 'green', 'blue', 'yellow']
   return (
-    <>
+    <div className='vpu_ocoplmimotceic_item'>
       <div className="exampleCommon">
         <div className="exampleCommonPoints">
           <span>Buttons</span>
@@ -35,14 +35,14 @@ export const ButtonsCU = () => {
             ))}
           </Stack>
         </div>
-      </div >
-    </>
+      </div>
+    </div>
   )
 }
 
 export const BadgeCU = () => {
   return (
-    <>
+    <div className='vpu_ocoplmimotceic_item'>
       <div className="exampleCommon">
         <div className="exampleCommonPoints">
           <span>Badge</span>
@@ -57,14 +57,14 @@ export const BadgeCU = () => {
             </Badge>
           </Stack>
         </div>
-      </div >
-    </>
+      </div>
+    </div>
   )
 }
 
 export const DialogueCU = () => {
   return (
-    <>
+    <div className='vpu_ocoplmimotceic_item'>
       <div className="exampleCommon">
         <div className="exampleCommonPoints">
           <span>Dialogue</span>
@@ -103,14 +103,14 @@ export const DialogueCU = () => {
             </Portal>
           </Dialog.Root>
         </div>
-      </div >
-    </>
+      </div>
+    </div>
   )
 }
 
 export const QrCodeCU = () => {
   return (
-    <>
+    <div className='vpu_ocoplmimotceic_item'>
       <div className="exampleCommon">
         <div className="exampleCommonPoints">
           <span>Dialogue</span>
@@ -122,14 +122,14 @@ export const QrCodeCU = () => {
             </QrCode.Frame>
           </QrCode.Root>
         </div>
-      </div >
-    </>
+      </div>
+    </div>
   )
 }
 
 export const SegmentCU = () => {
   return (
-    <>
+    <div className='vpu_ocoplmimotceic_item'>
       <div className="exampleCommon">
         <div className="exampleCommonPoints">
           <span>Dialogue</span>
@@ -140,14 +140,14 @@ export const SegmentCU = () => {
             <SegmentGroup.Items items={["React", "Vue", "Solid"]} />
           </SegmentGroup.Root>
         </div>
-      </div >
-    </>
+      </div>
+    </div>
   )
 }
 
 export const SkeletonCU = () => {
   return (
-    <>
+    <div className='vpu_ocoplmimotceic_item'>
       <div className="exampleCommon">
         <div className="exampleCommonPoints">
           <span>Dialogue</span>
@@ -169,7 +169,7 @@ export const SkeletonCU = () => {
             </Stack>
           </HStack>
         </div>
-      </div >
-    </>
+      </div>
+    </div>
   )
 }

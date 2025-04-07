@@ -2,12 +2,12 @@ import { Chart } from "react-google-charts";
 
 export const ExampleOne = () => {
   return (
-    <>
+    <div className='vpu_ocoplmimotceic_list'>
       <PieChart />
       <GanttChart />
       <GeoChart />
       <SankeyChart />
-    </>
+    </div>
   )
 }
 
@@ -25,7 +25,7 @@ export const PieChart = () => {
   }
 
   return (
-    <>
+    <div className='vpu_ocoplmimotceic_item'>
       <div className="exampleCommon">
         <div className="exampleCommonPoints">
           <span>Pie Chart</span>
@@ -40,7 +40,7 @@ export const PieChart = () => {
           />
         </div>
       </div>
-    </>
+    </div>
   )
 }
 
@@ -121,7 +121,7 @@ export const GanttChart = () => {
   }
 
   return (
-    <>
+    <div className='vpu_ocoplmimotceic_item'>
       <div className="exampleCommon">
         <div className="exampleCommonPoints">
           <span>Gantt Chart</span>
@@ -136,7 +136,7 @@ export const GanttChart = () => {
           />
         </div>
       </div>
-    </>
+    </div>
   )
 }
 
@@ -153,7 +153,7 @@ export const GeoChart = () => {
   ]
 
   return (
-    <>
+    <div className='vpu_ocoplmimotceic_item'>
       <div className="exampleCommon">
         <div className="exampleCommonPoints">
           <span>Geo Chart</span>
@@ -180,7 +180,7 @@ export const GeoChart = () => {
           />
         </div>
       </div>
-    </>
+    </div>
   )
 }
 
@@ -196,7 +196,7 @@ export const SankeyChart = () => {
   ]
   const options = {};
   return (
-    <>
+    <div className='vpu_ocoplmimotceic_item'>
       <div className="exampleCommon">
         <div className="exampleCommonPoints">
           <span>Sankey Chart</span>
@@ -211,6 +211,6 @@ export const SankeyChart = () => {
           />
         </div>
       </div>
-    </>
+    </div>
   )
 }

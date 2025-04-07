@@ -13,7 +13,7 @@ export const ExampleOne = () => {
 
 export const ButtonsSR = () => {
   return (
-    <>
+    <div className='vpu_ocoplmimotceic_list'>
       <div className="exampleCommon">
         <div className="exampleCommonPoints">
           <span>Various Types Of Buttons</span>
@@ -60,13 +60,13 @@ export const ButtonsSR = () => {
           />
         </div>
       </div>
-    </>
+    </div>
   )
 }
 
 export const BreadcrumbSR = () => {
   return (
-    <>
+    <div className='vpu_ocoplmimotceic_item'>
       <div className="exampleCommon">
         <div className="exampleCommonPoints">
           <span>Breadcrumb</span>
@@ -81,13 +81,13 @@ export const BreadcrumbSR = () => {
           </Breadcrumb>
         </div>
       </div>
-    </>
+    </div>
   )
 }
 
 export const DividerSR = () => {
   return (
-    <>
+    <div className='vpu_ocoplmimotceic_item'>
       <div className="exampleCommon">
         <div className="exampleCommonPoints">
           <span>Divider</span>
@@ -129,13 +129,13 @@ export const DividerSR = () => {
           </Segment>
         </div>
       </div>
-    </>
+    </div>
   )
 }
 
 export const ProgressSR = () => {
   return (
-    <>
+    <div className='vpu_ocoplmimotceic_item'>
       <div className="exampleCommon fullWidth">
         <div className="exampleCommonPoints">
           <span>Pagination</span>
@@ -158,6 +158,6 @@ export const ProgressSR = () => {
           </Segment>
         </div>
       </div>
-    </>
+    </div>
   )
 }

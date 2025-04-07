@@ -4,23 +4,23 @@ import { ExampleTwo } from "./ExampleTwo/ExampleTwo"
 export const HowToUse = ({ propsPass }: any) => {
   const { loaderData, targetedTab } = propsPass
   return (
-    <div className="vpu_pi_example">
+    <div className="vpu_ocoplmimotce_list">
       {
         targetedTab === loaderData.packagesUsed.core.type ?
           <>
-            <div className="exampleSub">
-              <div className="exampleHeading">
-                <h2>How to styling</h2>
+            <div className="vpu_ocoplmimotce_item">
+              <div className="vpu_ocoplmimotcei_heading">
+                <span>How to styling</span>
               </div>
-              <div className="exampleContent">
+              <div className="vpu_ocoplmimotcei_content">
                 <ExampleOne />
               </div>
             </div>
-            <div className="exampleSub">
-              <div className="exampleHeading">
-                <h2>How to animate</h2>
+            <div className="vpu_ocoplmimotce_item">
+              <div className="vpu_ocoplmimotcei_heading">
+                <span>How to animate</span>
               </div>
-              <div className="exampleContent">
+              <div className="vpu_ocoplmimotcei_content">
                 <ExampleTwo />
               </div>
             </div>

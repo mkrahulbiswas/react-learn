@@ -2,10 +2,10 @@ import { animated, useSprings } from '@react-spring/web'
 
 export const ExampleThree = () => {
   return (
-    <>
+    <div className='vpu_ocoplmimotceic_list'>
       {/* <AnimateTypeOne /> */}
       <AnimateTypeThree />
-    </>
+    </div>
   )
 }
 
@@ -31,13 +31,13 @@ export const ExampleThree = () => {
 //             />
 //           ))}
 //         </div>
-//       </div >
+//       </div>
 //     </>
 //   )
 // }
 
 export const AnimateTypeThree = () => {
-  const [springs, api] = useSprings(
+  const [springs, _api] = useSprings(
     2,
     () => ({
       from: { x: 0 },
@@ -55,14 +55,14 @@ export const AnimateTypeThree = () => {
   }
 
   return (
-    <>
+    <div className='vpu_ocoplmimotceic_item'>
       <div className="exampleCommon">
         <div className="exampleCommonContent">
           {springs.map((props, index) => (
             <animated.div key={index} style={{ ...style, ...props }}>Hello</animated.div>
           ))}
         </div>
-      </div >
-    </>
+      </div>
+    </div>
   )
 }

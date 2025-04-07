@@ -2,15 +2,15 @@ import { Box } from "@chakra-ui/react"
 
 export const ExampleTwo = () => {
   return (
-    <>
+    <div className='vpu_ocoplmimotceic_list'>
       <AnimatingCU />
-    </>
+    </div>
   )
 }
 
 export const AnimatingCU = () => {
   return (
-    <>
+    <div className='vpu_ocoplmimotceic_item'>
       <div className="exampleCommon">
         <div className="exampleCommonContent">
           <Box
@@ -22,7 +22,7 @@ export const AnimatingCU = () => {
             This is open
           </Box>
         </div>
-      </div >
-    </>
+      </div>
+    </div>
   )
 }

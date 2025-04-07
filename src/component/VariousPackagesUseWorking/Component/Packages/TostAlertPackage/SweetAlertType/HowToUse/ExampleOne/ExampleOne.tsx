@@ -2,10 +2,10 @@ import Swal from "sweetalert2";
 
 export const ExampleOne = () => {
   return (
-    <>
+    <div className='vpu_ocoplmimotceic_list'>
       <SimpleAlert />
       <ConfirmationAlert />
-    </>
+    </div>
   )
 }
 
@@ -44,7 +44,7 @@ export const SimpleAlert = () => {
     }
   }
   return (
-    <>
+    <div className='vpu_ocoplmimotceic_item'>
       <div className="exampleCommon">
         <div className="exampleCommonPoints">
           <span>Simple various type alert</span>
@@ -57,7 +57,7 @@ export const SimpleAlert = () => {
           <button className="btn btn-light ms-3" onClick={() => showAlert('question')}>Question</button>
         </div>
       </div>
-    </>
+    </div>
   )
 }
 
@@ -78,7 +78,7 @@ export const ConfirmationAlert = () => {
     });
   }
   return (
-    <>
+    <div className='vpu_ocoplmimotceic_item'>
       <div className="exampleCommon">
         <div className="exampleCommonPoints">
           <span>Confirmation various type alert</span>
@@ -87,6 +87,6 @@ export const ConfirmationAlert = () => {
           <button className="btn btn-success" onClick={() => showAlert()}>Open</button>
         </div>
       </div>
-    </>
+    </div>
   )
 }

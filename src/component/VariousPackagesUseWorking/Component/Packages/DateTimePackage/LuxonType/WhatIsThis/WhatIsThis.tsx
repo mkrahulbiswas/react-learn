@@ -14,7 +14,7 @@ export const WhatIsThis = ({ propsPass }: any) => {
                   <div className="vpu_npm_list">
                     <p>
                       <span>There a new updated version of moment js is <b>luxon</b>. To use it need to install:</span>
-                      <div>
+                      <div className="vpu_npm_package">
                         <a>npm install luxon</a>
                         <a>npm install --save-dev @types/luxon</a>
                       </div>
@@ -35,6 +35,6 @@ export const WhatIsThis = ({ propsPass }: any) => {
             </ul>
           </div> : null
       }
-    </div >
+    </div>
   )
 }

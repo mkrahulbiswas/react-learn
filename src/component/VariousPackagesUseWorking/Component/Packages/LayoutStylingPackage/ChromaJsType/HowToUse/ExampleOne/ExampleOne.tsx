@@ -2,10 +2,10 @@ import chroma from 'chroma-js';
 
 export const ExampleOne = () => {
   return (
-    <>
+    <div className='vpu_ocoplmimotceic_list'>
       <BasicImplement />
       <AdvanceImplement />
-    </>
+    </div>
   )
 }
 
@@ -77,7 +77,7 @@ export const BasicImplement = () => {
   console.log(data);
 
   return (
-    <>
+    <div className='vpu_ocoplmimotceic_item'>
       <div className="exampleCommon triennialWidth">
         <div className="exampleCommonPoints">
           <span>Basic implementation</span>
@@ -87,7 +87,7 @@ export const BasicImplement = () => {
           {/* <span style={{ backgroundColor: data }}>{data}</span> */}
         </div>
       </div>
-    </>
+    </div>
   )
 }
 
@@ -97,7 +97,7 @@ export const AdvanceImplement = () => {
   console.log(dataTwo);
 
   return (
-    <>
+    <div className='vpu_ocoplmimotceic_item'>
       <div className="exampleCommon triennialWidth">
         <div className="exampleCommonPoints">
           <span>Advance implementation</span>
@@ -116,6 +116,6 @@ export const AdvanceImplement = () => {
           ))}
         </div>
       </div>
-    </>
+    </div>
   )
 }

@@ -2,11 +2,11 @@ import { useSpring, animated } from '@react-spring/web'
 
 export const ExampleTwo = () => {
   return (
-    <>
+    <div className='vpu_ocoplmimotceic_list'>
       <AnimateTypeOne />
       <AnimateTypeTwo />
       <AnimateTypeThree />
-    </>
+    </div>
   )
 }
 
@@ -16,7 +16,7 @@ export const AnimateTypeOne = () => {
     to: { x: 100 },
   })
   return (
-    <>
+    <div className='vpu_ocoplmimotceic_item'>
       <div className="exampleCommon">
         <div className="exampleCommonContent">
           <animated.div
@@ -29,8 +29,8 @@ export const AnimateTypeOne = () => {
             }}
           />
         </div>
-      </div >
-    </>
+      </div>
+    </div>
   )
 }
 
@@ -48,18 +48,18 @@ export const AnimateTypeTwo = () => {
   }
 
   return (
-    <>
+    <div className='vpu_ocoplmimotceic_item'>
       <div className="exampleCommon">
         <div className="exampleCommonContent">
           <animated.div style={style} />
         </div>
-      </div >
-    </>
+      </div>
+    </div>
   )
 }
 
 export const AnimateTypeThree = () => {
-  const [props, api] = useSpring(
+  const [props, _api] = useSpring(
     () => ({
       from: { opacity: 0 },
       to: { opacity: 1 },
@@ -77,12 +77,12 @@ export const AnimateTypeThree = () => {
   }
 
   return (
-    <>
+    <div className='vpu_ocoplmimotceic_item'>
       <div className="exampleCommon">
         <div className="exampleCommonContent">
           <animated.div style={style}>Hello</animated.div>
         </div>
-      </div >
-    </>
+      </div>
+    </div>
   )
 }

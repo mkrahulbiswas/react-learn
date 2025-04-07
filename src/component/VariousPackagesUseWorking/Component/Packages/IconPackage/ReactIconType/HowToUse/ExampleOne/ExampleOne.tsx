@@ -15,85 +15,115 @@ import { HiAdjustmentsVertical } from "react-icons/hi2";
 
 export const ExampleOne = () => {
   return (
-    <>
-      <div className="exampleCommon">
-        {/* <div className="exampleCommonPoints">
+    <div className='vpu_ocoplmimotceic_list'>
+      <div className='vpu_ocoplmimotceic_item'>
+        <div className="exampleCommon">
+          {/* <div className="exampleCommonPoints">
           <span>This an example by using a live <b>API</b> response</span>
         </div> */}
-        <div className="exampleCommonContent">
-          <HiAdjustmentsVertical />
+          <div className="exampleCommonContent">
+            <HiAdjustmentsVertical />
+          </div>
         </div>
       </div>
-      <div className="exampleCommon">
-        <div className="exampleCommonContent">
-          <HiAdjustments />
+      <div className='vpu_ocoplmimotceic_item'>
+        <div className="exampleCommon">
+          <div className="exampleCommonContent">
+            <HiAdjustments />
+          </div>
         </div>
       </div>
-      <div className="exampleCommon">
-        <div className="exampleCommonContent">
-          <GrAccessibility />
+      <div className='vpu_ocoplmimotceic_item'>
+        <div className="exampleCommon">
+          <div className="exampleCommonContent">
+            <GrAccessibility />
+          </div>
         </div>
       </div>
-      <div className="exampleCommon">
-        <div className="exampleCommonContent">
-          <GoBookmarkSlashFill />
+      <div className='vpu_ocoplmimotceic_item'>
+        <div className="exampleCommon">
+          <div className="exampleCommonContent">
+            <GoBookmarkSlashFill />
+          </div>
         </div>
       </div>
-      <div className="exampleCommon">
-        <div className="exampleCommonContent">
-          <Gi3dGlasses />
+      <div className='vpu_ocoplmimotceic_item'>
+        <div className="exampleCommon">
+          <div className="exampleCommonContent">
+            <Gi3dGlasses />
+          </div>
         </div>
       </div>
-      <div className="exampleCommon">
-        <div className="exampleCommonContent">
-          <FaAlipay />
+      <div className='vpu_ocoplmimotceic_item'>
+        <div className="exampleCommon">
+          <div className="exampleCommonContent">
+            <FaAlipay />
+          </div>
         </div>
       </div>
-      <div className="exampleCommon">
-        <div className="exampleCommonContent">
-          <Fa500Px />
+      <div className='vpu_ocoplmimotceic_item'>
+        <div className="exampleCommon">
+          <div className="exampleCommonContent">
+            <Fa500Px />
+          </div>
         </div>
       </div>
-      <div className="exampleCommon">
-        <div className="exampleCommonContent">
-          <AiFillAccountBook />
+      <div className='vpu_ocoplmimotceic_item'>
+        <div className="exampleCommon">
+          <div className="exampleCommonContent">
+            <AiFillAccountBook />
+          </div>
         </div>
       </div>
-      <div className="exampleCommon">
-        <div className="exampleCommonContent">
-          <Bs0Circle />
+      <div className='vpu_ocoplmimotceic_item'>
+        <div className="exampleCommon">
+          <div className="exampleCommonContent">
+            <Bs0Circle />
+          </div>
         </div>
       </div>
-      <div className="exampleCommon">
-        <div className="exampleCommonContent">
-          <BiAbacus />
+      <div className='vpu_ocoplmimotceic_item'>
+        <div className="exampleCommon">
+          <div className="exampleCommonContent">
+            <BiAbacus />
+          </div>
         </div>
       </div>
-      <div className="exampleCommon">
-        <div className="exampleCommonContent">
-          <CiAirportSign1 />
+      <div className='vpu_ocoplmimotceic_item'>
+        <div className="exampleCommon">
+          <div className="exampleCommonContent">
+            <CiAirportSign1 />
+          </div>
         </div>
       </div>
-      <div className="exampleCommon">
-        <div className="exampleCommonContent">
-          <CgAbstract />
+      <div className='vpu_ocoplmimotceic_item'>
+        <div className="exampleCommon">
+          <div className="exampleCommonContent">
+            <CgAbstract />
+          </div>
         </div>
       </div>
-      <div className="exampleCommon">
-        <div className="exampleCommonContent">
-          <DiAptana />
+      <div className='vpu_ocoplmimotceic_item'>
+        <div className="exampleCommon">
+          <div className="exampleCommonContent">
+            <DiAptana />
+          </div>
         </div>
       </div>
-      <div className="exampleCommon">
-        <div className="exampleCommonContent">
-          <FiActivity />
+      <div className='vpu_ocoplmimotceic_item'>
+        <div className="exampleCommon">
+          <div className="exampleCommonContent">
+            <FiActivity />
+          </div>
         </div>
       </div>
-      <div className="exampleCommon">
-        <div className="exampleCommonContent">
-          <FcAdvertising />
+      <div className='vpu_ocoplmimotceic_item'>
+        <div className="exampleCommon">
+          <div className="exampleCommonContent">
+            <FcAdvertising />
+          </div>
         </div>
       </div>
-    </>
+    </div>
   )
 }

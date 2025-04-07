@@ -9,14 +9,14 @@ import { getChartData } from '../../../../../../../../database/chart-database'
 
 export const ExampleOne = () => {
   return (
-    <>
+    <div className='vpu_ocoplmimotceic_list'>
       <PictorialChart />
       <BubblesChart />
       <AreaChart />
       <LineChart />
       <RadialBarChart />
       <PieChart />
-    </>
+    </div>
   )
 }
 
@@ -133,7 +133,7 @@ export const PictorialChart = () => {
   }
 
   return (
-    <>
+    <div className='vpu_ocoplmimotceic_item'>
       <div className="exampleCommon fullWidth">
         <div className="exampleCommonPoints">
           <span>Pictorial Chart</span>
@@ -141,8 +141,8 @@ export const PictorialChart = () => {
         <div className="exampleCommonContent">
           <HighchartsReact highcharts={Pictorial} options={options} />
         </div>
-      </div >
-    </>
+      </div>
+    </div>
   )
 }
 
@@ -212,7 +212,7 @@ export const BubblesChart = () => {
   }
 
   return (
-    <>
+    <div className='vpu_ocoplmimotceic_item'>
       <div className="exampleCommon fullWidth">
         <div className="exampleCommonPoints">
           <span>Bubbles Chart</span>
@@ -220,8 +220,8 @@ export const BubblesChart = () => {
         <div className="exampleCommonContent">
           <HighchartsReact highcharts={Highcharts} options={options} />
         </div>
-      </div >
-    </>
+      </div>
+    </div>
   )
 }
 
@@ -291,7 +291,7 @@ export const AreaChart = () => {
   }
 
   return (
-    <>
+    <div className='vpu_ocoplmimotceic_item'>
       <div className="exampleCommon fullWidth">
         <div className="exampleCommonPoints">
           <span>Area Chart</span>
@@ -299,8 +299,8 @@ export const AreaChart = () => {
         <div className="exampleCommonContent">
           <HighchartsReact highcharts={HighchartsMore} options={options} />
         </div>
-      </div >
-    </>
+      </div>
+    </div>
   )
 }
 
@@ -533,7 +533,7 @@ export const LineChart = () => {
   }
 
   return (
-    <>
+    <div className='vpu_ocoplmimotceic_item'>
       <div className="exampleCommon fullWidth">
         <div className="exampleCommonPoints">
           <span>Line Chart</span>
@@ -545,7 +545,7 @@ export const LineChart = () => {
           />
         </div>
       </div>
-    </>
+    </div>
   )
 }
 
@@ -630,7 +630,7 @@ export const RadialBarChart = () => {
   };
 
   return (
-    <>
+    <div className='vpu_ocoplmimotceic_item'>
       <div className="exampleCommon fullWidth">
         <div className="exampleCommonPoints">
           <span>Radial Bar Chart</span>
@@ -642,7 +642,7 @@ export const RadialBarChart = () => {
           />
         </div>
       </div>
-    </>
+    </div>
   )
 }
 
@@ -800,7 +800,7 @@ export const PieChart = () => {
     }
   }
   return (
-    <>
+    <div className='vpu_ocoplmimotceic_item'>
       <div className="exampleCommon fullWidth">
         <div className="exampleCommonPoints">
           <span>Pie Chart</span>
@@ -808,7 +808,7 @@ export const PieChart = () => {
         <div className="exampleCommonContent">
           <HighchartsReact highcharts={Drilldown} options={options} />
         </div>
-      </div >
-    </>
+      </div>
+    </div>
   )
 }

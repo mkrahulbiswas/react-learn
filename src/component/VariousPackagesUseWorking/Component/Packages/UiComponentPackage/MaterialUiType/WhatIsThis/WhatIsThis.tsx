@@ -14,7 +14,7 @@ export const WhatIsThis = ({ propsPass }: any) => {
                   <div className="vpu_npm_list">
                     <p>
                       <span>To use this package you need to <b>install</b> the library by using command:</span>
-                      <div>
+                      <div className="vpu_npm_package">
                         <a>npm install @mui/material @emotion/react @emotion/styled</a>
                       </div>
                     </p>
@@ -46,7 +46,7 @@ export const WhatIsThis = ({ propsPass }: any) => {
                   <div className="vpu_npm_list">
                     <p>
                       <span>To use the icon package you need to <b>install</b> the library by using command:</span>
-                      <div>
+                      <div className="vpu_npm_package">
                         <a>npm install @mui/icons-material</a>
                       </div>
                     </p>
@@ -63,7 +63,7 @@ export const WhatIsThis = ({ propsPass }: any) => {
                 <span>Some examples are given bellow:</span>
               </li>
             </ul>
-          </div > : null
+          </div> : null
       }
       {
         targetedTab === loaderData.packagesUsed.fonts.type ?
@@ -77,7 +77,7 @@ export const WhatIsThis = ({ propsPass }: any) => {
                   <div className="vpu_npm_list">
                     <p>
                       <span>To use the font package you need to <b>install</b> the library by using command:</span>
-                      <div>
+                      <div className="vpu_npm_package">
                         <a>npm install @fontsource/roboto</a>
                       </div>
                     </p>
@@ -94,8 +94,8 @@ export const WhatIsThis = ({ propsPass }: any) => {
                 <span>Some examples are given bellow:</span>
               </li>
             </ul>
-          </div > : null
+          </div> : null
       }
-    </div >
+    </div>
   )
 }

@@ -14,7 +14,7 @@ export const WhatIsThis = ({ propsPass }: any) => {
                   <div className="vpu_npm_list">
                     <p>
                       <span>To use this package you need to <b>install</b> the library by using command:</span>
-                      <div>
+                      <div className="vpu_npm_package">
                         <a>npm install --save chart.js react-chartjs-2</a>
                       </div>
                     </p>
@@ -35,6 +35,6 @@ export const WhatIsThis = ({ propsPass }: any) => {
             </ul>
           </div> : null
       }
-    </div >
+    </div>
   )
 }

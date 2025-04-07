@@ -10,7 +10,7 @@ export const HowToUse = ({ propsPass }: any) => {
         targetedTab === loaderData.packagesUsed.core.type ?
           <div className="vpu_ocoplmimotce_item">
             <div className="vpu_ocoplmimotcei_heading">
-              <h2>Component Based</h2>
+              <span>Component Based</span>
             </div>
             <div className="vpu_ocoplmimotcei_content">
               <ExampleOne />
@@ -21,7 +21,7 @@ export const HowToUse = ({ propsPass }: any) => {
         targetedTab === loaderData.packagesUsed.icons.type ?
           <div className="vpu_ocoplmimotce_item">
             <div className="vpu_ocoplmimotcei_heading">
-              <h2>Using Icons</h2>
+              <span>Using Icons</span>
             </div>
             <div className="vpu_ocoplmimotcei_content">
               <ExampleTwo />
@@ -32,7 +32,7 @@ export const HowToUse = ({ propsPass }: any) => {
         targetedTab === loaderData.packagesUsed.datetime2.type ?
           <div className="vpu_ocoplmimotce_item">
             <div className="vpu_ocoplmimotcei_heading">
-              <h2>Using Date Time</h2>
+              <span>Using Date Time</span>
             </div>
             <div className="vpu_ocoplmimotcei_content">
               <ExampleThree />

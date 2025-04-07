@@ -11,7 +11,7 @@ export const HowToUse = ({ propsPass }: any) => {
           <>
             <div className="vpu_ocoplmimotce_item">
               <div className="vpu_ocoplmimotcei_heading">
-                <h2>Example One</h2>
+                <span>Example One</span>
               </div>
               <div className="vpu_ocoplmimotcei_content">
                 <ExampleOne />
@@ -19,7 +19,7 @@ export const HowToUse = ({ propsPass }: any) => {
             </div>
             <div className="vpu_ocoplmimotce_item">
               <div className="vpu_ocoplmimotcei_heading">
-                <h2>Example Two</h2>
+                <span>Example Two</span>
               </div>
               <div className="vpu_ocoplmimotcei_content">
                 <ExampleTwo />
@@ -27,7 +27,7 @@ export const HowToUse = ({ propsPass }: any) => {
             </div>
             <div className="vpu_ocoplmimotce_item">
               <div className="vpu_ocoplmimotcei_heading">
-                <h2>Example Three</h2>
+                <span>Example Three</span>
               </div>
               <div className="vpu_ocoplmimotcei_content">
                 <ExampleThree />

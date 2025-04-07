@@ -10,7 +10,7 @@ export const HowToUse = ({ propsPass }: any) => {
           <>
             <div className="vpu_ocoplmimotce_item">
               <div className="vpu_ocoplmimotcei_heading">
-                <h2>How to styling</h2>
+                <span>How to styling</span>
               </div>
               <div className="vpu_ocoplmimotcei_content">
                 <ExampleOne />
@@ -18,7 +18,7 @@ export const HowToUse = ({ propsPass }: any) => {
             </div>
             <div className="vpu_ocoplmimotce_item">
               <div className="vpu_ocoplmimotcei_heading">
-                <h2>How to animate</h2>
+                <span>How to animate</span>
               </div>
               <div className="vpu_ocoplmimotcei_content">
                 <ExampleTwo />

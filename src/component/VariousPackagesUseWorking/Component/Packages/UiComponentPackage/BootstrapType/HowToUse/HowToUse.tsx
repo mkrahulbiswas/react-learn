@@ -8,9 +8,9 @@ export const HowToUse = ({ propsPass }: any) => {
         targetedTab === loaderData.packagesUsed.core.type ?
           <div className="vpu_ocoplmimotce_item">
             <div className="vpu_ocoplmimotcei_heading">
-              <h2>Example One</h2>
+              <span>Example One</span>
               <span>
-                <label style={{ color: 'red' }}>NOTE:&nbsp;&nbsp;</label>
+                <label>NOTE:&nbsp;&nbsp;</label>
                 for react it is recormended to use <b>react-bootstrap</b> instate of plane bootstrap
               </span>
             </div>

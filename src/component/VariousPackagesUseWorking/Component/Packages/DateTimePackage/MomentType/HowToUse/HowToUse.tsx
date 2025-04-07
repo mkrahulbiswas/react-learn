@@ -31,7 +31,7 @@ export const HowToUse = ({ propsPass }: any) => {
         targetedTab === loaderData.packagesUsed.timezone.type ?
           <div className="vpu_ocoplmimotce_item">
             <div className="vpu_ocoplmimotcei_heading">
-              <h2>Example Three</h2>
+              <span>Example Three</span>
             </div>
             <div className="vpu_ocoplmimotcei_content">
               <ExampleThree />

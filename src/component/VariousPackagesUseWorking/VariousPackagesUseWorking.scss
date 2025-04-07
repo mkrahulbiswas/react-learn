@@ -909,7 +909,26 @@ ul {
                                                                                     }
                                                                                 }
 
-                                                                                .vpu_ocoplmimotc_example {}
+                                                                                .vpu_ocoplmimotc_example {
+                                                                                    position: relative;
+                                                                                    z-index: 2;
+
+                                                                                    .vpu_ocoplmimotce_list {
+                                                                                        .vpu_ocoplmimotce_item {
+                                                                                            .vpu_ocoplmimotcei_heading {
+                                                                                                span {
+                                                                                                    &:first-child {}
+
+                                                                                                    &:last-child {
+                                                                                                        label {}
+                                                                                                    }
+                                                                                                }
+                                                                                            }
+
+                                                                                            .vpu_ocoplmimotcei_content {}
+                                                                                        }
+                                                                                    }
+                                                                                }
                                                                             }
                                                                         }
                                                                     }

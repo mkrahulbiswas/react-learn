@@ -3,6 +3,7 @@ import 'animate.css';
 
 export const HowToUse = ({ propsPass }: any) => {
   const { loaderData, targetedTab } = propsPass
+
   return (
     <div className="vpu_ocoplmimotce_list">
       {

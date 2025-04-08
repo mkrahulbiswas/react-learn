@@ -39,17 +39,17 @@ export const ButtonsFU = () => {
   const styles = useStyles();
   return (
     <div className='vpu_ocoplmimotceic_item'>
-      <div className="exampleCommonPoints">
+      <div className="vpu_ocoplmimotceici_top">
         <span>Buttons</span>
       </div>
-      <div className={styles.wrapper + ' exampleCommonContent'}>
+      <div className={styles.wrapper + ' vpu_ocoplmimotceici_middle'}>
         <Button icon={<CalendarMonthRegular />}>Default</Button>
         <Button appearance="primary" icon={<CalendarMonthRegular />}>Primary</Button>
         <Button appearance="outline" icon={<CalendarMonth />}>Outline</Button>
         <Button appearance="subtle" icon={<CalendarMonth />}>Subtle</Button>
         <Button appearance="transparent" icon={<CalendarMonth />}>Transparent</Button>
       </div>
-      <div className={styles.wrapper + ' exampleCommonContent'}>
+      <div className={styles.wrapper + ' vpu_ocoplmimotceici_middle'}>
         <Menu>
           <MenuTrigger disableButtonEnhancement>
             <MenuButton>Rounded</MenuButton>
@@ -89,7 +89,7 @@ export const ButtonsFU = () => {
           </MenuPopover>
         </Menu>
       </div>
-      <div className={styles.wrapper + ' exampleCommonContent'}>
+      <div className={styles.wrapper + ' vpu_ocoplmimotceici_middle'}>
         <Menu positioning="below-end">
           <MenuTrigger disableButtonEnhancement>
             {(triggerProps: MenuButtonProps) => (
@@ -147,10 +147,10 @@ export const DateTimePeckerFU = (props: Partial<DatePickerProps>) => {
   const styles = useStyles();
   return (
     <div className='vpu_ocoplmimotceic_item'>
-      <div className="exampleCommonPoints">
+      <div className="vpu_ocoplmimotceici_top">
         <span>Message Bar</span>
       </div>
-      <div className={styles.control + ' exampleCommonContent'}>
+      <div className={styles.control + ' vpu_ocoplmimotceici_middle'}>
         <Field label="Select a date">
           <DatePicker
             className={styles.control}
@@ -159,7 +159,7 @@ export const DateTimePeckerFU = (props: Partial<DatePickerProps>) => {
           />
         </Field>
       </div>
-      <div className={styles.container + ' exampleCommonContent'}>
+      <div className={styles.container + ' vpu_ocoplmimotceici_middle'}>
         <Field label="Coffee time" className={styles.root}>
           <TimePicker />
         </Field>
@@ -173,10 +173,10 @@ export const MessageBarFU = () => {
   const styles = useStyles();
   return (
     <div className='vpu_ocoplmimotceic_item'>
-      <div className="exampleCommonPoints">
+      <div className="vpu_ocoplmimotceici_top">
         <span>Message Bar</span>
       </div>
-      <div className={styles.container + ' exampleCommonContent'}>
+      <div className={styles.container + ' vpu_ocoplmimotceici_middle'}>
         <MessageBar>
           <MessageBarBody>
             <MessageBarTitle>Descriptive title</MessageBarTitle>
@@ -197,7 +197,7 @@ export const MessageBarFU = () => {
           </MessageBarActions>
         </MessageBar>
       </div>
-      <div className={styles.container + ' exampleCommonContent'}>
+      <div className={styles.container + ' vpu_ocoplmimotceici_middle'}>
         {intents.map((intent) => (
           <MessageBar key={intent} intent={intent}>
             <MessageBarBody>

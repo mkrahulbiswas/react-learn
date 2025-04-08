@@ -13,7 +13,7 @@ export const ExampleThree = () => {
   return (
     <div className='vpu_ocoplmimotceic_list'>
       <div className='vpu_ocoplmimotceic_item'>
-        <div className="exampleCommonContent">
+        <div className="vpu_ocoplmimotceici_middle">
           <DateInput3
             formatDate={formatDate}
             onChange={handleChange}

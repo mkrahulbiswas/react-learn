@@ -7,10 +7,10 @@ export const ExampleOne = () => {
   return (
     <div className='vpu_ocoplmimotceic_list'>
       <div className='vpu_ocoplmimotceic_item'>
-        <div className="exampleCommonPoints">
+        <div className="vpu_ocoplmimotceici_top">
           <span>Making <b>different position</b> of pagination</span>
         </div>
-        <div className="exampleCommonContent">
+        <div className="vpu_ocoplmimotceici_middle">
           <ReactPaginate
             previousLabel="previous"
             nextLabel="next"
@@ -40,7 +40,7 @@ export const ExampleOne = () => {
             renderOnZeroPageCount={null}
           />
         </div>
-        <div className="exampleCommonContent">
+        <div className="vpu_ocoplmimotceici_middle">
           <ReactPaginate
             previousLabel="previous"
             nextLabel="next"
@@ -70,7 +70,7 @@ export const ExampleOne = () => {
             renderOnZeroPageCount={null}
           />
         </div>
-        <div className="exampleCommonContent">
+        <div className="vpu_ocoplmimotceici_middle">
           <ReactPaginate
             previousLabel="previous"
             nextLabel="next"
@@ -102,10 +102,10 @@ export const ExampleOne = () => {
         </div>
       </div>
       <div className='vpu_ocoplmimotceic_item'>
-        <div className="exampleCommonPoints">
+        <div className="vpu_ocoplmimotceici_top">
           <span>This an example by using a live <b>API</b> response</span>
         </div>
-        <div className="exampleCommonContent">
+        <div className="vpu_ocoplmimotceici_middle">
           <ReactPaginate
             previousLabel="previous"
             nextLabel="next"

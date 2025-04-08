@@ -29,10 +29,10 @@ export const WrapperInsideTitle = () => {
 
   return (
     <div className='vpu_ocoplmimotceic_item'>
-      {/* <div className="exampleCommonPoints">
+      {/* <div className="vpu_ocoplmimotceici_top">
           <span>Making <b>different position</b> of pagination</span>
         </div> */}
-      <div className="exampleCommonContent">
+      <div className="vpu_ocoplmimotceici_middle">
         <Wrapper>
           <Title>
             Hello World!
@@ -61,10 +61,10 @@ export const ButtonAsStyledProps = () => {
 
   return (
     <div className='vpu_ocoplmimotceic_item'>
-      <div className="exampleCommonContent exampleCommonContentFloat">
+      <div className="vpu_ocoplmimotceici_middle vpu_ocoplmimotceici_middleFloat">
         <Button>Normal Button</Button>
       </div>
-      <div className="exampleCommonContent exampleCommonContentFloat">
+      <div className="vpu_ocoplmimotceici_middle vpu_ocoplmimotceici_middleFloat">
         <TomatoButton>Tomato Button</TomatoButton>
       </div>
     </div>
@@ -87,10 +87,10 @@ export const ReverseElement = () => {
 
   return (
     <div className='vpu_ocoplmimotceic_item'>
-      <div className="exampleCommonContent exampleCommonContentFloat">
+      <div className="vpu_ocoplmimotceici_middle vpu_ocoplmimotceici_middleFloat">
         <Button>Normal Button</Button>
       </div>
-      <div className="exampleCommonContent exampleCommonContentFloat">
+      <div className="vpu_ocoplmimotceici_middle vpu_ocoplmimotceici_middleFloat">
         <Button as={ReversedButton}>Custom Button with Normal Button styles</Button>
       </div>
     </div>
@@ -109,10 +109,10 @@ export const PassedProps = () => {
 
   return (
     <div className='vpu_ocoplmimotceic_item'>
-      <div className="exampleCommonContent exampleCommonContentFloat">
+      <div className="vpu_ocoplmimotceici_middle vpu_ocoplmimotceici_middleFloat">
         <Input defaultValue="@probablyup" type="text" />
       </div>
-      <div className="exampleCommonContent exampleCommonContentFloat">
+      <div className="vpu_ocoplmimotceici_middle vpu_ocoplmimotceici_middleFloat">
         <Input defaultValue="@geelen" type="text" $inputColor="rebeccapurple" />
       </div>
     </div>
@@ -146,7 +146,7 @@ export const PseudoelEment = () => {
 
   return (
     <div className='vpu_ocoplmimotceic_item'>
-      <div className="exampleCommonContent">
+      <div className="vpu_ocoplmimotceici_middle">
         <Thing>Hello world!</Thing>
         <Thing>How ya doing?</Thing>
         <Thing className="something">The sun is shining...</Thing>
@@ -180,10 +180,10 @@ export const AdditionalProps = () => {
 
   return (
     <div className='vpu_ocoplmimotceic_item'>
-      <div className="exampleCommonContent exampleCommonContentFloat">
+      <div className="vpu_ocoplmimotceici_middle vpu_ocoplmimotceici_middleFloat">
         <Input placeholder="A small text input" />
       </div>
-      <div className="exampleCommonContent exampleCommonContentFloat">
+      <div className="vpu_ocoplmimotceici_middle vpu_ocoplmimotceici_middleFloat">
         <Input placeholder="A bigger text input" $size="2em" />
       </div>
     </div>
@@ -210,10 +210,10 @@ export const OverridingAttrs = () => {
 
   return (
     <div className='vpu_ocoplmimotceic_item'>
-      <div className="exampleCommonContent exampleCommonContentFloat">
+      <div className="vpu_ocoplmimotceici_middle vpu_ocoplmimotceici_middleFloat">
         <Input placeholder="A bigger text input" $size="2em" />
       </div>
-      <div className="exampleCommonContent exampleCommonContentFloat">
+      <div className="vpu_ocoplmimotceici_middle vpu_ocoplmimotceici_middleFloat">
         {/* Notice we can still use the size attr from Input */}
         <PasswordInput placeholder="A bigger password input" $size="2em" />
       </div>
@@ -243,7 +243,7 @@ export const Animations = () => {
 
   return (
     <div className='vpu_ocoplmimotceic_item'>
-      <div className="exampleCommonContent exampleCommonContentFloat">
+      <div className="vpu_ocoplmimotceici_middle vpu_ocoplmimotceici_middleFloat">
         <Rotate>&lt; 💅🏾 &gt;</Rotate>
       </div>
     </div>

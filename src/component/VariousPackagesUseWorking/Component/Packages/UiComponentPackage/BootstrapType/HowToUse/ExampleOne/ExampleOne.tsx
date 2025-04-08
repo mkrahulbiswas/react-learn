@@ -12,34 +12,34 @@ export const ExampleOne = () => {
 export const ButtonsBS = () => {
   return (
     <div className='vpu_ocoplmimotceic_item'>
-      <div className="exampleCommonPoints">
+      <div className="vpu_ocoplmimotceici_top">
         <span>Various types of button</span>
       </div>
-      <div className="exampleCommonContent">
+      <div className="vpu_ocoplmimotceici_middle">
         <button type="button" className="btn btn-primary">Primary</button>
       </div>
-      <div className="exampleCommonContent">
+      <div className="vpu_ocoplmimotceici_middle">
         <button type="button" className="btn btn-secondary">Secondary</button>
       </div>
-      <div className="exampleCommonContent">
+      <div className="vpu_ocoplmimotceici_middle">
         <button type="button" className="btn btn-success">Success</button>
       </div>
-      <div className="exampleCommonContent">
+      <div className="vpu_ocoplmimotceici_middle">
         <button type="button" className="btn btn-danger">Danger</button>
       </div>
-      <div className="exampleCommonContent">
+      <div className="vpu_ocoplmimotceici_middle">
         <button type="button" className="btn btn-warning">Warning</button>
       </div>
-      <div className="exampleCommonContent">
+      <div className="vpu_ocoplmimotceici_middle">
         <button type="button" className="btn btn-info">Info</button>
       </div>
-      <div className="exampleCommonContent">
+      <div className="vpu_ocoplmimotceici_middle">
         <button type="button" className="btn btn-light">Light</button>
       </div>
-      <div className="exampleCommonContent">
+      <div className="vpu_ocoplmimotceici_middle">
         <button type="button" className="btn btn-dark">Dark</button>
       </div>
-      <div className="exampleCommonContent">
+      <div className="vpu_ocoplmimotceici_middle">
         <button type="button" className="btn btn-link">Link</button>
       </div>
     </div>
@@ -49,10 +49,10 @@ export const ButtonsBS = () => {
 export const AlertBS = () => {
   return (
     <div className='vpu_ocoplmimotceic_item'>
-      <div className="exampleCommonPoints">
+      <div className="vpu_ocoplmimotceici_top">
         <span>Various types of alert</span>
       </div>
-      <div className="exampleCommonContent">
+      <div className="vpu_ocoplmimotceici_middle">
         <div className="pt-2 pb-2 alert alert-primary" role="alert">A simple primary alert—check it out!</div>
         <div className="pt-2 pb-2 alert alert-secondary" role="alert">A simple secondary alert—check it out!</div>
         <div className="pt-2 pb-2 alert alert-success" role="alert">A simple success alert—check it out!</div>
@@ -69,10 +69,10 @@ export const AlertBS = () => {
 export const AccordianBS = () => {
   return (
     <div className='vpu_ocoplmimotceic_item'>
-      <div className="exampleCommonPoints">
+      <div className="vpu_ocoplmimotceici_top">
         <span>Various types of alert</span>
       </div>
-      <div className="exampleCommonContent">
+      <div className="vpu_ocoplmimotceici_middle">
         <div className="accordion" id="accordionExample">
           <div className="accordion-item">
             <h2 className="accordion-header">
@@ -113,10 +113,10 @@ export const AccordianBS = () => {
 export const FormElementBS = () => {
   return (
     <div className='vpu_ocoplmimotceic_item'>
-      <div className="exampleCommonPoints">
+      <div className="vpu_ocoplmimotceici_top">
         <span>Various types of alert</span>
       </div>
-      <div className="exampleCommonContent">
+      <div className="vpu_ocoplmimotceici_middle">
         <form className="row g-3">
           <div className="col-md-6">
             <label htmlFor="inputEmail4" className="form-label">Email</label>

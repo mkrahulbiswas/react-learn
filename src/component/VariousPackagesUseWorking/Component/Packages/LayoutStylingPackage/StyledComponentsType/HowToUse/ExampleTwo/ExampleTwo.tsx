@@ -39,13 +39,13 @@ export const NormalTheming = () => {
 
   return (
     <div className='vpu_ocoplmimotceic_item'>
-      {/* <div className="exampleCommonPoints">
+      {/* <div className="vpu_ocoplmimotceici_top">
           <span>Making <b>different position</b> of pagination</span>
         </div> */}
-      <div className="exampleCommonContent exampleCommonContentFloat">
+      <div className="vpu_ocoplmimotceici_middle vpu_ocoplmimotceici_middleFloat">
         <Button>Normal</Button>
       </div>
-      <div className="exampleCommonContent exampleCommonContentFloat">
+      <div className="vpu_ocoplmimotceici_middle vpu_ocoplmimotceici_middleFloat">
         <ThemeProvider theme={theme}>
           <Button>Themed</Button>
         </ThemeProvider>
@@ -81,14 +81,14 @@ export const FunctionThemes = () => {
 
   return (
     <div className='vpu_ocoplmimotceic_item'>
-      {/* <div className="exampleCommonPoints">
+      {/* <div className="vpu_ocoplmimotceici_top">
           <span>Making <b>different position</b> of pagination</span>
         </div> */}
       <ThemeProvider theme={theme}>
-        <div className="exampleCommonContent exampleCommonContentFloat">
+        <div className="vpu_ocoplmimotceici_middle vpu_ocoplmimotceici_middleFloat">
           <Button>Default Theme</Button>
         </div>
-        <div className="exampleCommonContent exampleCommonContentFloat">
+        <div className="vpu_ocoplmimotceici_middle vpu_ocoplmimotceici_middleFloat">
           <ThemeProvider theme={invertTheme}>
             <Button>Inverted Theme</Button>
           </ThemeProvider>

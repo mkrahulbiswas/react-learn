@@ -17,7 +17,7 @@ export const AnimateTypeOne = () => {
   })
   return (
     <div className='vpu_ocoplmimotceic_item'>
-      <div className="exampleCommonContent">
+      <div className="vpu_ocoplmimotceici_middle">
         <animated.div
           style={{
             width: 80,
@@ -47,7 +47,7 @@ export const AnimateTypeTwo = () => {
 
   return (
     <div className='vpu_ocoplmimotceic_item'>
-      <div className="exampleCommonContent">
+      <div className="vpu_ocoplmimotceici_middle">
         <animated.div style={style} />
       </div>
     </div>
@@ -74,7 +74,7 @@ export const AnimateTypeThree = () => {
 
   return (
     <div className='vpu_ocoplmimotceic_item'>
-      <div className="exampleCommonContent">
+      <div className="vpu_ocoplmimotceici_middle">
         <animated.div style={style}>Hello</animated.div>
       </div>
     </div>

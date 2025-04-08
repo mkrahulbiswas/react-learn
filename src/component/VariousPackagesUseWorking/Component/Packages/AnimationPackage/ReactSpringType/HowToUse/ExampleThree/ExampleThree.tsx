@@ -16,7 +16,7 @@ export const ExampleThree = () => {
 //   })
 //   return (
 //     <>
-//         <div className="exampleCommonContent">
+//         <div className="vpu_ocoplmimotceici_middle">
 //           {springs.map((props, index) => (
 //             <animated.div
 //               key={index}
@@ -54,7 +54,7 @@ export const AnimateTypeThree = () => {
 
   return (
     <div className='vpu_ocoplmimotceic_item'>
-      <div className="exampleCommonContent">
+      <div className="vpu_ocoplmimotceici_middle">
         {springs.map((props, index) => (
           <animated.div key={index} style={{ ...style, ...props }}>Hello</animated.div>
         ))}

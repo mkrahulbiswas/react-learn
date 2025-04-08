@@ -40,10 +40,10 @@ export const ExampleTwo = () => {
   return (
     <div className='vpu_ocoplmimotceic_list'>
       <div className='vpu_ocoplmimotceic_item'>
-        <div className="exampleCommonPoints">
+        <div className="vpu_ocoplmimotceici_top">
           <span>This an example by using a live <b>API</b> response</span>
         </div>
-        <div className="exampleCommonContent">
+        <div className="vpu_ocoplmimotceici_middle">
           <ReactPaginate
             previousLabel="previous"
             nextLabel="next"

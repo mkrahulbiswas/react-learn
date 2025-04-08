@@ -134,10 +134,10 @@ export const PictorialChart = () => {
 
   return (
     <div className='vpu_ocoplmimotceic_item'>
-      <div className="exampleCommonPoints">
+      <div className="vpu_ocoplmimotceici_top">
         <span>Pictorial Chart</span>
       </div>
-      <div className="exampleCommonContent">
+      <div className="vpu_ocoplmimotceici_middle">
         <HighchartsReact highcharts={Pictorial} options={options} />
       </div>
     </div>
@@ -211,10 +211,10 @@ export const BubblesChart = () => {
 
   return (
     <div className='vpu_ocoplmimotceic_item'>
-      <div className="exampleCommonPoints">
+      <div className="vpu_ocoplmimotceici_top">
         <span>Bubbles Chart</span>
       </div>
-      <div className="exampleCommonContent">
+      <div className="vpu_ocoplmimotceici_middle">
         <HighchartsReact highcharts={Highcharts} options={options} />
       </div>
     </div>
@@ -288,10 +288,10 @@ export const AreaChart = () => {
 
   return (
     <div className='vpu_ocoplmimotceic_item'>
-      <div className="exampleCommonPoints">
+      <div className="vpu_ocoplmimotceici_top">
         <span>Area Chart</span>
       </div>
-      <div className="exampleCommonContent">
+      <div className="vpu_ocoplmimotceici_middle">
         <HighchartsReact highcharts={HighchartsMore} options={options} />
       </div>
     </div>
@@ -528,10 +528,10 @@ export const LineChart = () => {
 
   return (
     <div className='vpu_ocoplmimotceic_item'>
-      <div className="exampleCommonPoints">
+      <div className="vpu_ocoplmimotceici_top">
         <span>Line Chart</span>
       </div>
-      <div className="exampleCommonContent">
+      <div className="vpu_ocoplmimotceici_middle">
         <HighchartsReact
           highcharts={Accessibility}
           options={options}
@@ -623,10 +623,10 @@ export const RadialBarChart = () => {
 
   return (
     <div className='vpu_ocoplmimotceic_item'>
-      <div className="exampleCommonPoints">
+      <div className="vpu_ocoplmimotceici_top">
         <span>Radial Bar Chart</span>
       </div>
-      <div className="exampleCommonContent">
+      <div className="vpu_ocoplmimotceici_middle">
         <HighchartsReact
           highcharts={Highcharts}
           options={options}
@@ -791,10 +791,10 @@ export const PieChart = () => {
   }
   return (
     <div className='vpu_ocoplmimotceic_item'>
-      <div className="exampleCommonPoints">
+      <div className="vpu_ocoplmimotceici_top">
         <span>Pie Chart</span>
       </div>
-      <div className="exampleCommonContent">
+      <div className="vpu_ocoplmimotceici_middle">
         <HighchartsReact highcharts={Drilldown} options={options} />
       </div>
     </div>

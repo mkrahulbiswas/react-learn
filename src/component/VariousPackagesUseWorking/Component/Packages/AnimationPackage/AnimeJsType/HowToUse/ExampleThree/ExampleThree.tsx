@@ -22,7 +22,7 @@ export const TypeOne = () => {
   });
   return (
     <div className='vpu_ocoplmimotceic_item'>
-      <div className="exampleCommonContent">
+      <div className="vpu_ocoplmimotceici_middle">
         <div className="demo-content typeOne">
           <div className="grid" style={{ display: 'flex', flexWrap: 'wrap' }}>
             {
@@ -60,7 +60,7 @@ export const TypeTwo = () => {
   });
   return (
     <div className='vpu_ocoplmimotceic_item'>
-      <div className="exampleCommonContent">
+      <div className="vpu_ocoplmimotceici_middle">
         <div className="demo-content typeTwo">
           <div className="grid" style={{ display: 'flex', flexWrap: 'wrap' }}>
             {

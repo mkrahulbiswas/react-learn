@@ -14,16 +14,16 @@ export const ExampleOne = () => {
 export const TestingOne = () => {
   return (
     <div className='vpu_ocoplmimotceic_item'>
-      {/* <div className="exampleCommonPoints">
+      {/* <div className="vpu_ocoplmimotceici_top">
           <span>BasicImplementations</span>
         </div> */}
-      <div className="exampleCommonContent exampleCommonContentFloat">
+      <div className="vpu_ocoplmimotceici_middle vpu_ocoplmimotceici_middleFloat">
         <CircularProgressbar value={25} text={`25%`} />;
       </div>
-      <div className="exampleCommonContent exampleCommonContentFloat">
+      <div className="vpu_ocoplmimotceici_middle vpu_ocoplmimotceici_middleFloat">
         <CircularProgressbar value={0.66} maxValue={1} text={`${0.66 * 100}%`} />;
       </div>
-      <div className="exampleCommonContent exampleCommonContentFloat">
+      <div className="vpu_ocoplmimotceici_middle vpu_ocoplmimotceici_middleFloat">
         <CircularProgressbar value={66} />
       </div>
     </div>
@@ -33,22 +33,22 @@ export const TestingOne = () => {
 export const TestingTwo = () => {
   return (
     <div className='vpu_ocoplmimotceic_item'>
-      <div className="exampleCommonContent exampleCommonContentFloat">
+      <div className="vpu_ocoplmimotceici_middle vpu_ocoplmimotceici_middleFloat">
         <CircularProgressbar value={16} strokeWidth={2} />
       </div>
-      <div className="exampleCommonContent exampleCommonContentFloat">
+      <div className="vpu_ocoplmimotceici_middle vpu_ocoplmimotceici_middleFloat">
         <CircularProgressbar value={26} text='RAHUL' />
       </div>
-      <div className="exampleCommonContent exampleCommonContentFloat">
+      <div className="vpu_ocoplmimotceici_middle vpu_ocoplmimotceici_middleFloat">
         <CircularProgressbar value={36} background={true} />
       </div>
-      <div className="exampleCommonContent exampleCommonContentFloat">
+      <div className="vpu_ocoplmimotceici_middle vpu_ocoplmimotceici_middleFloat">
         <CircularProgressbar value={46} background={true} backgroundPadding={5} />
       </div>
-      <div className="exampleCommonContent exampleCommonContentFloat">
+      <div className="vpu_ocoplmimotceici_middle vpu_ocoplmimotceici_middleFloat">
         <CircularProgressbar value={56} counterClockwise={true} />
       </div>
-      <div className="exampleCommonContent exampleCommonContentFloat">
+      <div className="vpu_ocoplmimotceici_middle vpu_ocoplmimotceici_middleFloat">
         <CircularProgressbar value={66} circleRatio={1} />
       </div>
     </div>
@@ -58,11 +58,11 @@ export const TestingTwo = () => {
 export const TestingThree = () => {
   return (
     <div className='vpu_ocoplmimotceic_item'>
-      <div className="exampleCommonPoints">
+      <div className="vpu_ocoplmimotceici_top">
         <span>This is example of Build styling</span>
-        <p>There styling is limited</p>
+        <span>There styling is limited</span>
       </div>
-      <div className="exampleCommonContent exampleCommonContentFloat">
+      <div className="vpu_ocoplmimotceici_middle vpu_ocoplmimotceici_middleFloat">
         <CircularProgressbar value={66} styles={buildStyles({
           // Rotation of path and trail, in number of turns (0-1)
           rotation: 0.25,
@@ -93,11 +93,11 @@ export const TestingThree = () => {
 export const TestingFour = () => {
   return (
     <div className='vpu_ocoplmimotceic_item'>
-      <div className="exampleCommonPoints">
+      <div className="vpu_ocoplmimotceici_top">
         <span>This is example of normal styling</span>
-        <p>There styling is not limited</p>
+        <span>There styling is not limited</span>
       </div>
-      <div className="exampleCommonContent exampleCommonContentFloat">
+      <div className="vpu_ocoplmimotceici_middle vpu_ocoplmimotceici_middleFloat">
         <CircularProgressbar value={66} styles={{
           // Customize the root svg element
           root: {},

@@ -45,10 +45,10 @@ export const SimpleAlert = () => {
   }
   return (
     <div className='vpu_ocoplmimotceic_item'>
-      <div className="exampleCommonPoints">
+      <div className="vpu_ocoplmimotceici_top">
         <span>Simple various type alert</span>
       </div>
-      <div className="exampleCommonContent">
+      <div className="vpu_ocoplmimotceici_middle">
         <button className="btn btn-success" onClick={() => showAlert('success')}>Success</button>
         <button className="btn btn-danger ms-3" onClick={() => showAlert('error')}>Error</button>
         <button className="btn btn-warning ms-3" onClick={() => showAlert('warning')}>Warning</button>
@@ -77,10 +77,10 @@ export const ConfirmationAlert = () => {
   }
   return (
     <div className='vpu_ocoplmimotceic_item'>
-      <div className="exampleCommonPoints">
+      <div className="vpu_ocoplmimotceici_top">
         <span>Confirmation various type alert</span>
       </div>
-      <div className="exampleCommonContent">
+      <div className="vpu_ocoplmimotceici_middle">
         <button className="btn btn-success" onClick={() => showAlert()}>Open</button>
       </div>
     </div>

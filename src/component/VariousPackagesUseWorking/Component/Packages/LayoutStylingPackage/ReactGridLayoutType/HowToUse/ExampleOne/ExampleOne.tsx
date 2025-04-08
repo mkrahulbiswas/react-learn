@@ -24,10 +24,10 @@ export const LayoutIsAnArray = () => {
   ];
   return (
     <div className='vpu_ocoplmimotceic_item'>
-      <div className="exampleCommonPoints">
+      <div className="vpu_ocoplmimotceici_top">
         <span>Mention layout as in a object and than pass it</span>
       </div>
-      <div className="exampleCommonContent">
+      <div className="vpu_ocoplmimotceici_middle">
         <GridLayout
           className="layout"
           layout={layout}
@@ -47,10 +47,10 @@ export const LayoutIsAnArray = () => {
 export const LayoutIsAnInDiv = () => {
   return (
     <div className='vpu_ocoplmimotceic_item'>
-      <div className="exampleCommonPoints">
+      <div className="vpu_ocoplmimotceici_top">
         <span>Mention layout inside the each div individually</span>
       </div>
-      <div className="exampleCommonContent">
+      <div className="vpu_ocoplmimotceici_middle">
         <GridLayout
           className="layout"
           cols={12}
@@ -98,10 +98,10 @@ export const ResponsiveUsage = () => {
   }
   return (
     <div className='vpu_ocoplmimotceic_item'>
-      <div className="exampleCommonPoints">
+      <div className="vpu_ocoplmimotceici_top">
         <span>Responsive Usage</span>
       </div>
-      <div className="exampleCommonContent">
+      <div className="vpu_ocoplmimotceici_middle">
         <ResponsiveGridLayout
           className="layout"
           layouts={layout}
@@ -128,10 +128,10 @@ export const GridProps = () => {
   // ];
   return (
     <div className='vpu_ocoplmimotceic_item'>
-      <div className="exampleCommonPoints">
+      <div className="vpu_ocoplmimotceici_top">
         <span>Mention layout as in a object and than pass it</span>
       </div>
-      <div className="exampleCommonContent">
+      <div className="vpu_ocoplmimotceici_middle">
         {/* <GridLayout
 
             className="layout"
@@ -297,10 +297,10 @@ export const GridCallbackProps = () => {
   ];
   return (
     <div className='vpu_ocoplmimotceic_item'>
-      <div className="exampleCommonPoints">
+      <div className="vpu_ocoplmimotceici_top">
         <span>Grid Callback Props</span>
       </div>
-      <div className="exampleCommonContent">
+      <div className="vpu_ocoplmimotceici_middle">
         <GridLayout
           className="layout"
           width={1200}
@@ -404,10 +404,10 @@ export const GridTransformProps = () => {
   ]
   return (
     <div className='vpu_ocoplmimotceic_item'>
-      <div className="exampleCommonPoints">
+      <div className="vpu_ocoplmimotceici_top">
         <span>Grid Transform Props</span>
       </div>
-      <div className="exampleCommonContent">
+      <div className="vpu_ocoplmimotceici_middle">
         <GridLayout
           className="layout"
           width={1200}
@@ -434,10 +434,10 @@ export const GridDragResizeProps = () => {
   ]
   return (
     <div className='vpu_ocoplmimotceic_item'>
-      <div className="exampleCommonPoints">
+      <div className="vpu_ocoplmimotceici_top">
         <span>Grid Drag Resize Props</span>
       </div>
-      <div className="exampleCommonContent">
+      <div className="vpu_ocoplmimotceici_middle">
         <GridLayout
           className="layout"
           width={1200}
@@ -467,10 +467,10 @@ export const OtherProps = () => {
   ];
   return (
     <div className='vpu_ocoplmimotceic_item'>
-      <div className="exampleCommonPoints">
+      <div className="vpu_ocoplmimotceici_top">
         <span>Other Props</span>
       </div>
-      <div className="exampleCommonContent">
+      <div className="vpu_ocoplmimotceici_middle">
         <GridLayout
           className="layout"
           width={1200}

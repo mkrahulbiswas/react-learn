@@ -72,10 +72,10 @@ export const LineChartExample = () => {
   ]
   return (
     <div className='vpu_ocoplmimotceic_item'>
-      <div className="exampleCommonPoints">
+      <div className="vpu_ocoplmimotceici_top">
         <span>Line Chart</span>
       </div>
-      <div className="exampleCommonContent">
+      <div className="vpu_ocoplmimotceici_middle">
         {/* <ResponsiveContainer width="100%" height="100%"> */}
         <LineChart
           width={390}
@@ -149,10 +149,10 @@ export const AreaChartExample = () => {
   ]
   return (
     <div className='vpu_ocoplmimotceic_item'>
-      <div className="exampleCommonPoints">
+      <div className="vpu_ocoplmimotceici_top">
         <span>Area Chart</span>
       </div>
-      <div className="exampleCommonContent">
+      <div className="vpu_ocoplmimotceici_middle">
         <AreaChart
           width={390}
           height={200}
@@ -233,10 +233,10 @@ export const BarChartExample = () => {
   ]
   return (
     <div className='vpu_ocoplmimotceic_item'>
-      <div className="exampleCommonPoints">
+      <div className="vpu_ocoplmimotceici_top">
         <span>Bar Chart</span>
       </div>
-      <div className="exampleCommonContent">
+      <div className="vpu_ocoplmimotceici_middle">
         <BarChart
           width={390}
           height={200}
@@ -272,10 +272,10 @@ export const PieChartExample = () => {
   ]
   return (
     <div className='vpu_ocoplmimotceic_item'>
-      <div className="exampleCommonPoints">
+      <div className="vpu_ocoplmimotceici_top">
         <span>Pie Chart</span>
       </div>
-      <div className="exampleCommonContent">
+      <div className="vpu_ocoplmimotceici_middle">
         <PieChart width={390} height={200}>
           <Pie
             dataKey="value"

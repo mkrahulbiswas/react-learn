@@ -13,10 +13,10 @@ export const RadialChartExample = () => {
   // const myData = [{ angle: 1 }, { angle: 5 }, { angle: 2 }]
   return (
     <div className='vpu_ocoplmimotceic_item'>
-      <div className="exampleCommonPoints">
+      <div className="vpu_ocoplmimotceici_top">
         <span>Radial Chart</span>
       </div>
-      <div className="exampleCommonContent">
+      <div className="vpu_ocoplmimotceici_middle">
         {/* <RadialChart
             data={myData}
             width={390}
@@ -60,10 +60,10 @@ export const SunburstChartExample = () => {
   // }
   return (
     <div className='vpu_ocoplmimotceic_item'>
-      <div className="exampleCommonPoints">
+      <div className="vpu_ocoplmimotceici_top">
         <span>Sunburst Chart</span>
       </div>
-      <div className="exampleCommonContent">
+      <div className="vpu_ocoplmimotceici_middle">
         {/* <Sunburst
             hideRootNode
             colorType="literal"

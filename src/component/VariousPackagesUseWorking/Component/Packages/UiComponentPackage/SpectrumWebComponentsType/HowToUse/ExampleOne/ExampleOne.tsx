@@ -13,10 +13,10 @@ export const ExampleOne = () => {
 export const ButtonsAS = () => {
   return (
     <div className='vpu_ocoplmimotceic_item'>
-      <div className="exampleCommonPoints">
+      <div className="vpu_ocoplmimotceici_top">
         <span>Buttons</span>
       </div>
-      <div className="exampleCommonContent">
+      <div className="vpu_ocoplmimotceici_middle">
         <Flex direction="row" gap={8}>
           <Button variant="accent" style="fill">Save</Button>
           <Button variant="accent">
@@ -28,7 +28,7 @@ export const ButtonsAS = () => {
           </Button>
         </Flex>
       </div>
-      <div className="exampleCommonContent">
+      <div className="vpu_ocoplmimotceici_middle">
         <Flex direction="row" gap={8}>
           <Button variant="primary">Save</Button>
           <Button variant="primary">
@@ -40,7 +40,7 @@ export const ButtonsAS = () => {
           </Button>
         </Flex>
       </div>
-      <div className="exampleCommonContent">
+      <div className="vpu_ocoplmimotceici_middle">
         <Flex direction="row" gap={8}>
           <Button variant="secondary">Save</Button>
           <Button variant="secondary">
@@ -52,7 +52,7 @@ export const ButtonsAS = () => {
           </Button>
         </Flex>
       </div>
-      <div className="exampleCommonContent">
+      <div className="vpu_ocoplmimotceici_middle">
         <Flex direction="row" gap={8}>
           <Button variant="negative">Save</Button>
           <Button variant="negative">
@@ -71,10 +71,10 @@ export const ButtonsAS = () => {
 export const ProgressBarAS = () => {
   return (
     <div className='vpu_ocoplmimotceic_item'>
-      <div className="exampleCommonPoints">
+      <div className="vpu_ocoplmimotceici_top">
         <span>ProgressBar</span>
       </div>
-      <div className="exampleCommonContent">
+      <div className="vpu_ocoplmimotceici_middle">
         <Flex
           direction="column"
           maxWidth="size-3000"

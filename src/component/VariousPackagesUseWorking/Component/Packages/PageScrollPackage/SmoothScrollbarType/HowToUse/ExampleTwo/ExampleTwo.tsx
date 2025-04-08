@@ -37,10 +37,10 @@ export const OverScroll = ({ content }: any) => {
   }, []);
   return (
     <div className='vpu_ocoplmimotceic_item'>
-      <div className="exampleCommonPoints">
+      <div className="vpu_ocoplmimotceici_top">
         <span>Over Scroll</span>
       </div>
-      <div className="exampleCommonContent">
+      <div className="vpu_ocoplmimotceici_middle">
         <div id="my-scrollbar-10" style={{ height: "200px" }}>
           <p>{content}</p>
         </div>
@@ -74,14 +74,14 @@ export const DestroyScroll = ({ content }: any) => {
   }, []);
   return (
     <div className='vpu_ocoplmimotceic_item'>
-      <div className="exampleCommonPoints">
+      <div className="vpu_ocoplmimotceici_top">
         <span>Destroy Scrolll</span>
-        <p>
+        <span>
           <label>note:</label> After exit from component you must destroy so
           that no conflict happen.
-        </p>
+        </span>
       </div>
-      <div className="exampleCommonContent">
+      <div className="vpu_ocoplmimotceici_middle">
         <div id="my-scrollbar-11" style={{ height: "200px" }}>
           <p>{content}</p>
         </div>
@@ -133,10 +133,10 @@ export const BasicImplement = ({ content }: any) => {
   }, []);
   return (
     <div className='vpu_ocoplmimotceic_item'>
-      <div className="exampleCommonPoints">
+      <div className="vpu_ocoplmimotceici_top">
         <span>Basic implementation</span>
       </div>
-      <div className="exampleCommonContent">
+      <div className="vpu_ocoplmimotceici_middle">
         <div id="my-scrollbar-11" style={{ height: "200px" }}>
           <p>{content}</p>
         </div>

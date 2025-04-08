@@ -16,10 +16,10 @@ export const ExampleOne = () => {
 export const WithSimpleImplement = () => {
   return (
     <div className='vpu_ocoplmimotceic_item'>
-      <div className="exampleCommonPoints">
+      <div className="vpu_ocoplmimotceici_top">
         <span>With Simple Implement</span>
       </div>
-      <div className="exampleCommonContent">
+      <div className="vpu_ocoplmimotceici_middle">
         <div style={{ overflowY: 'scroll', height: '200px' }}>
           <Link to="section1" smooth={true} duration={500}>Section 1</Link>
           <Link to="section2" smooth={true} duration={500}>Section 2</Link>
@@ -44,10 +44,10 @@ export const WithSimpleImplement = () => {
 export const WithInsideElement = () => {
   return (
     <div className='vpu_ocoplmimotceic_item'>
-      <div className="exampleCommonPoints">
+      <div className="vpu_ocoplmimotceici_top">
         <span>With Inside Element</span>
       </div>
-      <div className="exampleCommonContent">
+      <div className="vpu_ocoplmimotceici_middle">
         <Link to="section1" smooth={true} duration={500} containerId="containerElement">Section 1</Link>
         <Link to="section2" smooth={true} duration={500} containerId="containerElement">Section 2</Link>
         <Element name="test7" className="element" id="containerElement" style={{
@@ -83,10 +83,10 @@ export const PropsInLink = () => {
   return (
     <>
       <div className='vpu_ocoplmimotceic_item'>
-        <div className="exampleCommonPoints">
+        <div className="vpu_ocoplmimotceici_top">
           <span>Props In Link delay</span>
         </div>
-        <div className="exampleCommonContent">
+        <div className="vpu_ocoplmimotceici_middle">
           <Link
             to="section1"
             smooth={true}
@@ -116,10 +116,10 @@ export const PropsInLink = () => {
         </div>
       </div>
       <div className='vpu_ocoplmimotceic_item'>
-        <div className="exampleCommonPoints">
+        <div className="vpu_ocoplmimotceici_top">
           <span>Props In Link</span>
         </div>
-        <div className="exampleCommonContent">
+        <div className="vpu_ocoplmimotceici_middle">
           <Link
             to="section1"
             smooth={true}
@@ -184,10 +184,10 @@ export const ScrollToTopBottom = () => {
   }, []);
   return (
     <div className='vpu_ocoplmimotceic_item'>
-      <div className="exampleCommonPoints">
+      <div className="vpu_ocoplmimotceici_top">
         <span>Scroll To Top & Bottom</span>
       </div>
-      <div className="exampleCommonContent">
+      <div className="vpu_ocoplmimotceici_middle">
         <Element
           name="test7"
           className="element"
@@ -253,10 +253,10 @@ export const WithOtherOptions = () => {
   };
   return (
     <div className='vpu_ocoplmimotceic_item'>
-      <div className="exampleCommonPoints">
+      <div className="vpu_ocoplmimotceici_top">
         <span>With Inside Element</span>
       </div>
-      <div className="exampleCommonContent">
+      <div className="vpu_ocoplmimotceici_middle">
         {/* Link component to scroll to "test1" element with specified properties */}
         <Link
           activeClass="active"

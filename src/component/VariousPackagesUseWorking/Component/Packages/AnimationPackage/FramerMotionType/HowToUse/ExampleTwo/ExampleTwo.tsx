@@ -14,7 +14,7 @@ export const TypeOne = () => {
   return (
     <>
       <div className='vpu_ocoplmimotceic_item'>
-        <div className="exampleCommonContent">
+        <div className="vpu_ocoplmimotceici_middle">
           <motion.div initial={{
             width: '40px',
             height: '60px',
@@ -25,7 +25,7 @@ export const TypeOne = () => {
         </div>
       </div>
       <div className='vpu_ocoplmimotceic_item'>
-        <div className="exampleCommonContent">
+        <div className="vpu_ocoplmimotceici_middle">
           <motion.div initial={{ x: "0px" }} animate={{ x: "50px" }}>
             <span>HI</span>
           </motion.div>
@@ -46,7 +46,7 @@ export const TypeTwo = () => {
   }
   return (
     <div className='vpu_ocoplmimotceic_item'>
-      <div className="exampleCommonContent">
+      <div className="vpu_ocoplmimotceici_middle">
         <motion.div initial={initial} animate={animate} />
       </div>
     </div>
@@ -68,7 +68,7 @@ export const TypeThree = () => {
   }
   return (
     <div className='vpu_ocoplmimotceic_item'>
-      <div className="exampleCommonContent">
+      <div className="vpu_ocoplmimotceici_middle">
         <motion.div {...dataPass} style={{ backgroundColor: 'lightgray' }} />
       </div>
     </div>

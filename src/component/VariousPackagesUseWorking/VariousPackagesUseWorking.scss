@@ -940,7 +940,19 @@ ul {
                                                                                                     justify-content: space-around;
                                                                                                     gap: 20px;
 
-                                                                                                    .vpu_ocoplmimotceic_item {}
+                                                                                                    .vpu_ocoplmimotceic_item {
+                                                                                                        .vpu_ocoplmimotceici_top {
+                                                                                                            span {
+                                                                                                                &:first-child {}
+
+                                                                                                                &:last-child {
+                                                                                                                    label {}
+                                                                                                                }
+                                                                                                            }
+                                                                                                        }
+
+                                                                                                        .vpu_ocoplmimotceici_moddle {}
+                                                                                                    }
                                                                                                 }
                                                                                             }
                                                                                         }

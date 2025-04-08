@@ -18,10 +18,10 @@ export const ButtonsCU = () => {
   const colorPalettes: any = ['red', 'green', 'blue', 'yellow']
   return (
     <div className='vpu_ocoplmimotceic_item'>
-      <div className="exampleCommonPoints">
+      <div className="vpu_ocoplmimotceici_top">
         <span>Buttons</span>
       </div>
-      <div className="exampleCommonContent">
+      <div className="vpu_ocoplmimotceici_middle">
         <Stack gap="2" align="flex-start">
           {colorPalettes.map((colorPalette: any) => (
             <Stack align="center" key={colorPalette} direction="row" gap="10">
@@ -41,10 +41,10 @@ export const ButtonsCU = () => {
 export const BadgeCU = () => {
   return (
     <div className='vpu_ocoplmimotceic_item'>
-      <div className="exampleCommonPoints">
+      <div className="vpu_ocoplmimotceici_top">
         <span>Badge</span>
       </div>
-      <div className="exampleCommonContent">
+      <div className="vpu_ocoplmimotceici_middle">
         <Stack align="flex-start">
           <Badge variant="solid" colorPalette="blue">
             <HiStar />
@@ -61,10 +61,10 @@ export const BadgeCU = () => {
 export const DialogueCU = () => {
   return (
     <div className='vpu_ocoplmimotceic_item'>
-      <div className="exampleCommonPoints">
+      <div className="vpu_ocoplmimotceici_top">
         <span>Dialogue</span>
       </div>
-      <div className="exampleCommonContent">
+      <div className="vpu_ocoplmimotceici_middle">
         <Dialog.Root>
           <Dialog.Trigger asChild>
             <Button variant="outline" size="sm">
@@ -105,10 +105,10 @@ export const DialogueCU = () => {
 export const QrCodeCU = () => {
   return (
     <div className='vpu_ocoplmimotceic_item'>
-      <div className="exampleCommonPoints">
+      <div className="vpu_ocoplmimotceici_top">
         <span>Dialogue</span>
       </div>
-      <div className="exampleCommonContent">
+      <div className="vpu_ocoplmimotceici_middle">
         <QrCode.Root value="https://www.google.com">
           <QrCode.Frame>
             <QrCode.Pattern />
@@ -122,10 +122,10 @@ export const QrCodeCU = () => {
 export const SegmentCU = () => {
   return (
     <div className='vpu_ocoplmimotceic_item'>
-      <div className="exampleCommonPoints">
+      <div className="vpu_ocoplmimotceici_top">
         <span>Dialogue</span>
       </div>
-      <div className="exampleCommonContent">
+      <div className="vpu_ocoplmimotceici_middle">
         <SegmentGroup.Root defaultValue="React">
           <SegmentGroup.Indicator />
           <SegmentGroup.Items items={["React", "Vue", "Solid"]} />
@@ -138,10 +138,10 @@ export const SegmentCU = () => {
 export const SkeletonCU = () => {
   return (
     <div className='vpu_ocoplmimotceic_item'>
-      <div className="exampleCommonPoints">
+      <div className="vpu_ocoplmimotceici_top">
         <span>Dialogue</span>
       </div>
-      <div className="exampleCommonContent">
+      <div className="vpu_ocoplmimotceici_middle">
         <HStack gap="5">
           <SkeletonCircle size="12" />
           <Stack flex="1">

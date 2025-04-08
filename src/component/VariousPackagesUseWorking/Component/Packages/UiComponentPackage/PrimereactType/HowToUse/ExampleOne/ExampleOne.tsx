@@ -30,10 +30,10 @@ export const BreadCrumbPR = () => {
   const home = { icon: 'pi pi-home', url: 'https://primereact.org' }
   return (
     <div className='vpu_ocoplmimotceic_item'>
-      <div className="exampleCommonPoints">
+      <div className="vpu_ocoplmimotceici_top">
         <span>Bread Crumb</span>
       </div>
-      <div className="exampleCommonContent">
+      <div className="vpu_ocoplmimotceici_middle">
         <BreadCrumb model={items} home={home} />
       </div>
     </div>
@@ -44,10 +44,10 @@ export const RatingPR = () => {
   const [value, setValue] = useState<number | undefined>(undefined);
   return (
     <div className='vpu_ocoplmimotceic_item'>
-      <div className="exampleCommonPoints">
+      <div className="vpu_ocoplmimotceici_top">
         <span>Multiselect</span>
       </div>
-      <div className="exampleCommonContent">
+      <div className="vpu_ocoplmimotceici_middle">
         <Rating value={value} onChange={(e: any) => setValue(e.value)} stars={10} />
       </div>
     </div>
@@ -65,10 +65,10 @@ export const MultiSelectPR = () => {
   ]
   return (
     <div className='vpu_ocoplmimotceic_item'>
-      <div className="exampleCommonPoints">
+      <div className="vpu_ocoplmimotceici_top">
         <span>Multiselect</span>
       </div>
-      <div className="exampleCommonContent">
+      <div className="vpu_ocoplmimotceici_middle">
         <MultiSelect value={selectedCities} onChange={(e) => setSelectedCities(e.value)} options={cities} optionLabel="name"
           filter placeholder="Select Cities" maxSelectedLabels={3} className="w-full md:w-20rem" />
       </div>
@@ -79,10 +79,10 @@ export const MultiSelectPR = () => {
 export const AccordionPR = () => {
   return (
     <div className='vpu_ocoplmimotceic_item'>
-      <div className="exampleCommonPoints">
+      <div className="vpu_ocoplmimotceici_top">
         <span>Accordion</span>
       </div>
-      <div className="exampleCommonContent">
+      <div className="vpu_ocoplmimotceici_middle">
         <Accordion activeIndex={0}>
           <AccordionTab header="Header I">
             <p className="m-0">
@@ -119,10 +119,10 @@ export const DateTimePeckerPR = () => {
   const [time, setTime] = useState()
   return (
     <div className='vpu_ocoplmimotceic_item'>
-      <div className="exampleCommonPoints">
+      <div className="vpu_ocoplmimotceici_top">
         <span>DateTime pecker</span>
       </div>
-      <div className="exampleCommonContent">
+      <div className="vpu_ocoplmimotceici_middle">
         <Calendar value={date} onChange={(e: any) => setDate(e.value)} placeholder='Select date' />
         <Calendar value={time} onChange={(e: any) => setTime(e.value)} placeholder='Select time' timeOnly />
       </div>
@@ -133,10 +133,10 @@ export const DateTimePeckerPR = () => {
 export const ButtonsPR = () => {
   return (
     <div className='vpu_ocoplmimotceic_item'>
-      <div className="exampleCommonPoints">
+      <div className="vpu_ocoplmimotceici_top">
         <span>Various types button</span>
       </div>
-      <div className="exampleCommonContent">
+      <div className="vpu_ocoplmimotceici_middle">
         <Button label="Primary" />
         <Button label="Secondary" severity="secondary" />
         <Button label="Success" severity="success" />

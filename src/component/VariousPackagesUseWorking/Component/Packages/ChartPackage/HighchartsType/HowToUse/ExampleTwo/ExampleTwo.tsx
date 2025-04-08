@@ -1184,10 +1184,10 @@ export const DependencyWheelChartaa = () => {
   return (
     <div className='vpu_ocoplmimotceic_item'>
       <div className="vpu_ocoplmimotceici_example">
-        <div className="exampleCommonPoints">
+        <div className="vpu_ocoplmimotceici_top">
           <span>Pictoriala Chart</span>
         </div>
-        <div className="exampleCommonContent">
+        <div className="vpu_ocoplmimotceici_middle">
           <HighchartsReact
             highcharts={Highmaps}
             options={options}
@@ -1392,10 +1392,10 @@ export const DependencyWheelCharta = () => {
   return (
     <div className='vpu_ocoplmimotceic_item'>
       <div className='vpu_ocoplmimotceici_example'>
-        <div className="exampleCommonPoints">
+        <div className="vpu_ocoplmimotceici_top">
           <span>Pictoriala Chart</span>
         </div>
-        <div className="exampleCommonContent">
+        <div className="vpu_ocoplmimotceici_middle">
           <HighchartsReact
             highcharts={Highmaps}
             options={options}
@@ -1443,10 +1443,10 @@ export const DependencyWheelChart = (_props: HighchartsReact.Props) => {
   return (
     <div className='vpu_ocoplmimotceic_item'>
       <div className="vpu_ocoplmimotceici_example">
-        <div className="exampleCommonPoints">
+        <div className="vpu_ocoplmimotceici_top">
           <span>Dependency Wheel Chart</span>
         </div>
-        <div className="exampleCommonContent">
+        <div className="vpu_ocoplmimotceici_middle">
           {/* <HighchartsReact highcharts={HighchartsMore} options={options} /> */}
           {/* <HighchartsReact highcharts={Sankey, DependencyWheel, Exporting, ExportData, Accessibility} options={options} /> */}
           {/* <HighchartsReact highcharts={Sankey} options={options} />

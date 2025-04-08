@@ -16,7 +16,7 @@ export const TypeOne = () => {
   });
   return (
     <div className='vpu_ocoplmimotceic_item'>
-      <div className="exampleCommonContent">
+      <div className="vpu_ocoplmimotceici_middle">
         <div className="typeOne">Anime Js</div>
       </div>
     </div>
@@ -32,7 +32,7 @@ export const TypeTwo = () => {
   });
   return (
     <div className='vpu_ocoplmimotceic_item'>
-      <div className="exampleCommonContent">
+      <div className="vpu_ocoplmimotceici_middle">
         <div className="TypeThree">Anime Js</div>
       </div>
     </div>

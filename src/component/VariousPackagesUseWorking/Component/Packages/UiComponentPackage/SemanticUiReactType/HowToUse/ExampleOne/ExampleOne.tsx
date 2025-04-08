@@ -14,14 +14,14 @@ export const ExampleOne = () => {
 export const ButtonsSR = () => {
   return (
     <div className='vpu_ocoplmimotceic_list'>
-      <div className="exampleCommonPoints">
+      <div className="vpu_ocoplmimotceici_top">
         <span>Various Types Of Buttons</span>
       </div>
-      <div className="exampleCommonContent">
+      <div className="vpu_ocoplmimotceici_middle">
         <Button content='Primary' primary />
         <Button content='Secondary' secondary />
       </div>
-      <div className="exampleCommonContent">
+      <div className="vpu_ocoplmimotceici_middle">
         <Button animated>
           <ButtonContent visible>Next</ButtonContent>
           <ButtonContent hidden>
@@ -39,7 +39,7 @@ export const ButtonsSR = () => {
           <ButtonContent hidden>$12.99 a month</ButtonContent>
         </Button>
       </div>
-      <div className="exampleCommonContent">
+      <div className="vpu_ocoplmimotceici_middle">
         <Button
           content='Like'
           icon='heart'
@@ -65,10 +65,10 @@ export const ButtonsSR = () => {
 export const BreadcrumbSR = () => {
   return (
     <div className='vpu_ocoplmimotceic_item'>
-      <div className="exampleCommonPoints">
+      <div className="vpu_ocoplmimotceici_top">
         <span>Breadcrumb</span>
       </div>
-      <div className="exampleCommonContent">
+      <div className="vpu_ocoplmimotceici_middle">
         <Breadcrumb>
           <BreadcrumbSection link>Home</BreadcrumbSection>
           <BreadcrumbDivider icon='right chevron' />
@@ -84,10 +84,10 @@ export const BreadcrumbSR = () => {
 export const DividerSR = () => {
   return (
     <div className='vpu_ocoplmimotceic_item'>
-      <div className="exampleCommonPoints">
+      <div className="vpu_ocoplmimotceici_top">
         <span>Divider</span>
       </div>
-      <div className="exampleCommonContent">
+      <div className="vpu_ocoplmimotceici_middle">
         <Segment>
           <Grid columns={2} relaxed='very'>
             <GridColumn>
@@ -130,10 +130,10 @@ export const DividerSR = () => {
 export const ProgressSR = () => {
   return (
     <div className='vpu_ocoplmimotceic_item'>
-      <div className="exampleCommonPoints">
+      <div className="vpu_ocoplmimotceici_top">
         <span>Pagination</span>
       </div>
-      <div className="exampleCommonContent">
+      <div className="vpu_ocoplmimotceici_middle">
         <Segment inverted>
           <Progress percent={32} inverted color='red' progress />
           <Progress percent={59} inverted color='orange' progress />

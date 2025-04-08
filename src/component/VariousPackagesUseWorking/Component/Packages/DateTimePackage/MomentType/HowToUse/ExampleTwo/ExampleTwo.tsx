@@ -13,10 +13,10 @@ export const DateFormatType = () => {
   // const dec = moment("2024-12-01T12:00:00Z");
   return (
     <div className='vpu_ocoplmimotceic_item'>
-      <div className="exampleCommonPoints">
+      <div className="vpu_ocoplmimotceici_top">
         <span>Moment timezone use</span>
       </div>
-      <div className="exampleCommonContent">
+      <div className="vpu_ocoplmimotceici_middle">
         In complete
       </div>
     </div>

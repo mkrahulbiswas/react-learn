@@ -19,10 +19,10 @@ export const UsingHooks = () => {
   });
   return (
     <div className='vpu_ocoplmimotceic_item'>
-      <div className="exampleCommonPoints">
+      <div className="vpu_ocoplmimotceici_top">
         <span>Using Hooks</span>
       </div>
-      <div className="exampleCommonContent widthFixed200">
+      <div className="vpu_ocoplmimotceici_middle widthFixed200">
         <button onClick={() => start()}>Start</button>
         <button onClick={() => complete()}>Complete</button>
       </div>
@@ -34,10 +34,10 @@ export const WithRef = () => {
   const ref = useRef<LoadingBarRef>(null);
   return (
     <div className='vpu_ocoplmimotceic_item'>
-      <div className="exampleCommonPoints">
+      <div className="vpu_ocoplmimotceici_top">
         <span>With Ref</span>
       </div>
-      <div className="exampleCommonContent widthFixed200">
+      <div className="vpu_ocoplmimotceici_middle widthFixed200">
         <LoadingBar color="#f11946" ref={ref} shadow={true} />
         <button onClick={() => ref.current?.continuousStart()}>Start</button>
         <button onClick={() => ref.current?.staticStart()}>Static</button>
@@ -51,10 +51,10 @@ export const WithState = () => {
   const [progress, setProgress] = useState(0)
   return (
     <div className='vpu_ocoplmimotceic_item'>
-      <div className="exampleCommonPoints">
+      <div className="vpu_ocoplmimotceici_top">
         <span>With State</span>
       </div>
-      <div className="exampleCommonContent widthFixed200">
+      <div className="vpu_ocoplmimotceici_middle widthFixed200">
         <LoadingBar color="#f11946" progress={progress} onLoaderFinished={() => setProgress(0)} />
         <button onClick={() => setProgress(progress + 10)}>Add 10%</button>
         <button onClick={() => setProgress(progress - 10)}>Subtract 10%</button>
@@ -68,10 +68,10 @@ export const WithProperties = () => {
   const [progress, setProgress] = useState(0)
   return (
     <div className='vpu_ocoplmimotceic_item'>
-      <div className="exampleCommonPoints">
+      <div className="vpu_ocoplmimotceici_top">
         <span>With Properties</span>
       </div>
-      <div className="exampleCommonContent widthFixed200">
+      <div className="vpu_ocoplmimotceici_middle widthFixed200">
         <LoadingBar
           color="#f11946"
           progress={progress}

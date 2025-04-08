@@ -28,10 +28,10 @@ export const BasicImplement = ({ content }: any) => {
   }, []);
   return (
     <div className='vpu_ocoplmimotceic_item'>
-      <div className="exampleCommonPoints">
+      <div className="vpu_ocoplmimotceici_top">
         <span>Basic implementation</span>
       </div>
-      <div className="exampleCommonContent">
+      <div className="vpu_ocoplmimotceici_middle">
         <div id="my-scrollbar-1" style={{ height: "200px" }}>
           <p>{content}</p>
         </div>
@@ -52,10 +52,10 @@ export const WithDampingOption = ({ content }: any) => {
   }, []);
   return (
     <div className='vpu_ocoplmimotceic_item'>
-      <div className="exampleCommonPoints">
+      <div className="vpu_ocoplmimotceici_top">
         <span>With option damping</span>
       </div>
-      <div className="exampleCommonContent">
+      <div className="vpu_ocoplmimotceici_middle">
         <div id="my-scrollbar-2" style={{ height: "200px" }}>
           <p>{content}</p>
         </div>
@@ -76,10 +76,10 @@ export const WithThumbMinSizeOption = ({ content }: any) => {
   }, []);
   return (
     <div className='vpu_ocoplmimotceic_item'>
-      <div className="exampleCommonPoints">
+      <div className="vpu_ocoplmimotceici_top">
         <span>With option thumb min size</span>
       </div>
-      <div className="exampleCommonContent">
+      <div className="vpu_ocoplmimotceici_middle">
         <div id="my-scrollbar-3" style={{ height: "200px" }}>
           <p>{content}</p>
         </div>
@@ -100,10 +100,10 @@ export const WithRenderByPixelsOption = ({ content }: any) => {
   }, []);
   return (
     <div className='vpu_ocoplmimotceic_item'>
-      <div className="exampleCommonPoints">
+      <div className="vpu_ocoplmimotceici_top">
         <span>With option render by pixels</span>
       </div>
-      <div className="exampleCommonContent">
+      <div className="vpu_ocoplmimotceici_middle">
         <div id="my-scrollbar-4" style={{ height: "200px" }}>
           <p>{content}</p>
         </div>
@@ -124,10 +124,10 @@ export const WithAlwaysShowTracksOption = ({ content }: any) => {
   }, []);
   return (
     <div className='vpu_ocoplmimotceic_item'>
-      <div className="exampleCommonPoints">
+      <div className="vpu_ocoplmimotceici_top">
         <span>With option always show tracks</span>
       </div>
-      <div className="exampleCommonContent">
+      <div className="vpu_ocoplmimotceici_middle">
         <div id="my-scrollbar-5" style={{ height: "200px" }}>
           <p>{content}</p>
         </div>
@@ -148,10 +148,10 @@ export const WithContinuousScrollingOption = ({ content }: any) => {
   }, []);
   return (
     <div className='vpu_ocoplmimotceic_item'>
-      <div className="exampleCommonPoints">
+      <div className="vpu_ocoplmimotceici_top">
         <span>With option continuous scrolling</span>
       </div>
-      <div className="exampleCommonContent">
+      <div className="vpu_ocoplmimotceici_middle">
         <div id="my-scrollbar-6" style={{ height: "200px" }}>
           <p>{content}</p>
         </div>
@@ -172,10 +172,10 @@ export const WithDelegateToOption = ({ content }: any) => {
   }, []);
   return (
     <div className='vpu_ocoplmimotceic_item'>
-      <div className="exampleCommonPoints">
+      <div className="vpu_ocoplmimotceici_top">
         <span>With option render by pixels</span>
       </div>
-      <div className="exampleCommonContent">
+      <div className="vpu_ocoplmimotceici_middle">
         <div id="my-scrollbar-7" style={{ height: "200px" }}>
           <p>{content}</p>
         </div>
@@ -196,10 +196,10 @@ export const WithPluginsOption = ({ content }: any) => {
   }, []);
   return (
     <div className='vpu_ocoplmimotceic_item'>
-      <div className="exampleCommonPoints">
+      <div className="vpu_ocoplmimotceici_top">
         <span>With option render by pixels</span>
       </div>
-      <div className="exampleCommonContent">
+      <div className="vpu_ocoplmimotceici_middle">
         <div id="my-scrollbar-8" style={{ height: "200px" }}>
           <p>{content}</p>
         </div>

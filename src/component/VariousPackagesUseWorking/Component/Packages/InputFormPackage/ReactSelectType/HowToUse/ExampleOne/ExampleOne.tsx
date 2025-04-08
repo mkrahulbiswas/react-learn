@@ -19,10 +19,10 @@ export const BasicImplement = () => {
   ]
   return (
     <div className='vpu_ocoplmimotceic_item'>
-      <div className="exampleCommonPoints">
+      <div className="vpu_ocoplmimotceici_top">
         <span>Basic implementation</span>
       </div>
-      <div className="exampleCommonContent">
+      <div className="vpu_ocoplmimotceici_middle">
         <Select options={options} />
       </div>
     </div>
@@ -37,10 +37,10 @@ export const SingleSelect = () => {
   ]
   return (
     <div className='vpu_ocoplmimotceic_item'>
-      <div className="exampleCommonPoints">
+      <div className="vpu_ocoplmimotceici_top">
         <span>Single Select</span>
       </div>
-      <div className="exampleCommonContent">
+      <div className="vpu_ocoplmimotceici_middle">
         <Select
           className="basic-single"
           classNamePrefix="select"
@@ -134,10 +134,10 @@ export const SingleSelectCustomStyle = () => {
   }
   return (
     <div className='vpu_ocoplmimotceic_item'>
-      <div className="exampleCommonPoints">
+      <div className="vpu_ocoplmimotceici_top">
         <span>Single Select Custom Style</span>
       </div>
-      <div className="exampleCommonContent">
+      <div className="vpu_ocoplmimotceici_middle">
         <Select
           defaultValue={options[2]}
           options={options}

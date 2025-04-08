@@ -18,10 +18,10 @@ export const ButtonsMU = () => {
   return (
     <>
       <div className='vpu_ocoplmimotceic_list'>
-        <div className="exampleCommonPoints">
+        <div className="vpu_ocoplmimotceici_top">
           <span>Various Types Of Buttons</span>
         </div>
-        <div className="exampleCommonContent">
+        <div className="vpu_ocoplmimotceici_middle">
           <ConfigProvider componentSize={xxl ? 'middle' : 'small'}>
             <Flex vertical gap="small">
               <Flex gap="small" wrap>
@@ -149,10 +149,10 @@ export const ButtonsMU = () => {
         </div>
       </div>
       <div className='vpu_ocoplmimotceic_list'>
-        <div className="exampleCommonPoints">
+        <div className="vpu_ocoplmimotceici_top">
           <span>Various Types Of Buttons</span>
         </div>
-        <div className="exampleCommonContent">
+        <div className="vpu_ocoplmimotceici_middle">
           <Flex gap="small" vertical>
             <Flex wrap gap="small">
               <Tooltip title="search">
@@ -192,10 +192,10 @@ export const ButtonsMU = () => {
 export const BreadcrumbMU = () => {
   return (
     <div className='vpu_ocoplmimotceic_item'>
-      <div className="exampleCommonPoints">
+      <div className="vpu_ocoplmimotceici_top">
         <span>Breadcrumb</span>
       </div>
-      <div className="exampleCommonContent">
+      <div className="vpu_ocoplmimotceici_middle">
         <Breadcrumb
           items={[
             {
@@ -220,10 +220,10 @@ export const BreadcrumbMU = () => {
 export const PaginationMU = () => {
   return (
     <div className='vpu_ocoplmimotceic_item'>
-      <div className="exampleCommonPoints">
+      <div className="vpu_ocoplmimotceici_top">
         <span>Pagination</span>
       </div>
-      <div className="exampleCommonContent">
+      <div className="vpu_ocoplmimotceici_middle">
         <Pagination defaultCurrent={6} total={500} />
       </div>
     </div>
@@ -233,10 +233,10 @@ export const PaginationMU = () => {
 export const ColourPeakerMU = () => {
   return (
     <div className='vpu_ocoplmimotceic_item'>
-      <div className="exampleCommonPoints">
+      <div className="vpu_ocoplmimotceici_top">
         <span>Pagination</span>
       </div>
-      <div className="exampleCommonContent">
+      <div className="vpu_ocoplmimotceici_middle">
         <Space>
           <Space direction="vertical">
             <ColorPicker defaultValue="#1677ff" size="small" />

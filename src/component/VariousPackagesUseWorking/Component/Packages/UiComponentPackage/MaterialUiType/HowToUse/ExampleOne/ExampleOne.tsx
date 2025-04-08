@@ -24,21 +24,21 @@ export const ButtonsMU = () => {
   const [value, setValue] = useState<number>(30);
   return (
     <div className='vpu_ocoplmimotceic_item'>
-      <div className="exampleCommonPoints">
+      <div className="vpu_ocoplmimotceici_top">
         <span>Input Elements</span>
       </div>
-      <div className="exampleCommonContent">
+      <div className="vpu_ocoplmimotceici_middle">
         <Button color="secondary">Secondary</Button>
         <Button variant="contained" color="success">Success</Button>
         <Button variant="outlined" color="error">Error</Button>
       </div>
-      <div className="exampleCommonContent mt-4">
+      <div className="vpu_ocoplmimotceici_middle mt-4">
         <Fab color="primary" aria-label="add"><AddIcon /></Fab>
         <Fab color="secondary" aria-label="edit"><EditIcon /></Fab>
         <Fab variant="extended"><NavigationIcon sx={{ mr: 1 }} />Navigate</Fab>
         <Fab disabled aria-label="like"><FavoriteIcon /></Fab>
       </div>
-      <div className="exampleCommonContent mt-4">
+      <div className="vpu_ocoplmimotceici_middle mt-4">
         <Box sx={{ minWidth: 120 }}>
           <FormControl fullWidth>
             <InputLabel id="demo-simple-select-label">Age</InputLabel>
@@ -50,13 +50,13 @@ export const ButtonsMU = () => {
           </FormControl>
         </Box>
       </div>
-      <div className="exampleCommonContent mt-4">
+      <div className="vpu_ocoplmimotceici_middle mt-4">
         <Switch {...label} defaultChecked />
         <Switch {...label} />
         <Switch {...label} disabled defaultChecked />
         <Switch {...label} disabled />
       </div>
-      <div className="exampleCommonContent mt-4">
+      <div className="vpu_ocoplmimotceici_middle mt-4">
         <Stack spacing={2} direction="row" sx={{ alignItems: 'center', mb: 1 }}>
           <VolumeDown />
           <Slider aria-label="Volume" value={value} onChange={(e: any) => setValue(e.target.value)} />
@@ -71,10 +71,10 @@ export const ButtonsMU = () => {
 export const LayoutMU = () => {
   return (
     <div className='vpu_ocoplmimotceic_item'>
-      <div className="exampleCommonPoints">
+      <div className="vpu_ocoplmimotceici_top">
         <span>Layout Elements</span>
       </div>
-      <div className="exampleCommonContent">
+      <div className="vpu_ocoplmimotceici_middle">
         <Grid container spacing={2}>
           <Grid size={8}>
             <div className='bg-light'>size=8</div>
@@ -90,10 +90,10 @@ export const LayoutMU = () => {
           </Grid>
         </Grid>
       </div>
-      <div className="exampleCommonContent">
+      <div className="vpu_ocoplmimotceici_middle">
         <Box component="section" sx={{ p: 2, border: '1px dashed grey' }}>This Box renders as an HTML section element.</Box>
       </div>
-      <div className="exampleCommonContent">
+      <div className="vpu_ocoplmimotceici_middle">
         <Stack spacing={2}>
           <div className='bg-light'>Item 1</div>
           <div className='bg-light'>Item 2</div>

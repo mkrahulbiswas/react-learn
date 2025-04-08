@@ -4,10 +4,10 @@ export const ExampleOne = () => {
   return (
     <div className='vpu_ocoplmimotceic_list'>
       <div className='vpu_ocoplmimotceic_item'>
-        {/* <div className="exampleCommonPoints">
+        {/* <div className="vpu_ocoplmimotceici_top">
           <span>This an example by using a live <b>API</b> response</span>
         </div> */}
-        <div className="exampleCommonContent">
+        <div className="vpu_ocoplmimotceici_middle">
           <ColorRing
             visible={true}
             height="80"
@@ -20,7 +20,7 @@ export const ExampleOne = () => {
         </div>
       </div>
       <div className='vpu_ocoplmimotceic_item'>
-        <div className="exampleCommonContent">
+        <div className="vpu_ocoplmimotceici_middle">
           <DNA
             visible={true}
             height="80"
@@ -32,7 +32,7 @@ export const ExampleOne = () => {
         </div>
       </div>
       <div className='vpu_ocoplmimotceic_item'>
-        <div className="exampleCommonContent">
+        <div className="vpu_ocoplmimotceici_middle">
           <Rings
             visible={true}
             height="80"
@@ -45,7 +45,7 @@ export const ExampleOne = () => {
         </div>
       </div>
       <div className='vpu_ocoplmimotceic_item'>
-        <div className="exampleCommonContent">
+        <div className="vpu_ocoplmimotceici_middle">
           <Vortex
             visible={true}
             height="80"
@@ -58,7 +58,7 @@ export const ExampleOne = () => {
         </div>
       </div>
       <div className='vpu_ocoplmimotceic_item'>
-        <div className="exampleCommonContent">
+        <div className="vpu_ocoplmimotceici_middle">
           <RotatingSquare
             visible={true}
             height="100"
@@ -71,7 +71,7 @@ export const ExampleOne = () => {
         </div>
       </div>
       <div className='vpu_ocoplmimotceic_item'>
-        <div className="exampleCommonContent">
+        <div className="vpu_ocoplmimotceici_middle">
           <ThreeDots
             visible={true}
             height="80"

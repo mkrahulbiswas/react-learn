@@ -13,12 +13,12 @@ export const StylingTypeOne = () => {
   return (
     <>
       <div className='vpu_ocoplmimotceic_item'>
-        <div className="exampleCommonContent">
+        <div className="vpu_ocoplmimotceici_middle">
           <motion.div style={{ width: '15px', height: '20px', backgroundColor: 'pink' }} />
         </div>
       </div>
       <div className='vpu_ocoplmimotceic_item'>
-        <div className="exampleCommonContent">
+        <div className="vpu_ocoplmimotceici_middle">
           <motion.div style={{ backgroundColor: 'lime' }}>
             <span>HI</span>
           </motion.div>

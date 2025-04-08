@@ -14,10 +14,10 @@ export const ExampleOne = () => {
 export const LineChart = () => {
   return (
     <div className='vpu_ocoplmimotceic_item'>
-      <div className="exampleCommonPoints">
+      <div className="vpu_ocoplmimotceici_top">
         <span>Line Chart One</span>
       </div>
-      <div className="exampleCommonContent">
+      <div className="vpu_ocoplmimotceici_middle">
         <div style={{ width: '390px', height: '200px' }}>
           <VictoryChart
             polar
@@ -72,10 +72,10 @@ export const LineChart = () => {
 export const AreaChart = () => {
   return (
     <div className='vpu_ocoplmimotceic_item'>
-      <div className="exampleCommonPoints">
+      <div className="vpu_ocoplmimotceici_top">
         <span>Area Chart</span>
       </div>
-      <div className="exampleCommonContent">
+      <div className="vpu_ocoplmimotceici_middle">
         <div style={{ width: '390px', height: '200px' }}>
           <VictoryChart
             theme={VictoryTheme.clean}
@@ -128,10 +128,10 @@ export const AreaChart = () => {
 export const VoronoiChart = () => {
   return (
     <div className='vpu_ocoplmimotceic_item'>
-      <div className="exampleCommonPoints">
+      <div className="vpu_ocoplmimotceici_top">
         <span>Voronoi Chart</span>
       </div>
-      <div className="exampleCommonContent">
+      <div className="vpu_ocoplmimotceici_middle">
         <div style={{ width: '390px', height: '200px' }}>
           <VictoryVoronoi
             theme={VictoryTheme.clean}
@@ -152,10 +152,10 @@ export const VoronoiChart = () => {
 export const PieChart = () => {
   return (
     <div className='vpu_ocoplmimotceic_item'>
-      <div className="exampleCommonPoints">
+      <div className="vpu_ocoplmimotceici_top">
         <span>Pie Chart</span>
       </div>
-      <div className="exampleCommonContent">
+      <div className="vpu_ocoplmimotceici_middle">
         <div style={{ width: '390px', height: '200px' }}>
           <VictoryPie
             radius={({ datum }) => datum.y + 75}

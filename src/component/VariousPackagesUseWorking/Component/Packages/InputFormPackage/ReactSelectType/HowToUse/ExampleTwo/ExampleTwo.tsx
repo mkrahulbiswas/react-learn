@@ -21,10 +21,10 @@ export const MultiSelect = () => {
   ]
   return (
     <div className='vpu_ocoplmimotceic_item'>
-      <div className="exampleCommonPoints">
+      <div className="vpu_ocoplmimotceici_top">
         <span>Multi Select</span>
       </div>
-      <div className="exampleCommonContent">
+      <div className="vpu_ocoplmimotceici_middle">
         <Select
           defaultValue={[options[2], options[3]]}
           isMulti
@@ -48,10 +48,10 @@ export const MultiSelectAnimated = () => {
   const animatedComponents = makeAnimated();
   return (
     <div className='vpu_ocoplmimotceic_item'>
-      <div className="exampleCommonPoints">
+      <div className="vpu_ocoplmimotceici_top">
         <span>Multi Select Animated</span>
       </div>
-      <div className="exampleCommonContent">
+      <div className="vpu_ocoplmimotceici_middle">
         <Select
           defaultValue={[options[2], options[3]]}
           isMulti
@@ -151,10 +151,10 @@ export const MultiSelectCustomStyle = () => {
   };
   return (
     <div className='vpu_ocoplmimotceic_item'>
-      <div className="exampleCommonPoints">
+      <div className="vpu_ocoplmimotceici_top">
         <span>Multi Select Custom Style</span>
       </div>
-      <div className="exampleCommonContent">
+      <div className="vpu_ocoplmimotceici_middle">
         <Select
           closeMenuOnSelect={false}
           defaultValue={[colourOptions[0], colourOptions[1]]}

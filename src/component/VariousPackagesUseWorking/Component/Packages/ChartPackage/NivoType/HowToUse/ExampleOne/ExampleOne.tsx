@@ -3,10 +3,10 @@ import { ResponsiveBar, ResponsiveBarCanvas } from '@nivo/bar'
 export const ExampleOne = () => {
   return (
     <div className='vpu_ocoplmimotceic_list'>
-      {/* <div className="exampleCommonPoints">
+      {/* <div className="vpu_ocoplmimotceici_top">
           <span>This an example by using a live <b>API</b> response</span>
         </div> */}
-      <div className="exampleCommonContent">
+      <div className="vpu_ocoplmimotceici_middle">
         <TestOne />
         <TestTwo />
       </div>
@@ -124,10 +124,10 @@ export const TestOne = () => {
   ]
   return (
     <div className='vpu_ocoplmimotceic_item'>
-      <div className="exampleCommonPoints">
+      <div className="vpu_ocoplmimotceici_top">
         <span>1</span>
       </div>
-      <div className="exampleCommonContent">
+      <div className="vpu_ocoplmimotceici_middle">
         <ResponsiveBar
           data={data}
           keys={[
@@ -2671,10 +2671,10 @@ export const TestTwo = () => {
   ]
   return (
     <div className='vpu_ocoplmimotceic_item'>
-      <div className="exampleCommonPoints">
+      <div className="vpu_ocoplmimotceici_top">
         <span>2</span>
       </div>
-      <div className="exampleCommonContent">
+      <div className="vpu_ocoplmimotceici_middle">
         <ResponsiveBarCanvas
           data={data}
           keys={[

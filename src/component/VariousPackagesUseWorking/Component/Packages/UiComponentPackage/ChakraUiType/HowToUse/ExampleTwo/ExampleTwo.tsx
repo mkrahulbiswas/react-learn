@@ -11,7 +11,7 @@ export const ExampleTwo = () => {
 export const AnimatingCU = () => {
   return (
     <div className='vpu_ocoplmimotceic_item'>
-      <div className="exampleCommonContent">
+      <div className="vpu_ocoplmimotceici_middle">
         <Box
           data-state="open"
           _open={{

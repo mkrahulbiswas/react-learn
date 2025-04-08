@@ -20,7 +20,7 @@ export const TypeOne = () => {
   });
   return (
     <div className='vpu_ocoplmimotceic_item'>
-      <div className="exampleCommonContent svg-attributes-demo">
+      <div className="vpu_ocoplmimotceici_middle svg-attributes-demo">
         <svg width="128" height="128" viewBox="0 0 128 128">
           <filter id="displacementFilter">
             <feTurbulence type="turbulence" baseFrequency="0.04921983229210848" numOctaves="2" result="turbulence" style={{ transform: "scale(1)" }}></feTurbulence>

@@ -12,8 +12,8 @@ export const ExampleThree = () => {
   const parseDate = useCallback((str: string) => new Date(str), []);
   return (
     <div className='vpu_ocoplmimotceic_list'>
-      <div className="exampleCommon">
-        <div className="exampleCommonContent">
+      <div className='vpu_ocoplmimotceic_item'>
+        <div className="vpu_ocoplmimotceici_middle">
           <DateInput3
             formatDate={formatDate}
             onChange={handleChange}

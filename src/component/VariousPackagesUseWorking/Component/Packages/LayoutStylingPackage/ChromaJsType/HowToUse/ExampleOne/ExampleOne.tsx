@@ -78,14 +78,12 @@ export const BasicImplement = () => {
 
   return (
     <div className='vpu_ocoplmimotceic_item'>
-      <div className="exampleCommon triennialWidth">
-        <div className="exampleCommonPoints">
-          <span>Basic implementation</span>
-        </div>
-        <div className="exampleCommonContent">
-          <span>Check in console</span>
-          {/* <span style={{ backgroundColor: data }}>{data}</span> */}
-        </div>
+      <div className="vpu_ocoplmimotceici_top">
+        <span>Basic implementation</span>
+      </div>
+      <div className="vpu_ocoplmimotceici_middle">
+        <span>Check in console</span>
+        {/* <span style={{ backgroundColor: data }}>{data}</span> */}
       </div>
     </div>
   )
@@ -97,25 +95,25 @@ export const AdvanceImplement = () => {
   console.log(dataTwo);
 
   return (
-    <div className='vpu_ocoplmimotceic_item'>
-      <div className="exampleCommon triennialWidth">
-        <div className="exampleCommonPoints">
+    <>
+      <div className='vpu_ocoplmimotceic_item'>
+        <div className="vpu_ocoplmimotceici_top">
           <span>Advance implementation</span>
         </div>
-        <div className="exampleCommonContent">
+        <div className="vpu_ocoplmimotceici_middle">
           <span style={{ backgroundColor: `#${dataOne}` }}>{dataOne}</span>
         </div>
       </div>
-      <div className="exampleCommon">
-        <div className="exampleCommonPoints">
+      <div className='vpu_ocoplmimotceic_item'>
+        <div className="vpu_ocoplmimotceici_top">
           <span>Multiple color</span>
         </div>
-        <div className="exampleCommonContent exampleCommonContentFullWidth">
+        <div className="vpu_ocoplmimotceici_middle vpu_ocoplmimotceici_middleFullWidth">
           {dataTwo.map((color: any) => (
             <span key={color} style={{ backgroundColor: color }}>{color}</span>
           ))}
         </div>
       </div>
-    </div>
+    </>
   )
 }

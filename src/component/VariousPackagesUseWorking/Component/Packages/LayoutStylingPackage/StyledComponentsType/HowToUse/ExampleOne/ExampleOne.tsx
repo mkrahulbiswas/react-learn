@@ -29,17 +29,15 @@ export const WrapperInsideTitle = () => {
 
   return (
     <div className='vpu_ocoplmimotceic_item'>
-      <div className="exampleCommon">
-        {/* <div className="exampleCommonPoints">
+      {/* <div className="vpu_ocoplmimotceici_top">
           <span>Making <b>different position</b> of pagination</span>
         </div> */}
-        <div className="exampleCommonContent">
-          <Wrapper>
-            <Title>
-              Hello World!
-            </Title>
-          </Wrapper>
-        </div>
+      <div className="vpu_ocoplmimotceici_middle">
+        <Wrapper>
+          <Title>
+            Hello World!
+          </Title>
+        </Wrapper>
       </div>
     </div>
   )
@@ -63,13 +61,11 @@ export const ButtonAsStyledProps = () => {
 
   return (
     <div className='vpu_ocoplmimotceic_item'>
-      <div className="exampleCommon">
-        <div className="exampleCommonContent exampleCommonContentFloat">
-          <Button>Normal Button</Button>
-        </div>
-        <div className="exampleCommonContent exampleCommonContentFloat">
-          <TomatoButton>Tomato Button</TomatoButton>
-        </div>
+      <div className="vpu_ocoplmimotceici_middle vpu_ocoplmimotceici_middleFloat">
+        <Button>Normal Button</Button>
+      </div>
+      <div className="vpu_ocoplmimotceici_middle vpu_ocoplmimotceici_middleFloat">
+        <TomatoButton>Tomato Button</TomatoButton>
       </div>
     </div>
   )
@@ -91,13 +87,11 @@ export const ReverseElement = () => {
 
   return (
     <div className='vpu_ocoplmimotceic_item'>
-      <div className="exampleCommon">
-        <div className="exampleCommonContent exampleCommonContentFloat">
-          <Button>Normal Button</Button>
-        </div>
-        <div className="exampleCommonContent exampleCommonContentFloat">
-          <Button as={ReversedButton}>Custom Button with Normal Button styles</Button>
-        </div>
+      <div className="vpu_ocoplmimotceici_middle vpu_ocoplmimotceici_middleFloat">
+        <Button>Normal Button</Button>
+      </div>
+      <div className="vpu_ocoplmimotceici_middle vpu_ocoplmimotceici_middleFloat">
+        <Button as={ReversedButton}>Custom Button with Normal Button styles</Button>
       </div>
     </div>
   )
@@ -115,13 +109,11 @@ export const PassedProps = () => {
 
   return (
     <div className='vpu_ocoplmimotceic_item'>
-      <div className="exampleCommon">
-        <div className="exampleCommonContent exampleCommonContentFloat">
-          <Input defaultValue="@probablyup" type="text" />
-        </div>
-        <div className="exampleCommonContent exampleCommonContentFloat">
-          <Input defaultValue="@geelen" type="text" $inputColor="rebeccapurple" />
-        </div>
+      <div className="vpu_ocoplmimotceici_middle vpu_ocoplmimotceici_middleFloat">
+        <Input defaultValue="@probablyup" type="text" />
+      </div>
+      <div className="vpu_ocoplmimotceici_middle vpu_ocoplmimotceici_middleFloat">
+        <Input defaultValue="@geelen" type="text" $inputColor="rebeccapurple" />
       </div>
     </div>
   )
@@ -154,16 +146,14 @@ export const PseudoelEment = () => {
 
   return (
     <div className='vpu_ocoplmimotceic_item'>
-      <div className="exampleCommon">
-        <div className="exampleCommonContent">
-          <Thing>Hello world!</Thing>
-          <Thing>How ya doing?</Thing>
-          <Thing className="something">The sun is shining...</Thing>
-          <div>Pretty nice day today.</div>
-          <Thing>Don't you think?</Thing>
-          <div className="something-else">
-            <Thing>Splendid.</Thing>
-          </div>
+      <div className="vpu_ocoplmimotceici_middle">
+        <Thing>Hello world!</Thing>
+        <Thing>How ya doing?</Thing>
+        <Thing className="something">The sun is shining...</Thing>
+        <div>Pretty nice day today.</div>
+        <Thing>Don't you think?</Thing>
+        <div className="something-else">
+          <Thing>Splendid.</Thing>
         </div>
       </div>
     </div>
@@ -190,13 +180,11 @@ export const AdditionalProps = () => {
 
   return (
     <div className='vpu_ocoplmimotceic_item'>
-      <div className="exampleCommon">
-        <div className="exampleCommonContent exampleCommonContentFloat">
-          <Input placeholder="A small text input" />
-        </div>
-        <div className="exampleCommonContent exampleCommonContentFloat">
-          <Input placeholder="A bigger text input" $size="2em" />
-        </div>
+      <div className="vpu_ocoplmimotceici_middle vpu_ocoplmimotceici_middleFloat">
+        <Input placeholder="A small text input" />
+      </div>
+      <div className="vpu_ocoplmimotceici_middle vpu_ocoplmimotceici_middleFloat">
+        <Input placeholder="A bigger text input" $size="2em" />
       </div>
     </div>
   )
@@ -222,14 +210,12 @@ export const OverridingAttrs = () => {
 
   return (
     <div className='vpu_ocoplmimotceic_item'>
-      <div className="exampleCommon">
-        <div className="exampleCommonContent exampleCommonContentFloat">
-          <Input placeholder="A bigger text input" $size="2em" />
-        </div>
-        <div className="exampleCommonContent exampleCommonContentFloat">
-          {/* Notice we can still use the size attr from Input */}
-          <PasswordInput placeholder="A bigger password input" $size="2em" />
-        </div>
+      <div className="vpu_ocoplmimotceici_middle vpu_ocoplmimotceici_middleFloat">
+        <Input placeholder="A bigger text input" $size="2em" />
+      </div>
+      <div className="vpu_ocoplmimotceici_middle vpu_ocoplmimotceici_middleFloat">
+        {/* Notice we can still use the size attr from Input */}
+        <PasswordInput placeholder="A bigger password input" $size="2em" />
       </div>
     </div>
   )
@@ -257,10 +243,8 @@ export const Animations = () => {
 
   return (
     <div className='vpu_ocoplmimotceic_item'>
-      <div className="exampleCommon">
-        <div className="exampleCommonContent exampleCommonContentFloat">
-          <Rotate>&lt; 💅🏾 &gt;</Rotate>
-        </div>
+      <div className="vpu_ocoplmimotceici_middle vpu_ocoplmimotceici_middleFloat">
+        <Rotate>&lt; 💅🏾 &gt;</Rotate>
       </div>
     </div>
   )

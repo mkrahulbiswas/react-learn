@@ -24,23 +24,21 @@ export const LayoutIsAnArray = () => {
   ];
   return (
     <div className='vpu_ocoplmimotceic_item'>
-      <div className="exampleCommon fullWidth">
-        <div className="exampleCommonPoints">
-          <span>Mention layout as in a object and than pass it</span>
-        </div>
-        <div className="exampleCommonContent">
-          <GridLayout
-            className="layout"
-            layout={layout}
-            cols={12}
-            rowHeight={30}
-            width={1200}
-          >
-            <div key="a" style={{ border: '2px solid green' }}>a</div>
-            <div key="b" style={{ border: '2px solid green' }}>b</div>
-            <div key="c" style={{ border: '2px solid green' }}>c</div>
-          </GridLayout>
-        </div>
+      <div className="vpu_ocoplmimotceici_top">
+        <span>Mention layout as in a object and than pass it</span>
+      </div>
+      <div className="vpu_ocoplmimotceici_middle">
+        <GridLayout
+          className="layout"
+          layout={layout}
+          cols={12}
+          rowHeight={30}
+          width={1200}
+        >
+          <div key="a" style={{ border: '2px solid green' }}>a</div>
+          <div key="b" style={{ border: '2px solid green' }}>b</div>
+          <div key="c" style={{ border: '2px solid green' }}>c</div>
+        </GridLayout>
       </div>
     </div>
   )
@@ -49,22 +47,20 @@ export const LayoutIsAnArray = () => {
 export const LayoutIsAnInDiv = () => {
   return (
     <div className='vpu_ocoplmimotceic_item'>
-      <div className="exampleCommon fullWidth">
-        <div className="exampleCommonPoints">
-          <span>Mention layout inside the each div individually</span>
-        </div>
-        <div className="exampleCommonContent">
-          <GridLayout
-            className="layout"
-            cols={12}
-            rowHeight={30}
-            width={1200}
-          >
-            <div style={{ border: '2px solid green' }} key="a" data-grid={{ x: 0, y: 0, w: 1, h: 2, static: true }}>a</div>
-            <div style={{ border: '2px solid green' }} key="b" data-grid={{ x: 1, y: 0, w: 3, h: 2, minW: 2, maxW: 4 }}>b</div>
-            <div style={{ border: '2px solid green' }} key="c" data-grid={{ x: 4, y: 0, w: 1, h: 2 }}>c</div>
-          </GridLayout>
-        </div>
+      <div className="vpu_ocoplmimotceici_top">
+        <span>Mention layout inside the each div individually</span>
+      </div>
+      <div className="vpu_ocoplmimotceici_middle">
+        <GridLayout
+          className="layout"
+          cols={12}
+          rowHeight={30}
+          width={1200}
+        >
+          <div style={{ border: '2px solid green' }} key="a" data-grid={{ x: 0, y: 0, w: 1, h: 2, static: true }}>a</div>
+          <div style={{ border: '2px solid green' }} key="b" data-grid={{ x: 1, y: 0, w: 3, h: 2, minW: 2, maxW: 4 }}>b</div>
+          <div style={{ border: '2px solid green' }} key="c" data-grid={{ x: 4, y: 0, w: 1, h: 2 }}>c</div>
+        </GridLayout>
       </div>
     </div>
   )
@@ -102,24 +98,22 @@ export const ResponsiveUsage = () => {
   }
   return (
     <div className='vpu_ocoplmimotceic_item'>
-      <div className="exampleCommon fullWidth">
-        <div className="exampleCommonPoints">
-          <span>Responsive Usage</span>
-        </div>
-        <div className="exampleCommonContent">
-          <ResponsiveGridLayout
-            className="layout"
-            layouts={layout}
-            width={1200}
-            rowHeight={30}
-            breakpoints={{ lg: 1200, md: 996, sm: 768, xs: 480, xxs: 0 }}
-            cols={{ lg: 12, md: 10, sm: 6, xs: 4, xxs: 2 }}
-          >
-            <div key="a" style={{ border: '2px solid green' }}>A</div>
-            <div key="b" style={{ border: '2px solid green' }}>B</div>
-            <div key="c" style={{ border: '2px solid green' }}>C</div>
-          </ResponsiveGridLayout>
-        </div>
+      <div className="vpu_ocoplmimotceici_top">
+        <span>Responsive Usage</span>
+      </div>
+      <div className="vpu_ocoplmimotceici_middle">
+        <ResponsiveGridLayout
+          className="layout"
+          layouts={layout}
+          width={1200}
+          rowHeight={30}
+          breakpoints={{ lg: 1200, md: 996, sm: 768, xs: 480, xxs: 0 }}
+          cols={{ lg: 12, md: 10, sm: 6, xs: 4, xxs: 2 }}
+        >
+          <div key="a" style={{ border: '2px solid green' }}>A</div>
+          <div key="b" style={{ border: '2px solid green' }}>B</div>
+          <div key="c" style={{ border: '2px solid green' }}>C</div>
+        </ResponsiveGridLayout>
       </div>
     </div>
   )
@@ -134,12 +128,11 @@ export const GridProps = () => {
   // ];
   return (
     <div className='vpu_ocoplmimotceic_item'>
-      <div className="exampleCommon fullWidth">
-        <div className="exampleCommonPoints">
-          <span>Mention layout as in a object and than pass it</span>
-        </div>
-        <div className="exampleCommonContent">
-          {/* <GridLayout
+      <div className="vpu_ocoplmimotceici_top">
+        <span>Mention layout as in a object and than pass it</span>
+      </div>
+      <div className="vpu_ocoplmimotceici_middle">
+        {/* <GridLayout
 
             className="layout"
 
@@ -291,7 +284,6 @@ export const GridProps = () => {
             <div key="b" style={{ border: '2px solid green' }}>b</div>
             <div key="c" style={{ border: '2px solid green' }}>c</div>
           </GridLayout> */}
-        </div>
       </div>
     </div>
   )
@@ -305,102 +297,100 @@ export const GridCallbackProps = () => {
   ];
   return (
     <div className='vpu_ocoplmimotceic_item'>
-      <div className="exampleCommon fullWidth">
-        <div className="exampleCommonPoints">
-          <span>Grid Callback Props</span>
-        </div>
-        <div className="exampleCommonContent">
-          <GridLayout
-            className="layout"
-            width={1200}
-            rowHeight={30}
-            cols={12}
-            layout={layout}
-            isResizable={true}
-            resizeHandles={['se']}
+      <div className="vpu_ocoplmimotceici_top">
+        <span>Grid Callback Props</span>
+      </div>
+      <div className="vpu_ocoplmimotceici_middle">
+        <GridLayout
+          className="layout"
+          width={1200}
+          rowHeight={30}
+          cols={12}
+          layout={layout}
+          isResizable={true}
+          resizeHandles={['se']}
 
 
-            onLayoutChange={(layout: Layout[]) => {
-              console.log('onLayoutChange------------------------------------------------------------------------------------( START )---->');
-              console.log('layout->', layout);
-              console.log('onLayoutChange------------------------------------------------------------------------------------( END )---->');
-            }}
-            onDragStart={(layout: Layout[], oldItem: Layout, newItem: Layout, placeholder: Layout, e: MouseEvent, element: HTMLElement) => {
-              console.log('onDragStart------------------------------------------------------------------------------------( START )---->');
-              console.log('layout->', layout);
-              console.log('oldItem->', oldItem);
-              console.log('newItem->', newItem);
-              console.log('placeholder->', placeholder);
-              console.log('e->', e);
-              console.log('element->', element);
-              console.log('onDragStart------------------------------------------------------------------------------------( END )---->');
-            }}
-            onDrag={(layout: Layout[], oldItem: Layout, newItem: Layout, placeholder: Layout, e: MouseEvent, element: HTMLElement) => {
-              console.log('onDrag------------------------------------------------------------------------------------( START )---->');
-              console.log('layout->', layout);
-              console.log('oldItem->', oldItem);
-              console.log('newItem->', newItem);
-              console.log('placeholder->', placeholder);
-              console.log('e->', e);
-              console.log('element->', element);
-              console.log('onDrag------------------------------------------------------------------------------------( END )---->');
-            }}
-            onDragStop={(layout: Layout[], oldItem: Layout, newItem: Layout, placeholder: Layout, e: MouseEvent, element: HTMLElement) => {
-              console.log('onDragStop------------------------------------------------------------------------------------( START )---->');
-              console.log('layout->', layout);
-              console.log('oldItem->', oldItem);
-              console.log('newItem->', newItem);
-              console.log('placeholder->', placeholder);
-              console.log('e->', e);
-              console.log('element->', element);
-              console.log('onDragStop------------------------------------------------------------------------------------( END )---->');
-            }}
-            onResizeStart={(layout: Layout[], oldItem: Layout, newItem: Layout, placeholder: Layout, e: MouseEvent, element: HTMLElement) => {
-              console.log('onResizeStart------------------------------------------------------------------------------------( START )---->');
-              console.log('layout->', layout);
-              console.log('oldItem->', oldItem);
-              console.log('newItem->', newItem);
-              console.log('placeholder->', placeholder);
-              console.log('e->', e);
-              console.log('element->', element);
-              console.log('onResizeStart------------------------------------------------------------------------------------( END )---->');
-            }}
-            onResize={(layout: Layout[], oldItem: Layout, newItem: Layout, placeholder: Layout, e: MouseEvent, element: HTMLElement) => {
-              console.log('onResize------------------------------------------------------------------------------------( START )---->');
-              console.log('layout->', layout);
-              console.log('oldItem->', oldItem);
-              console.log('newItem->', newItem);
-              console.log('placeholder->', placeholder);
-              console.log('e->', e);
-              console.log('element->', element);
-              console.log('onResize------------------------------------------------------------------------------------( END )---->');
-            }}
-            onResizeStop={(layout: Layout[], oldItem: Layout, newItem: Layout, placeholder: Layout, e: MouseEvent, element: HTMLElement) => {
-              console.log('onResizeStop------------------------------------------------------------------------------------( START )---->');
-              console.log('layout->', layout);
-              console.log('oldItem->', oldItem);
-              console.log('newItem->', newItem);
-              console.log('placeholder->', placeholder);
-              console.log('e->', e);
-              console.log('element->', element);
-              console.log('onResizeStop------------------------------------------------------------------------------------( END )---->');
-            }}
-            onDrop={(layout: Layout[], item: Layout, e: Event) => {
-              console.log('onDrop------------------------------------------------------------------------------------( START )---->');
-              console.log('layout->', layout);
-              console.log('item->', item);
-              console.log('e->', e);
-              console.log('onDrop------------------------------------------------------------------------------------( END )---->');
-            }}
-            onDropDragOver={(_e: DragOverEvent) => {
-              return { w: 10, h: 10 };
-            }}
-          >
-            <div key="a" style={{ border: '2px solid green' }}>a</div>
-            <div key="b" style={{ border: '2px solid green' }}>b</div>
-            <div key="c" style={{ border: '2px solid green' }}>c</div>
-          </GridLayout>
-        </div>
+          onLayoutChange={(layout: Layout[]) => {
+            console.log('onLayoutChange------------------------------------------------------------------------------------( START )---->');
+            console.log('layout->', layout);
+            console.log('onLayoutChange------------------------------------------------------------------------------------( END )---->');
+          }}
+          onDragStart={(layout: Layout[], oldItem: Layout, newItem: Layout, placeholder: Layout, e: MouseEvent, element: HTMLElement) => {
+            console.log('onDragStart------------------------------------------------------------------------------------( START )---->');
+            console.log('layout->', layout);
+            console.log('oldItem->', oldItem);
+            console.log('newItem->', newItem);
+            console.log('placeholder->', placeholder);
+            console.log('e->', e);
+            console.log('element->', element);
+            console.log('onDragStart------------------------------------------------------------------------------------( END )---->');
+          }}
+          onDrag={(layout: Layout[], oldItem: Layout, newItem: Layout, placeholder: Layout, e: MouseEvent, element: HTMLElement) => {
+            console.log('onDrag------------------------------------------------------------------------------------( START )---->');
+            console.log('layout->', layout);
+            console.log('oldItem->', oldItem);
+            console.log('newItem->', newItem);
+            console.log('placeholder->', placeholder);
+            console.log('e->', e);
+            console.log('element->', element);
+            console.log('onDrag------------------------------------------------------------------------------------( END )---->');
+          }}
+          onDragStop={(layout: Layout[], oldItem: Layout, newItem: Layout, placeholder: Layout, e: MouseEvent, element: HTMLElement) => {
+            console.log('onDragStop------------------------------------------------------------------------------------( START )---->');
+            console.log('layout->', layout);
+            console.log('oldItem->', oldItem);
+            console.log('newItem->', newItem);
+            console.log('placeholder->', placeholder);
+            console.log('e->', e);
+            console.log('element->', element);
+            console.log('onDragStop------------------------------------------------------------------------------------( END )---->');
+          }}
+          onResizeStart={(layout: Layout[], oldItem: Layout, newItem: Layout, placeholder: Layout, e: MouseEvent, element: HTMLElement) => {
+            console.log('onResizeStart------------------------------------------------------------------------------------( START )---->');
+            console.log('layout->', layout);
+            console.log('oldItem->', oldItem);
+            console.log('newItem->', newItem);
+            console.log('placeholder->', placeholder);
+            console.log('e->', e);
+            console.log('element->', element);
+            console.log('onResizeStart------------------------------------------------------------------------------------( END )---->');
+          }}
+          onResize={(layout: Layout[], oldItem: Layout, newItem: Layout, placeholder: Layout, e: MouseEvent, element: HTMLElement) => {
+            console.log('onResize------------------------------------------------------------------------------------( START )---->');
+            console.log('layout->', layout);
+            console.log('oldItem->', oldItem);
+            console.log('newItem->', newItem);
+            console.log('placeholder->', placeholder);
+            console.log('e->', e);
+            console.log('element->', element);
+            console.log('onResize------------------------------------------------------------------------------------( END )---->');
+          }}
+          onResizeStop={(layout: Layout[], oldItem: Layout, newItem: Layout, placeholder: Layout, e: MouseEvent, element: HTMLElement) => {
+            console.log('onResizeStop------------------------------------------------------------------------------------( START )---->');
+            console.log('layout->', layout);
+            console.log('oldItem->', oldItem);
+            console.log('newItem->', newItem);
+            console.log('placeholder->', placeholder);
+            console.log('e->', e);
+            console.log('element->', element);
+            console.log('onResizeStop------------------------------------------------------------------------------------( END )---->');
+          }}
+          onDrop={(layout: Layout[], item: Layout, e: Event) => {
+            console.log('onDrop------------------------------------------------------------------------------------( START )---->');
+            console.log('layout->', layout);
+            console.log('item->', item);
+            console.log('e->', e);
+            console.log('onDrop------------------------------------------------------------------------------------( END )---->');
+          }}
+          onDropDragOver={(_e: DragOverEvent) => {
+            return { w: 10, h: 10 };
+          }}
+        >
+          <div key="a" style={{ border: '2px solid green' }}>a</div>
+          <div key="b" style={{ border: '2px solid green' }}>b</div>
+          <div key="c" style={{ border: '2px solid green' }}>c</div>
+        </GridLayout>
       </div>
     </div>
   )
@@ -414,25 +404,23 @@ export const GridTransformProps = () => {
   ]
   return (
     <div className='vpu_ocoplmimotceic_item'>
-      <div className="exampleCommon fullWidth">
-        <div className="exampleCommonPoints">
-          <span>Grid Transform Props</span>
-        </div>
-        <div className="exampleCommonContent">
-          <GridLayout
-            className="layout"
-            width={1200}
-            rowHeight={30}
-            cols={12}
-            layout={layout}
-            useCSSTransforms={true}
-            transformScale={2.5}
-          >
-            <div key="a" style={{ border: '2px solid green' }}>a</div>
-            <div key="b" style={{ border: '2px solid green' }}>b</div>
-            <div key="c" style={{ border: '2px solid green' }}>c</div>
-          </GridLayout>
-        </div>
+      <div className="vpu_ocoplmimotceici_top">
+        <span>Grid Transform Props</span>
+      </div>
+      <div className="vpu_ocoplmimotceici_middle">
+        <GridLayout
+          className="layout"
+          width={1200}
+          rowHeight={30}
+          cols={12}
+          layout={layout}
+          useCSSTransforms={true}
+          transformScale={2.5}
+        >
+          <div key="a" style={{ border: '2px solid green' }}>a</div>
+          <div key="b" style={{ border: '2px solid green' }}>b</div>
+          <div key="c" style={{ border: '2px solid green' }}>c</div>
+        </GridLayout>
       </div>
     </div>
   )
@@ -446,28 +434,26 @@ export const GridDragResizeProps = () => {
   ]
   return (
     <div className='vpu_ocoplmimotceic_item'>
-      <div className="exampleCommon fullWidth">
-        <div className="exampleCommonPoints">
-          <span>Grid Drag Resize Props</span>
-        </div>
-        <div className="exampleCommonContent">
-          <GridLayout
-            className="layout"
-            width={1200}
-            rowHeight={30}
-            cols={12}
-            layout={layout}
+      <div className="vpu_ocoplmimotceici_top">
+        <span>Grid Drag Resize Props</span>
+      </div>
+      <div className="vpu_ocoplmimotceici_middle">
+        <GridLayout
+          className="layout"
+          width={1200}
+          rowHeight={30}
+          cols={12}
+          layout={layout}
 
-            // isDraggable={true}
-            isResizable={false}
-            resizeHandles={['se']}
-          // isDroppable={true}
-          >
-            <div key="a" style={{ border: '2px solid green' }}>a</div>
-            <div key="b" style={{ border: '2px solid green' }}>b</div>
-            <div key="c" style={{ border: '2px solid green' }}>c</div>
-          </GridLayout>
-        </div>
+          // isDraggable={true}
+          isResizable={false}
+          resizeHandles={['se']}
+        // isDroppable={true}
+        >
+          <div key="a" style={{ border: '2px solid green' }}>a</div>
+          <div key="b" style={{ border: '2px solid green' }}>b</div>
+          <div key="c" style={{ border: '2px solid green' }}>c</div>
+        </GridLayout>
       </div>
     </div>
   )
@@ -481,40 +467,38 @@ export const OtherProps = () => {
   ];
   return (
     <div className='vpu_ocoplmimotceic_item'>
-      <div className="exampleCommon fullWidth">
-        <div className="exampleCommonPoints">
-          <span>Other Props</span>
-        </div>
-        <div className="exampleCommonContent">
-          <GridLayout
-            className="layout"
-            width={1200}
-            rowHeight={30}
-            cols={12}
-            layout={layout}
+      <div className="vpu_ocoplmimotceici_top">
+        <span>Other Props</span>
+      </div>
+      <div className="vpu_ocoplmimotceici_middle">
+        <GridLayout
+          className="layout"
+          width={1200}
+          rowHeight={30}
+          cols={12}
+          layout={layout}
 
-            autoSize={true}
-            // draggableCancel='s'
-            // draggableHandle='b'
-            compactType='vertical'
-            margin={[10, 10]}
-            containerPadding={[10, 10]}
-            droppingItem={{ i: "new", w: 2, h: 2 }}
-            isDraggable={true}
-            isResizable={true}
-            isBounded={false}
-            useCSSTransforms={true}
-            transformScale={1}
-            allowOverlap={false}
-            preventCollision={false}
-            isDroppable={false}
-            resizeHandles={['se']}
-          >
-            <div key="a" style={{ border: '2px solid green' }}>a</div>
-            <div key="b" style={{ border: '2px solid green' }}>b</div>
-            <div key="c" style={{ border: '2px solid green' }}>c</div>
-          </GridLayout>
-        </div>
+          autoSize={true}
+          // draggableCancel='s'
+          // draggableHandle='b'
+          compactType='vertical'
+          margin={[10, 10]}
+          containerPadding={[10, 10]}
+          droppingItem={{ i: "new", w: 2, h: 2 }}
+          isDraggable={true}
+          isResizable={true}
+          isBounded={false}
+          useCSSTransforms={true}
+          transformScale={1}
+          allowOverlap={false}
+          preventCollision={false}
+          isDroppable={false}
+          resizeHandles={['se']}
+        >
+          <div key="a" style={{ border: '2px solid green' }}>a</div>
+          <div key="b" style={{ border: '2px solid green' }}>b</div>
+          <div key="c" style={{ border: '2px solid green' }}>c</div>
+        </GridLayout>
       </div>
     </div>
   )

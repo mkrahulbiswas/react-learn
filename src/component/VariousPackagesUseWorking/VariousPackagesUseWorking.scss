@@ -672,12 +672,23 @@ ul {
 
                                                         .vpu_ocoplmi_middle {
                                                             background-image: linear-gradient(to top, #cfd9df 0%, #e2ebf0 100%);
-                                                            box-shadow: inset 0 0 9px 3px rgb(3 40 38 / 82%);
                                                             border-radius: 5px;
                                                             margin-top: 20px;
+                                                            overflow: hidden;
 
                                                             .vpu_ocoplmim_overview {
-                                                                overflow: hidden;
+                                                                position: relative;
+
+                                                                &::after {
+                                                                    content: "";
+                                                                    box-shadow: inset 0 0 9px 3px rgb(3 40 38 / 82%);
+                                                                    height: 100%;
+                                                                    position: absolute;
+                                                                    width: 100%;
+                                                                    left: 0px;
+                                                                    top: 0px;
+                                                                    pointer-events: none;
+                                                                }
 
                                                                 .vpu_ocoplmimo_main {
                                                                     .vpu_ocoplmimo_sub {
@@ -743,25 +754,13 @@ ul {
                                                                             }
 
                                                                             .vpu_ocoplmimot_content {
-                                                                                padding: 10px;
                                                                                 border-bottom-left-radius: 5px;
                                                                                 border-bottom-right-radius: 5px;
                                                                                 position: relative;
                                                                                 overflow: hidden;
 
-                                                                                &::before {
-                                                                                    content: '';
-                                                                                    position: absolute;
-                                                                                    top: 0;
-                                                                                    left: 0;
-                                                                                    width: 100%;
-                                                                                    height: 100%;
-                                                                                    background-color: #00000021;
-                                                                                }
-
                                                                                 .vpu_ocoplmimotc_about {
                                                                                     position: relative;
-                                                                                    z-index: 2;
 
                                                                                     .vpu_ocoplmimotca_list {
                                                                                         display: flex;
@@ -770,10 +769,7 @@ ul {
 
                                                                                         .vpu_ocoplmimotca_item {
                                                                                             background-image: linear-gradient(60deg, #abecd6 0%, #fbed96 100%);
-                                                                                            border: 1px solid rgb(22, 110, 110);
                                                                                             padding: 10px;
-                                                                                            margin: 10px;
-                                                                                            border-radius: 5px;
 
                                                                                             b {
                                                                                                 color: #1b5699;
@@ -911,10 +907,21 @@ ul {
 
                                                                                 .vpu_ocoplmimotc_example {
                                                                                     position: relative;
-                                                                                    z-index: 2;
+                                                                                    background-image: linear-gradient(120deg, #a1c4fd 0%, #c2e9fb 100%);
+                                                                                    padding: 10px;
 
                                                                                     .vpu_ocoplmimotce_list {
+                                                                                        display: flex;
+                                                                                        flex-direction: row;
+                                                                                        justify-content: space-around;
+                                                                                        flex-wrap: wrap;
+                                                                                        gap: 20px;
+
                                                                                         .vpu_ocoplmimotce_item {
+                                                                                            background-image: linear-gradient(120deg, #d4fc79 0%, #96e6a1 100%);
+                                                                                            border-radius: 5px;
+                                                                                            padding: 10px;
+
                                                                                             .vpu_ocoplmimotcei_heading {
                                                                                                 span {
                                                                                                     &:first-child {}
@@ -925,7 +932,29 @@ ul {
                                                                                                 }
                                                                                             }
 
-                                                                                            .vpu_ocoplmimotcei_content {}
+                                                                                            .vpu_ocoplmimotcei_content {
+                                                                                                .vpu_ocoplmimotceic_list {
+                                                                                                    display: flex;
+                                                                                                    flex-direction: row;
+                                                                                                    flex-wrap: wrap;
+                                                                                                    justify-content: space-around;
+                                                                                                    gap: 20px;
+
+                                                                                                    .vpu_ocoplmimotceic_item {
+                                                                                                        .vpu_ocoplmimotceici_top {
+                                                                                                            span {
+                                                                                                                &:first-child {}
+
+                                                                                                                &:last-child {
+                                                                                                                    label {}
+                                                                                                                }
+                                                                                                            }
+                                                                                                        }
+
+                                                                                                        .vpu_ocoplmimotceici_moddle {}
+                                                                                                    }
+                                                                                                }
+                                                                                            }
                                                                                         }
                                                                                     }
                                                                                 }

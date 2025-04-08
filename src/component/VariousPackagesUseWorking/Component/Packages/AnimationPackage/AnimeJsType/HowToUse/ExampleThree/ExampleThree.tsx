@@ -22,27 +22,25 @@ export const TypeOne = () => {
   });
   return (
     <div className='vpu_ocoplmimotceic_item'>
-      <div className="exampleCommon">
-        <div className="exampleCommonContent">
-          <div className="demo-content typeOne">
-            <div className="grid" style={{ display: 'flex', flexWrap: 'wrap' }}>
-              {
-                Array.from(Array(numberOfBox)).map((_, i: number) => {
-                  return (
-                    <div key={i} className="small square el" style={{ transform: 'scale(1)' }}></div>
-                  )
-                })
-              }
-            </div>
-            <div className="grid shadow">
-              {
-                Array.from(Array(numberOfBox)).map((_, i: number) => {
-                  return (
-                    <div key={i} className="small square"></div>
-                  )
-                })
-              }
-            </div>
+      <div className="vpu_ocoplmimotceici_middle">
+        <div className="demo-content typeOne">
+          <div className="grid" style={{ display: 'flex', flexWrap: 'wrap' }}>
+            {
+              Array.from(Array(numberOfBox)).map((_, i: number) => {
+                return (
+                  <div key={i} className="small square el" style={{ transform: 'scale(1)' }}></div>
+                )
+              })
+            }
+          </div>
+          <div className="grid shadow">
+            {
+              Array.from(Array(numberOfBox)).map((_, i: number) => {
+                return (
+                  <div key={i} className="small square"></div>
+                )
+              })
+            }
           </div>
         </div>
       </div>
@@ -62,27 +60,25 @@ export const TypeTwo = () => {
   });
   return (
     <div className='vpu_ocoplmimotceic_item'>
-      <div className="exampleCommon">
-        <div className="exampleCommonContent">
-          <div className="demo-content typeTwo">
-            <div className="grid" style={{ display: 'flex', flexWrap: 'wrap' }}>
-              {
-                Array.from(Array(numberOfBox)).map((_, i: number) => {
-                  return (
-                    <div key={i} className="small square el" style={{ transform: 'scale(1)' }}></div>
-                  )
-                })
-              }
-            </div>
-            <div className="grid shadow">
-              {
-                Array.from(Array(numberOfBox)).map((_, i: number) => {
-                  return (
-                    <div key={i} className="small square"></div>
-                  )
-                })
-              }
-            </div>
+      <div className="vpu_ocoplmimotceici_middle">
+        <div className="demo-content typeTwo">
+          <div className="grid" style={{ display: 'flex', flexWrap: 'wrap' }}>
+            {
+              Array.from(Array(numberOfBox)).map((_, i: number) => {
+                return (
+                  <div key={i} className="small square el" style={{ transform: 'scale(1)' }}></div>
+                )
+              })
+            }
+          </div>
+          <div className="grid shadow">
+            {
+              Array.from(Array(numberOfBox)).map((_, i: number) => {
+                return (
+                  <div key={i} className="small square"></div>
+                )
+              })
+            }
           </div>
         </div>
       </div>

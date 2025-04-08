@@ -16,27 +16,25 @@ export const ExampleOne = () => {
 export const WithSimpleImplement = () => {
   return (
     <div className='vpu_ocoplmimotceic_item'>
-      <div className="exampleCommon triennialWidth">
-        <div className="exampleCommonPoints">
-          <span>With Simple Implement</span>
-        </div>
-        <div className="exampleCommonContent">
-          <div style={{ overflowY: 'scroll', height: '200px' }}>
-            <Link to="section1" smooth={true} duration={500}>Section 1</Link>
-            <Link to="section2" smooth={true} duration={500}>Section 2</Link>
-            <Element name="section1">
-              <section style={{ height: '100vh', backgroundColor: 'lightblue' }}>
-                <h1>Section 1</h1>
-                <p>This is the content of section 1</p>
-              </section>
-            </Element>
-            <Element name="section2">
-              <section style={{ height: '100vh', backgroundColor: 'lightgreen' }}>
-                <h1>Section 2</h1>
-                <p>This is the content of section 2</p>
-              </section>
-            </Element>
-          </div>
+      <div className="vpu_ocoplmimotceici_top">
+        <span>With Simple Implement</span>
+      </div>
+      <div className="vpu_ocoplmimotceici_middle">
+        <div style={{ overflowY: 'scroll', height: '200px' }}>
+          <Link to="section1" smooth={true} duration={500}>Section 1</Link>
+          <Link to="section2" smooth={true} duration={500}>Section 2</Link>
+          <Element name="section1">
+            <section style={{ height: '100vh', backgroundColor: 'lightblue' }}>
+              <h1>Section 1</h1>
+              <p>This is the content of section 1</p>
+            </section>
+          </Element>
+          <Element name="section2">
+            <section style={{ height: '100vh', backgroundColor: 'lightgreen' }}>
+              <h1>Section 2</h1>
+              <p>This is the content of section 2</p>
+            </section>
+          </Element>
         </div>
       </div>
     </div>
@@ -46,32 +44,30 @@ export const WithSimpleImplement = () => {
 export const WithInsideElement = () => {
   return (
     <div className='vpu_ocoplmimotceic_item'>
-      <div className="exampleCommon triennialWidth">
-        <div className="exampleCommonPoints">
-          <span>With Inside Element</span>
-        </div>
-        <div className="exampleCommonContent">
-          <Link to="section1" smooth={true} duration={500} containerId="containerElement">Section 1</Link>
-          <Link to="section2" smooth={true} duration={500} containerId="containerElement">Section 2</Link>
-          <Element name="test7" className="element" id="containerElement" style={{
-            position: 'relative',
-            height: '200px',
-            overflowY: 'scroll',
-          }}>
-            <Element name="section1">
-              <section style={{ height: '100vh', backgroundColor: 'lightblue' }}>
-                <h1>Section 1</h1>
-                <p>This is the content of section 1</p>
-              </section>
-            </Element>
-            <Element name="section2">
-              <section style={{ height: '100vh', backgroundColor: 'lightgreen' }}>
-                <h1>Section 2</h1>
-                <p>This is the content of section 2</p>
-              </section>
-            </Element>
+      <div className="vpu_ocoplmimotceici_top">
+        <span>With Inside Element</span>
+      </div>
+      <div className="vpu_ocoplmimotceici_middle">
+        <Link to="section1" smooth={true} duration={500} containerId="containerElement">Section 1</Link>
+        <Link to="section2" smooth={true} duration={500} containerId="containerElement">Section 2</Link>
+        <Element name="test7" className="element" id="containerElement" style={{
+          position: 'relative',
+          height: '200px',
+          overflowY: 'scroll',
+        }}>
+          <Element name="section1">
+            <section style={{ height: '100vh', backgroundColor: 'lightblue' }}>
+              <h1>Section 1</h1>
+              <p>This is the content of section 1</p>
+            </section>
           </Element>
-        </div>
+          <Element name="section2">
+            <section style={{ height: '100vh', backgroundColor: 'lightgreen' }}>
+              <h1>Section 2</h1>
+              <p>This is the content of section 2</p>
+            </section>
+          </Element>
+        </Element>
       </div>
     </div>
   );
@@ -85,12 +81,12 @@ export const PropsInLink = () => {
     console.log('handleSetInactive');
   }
   return (
-    <div className='vpu_ocoplmimotceic_item'>
-      <div className="exampleCommon triennialWidth">
-        <div className="exampleCommonPoints">
+    <>
+      <div className='vpu_ocoplmimotceic_item'>
+        <div className="vpu_ocoplmimotceici_top">
           <span>Props In Link delay</span>
         </div>
-        <div className="exampleCommonContent">
+        <div className="vpu_ocoplmimotceici_middle">
           <Link
             to="section1"
             smooth={true}
@@ -119,11 +115,11 @@ export const PropsInLink = () => {
           </Element>
         </div>
       </div>
-      <div className="exampleCommon triennialWidth">
-        <div className="exampleCommonPoints">
+      <div className='vpu_ocoplmimotceic_item'>
+        <div className="vpu_ocoplmimotceici_top">
           <span>Props In Link</span>
         </div>
-        <div className="exampleCommonContent">
+        <div className="vpu_ocoplmimotceici_middle">
           <Link
             to="section1"
             smooth={true}
@@ -154,7 +150,7 @@ export const PropsInLink = () => {
           </Element>
         </div>
       </div>
-    </div>
+    </>
   );
 }
 
@@ -188,26 +184,24 @@ export const ScrollToTopBottom = () => {
   }, []);
   return (
     <div className='vpu_ocoplmimotceic_item'>
-      <div className="exampleCommon triennialWidth">
-        <div className="exampleCommonPoints">
-          <span>Scroll To Top & Bottom</span>
-        </div>
-        <div className="exampleCommonContent">
-          <Element
-            name="test7"
-            className="element"
-            id="scrollToTopBottom"
-            style={{
-              position: 'relative',
-              height: '200px',
-              overflowY: 'scroll',
-            }}>
-            <Element name="firstInsideContainer" style={{ height: '300px', backgroundColor: 'lime' }}>first element inside container</Element>
-            <Element name="secondInsideContainer" style={{ height: '300px', backgroundColor: 'pink' }}>second element inside container</Element>
-          </Element>
-          <a onClick={scrollToTop}>To the top!</a>
-          <a onClick={scrollToBottom}>To the bottom!</a>
-        </div>
+      <div className="vpu_ocoplmimotceici_top">
+        <span>Scroll To Top & Bottom</span>
+      </div>
+      <div className="vpu_ocoplmimotceici_middle">
+        <Element
+          name="test7"
+          className="element"
+          id="scrollToTopBottom"
+          style={{
+            position: 'relative',
+            height: '200px',
+            overflowY: 'scroll',
+          }}>
+          <Element name="firstInsideContainer" style={{ height: '300px', backgroundColor: 'lime' }}>first element inside container</Element>
+          <Element name="secondInsideContainer" style={{ height: '300px', backgroundColor: 'pink' }}>second element inside container</Element>
+        </Element>
+        <a onClick={scrollToTop}>To the top!</a>
+        <a onClick={scrollToBottom}>To the bottom!</a>
       </div>
     </div>
   );
@@ -259,65 +253,63 @@ export const WithOtherOptions = () => {
   };
   return (
     <div className='vpu_ocoplmimotceic_item'>
-      <div className="exampleCommon triennialWidth">
-        <div className="exampleCommonPoints">
-          <span>With Inside Element</span>
+      <div className="vpu_ocoplmimotceici_top">
+        <span>With Inside Element</span>
+      </div>
+      <div className="vpu_ocoplmimotceici_middle">
+        {/* Link component to scroll to "test1" element with specified properties */}
+        <Link
+          activeClass="active"
+          to="test1"
+          spy={true}
+          smooth={true}
+          offset={50}
+          duration={500}
+          onSetActive={handleSetActive}
+        >
+          Test 1
+        </Link>
+
+        {/* Other Link and Button components for navigation, each with their unique properties and targets */}
+        {/* ... */}
+
+        {/* Element components that act as scroll targets */}
+        <Element name="test1" className="element">
+          test 1
+        </Element>
+        <Element name="test2" className="element">
+          test 2
+        </Element>
+        <div id="anchor" className="element">
+          test 6 (anchor)
         </div>
-        <div className="exampleCommonContent">
-          {/* Link component to scroll to "test1" element with specified properties */}
-          <Link
-            activeClass="active"
-            to="test1"
-            spy={true}
-            smooth={true}
-            offset={50}
-            duration={500}
-            onSetActive={handleSetActive}
-          >
-            Test 1
-          </Link>
 
-          {/* Other Link and Button components for navigation, each with their unique properties and targets */}
-          {/* ... */}
+        {/* Links to elements inside a specific container */}
+        <Link to="firstInsideContainer" containerId="containerElement">
+          Go to first element inside container
+        </Link>
+        <Link to="secondInsideContainer" containerId="containerElement">
+          Go to second element inside container
+        </Link>
 
-          {/* Element components that act as scroll targets */}
-          <Element name="test1" className="element">
-            test 1
+        {/* Container with elements inside */}
+        <div className="element" id="containerElement">
+          <Element name="firstInsideContainer">
+            first element inside container
           </Element>
-          <Element name="test2" className="element">
-            test 2
+          <Element name="secondInsideContainer">
+            second element inside container
           </Element>
-          <div id="anchor" className="element">
-            test 6 (anchor)
-          </div>
-
-          {/* Links to elements inside a specific container */}
-          <Link to="firstInsideContainer" containerId="containerElement">
-            Go to first element inside container
-          </Link>
-          <Link to="secondInsideContainer" containerId="containerElement">
-            Go to second element inside container
-          </Link>
-
-          {/* Container with elements inside */}
-          <div className="element" id="containerElement">
-            <Element name="firstInsideContainer">
-              first element inside container
-            </Element>
-            <Element name="secondInsideContainer">
-              second element inside container
-            </Element>
-          </div>
-
-          {/* Anchors to trigger scroll actions */}
-          <a onClick={scrollToTop}>To the top!</a>
-          <br />
-          <a onClick={scrollToBottom}>To the bottom!</a>
-          <br />
-          <a onClick={scrollTo}>Scroll to 100px from the top</a>
-          <br />
-          <a onClick={scrollMore}>Scroll 100px more from the current position!</a>
         </div>
+
+        {/* Anchors to trigger scroll actions */}
+        <a onClick={scrollToTop}>To the top!</a>
+        <br />
+        <a onClick={scrollToBottom}>To the bottom!</a>
+        <br />
+        <a onClick={scrollTo}>Scroll to 100px from the top</a>
+        <br />
+        <a onClick={scrollMore}>Scroll 100px more from the current position!</a>
       </div>
     </div>
   );

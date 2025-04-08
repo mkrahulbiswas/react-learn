@@ -37,14 +37,12 @@ export const OverScroll = ({ content }: any) => {
   }, []);
   return (
     <div className='vpu_ocoplmimotceic_item'>
-      <div className="exampleCommon triennialWidth">
-        <div className="exampleCommonPoints">
-          <span>Over Scroll</span>
-        </div>
-        <div className="exampleCommonContent">
-          <div id="my-scrollbar-10" style={{ height: "200px" }}>
-            <p>{content}</p>
-          </div>
+      <div className="vpu_ocoplmimotceici_top">
+        <span>Over Scroll</span>
+      </div>
+      <div className="vpu_ocoplmimotceici_middle">
+        <div id="my-scrollbar-10" style={{ height: "200px" }}>
+          <p>{content}</p>
         </div>
       </div>
     </div>
@@ -76,18 +74,16 @@ export const DestroyScroll = ({ content }: any) => {
   }, []);
   return (
     <div className='vpu_ocoplmimotceic_item'>
-      <div className="exampleCommon triennialWidth">
-        <div className="exampleCommonPoints">
-          <span>Destroy Scrolll</span>
-          <p>
-            <label>note:</label> After exit from component you must destroy so
-            that no conflict happen.
-          </p>
-        </div>
-        <div className="exampleCommonContent">
-          <div id="my-scrollbar-11" style={{ height: "200px" }}>
-            <p>{content}</p>
-          </div>
+      <div className="vpu_ocoplmimotceici_top">
+        <span>Destroy Scrolll</span>
+        <span>
+          <label>note:</label> After exit from component you must destroy so
+          that no conflict happen.
+        </span>
+      </div>
+      <div className="vpu_ocoplmimotceici_middle">
+        <div id="my-scrollbar-11" style={{ height: "200px" }}>
+          <p>{content}</p>
         </div>
       </div>
     </div>
@@ -137,14 +133,12 @@ export const BasicImplement = ({ content }: any) => {
   }, []);
   return (
     <div className='vpu_ocoplmimotceic_item'>
-      <div className="exampleCommon triennialWidth">
-        <div className="exampleCommonPoints">
-          <span>Basic implementation</span>
-        </div>
-        <div className="exampleCommonContent">
-          <div id="my-scrollbar-11" style={{ height: "200px" }}>
-            <p>{content}</p>
-          </div>
+      <div className="vpu_ocoplmimotceici_top">
+        <span>Basic implementation</span>
+      </div>
+      <div className="vpu_ocoplmimotceici_middle">
+        <div id="my-scrollbar-11" style={{ height: "200px" }}>
+          <p>{content}</p>
         </div>
       </div>
     </div>

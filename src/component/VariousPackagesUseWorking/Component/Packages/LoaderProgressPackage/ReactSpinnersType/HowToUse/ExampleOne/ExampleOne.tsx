@@ -4,55 +4,41 @@ export const ExampleOne = () => {
   return (
     <div className='vpu_ocoplmimotceic_list'>
       <div className='vpu_ocoplmimotceic_item'>
-        <div className="exampleCommon">
-          {/* <div className="exampleCommonPoints">
+        {/* <div className="vpu_ocoplmimotceici_top">
           <span>This an example by using a live <b>API</b> response</span>
         </div> */}
-          <div className="exampleCommonContent">
-            <BeatLoader />
-          </div>
+        <div className="vpu_ocoplmimotceici_middle">
+          <BeatLoader />
         </div>
       </div>
       <div className='vpu_ocoplmimotceic_item'>
-        <div className="exampleCommon">
-          <div className="exampleCommonContent">
-            <PacmanLoader />
-          </div>
+        <div className="vpu_ocoplmimotceici_middle">
+          <PacmanLoader />
         </div>
       </div>
       <div className='vpu_ocoplmimotceic_item'>
-        <div className="exampleCommon">
-          <div className="exampleCommonContent">
-            <GridLoader />
-          </div>
+        <div className="vpu_ocoplmimotceici_middle">
+          <GridLoader />
         </div>
       </div>
       <div className='vpu_ocoplmimotceic_item'>
-        <div className="exampleCommon">
-          <div className="exampleCommonContent">
-            <ClockLoader color="red" />
-          </div>
+        <div className="vpu_ocoplmimotceici_middle">
+          <ClockLoader color="red" />
         </div>
       </div>
       <div className='vpu_ocoplmimotceic_item'>
-        <div className="exampleCommon">
-          <div className="exampleCommonContent">
-            <CircleLoader />
-          </div>
+        <div className="vpu_ocoplmimotceici_middle">
+          <CircleLoader />
         </div>
       </div>
       <div className='vpu_ocoplmimotceic_item'>
-        <div className="exampleCommon">
-          <div className="exampleCommonContent">
-            <RingLoader />
-          </div>
+        <div className="vpu_ocoplmimotceici_middle">
+          <RingLoader />
         </div>
       </div>
       <div className='vpu_ocoplmimotceic_item'>
-        <div className="exampleCommon">
-          <div className="exampleCommonContent">
-            <ScaleLoader />
-          </div>
+        <div className="vpu_ocoplmimotceici_middle">
+          <ScaleLoader />
         </div>
       </div>
     </div>

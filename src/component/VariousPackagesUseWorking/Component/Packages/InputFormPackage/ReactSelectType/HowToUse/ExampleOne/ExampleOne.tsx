@@ -19,13 +19,11 @@ export const BasicImplement = () => {
   ]
   return (
     <div className='vpu_ocoplmimotceic_item'>
-      <div className="exampleCommon triennialWidth">
-        <div className="exampleCommonPoints">
-          <span>Basic implementation</span>
-        </div>
-        <div className="exampleCommonContent">
-          <Select options={options} />
-        </div>
+      <div className="vpu_ocoplmimotceici_top">
+        <span>Basic implementation</span>
+      </div>
+      <div className="vpu_ocoplmimotceici_middle">
+        <Select options={options} />
       </div>
     </div>
   )
@@ -39,24 +37,22 @@ export const SingleSelect = () => {
   ]
   return (
     <div className='vpu_ocoplmimotceic_item'>
-      <div className="exampleCommon triennialWidth">
-        <div className="exampleCommonPoints">
-          <span>Single Select</span>
-        </div>
-        <div className="exampleCommonContent">
-          <Select
-            className="basic-single"
-            classNamePrefix="select"
-            defaultValue={options[0]}
-            isDisabled={false}
-            isLoading={false}
-            isClearable={false}
-            isRtl={false}
-            isSearchable={false}
-            name="color"
-            options={options}
-          />
-        </div>
+      <div className="vpu_ocoplmimotceici_top">
+        <span>Single Select</span>
+      </div>
+      <div className="vpu_ocoplmimotceici_middle">
+        <Select
+          className="basic-single"
+          classNamePrefix="select"
+          defaultValue={options[0]}
+          isDisabled={false}
+          isLoading={false}
+          isClearable={false}
+          isRtl={false}
+          isSearchable={false}
+          name="color"
+          options={options}
+        />
       </div>
     </div>
   )
@@ -138,17 +134,15 @@ export const SingleSelectCustomStyle = () => {
   }
   return (
     <div className='vpu_ocoplmimotceic_item'>
-      <div className="exampleCommon triennialWidth">
-        <div className="exampleCommonPoints">
-          <span>Single Select Custom Style</span>
-        </div>
-        <div className="exampleCommonContent">
-          <Select
-            defaultValue={options[2]}
-            options={options}
-            styles={colourStyles}
-          />
-        </div>
+      <div className="vpu_ocoplmimotceici_top">
+        <span>Single Select Custom Style</span>
+      </div>
+      <div className="vpu_ocoplmimotceici_middle">
+        <Select
+          defaultValue={options[2]}
+          options={options}
+          styles={colourStyles}
+        />
       </div>
     </div>
   )

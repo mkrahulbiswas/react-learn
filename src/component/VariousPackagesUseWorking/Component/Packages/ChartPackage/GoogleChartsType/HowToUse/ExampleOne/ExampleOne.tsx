@@ -26,19 +26,17 @@ export const PieChart = () => {
 
   return (
     <div className='vpu_ocoplmimotceic_item'>
-      <div className="exampleCommon">
-        <div className="exampleCommonPoints">
-          <span>Pie Chart</span>
-        </div>
-        <div className="exampleCommonContent">
-          <Chart
-            chartType="PieChart"
-            data={data}
-            options={options}
-            width={"390px"}
-            height={"200px"}
-          />
-        </div>
+      <div className="vpu_ocoplmimotceici_top">
+        <span>Pie Chart</span>
+      </div>
+      <div className="vpu_ocoplmimotceici_middle">
+        <Chart
+          chartType="PieChart"
+          data={data}
+          options={options}
+          width={"390px"}
+          height={"200px"}
+        />
       </div>
     </div>
   )
@@ -122,19 +120,17 @@ export const GanttChart = () => {
 
   return (
     <div className='vpu_ocoplmimotceic_item'>
-      <div className="exampleCommon">
-        <div className="exampleCommonPoints">
-          <span>Gantt Chart</span>
-        </div>
-        <div className="exampleCommonContent">
-          <Chart
-            chartType="Gantt"
-            width="390px"
-            height="200px"
-            data={data}
-            options={options}
-          />
-        </div>
+      <div className="vpu_ocoplmimotceici_top">
+        <span>Gantt Chart</span>
+      </div>
+      <div className="vpu_ocoplmimotceici_middle">
+        <Chart
+          chartType="Gantt"
+          width="390px"
+          height="200px"
+          data={data}
+          options={options}
+        />
       </div>
     </div>
   )
@@ -154,31 +150,29 @@ export const GeoChart = () => {
 
   return (
     <div className='vpu_ocoplmimotceic_item'>
-      <div className="exampleCommon">
-        <div className="exampleCommonPoints">
-          <span>Geo Chart</span>
-        </div>
-        <div className="exampleCommonContent">
-          <Chart
-            chartEvents={[
-              {
-                eventName: "select",
-                callback: ({ chartWrapper }) => {
-                  if (!chartWrapper) return;
-                  const chart = chartWrapper.getChart();
-                  const selection = chart.getSelection();
-                  if (selection.length === 0) return;
-                  const region = data[selection[0].row + 1];
-                  console.log("Selected : " + region);
-                },
+      <div className="vpu_ocoplmimotceici_top">
+        <span>Geo Chart</span>
+      </div>
+      <div className="vpu_ocoplmimotceici_middle">
+        <Chart
+          chartEvents={[
+            {
+              eventName: "select",
+              callback: ({ chartWrapper }) => {
+                if (!chartWrapper) return;
+                const chart = chartWrapper.getChart();
+                const selection = chart.getSelection();
+                if (selection.length === 0) return;
+                const region = data[selection[0].row + 1];
+                console.log("Selected : " + region);
               },
-            ]}
-            chartType="GeoChart"
-            width="390px"
-            height="200px"
-            data={data}
-          />
-        </div>
+            },
+          ]}
+          chartType="GeoChart"
+          width="390px"
+          height="200px"
+          data={data}
+        />
       </div>
     </div>
   )
@@ -197,19 +191,17 @@ export const SankeyChart = () => {
   const options = {};
   return (
     <div className='vpu_ocoplmimotceic_item'>
-      <div className="exampleCommon">
-        <div className="exampleCommonPoints">
-          <span>Sankey Chart</span>
-        </div>
-        <div className="exampleCommonContent">
-          <Chart
-            chartType="Sankey"
-            width="390px"
-            height="200px"
-            data={data}
-            options={options}
-          />
-        </div>
+      <div className="vpu_ocoplmimotceici_top">
+        <span>Sankey Chart</span>
+      </div>
+      <div className="vpu_ocoplmimotceici_middle">
+        <Chart
+          chartType="Sankey"
+          width="390px"
+          height="200px"
+          data={data}
+          options={options}
+        />
       </div>
     </div>
   )

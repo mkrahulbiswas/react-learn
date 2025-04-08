@@ -16,12 +16,12 @@ export const ExampleOne = () => {
 export const ButtonsMU = () => {
   const { xxl } = useResponsive();
   return (
-    <div className='vpu_ocoplmimotceic_list'>
-      <div className="exampleCommon">
-        <div className="exampleCommonPoints">
+    <>
+      <div className='vpu_ocoplmimotceic_list'>
+        <div className="vpu_ocoplmimotceici_top">
           <span>Various Types Of Buttons</span>
         </div>
-        <div className="exampleCommonContent">
+        <div className="vpu_ocoplmimotceici_middle">
           <ConfigProvider componentSize={xxl ? 'middle' : 'small'}>
             <Flex vertical gap="small">
               <Flex gap="small" wrap>
@@ -148,11 +148,11 @@ export const ButtonsMU = () => {
           </ConfigProvider>
         </div>
       </div>
-      <div className="exampleCommon">
-        <div className="exampleCommonPoints">
+      <div className='vpu_ocoplmimotceic_list'>
+        <div className="vpu_ocoplmimotceici_top">
           <span>Various Types Of Buttons</span>
         </div>
-        <div className="exampleCommonContent">
+        <div className="vpu_ocoplmimotceici_middle">
           <Flex gap="small" vertical>
             <Flex wrap gap="small">
               <Tooltip title="search">
@@ -185,35 +185,33 @@ export const ButtonsMU = () => {
           </Flex>
         </div>
       </div>
-    </div>
+    </>
   )
 }
 
 export const BreadcrumbMU = () => {
   return (
     <div className='vpu_ocoplmimotceic_item'>
-      <div className="exampleCommon">
-        <div className="exampleCommonPoints">
-          <span>Breadcrumb</span>
-        </div>
-        <div className="exampleCommonContent">
-          <Breadcrumb
-            items={[
-              {
-                title: 'Home',
-              },
-              {
-                title: <a href="">Application Center</a>,
-              },
-              {
-                title: <a href="">Application List</a>,
-              },
-              {
-                title: 'An Application',
-              },
-            ]}
-          />
-        </div>
+      <div className="vpu_ocoplmimotceici_top">
+        <span>Breadcrumb</span>
+      </div>
+      <div className="vpu_ocoplmimotceici_middle">
+        <Breadcrumb
+          items={[
+            {
+              title: 'Home',
+            },
+            {
+              title: <a href="">Application Center</a>,
+            },
+            {
+              title: <a href="">Application List</a>,
+            },
+            {
+              title: 'An Application',
+            },
+          ]}
+        />
       </div>
     </div>
   )
@@ -222,13 +220,11 @@ export const BreadcrumbMU = () => {
 export const PaginationMU = () => {
   return (
     <div className='vpu_ocoplmimotceic_item'>
-      <div className="exampleCommon">
-        <div className="exampleCommonPoints">
-          <span>Pagination</span>
-        </div>
-        <div className="exampleCommonContent">
-          <Pagination defaultCurrent={6} total={500} />
-        </div>
+      <div className="vpu_ocoplmimotceici_top">
+        <span>Pagination</span>
+      </div>
+      <div className="vpu_ocoplmimotceici_middle">
+        <Pagination defaultCurrent={6} total={500} />
       </div>
     </div>
   )
@@ -237,20 +233,18 @@ export const PaginationMU = () => {
 export const ColourPeakerMU = () => {
   return (
     <div className='vpu_ocoplmimotceic_item'>
-      <div className="exampleCommon">
-        <div className="exampleCommonPoints">
-          <span>Pagination</span>
-        </div>
-        <div className="exampleCommonContent">
-          <Space>
-            <Space direction="vertical">
-              <ColorPicker defaultValue="#1677ff" size="small" />
-            </Space>
-            <Space direction="vertical">
-              <ColorPicker defaultValue="#1677ff" size="small" showText />
-            </Space>
+      <div className="vpu_ocoplmimotceici_top">
+        <span>Pagination</span>
+      </div>
+      <div className="vpu_ocoplmimotceici_middle">
+        <Space>
+          <Space direction="vertical">
+            <ColorPicker defaultValue="#1677ff" size="small" />
           </Space>
-        </div>
+          <Space direction="vertical">
+            <ColorPicker defaultValue="#1677ff" size="small" showText />
+          </Space>
+        </Space>
       </div>
     </div>
   )

@@ -1173,6 +1173,7 @@ export const DependencyWheelChartaa = () => {
     // renderSea();
     // Highcharts.addEvent(chart, 'redraw', renderSea);
   })
+
   useEffect(() => {
     fetch("https://code.highcharts.com/mapdata/custom/world.topo.json")
       .then(res => res.json())
@@ -1182,11 +1183,11 @@ export const DependencyWheelChartaa = () => {
 
   return (
     <div className='vpu_ocoplmimotceic_item'>
-      <div className="exampleCommon fullWidth">
-        <div className="exampleCommonPoints">
+      <div className="vpu_ocoplmimotceici_example">
+        <div className="vpu_ocoplmimotceici_top">
           <span>Pictoriala Chart</span>
         </div>
-        <div className="exampleCommonContent">
+        <div className="vpu_ocoplmimotceici_middle">
           <HighchartsReact
             highcharts={Highmaps}
             options={options}
@@ -1313,6 +1314,7 @@ export const DependencyWheelCharta = () => {
     ['Wisconsin', 'https://upload.wikimedia.org/wikipedia/commons/thumb/2/22/Flag_of_Wisconsin.svg/640px-Flag_of_Wisconsin.svg.png'],
     ['Wyoming', 'https://upload.wikimedia.org/wikipedia/commons/b/bc/Flag_of_Wyoming.svg']
   ]
+
   const options: Highmaps.Options = {
     chart: {
       map: chartData
@@ -1389,11 +1391,11 @@ export const DependencyWheelCharta = () => {
 
   return (
     <div className='vpu_ocoplmimotceic_item'>
-      <div className="exampleCommon fullWidth">
-        <div className="exampleCommonPoints">
+      <div className='vpu_ocoplmimotceici_example'>
+        <div className="vpu_ocoplmimotceici_top">
           <span>Pictoriala Chart</span>
         </div>
-        <div className="exampleCommonContent">
+        <div className="vpu_ocoplmimotceici_middle">
           <HighchartsReact
             highcharts={Highmaps}
             options={options}
@@ -1440,11 +1442,11 @@ export const DependencyWheelChart = (_props: HighchartsReact.Props) => {
 
   return (
     <div className='vpu_ocoplmimotceic_item'>
-      <div className="exampleCommon fullWidth">
-        <div className="exampleCommonPoints">
+      <div className="vpu_ocoplmimotceici_example">
+        <div className="vpu_ocoplmimotceici_top">
           <span>Dependency Wheel Chart</span>
         </div>
-        <div className="exampleCommonContent">
+        <div className="vpu_ocoplmimotceici_middle">
           {/* <HighchartsReact highcharts={HighchartsMore} options={options} /> */}
           {/* <HighchartsReact highcharts={Sankey, DependencyWheel, Exporting, ExportData, Accessibility} options={options} /> */}
           {/* <HighchartsReact highcharts={Sankey} options={options} />

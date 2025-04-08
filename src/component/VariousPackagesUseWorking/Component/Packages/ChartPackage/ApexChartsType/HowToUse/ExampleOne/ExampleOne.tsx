@@ -31,18 +31,16 @@ export const BarChart = () => {
 
   return (
     <div className='vpu_ocoplmimotceic_item'>
-      <div className="exampleCommon">
-        <div className="exampleCommonPoints">
-          <span>Bar Chart</span>
-        </div>
-        <div className="exampleCommonContent">
-          <ReactApexChart
-            options={chartData.options}
-            series={chartData.series}
-            type="bar"
-            width="390"
-          />
-        </div>
+      <div className="vpu_ocoplmimotceici_top">
+        <span>Bar Chart</span>
+      </div>
+      <div className="vpu_ocoplmimotceici_middle">
+        <ReactApexChart
+          options={chartData.options}
+          series={chartData.series}
+          type="bar"
+          width="390"
+        />
       </div>
     </div>
   )
@@ -85,18 +83,16 @@ export const AreaChart = () => {
 
   return (
     <div className='vpu_ocoplmimotceic_item'>
-      <div className="exampleCommon">
-        <div className="exampleCommonPoints">
-          <span>Area Chart</span>
-        </div>
-        <div className="exampleCommonContent">
-          <ReactApexChart
-            options={chartData.options}
-            series={chartData.series}
-            type="area"
-            width="390"
-          />
-        </div>
+      <div className="vpu_ocoplmimotceici_top">
+        <span>Area Chart</span>
+      </div>
+      <div className="vpu_ocoplmimotceici_middle">
+        <ReactApexChart
+          options={chartData.options}
+          series={chartData.series}
+          type="area"
+          width="390"
+        />
       </div>
     </div>
   )
@@ -146,18 +142,16 @@ export const DonutChart = () => {
 
   return (
     <div className='vpu_ocoplmimotceic_item'>
-      <div className="exampleCommon">
-        <div className="exampleCommonPoints">
-          <span>Donut Chart</span>
-        </div>
-        <div className="exampleCommonContent">
-          <ReactApexChart
-            options={chartData.options}
-            series={chartData.series}
-            type="donut"
-            width="390"
-          />
-        </div>
+      <div className="vpu_ocoplmimotceici_top">
+        <span>Donut Chart</span>
+      </div>
+      <div className="vpu_ocoplmimotceici_middle">
+        <ReactApexChart
+          options={chartData.options}
+          series={chartData.series}
+          type="donut"
+          width="390"
+        />
       </div>
     </div>
   )
@@ -235,18 +229,16 @@ export const BubbleChart = () => {
   }
   return (
     <div className='vpu_ocoplmimotceic_item'>
-      <div className="exampleCommon">
-        <div className="exampleCommonPoints">
-          <span>Bubble Chart</span>
-        </div>
-        <div className="exampleCommonContent">
-          <ReactApexChart
-            options={chartData.options}
-            series={chartData.series}
-            type="bubble"
-            width="390"
-          />
-        </div>
+      <div className="vpu_ocoplmimotceici_top">
+        <span>Bubble Chart</span>
+      </div>
+      <div className="vpu_ocoplmimotceici_middle">
+        <ReactApexChart
+          options={chartData.options}
+          series={chartData.series}
+          type="bubble"
+          width="390"
+        />
       </div>
     </div>
   )

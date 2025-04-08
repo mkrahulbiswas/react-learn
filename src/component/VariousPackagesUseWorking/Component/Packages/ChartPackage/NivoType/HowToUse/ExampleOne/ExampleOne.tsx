@@ -3,14 +3,12 @@ import { ResponsiveBar, ResponsiveBarCanvas } from '@nivo/bar'
 export const ExampleOne = () => {
   return (
     <div className='vpu_ocoplmimotceic_list'>
-      <div className="exampleCommon">
-        {/* <div className="exampleCommonPoints">
+      {/* <div className="vpu_ocoplmimotceici_top">
           <span>This an example by using a live <b>API</b> response</span>
         </div> */}
-        <div className="exampleCommonContent">
-          <TestOne />
-          <TestTwo />
-        </div>
+      <div className="vpu_ocoplmimotceici_middle">
+        <TestOne />
+        <TestTwo />
       </div>
     </div>
   )
@@ -126,130 +124,128 @@ export const TestOne = () => {
   ]
   return (
     <div className='vpu_ocoplmimotceic_item'>
-      <div className="exampleCommon">
-        <div className="exampleCommonPoints">
-          <span>1</span>
-        </div>
-        <div className="exampleCommonContent">
-          <ResponsiveBar
-            data={data}
-            keys={[
-              'hot dog',
-              'burger',
-              'sandwich',
-              'kebab',
-              'fries',
-              'donut'
-            ]}
-            indexBy="country"
-            margin={{ top: 50, right: 130, bottom: 50, left: 60 }}
-            padding={0.3}
-            valueScale={{ type: 'linear' }}
-            indexScale={{ type: 'band', round: true }}
-            colors={{ scheme: 'nivo' }}
-            defs={[
-              {
-                id: 'dots',
-                type: 'patternDots',
-                background: 'inherit',
-                color: '#38bcb2',
-                size: 4,
-                padding: 1,
-                stagger: true
+      <div className="vpu_ocoplmimotceici_top">
+        <span>1</span>
+      </div>
+      <div className="vpu_ocoplmimotceici_middle">
+        <ResponsiveBar
+          data={data}
+          keys={[
+            'hot dog',
+            'burger',
+            'sandwich',
+            'kebab',
+            'fries',
+            'donut'
+          ]}
+          indexBy="country"
+          margin={{ top: 50, right: 130, bottom: 50, left: 60 }}
+          padding={0.3}
+          valueScale={{ type: 'linear' }}
+          indexScale={{ type: 'band', round: true }}
+          colors={{ scheme: 'nivo' }}
+          defs={[
+            {
+              id: 'dots',
+              type: 'patternDots',
+              background: 'inherit',
+              color: '#38bcb2',
+              size: 4,
+              padding: 1,
+              stagger: true
+            },
+            {
+              id: 'lines',
+              type: 'patternLines',
+              background: 'inherit',
+              color: '#eed312',
+              rotation: -45,
+              lineWidth: 6,
+              spacing: 10
+            }
+          ]}
+          fill={[
+            {
+              match: {
+                id: 'fries'
               },
-              {
-                id: 'lines',
-                type: 'patternLines',
-                background: 'inherit',
-                color: '#eed312',
-                rotation: -45,
-                lineWidth: 6,
-                spacing: 10
-              }
-            ]}
-            fill={[
-              {
-                match: {
-                  id: 'fries'
-                },
-                id: 'dots'
+              id: 'dots'
+            },
+            {
+              match: {
+                id: 'sandwich'
               },
-              {
-                match: {
-                  id: 'sandwich'
-                },
-                id: 'lines'
-              }
-            ]}
-            borderColor={{
-              from: 'color',
-              modifiers: [
-                [
-                  'darker',
-                  1.6
-                ]
+              id: 'lines'
+            }
+          ]}
+          borderColor={{
+            from: 'color',
+            modifiers: [
+              [
+                'darker',
+                1.6
               ]
-            }}
-            axisTop={null}
-            axisRight={null}
-            axisBottom={{
-              tickSize: 5,
-              tickPadding: 5,
-              tickRotation: 0,
-              legend: 'country',
-              legendPosition: 'middle',
-              legendOffset: 32,
-              truncateTickAt: 0
-            }}
-            axisLeft={{
-              tickSize: 5,
-              tickPadding: 5,
-              tickRotation: 0,
-              legend: 'food',
-              legendPosition: 'middle',
-              legendOffset: -40,
-              truncateTickAt: 0
-            }}
-            labelSkipWidth={12}
-            labelSkipHeight={12}
-            labelTextColor={{
-              from: 'color',
-              modifiers: [
-                [
-                  'darker',
-                  1.6
-                ]
+            ]
+          }}
+          axisTop={null}
+          axisRight={null}
+          axisBottom={{
+            tickSize: 5,
+            tickPadding: 5,
+            tickRotation: 0,
+            legend: 'country',
+            legendPosition: 'middle',
+            legendOffset: 32,
+            truncateTickAt: 0
+          }}
+          axisLeft={{
+            tickSize: 5,
+            tickPadding: 5,
+            tickRotation: 0,
+            legend: 'food',
+            legendPosition: 'middle',
+            legendOffset: -40,
+            truncateTickAt: 0
+          }}
+          labelSkipWidth={12}
+          labelSkipHeight={12}
+          labelTextColor={{
+            from: 'color',
+            modifiers: [
+              [
+                'darker',
+                1.6
               ]
-            }}
-            legends={[
-              {
-                dataFrom: 'keys',
-                anchor: 'bottom-right',
-                direction: 'column',
-                justify: false,
-                translateX: 120,
-                translateY: 0,
-                itemsSpacing: 2,
-                itemWidth: 100,
-                itemHeight: 20,
-                itemDirection: 'left-to-right',
-                itemOpacity: 0.85,
-                symbolSize: 20,
-                effects: [
-                  {
-                    on: 'hover',
-                    style: {
-                      itemOpacity: 1
-                    }
+            ]
+          }}
+          legends={[
+            {
+              dataFrom: 'keys',
+              anchor: 'bottom-right',
+              direction: 'column',
+              justify: false,
+              translateX: 120,
+              translateY: 0,
+              itemsSpacing: 2,
+              itemWidth: 100,
+              itemHeight: 20,
+              itemDirection: 'left-to-right',
+              itemOpacity: 0.85,
+              symbolSize: 20,
+              effects: [
+                {
+                  on: 'hover',
+                  style: {
+                    itemOpacity: 1
                   }
-                ]
-              }
-            ]}
-            role="application"
-            ariaLabel="Nivo bar chart demo"
-            barAriaLabel={(e: any) => e.id + ": " + e.formattedValue + " in country: " + e.indexValue}
-          />
-        </div>
+                }
+              ]
+            }
+          ]}
+          role="application"
+          ariaLabel="Nivo bar chart demo"
+          barAriaLabel={(e: any) => e.id + ": " + e.formattedValue + " in country: " + e.indexValue}
+        />
       </div>
     </div>
   )
@@ -2675,145 +2671,143 @@ export const TestTwo = () => {
   ]
   return (
     <div className='vpu_ocoplmimotceic_item'>
-      <div className="exampleCommon">
-        <div className="exampleCommonPoints">
-          <span>2</span>
-        </div>
-        <div className="exampleCommonContent">
-          <ResponsiveBarCanvas
-            data={data}
-            keys={[
-              'hot dog',
-              'burger',
-              'sandwich',
-              'kebab',
-              'fries',
-              'donut',
-              'junk',
-              'sushi',
-              'ramen',
-              'curry',
-              'udon',
-              'bagel',
-              'yakitori',
-              'takoyaki',
-              'tacos',
-              'miso soup',
-              'tortilla',
-              'tapas',
-              'chipirones',
-              'gazpacho',
-              'soba',
-              'bavette',
-              'steak',
-              'pizza',
-              'spaghetti',
-              'ravioli',
-              'salad',
-              'pad thai',
-              'bun',
-              'waffle',
-              'crepe',
-              'churros',
-              'paella',
-              'empanadas',
-              'bruschetta',
-              'onion soup',
-              'cassoulet',
-              'bouillabaisse',
-              'unagi',
-              'tempura',
-              'tonkatsu',
-              'shabu-shabu',
-              'twinkies',
-              'jerky',
-              'fajitas',
-              'jambalaya',
-              'meatloaf',
-              'mac n" cheese',
-              'baked beans',
-              'popcorn',
-              'buffalo wings',
-              'BBQ ribs',
-              'apple pie',
-              'nachos',
-              'risotto',
-              'tiramisu'
-            ]}
-            indexBy="country"
-            margin={{ top: 50, right: 60, bottom: 50, left: 60 }}
-            pixelRatio={1}
-            padding={0.15}
-            innerPadding={0}
-            minValue="auto"
-            maxValue="auto"
-            groupMode="stacked"
-            layout="horizontal"
-            reverse={false}
-            valueScale={{ type: 'linear' }}
-            indexScale={{ type: 'band', round: true }}
-            colors={{ scheme: 'red_blue' }}
-            colorBy="id"
-            borderWidth={0}
-            borderRadius={0}
-            borderColor={{
-              from: 'color',
-              modifiers: [
-                [
-                  'darker',
-                  1.6
-                ]
+      <div className="vpu_ocoplmimotceici_top">
+        <span>2</span>
+      </div>
+      <div className="vpu_ocoplmimotceici_middle">
+        <ResponsiveBarCanvas
+          data={data}
+          keys={[
+            'hot dog',
+            'burger',
+            'sandwich',
+            'kebab',
+            'fries',
+            'donut',
+            'junk',
+            'sushi',
+            'ramen',
+            'curry',
+            'udon',
+            'bagel',
+            'yakitori',
+            'takoyaki',
+            'tacos',
+            'miso soup',
+            'tortilla',
+            'tapas',
+            'chipirones',
+            'gazpacho',
+            'soba',
+            'bavette',
+            'steak',
+            'pizza',
+            'spaghetti',
+            'ravioli',
+            'salad',
+            'pad thai',
+            'bun',
+            'waffle',
+            'crepe',
+            'churros',
+            'paella',
+            'empanadas',
+            'bruschetta',
+            'onion soup',
+            'cassoulet',
+            'bouillabaisse',
+            'unagi',
+            'tempura',
+            'tonkatsu',
+            'shabu-shabu',
+            'twinkies',
+            'jerky',
+            'fajitas',
+            'jambalaya',
+            'meatloaf',
+            'mac n" cheese',
+            'baked beans',
+            'popcorn',
+            'buffalo wings',
+            'BBQ ribs',
+            'apple pie',
+            'nachos',
+            'risotto',
+            'tiramisu'
+          ]}
+          indexBy="country"
+          margin={{ top: 50, right: 60, bottom: 50, left: 60 }}
+          pixelRatio={1}
+          padding={0.15}
+          innerPadding={0}
+          minValue="auto"
+          maxValue="auto"
+          groupMode="stacked"
+          layout="horizontal"
+          reverse={false}
+          valueScale={{ type: 'linear' }}
+          indexScale={{ type: 'band', round: true }}
+          colors={{ scheme: 'red_blue' }}
+          colorBy="id"
+          borderWidth={0}
+          borderRadius={0}
+          borderColor={{
+            from: 'color',
+            modifiers: [
+              [
+                'darker',
+                1.6
               ]
-            }}
-            axisTop={{
-              tickSize: 5,
-              tickPadding: 5,
-              tickRotation: 0,
-              legend: '',
-              legendOffset: 36,
-              truncateTickAt: 0
-            }}
-            axisRight={null}
-            axisBottom={{
-              tickSize: 5,
-              tickPadding: 5,
-              tickRotation: 0,
-              legend: 'country',
-              legendPosition: 'middle',
-              legendOffset: 36,
-              truncateTickAt: 0
-            }}
-            axisLeft={{
-              tickSize: 5,
-              tickPadding: 5,
-              tickRotation: 0,
-              legend: 'food',
-              legendPosition: 'middle',
-              legendOffset: -40,
-              truncateTickAt: 0
-            }}
-            enableGridX={true}
-            enableGridY={false}
-            enableLabel={true}
-            enableTotals={false}
-            totalsOffset={10}
-            labelSkipWidth={12}
-            labelSkipHeight={12}
-            labelTextColor={{
-              from: 'color',
-              modifiers: [
-                [
-                  'darker',
-                  1.6
-                ]
+            ]
+          }}
+          axisTop={{
+            tickSize: 5,
+            tickPadding: 5,
+            tickRotation: 0,
+            legend: '',
+            legendOffset: 36,
+            truncateTickAt: 0
+          }}
+          axisRight={null}
+          axisBottom={{
+            tickSize: 5,
+            tickPadding: 5,
+            tickRotation: 0,
+            legend: 'country',
+            legendPosition: 'middle',
+            legendOffset: 36,
+            truncateTickAt: 0
+          }}
+          axisLeft={{
+            tickSize: 5,
+            tickPadding: 5,
+            tickRotation: 0,
+            legend: 'food',
+            legendPosition: 'middle',
+            legendOffset: -40,
+            truncateTickAt: 0
+          }}
+          enableGridX={true}
+          enableGridY={false}
+          enableLabel={true}
+          enableTotals={false}
+          totalsOffset={10}
+          labelSkipWidth={12}
+          labelSkipHeight={12}
+          labelTextColor={{
+            from: 'color',
+            modifiers: [
+              [
+                'darker',
+                1.6
               ]
-            }}
-            labelPosition="middle"
-            labelOffset={0}
-            isInteractive={true}
-            legends={[]}
-          />
-        </div>
+            ]
+          }}
+          labelPosition="middle"
+          labelOffset={0}
+          isInteractive={true}
+          legends={[]}
+        />
       </div>
     </div>
   )

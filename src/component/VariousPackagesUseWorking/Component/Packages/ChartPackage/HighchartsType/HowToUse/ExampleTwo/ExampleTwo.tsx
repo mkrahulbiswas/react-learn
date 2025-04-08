@@ -1182,17 +1182,15 @@ export const DependencyWheelChartaa = () => {
 
   return (
     <div className='vpu_ocoplmimotceic_item'>
-      <div className="exampleCommon fullWidth">
-        <div className="exampleCommonPoints">
-          <span>Pictoriala Chart</span>
-        </div>
-        <div className="exampleCommonContent">
-          <HighchartsReact
-            highcharts={Highmaps}
-            options={options}
-            constructorType={'mapChart'}
-          />
-        </div>
+      <div className="exampleCommonPoints">
+        <span>Pictoriala Chart</span>
+      </div>
+      <div className="exampleCommonContent">
+        <HighchartsReact
+          highcharts={Highmaps}
+          options={options}
+          constructorType={'mapChart'}
+        />
       </div>
     </div>
   )
@@ -1389,17 +1387,15 @@ export const DependencyWheelCharta = () => {
 
   return (
     <div className='vpu_ocoplmimotceic_item'>
-      <div className="exampleCommon fullWidth">
-        <div className="exampleCommonPoints">
-          <span>Pictoriala Chart</span>
-        </div>
-        <div className="exampleCommonContent">
-          <HighchartsReact
-            highcharts={Highmaps}
-            options={options}
-            constructorType={'mapChart'}
-          />
-        </div>
+      <div className="exampleCommonPoints">
+        <span>Pictoriala Chart</span>
+      </div>
+      <div className="exampleCommonContent">
+        <HighchartsReact
+          highcharts={Highmaps}
+          options={options}
+          constructorType={'mapChart'}
+        />
       </div>
     </div>
   )
@@ -1440,19 +1436,17 @@ export const DependencyWheelChart = (_props: HighchartsReact.Props) => {
 
   return (
     <div className='vpu_ocoplmimotceic_item'>
-      <div className="exampleCommon fullWidth">
-        <div className="exampleCommonPoints">
-          <span>Dependency Wheel Chart</span>
-        </div>
-        <div className="exampleCommonContent">
-          {/* <HighchartsReact highcharts={HighchartsMore} options={options} /> */}
-          {/* <HighchartsReact highcharts={Sankey, DependencyWheel, Exporting, ExportData, Accessibility} options={options} /> */}
-          {/* <HighchartsReact highcharts={Sankey} options={options} />
+      <div className="exampleCommonPoints">
+        <span>Dependency Wheel Chart</span>
+      </div>
+      <div className="exampleCommonContent">
+        {/* <HighchartsReact highcharts={HighchartsMore} options={options} /> */}
+        {/* <HighchartsReact highcharts={Sankey, DependencyWheel, Exporting, ExportData, Accessibility} options={options} /> */}
+        {/* <HighchartsReact highcharts={Sankey} options={options} />
           <HighchartsReact highcharts={DependencyWheel} options={options} />
           <HighchartsReact highcharts={Exporting} options={options} />
           <HighchartsReact highcharts={ExportData} options={options} />
           <HighchartsReact highcharts={Accessibility} options={options} /> */}
-        </div>
       </div>
     </div>
   )

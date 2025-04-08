@@ -14,19 +14,17 @@ export const ExampleOne = () => {
 export const TestingOne = () => {
   return (
     <div className='vpu_ocoplmimotceic_item'>
-      <div className="exampleCommon fullWidth">
-        {/* <div className="exampleCommonPoints">
+      {/* <div className="exampleCommonPoints">
           <span>BasicImplementations</span>
         </div> */}
-        <div className="exampleCommonContent exampleCommonContentFloat">
-          <CircularProgressbar value={25} text={`25%`} />;
-        </div>
-        <div className="exampleCommonContent exampleCommonContentFloat">
-          <CircularProgressbar value={0.66} maxValue={1} text={`${0.66 * 100}%`} />;
-        </div>
-        <div className="exampleCommonContent exampleCommonContentFloat">
-          <CircularProgressbar value={66} />
-        </div>
+      <div className="exampleCommonContent exampleCommonContentFloat">
+        <CircularProgressbar value={25} text={`25%`} />;
+      </div>
+      <div className="exampleCommonContent exampleCommonContentFloat">
+        <CircularProgressbar value={0.66} maxValue={1} text={`${0.66 * 100}%`} />;
+      </div>
+      <div className="exampleCommonContent exampleCommonContentFloat">
+        <CircularProgressbar value={66} />
       </div>
     </div>
   )
@@ -35,25 +33,23 @@ export const TestingOne = () => {
 export const TestingTwo = () => {
   return (
     <div className='vpu_ocoplmimotceic_item'>
-      <div className="exampleCommon fullWidth">
-        <div className="exampleCommonContent exampleCommonContentFloat">
-          <CircularProgressbar value={16} strokeWidth={2} />
-        </div>
-        <div className="exampleCommonContent exampleCommonContentFloat">
-          <CircularProgressbar value={26} text='RAHUL' />
-        </div>
-        <div className="exampleCommonContent exampleCommonContentFloat">
-          <CircularProgressbar value={36} background={true} />
-        </div>
-        <div className="exampleCommonContent exampleCommonContentFloat">
-          <CircularProgressbar value={46} background={true} backgroundPadding={5} />
-        </div>
-        <div className="exampleCommonContent exampleCommonContentFloat">
-          <CircularProgressbar value={56} counterClockwise={true} />
-        </div>
-        <div className="exampleCommonContent exampleCommonContentFloat">
-          <CircularProgressbar value={66} circleRatio={1} />
-        </div>
+      <div className="exampleCommonContent exampleCommonContentFloat">
+        <CircularProgressbar value={16} strokeWidth={2} />
+      </div>
+      <div className="exampleCommonContent exampleCommonContentFloat">
+        <CircularProgressbar value={26} text='RAHUL' />
+      </div>
+      <div className="exampleCommonContent exampleCommonContentFloat">
+        <CircularProgressbar value={36} background={true} />
+      </div>
+      <div className="exampleCommonContent exampleCommonContentFloat">
+        <CircularProgressbar value={46} background={true} backgroundPadding={5} />
+      </div>
+      <div className="exampleCommonContent exampleCommonContentFloat">
+        <CircularProgressbar value={56} counterClockwise={true} />
+      </div>
+      <div className="exampleCommonContent exampleCommonContentFloat">
+        <CircularProgressbar value={66} circleRatio={1} />
       </div>
     </div>
   )

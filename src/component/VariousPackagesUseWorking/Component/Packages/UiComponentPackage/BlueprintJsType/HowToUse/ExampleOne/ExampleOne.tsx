@@ -98,39 +98,35 @@ export const CalloutBJ = () => {
 export const ProgressBarBJ = () => {
   return (
     <div className='vpu_ocoplmimotceic_item'>
-      <div className="exampleCommon fullWidth">
-        <div className="exampleCommonPoints">
-          <span>Buttons</span>
-        </div>
-        <div className="exampleCommonContent">
-          <div className="bp5-progress-bar {{.modifier}}">
-            <div className="bp5-progress-meter" style={{ width: '25%' }}></div>
-          </div>
-        </div>
-        <div className="exampleCommonContent">
-          <div className="bp5-progress-bar bp5-intent-primary {{.modifier}}">
-            <div className="bp5-progress-meter" style={{ width: '50%' }}></div>
-          </div>
-        </div>
-        <div className="exampleCommonContent">
-          <div className="bp5-progress-bar bp5-intent-success {{.modifier}}">
-            <div className="bp5-progress-meter" style={{ width: '75%' }}></div>
-          </div>
-        </div>
-        <div className="exampleCommonContent">
-          <div className="bp5-progress-bar bp5-intent-danger {{.modifier}}">
-            <div className="bp5-progress-meter" style={{ width: '100%' }}></div>
-          </div>
+      <div className="exampleCommonPoints">
+        <span>Buttons</span>
+      </div>
+      <div className="exampleCommonContent">
+        <div className="bp5-progress-bar {{.modifier}}">
+          <div className="bp5-progress-meter" style={{ width: '25%' }}></div>
         </div>
       </div>
-    </div>
-  )
+      <div className="exampleCommonContent">
+        <div className="bp5-progress-bar bp5-intent-primary {{.modifier}}">
+          <div className="bp5-progress-meter" style={{ width: '50%' }}></div>
+        </div>
+      </div>
+      <div className="exampleCommonContent">
+        <div className="bp5-progress-bar bp5-intent-success {{.modifier}}">
+          <div className="bp5-progress-meter" style={{ width: '75%' }}></div>
+        </div>
+      </div>
+      <div className="exampleCommonContent">
+        <div className="bp5-progress-bar bp5-intent-danger {{.modifier}}">
+          <div className="bp5-progress-meter" style={{ width: '100%' }}></div>
+        </div>
+      </div>
+      )
 }
 
 export const TabsBJ = () => {
   return (
-    <div className='vpu_ocoplmimotceic_item'>
-      <div className="exampleCommon fullWidth">
+      <div className='vpu_ocoplmimotceic_item'>
         <div className="exampleCommonPoints">
           <span>Buttons</span>
         </div>
@@ -145,6 +141,5 @@ export const TabsBJ = () => {
           </Tabs>;
         </div>
       </div>
-    </div>
-  )
+      )
 }

@@ -912,7 +912,9 @@ ul {
 
                                                                                     .vpu_ocoplmimotce_list {
                                                                                         display: flex;
-                                                                                        flex-direction: column;
+                                                                                        flex-direction: row;
+                                                                                        justify-content: space-around;
+                                                                                        flex-wrap: wrap;
                                                                                         gap: 20px;
 
                                                                                         .vpu_ocoplmimotce_item {
@@ -933,7 +935,9 @@ ul {
                                                                                             .vpu_ocoplmimotcei_content {
                                                                                                 .vpu_ocoplmimotceic_list {
                                                                                                     display: flex;
-                                                                                                    flex-direction: column;
+                                                                                                    flex-direction: row;
+                                                                                                    flex-wrap: wrap;
+                                                                                                    justify-content: space-around;
                                                                                                     gap: 20px;
 
                                                                                                     .vpu_ocoplmimotceic_item {}

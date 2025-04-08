@@ -39,18 +39,16 @@ export const NormalTheming = () => {
 
   return (
     <div className='vpu_ocoplmimotceic_item'>
-      <div className="exampleCommon">
-        {/* <div className="exampleCommonPoints">
+      {/* <div className="exampleCommonPoints">
           <span>Making <b>different position</b> of pagination</span>
         </div> */}
-        <div className="exampleCommonContent exampleCommonContentFloat">
-          <Button>Normal</Button>
-        </div>
-        <div className="exampleCommonContent exampleCommonContentFloat">
-          <ThemeProvider theme={theme}>
-            <Button>Themed</Button>
-          </ThemeProvider>
-        </div>
+      <div className="exampleCommonContent exampleCommonContentFloat">
+        <Button>Normal</Button>
+      </div>
+      <div className="exampleCommonContent exampleCommonContentFloat">
+        <ThemeProvider theme={theme}>
+          <Button>Themed</Button>
+        </ThemeProvider>
       </div>
     </div>
   )
@@ -83,21 +81,19 @@ export const FunctionThemes = () => {
 
   return (
     <div className='vpu_ocoplmimotceic_item'>
-      <div className="exampleCommon">
-        {/* <div className="exampleCommonPoints">
+      {/* <div className="exampleCommonPoints">
           <span>Making <b>different position</b> of pagination</span>
         </div> */}
-        <ThemeProvider theme={theme}>
-          <div className="exampleCommonContent exampleCommonContentFloat">
-            <Button>Default Theme</Button>
-          </div>
-          <div className="exampleCommonContent exampleCommonContentFloat">
-            <ThemeProvider theme={invertTheme}>
-              <Button>Inverted Theme</Button>
-            </ThemeProvider>
-          </div>
-        </ThemeProvider>
-      </div>
+      <ThemeProvider theme={theme}>
+        <div className="exampleCommonContent exampleCommonContentFloat">
+          <Button>Default Theme</Button>
+        </div>
+        <div className="exampleCommonContent exampleCommonContentFloat">
+          <ThemeProvider theme={invertTheme}>
+            <Button>Inverted Theme</Button>
+          </ThemeProvider>
+        </div>
+      </ThemeProvider>
     </div>
   )
 }

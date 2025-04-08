@@ -13,16 +13,14 @@ export const ExampleThree = () => {
   return (
     <div className='vpu_ocoplmimotceic_list'>
       <div className='vpu_ocoplmimotceic_item'>
-        <div className="exampleCommon">
-          <div className="exampleCommonContent">
-            <DateInput3
-              formatDate={formatDate}
-              onChange={handleChange}
-              parseDate={parseDate}
-              placeholder="M/D/YYYY"
-              value={dateValue}
-            />
-          </div>
+        <div className="exampleCommonContent">
+          <DateInput3
+            formatDate={formatDate}
+            onChange={handleChange}
+            parseDate={parseDate}
+            placeholder="M/D/YYYY"
+            value={dateValue}
+          />
         </div>
       </div>
     </div>

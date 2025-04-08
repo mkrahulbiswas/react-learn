@@ -21,20 +21,18 @@ export const MultiSelect = () => {
   ]
   return (
     <div className='vpu_ocoplmimotceic_item'>
-      <div className="exampleCommon triennialWidth">
-        <div className="exampleCommonPoints">
-          <span>Multi Select</span>
-        </div>
-        <div className="exampleCommonContent">
-          <Select
-            defaultValue={[options[2], options[3]]}
-            isMulti
-            name="colors"
-            options={options}
-            className="basic-multi-select"
-            classNamePrefix="select"
-          />
-        </div>
+      <div className="exampleCommonPoints">
+        <span>Multi Select</span>
+      </div>
+      <div className="exampleCommonContent">
+        <Select
+          defaultValue={[options[2], options[3]]}
+          isMulti
+          name="colors"
+          options={options}
+          className="basic-multi-select"
+          classNamePrefix="select"
+        />
       </div>
     </div>
   )
@@ -50,21 +48,19 @@ export const MultiSelectAnimated = () => {
   const animatedComponents = makeAnimated();
   return (
     <div className='vpu_ocoplmimotceic_item'>
-      <div className="exampleCommon triennialWidth">
-        <div className="exampleCommonPoints">
-          <span>Multi Select Animated</span>
-        </div>
-        <div className="exampleCommonContent">
-          <Select
-            defaultValue={[options[2], options[3]]}
-            isMulti
-            name="colors"
-            components={animatedComponents}
-            options={options}
-            className="basic-multi-select"
-            classNamePrefix="select"
-          />
-        </div>
+      <div className="exampleCommonPoints">
+        <span>Multi Select Animated</span>
+      </div>
+      <div className="exampleCommonContent">
+        <Select
+          defaultValue={[options[2], options[3]]}
+          isMulti
+          name="colors"
+          components={animatedComponents}
+          options={options}
+          className="basic-multi-select"
+          classNamePrefix="select"
+        />
       </div>
     </div>
   )
@@ -155,19 +151,17 @@ export const MultiSelectCustomStyle = () => {
   };
   return (
     <div className='vpu_ocoplmimotceic_item'>
-      <div className="exampleCommon triennialWidth">
-        <div className="exampleCommonPoints">
-          <span>Multi Select Custom Style</span>
-        </div>
-        <div className="exampleCommonContent">
-          <Select
-            closeMenuOnSelect={false}
-            defaultValue={[colourOptions[0], colourOptions[1]]}
-            isMulti
-            options={colourOptions}
-            styles={colourStyles}
-          />
-        </div>
+      <div className="exampleCommonPoints">
+        <span>Multi Select Custom Style</span>
+      </div>
+      <div className="exampleCommonContent">
+        <Select
+          closeMenuOnSelect={false}
+          defaultValue={[colourOptions[0], colourOptions[1]]}
+          isMulti
+          options={colourOptions}
+          styles={colourStyles}
+        />
       </div>
     </div>
   )

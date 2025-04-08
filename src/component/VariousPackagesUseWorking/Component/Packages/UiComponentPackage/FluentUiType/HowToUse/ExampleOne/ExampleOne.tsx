@@ -39,107 +39,105 @@ export const ButtonsFU = () => {
   const styles = useStyles();
   return (
     <div className='vpu_ocoplmimotceic_item'>
-      <div className="exampleCommon">
-        <div className="exampleCommonPoints">
-          <span>Buttons</span>
-        </div>
-        <div className={styles.wrapper + ' exampleCommonContent'}>
-          <Button icon={<CalendarMonthRegular />}>Default</Button>
-          <Button appearance="primary" icon={<CalendarMonthRegular />}>Primary</Button>
-          <Button appearance="outline" icon={<CalendarMonth />}>Outline</Button>
-          <Button appearance="subtle" icon={<CalendarMonth />}>Subtle</Button>
-          <Button appearance="transparent" icon={<CalendarMonth />}>Transparent</Button>
-        </div>
-        <div className={styles.wrapper + ' exampleCommonContent'}>
-          <Menu>
-            <MenuTrigger disableButtonEnhancement>
-              <MenuButton>Rounded</MenuButton>
-            </MenuTrigger>
+      <div className="exampleCommonPoints">
+        <span>Buttons</span>
+      </div>
+      <div className={styles.wrapper + ' exampleCommonContent'}>
+        <Button icon={<CalendarMonthRegular />}>Default</Button>
+        <Button appearance="primary" icon={<CalendarMonthRegular />}>Primary</Button>
+        <Button appearance="outline" icon={<CalendarMonth />}>Outline</Button>
+        <Button appearance="subtle" icon={<CalendarMonth />}>Subtle</Button>
+        <Button appearance="transparent" icon={<CalendarMonth />}>Transparent</Button>
+      </div>
+      <div className={styles.wrapper + ' exampleCommonContent'}>
+        <Menu>
+          <MenuTrigger disableButtonEnhancement>
+            <MenuButton>Rounded</MenuButton>
+          </MenuTrigger>
 
-            <MenuPopover>
-              <MenuList>
-                <MenuItem>Item a</MenuItem>
-                <MenuItem>Item b</MenuItem>
-              </MenuList>
-            </MenuPopover>
-          </Menu>
+          <MenuPopover>
+            <MenuList>
+              <MenuItem>Item a</MenuItem>
+              <MenuItem>Item b</MenuItem>
+            </MenuList>
+          </MenuPopover>
+        </Menu>
 
-          <Menu>
-            <MenuTrigger disableButtonEnhancement>
-              <MenuButton shape="circular">Circular</MenuButton>
-            </MenuTrigger>
+        <Menu>
+          <MenuTrigger disableButtonEnhancement>
+            <MenuButton shape="circular">Circular</MenuButton>
+          </MenuTrigger>
 
-            <MenuPopover>
-              <MenuList>
-                <MenuItem>Item a</MenuItem>
-                <MenuItem>Item b</MenuItem>
-              </MenuList>
-            </MenuPopover>
-          </Menu>
+          <MenuPopover>
+            <MenuList>
+              <MenuItem>Item a</MenuItem>
+              <MenuItem>Item b</MenuItem>
+            </MenuList>
+          </MenuPopover>
+        </Menu>
 
-          <Menu>
-            <MenuTrigger disableButtonEnhancement>
-              <MenuButton shape="square">Square</MenuButton>
-            </MenuTrigger>
+        <Menu>
+          <MenuTrigger disableButtonEnhancement>
+            <MenuButton shape="square">Square</MenuButton>
+          </MenuTrigger>
 
-            <MenuPopover>
-              <MenuList>
-                <MenuItem>Item a</MenuItem>
-                <MenuItem>Item b</MenuItem>
-              </MenuList>
-            </MenuPopover>
-          </Menu>
-        </div>
-        <div className={styles.wrapper + ' exampleCommonContent'}>
-          <Menu positioning="below-end">
-            <MenuTrigger disableButtonEnhancement>
-              {(triggerProps: MenuButtonProps) => (
-                <SplitButton menuButton={triggerProps}>Rounded</SplitButton>
-              )}
-            </MenuTrigger>
+          <MenuPopover>
+            <MenuList>
+              <MenuItem>Item a</MenuItem>
+              <MenuItem>Item b</MenuItem>
+            </MenuList>
+          </MenuPopover>
+        </Menu>
+      </div>
+      <div className={styles.wrapper + ' exampleCommonContent'}>
+        <Menu positioning="below-end">
+          <MenuTrigger disableButtonEnhancement>
+            {(triggerProps: MenuButtonProps) => (
+              <SplitButton menuButton={triggerProps}>Rounded</SplitButton>
+            )}
+          </MenuTrigger>
 
-            <MenuPopover>
-              <MenuList>
-                <MenuItem>Item a</MenuItem>
-                <MenuItem>Item b</MenuItem>
-              </MenuList>
-            </MenuPopover>
-          </Menu>
+          <MenuPopover>
+            <MenuList>
+              <MenuItem>Item a</MenuItem>
+              <MenuItem>Item b</MenuItem>
+            </MenuList>
+          </MenuPopover>
+        </Menu>
 
-          <Menu positioning="below-end">
-            <MenuTrigger disableButtonEnhancement>
-              {(triggerProps: MenuButtonProps) => (
-                <SplitButton menuButton={triggerProps} shape="circular">
-                  Circular
-                </SplitButton>
-              )}
-            </MenuTrigger>
+        <Menu positioning="below-end">
+          <MenuTrigger disableButtonEnhancement>
+            {(triggerProps: MenuButtonProps) => (
+              <SplitButton menuButton={triggerProps} shape="circular">
+                Circular
+              </SplitButton>
+            )}
+          </MenuTrigger>
 
-            <MenuPopover>
-              <MenuList>
-                <MenuItem>Item a</MenuItem>
-                <MenuItem>Item b</MenuItem>
-              </MenuList>
-            </MenuPopover>
-          </Menu>
+          <MenuPopover>
+            <MenuList>
+              <MenuItem>Item a</MenuItem>
+              <MenuItem>Item b</MenuItem>
+            </MenuList>
+          </MenuPopover>
+        </Menu>
 
-          <Menu positioning="below-end">
-            <MenuTrigger disableButtonEnhancement>
-              {(triggerProps: MenuButtonProps) => (
-                <SplitButton menuButton={triggerProps} shape="square">
-                  Square
-                </SplitButton>
-              )}
-            </MenuTrigger>
+        <Menu positioning="below-end">
+          <MenuTrigger disableButtonEnhancement>
+            {(triggerProps: MenuButtonProps) => (
+              <SplitButton menuButton={triggerProps} shape="square">
+                Square
+              </SplitButton>
+            )}
+          </MenuTrigger>
 
-            <MenuPopover>
-              <MenuList>
-                <MenuItem>Item a</MenuItem>
-                <MenuItem>Item b</MenuItem>
-              </MenuList>
-            </MenuPopover>
-          </Menu>
-        </div>
+          <MenuPopover>
+            <MenuList>
+              <MenuItem>Item a</MenuItem>
+              <MenuItem>Item b</MenuItem>
+            </MenuList>
+          </MenuPopover>
+        </Menu>
       </div>
     </div>
   )
@@ -149,24 +147,22 @@ export const DateTimePeckerFU = (props: Partial<DatePickerProps>) => {
   const styles = useStyles();
   return (
     <div className='vpu_ocoplmimotceic_item'>
-      <div className="exampleCommon">
-        <div className="exampleCommonPoints">
-          <span>Message Bar</span>
-        </div>
-        <div className={styles.control + ' exampleCommonContent'}>
-          <Field label="Select a date">
-            <DatePicker
-              className={styles.control}
-              placeholder="Select a date..."
-              {...props}
-            />
-          </Field>
-        </div>
-        <div className={styles.container + ' exampleCommonContent'}>
-          <Field label="Coffee time" className={styles.root}>
-            <TimePicker />
-          </Field>
-        </div>
+      <div className="exampleCommonPoints">
+        <span>Message Bar</span>
+      </div>
+      <div className={styles.control + ' exampleCommonContent'}>
+        <Field label="Select a date">
+          <DatePicker
+            className={styles.control}
+            placeholder="Select a date..."
+            {...props}
+          />
+        </Field>
+      </div>
+      <div className={styles.container + ' exampleCommonContent'}>
+        <Field label="Coffee time" className={styles.root}>
+          <TimePicker />
+        </Field>
       </div>
     </div>
   )
@@ -177,42 +173,40 @@ export const MessageBarFU = () => {
   const styles = useStyles();
   return (
     <div className='vpu_ocoplmimotceic_item'>
-      <div className="exampleCommon">
-        <div className="exampleCommonPoints">
-          <span>Message Bar</span>
-        </div>
-        <div className={styles.container + ' exampleCommonContent'}>
-          <MessageBar>
+      <div className="exampleCommonPoints">
+        <span>Message Bar</span>
+      </div>
+      <div className={styles.container + ' exampleCommonContent'}>
+        <MessageBar>
+          <MessageBarBody>
+            <MessageBarTitle>Descriptive title</MessageBarTitle>
+            Message providing information to the user with actionable insights.{" "}
+            <Link>Link</Link>
+          </MessageBarBody>
+          <MessageBarActions
+            containerAction={
+              <Button
+                aria-label="dismiss"
+                appearance="transparent"
+                icon={<DismissRegular />}
+              />
+            }
+          >
+            <Button>Action</Button>
+            <Button>Action</Button>
+          </MessageBarActions>
+        </MessageBar>
+      </div>
+      <div className={styles.container + ' exampleCommonContent'}>
+        {intents.map((intent) => (
+          <MessageBar key={intent} intent={intent}>
             <MessageBarBody>
-              <MessageBarTitle>Descriptive title</MessageBarTitle>
+              <MessageBarTitle>Intent {intent}</MessageBarTitle>
               Message providing information to the user with actionable insights.{" "}
               <Link>Link</Link>
             </MessageBarBody>
-            <MessageBarActions
-              containerAction={
-                <Button
-                  aria-label="dismiss"
-                  appearance="transparent"
-                  icon={<DismissRegular />}
-                />
-              }
-            >
-              <Button>Action</Button>
-              <Button>Action</Button>
-            </MessageBarActions>
           </MessageBar>
-        </div>
-        <div className={styles.container + ' exampleCommonContent'}>
-          {intents.map((intent) => (
-            <MessageBar key={intent} intent={intent}>
-              <MessageBarBody>
-                <MessageBarTitle>Intent {intent}</MessageBarTitle>
-                Message providing information to the user with actionable insights.{" "}
-                <Link>Link</Link>
-              </MessageBarBody>
-            </MessageBar>
-          ))}
-        </div>
+        ))}
       </div>
     </div>
   )

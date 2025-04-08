@@ -16,8 +16,8 @@ export const ExampleOne = () => {
 export const ButtonsMU = () => {
   const { xxl } = useResponsive();
   return (
-    <div className='vpu_ocoplmimotceic_list'>
-      <div className="exampleCommon">
+    <>
+      <div className='vpu_ocoplmimotceic_list'>
         <div className="exampleCommonPoints">
           <span>Various Types Of Buttons</span>
         </div>
@@ -148,7 +148,7 @@ export const ButtonsMU = () => {
           </ConfigProvider>
         </div>
       </div>
-      <div className="exampleCommon">
+      <div className='vpu_ocoplmimotceic_list'>
         <div className="exampleCommonPoints">
           <span>Various Types Of Buttons</span>
         </div>
@@ -185,35 +185,33 @@ export const ButtonsMU = () => {
           </Flex>
         </div>
       </div>
-    </div>
+    </>
   )
 }
 
 export const BreadcrumbMU = () => {
   return (
     <div className='vpu_ocoplmimotceic_item'>
-      <div className="exampleCommon">
-        <div className="exampleCommonPoints">
-          <span>Breadcrumb</span>
-        </div>
-        <div className="exampleCommonContent">
-          <Breadcrumb
-            items={[
-              {
-                title: 'Home',
-              },
-              {
-                title: <a href="">Application Center</a>,
-              },
-              {
-                title: <a href="">Application List</a>,
-              },
-              {
-                title: 'An Application',
-              },
-            ]}
-          />
-        </div>
+      <div className="exampleCommonPoints">
+        <span>Breadcrumb</span>
+      </div>
+      <div className="exampleCommonContent">
+        <Breadcrumb
+          items={[
+            {
+              title: 'Home',
+            },
+            {
+              title: <a href="">Application Center</a>,
+            },
+            {
+              title: <a href="">Application List</a>,
+            },
+            {
+              title: 'An Application',
+            },
+          ]}
+        />
       </div>
     </div>
   )
@@ -222,13 +220,11 @@ export const BreadcrumbMU = () => {
 export const PaginationMU = () => {
   return (
     <div className='vpu_ocoplmimotceic_item'>
-      <div className="exampleCommon">
-        <div className="exampleCommonPoints">
-          <span>Pagination</span>
-        </div>
-        <div className="exampleCommonContent">
-          <Pagination defaultCurrent={6} total={500} />
-        </div>
+      <div className="exampleCommonPoints">
+        <span>Pagination</span>
+      </div>
+      <div className="exampleCommonContent">
+        <Pagination defaultCurrent={6} total={500} />
       </div>
     </div>
   )
@@ -237,20 +233,18 @@ export const PaginationMU = () => {
 export const ColourPeakerMU = () => {
   return (
     <div className='vpu_ocoplmimotceic_item'>
-      <div className="exampleCommon">
-        <div className="exampleCommonPoints">
-          <span>Pagination</span>
-        </div>
-        <div className="exampleCommonContent">
-          <Space>
-            <Space direction="vertical">
-              <ColorPicker defaultValue="#1677ff" size="small" />
-            </Space>
-            <Space direction="vertical">
-              <ColorPicker defaultValue="#1677ff" size="small" showText />
-            </Space>
+      <div className="exampleCommonPoints">
+        <span>Pagination</span>
+      </div>
+      <div className="exampleCommonContent">
+        <Space>
+          <Space direction="vertical">
+            <ColorPicker defaultValue="#1677ff" size="small" />
           </Space>
-        </div>
+          <Space direction="vertical">
+            <ColorPicker defaultValue="#1677ff" size="small" showText />
+          </Space>
+        </Space>
       </div>
     </div>
   )

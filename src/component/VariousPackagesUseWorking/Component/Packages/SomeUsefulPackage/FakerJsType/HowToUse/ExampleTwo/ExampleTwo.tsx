@@ -50,17 +50,15 @@ export const SimpleAlert = () => {
   }
   return (
     <div className='vpu_ocoplmimotceic_item'>
-      <div className="exampleCommon">
-        <div className="exampleCommonPoints">
-          <span>Simple various type alert</span>
-        </div>
-        <div className="exampleCommonContent">
-          <button className="btn btn-success" onClick={() => showAlert('success')}>Success</button>
-          <button className="btn btn-danger ms-3" onClick={() => showAlert('error')}>Error</button>
-          <button className="btn btn-warning ms-3" onClick={() => showAlert('warning')}>Warning</button>
-          <button className="btn btn-info ms-3" onClick={() => showAlert('info')}>Info</button>
-          <button className="btn btn-light ms-3" onClick={() => showAlert('question')}>Question</button>
-        </div>
+      <div className="exampleCommonPoints">
+        <span>Simple various type alert</span>
+      </div>
+      <div className="exampleCommonContent">
+        <button className="btn btn-success" onClick={() => showAlert('success')}>Success</button>
+        <button className="btn btn-danger ms-3" onClick={() => showAlert('error')}>Error</button>
+        <button className="btn btn-warning ms-3" onClick={() => showAlert('warning')}>Warning</button>
+        <button className="btn btn-info ms-3" onClick={() => showAlert('info')}>Info</button>
+        <button className="btn btn-light ms-3" onClick={() => showAlert('question')}>Question</button>
       </div>
     </div>
   )

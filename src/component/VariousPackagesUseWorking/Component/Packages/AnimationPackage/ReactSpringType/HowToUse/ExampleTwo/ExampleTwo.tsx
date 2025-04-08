@@ -17,18 +17,16 @@ export const AnimateTypeOne = () => {
   })
   return (
     <div className='vpu_ocoplmimotceic_item'>
-      <div className="exampleCommon">
-        <div className="exampleCommonContent">
-          <animated.div
-            style={{
-              width: 80,
-              height: 80,
-              background: '#ff6d6d',
-              borderRadius: 8,
-              ...springs
-            }}
-          />
-        </div>
+      <div className="exampleCommonContent">
+        <animated.div
+          style={{
+            width: 80,
+            height: 80,
+            background: '#ff6d6d',
+            borderRadius: 8,
+            ...springs
+          }}
+        />
       </div>
     </div>
   )
@@ -49,10 +47,8 @@ export const AnimateTypeTwo = () => {
 
   return (
     <div className='vpu_ocoplmimotceic_item'>
-      <div className="exampleCommon">
-        <div className="exampleCommonContent">
-          <animated.div style={style} />
-        </div>
+      <div className="exampleCommonContent">
+        <animated.div style={style} />
       </div>
     </div>
   )
@@ -78,10 +74,8 @@ export const AnimateTypeThree = () => {
 
   return (
     <div className='vpu_ocoplmimotceic_item'>
-      <div className="exampleCommon">
-        <div className="exampleCommonContent">
-          <animated.div style={style}>Hello</animated.div>
-        </div>
+      <div className="exampleCommonContent">
+        <animated.div style={style}>Hello</animated.div>
       </div>
     </div>
   )

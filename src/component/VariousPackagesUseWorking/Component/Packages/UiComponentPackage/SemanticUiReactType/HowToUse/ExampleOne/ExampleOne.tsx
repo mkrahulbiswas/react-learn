@@ -14,51 +14,49 @@ export const ExampleOne = () => {
 export const ButtonsSR = () => {
   return (
     <div className='vpu_ocoplmimotceic_list'>
-      <div className="exampleCommon">
-        <div className="exampleCommonPoints">
-          <span>Various Types Of Buttons</span>
-        </div>
-        <div className="exampleCommonContent">
-          <Button content='Primary' primary />
-          <Button content='Secondary' secondary />
-        </div>
-        <div className="exampleCommonContent">
-          <Button animated>
-            <ButtonContent visible>Next</ButtonContent>
-            <ButtonContent hidden>
-              <Icon name='arrow right' />
-            </ButtonContent>
-          </Button>
-          <Button animated='vertical'>
-            <ButtonContent hidden>Shop</ButtonContent>
-            <ButtonContent visible>
-              <Icon name='shop' />
-            </ButtonContent>
-          </Button>
-          <Button animated='fade'>
-            <ButtonContent visible>Sign-up for a Pro account</ButtonContent>
-            <ButtonContent hidden>$12.99 a month</ButtonContent>
-          </Button>
-        </div>
-        <div className="exampleCommonContent">
-          <Button
-            content='Like'
-            icon='heart'
-            label={{ as: 'a', basic: true, content: '2,048' }}
-            labelPosition='right'
-          />
-          <Button
-            content='Like'
-            icon='heart'
-            label={{ as: 'a', basic: true, pointing: 'right', content: '2,048' }}
-            labelPosition='left'
-          />
-          <Button
-            icon='fork'
-            label={{ as: 'a', basic: true, content: '2,048' }}
-            labelPosition='left'
-          />
-        </div>
+      <div className="exampleCommonPoints">
+        <span>Various Types Of Buttons</span>
+      </div>
+      <div className="exampleCommonContent">
+        <Button content='Primary' primary />
+        <Button content='Secondary' secondary />
+      </div>
+      <div className="exampleCommonContent">
+        <Button animated>
+          <ButtonContent visible>Next</ButtonContent>
+          <ButtonContent hidden>
+            <Icon name='arrow right' />
+          </ButtonContent>
+        </Button>
+        <Button animated='vertical'>
+          <ButtonContent hidden>Shop</ButtonContent>
+          <ButtonContent visible>
+            <Icon name='shop' />
+          </ButtonContent>
+        </Button>
+        <Button animated='fade'>
+          <ButtonContent visible>Sign-up for a Pro account</ButtonContent>
+          <ButtonContent hidden>$12.99 a month</ButtonContent>
+        </Button>
+      </div>
+      <div className="exampleCommonContent">
+        <Button
+          content='Like'
+          icon='heart'
+          label={{ as: 'a', basic: true, content: '2,048' }}
+          labelPosition='right'
+        />
+        <Button
+          content='Like'
+          icon='heart'
+          label={{ as: 'a', basic: true, pointing: 'right', content: '2,048' }}
+          labelPosition='left'
+        />
+        <Button
+          icon='fork'
+          label={{ as: 'a', basic: true, content: '2,048' }}
+          labelPosition='left'
+        />
       </div>
     </div>
   )
@@ -67,19 +65,17 @@ export const ButtonsSR = () => {
 export const BreadcrumbSR = () => {
   return (
     <div className='vpu_ocoplmimotceic_item'>
-      <div className="exampleCommon">
-        <div className="exampleCommonPoints">
-          <span>Breadcrumb</span>
-        </div>
-        <div className="exampleCommonContent">
-          <Breadcrumb>
-            <BreadcrumbSection link>Home</BreadcrumbSection>
-            <BreadcrumbDivider icon='right chevron' />
-            <BreadcrumbSection link>Registration</BreadcrumbSection>
-            <BreadcrumbDivider icon='right arrow' />
-            <BreadcrumbSection active>Personal Information</BreadcrumbSection>
-          </Breadcrumb>
-        </div>
+      <div className="exampleCommonPoints">
+        <span>Breadcrumb</span>
+      </div>
+      <div className="exampleCommonContent">
+        <Breadcrumb>
+          <BreadcrumbSection link>Home</BreadcrumbSection>
+          <BreadcrumbDivider icon='right chevron' />
+          <BreadcrumbSection link>Registration</BreadcrumbSection>
+          <BreadcrumbDivider icon='right arrow' />
+          <BreadcrumbSection active>Personal Information</BreadcrumbSection>
+        </Breadcrumb>
       </div>
     </div>
   )
@@ -88,46 +84,44 @@ export const BreadcrumbSR = () => {
 export const DividerSR = () => {
   return (
     <div className='vpu_ocoplmimotceic_item'>
-      <div className="exampleCommon">
-        <div className="exampleCommonPoints">
-          <span>Divider</span>
-        </div>
-        <div className="exampleCommonContent">
-          <Segment>
-            <Grid columns={2} relaxed='very'>
-              <GridColumn>
-                <p>
-                  <Image src='https://react.semantic-ui.com/images/wireframe/short-paragraph.png' />
-                </p>
-                <p>
-                  <Image src='https://react.semantic-ui.com/images/wireframe/short-paragraph.png' />
-                </p>
-                <p>
-                  <Image src='https://react.semantic-ui.com/images/wireframe/short-paragraph.png' />
-                </p>
-                <p>
-                  <Image src='https://react.semantic-ui.com/images/wireframe/short-paragraph.png' />
-                </p>
-              </GridColumn>
-              <GridColumn>
-                <p>
-                  <Image src='https://react.semantic-ui.com/images/wireframe/short-paragraph.png' />
-                </p>
-                <p>
-                  <Image src='https://react.semantic-ui.com/images/wireframe/short-paragraph.png' />
-                </p>
-                <p>
-                  <Image src='https://react.semantic-ui.com/images/wireframe/short-paragraph.png' />
-                </p>
-                <p>
-                  <Image src='https://react.semantic-ui.com/images/wireframe/short-paragraph.png' />
-                </p>
-              </GridColumn>
-            </Grid>
+      <div className="exampleCommonPoints">
+        <span>Divider</span>
+      </div>
+      <div className="exampleCommonContent">
+        <Segment>
+          <Grid columns={2} relaxed='very'>
+            <GridColumn>
+              <p>
+                <Image src='https://react.semantic-ui.com/images/wireframe/short-paragraph.png' />
+              </p>
+              <p>
+                <Image src='https://react.semantic-ui.com/images/wireframe/short-paragraph.png' />
+              </p>
+              <p>
+                <Image src='https://react.semantic-ui.com/images/wireframe/short-paragraph.png' />
+              </p>
+              <p>
+                <Image src='https://react.semantic-ui.com/images/wireframe/short-paragraph.png' />
+              </p>
+            </GridColumn>
+            <GridColumn>
+              <p>
+                <Image src='https://react.semantic-ui.com/images/wireframe/short-paragraph.png' />
+              </p>
+              <p>
+                <Image src='https://react.semantic-ui.com/images/wireframe/short-paragraph.png' />
+              </p>
+              <p>
+                <Image src='https://react.semantic-ui.com/images/wireframe/short-paragraph.png' />
+              </p>
+              <p>
+                <Image src='https://react.semantic-ui.com/images/wireframe/short-paragraph.png' />
+              </p>
+            </GridColumn>
+          </Grid>
 
-            <Divider vertical>And</Divider>
-          </Segment>
-        </div>
+          <Divider vertical>And</Divider>
+        </Segment>
       </div>
     </div>
   )

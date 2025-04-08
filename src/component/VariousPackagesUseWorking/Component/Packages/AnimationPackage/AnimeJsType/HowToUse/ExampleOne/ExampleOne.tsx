@@ -16,10 +16,8 @@ export const TypeOne = () => {
   });
   return (
     <div className='vpu_ocoplmimotceic_item'>
-      <div className="exampleCommon">
-        <div className="exampleCommonContent">
-          <div className="typeOne">Anime Js</div>
-        </div>
+      <div className="exampleCommonContent">
+        <div className="typeOne">Anime Js</div>
       </div>
     </div>
   )
@@ -34,10 +32,8 @@ export const TypeTwo = () => {
   });
   return (
     <div className='vpu_ocoplmimotceic_item'>
-      <div className="exampleCommon">
-        <div className="exampleCommonContent">
-          <div className="TypeThree">Anime Js</div>
-        </div>
+      <div className="exampleCommonContent">
+        <div className="TypeThree">Anime Js</div>
       </div>
     </div>
   )

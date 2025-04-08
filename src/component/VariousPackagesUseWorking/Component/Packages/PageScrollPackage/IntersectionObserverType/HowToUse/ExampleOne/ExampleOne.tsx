@@ -19,13 +19,11 @@ export const TrackVisibility = () => {
 
   return (
     <div className='vpu_ocoplmimotceic_item'>
-      <div className="exampleCommon">
-        <div className="exampleCommonPoints">
-          <span>This an example of <b>track visibility</b></span>
-        </div>
-        <div className="exampleCommonContent">
-          <span ref={ref}>Loader</span>
-        </div>
+      <div className="exampleCommonPoints">
+        <span>This an example of <b>track visibility</b></span>
+      </div>
+      <div className="exampleCommonContent">
+        <span ref={ref}>Loader</span>
       </div>
     </div>
   )
@@ -40,8 +38,8 @@ export const BasicImplement = () => {
   console.log(entry);
 
   return (
-    <div className='vpu_ocoplmimotceic_item'>
-      <div className="exampleCommon">
+    <>
+      <div className='vpu_ocoplmimotceic_item'>
         <div className="exampleCommonPoints">
           <span>Using function</span>
         </div>
@@ -49,7 +47,7 @@ export const BasicImplement = () => {
           <span ref={ref}>Loader</span>
         </div>
       </div>
-      <div className="exampleCommon">
+      <div className='vpu_ocoplmimotceic_item'>
         <div className="exampleCommonPoints">
           <span>Using component</span>
         </div>
@@ -63,6 +61,6 @@ export const BasicImplement = () => {
           </InView>
         </div>
       </div>
-    </div>
+    </>
   )
 }

@@ -13,24 +13,22 @@ export const ExampleOne = () => {
 export const FastProgress = () => {
   return (
     <div className='vpu_ocoplmimotceic_item'>
-      <div className="exampleCommon triennialWidth">
-        <div className="exampleCommonPoints">
-          <span>Fast Progress</span>
-        </div>
-        <div className="exampleCommonContent widthFixed200">
-          <Line
-            percent={50}
-            strokeWidth={4}
-            strokeColor="#35b12b"
-            trailColor='#c56129'
-          />
-          <Circle
-            percent={10}
-            strokeWidth={4}
-            strokeColor="#35b12b"
-            trailColor='#c56129'
-          />
-        </div>
+      <div className="exampleCommonPoints">
+        <span>Fast Progress</span>
+      </div>
+      <div className="exampleCommonContent widthFixed200">
+        <Line
+          percent={50}
+          strokeWidth={4}
+          strokeColor="#35b12b"
+          trailColor='#c56129'
+        />
+        <Circle
+          percent={10}
+          strokeWidth={4}
+          strokeColor="#35b12b"
+          trailColor='#c56129'
+        />
       </div>
     </div>
   )
@@ -38,8 +36,8 @@ export const FastProgress = () => {
 
 export const GapProgress = () => {
   return (
-    <div className='vpu_ocoplmimotceic_item'>
-      <div className="exampleCommon triennialWidth">
+    <>
+      <div className='vpu_ocoplmimotceic_item'>
         <div className="exampleCommonContent widthFixed200">
           <Line
             percent={15}
@@ -51,6 +49,8 @@ export const GapProgress = () => {
             trailColor='red'
           />
         </div>
+      </div>
+      <div className='vpu_ocoplmimotceic_item'>
         <div className="exampleCommonContent widthFixed200">
           <Circle
             percent={15}
@@ -63,7 +63,7 @@ export const GapProgress = () => {
           />
         </div>
       </div>
-      <div className="exampleCommon triennialWidth">
+      <div className='vpu_ocoplmimotceic_item'>
         <div className="exampleCommonContent widthFixed200">
           <Line
             percent={[25, 10, 35]}
@@ -75,6 +75,8 @@ export const GapProgress = () => {
             strokeColor={['red', 'green', 'yellow']}
           />
         </div>
+      </div>
+      <div className='vpu_ocoplmimotceic_item'>
         <div className="exampleCommonContent widthFixed200">
           <Circle
             percent={[25, 10, 35]}
@@ -87,7 +89,7 @@ export const GapProgress = () => {
           />
         </div>
       </div>
-      <div className="exampleCommon triennialWidth">
+      <div className='vpu_ocoplmimotceic_item'>
         <div className="exampleCommonContent widthFixed200">
           <Line
             percent={35}
@@ -99,6 +101,8 @@ export const GapProgress = () => {
             trailColor='yellow'
           />
         </div>
+      </div>
+      <div className='vpu_ocoplmimotceic_item'>
         <div className="exampleCommonContent widthFixed200">
           <Circle
             percent={35}
@@ -111,7 +115,7 @@ export const GapProgress = () => {
           />
         </div>
       </div>
-      <div className="exampleCommon triennialWidth">
+      <div className='vpu_ocoplmimotceic_item'>
         <div className="exampleCommonContent widthFixed200">
           <Line
             percent={45}
@@ -123,6 +127,8 @@ export const GapProgress = () => {
             trailColor='blue'
           />
         </div>
+      </div>
+      <div className='vpu_ocoplmimotceic_item'>
         <div className="exampleCommonContent widthFixed200">
           <Circle
             percent={45}
@@ -135,7 +141,7 @@ export const GapProgress = () => {
           />
         </div>
       </div>
-      <div className="exampleCommon triennialWidth">
+      <div className='vpu_ocoplmimotceic_item'>
         <div className="exampleCommonContent widthFixed200">
           <Line
             percent={55}
@@ -148,6 +154,8 @@ export const GapProgress = () => {
             }}
           />
         </div>
+      </div>
+      <div className='vpu_ocoplmimotceic_item'>
         <div className="exampleCommonContent widthFixed200">
           <Circle
             percent={55}
@@ -161,14 +169,14 @@ export const GapProgress = () => {
           />
         </div>
       </div>
-    </div>
+    </>
   )
 }
 
 export const GradientProgress = () => {
   return (
-    <div className='vpu_ocoplmimotceic_item'>
-      <div className="exampleCommon triennialWidth">
+    <>
+      <div className='vpu_ocoplmimotceic_item'>
         <div className="exampleCommonContent widthFixed200">
           <Circle
             percent={90}
@@ -178,7 +186,7 @@ export const GradientProgress = () => {
           />
         </div>
       </div>
-      <div className="exampleCommon triennialWidth">
+      <div className='vpu_ocoplmimotceic_item'>
         <div className="exampleCommonContent widthFixed200">
           <Circle
             percent={100}
@@ -188,7 +196,7 @@ export const GradientProgress = () => {
           />
         </div>
       </div>
-      <div className="exampleCommon triennialWidth">
+      <div className='vpu_ocoplmimotceic_item'>
         <div className="exampleCommonContent widthFixed200">
           <Circle
             percent={90}
@@ -197,6 +205,6 @@ export const GradientProgress = () => {
           />
         </div>
       </div>
-    </div>
+    </>
   )
 }

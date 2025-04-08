@@ -30,13 +30,11 @@ export const BreadCrumbPR = () => {
   const home = { icon: 'pi pi-home', url: 'https://primereact.org' }
   return (
     <div className='vpu_ocoplmimotceic_item'>
-      <div className="exampleCommon">
-        <div className="exampleCommonPoints">
-          <span>Bread Crumb</span>
-        </div>
-        <div className="exampleCommonContent">
-          <BreadCrumb model={items} home={home} />
-        </div>
+      <div className="exampleCommonPoints">
+        <span>Bread Crumb</span>
+      </div>
+      <div className="exampleCommonContent">
+        <BreadCrumb model={items} home={home} />
       </div>
     </div>
   )
@@ -46,13 +44,11 @@ export const RatingPR = () => {
   const [value, setValue] = useState<number | undefined>(undefined);
   return (
     <div className='vpu_ocoplmimotceic_item'>
-      <div className="exampleCommon">
-        <div className="exampleCommonPoints">
-          <span>Multiselect</span>
-        </div>
-        <div className="exampleCommonContent">
-          <Rating value={value} onChange={(e: any) => setValue(e.value)} stars={10} />
-        </div>
+      <div className="exampleCommonPoints">
+        <span>Multiselect</span>
+      </div>
+      <div className="exampleCommonContent">
+        <Rating value={value} onChange={(e: any) => setValue(e.value)} stars={10} />
       </div>
     </div>
   )
@@ -69,14 +65,12 @@ export const MultiSelectPR = () => {
   ]
   return (
     <div className='vpu_ocoplmimotceic_item'>
-      <div className="exampleCommon">
-        <div className="exampleCommonPoints">
-          <span>Multiselect</span>
-        </div>
-        <div className="exampleCommonContent">
-          <MultiSelect value={selectedCities} onChange={(e) => setSelectedCities(e.value)} options={cities} optionLabel="name"
-            filter placeholder="Select Cities" maxSelectedLabels={3} className="w-full md:w-20rem" />
-        </div>
+      <div className="exampleCommonPoints">
+        <span>Multiselect</span>
+      </div>
+      <div className="exampleCommonContent">
+        <MultiSelect value={selectedCities} onChange={(e) => setSelectedCities(e.value)} options={cities} optionLabel="name"
+          filter placeholder="Select Cities" maxSelectedLabels={3} className="w-full md:w-20rem" />
       </div>
     </div>
   )
@@ -125,14 +119,12 @@ export const DateTimePeckerPR = () => {
   const [time, setTime] = useState()
   return (
     <div className='vpu_ocoplmimotceic_item'>
-      <div className="exampleCommon">
-        <div className="exampleCommonPoints">
-          <span>DateTime pecker</span>
-        </div>
-        <div className="exampleCommonContent">
-          <Calendar value={date} onChange={(e: any) => setDate(e.value)} placeholder='Select date' />
-          <Calendar value={time} onChange={(e: any) => setTime(e.value)} placeholder='Select time' timeOnly />
-        </div>
+      <div className="exampleCommonPoints">
+        <span>DateTime pecker</span>
+      </div>
+      <div className="exampleCommonContent">
+        <Calendar value={date} onChange={(e: any) => setDate(e.value)} placeholder='Select date' />
+        <Calendar value={time} onChange={(e: any) => setTime(e.value)} placeholder='Select time' timeOnly />
       </div>
     </div>
   )

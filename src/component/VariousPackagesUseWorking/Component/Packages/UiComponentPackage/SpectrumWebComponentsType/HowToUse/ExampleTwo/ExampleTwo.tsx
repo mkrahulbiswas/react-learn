@@ -22,67 +22,67 @@ export const ExampleTwo = () => {
 
 export const IconCU = () => {
   return (
-    <div className='vpu_ocoplmimotceic_item'>
-      <div className="exampleCommon">
+    <>
+      <div className='vpu_ocoplmimotceic_item'>
         <div className="exampleCommonContent">
           <Airplane />
         </div>
       </div>
-      <div className="exampleCommon">
+      <div className='vpu_ocoplmimotceic_item'>
         <div className="exampleCommonContent">
           <Actions aria-label="XXS Beaker" size="XXS" />
         </div>
       </div>
-      <div className="exampleCommon">
+      <div className='vpu_ocoplmimotceic_item'>
         <div className="exampleCommonContent">
           <ArchiveRemove aria-label="XS Beaker" size="XS" />
         </div>
       </div>
-      <div className="exampleCommon">
+      <div className='vpu_ocoplmimotceic_item'>
         <div className="exampleCommonContent">
           <Amusementpark aria-label="S Beaker" size="S" />
         </div>
       </div>
-      <div className="exampleCommon">
+      <div className='vpu_ocoplmimotceic_item'>
         <div className="exampleCommonContent">
           <Algorithm aria-label="M Beaker" size="M" />
         </div>
       </div>
-      <div className="exampleCommon">
+      <div className='vpu_ocoplmimotceic_item'>
         <div className="exampleCommonContent">
           <AlertCircleFilled aria-label="L Beaker" size="L" />
         </div>
       </div>
-      <div className="exampleCommon">
+      <div className='vpu_ocoplmimotceic_item'>
         <div className="exampleCommonContent">
           <Breakdown aria-label="XL Beaker" size="XL" />
         </div>
       </div>
-      <div className="exampleCommon">
+      <div className='vpu_ocoplmimotceic_item'>
         <div className="exampleCommonContent">
           <Building aria-label="XXL Beaker" size="XXL" />
         </div>
       </div>
-      <div className="exampleCommon">
+      <div className='vpu_ocoplmimotceic_item'>
         <div className="exampleCommonContent">
           <AssetsModified aria-label="Default Alert" />
         </div>
       </div>
-      <div className="exampleCommon">
+      <div className='vpu_ocoplmimotceic_item'>
         <div className="exampleCommonContent">
           <AttachmentExclude aria-label="Negative Alert" color="negative" />
         </div>
       </div>
-      <div className="exampleCommon">
+      <div className='vpu_ocoplmimotceic_item'>
         <div className="exampleCommonContent">
           <Back30Seconds aria-label="Notification Alert" color="notice" />
         </div>
       </div>
-      <div className="exampleCommon">
+      <div className='vpu_ocoplmimotceic_item'>
         <div className="exampleCommonContent">
           <BidRuleAdd aria-label="Positive Alert" color="positive" />
         </div>
       </div>
-    </div>
+    </>
   )
 }

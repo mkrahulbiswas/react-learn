@@ -45,13 +45,11 @@ export const BarChart = () => {
   }
   return (
     <div className='vpu_ocoplmimotceic_item'>
-      <div className="exampleCommon">
-        <div className="exampleCommonPoints">
-          <span>Bar chart</span>
-        </div>
-        <div className="exampleCommonContent">
-          <Bar options={options} data={data} />
-        </div>
+      <div className="exampleCommonPoints">
+        <span>Bar chart</span>
+      </div>
+      <div className="exampleCommonContent">
+        <Bar options={options} data={data} />
       </div>
     </div>
   )
@@ -90,13 +88,11 @@ export const LineChart = () => {
   }
   return (
     <div className='vpu_ocoplmimotceic_item'>
-      <div className="exampleCommon">
-        <div className="exampleCommonPoints">
-          <span>Line chart</span>
-        </div>
-        <div className="exampleCommonContent">
-          <Line options={options} data={data} />
-        </div>
+      <div className="exampleCommonPoints">
+        <span>Line chart</span>
+      </div>
+      <div className="exampleCommonContent">
+        <Line options={options} data={data} />
       </div>
     </div>
   )
@@ -131,13 +127,11 @@ export const PieChart = () => {
   }
   return (
     <div className='vpu_ocoplmimotceic_item'>
-      <div className="exampleCommon">
-        <div className="exampleCommonPoints">
-          <span>Pie chart</span>
-        </div>
-        <div className="exampleCommonContent">
-          <Pie data={data} />
-        </div>
+      <div className="exampleCommonPoints">
+        <span>Pie chart</span>
+      </div>
+      <div className="exampleCommonContent">
+        <Pie data={data} />
       </div>
     </div>
   )
@@ -172,13 +166,11 @@ export const DoughnutChart = () => {
   }
   return (
     <div className='vpu_ocoplmimotceic_item'>
-      <div className="exampleCommon">
-        <div className="exampleCommonPoints">
-          <span>Doughnut chart</span>
-        </div>
-        <div className="exampleCommonContent">
-          <Doughnut data={data} />
-        </div>
+      <div className="exampleCommonPoints">
+        <span>Doughnut chart</span>
+      </div>
+      <div className="exampleCommonContent">
+        <Doughnut data={data} />
       </div>
     </div>
   )

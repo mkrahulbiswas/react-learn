@@ -1,6 +1,5 @@
 import React from 'react'
 import './TestAndImplement.css'
-import { ClashOfClan } from './ClashOfClan/ClashOfClan'
 import { PracticeCrud } from './PracticeCrud/PracticeCrud'
 
 export const TestAndImplement = () => {
@@ -12,8 +11,8 @@ export const TestAndImplement = () => {
       {/* <MakingStepCounter /> */}
       {/* <PCLayout /> */}
       {/* <MovieList /> */}
-      {/* <PracticeCrud /> */}
-      <ClashOfClan />
+      <PracticeCrud />
+      {/* <ClashOfClan /> */}
     </React.Fragment>
   )
 }

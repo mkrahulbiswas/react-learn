@@ -5,12 +5,13 @@ import "react-toastify/dist/ReactToastify.css";
 import { StrictMode } from "react";
 import { createRoot } from "react-dom/client";
 import { VariousPackagesUse } from "./component/VariousPackagesUse/VariousPackagesUse.tsx";
+import { TestAndImplement } from "./component/TestAndImplement/TestAndImplement.tsx";
 
 createRoot(document.getElementById("root")!).render(
   <StrictMode>
-    <VariousPackagesUse />
+    {/* <VariousPackagesUse /> */}
     {/* <ReactLearnOneApp /> */}
     {/* <ReactLearnTwoApp /> */}
-    {/* <TestAndImplement /> */}
+    <TestAndImplement />
   </StrictMode>
 );

@@ -1,32 +1,37 @@
-import { AnimationPackage } from "./AnimationPackage/AnimationPackage";
-import { ChartPackage } from "./ChartPackage/ChartPackage";
-import { DateTimePackage } from "./DateTimePackage/DateTimePackage";
-import { IconPackage } from "./IconPackage/IconPackage";
-import { InputFormPackage } from "./InputFormPackage/InputFormPackage";
-import { LayoutStylingPackage } from "./LayoutStylingPackage/LayoutStylingPackage";
-import { LoaderProgressPackage } from "./LoaderProgressPackage/LoaderProgressPackage";
-import { PageScrollPackage } from "./PageScrollPackage/PageScrollPackage";
-import { PaginationPackage } from "./PaginationPackage/PaginationPackage";
-import { SomeUsefulPackage } from "./SomeUsefulPackage/SomeUsefulPackage";
-import { TostAlertPackage } from "./TostAlertPackage/TostAlertPackage";
-import { UiComponentPackage } from "./UiComponentPackage/UiComponentPackage";
 import "./VariousPackagesUse.scss";
+import { createBrowserRouter, RouterProvider } from "react-router";
+import { CommonContextProvider } from "./Context/CommonContext";
+import { RouteContextProvider } from "./Context/RouteContext";
+import { Layout } from "./Layout/Layout";
+import { ErrorPage } from "./Component/ErrorPage/ErrorPage";
+import { Home } from "./Component/Home/Home";
+import { getPackagesRouteLink } from "./Helpers/RouteHelper/PackagesRoute/PackagesRouteLink";
 
 export const VariousPackagesUse = () => {
+  const packagesRouteLink: any = getPackagesRouteLink({})
+  const router = createBrowserRouter([
+    {
+      path: '/',
+      element: <Layout />,
+      errorElement: <ErrorPage />,
+      children: [
+        {
+          path: '/',
+          element: <Home />,
+        },
+        {
+          ...packagesRouteLink
+        }
+      ]
+    }
+  ])
   return (
-    <div className="variousPackagesUse">
-      <UiComponentPackage />
-      {/* <ChartPackage /> */}
-      {/* <InputFormPackage /> */}
-      {/* <SomeUsefulPackage /> */}
-      {/* <LayoutStylingPackage /> */}
-      {/* <AnimationPackage /> */}
-      {/* <PageScrollPackage /> */}
-      {/* <TostAlertPackage /> */}
-      {/* <DateTimePackage /> */}
-      {/* <PaginationPackage /> */}
-      {/* <LoaderProgressPackage /> */}
-      {/* <IconPackage /> */}
+    <div className="vps">
+      <CommonContextProvider>
+        <RouteContextProvider>
+          <RouterProvider router={router} />
+        </RouteContextProvider>
+      </CommonContextProvider>
     </div>
   );
 };

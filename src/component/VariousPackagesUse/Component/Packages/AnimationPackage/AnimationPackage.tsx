@@ -19,6 +19,7 @@ export const AnimationPackage = () => {
       }
       <div className="vpu_ocopl_middle">
         <Outlet />
+
         {/* <AnimeJsType />
       <FramerMotionType />
       <ReactSpringType />
